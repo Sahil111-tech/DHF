@@ -96,7 +96,7 @@ public class quickQuote extends BaseTest {
 		sendKeys(inputYear, year);
 	}
 
-	// Action method to select the annual income option
+	// Action method to select the annual income options
 	public void selectAnnualIncomeOption() {
 		waitVisibility(selectAnnualIncome); 
 		click(selectAnnualIncome); //wait 
