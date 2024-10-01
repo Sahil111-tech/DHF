@@ -6,7 +6,6 @@
       <class name="com.qa.tests.quickQuoteTest">
         <methods>
           <include name="initialize"/>
-          <include name="tearDown"/>
           <include name="testQuickQuoteProcess"/>
         </methods>
       </class> <!-- com.qa.tests.quickQuoteTest -->

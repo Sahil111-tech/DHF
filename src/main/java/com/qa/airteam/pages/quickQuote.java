@@ -1,5 +1,6 @@
 package com.qa.airteam.pages;
 
+import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
@@ -14,7 +15,7 @@ public class quickQuote extends BaseTest {
 	}
 
 	// Locator for the Get Quote button to initiate the quote process
-	@FindBy(xpath = "//a[text()='Get a quote'][1]")
+	@FindBy(xpath ="//a[@data-id='get-quote-btn']")
 	private WebElement getQuote;
 
 	// Locator to select cover type as Single
@@ -108,5 +109,24 @@ public class quickQuote extends BaseTest {
 		waitVisibility(clickCalculateCover); 
 		click(clickCalculateCover);
 	}
+	
+	
+	/************************************Assertions***************************************************/
 
+    // Method to get the page title
+    public String getPageTitle() {
+        return driver.getTitle(); // Returns the title of the current page
+    }
+    
+	// Add this method to check if the Get Quote button is visible
+	public boolean isGetQuoteButtonVisible() {
+		try {
+			return getQuote.isDisplayed(); // Return true if the button is visible
+		} catch (Exception e) {
+			return false; // Return false if an exception occurs (e.g., element not found)
+		}
+	}
+ 
+
+   
 }
