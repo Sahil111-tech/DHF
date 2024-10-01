@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Error Text -->
+    <string name="err_invalid_phone_number">Invalid phone number</string>
+    <string name="myProfile_Title">MY Profofile</string>
+
+</resources>
