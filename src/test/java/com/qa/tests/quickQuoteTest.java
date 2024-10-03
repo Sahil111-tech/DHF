@@ -20,7 +20,7 @@ public class quickQuoteTest extends BaseTest {
 		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(30));
 		
 		// Step 1: Click on "Get Quote" btn
-		// Verify the visibility of the "Get Quote" button
+		// Verify the visibility of the "Get Quote" btn
         Assert.assertTrue(quote.isGetQuoteButtonVisible(), "Get Quote button is not visible.");
         quote.clickGetQuote();
 
