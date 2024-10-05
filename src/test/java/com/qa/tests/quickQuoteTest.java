@@ -16,13 +16,13 @@ public class quickQuoteTest extends BaseTest {
 
 	@Test(priority = 1)
 	public void testQuickQuoteProcess() throws InterruptedException {
-		quote = new quickQuote();
+		quote = new quickQuote(driver);
 		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(30));
-		
+
 		// Step 1: Click on "Get Quote" btn
-		// Verify the visibility of the "Get Quote" btn
-        Assert.assertTrue(quote.isGetQuoteButtonVisible(), "Get Quote button is not visible.");
-        quote.clickGetQuote();
+		// Verify the visibility of the "Get Quote" button
+		Assert.assertTrue(quote.isGetQuoteButtonVisible(), "Get Quote button is not visible.");
+		quote.clickGetQuote();
 
 		// Step 2: Select cover for single
 		quote.selectCoverForSingle();
@@ -49,13 +49,11 @@ public class quickQuoteTest extends BaseTest {
 
 		// Step 9: Click on Calculate cover button
 		quote.clickCalculateCover();
-		
+
 		// Verify page title after the quote process
-        String expectedTitle = "Get a private health insurance quote | Doctors' Health Fund"; // Change this to the expected title
-        String actualTitle = quote.getPageTitle();
-        Assert.assertEquals(actualTitle, expectedTitle);
-        
-     
+		String expectedTitle = "Get a private health insurance quote | Doctors' Health Fund";
+		String actualTitle = quote.getPageTitle();
+		Assert.assertEquals(actualTitle, expectedTitle);
 
 	}
 

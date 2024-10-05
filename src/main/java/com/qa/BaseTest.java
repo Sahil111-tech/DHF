@@ -11,6 +11,7 @@ import java.util.Date;
 import java.util.Properties;
 
 import org.openqa.selenium.By;
+import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
@@ -18,6 +19,7 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.edge.EdgeDriver;
 import org.openqa.selenium.support.PageFactory;
+import org.openqa.selenium.support.ui.ExpectedCondition;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.annotations.AfterTest;
@@ -47,7 +49,7 @@ public class BaseTest {
 
 	// Initialize the browser based on the config.properties
 	@BeforeTest
-	public static void initialize() {
+	public void initialize() {
 		String browserName = prop.getProperty("browser");
 		String url = prop.getProperty("url");
 
@@ -79,13 +81,12 @@ public class BaseTest {
 		SimpleDateFormat formatter = new SimpleDateFormat("yyyyMMdd_HHmmss");
 		// Get the current date and time
 		Date date = new Date();
-		// Format and return the date and time as a String
 		return formatter.format(date);
 	}
 
 	// Method to capture screenshot
 	public File captureScreenshot() {
-		// Ensure that the driver implements TakesScreenshot
+
 		if (driver instanceof TakesScreenshot) {
 			return ((TakesScreenshot) driver).getScreenshotAs(OutputType.FILE);
 		}
@@ -213,8 +214,19 @@ public class BaseTest {
 		return by;
 	}
 
+	public void waitForPageToLoad() {
+		new WebDriverWait(driver, Duration.ofSeconds(30)).until(new ExpectedCondition<Boolean>() {
+			@Override
+			public Boolean apply(WebDriver webDriver) {
+				return ((JavascriptExecutor) webDriver).executeScript("return document.readyState").equals("complete");
+			}
+		});
+	}
+
 	// Method to close the browser
-	/*
-	 * @AfterTest public static void tearDown() { driver.quit(); }
-	 */
+	@AfterTest
+	public void tearDown() {
+		driver.quit();
+	}
+
 }

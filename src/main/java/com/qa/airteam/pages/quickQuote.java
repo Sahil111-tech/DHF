@@ -1,6 +1,7 @@
 package com.qa.airteam.pages;
 
 import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
@@ -8,11 +9,16 @@ import org.openqa.selenium.support.PageFactory;
 import com.qa.BaseTest;
 
 public class quickQuote extends BaseTest {
-	// constructor for page factory
-	public quickQuote() {
+	
+	private WebDriver driver;
+	// constructor for initialization page factory and drivers
+	public quickQuote(WebDriver driver) {
+		// initialize  driver
+		this.driver = driver;
 		// initialize page factory
 		PageFactory.initElements(driver, this);
 	}
+
 
 	// Locator for the Get Quote button to initiate the quote process
 	@FindBy(xpath ="//a[@data-id='get-quote-btn']")
@@ -125,6 +131,10 @@ public class quickQuote extends BaseTest {
 		} catch (Exception e) {
 			return false; // Return false if an exception occurs (e.g., element not found)
 		}
+	}
+	
+	public String getCurrentURL() {
+	    return driver.getCurrentUrl(); // This should return the URL of the current page
 	}
  
 
