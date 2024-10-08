@@ -1,0 +1,278 @@
+08:43:34.771 [main] INFO  - Config properties loaded successfully.
+08:43:34.776 [main] INFO  - Opening browser...
+08:43:34.777 [main] INFO  - Browser selected: chrome
+08:43:38.179 [main] INFO  - ChromeDriver initialized.
+08:43:44.263 [main] INFO  - Navigated to URL: https://uat.doctorshealthfund.com.au/
+08:43:44.263 [main] INFO  - Browser opened successfully.
+08:43:44.267 [main] INFO  - Navigating to the quote page.
+08:43:44.268 [main] INFO  - Config properties loaded successfully.
+08:43:44.580 [main] INFO  - Page title: Private Health Insurance for Doctors | Doctors' Health Fund
+08:43:44.580 [main] INFO  - Clicking the 'Get Quote' button.
+08:43:44.757 [main] INFO  - 'Get Quote' button clicked successfully.
+08:11:41.661 [main] INFO  - Config properties loaded successfully.
+08:11:41.666 [main] INFO  - Opening browser...
+08:11:41.666 [main] INFO  - Browser selected: chrome
+08:11:45.116 [main] INFO  - ChromeDriver initialized.
+08:11:50.327 [main] INFO  - Navigated to URL: https://uat.doctorshealthfund.com.au/
+08:11:50.327 [main] INFO  - Browser opened successfully.
+08:11:50.329 [main] INFO  - Navigating to the quote page.
+08:11:50.331 [main] INFO  - Config properties loaded successfully.
+08:11:50.408 [main] INFO  - Page title: Private Health Insurance for Doctors | Doctors' Health Fund
+08:11:50.409 [main] INFO  - Clicking the 'Get Quote' button.
+08:11:52.002 [main] INFO  - 'Get Quote' button clicked successfully.
+08:31:12.746 [main] INFO  - Config properties loaded successfully.
+08:31:12.751 [main] INFO  - Opening browser...
+08:31:12.751 [main] INFO  - Browser selected: chrome
+08:31:16.228 [main] INFO  - ChromeDriver initialized.
+08:31:19.128 [main] INFO  - Navigated to URL: https://uat.doctorshealthfund.com.au/
+08:31:19.128 [main] INFO  - Browser opened successfully.
+08:31:19.130 [main] INFO  - Navigating to the quote page.
+08:31:19.131 [main] INFO  - Config properties loaded successfully.
+08:31:19.227 [main] INFO  - Page title: Private Health Insurance for Doctors | Doctors' Health Fund
+08:31:19.228 [main] INFO  - Clicking the 'Get Quote' button.
+08:31:20.153 [main] INFO  - 'Get Quote' button clicked successfully.
+08:40:41.298 [main] INFO  - Config properties loaded successfully.
+08:40:41.304 [main] INFO  - Opening browser...
+08:40:41.304 [main] INFO  - Browser selected: chrome
+08:40:44.358 [main] INFO  - ChromeDriver initialized.
+08:40:44.823 [main] INFO  - Navigated to URL: https://uat.doctorshealthfund.com.au/
+08:40:44.823 [main] INFO  - Browser opened successfully.
+08:40:44.825 [main] INFO  - Navigating to the quote page.
+08:40:44.833 [main] INFO  - Config properties loaded successfully.
+08:40:47.721 [main] INFO  - Page title: Private Health Insurance for Doctors | Doctors' Health Fund
+08:40:47.722 [main] INFO  - Clicking the 'Get Quote' button.
+08:40:47.938 [main] INFO  - 'Get Quote' button clicked successfully.
+08:46:20.996 [main] INFO  - Config properties loaded successfully.
+08:46:21.000 [main] INFO  - Opening browser...
+08:46:21.000 [main] INFO  - Browser selected: chrome
+08:46:23.681 [main] INFO  - ChromeDriver initialized.
+08:46:27.336 [main] INFO  - Navigated to URL: https://uat.doctorshealthfund.com.au/
+08:46:27.336 [main] INFO  - Browser opened successfully.
+08:46:27.338 [main] INFO  - Navigating to the quote page.
+08:46:27.339 [main] INFO  - Config properties loaded successfully.
+08:46:27.437 [main] INFO  - Page title: Private Health Insurance for Doctors | Doctors' Health Fund
+08:46:27.438 [main] INFO  - Clicking the 'Get Quote' button.
+08:46:27.716 [main] INFO  - 'Get Quote' button clicked successfully.
+09:04:23.057 [main] INFO  - Config properties loaded successfully.
+09:04:23.061 [main] INFO  - Opening browser...
+09:04:23.061 [main] INFO  - Browser selected: chrome
+09:04:25.830 [main] INFO  - ChromeDriver initialized.
+09:04:28.937 [main] INFO  - Navigated to URL: https://uat.doctorshealthfund.com.au/
+09:04:28.937 [main] INFO  - Browser opened successfully.
+09:04:28.939 [main] INFO  - Navigating to the quote page.
+09:04:28.940 [main] INFO  - Config properties loaded successfully.
+09:04:29.032 [main] INFO  - Page title: Private Health Insurance for Doctors | Doctors' Health Fund
+09:04:29.033 [main] INFO  - Clicking the 'Get Quote' button.
+09:04:29.276 [main] INFO  - 'Get Quote' button clicked successfully.
+10:38:37.765 [main] INFO  - Config properties loaded successfully.
+10:38:37.769 [main] INFO  - Opening browser...
+10:38:37.769 [main] INFO  - Browser selected: chrome
+10:38:41.052 [main] INFO  - ChromeDriver initialized.
+10:38:47.546 [main] INFO  - Navigated to URL: https://uat.doctorshealthfund.com.au/
+10:38:47.546 [main] INFO  - Browser opened successfully.
+10:38:47.549 [main] INFO  - Navigating to the quote page.
+10:38:47.550 [main] INFO  - Config properties loaded successfully.
+10:38:47.658 [main] INFO  - Page title: Private Health Insurance for Doctors | Doctors' Health Fund
+10:38:47.659 [main] INFO  - Clicking the 'Get Quote' button.
+10:38:47.874 [main] INFO  - 'Get Quote' button clicked successfully.
+10:54:25.579 [main] INFO  - Config properties loaded successfully.
+10:54:25.585 [main] INFO  - Opening browser...
+10:54:25.585 [main] INFO  - Browser selected: chrome
+10:54:28.181 [main] INFO  - ChromeDriver initialized.
+10:54:28.881 [main] INFO  - Navigated to URL: https://uat.doctorshealthfund.com.au/
+10:54:28.881 [main] INFO  - Browser opened successfully.
+10:54:28.885 [main] INFO  - Navigating to the quote page.
+10:54:28.886 [main] INFO  - Config properties loaded successfully.
+10:54:31.660 [main] INFO  - Page title: Private Health Insurance for Doctors | Doctors' Health Fund
+10:54:31.663 [main] INFO  - Clicking the 'Get Quote' button.
+10:54:31.899 [main] INFO  - 'Get Quote' button clicked successfully.
+11:11:04.357 [main] INFO  - Config properties loaded successfully.
+11:11:04.361 [main] INFO  - Opening browser...
+11:11:04.362 [main] INFO  - Browser selected: chrome
+11:11:07.196 [main] INFO  - ChromeDriver initialized.
+11:11:13.432 [main] INFO  - Navigated to URL: https://uat.doctorshealthfund.com.au/
+11:11:13.433 [main] INFO  - Browser opened successfully.
+11:11:13.436 [main] INFO  - Navigating to the quote page.
+11:11:13.437 [main] INFO  - Config properties loaded successfully.
+11:11:13.603 [main] INFO  - Page title: Private Health Insurance for Doctors | Doctors' Health Fund
+11:11:13.608 [main] INFO  - Clicking the 'Get Quote' button.
+11:11:13.861 [main] INFO  - 'Get Quote' button clicked successfully.
+11:18:42.256 [main] INFO  - Config properties loaded successfully.
+11:18:42.261 [main] INFO  - Opening browser...
+11:18:42.261 [main] INFO  - Browser selected: chrome
+11:18:44.856 [main] INFO  - ChromeDriver initialized.
+11:18:48.654 [main] INFO  - Navigated to URL: https://uat.doctorshealthfund.com.au/
+11:18:48.655 [main] INFO  - Browser opened successfully.
+11:18:48.657 [main] INFO  - Navigating to the quote page.
+11:18:48.658 [main] INFO  - Config properties loaded successfully.
+11:18:48.736 [main] INFO  - Page title: Private Health Insurance for Doctors | Doctors' Health Fund
+11:18:48.739 [main] INFO  - Clicking the 'Get Quote' button.
+11:18:48.948 [main] INFO  - 'Get Quote' button clicked successfully.
+11:23:35.201 [main] INFO  - Config properties loaded successfully.
+11:23:35.207 [main] INFO  - Opening browser...
+11:23:35.207 [main] INFO  - Browser selected: chrome
+11:23:38.106 [main] INFO  - ChromeDriver initialized.
+11:23:41.824 [main] INFO  - Navigated to URL: https://uat.doctorshealthfund.com.au/
+11:23:41.824 [main] INFO  - Browser opened successfully.
+11:23:41.827 [main] INFO  - Navigating to the quote page.
+11:23:41.829 [main] INFO  - Config properties loaded successfully.
+11:23:41.939 [main] INFO  - Page title: Private Health Insurance for Doctors | Doctors' Health Fund
+11:23:41.943 [main] INFO  - Clicking the 'Get Quote' button.
+11:23:42.528 [main] INFO  - 'Get Quote' button clicked successfully.
+11:25:23.274 [main] INFO  - Config properties loaded successfully.
+11:25:23.279 [main] INFO  - Opening browser...
+11:25:23.279 [main] INFO  - Browser selected: chrome
+11:25:26.057 [main] INFO  - ChromeDriver initialized.
+11:25:26.717 [main] INFO  - Navigated to URL: https://uat.doctorshealthfund.com.au/
+11:25:26.717 [main] INFO  - Browser opened successfully.
+11:25:26.721 [main] INFO  - Navigating to the quote page.
+11:25:26.725 [main] INFO  - Config properties loaded successfully.
+11:25:29.216 [main] INFO  - Page title: Private Health Insurance for Doctors | Doctors' Health Fund
+11:25:29.218 [main] INFO  - Clicking the 'Get Quote' button.
+11:25:29.459 [main] INFO  - 'Get Quote' button clicked successfully.
+11:34:08.624 [main] INFO  - Config properties loaded successfully.
+11:34:08.627 [main] INFO  - Opening browser...
+11:34:08.628 [main] INFO  - Browser selected: chrome
+11:34:11.363 [main] INFO  - ChromeDriver initialized.
+11:34:14.699 [main] INFO  - Navigated to URL: https://uat.doctorshealthfund.com.au/
+11:34:14.699 [main] INFO  - Browser opened successfully.
+11:34:14.702 [main] INFO  - Navigating to the quote page.
+11:34:14.703 [main] INFO  - Config properties loaded successfully.
+11:34:14.768 [main] INFO  - Page title: Private Health Insurance for Doctors | Doctors' Health Fund
+11:34:14.771 [main] INFO  - Clicking the 'Get Quote' button.
+11:34:14.994 [main] INFO  - 'Get Quote' button clicked successfully.
+11:39:03.553 [main] INFO  - Config properties loaded successfully.
+11:39:03.557 [main] INFO  - Opening browser...
+11:39:03.558 [main] INFO  - Browser selected: chrome
+11:39:06.925 [main] INFO  - ChromeDriver initialized.
+11:39:10.471 [main] INFO  - Navigated to URL: https://uat.doctorshealthfund.com.au/
+11:39:10.471 [main] INFO  - Browser opened successfully.
+11:39:10.474 [main] INFO  - Navigating to the quote page.
+11:39:10.476 [main] INFO  - Config properties loaded successfully.
+11:39:10.546 [main] INFO  - Page title: Private Health Insurance for Doctors | Doctors' Health Fund
+11:39:10.548 [main] INFO  - Clicking the 'Get Quote' button.
+11:39:10.737 [main] INFO  - 'Get Quote' button clicked successfully.
+11:39:13.861 [main] WARN  - Scenario is null, unable to take a screenshot.
+11:50:16.874 [main] INFO  - Config properties loaded successfully.
+11:50:16.879 [main] INFO  - Opening browser...
+11:50:16.879 [main] INFO  - Browser selected: chrome
+11:50:19.359 [main] INFO  - ChromeDriver initialized.
+11:50:25.397 [main] INFO  - Navigated to URL: https://uat.doctorshealthfund.com.au/
+11:50:25.397 [main] INFO  - Browser opened successfully.
+11:50:25.400 [main] INFO  - Navigating to the quote page.
+11:50:25.402 [main] INFO  - Config properties loaded successfully.
+11:50:25.959 [main] INFO  - Page title: Private Health Insurance for Doctors | Doctors' Health Fund
+11:50:25.961 [main] INFO  - Clicking the 'Get Quote' button.
+11:50:26.232 [main] INFO  - 'Get Quote' button clicked successfully.
+11:50:28.984 [main] WARN  - Scenario is null, unable to take a screenshot.
+12:00:20.831 [main] INFO  - Config properties loaded successfully.
+12:00:20.837 [main] INFO  - Opening browser...
+12:00:20.837 [main] INFO  - Browser selected: chrome
+12:00:23.497 [main] INFO  - ChromeDriver initialized.
+12:00:28.164 [main] INFO  - Navigated to URL: https://uat.doctorshealthfund.com.au/
+12:00:28.164 [main] INFO  - Browser opened successfully.
+12:00:28.167 [main] INFO  - Navigating to the quote page.
+12:00:28.168 [main] INFO  - Config properties loaded successfully.
+12:00:28.235 [main] INFO  - Page title: Private Health Insurance for Doctors | Doctors' Health Fund
+12:00:28.238 [main] INFO  - Clicking the 'Get Quote' button.
+12:00:28.466 [main] INFO  - 'Get Quote' button clicked successfully.
+12:02:37.559 [main] INFO  - Config properties loaded successfully.
+12:02:37.564 [main] INFO  - Opening browser...
+12:02:37.564 [main] INFO  - Browser selected: chrome
+12:02:40.245 [main] INFO  - ChromeDriver initialized.
+12:02:43.914 [main] INFO  - Navigated to URL: https://uat.doctorshealthfund.com.au/
+12:02:43.914 [main] INFO  - Browser opened successfully.
+12:02:43.917 [main] INFO  - Navigating to the quote page.
+12:02:43.918 [main] INFO  - Config properties loaded successfully.
+12:02:44.008 [main] INFO  - Page title: Private Health Insurance for Doctors | Doctors' Health Fund
+12:02:44.014 [main] INFO  - Clicking the 'Get Quote' button.
+12:02:44.235 [main] INFO  - 'Get Quote' button clicked successfully.
+12:08:48.761 [main] INFO  - Config properties loaded successfully.
+12:08:48.766 [main] INFO  - Opening browser...
+12:08:48.766 [main] INFO  - Browser selected: chrome
+12:08:51.380 [main] INFO  - ChromeDriver initialized.
+12:08:54.457 [main] INFO  - Navigated to URL: https://uat.doctorshealthfund.com.au/
+12:08:54.457 [main] INFO  - Browser opened successfully.
+12:08:54.459 [main] INFO  - Navigating to the quote page.
+12:08:54.461 [main] INFO  - Config properties loaded successfully.
+12:08:54.633 [main] INFO  - Page title: Private Health Insurance for Doctors | Doctors' Health Fund
+12:08:54.636 [main] INFO  - Clicking the 'Get Quote' button.
+12:08:54.863 [main] INFO  - 'Get Quote' button clicked successfully.
+12:19:16.915 [main] INFO  - Config properties loaded successfully.
+12:19:16.919 [main] INFO  - Opening browser...
+12:19:16.919 [main] INFO  - Browser selected: chrome
+12:19:19.511 [main] INFO  - ChromeDriver initialized.
+12:19:25.573 [main] INFO  - Navigated to URL: https://uat.doctorshealthfund.com.au/
+12:19:25.573 [main] INFO  - Browser opened successfully.
+12:19:25.590 [main] INFO  - Navigating to the quote page.
+12:19:25.593 [main] INFO  - Config properties loaded successfully.
+12:19:25.712 [main] INFO  - Page title: Private Health Insurance for Doctors | Doctors' Health Fund
+12:19:25.715 [main] INFO  - Clicking the 'Get Quote' button.
+12:19:25.912 [main] INFO  - 'Get Quote' button clicked successfully.
+12:19:28.896 [main] WARN  - Scenario is null, unable to take a screenshot.
+12:19:29.264 [main] INFO  - Browser closed.
+12:40:18.930 [main] INFO  - Config properties loaded successfully.
+12:40:18.934 [main] INFO  - Opening browser...
+12:40:18.935 [main] INFO  - Browser selected: chrome
+12:40:22.460 [main] INFO  - ChromeDriver initialized.
+12:40:27.786 [main] INFO  - Navigated to URL: https://uat.doctorshealthfund.com.au/
+12:40:27.786 [main] INFO  - Browser opened successfully.
+12:40:27.811 [main] WARN  - Scenario is null, unable to take a screenshot.
+12:40:28.200 [main] INFO  - Browser closed.
+12:42:05.852 [main] INFO  - Config properties loaded successfully.
+12:42:05.857 [main] INFO  - Opening browser...
+12:42:05.857 [main] INFO  - Browser selected: chrome
+12:42:08.789 [main] INFO  - ChromeDriver initialized.
+12:42:13.029 [main] INFO  - Navigated to URL: https://uat.doctorshealthfund.com.au/
+12:42:13.029 [main] INFO  - Browser opened successfully.
+12:42:13.044 [main] INFO  - Config properties loaded successfully.
+12:42:13.045 [main] INFO  - Opening browser...
+12:42:13.046 [main] INFO  - Navigating to the quote page.
+12:42:13.049 [main] INFO  - Config properties loaded successfully.
+12:42:13.273 [main] WARN  - Scenario is null, unable to take a screenshot.
+12:42:13.749 [main] INFO  - Browser closed.
+12:44:52.443 [main] INFO  - Config properties loaded successfully.
+12:44:52.447 [main] INFO  - Opening browser...
+12:44:52.448 [main] INFO  - Browser selected: chrome
+12:44:55.333 [main] INFO  - ChromeDriver initialized.
+12:44:58.601 [main] INFO  - Navigated to URL: https://uat.doctorshealthfund.com.au/
+12:44:58.601 [main] INFO  - Browser opened successfully.
+12:44:58.617 [main] INFO  - Config properties loaded successfully.
+12:44:58.618 [main] INFO  - Opening browser...
+12:44:58.618 [main] INFO  - Browser opened successfully.
+12:44:58.621 [main] INFO  - Navigating to the quote page.
+12:44:58.622 [main] INFO  - Config properties loaded successfully.
+12:44:58.712 [main] WARN  - Scenario is null, unable to take a screenshot.
+12:44:59.189 [main] INFO  - Browser closed.
+12:48:41.909 [main] INFO  - Config properties loaded successfully.
+12:48:41.914 [main] INFO  - Opening browser...
+12:48:41.914 [main] INFO  - Browser selected: chrome
+12:48:44.679 [main] INFO  - ChromeDriver initialized.
+12:48:48.425 [main] INFO  - Navigated to URL: https://uat.doctorshealthfund.com.au/
+12:48:48.425 [main] INFO  - Browser opened successfully.
+12:48:48.444 [main] INFO  - Config properties loaded successfully.
+12:48:48.445 [main] INFO  - Opening browser...
+12:48:48.445 [main] INFO  - Browser opened successfully.
+12:48:48.446 [main] INFO  - Navigating to the quote page.
+12:48:48.447 [main] INFO  - Config properties loaded successfully.
+12:48:48.555 [main] INFO  - Page title: Private Health Insurance for Doctors | Doctors' Health Fund
+12:48:48.557 [main] INFO  - Clicking the 'Get Quote' button.
+12:48:48.761 [main] INFO  - 'Get Quote' button clicked successfully.
+12:48:51.756 [main] WARN  - Scenario is null, unable to take a screenshot.
+12:48:52.144 [main] INFO  - Browser closed.
+12:51:32.634 [main] INFO  - Config properties loaded successfully.
+12:51:32.639 [main] INFO  - Opening browser...
+12:51:32.639 [main] INFO  - Browser selected: chrome
+12:51:35.353 [main] INFO  - ChromeDriver initialized.
+12:51:38.316 [main] INFO  - Navigated to URL: https://uat.doctorshealthfund.com.au/
+12:51:38.316 [main] INFO  - Browser opened successfully.
+12:51:38.330 [main] INFO  - Config properties loaded successfully.
+12:51:38.331 [main] INFO  - Opening browser...
+12:51:38.331 [main] INFO  - Browser opened successfully.
+12:51:38.332 [main] INFO  - Navigating to the quote page.
+12:51:38.333 [main] INFO  - Config properties loaded successfully.
+12:51:38.405 [main] INFO  - Page title: Private Health Insurance for Doctors | Doctors' Health Fund
+12:51:38.406 [main] INFO  - Clicking the 'Get Quote' button.
+12:51:38.709 [main] INFO  - 'Get Quote' button clicked successfully.
+12:51:41.670 [main] WARN  - Scenario is null, unable to take a screenshot.
+12:51:42.075 [main] INFO  - Browser closed.

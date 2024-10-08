@@ -5,11 +5,16 @@ import org.testng.annotations.Test;
 import java.io.File;
 import java.io.FileInputStream;
 import java.io.IOException;
+import java.nio.file.Files;
+import java.nio.file.StandardCopyOption;
 import java.text.SimpleDateFormat;
 import java.time.Duration;
 import java.util.Date;
 import java.util.Properties;
 
+import org.apache.commons.io.FileUtils;
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
 import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.OutputType;
@@ -29,12 +34,18 @@ import org.testng.annotations.Test;
 import com.google.common.annotations.VisibleForTesting;
 import com.qa.utils.TestUtils;
 
+import io.cucumber.java.After;
+import io.cucumber.java.AfterStep;
+import io.cucumber.java.Before;
+import io.cucumber.java.Scenario;
 import io.github.bonigarcia.wdm.WebDriverManager;
 
 public class BaseTest {
 
 	public static WebDriver driver;
 	public static Properties prop;
+	// Initialize logger
+	public static final Logger log = LogManager.getLogger(BaseTest.class);
 
 	// Constructor to load the config.properties file
 	public BaseTest() {
@@ -42,26 +53,30 @@ public class BaseTest {
 			prop = new Properties();
 			FileInputStream ip = new FileInputStream("src/test/resources/config.properties");
 			prop.load(ip);
+			log.info("Config properties loaded successfully.");
 		} catch (IOException e) {
-			e.printStackTrace();
+			log.error("Error loading config properties file.", e);
 		}
 	}
 
 	// Initialize the browser based on the config.properties
-	@BeforeTest
+	//@Before
 	public void initialize() {
 		String browserName = prop.getProperty("browser");
 		String url = prop.getProperty("url");
-
+		log.info("Browser selected: " + browserName);
 		if (browserName.equalsIgnoreCase("chrome")) {
 			// Use WebDriverManager to setup ChromeDriver
 			WebDriverManager.chromedriver().setup();
 			driver = new ChromeDriver();
+			log.info("ChromeDriver initialized.");
 		} else if (browserName.equalsIgnoreCase("edge")) {
 			// Use WebDriverManager to setup EdgeDriver
 			WebDriverManager.edgedriver().setup();
 			driver = new EdgeDriver();
+			log.info("EdgeDriver initialized.");
 		} else {
+			log.error("Browser type not supported: " + browserName);
 			throw new RuntimeException("Browser type not supported: " + browserName);
 		}
 
@@ -69,6 +84,7 @@ public class BaseTest {
 		driver.manage().window().maximize();
 		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(30));
 		driver.get(url);
+		log.info("Navigated to URL: " + url);
 	}
 
 	public WebDriver getDriver() {
@@ -222,11 +238,59 @@ public class BaseTest {
 			}
 		});
 	}
+	private void takeScreenshot(Scenario scenario) {
+        if (scenario != null) {
+            TakesScreenshot ts = (TakesScreenshot) driver;
+            byte[] screenshot = ts.getScreenshotAs(OutputType.BYTES);
+            scenario.attach(screenshot, "image/png", scenario.getName());
+
+            // Construct the path for the screenshot directory based on properties
+            String baseFolderPath = System.getProperty("user.dir") + "/test-output/SparkReport/";
+            String timestamp = new SimpleDateFormat("d-MM-yy HH-mm-ss").format(new Date());
+            String screenshotDir = baseFolderPath + timestamp + "/Screenshots/";
+
+            // Create the directory if it does not exist
+            File screenshotFolder = new File(screenshotDir);
+            if (!screenshotFolder.exists()) {
+                boolean created = screenshotFolder.mkdirs(); // Use mkdirs() to create any non-existent parent directories
+                if (created) {
+                    System.out.println("Screenshot folder created at: " + screenshotDir);
+                } else {
+                    System.out.println("Failed to create screenshot folder: " + screenshotDir);
+                }
+            }
+
+            // Prepare the full path for the screenshot file
+            String screenshotName = screenshotDir + scenario.getName().replaceAll(" ", "_") + "_" + getDateTime() + ".png";
+            File destinationFile = new File(screenshotName);
+
+            // Save the screenshot to the specified path
+            File srcFile = ts.getScreenshotAs(OutputType.FILE);
+            try {
+                FileUtils.copyFile(srcFile, destinationFile);
+                System.out.println("Screenshot saved at: " + destinationFile.getAbsolutePath());
+            } catch (IOException e) {
+                System.err.println("Error saving screenshot: " + e.getMessage());
+            }
+        } else {
+            System.out.println("Scenario is null, unable to take a screenshot.");
+        }
+    }
 
 	// Method to close the browser
-	@AfterTest
-	public void tearDown() {
-		driver.quit();
-	}
+	//@After
+	public void tearDown(Scenario scenario) {
+	    if (scenario != null) {
+	        log.info("Tearing down scenario: " + scenario.getName());
+	        takeScreenshot(scenario);
+	    } else {
+	        log.warn("Scenario is null, unable to take a screenshot.");
+	    }
 
+	    // Close the browser after the scenario
+	    if (driver != null) {
+	        driver.quit();
+	        log.info("Browser closed.");
+	    }
+	}
 }

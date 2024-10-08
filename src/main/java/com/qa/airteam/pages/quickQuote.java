@@ -13,9 +13,7 @@ public class quickQuote extends BaseTest {
 	private WebDriver driver;
 	// constructor for initialization page factory and drivers
 	public quickQuote(WebDriver driver) {
-		// initialize  driver
-		this.driver = driver;
-		// initialize page factory
+	    this.driver = driver;
 		PageFactory.initElements(driver, this);
 	}
 
@@ -28,8 +26,7 @@ public class quickQuote extends BaseTest {
 	@FindBy(id = "choice-SINGLE")
 	private WebElement coverFor;
 
-	// Locator for the Next button to proceed to the next step in the quote
-	// process
+	// Locator for the Next button to proceed to the next step in the quote process
 	@FindBy(xpath = "//button[@type='submit']")
 	private WebElement clickNext;
 
@@ -129,7 +126,7 @@ public class quickQuote extends BaseTest {
 		try {
 			return getQuote.isDisplayed(); // Return true if the button is visible
 		} catch (Exception e) {
-			return false; // Return false if an exception occurs (e.g., element not found)
+			return false; // Return false if an exception occurs (e.g. element not found)
 		}
 	}
 	

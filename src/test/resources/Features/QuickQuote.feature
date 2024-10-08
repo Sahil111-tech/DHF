@@ -14,4 +14,4 @@ Feature: Quick Quote Process
     And I select my annual income
     And I click the "Calculate Cover" button
     Then I should see the title "Get a private health insurance quote | Doctors' Health Fund"
-   #And I close the browser
+    And I close the browser
