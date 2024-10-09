@@ -238,59 +238,7 @@ public class BaseTest {
 			}
 		});
 	}
-	private void takeScreenshot(Scenario scenario) {
-        if (scenario != null) {
-            TakesScreenshot ts = (TakesScreenshot) driver;
-            byte[] screenshot = ts.getScreenshotAs(OutputType.BYTES);
-            scenario.attach(screenshot, "image/png", scenario.getName());
+	
+    
 
-            // Construct the path for the screenshot directory based on properties
-            String baseFolderPath = System.getProperty("user.dir") + "/test-output/SparkReport/";
-            String timestamp = new SimpleDateFormat("d-MM-yy HH-mm-ss").format(new Date());
-            String screenshotDir = baseFolderPath + timestamp + "/Screenshots/";
-
-            // Create the directory if it does not exist
-            File screenshotFolder = new File(screenshotDir);
-            if (!screenshotFolder.exists()) {
-                boolean created = screenshotFolder.mkdirs(); // Use mkdirs() to create any non-existent parent directories
-                if (created) {
-                    System.out.println("Screenshot folder created at: " + screenshotDir);
-                } else {
-                    System.out.println("Failed to create screenshot folder: " + screenshotDir);
-                }
-            }
-
-            // Prepare the full path for the screenshot file
-            String screenshotName = screenshotDir + scenario.getName().replaceAll(" ", "_") + "_" + getDateTime() + ".png";
-            File destinationFile = new File(screenshotName);
-
-            // Save the screenshot to the specified path
-            File srcFile = ts.getScreenshotAs(OutputType.FILE);
-            try {
-                FileUtils.copyFile(srcFile, destinationFile);
-                System.out.println("Screenshot saved at: " + destinationFile.getAbsolutePath());
-            } catch (IOException e) {
-                System.err.println("Error saving screenshot: " + e.getMessage());
-            }
-        } else {
-            System.out.println("Scenario is null, unable to take a screenshot.");
-        }
-    }
-
-	// Method to close the browser
-	//@After
-	public void tearDown(Scenario scenario) {
-	    if (scenario != null) {
-	        log.info("Tearing down scenario: " + scenario.getName());
-	        takeScreenshot(scenario);
-	    } else {
-	        log.warn("Scenario is null, unable to take a screenshot.");
-	    }
-
-	    // Close the browser after the scenario
-	    if (driver != null) {
-	        driver.quit();
-	        log.info("Browser closed.");
-	    }
-	}
 }

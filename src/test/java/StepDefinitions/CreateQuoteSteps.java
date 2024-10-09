@@ -20,29 +20,18 @@ public class CreateQuoteSteps {
 	BaseTest baseTest = new BaseTest();
 	WebDriver driver;
 	// Initialize logger
-    public static final Logger log = LogManager.getLogger(CreateQuoteSteps.class);
-
-	
-	  @Given("I open the browser") 
-	  public void i_open_the_browser() {
-	  log.info("Opening browser..."); // Initialize the browser
-		
-		  //baseTest.initialize(); // Retrieve the driver from BaseTest driver =
-		  driver=baseTest.getDriver(); 
-		  log.info("Browser opened successfully.");
-		 
-	  }
-	 
+	public static final Logger log = LogManager.getLogger(CreateQuoteSteps.class);
 
 	@Given("I am on the quote page")
 	public void i_am_on_the_quote_page() {
 		log.info("Navigating to the quote page.");
-		//Initialize the quickQuote object
-		quote = new quickQuote(driver);
-       // Assertion to verify the URL
+		driver = baseTest.getDriver(); // driver is initialized here
+		quote = new quickQuote(driver); // Passed the driver to the quickQuote object
+
+		// Assertion to verify the URL
 		baseTest.waitForPageToLoad();
 		String expectedUrl = "https://uat.doctorshealthfund.com.au/";
-		String CurrentUrl = quote.getCurrentURL(); 
+		String CurrentUrl = quote.getCurrentURL();
 		Assert.assertTrue(CurrentUrl.equals(expectedUrl),
 				"Unexpected page url! expected [" + expectedUrl + "] but found [" + CurrentUrl + "]");
 
@@ -108,10 +97,4 @@ public class CreateQuoteSteps {
 		Assert.assertEquals(actualTitle, expectedTitle);
 	}
 
-	@Then("I close the browser")
-	public void i_close_the_browser() {
-		// Close the browser
-		
-		//baseTest.tearDown(null);
-	}
 }
