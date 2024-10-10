@@ -29,7 +29,7 @@ public class CreateQuoteSteps {
 		quote = new quickQuote(driver); // Passed the driver to the quickQuote object
 
 		// Assertion to verify the URL
-		baseTest.waitForPageToLoad();
+		baseTest.waitForPageToLoad(driver);
 		String expectedUrl = "https://uat.doctorshealthfund.com.au/";
 		String CurrentUrl = quote.getCurrentURL();
 		Assert.assertTrue(CurrentUrl.equals(expectedUrl),

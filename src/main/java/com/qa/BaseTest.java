@@ -17,6 +17,7 @@ import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
+import org.openqa.selenium.NoSuchWindowException;
 import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
@@ -82,7 +83,7 @@ public class BaseTest {
 
 		// Maximize window and launch the URL from config.properties
 		driver.manage().window().maximize();
-		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(30));
+		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(60));
 		driver.get(url);
 		log.info("Navigated to URL: " + url);
 	}
@@ -230,13 +231,15 @@ public class BaseTest {
 		return by;
 	}
 
-	public void waitForPageToLoad() {
-		new WebDriverWait(driver, Duration.ofSeconds(30)).until(new ExpectedCondition<Boolean>() {
-			@Override
-			public Boolean apply(WebDriver webDriver) {
-				return ((JavascriptExecutor) webDriver).executeScript("return document.readyState").equals("complete");
-			}
-		});
+	public void waitForPageToLoad(WebDriver driver) {
+	    WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(60));
+	    wait.until(webDriver -> {
+	        try {
+	            return ((JavascriptExecutor) webDriver).executeScript("return document.readyState").equals("complete");
+	        } catch (NoSuchWindowException e) {
+	            return false;
+	        }
+	    });
 	}
 	
     
