@@ -1,31 +1,31 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
+<testng-results ignored="0" total="2" passed="2" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2024-10-10T07:57:37 IST" name="Default suite" finished-at="2024-10-10T07:58:01 IST" duration-ms="23964">
+  <suite started-at="2024-10-24T13:09:49 IST" name="Default suite" finished-at="2024-10-24T13:10:28 IST" duration-ms="39454">
     <groups>
       <group name="cucumber">
-        <method signature="AbstractTestNGCucumberTests.runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runners.RunCucumberTest@6e509ffa]" name="runScenario" class="io.cucumber.testng.AbstractTestNGCucumberTests"/>
+        <method signature="AbstractTestNGCucumberTests.runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runners.RunCucumberTest@3e96bacf]" name="runScenario" class="io.cucumber.testng.AbstractTestNGCucumberTests"/>
       </group> <!-- cucumber -->
     </groups>
-    <test started-at="2024-10-10T07:57:37 IST" name="Default test" finished-at="2024-10-10T07:58:01 IST" duration-ms="23964">
+    <test started-at="2024-10-24T13:09:49 IST" name="Default test" finished-at="2024-10-24T13:10:28 IST" duration-ms="39454">
       <class name="runners.RunCucumberTest">
-        <test-method is-config="true" signature="setUpClass(org.testng.ITestContext)[pri:0, instance:runners.RunCucumberTest@6e509ffa]" started-at="2024-10-10T07:57:37 IST" name="setUpClass" finished-at="2024-10-10T07:57:38 IST" duration-ms="765" status="PASS">
+        <test-method is-config="true" signature="setUpClass(org.testng.ITestContext)[pri:0, instance:runners.RunCucumberTest@3e96bacf]" started-at="2024-10-24T13:09:49 IST" name="setUpClass" finished-at="2024-10-24T13:09:50 IST" duration-ms="992" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[org.testng.TestRunner@77ecdc2b]]>
+                <![CDATA[org.testng.TestRunner@98722ef]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUpClass -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runners.RunCucumberTest@6e509ffa]" started-at="2024-10-10T07:57:38 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2024-10-10T07:57:57 IST" duration-ms="18601" status="PASS">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runners.RunCucumberTest@3e96bacf]" started-at="2024-10-24T13:09:50 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2024-10-24T13:10:06 IST" duration-ms="15640" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA["User completes the quick quote process"]]>
+                <![CDATA["User verifies Starter Extras Eligibility"]]>
               </value>
             </param>
             <param index="1">
@@ -37,7 +37,23 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method is-config="true" signature="tearDownClass()[pri:0, instance:runners.RunCucumberTest@6e509ffa]" started-at="2024-10-10T07:57:57 IST" name="tearDownClass" finished-at="2024-10-10T07:58:01 IST" duration-ms="4554" status="PASS">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runners.RunCucumberTest@3e96bacf]" started-at="2024-10-24T13:10:06 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2024-10-24T13:10:23 IST" duration-ms="17433" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["User verifies Starter Extras Eligibility"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Quick Quote Process"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method is-config="true" signature="tearDownClass()[pri:0, instance:runners.RunCucumberTest@3e96bacf]" started-at="2024-10-24T13:10:23 IST" name="tearDownClass" finished-at="2024-10-24T13:10:28 IST" duration-ms="5339" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDownClass -->

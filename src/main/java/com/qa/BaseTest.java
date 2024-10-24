@@ -10,6 +10,7 @@ import java.nio.file.StandardCopyOption;
 import java.text.SimpleDateFormat;
 import java.time.Duration;
 import java.util.Date;
+import java.util.List;
 import java.util.Properties;
 
 import org.apache.commons.io.FileUtils;
@@ -27,6 +28,7 @@ import org.openqa.selenium.edge.EdgeDriver;
 import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.ui.ExpectedCondition;
 import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.Select;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeTest;
@@ -45,53 +47,12 @@ public class BaseTest {
 
 	public static WebDriver driver;
 	public static Properties prop;
-	// Initialize logger
+	protected JavascriptExecutor js;
+	
 	public static final Logger log = LogManager.getLogger(BaseTest.class);
+	
 
-	// Constructor to load the config.properties file
-	public BaseTest() {
-		try {
-			prop = new Properties();
-			FileInputStream ip = new FileInputStream("src/test/resources/config.properties");
-			prop.load(ip);
-			log.info("Config properties loaded successfully.");
-		} catch (IOException e) {
-			log.error("Error loading config properties file.", e);
-		}
-	}
 
-	// Initialize the browser based on the config.properties
-	//@Before
-	public void initialize() {
-		String browserName = prop.getProperty("browser");
-		String url = prop.getProperty("url");
-		log.info("Browser selected: " + browserName);
-		if (browserName.equalsIgnoreCase("chrome")) {
-			// Use WebDriverManager to setup ChromeDriver
-			WebDriverManager.chromedriver().setup();
-			driver = new ChromeDriver();
-			log.info("ChromeDriver initialized.");
-		} else if (browserName.equalsIgnoreCase("edge")) {
-			// Use WebDriverManager to setup EdgeDriver
-			WebDriverManager.edgedriver().setup();
-			driver = new EdgeDriver();
-			log.info("EdgeDriver initialized.");
-		} else {
-			log.error("Browser type not supported: " + browserName);
-			throw new RuntimeException("Browser type not supported: " + browserName);
-		}
-
-		// Maximize window and launch the URL from config.properties
-		driver.manage().window().maximize();
-		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(60));
-		driver.get(url);
-		log.info("Navigated to URL: " + url);
-	}
-
-	public WebDriver getDriver() {
-		return driver;
-
-	}
 
 	public String getDateTime() {
 		// Create a date format
@@ -230,6 +191,24 @@ public class BaseTest {
 		}
 		return by;
 	}
+	// Generic method to scroll
+    public void scrollBy(int xOffset, int yOffset) {
+    	  if (js == null) {
+    	        js = (JavascriptExecutor) driver; // Reinitialize if null
+    	    }
+    	    if (js != null) {
+    	        js.executeScript("window.scrollBy(arguments[0], arguments[1]);", xOffset, yOffset);
+    	    } else {
+    	        throw new IllegalStateException("JavascriptExecutor is still null after reinitialization");
+    	    }
+    }
+
+    // Method to scroll to a specific element
+    public void scrollToElement(WebElement element) {
+        JavascriptExecutor js = (JavascriptExecutor) driver;
+        js.executeScript("arguments[0].scrollIntoView(true);", element);
+        log.info("Scrolled to element: " + element);
+    }
 
 	public void waitForPageToLoad(WebDriver driver) {
 	    WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(60));
@@ -240,8 +219,54 @@ public class BaseTest {
 	            return false;
 	        }
 	    });
-	}
+	    
+	   }
 	
+
+    // Method to select a value from dropdown by visible text
+    public void selectDropdownByVisibleText(WebElement element, String visibleText) {
+        waitVisibility(element);
+        Select dropdown = new Select(element);
+        dropdown.selectByVisibleText(visibleText);
+        log.info("Selected value from dropdown by visible text: " + visibleText);
+    }
+
+    // Method to select a value from dropdown by value attribute
+    public void selectDropdownByValue(WebElement element, String value) {
+        waitVisibility(element);
+        Select dropdown = new Select(element);
+        dropdown.selectByValue(value);
+        log.info("Selected value from dropdown by value: " + value);
+    }
+
+    // Method to select a value from dropdown by index
+    public void selectDropdownByIndex(WebElement element, int index) {
+        waitVisibility(element);
+        Select dropdown = new Select(element);
+        dropdown.selectByIndex(index);
+        log.info("Selected value from dropdown by index: " + index);
+    }
+
+    // Example usage of selecting dropdown based on locator
+    public void selectDropdownByLocator(String locator, String visibleText) {
+        WebElement dropdownElement = getElement(locator);
+        selectDropdownByVisibleText(dropdownElement, visibleText);
+    }
+    public static void scrollUpBy400(WebDriver driver) {
+        JavascriptExecutor js = (JavascriptExecutor) driver;
+        js.executeScript("window.scrollBy(0, -400);");
+    }
+    public static void scrollDownBy500(WebDriver driver) {
+        JavascriptExecutor js = (JavascriptExecutor) driver;
+        js.executeScript("window.scrollBy(0, 500);");
+    }
+    // Method to retrieve all options from dropdown
+    public List<WebElement> getAllDropdownOptions(WebElement element) {
+        waitVisibility(element);
+        Select dropdown = new Select(element);
+        return dropdown.getOptions();
+    }
+    
     
 
 }

@@ -4,6 +4,7 @@ import static org.testng.Assert.assertEquals;
 
 import java.time.Duration;
 
+import org.openqa.selenium.WebDriver;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
@@ -11,6 +12,11 @@ import com.qa.BaseTest;
 import com.qa.airteam.pages.quickQuote;
 
 public class quickQuoteTest extends BaseTest {
+
+	public quickQuoteTest(WebDriver driver) {
+		
+		// TODO Auto-generated constructor stub
+	}
 
 	private quickQuote quote;
 
