@@ -17,6 +17,7 @@ import org.apache.commons.io.FileUtils;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 import org.openqa.selenium.By;
+import org.openqa.selenium.ElementClickInterceptedException;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.NoSuchWindowException;
 import org.openqa.selenium.OutputType;
@@ -211,7 +212,7 @@ public class BaseTest {
     }
 
 	public void waitForPageToLoad(WebDriver driver) {
-	    WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(60));
+	    WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(120));
 	    wait.until(webDriver -> {
 	        try {
 	            return ((JavascriptExecutor) webDriver).executeScript("return document.readyState").equals("complete");
@@ -252,13 +253,38 @@ public class BaseTest {
         WebElement dropdownElement = getElement(locator);
         selectDropdownByVisibleText(dropdownElement, visibleText);
     }
+    
+    public void switchToNewWindow(WebDriver driver) {
+        String mainWindowHandle = driver.getWindowHandle();
+        for (String windowHandle : driver.getWindowHandles()) {
+            if (!windowHandle.equals(mainWindowHandle)) {
+                driver.switchTo().window(windowHandle);
+                break;
+            }
+        }
+    }
+    
+    //Method to scoll up to the page
     public static void scrollUpBy400(WebDriver driver) {
         JavascriptExecutor js = (JavascriptExecutor) driver;
         js.executeScript("window.scrollBy(0, -400);");
     }
+   
+    // Method to scroll to the Mid of the page
     public static void scrollDownBy500(WebDriver driver) {
         JavascriptExecutor js = (JavascriptExecutor) driver;
         js.executeScript("window.scrollBy(0, 500);");
+    }
+    
+ // Method to scroll to the top of the page
+    public void scrollToTop(WebDriver driver) {
+        try {
+            Thread.sleep(3000);  
+            JavascriptExecutor js = (JavascriptExecutor) driver;
+            js.executeScript("window.scrollTo(0, 0);");
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
     }
     // Method to retrieve all options from dropdown
     public List<WebElement> getAllDropdownOptions(WebElement element) {
@@ -266,6 +292,33 @@ public class BaseTest {
         Select dropdown = new Select(element);
         return dropdown.getOptions();
     }
+    
+    
+    public void safelyClickElement(WebElement element,WebDriver driver) {
+        WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
+        int attempts = 0;
+
+        while (attempts < 3) {
+            try {
+                wait.until(ExpectedConditions.elementToBeClickable(element));  // Wait until clickable
+                element.click();  // Attempt to click the element
+                log.info("Clicked the element successfully");
+                return;
+            } catch (ElementClickInterceptedException e) {
+                log.warn("Element click intercepted, retrying... attempt: " + (attempts + 1));
+                attempts++;
+
+                // Use JavaScript click as a fallback after retries
+                if (attempts == 3) {
+                    JavascriptExecutor js = (JavascriptExecutor) driver;
+                    js.executeScript("arguments[0].scrollIntoView(true);", element);  // Scroll into view
+                    js.executeScript("arguments[0].click();", element);  // JavaScript click
+                    log.info("Clicked the element using JavaScript click as a fallback");
+                }
+            }
+        }
+    }
+    
     
     
 

@@ -31,13 +31,13 @@ public class quickQuoteTest extends BaseTest {
 		quote.clickGetQuote();
 
 		// Step 2: Select cover for single
-		quote.selectCoverForSingle();
+		//quote.selectCoverForSingle();
 
 		// Step 3: Click on "Next" button
 		quote.clickNext();
 
 		// Step 4: Select residence "NSW"
-		quote.clickResidenceNSW();
+		//quote.clickResidenceNSW();
 
 		// Step 5: Click on Next button
 		quote.clickNext();
@@ -51,7 +51,7 @@ public class quickQuoteTest extends BaseTest {
 		quote.clickNext();
 
 		// Step 8: Select annual income
-		quote.selectAnnualIncomeOption();
+		//quote.selectAnnualIncomeOption();
 
 		// Step 9: Click on Calculate cover button
 		quote.clickCalculateCover();

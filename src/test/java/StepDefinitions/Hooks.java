@@ -12,24 +12,15 @@ import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.edge.EdgeDriver;
-import org.testng.annotations.BeforeClass;
-import org.testng.annotations.BeforeMethod;
-import org.testng.annotations.BeforeSuite;
-import org.testng.annotations.BeforeTest;
-
-import com.qa.BaseTest;
 import com.qa.airteam.pages.StarterExtrasEligibilityTest;
 import io.cucumber.java.AfterStep;
 import io.cucumber.java.Before;
-import io.cucumber.java.BeforeAll;
-import io.cucumber.java.BeforeStep;
 import io.cucumber.java.Scenario;
 import io.github.bonigarcia.wdm.WebDriverManager;
 
 public class Hooks  {
 	public static WebDriver driver;
 	public static Properties prop;
-	public static final Logger log1 = LogManager.getLogger(Hooks.class);
 
 	// Initialize logger
 	public static final Logger log = LogManager.getLogger(Hooks.class);

@@ -9,50 +9,50 @@ import org.openqa.selenium.support.PageFactory;
 import com.qa.BaseTest;
 
 public class quickQuote extends BaseTest {
-	
-	private WebDriver driver;
+
+	protected WebDriver driver;
+
 	// constructor for initialization page factory and drivers
 	public quickQuote(WebDriver driver) {
-	    this.driver = driver;
+		this.driver = driver;
 		PageFactory.initElements(driver, this);
 	}
 
-
 	// Locator for the Get Quote button to initiate the quote process
-	@FindBy(xpath ="//a[@data-id='get-quote-btn']")
-	private WebElement getQuote;
+	@FindBy(xpath = "//a[@data-id='get-quote-btn']")
+	protected WebElement getQuote;
 
 	// Locator to select cover type as Single
-	@FindBy(id = "choice-SINGLE")
-	private WebElement coverFor;
+	@FindBy(xpath = "//div[@data-id='status']")
+	protected WebElement coverForContainer;
 
 	// Locator for the Next button to proceed to the next step in the quote process
 	@FindBy(xpath = "//button[@type='submit']")
-	private WebElement clickNext;
+	protected WebElement clickNext;
 
 	// Locator to click on "where do you living?"
-	@FindBy(xpath = "//button[text()='NSW']")
-	private WebElement clickResidence;
+	@FindBy(xpath = "//div[@data-id='region']")
+	protected WebElement residenceContainer;
 
 	// Locator for the input field to enter the day of birth
 	@FindBy(name = "yourDobDay")
-	private WebElement inputDate;
+	protected WebElement inputDate;
 
 	// Locator for the input field to enter the month of birth
 	@FindBy(name = "yourDobMonth")
-	private WebElement inputMonth;
+	protected WebElement inputMonth;
 
 	// Locator for the input field to enter the year of birth
 	@FindBy(name = "yourDobYear")
-	private WebElement inputYear;
+	protected WebElement inputYear;
 
 	// Locator for the button to select the annual income option
-	@FindBy(id = "choice-0")
-	private WebElement selectAnnualIncome;
+	@FindBy(xpath = "//div[@data-id='tier']")
+	protected WebElement annualIncomeContainer;
 
 	// Locator for the "Calculate cover" button to click on proceed further
 	@FindBy(xpath = "//div[text()='Calculate cover']")
-	private WebElement clickCalculateCover;
+	protected WebElement clickCalculateCover;
 
 	/***************************
 	 * Below are the Actions methods for above locators
@@ -64,10 +64,18 @@ public class quickQuote extends BaseTest {
 		click(getQuote);
 	}
 
-	// Action method to select cover type as "Single"
-	public void selectCoverForSingle() {
-		waitVisibility(coverFor); // Wait for the element to be visible
-		click(coverFor);
+	public void selectCoverFor(String coverType) {
+		// Wait for the cover type container to be visible
+		waitVisibility(coverForContainer);
+
+		// Construct the specific radio button WebElement based on the cover type name
+		WebElement coverOption = coverForContainer
+				.findElement(By.xpath("//button[contains(text(), '" + coverType + "')]"));
+
+		// Click on the specific cover option
+		click(coverOption);
+
+		log.info("Selected cover for: " + coverType);
 	}
 
 	// Action method to click the "Next" button after selection of cover type
@@ -76,64 +84,81 @@ public class quickQuote extends BaseTest {
 		click(clickNext);
 	}
 
-	// Action method to select residence as "NSW"
-	public void clickResidenceNSW() {
-		waitVisibility(clickResidence); 
-		click(clickResidence);
+	// Action method to select residence as residence
+	public void selectResidence(String residence) {
+		// Wait for the residence container to be visible
+		waitVisibility(residenceContainer);
+
+		// Constructed the specific radio button WebElement based on the residence name
+		WebElement residenceOption = residenceContainer
+				.findElement(By.xpath("//button[contains(text(), '" + residence + "')]"));
+
+		// Click on the specific residence option
+		click(residenceOption);
+
+		log.info("Selected residence: " + residence);
+
 	}
 
 	// Action method to enter the date of birth
 	public void enterDateOfBirth(String day) {
-		waitVisibility(inputDate); 
+		waitVisibility(inputDate);
 		sendKeys(inputDate, day);
 	}
 
 	// Action method to enter the month of birth
-	public void enterMonthOfBirth(String month) {
-		waitVisibility(inputMonth); 
+	public  void enterMonthOfBirth(String month) {
+		waitVisibility(inputMonth);
 		sendKeys(inputMonth, month);
 	}
 
 	// Action method to enter the year of birth
-	public void enterYearOfBirth(String year) {
-		waitVisibility(inputYear); 
+	public  void enterYearOfBirth(String year) {
+		waitVisibility(inputYear);
 		sendKeys(inputYear, year);
 	}
 
 	// Action method to select the annual income options
-	public void selectAnnualIncomeOption() {
-		waitVisibility(selectAnnualIncome); 
-		click(selectAnnualIncome); //wait 
-		
+	public  void selectAnnualIncome(String salary) {
+		// Wait for the annual income container to be visible
+		waitVisibility(annualIncomeContainer);
+
+		// Constructed the specific radio button WebElement based on the salary name
+		WebElement salaryOption = annualIncomeContainer
+				.findElement(By.xpath("//button[contains(text(), '" + salary + "')]"));
+
+		// Click on the specific salary option
+		click(salaryOption);
+
+		log.info("Selected annual income: " + salary);
 	}
 
 	// Action method to click the "Calculate cover" button
-	public void clickCalculateCover() {
-		waitVisibility(clickCalculateCover); 
+	public  void clickCalculateCover() {
+		waitVisibility(clickCalculateCover);
 		click(clickCalculateCover);
 	}
-	
-	
-	/************************************Assertions***************************************************/
 
-    // Method to get the page title
-    public String getPageTitle() {
-        return driver.getTitle(); // Returns the title of the current page
-    }
-    
+	/************************************
+	 * Assertions
+	 ***************************************************/
+
+	// Method to get the page title
+	public  String getPageTitle() {
+		return driver.getTitle(); // Returns the title of the current page
+	}
+
 	// Add this method to check if the Get Quote button is visible
-	public boolean isGetQuoteButtonVisible() {
+	public  boolean isGetQuoteButtonVisible() {
 		try {
 			return getQuote.isDisplayed(); // Return true if the button is visible
 		} catch (Exception e) {
 			return false; // Return false if an exception occurs (e.g. element not found)
 		}
 	}
-	
-	public String getCurrentURL() {
-	    return driver.getCurrentUrl(); // This should return the URL of the current page
-	}
- 
 
-   
+	public  String getCurrentURL() {
+		return driver.getCurrentUrl(); // This should return the URL of the current page
+	}
+
 }
