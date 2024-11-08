@@ -13,6 +13,8 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.edge.EdgeDriver;
 import com.qa.airteam.pages.StarterExtrasEligibilityTest;
+
+import io.cucumber.java.After;
 import io.cucumber.java.AfterStep;
 import io.cucumber.java.Before;
 import io.cucumber.java.Scenario;
@@ -62,7 +64,7 @@ public class Hooks  {
 		log.info("Navigated to URL: " + url);
 	}
 
-	// @After
+	//@After
 	public void tearDown(Scenario scenario) {
 		if (driver != null) {
 			driver.quit();
@@ -77,36 +79,37 @@ public class Hooks  {
 		return getStarterExtras(); // Getter to provide the page object instance
 	}
 
+	
+	
+	  @AfterStep
+	  
+	  public void addScreenshot(Scenario scenario) {
+	  
+	  if(scenario.isFailed()) {
+	  
+	  TakesScreenshot ts = (TakesScreenshot) driver; byte[] screenshot =
+	  ts.getScreenshotAs(OutputType.BYTES); scenario.attach(screenshot,
+	  "image/png", scenario.getName());
+	  
+	  }
+	  
+	  }
+	 
+
+	//it is designed to capture and attach screenshots for every step of a scenario during test execution
 	/*
-	 * @AfterStep
+	 * @AfterStep public void addScreenshot(Scenario scenario) { if (driver != null)
+	 * { TakesScreenshot ts = (TakesScreenshot) driver; byte[] screenshot =
+	 * ts.getScreenshotAs(OutputType.BYTES);
 	 * 
-	 * public void addScreenshot(Scenario scenario) {
+	 * if (scenario.isFailed()) {
 	 * 
-	 * if(scenario.isFailed()) {
+	 * scenario.attach(screenshot, "image/png", "Screenshot for failed step: " +
+	 * scenario.getName()); } else {
 	 * 
-	 * TakesScreenshot ts = (TakesScreenshot) driver; byte[] screenshot =
-	 * ts.getScreenshotAs(OutputType.BYTES); scenario.attach(screenshot,
-	 * "image/png", scenario.getName());
-	 * 
-	 * }
+	 * scenario.attach(screenshot, "image/png", "Screenshot for passed step: " +
+	 * scenario.getName()); } }
 	 * 
 	 * }
 	 */
-
-	@AfterStep
-	public void addScreenshot(Scenario scenario) {
-		if (driver != null) {
-			TakesScreenshot ts = (TakesScreenshot) driver;
-			byte[] screenshot = ts.getScreenshotAs(OutputType.BYTES);
-
-			if (scenario.isFailed()) {
-
-				scenario.attach(screenshot, "image/png", "Screenshot for failed step: " + scenario.getName());
-			} else {
-
-				scenario.attach(screenshot, "image/png", "Screenshot for passed step: " + scenario.getName());
-			}
-		}
-
-	}
 }

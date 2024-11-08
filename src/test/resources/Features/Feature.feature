@@ -68,3 +68,33 @@ Feature: Quick Quote Process
     When the user attempts to select "Starter Extras"
     Then "Starter Extras" should be disabled
 
+@CompleteMAFSubmission
+  Scenario: Complete MAF Application Submission
+  
+   Given I am on the quote page
+    When I click the "Get Quote" button
+    And I select cover for "Single"
+    And I click the "Next" button
+    And I select the residence as "NSW"
+    And I click the "Next" button
+    And I enter my date of birth as "01/01/1987"
+    And I click the "Next" button
+    And I select the annual income as "Below $97k"
+    And I click the "Calculate Cover" button
+    And I clicked on Apply Now button
+    And I select No for Doctors' Health Fund membership
+    And I select Yes for Australian citizenship or permanent residency
+    And I click on the Medical Practitioner button
+    And I select "Retired doctor" as medical practitioner
+    And click continue button
+    And I select the option "No" for transferring from another fund
+    And click next button
+    And I select "Mr" as the title
+    And I enter a random full name
+    And I select the gender as "Male"
+    And click next button
+    And the user enters and verifies a random email
+    And the user enters a random phone number
+    And the user enters and selects the value "123 A'" in the dropdown
+
+    

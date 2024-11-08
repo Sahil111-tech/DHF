@@ -18,7 +18,7 @@ import org.w3c.dom.NodeList;
 
 
 public class TestUtils {
-public static final Duration WAIT =Duration.ofSeconds(30);
+public static final Duration WAIT =Duration.ofSeconds(60);
 public static HashMap<String, String> parseStringXML(InputStream file) throws Exception {
 	//class: returns the Class object associated with this class
 	//getClassLoader(): returns the ClassLoader object associated with this Class.

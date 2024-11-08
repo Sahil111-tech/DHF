@@ -27,7 +27,7 @@ public class quickQuote extends BaseTest {
 	protected WebElement coverForContainer;
 
 	// Locator for the Next button to proceed to the next step in the quote process
-	@FindBy(xpath = "//button[@type='submit']")
+	@FindBy(xpath = "//button[@type='submit']") //"//button[@type='submit']"
 	protected WebElement clickNext;
 
 	// Locator to click on "where do you living?"
@@ -60,13 +60,15 @@ public class quickQuote extends BaseTest {
 
 	// Action method to click the "Get Quote" button
 	public void clickGetQuote() {
-		waitVisibility(getQuote); // Wait for the element to be visible
+		//waitVisibility(getQuote); // Wait for the element to be visible
+		waitForVisibility(getQuote, driver);
+		waitForElementToBeClickable(driver, getQuote);
 		click(getQuote);
 	}
 
 	public void selectCoverFor(String coverType) {
 		// Wait for the cover type container to be visible
-		waitVisibility(coverForContainer);
+		waitVisibility(coverForContainer, driver);
 
 		// Construct the specific radio button WebElement based on the cover type name
 		WebElement coverOption = coverForContainer
@@ -80,14 +82,14 @@ public class quickQuote extends BaseTest {
 
 	// Action method to click the "Next" button after selection of cover type
 	public void clickNext() {
-		waitVisibility(clickNext); // Wait for the element to be visible
+		waitVisibility(clickNext, driver); // Wait for the element to be visible
 		click(clickNext);
 	}
 
 	// Action method to select residence as residence
 	public void selectResidence(String residence) {
 		// Wait for the residence container to be visible
-		waitVisibility(residenceContainer);
+		waitVisibility(residenceContainer, driver);
 
 		// Constructed the specific radio button WebElement based on the residence name
 		WebElement residenceOption = residenceContainer
@@ -102,26 +104,26 @@ public class quickQuote extends BaseTest {
 
 	// Action method to enter the date of birth
 	public void enterDateOfBirth(String day) {
-		waitVisibility(inputDate);
+		waitVisibility(inputDate, driver);
 		sendKeys(inputDate, day);
 	}
 
 	// Action method to enter the month of birth
 	public  void enterMonthOfBirth(String month) {
-		waitVisibility(inputMonth);
+		waitVisibility(inputMonth, driver);
 		sendKeys(inputMonth, month);
 	}
 
 	// Action method to enter the year of birth
 	public  void enterYearOfBirth(String year) {
-		waitVisibility(inputYear);
+		waitVisibility(inputYear, driver);
 		sendKeys(inputYear, year);
 	}
 
 	// Action method to select the annual income options
 	public  void selectAnnualIncome(String salary) {
 		// Wait for the annual income container to be visible
-		waitVisibility(annualIncomeContainer);
+		waitVisibility(annualIncomeContainer, driver);
 
 		// Constructed the specific radio button WebElement based on the salary name
 		WebElement salaryOption = annualIncomeContainer
@@ -135,7 +137,7 @@ public class quickQuote extends BaseTest {
 
 	// Action method to click the "Calculate cover" button
 	public  void clickCalculateCover() {
-		waitVisibility(clickCalculateCover);
+		waitVisibility(clickCalculateCover, driver);
 		click(clickCalculateCover);
 	}
 

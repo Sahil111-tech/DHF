@@ -1,10 +1,5 @@
 package runners;
 
-import org.testng.annotations.Listeners;
-
-//import com.qa.listeners.CucumberCustomReportGenerator;
-//import com.qa.listeners.ExtentReportListener;
-
 import io.cucumber.testng.AbstractTestNGCucumberTests;
 import io.cucumber.testng.CucumberOptions;
 
@@ -14,7 +9,7 @@ import io.cucumber.testng.CucumberOptions;
 dryRun = false, 
 monochrome = true,
 publish=true,
-tags = "@starterExtras"
+tags = "@starterExtras" 
 )
 
 

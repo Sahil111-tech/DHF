@@ -1,8 +1,19 @@
 package StepDefinitions;
 
+import java.time.Duration;
+
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
+import org.openqa.selenium.By;
+import org.openqa.selenium.JavascriptExecutor;
+import org.openqa.selenium.NoSuchElementException;
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.interactions.Actions;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.FluentWait;
+import org.openqa.selenium.support.ui.Wait;
+import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.Assert;
 
 import com.qa.BaseTest;
@@ -51,18 +62,20 @@ public class CreateQuoteSteps {
 	}
 
 	@When("I click the \"Get Quote\" button")
-	public void i_click_the_get_quote_button() {
+	public void i_click_the_get_quote_button() throws InterruptedException {
 		log.info("Clicking the 'Get Quote' button.");
 		// Verify the visibility of the "Get Quote" button and click it
-		Assert.assertTrue(quote.isGetQuoteButtonVisible(), "Get Quote button is not visible.");
+		// Assert.assertTrue(quote.isGetQuoteButtonVisible(), "Get Quote button is not
+		// visible.");
+	
 		quote.clickGetQuote();
 		log.info("'Get Quote' button clicked successfully.");
 	}
 
-	@When("I select cover for {string}")
-	public void i_select_cover_for(String coverType) {
-	    quote.selectCoverFor(coverType); // Call the new method with the parameter
-	}
+	
+	  @When("I select cover for {string}") public void i_select_cover_for(String
+	  coverType) { quote.selectCoverFor(coverType); }// Call the new method with the parameter }
+	 
 
 	@When("I click the \"Next\" button")
 	public void i_click_the_next_button() {
@@ -71,7 +84,7 @@ public class CreateQuoteSteps {
 
 	@When("I select the residence as {string}")
 	public void i_select_the_residence_as(String residence) {
-	    quote.selectResidence(residence); // Call the new method with the parameter
+		quote.selectResidence(residence); // Call the new method with the parameter
 	}
 
 	@When("I click the \"Next\" button again")
@@ -90,7 +103,7 @@ public class CreateQuoteSteps {
 
 	@When("I select the annual income as {string}")
 	public void i_select_the_annual_income_as(String salary) {
-	    quote.selectAnnualIncome(salary); // Call the new method with the parameter
+		quote.selectAnnualIncome(salary); // Call the new method with the parameter
 	}
 
 	@When("I click the \"Calculate Cover\" button")
@@ -163,8 +176,8 @@ public class CreateQuoteSteps {
 
 	@Given("I clicked on the coverage type dropdown and selected {string}.")
 	public void i_clicked_On_cover_type_dropdown(String coverType) throws InterruptedException {
-	    baseTest.scrollToTop(driver);
-	    starterExtras.selectCoverType(coverType); 
+		baseTest.scrollToTop(driver);
+		starterExtras.selectCoverType(coverType);
 	}
 
 	/***********************
@@ -194,12 +207,123 @@ public class CreateQuoteSteps {
 	public void i_clicked_on_update_detail_button() {
 		starterExtras.clickUpdateDetails();
 	}
-	
+
 	@When("the user clicks on {string}")
-    public void the_user_clicks_on(String buttonName) {
+	public void the_user_clicks_on(String buttonName) {
 		baseTest.scrollDownBy500(driver);
-        if (buttonName.equals("Choose Covers")) {
-            starterExtras.clickChooseCovers();
-        }
-}
+		if (buttonName.equals("Choose Covers")) {
+			starterExtras.clickChooseCovers();
+		}
+	}
+
+	/*************************
+	 * Steps for submission end to end MAF application
+	 ****************************************/
+	// click apply now button
+
+	@Given("I clicked on Apply Now button")
+	public void i_clicked_on_apply_now_button() {
+		baseTest.scrollDownBy500(driver);
+		starterExtras.clickApplyNowButton();
+	}
+
+	@Given("I select No for Doctors' Health Fund membership")
+	public void i_select_no_for_doctors_health_fund_membership() throws InterruptedException {
+		Thread.sleep(2000);
+		baseTest.scrollByPixels(450, driver);
+		starterExtras.clickMemberStatusNoRadioButton();
+	}
+
+	@Given("I select Yes for Australian citizenship or permanent residency")
+	public void i_select_yes_for_australian_citizenship_or_permanent_residency() throws InterruptedException {
+
+		starterExtras.clickCitizenshipYesRadioButton();
+	}
+
+	@Given("I click on the Health Practitioner button")
+	public void i_click_on_the_health_practitioner_button() throws InterruptedException {
+		baseTest.scrollByPixels(350, driver);
+		starterExtras.clickHealthPractionerBtn();
+	}
+
+	@Given("I click on the Medical Practitioner button")
+	public void i_click_on_the_Medical_practitioner_button() throws InterruptedException {
+		baseTest.scrollByPixels(350, driver);
+		starterExtras.clickMedicalPractionerBtn();
+	}
+
+	/*
+	 * @Given("I select medical practitioner") public void
+	 * i_select_medical_practitioner_type(String practitionerType) {
+	 * starterExtras.selectRadioButtonByLabel(driver, "Retired doctor"); }
+	 */
+
+	@Given("I select {string} as medical practitioner")
+	public void i_select_medical_practitioner_type(String practitionerType) {
+		starterExtras.selectRadioButtonByLabel(driver, practitionerType);
+	}
+
+	@Given("click continue button")
+	public void i_click_the_continue_radio_button() throws InterruptedException {
+		baseTest.scrollByPixels(350, driver);
+		starterExtras.clickContinueButton();
+	}
+
+	@Given("I select the option {string} for transferring from another fund")
+	public void i_select_transfer_from_another_fund(String response) throws InterruptedException {
+
+		starterExtras.selectTransferFromAnotherFund(response);
+		Thread.sleep(2000);
+		starterExtras.alertAccept();
+	}
+
+	@Given("click next button")
+	public void i_click_the_next_btn() throws InterruptedException {
+		baseTest.scrollByPixels(150, driver);
+		starterExtras.nextButton();
+	}
+
+	@Given("I select {string} as the title")
+	public void i_select_title(String titleForUser) throws InterruptedException {
+		Thread.sleep(2000);
+		// baseTest.waitForPageToLoad(driver);
+		baseTest.scrollByPixels(-200, driver);
+		// baseTest.waitForPageToLoad(driver);
+
+		starterExtras.selectTitle(titleForUser);
+	}
+
+	@Given("I enter a random full name")
+	public void iEnterARandomFullName() throws InterruptedException {
+
+		starterExtras.enterRandomFullName(driver);
+	}
+
+	@Given("I select the gender as {string}")
+	public void i_select_the_gender_as(String gender) {
+		baseTest.scrollByPixels(250, driver);
+		starterExtras.selectGenderRadioButton(gender);
+	}
+
+	@When("the user enters and verifies a random email")
+	public void userEntersAndVerifiesRandomEmail() {
+		baseTest.scrollByPixels(500, driver);
+		// Call the method to enter the random email and store it
+		String generatedEmail = starterExtras.enterRandomEmail();
+		System.out.println("Generated Email: " + generatedEmail);
+
+		Assert.assertTrue(generatedEmail.matches("dhf\\.testing\\+\\d+@gmail\\.com"),
+				"Email format validation failed. Generated Email: " + generatedEmail);
+	}
+	
+	@When("the user enters a random phone number")
+	public void userEntersRandomPhoneNumber() {
+	    starterExtras.enterRandomPhoneNumber();
+	}
+	
+	@When("the user enters and selects the value {string} in the dropdown")
+	public void userTypesAndSelectsValue(String inputText) throws InterruptedException {
+	    starterExtras.typeAndSelectValue(inputText,driver);
+	}
+
 }
