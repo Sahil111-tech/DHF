@@ -11,7 +11,12 @@ import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.edge.EdgeDriver;
+import org.openqa.selenium.edge.EdgeOptions;
+import org.openqa.selenium.firefox.FirefoxDriver;
+import org.openqa.selenium.firefox.FirefoxOptions;
+
 import com.qa.airteam.pages.StarterExtrasEligibilityTest;
 
 import io.cucumber.java.After;
@@ -45,14 +50,32 @@ public class Hooks  {
 		if (browserName.equalsIgnoreCase("chrome")) {
 			// Use WebDriverManager to setup ChromeDriver
 			WebDriverManager.chromedriver().setup();
+			ChromeOptions options = new ChromeOptions();
+			options.addArguments("--disable-web-security", "--user-data-dir=/path/to/temp/dir");
+
+            options.addArguments("--incognito");
+			
+			  options.addArguments("--disable-web-security");
+			  options.addArguments("--disable-site-isolation-trials");
+			 
 			driver = new ChromeDriver();
+			
 			log.info("ChromeDriver initialized.");
 		} else if (browserName.equalsIgnoreCase("edge")) {
 			// Use WebDriverManager to setup EdgeDriver
 			WebDriverManager.edgedriver().setup();
+			EdgeOptions options = new EdgeOptions();
+            options.addArguments("-inprivate");
 			driver = new EdgeDriver();
 			log.info("EdgeDriver initialized.");
-		} else {
+		} else if (browserName.equalsIgnoreCase("firefox")) {
+            // Use WebDriverManager to setup FirefoxDriver
+            WebDriverManager.firefoxdriver().setup();
+            FirefoxOptions options = new FirefoxOptions();
+           // options.setHeadless(false); // Set to true if you want to run headless
+            driver = new FirefoxDriver(options);
+            log.info("FirefoxDriver initialized.");
+        }else {
 			log.error("Browser type not supported: " + browserName);
 			throw new RuntimeException("Browser type not supported: " + browserName);
 		}
@@ -62,6 +85,9 @@ public class Hooks  {
 		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(60));
 		driver.get(url);
 		log.info("Navigated to URL: " + url);
+		// Clear cookies to avoid stale sessions
+        driver.manage().deleteAllCookies();
+        log.info("All cookies cleared before starting the test.");
 	}
 
 	//@After
@@ -94,6 +120,7 @@ public class Hooks  {
 	  }
 	  
 	  }
+}
 	 
 
 	//it is designed to capture and attach screenshots for every step of a scenario during test execution
@@ -112,4 +139,4 @@ public class Hooks  {
 	 * 
 	 * }
 	 */
-}
+

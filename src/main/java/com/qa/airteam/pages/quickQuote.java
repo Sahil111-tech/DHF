@@ -3,6 +3,7 @@ package com.qa.airteam.pages;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
@@ -27,7 +28,7 @@ public class quickQuote extends BaseTest {
 	protected WebElement coverForContainer;
 
 	// Locator for the Next button to proceed to the next step in the quote process
-	@FindBy(xpath = "//button[@type='submit']") //"//button[@type='submit']"
+	@FindBy(xpath = "//button[@type='submit']") // "//button[@type='submit']"
 	protected WebElement clickNext;
 
 	// Locator to click on "where do you living?"
@@ -53,6 +54,8 @@ public class quickQuote extends BaseTest {
 	// Locator for the "Calculate cover" button to click on proceed further
 	@FindBy(xpath = "//div[text()='Calculate cover']")
 	protected WebElement clickCalculateCover;
+	
+
 
 	/***************************
 	 * Below are the Actions methods for above locators
@@ -60,7 +63,7 @@ public class quickQuote extends BaseTest {
 
 	// Action method to click the "Get Quote" button
 	public void clickGetQuote() {
-		//waitVisibility(getQuote); // Wait for the element to be visible
+		// waitVisibility(getQuote); // Wait for the element to be visible
 		waitForVisibility(getQuote, driver);
 		waitForElementToBeClickable(driver, getQuote);
 		click(getQuote);
@@ -109,19 +112,19 @@ public class quickQuote extends BaseTest {
 	}
 
 	// Action method to enter the month of birth
-	public  void enterMonthOfBirth(String month) {
+	public void enterMonthOfBirth(String month) {
 		waitVisibility(inputMonth, driver);
 		sendKeys(inputMonth, month);
 	}
 
 	// Action method to enter the year of birth
-	public  void enterYearOfBirth(String year) {
+	public void enterYearOfBirth(String year) {
 		waitVisibility(inputYear, driver);
 		sendKeys(inputYear, year);
 	}
 
 	// Action method to select the annual income options
-	public  void selectAnnualIncome(String salary) {
+	public void selectAnnualIncome(String salary) {
 		// Wait for the annual income container to be visible
 		waitVisibility(annualIncomeContainer, driver);
 
@@ -136,7 +139,7 @@ public class quickQuote extends BaseTest {
 	}
 
 	// Action method to click the "Calculate cover" button
-	public  void clickCalculateCover() {
+	public void clickCalculateCover() {
 		waitVisibility(clickCalculateCover, driver);
 		click(clickCalculateCover);
 	}
@@ -146,12 +149,12 @@ public class quickQuote extends BaseTest {
 	 ***************************************************/
 
 	// Method to get the page title
-	public  String getPageTitle() {
+	public String getPageTitle() {
 		return driver.getTitle(); // Returns the title of the current page
 	}
 
 	// Add this method to check if the Get Quote button is visible
-	public  boolean isGetQuoteButtonVisible() {
+	public boolean isGetQuoteButtonVisible() {
 		try {
 			return getQuote.isDisplayed(); // Return true if the button is visible
 		} catch (Exception e) {
@@ -159,8 +162,10 @@ public class quickQuote extends BaseTest {
 		}
 	}
 
-	public  String getCurrentURL() {
+	public String getCurrentURL() {
 		return driver.getCurrentUrl(); // This should return the URL of the current page
 	}
+	
+	
 
 }

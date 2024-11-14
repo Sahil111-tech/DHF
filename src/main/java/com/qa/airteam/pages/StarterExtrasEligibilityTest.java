@@ -27,7 +27,7 @@ public class StarterExtrasEligibilityTest extends BaseTest {
 		PageFactory.initElements(driver, this);
 	}
 
-    // Locator for 'Smart Starter Bronze Plus' checkbox or selection element
+	// Locator for 'Smart Starter Bronze Plus' checkbox or selection element
 	@FindBy(xpath = "//h4[text()='Smart Starter']/../..//button[contains(@data-id, hospital-product)]")
 	protected WebElement smartStarterBronzePlusOption;
 
@@ -123,8 +123,8 @@ public class StarterExtrasEligibilityTest extends BaseTest {
 	@FindBy(xpath = "//div[text()='What kind of medical practitioner are you?']/..//span[text()='Other']")
 	protected WebElement otherRadioButton;
 
-	@FindBy(xpath = "//div[@class='css-159nnwp']//div[@class='css-1p15x7z e18zzrqo1']")
-	protected WebElement clickContinueRadioButton;
+	@FindBy(xpath = "//div[text()='Continue']/../../..//button/..") // "//div[@class='css-159nnwp']//div[@class='css-1p15x7ze18zzrqo1']"
+	protected WebElement clickContinueButton;
 
 	// to locate "Yes" and "No" radio buttons for the "Are you transferring from
 	// another fund?"
@@ -133,54 +133,65 @@ public class StarterExtrasEligibilityTest extends BaseTest {
 
 	@FindBy(xpath = "//div[@name='isTransferringFromAnotherFund']//label//span[text()='No']")
 	private WebElement noRadioButton;
-	
-	@FindBy(xpath="//div[@class='css-1bvpeds e18zzrqo1']")
+
+	@FindBy(xpath = "//div[text()='OK']/../../..//button") // div[@class='css-1bvpeds e18zzrqo1']
 	public WebElement acceptAlert;
-	
-	@FindBy(xpath="//div[@class='css-qvm03q e18zzrqo1']/button[@class='css-1jlaai7']")
+
+	@FindBy(xpath = "//div[text()='Next']/../../..//button") //// div[@class='css-qvm03q
+																//// e18zzrqo1']/button[@class='css-1jlaai7']
 	private WebElement nextButton;
-	
-	//To select user title Mr,Mrs,Dr, etc.
-	@FindBy(xpath="//div[starts-with(@class, 'e1yyxg3t0')]//select[@name='title']")
+
+	// To select user title Mr,Mrs,Dr, etc.
+	@FindBy(xpath = "//select[@name='title']") //// div[starts-with(@class, 'e1yyxg3t0')]//select[@name='title']
 	private WebElement userTitle;
-	
-	@FindBy(xpath = "//input[@name='firstName']")  
-    private WebElement firstNameInput;
-    
-    @FindBy(xpath = "//input[@name='middleName']")  
-    private WebElement middleNameInput;
-    
-    @FindBy(xpath = "//input[@name='lastName']")  
-    private WebElement lastNameInput;
-    
-    // Using FindBy annotation to locate the Male, Female, and Other radio buttons
-    @FindBy(xpath = "//div[@name='gender']/div/label/span[text()='Male']")
-    protected WebElement maleRadioBtn;
 
-    @FindBy(xpath = "//div[@name='gender']/div/label/span[text()='Female']")
-    protected WebElement femaleRadioBtn;
+	@FindBy(xpath = "//input[@name='firstName']")
+	private WebElement firstNameInput;
 
-    @FindBy(xpath = "//div[@name='gender']/div/label/span[text()='Other']")
-    protected WebElement otherRadioBtn;
-    
-    @FindBy(xpath="//input[@name='email']")
-    protected WebElement emailInputBox;
-    
-    @FindBy(xpath="//input[@name='phoneNumber']")
-    protected WebElement phoneInputBox;
-	
-    @FindBy(xpath = "//div[@class='form-control css-1rcfaju ex1346n6']/following-sibling::div[2]/div[2]/input[@name='residentialAddress']")
-    protected WebElement residentialAddressInputBox;
+	@FindBy(xpath = "//input[@name='middleName']")
+	private WebElement middleNameInput;
+
+	@FindBy(xpath = "//input[@name='lastName']")
+	private WebElement lastNameInput;
+
+	// Using FindBy annotation to locate the Male, Female, and Other radio buttons
+	@FindBy(xpath = "//div[@name='gender']/div/label/span[text()='Male']")
+	protected WebElement maleRadioBtn;
+
+	@FindBy(xpath = "//div[@name='gender']/div/label/span[text()='Female']")
+	protected WebElement femaleRadioBtn;
+
+	@FindBy(xpath = "//div[@name='gender']/div/label/span[text()='Other']")
+	protected WebElement otherRadioBtn;
+
+	@FindBy(xpath = "//input[@name='email']")
+	protected WebElement emailInputBox;
+
+	@FindBy(xpath = "//input[@name='phoneNumber']")
+	protected WebElement phoneInputBox;
+
+	@FindBy(xpath = "//div[@class='form-control css-1rcfaju ex1346n6']/following-sibling::div[2]/div[2]/input[@name='residentialAddress']")
+	protected WebElement residentialAddressInputBox;
+	// XPath for the Yes radio buttons for "Are you an existing Avant member?"
+	@FindBy(xpath = "//div[@name='existingAvantMember']//div/label[1][span[contains(text(),'Yes')]]")
+	private WebElement existingAvantMemberRadioButtonYes;
+
+	// XPath for the No radio buttons for "Are you an existing Avant member?"
+	@FindBy(xpath = "//div[@name='existingAvantMember']//div/label[2][span[contains(text(),'No')]]")
+	private WebElement existingAvantMemberRadioButtonNo;
+
+	// XPath for Submit Your Details Button
+	@FindBy(xpath = "//div[@class='css-fbcqx2']/div[2]/button/div/div[text()='Continue']")
+	private WebElement yourDetailsContinueButton;
 
 	/***************************
 	 * Below are the Actions methods for above locators
 	 *****************************************/
 
 	public WebElement getSmartStarterBronzePlusOption() {
-		waitVisibility(smartStarterBronzePlusOption,driver);
+		waitVisibility(smartStarterBronzePlusOption, driver);
 		return smartStarterBronzePlusOption;
 	}
-
 
 	public WebElement getPrimeChoice() {
 		waitVisibility(primeChoiceOption, driver);
@@ -188,25 +199,25 @@ public class StarterExtrasEligibilityTest extends BaseTest {
 	}
 
 	public WebElement getTopCover() {
-		waitVisibility(topCoverOption,driver);
+		waitVisibility(topCoverOption, driver);
 		return topCoverOption;
 	}
 
 	// Action method to select "Starter Extras"
 	public void selectStarterExtras() {
-		waitVisibility(starterExtrasOption,driver);
+		waitVisibility(starterExtrasOption, driver);
 		click(starterExtrasOption);
 	}
 
 	// Method to check if "Starter Extras" is enabled
 	public boolean isStarterExtrasEnabled() {
-		waitVisibility(starterExtrasOption,driver);
+		waitVisibility(starterExtrasOption, driver);
 		return starterExtrasOption.isEnabled();
 	}
 
 	// Method to check if "Starter Extras" is disabled
 	public boolean isStarterExtrasDisabled() {
-		waitVisibility(starterExtrasOption,driver);
+		waitVisibility(starterExtrasOption, driver);
 		return !starterExtrasOption.isEnabled();
 	}
 
@@ -215,7 +226,7 @@ public class StarterExtrasEligibilityTest extends BaseTest {
 
 	// Action method to click "Edit button"
 	public void clickEditButton() {
-		waitVisibility(clickEditBtn,driver);
+		waitVisibility(clickEditBtn, driver);
 		click(clickEditBtn);
 	}
 
@@ -265,7 +276,7 @@ public class StarterExtrasEligibilityTest extends BaseTest {
 
 	// Action method to enter the date of birth
 	public void enterPartnerDateOfBirth(String day) {
-		waitVisibility(inputPartnerDate,driver);
+		waitVisibility(inputPartnerDate, driver);
 		sendKeys(inputPartnerDate, day);
 	}
 
@@ -277,30 +288,32 @@ public class StarterExtrasEligibilityTest extends BaseTest {
 
 	// Action method to enter the year of birth
 	public void enterPartnerYearOfBirth(String year) {
-		waitVisibility(inputPartnerYear,driver);
+		waitVisibility(inputPartnerYear, driver);
 		sendKeys(inputPartnerYear, year);
 	}
 
 	// Action method to click the "Click Update Details" button
 	public void clickUpdateDetails() {
-		waitVisibility(clickUpdateDetailsBtn,driver); // Wait for the element to be visible
+		waitVisibility(clickUpdateDetailsBtn, driver); // Wait for the element to be visible
 		click(clickUpdateDetailsBtn);
 	}
 
 	// Action method to click on "Choose cover"
 	public void clickChooseCovers() {
-		waitVisibility(clickChooseCover,driver);
+		waitVisibility(clickChooseCover, driver);
 		click(clickChooseCover);
 	}
 
 	// Action method to select "Starter Extras"
 	public void clickApplyNowButton() {
-		waitVisibility(clickApplyNow,driver);
+		waitVisibility(clickApplyNow, driver);
 		click(clickApplyNow);
 	}
 
 	public void clickMemberStatusNoRadioButton() {
+		// waitVisibility(memberStatusNoRadioBtn, driver);
 		memberStatusNoRadioBtn.click();
+		//return clickMemberStatusNoRadioButton();
 	}
 
 	// Click "Yes" for "Are you an Australian citizen or permanent resident?"
@@ -318,66 +331,68 @@ public class StarterExtrasEligibilityTest extends BaseTest {
 		click(clickMedicalPractioner);
 
 	}
-	
+
 	public void selectRadioButtonByLabel(WebDriver driver, String label) {
-	    WebElement radioButtonToClick = null;
+		WebElement radioButtonToClick = null;
 
-	    switch (label) {
-	        case "Intern":
-	            radioButtonToClick = internRadioButton;
-	            break;
-	        case "Resident":
-	            radioButtonToClick = residentRadioButton;
-	            break;
-	        case "Registrar":
-	            radioButtonToClick = registrarRadioButton;
-	            break;
-	        case "General Practitioner":
-	            radioButtonToClick = generalPractitionerRadioButton;
-	            break;
-	        case "Specialist":
-	            radioButtonToClick = specialistRadioButton;
-	            break;
-	        case "Career Medical Officer":
-	            radioButtonToClick = careerMedicalOfficerRadioButton;
-	            break;
-	        case "Retired doctor":
-	            radioButtonToClick = retiredDoctorRadioButton;
-	            break;
-	        case "Other":
-	            radioButtonToClick = otherRadioButton;
-	            break;
-	        default:
-	            System.out.println("No radio button found for label: " + label);
-	            return;
-	    }
+		switch (label) {
+		case "Intern":
+			radioButtonToClick = internRadioButton;
+			break;
+		case "Resident":
+			radioButtonToClick = residentRadioButton;
+			break;
+		case "Registrar":
+			radioButtonToClick = registrarRadioButton;
+			break;
+		case "General Practitioner":
+			radioButtonToClick = generalPractitionerRadioButton;
+			break;
+		case "Specialist":
+			radioButtonToClick = specialistRadioButton;
+			break;
+		case "Career Medical Officer":
+			radioButtonToClick = careerMedicalOfficerRadioButton;
+			break;
+		case "Retired doctor":
+			radioButtonToClick = retiredDoctorRadioButton;
+			break;
+		case "Other":
+			radioButtonToClick = otherRadioButton;
+			break;
+		default:
+			System.out.println("No radio button found for label: " + label);
+			return;
+		}
 
-	    if (radioButtonToClick != null) {
-	        radioButtonToClick.click();
-	        System.out.println("Clicked on radio button: " + label);
-	    }
+		if (radioButtonToClick != null) {
+			radioButtonToClick.click();
+			System.out.println("Clicked on radio button: " + label);
+		}
 	}
 
-
 	// Action method to click "Continue radio button"
-	public void clickContinueButton() throws InterruptedException {
-		//waitVisibility(clickContinueRadioButton);
-		waitForVisibility(clickContinueRadioButton, driver);
-		waitForElementToBeClickable(driver, clickContinueRadioButton);
+	public WebElement clickContinueButton() throws InterruptedException {
+		// waitVisibility(clickContinueRadioButton);
+		waitForVisibility(clickContinueButton, driver);
+		waitForElementToBeClickable(driver, clickContinueButton);
 		Thread.sleep(2000);
-		click(clickContinueRadioButton);
+		click(clickContinueButton);
+		log.info("click on continue button");
+		// Thread.sleep(2000);
+		return clickContinueButton;
 	}
 
 	// Method to select Yes or No based on the parameter
 	public void selectTransferFromAnotherFund(String response) {
-		//WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(15));
+		// WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(15));
 		if ("Yes".equalsIgnoreCase(response)) {
-			//wait.until(ExpectedConditions.elementToBeClickable(yesRadioButton));
+			// wait.until(ExpectedConditions.elementToBeClickable(yesRadioButton));
 			waitForElementToBeClickable(driver, yesRadioButton);
 			yesRadioButton.click();
 			System.out.println("Selected 'Yes' for transferring from another fund.");
 		} else if ("No".equalsIgnoreCase(response)) {
-			//wait.until(ExpectedConditions.elementToBeClickable(noRadioButton));
+			// wait.until(ExpectedConditions.elementToBeClickable(noRadioButton));
 			waitForElementToBeClickable(driver, noRadioButton);
 			noRadioButton.click();
 			System.out.println("Selected 'No' for transferring from another fund.");
@@ -386,36 +401,37 @@ public class StarterExtrasEligibilityTest extends BaseTest {
 		}
 
 	}
-	
-	public void alertAccept() {
-		//WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(15));
-		try {
-	        // Wait for the alert or alert-like element to be visible
-	        //wait.until(ExpectedConditions.visibilityOf(acceptAlert));
-	        waitForVisibility(acceptAlert,driver);
-	        // Wait for it to be clickable
-	        waitForElementToBeClickable(driver, acceptAlert);
-	        //wait.until(ExpectedConditions.elementToBeClickable(acceptAlert));
 
-	        // Perform the click
-	        acceptAlert.click();
-	        System.out.println("Accepted the alert/modal.");
-	    } catch (TimeoutException e) {
-	        System.out.println("Alert/modal was not visible within the wait time.");
-	    } catch (Exception e) {
-	        System.out.println("An error occurred while interacting with the alert/modal: " + e.getMessage());
-	    }
+	public void alertAccept() {
+		// WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(15));
+		try {
+			// Wait for the alert or alert-like element to be visible
+			// wait.until(ExpectedConditions.visibilityOf(acceptAlert));
+			waitForVisibility(acceptAlert, driver);
+			// Wait for it to be clickable
+			waitForElementToBeClickable(driver, acceptAlert);
+			// wait.until(ExpectedConditions.elementToBeClickable(acceptAlert));
+
+			// Perform the click
+			acceptAlert.click();
+			System.out.println("Accepted the alert/modal.");
+		} catch (TimeoutException e) {
+			System.out.println("Alert/modal was not visible within the wait time.");
+		} catch (Exception e) {
+			System.out.println("An error occurred while interacting with the alert/modal: " + e.getMessage());
+		}
 	}
+
 	public void nextButton() {
-		waitVisibility(nextButton,driver);
+		waitVisibility(nextButton, driver);
 		click(nextButton);
 	}
-	
+
 	public void selectTitle(String titleForUser) throws InterruptedException {
 		waitVisibilityElement(userTitle);
 		click(userTitle); // Open dropdown
 		// Wait for the dropdown options to be visible
-        waitForAllOptionsVisibility(userTitle);
+		waitForAllOptionsVisibility(userTitle);
 		Select titleDropdown = new Select(userTitle);
 		List<WebElement> options = titleDropdown.getOptions();
 		boolean found = false;
@@ -433,128 +449,98 @@ public class StarterExtrasEligibilityTest extends BaseTest {
 			log.warn("Title type '" + titleForUser + "' not found in the dropdown.");
 		}
 	}
-	
+
 	// Method to enter random first, middle, and last names
-    public void enterRandomFullName(WebDriver driver) {
-        String fullName = generateRandomFullName(); // Generate the full name
-        String[] nameParts = fullName.split(" ");  // Split into first, middle, last
-        waitVisibilityElement(firstNameInput);
-        firstNameInput.clear();
-        firstNameInput.sendKeys(nameParts[0]);
-         
-        waitVisibilityElement(middleNameInput);
-        middleNameInput.clear();
-        middleNameInput.sendKeys(nameParts[1]);
-        
-        
-        waitVisibilityElement(lastNameInput);
-        lastNameInput.clear();
-        lastNameInput.sendKeys(nameParts[2]);
+	public void enterRandomFullName(WebDriver driver) {
+		String fullName = generateRandomFullName(); // Generate the full name
+		String[] nameParts = fullName.split(" "); // Split into first, middle, last
+		waitVisibilityElement(firstNameInput);
+		firstNameInput.clear();
+		firstNameInput.sendKeys(nameParts[0]);
 
-        System.out.println("Entered random full name: " + fullName);
-    }
-    
- // This method selects the radio button based on the label provided (Male, Female, Other)
-    public void selectGenderRadioButton(String gender) {
-        switch (gender) {
-            case "Male":
-                maleRadioBtn.click();
-                System.out.println("Selected Male radio button");
-                break;
-            case "Female":
-                femaleRadioBtn.click();
-                System.out.println("Selected Female radio button");
-                break;
-            case "Other":
-                otherRadioBtn.click();
-                System.out.println("Selected Other radio button");
-                break;
-            default:
-                System.out.println("Invalid gender option provided");
-        }
-    }
-    
-    public String enterRandomEmail() {
-        // Generate a random number
-        int randomNumber = new Random().nextInt(1000); // Generate numbers between 0 and 999
-        String randomEmail = "dhf.testing+" + randomNumber + "@gmail.com";
+		waitVisibilityElement(middleNameInput);
+		middleNameInput.clear();
+		middleNameInput.sendKeys(nameParts[1]);
 
-        // Enter the email into the input box
-        emailInputBox.sendKeys(randomEmail);
+		waitVisibilityElement(lastNameInput);
+		lastNameInput.clear();
+		lastNameInput.sendKeys(nameParts[2]);
 
-        return randomEmail; // Return the email for validation in the test
-    }
-    
- // Generate and enter a random phone number
-    public void enterRandomPhoneNumber() {
-        // Generate a random number (4 digits) to append to the series
-        String randomSuffix = String.valueOf((int) (Math.random() * 9000) + 1000);
-        String generatedPhoneNumber = "049836" + randomSuffix;
+		System.out.println("Entered random full name: " + fullName);
+	}
 
-        // Enter the generated phone number in the input box
-        phoneInputBox.clear();
-        phoneInputBox.sendKeys(generatedPhoneNumber);
+	// This method selects the radio button based on the label provided (Male,
+	// Female, Other)
+	public void selectGenderRadioButton(String gender) {
+		switch (gender) {
+		case "Male":
+			maleRadioBtn.click();
+			System.out.println("Selected Male radio button");
+			break;
+		case "Female":
+			femaleRadioBtn.click();
+			System.out.println("Selected Female radio button");
+			break;
+		case "Other":
+			otherRadioBtn.click();
+			System.out.println("Selected Other radio button");
+			break;
+		default:
+			System.out.println("Invalid gender option provided");
+		}
+	}
 
-        // Validate the generated phone number format
-        Assert.assertTrue(
-            generatedPhoneNumber.matches("049836\\d{4}"),
-            "Phone number format validation failed. Generated Phone Number: " + generatedPhoneNumber
-        );
-    
-	
-    }
-    
-    public void typeAndSelectValue(String inputText,WebDriver driver) throws InterruptedException {
-        // Clear the input box
-        residentialAddressInputBox.clear();
-        
-		/*
-		 * // Wait for the input box to be enabled and ready for typing WebDriverWait
-		 * wait = new WebDriverWait(driver, Duration.ofSeconds(10));
-		 * wait.until(ExpectedConditions.elementToBeClickable(residentialAddressInputBox
-		 * ));
-		 */
+	public String enterRandomEmail() {
+		// Generate a random number
+		int randomNumber = new Random().nextInt(1000); // Generate numbers between 0 and 999
+		String randomEmail = "dhf.testing+" + randomNumber + "@gmail.com";
 
-        // Type the value into the input box
-        //Thread.sleep(2000);
-        //waitForVisibility(residentialAddressInputBox, driver);
-		/*
-		 * waitForElementToBeClickable(driver, residentialAddressInputBox);
-		 * residentialAddressInputBox.sendKeys(inputText);
-		 */
+		// Enter the email into the input box
+		emailInputBox.sendKeys(randomEmail);
 
-        // Wait for the value to be typed into the input box (ensure it's not empty and reflects input)
-        //wait.until(ExpectedConditions.attributeToBe(residentialAddressInputBox, "value", inputText));
+		return randomEmail; // Return the email for validation in the test
+	}
 
-        // Press Enter to select the suggestion after it has appeared
-        //Thread.sleep(2000);
-		/*
-		 * waitForVisibility(residentialAddressInputBox, driver);
-		 * waitForElementToBeClickable(driver, residentialAddressInputBox);
-		 * 
-		 * Thread.sleep(2000); residentialAddressInputBox.sendKeys(Keys.ENTER);
-		 */
-        
-        Actions actions = new Actions(driver);
-        waitForElementToBeClickable(driver, residentialAddressInputBox);
-        waitForVisibility(residentialAddressInputBox, driver);
-        actions.sendKeys(residentialAddressInputBox, inputText).perform();
+	// Generate and enter a random phone number
+	public void enterRandomPhoneNumber() {
+		// Generate a random number (4 digits) to append to the series
+		String randomSuffix = String.valueOf((int) (Math.random() * 9000) + 1000);
+		String generatedPhoneNumber = "049836" + randomSuffix;
 
-		/*
-		 * waitForElementToBeClickable(driver, residentialAddressInputBox);
-		 * waitForVisibility(residentialAddressInputBox, driver);
-		 */
-        Thread.sleep(1000);
-        actions.sendKeys(Keys.ENTER).perform();
+		// Enter the generated phone number in the input box
+		phoneInputBox.clear();
+		phoneInputBox.sendKeys(generatedPhoneNumber);
 
+		// Validate the generated phone number format
+		Assert.assertTrue(generatedPhoneNumber.matches("049836\\d{4}"),
+				"Phone number format validation failed. Generated Phone Number: " + generatedPhoneNumber);
 
-        // Wait until the input box reflects the selected value
-        //wait.until(ExpectedConditions.attributeToBe(residentialAddressInputBox, "value", inputText));
+	}
 
-        // Validate that the input box now contains the correct value
-       /* Assert.assertEquals(residentialAddressInputBox.getAttribute("value"), inputText,
-                "Dropdown selection validation failed. Expected: " + inputText + " but found: " + residentialAddressInputBox.getAttribute("value"));
-    }*/
+	public void typeAndSelectValue(String inputText, WebDriver driver) throws InterruptedException {
+		// Clear the input box
+		residentialAddressInputBox.clear();
+		Actions actions = new Actions(driver);
+		waitForElementToBeClickable(driver, residentialAddressInputBox);
+		waitForVisibility(residentialAddressInputBox, driver);
+		actions.sendKeys(residentialAddressInputBox, inputText).perform();
+		Thread.sleep(1000);
+		actions.sendKeys(Keys.ENTER).perform();
+	}
 
-}
+	public void selectExistingAvantMemberOption(String option) {
+		if (option.equalsIgnoreCase("Yes")) {
+			existingAvantMemberRadioButtonYes.click();
+		} else if (option.equalsIgnoreCase("No")) {
+			existingAvantMemberRadioButtonNo.click();
+		} else {
+			throw new IllegalArgumentException("Invalid option provided. Expected 'Yes' or 'No', but got: " + option);
+		}
+	}
+
+	// Method to click the Your Details Continue Button
+	public void clickYourDetailsContinueButton() {
+		yourDetailsContinueButton.click();
+	}
+
 }
