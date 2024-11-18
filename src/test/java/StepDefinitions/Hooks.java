@@ -25,7 +25,7 @@ import io.cucumber.java.Before;
 import io.cucumber.java.Scenario;
 import io.github.bonigarcia.wdm.WebDriverManager;
 
-public class Hooks  {
+public class Hooks {
 	public static WebDriver driver;
 	public static Properties prop;
 
@@ -53,29 +53,32 @@ public class Hooks  {
 			ChromeOptions options = new ChromeOptions();
 			options.addArguments("--disable-web-security", "--user-data-dir=/path/to/temp/dir");
 
-            options.addArguments("--incognito");
-			
-			  options.addArguments("--disable-web-security");
-			  options.addArguments("--disable-site-isolation-trials");
-			 
+			options.addArguments("--incognito");
+
+			options.addArguments("--disable-web-security");
+			options.addArguments("--disable-site-isolation-trials");
+
 			driver = new ChromeDriver();
-			
+
 			log.info("ChromeDriver initialized.");
 		} else if (browserName.equalsIgnoreCase("edge")) {
 			// Use WebDriverManager to setup EdgeDriver
 			WebDriverManager.edgedriver().setup();
 			EdgeOptions options = new EdgeOptions();
-            options.addArguments("-inprivate");
-			driver = new EdgeDriver();
+			options.addArguments("--no-first-run"); // Skip first-run experience
+			options.addArguments("--disable-default-apps"); // Disable default apps
+			options.addArguments("--disable-extensions"); // Disable extensions
+			options.addArguments("-inprivate");
+			driver = new EdgeDriver(options);
 			log.info("EdgeDriver initialized.");
 		} else if (browserName.equalsIgnoreCase("firefox")) {
-            // Use WebDriverManager to setup FirefoxDriver
-            WebDriverManager.firefoxdriver().setup();
-            FirefoxOptions options = new FirefoxOptions();
-           // options.setHeadless(false); // Set to true if you want to run headless
-            driver = new FirefoxDriver(options);
-            log.info("FirefoxDriver initialized.");
-        }else {
+			// Use WebDriverManager to setup FirefoxDriver
+			WebDriverManager.firefoxdriver().setup();
+			FirefoxOptions options = new FirefoxOptions();
+			// options.setHeadless(false); // Set to true if you want to run headless
+			driver = new FirefoxDriver(options);
+			log.info("FirefoxDriver initialized.");
+		} else {
 			log.error("Browser type not supported: " + browserName);
 			throw new RuntimeException("Browser type not supported: " + browserName);
 		}
@@ -86,11 +89,11 @@ public class Hooks  {
 		driver.get(url);
 		log.info("Navigated to URL: " + url);
 		// Clear cookies to avoid stale sessions
-        driver.manage().deleteAllCookies();
-        log.info("All cookies cleared before starting the test.");
+		driver.manage().deleteAllCookies();
+		log.info("All cookies cleared before starting the test.");
 	}
 
-	//@After
+	// @After
 	public void tearDown(Scenario scenario) {
 		if (driver != null) {
 			driver.quit();
@@ -105,38 +108,35 @@ public class Hooks  {
 		return getStarterExtras(); // Getter to provide the page object instance
 	}
 
-	
-	
-	  @AfterStep
-	  
-	  public void addScreenshot(Scenario scenario) {
-	  
-	  if(scenario.isFailed()) {
-	  
-	  TakesScreenshot ts = (TakesScreenshot) driver; byte[] screenshot =
-	  ts.getScreenshotAs(OutputType.BYTES); scenario.attach(screenshot,
-	  "image/png", scenario.getName());
-	  
-	  }
-	  
-	  }
+	@AfterStep
+
+	public void addScreenshot(Scenario scenario) {
+
+		if (scenario.isFailed()) {
+
+			TakesScreenshot ts = (TakesScreenshot) driver;
+			byte[] screenshot = ts.getScreenshotAs(OutputType.BYTES);
+			scenario.attach(screenshot, "image/png", scenario.getName());
+
+		}
+
+	}
 }
-	 
 
-	//it is designed to capture and attach screenshots for every step of a scenario during test execution
-	/*
-	 * @AfterStep public void addScreenshot(Scenario scenario) { if (driver != null)
-	 * { TakesScreenshot ts = (TakesScreenshot) driver; byte[] screenshot =
-	 * ts.getScreenshotAs(OutputType.BYTES);
-	 * 
-	 * if (scenario.isFailed()) {
-	 * 
-	 * scenario.attach(screenshot, "image/png", "Screenshot for failed step: " +
-	 * scenario.getName()); } else {
-	 * 
-	 * scenario.attach(screenshot, "image/png", "Screenshot for passed step: " +
-	 * scenario.getName()); } }
-	 * 
-	 * }
-	 */
-
+// it is designed to capture and attach screenshots for every step of a scenario
+// during test execution
+/*
+ * @AfterStep public void addScreenshot(Scenario scenario) { if (driver != null)
+ * { TakesScreenshot ts = (TakesScreenshot) driver; byte[] screenshot =
+ * ts.getScreenshotAs(OutputType.BYTES);
+ * 
+ * if (scenario.isFailed()) {
+ * 
+ * scenario.attach(screenshot, "image/png", "Screenshot for failed step: " +
+ * scenario.getName()); } else {
+ * 
+ * scenario.attach(screenshot, "image/png", "Screenshot for passed step: " +
+ * scenario.getName()); } }
+ * 
+ * }
+ */

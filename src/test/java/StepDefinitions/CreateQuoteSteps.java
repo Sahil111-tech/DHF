@@ -32,6 +32,9 @@ import com.qa.airteam.pages.*;
 public class CreateQuoteSteps {
 	private quickQuote quote;
 	StarterExtrasEligibilityTest starterExtras;
+	EligibilityAndYourDetailsPage eligibilityAndYourDetails;
+	AdditionalInformationPage additionalInfo;
+	PaymentPage payment;
 	private WebDriver driver;
 	public static final Logger log = LogManager.getLogger(CreateQuoteSteps.class);
 	BaseTest baseTest = new BaseTest();
@@ -42,6 +45,9 @@ public class CreateQuoteSteps {
 		this.quote = new quickQuote(driver);
 		this.starterExtras = new StarterExtrasEligibilityTest(driver);
 		this.medicareDetails = new MedicareDetailsPage(driver);
+		this.eligibilityAndYourDetails=new EligibilityAndYourDetailsPage(driver);
+		this.additionalInfo=new AdditionalInformationPage(driver);
+		this.payment=new PaymentPage(driver);
 	}
 
 	@Given("I am on the quote page")
@@ -70,7 +76,7 @@ public class CreateQuoteSteps {
 	@When("I click the \"Get Quote\" button")
 	public void i_click_the_get_quote_button() throws InterruptedException {
 		log.info("Clicking the 'Get Quote' button.");
-		Thread.sleep(1000);
+		//Thread.sleep(1000);
 		quote.clickGetQuote();
 		log.info("'Get Quote' button clicked successfully.");
 	}
@@ -112,6 +118,17 @@ public class CreateQuoteSteps {
 	@When("I click the \"Calculate Cover\" button")
 	public void i_click_the_calculate_cover_button() {
 		quote.clickCalculateCover();
+	}
+	@Then("I select the hospital cover as {string}")
+	public void iSelectTheHospitalPlanAs(String coverType) {
+		baseTest.scrollByPixels(500, driver);
+	    quote.selectHospitalCover(coverType);
+	}
+	
+	@Then("I select the extras cover as {string}")
+	public void iSelectTheExtrasCoverAs(String coverType) {
+		baseTest.scrollByPixels(100, driver);
+	    quote.selectExtrasCover(coverType);
 	}
 
 	@Then("I should see the title {string}")
@@ -230,32 +247,34 @@ public class CreateQuoteSteps {
 		baseTest.scrollDownBy500(driver);
 		starterExtras.clickApplyNowButton();
 	}
+	
+	@Given("I click the Apply Now button for the selected plan")
+	public void i_click_the_apply_now_button_for_selected_plan() {
+	    // Scroll to make the button visible
+	    baseTest.scrollByPixels(200, driver);
+	    
+	    // Click the Apply Now button
+	    quote.clickApplyNowButton();
+	    
+	    log.info("Clicked on the Apply Now button for the selected plan.");
+	}
 
 	@Given("I select No for Doctors' Health Fund membership")
 	public void i_select_no_for_doctors_health_fund_membership() throws InterruptedException {
 
-		Thread.sleep(2000);
-		baseTest.scrollByPixels(450, driver);
-		starterExtras.clickMemberStatusNoRadioButton();
-
 		/*
-		 * baseTest.scrollByPixels(450, driver); WebDriverWait wait = new
-		 * WebDriverWait(driver, Duration.ofSeconds(10)); // Timeout of 10 seconds
-		 * 
-		 * // Wait for the "No" radio button to be clickable
-		 * wait.until(ExpectedConditions.elementToBeClickable(starterExtras.
-		 * clickMemberStatusNoRadioButton()));
+		 * Thread.sleep(2000); baseTest.scrollByPixels(450, driver);
+		 * starterExtras.clickMemberStatusNoRadioButton();
 		 */
-
-//		baseTest.scrollByPixels(600, driver);
-//		baseTest.waitForElementToBeClickable(driver, starterExtras.clickMemberStatusNoRadioButton());
-
+		baseTest.scrollByPixels(450, driver);
+		//baseTest.waitForElementToBeClickable(driver, starterExtras.clickMemberStatusNoRadioButton());
+		eligibilityAndYourDetails.clickMemberStatusNoRadioButton();
+		
 	}
 
 	@Given("I select Yes for Australian citizenship or permanent residency")
 	public void i_select_yes_for_australian_citizenship_or_permanent_residency() throws InterruptedException {
-
-		starterExtras.clickCitizenshipYesRadioButton();
+     eligibilityAndYourDetails.clickCitizenshipYesRadioButton();
 	}
 
 	@Given("I click on the Health Practitioner button")
@@ -267,71 +286,67 @@ public class CreateQuoteSteps {
 	@Given("I click on the Medical Practitioner button")
 	public void i_click_on_the_Medical_practitioner_button() throws InterruptedException {
 		baseTest.scrollByPixels(350, driver);
-		starterExtras.clickMedicalPractionerBtn();
+		eligibilityAndYourDetails.clickMedicalPractionerBtn();
 	}
 
 	@Given("I select {string} as medical practitioner")
 	public void i_select_medical_practitioner_type(String practitionerType) {
-		starterExtras.selectRadioButtonByLabel(driver, practitionerType);
+		eligibilityAndYourDetails.selectRadioButtonByLabel(driver, practitionerType);
 	}
 
-	@Given("click continue button")
+	@Given("I submit the eligibility page.")
 	public void i_click_the_continue_button() throws InterruptedException, AWTException {
 
 		
-		  baseTest.scrollByPixels(100, driver); Thread.sleep(1000);
-		  starterExtras.clickContinueButton(); Thread.sleep(1000);
-		 
-		/*
-		 * baseTest.scrollByPixels(100, driver); JavascriptExecutor js =
-		 * (JavascriptExecutor) driver; WebElement continueButton =
-		 * driver.findElement(By.xpath("//div[text()='Continue']/../../.."));
-		 * js.executeScript("arguments[0].click();", continueButton);
-		 */
+		  baseTest.scrollByPixels(100, driver); 
+		  Thread.sleep(1000);
+		  eligibilityAndYourDetails.clickContinueButton(); 
+		  Thread.sleep(1000);
+		
 
 	}
 
 	@Given("I select the option {string} for transferring from another fund")
 	public void i_select_transfer_from_another_fund(String response) throws InterruptedException {
-		Thread.sleep(2000);
-		starterExtras.selectTransferFromAnotherFund(response);
-		Thread.sleep(2000);
-		starterExtras.alertAccept();
+		//Thread.sleep(2000);
+		eligibilityAndYourDetails.selectTransferFromAnotherFund(response);
+		//Thread.sleep(2000);
+		eligibilityAndYourDetails.alertAccept();
 	}
 
 	@Given("click next button")
 	public void i_click_the_next_btn() throws InterruptedException {
 		baseTest.scrollByPixels(150, driver);
-		starterExtras.nextButton();
+		eligibilityAndYourDetails.nextButton();
 	}
 
 	@Given("I select {string} as the title")
 	public void i_select_title(String titleForUser) throws InterruptedException {
-		Thread.sleep(2000);
+		//Thread.sleep(2000);
 		// baseTest.waitForPageToLoad(driver);
 		baseTest.scrollByPixels(-200, driver);
 		// baseTest.waitForPageToLoad(driver);
 
-		starterExtras.selectTitle(titleForUser);
+		eligibilityAndYourDetails.selectTitle(titleForUser);
 	}
 
 	@Given("I enter a random full name")
 	public void iEnterARandomFullName() throws InterruptedException {
 
-		starterExtras.enterRandomFullName(driver);
+		eligibilityAndYourDetails.enterRandomFullName(driver);
 	}
 
 	@Given("I select the gender as {string}")
 	public void i_select_the_gender_as(String gender) {
 		baseTest.scrollByPixels(250, driver);
-		starterExtras.selectGenderRadioButton(gender);
+		eligibilityAndYourDetails.selectGenderRadioButton(gender);
 	}
 
 	@When("the user enters and verifies a random email")
 	public void userEntersAndVerifiesRandomEmail() {
 		baseTest.scrollByPixels(500, driver);
 		// Call the method to enter the random email and store it
-		String generatedEmail = starterExtras.enterRandomEmail();
+		String generatedEmail = eligibilityAndYourDetails.enterRandomEmail();
 		System.out.println("Generated Email: " + generatedEmail);
 
 		Assert.assertTrue(generatedEmail.matches("dhf\\.testing\\+\\d+@gmail\\.com"),
@@ -340,12 +355,12 @@ public class CreateQuoteSteps {
 
 	@When("the user enters a random phone number")
 	public void userEntersRandomPhoneNumber() {
-		starterExtras.enterRandomPhoneNumber();
+		eligibilityAndYourDetails.enterRandomPhoneNumber();
 	}
 
 	@When("the user enters and selects the value {string} in the dropdown")
 	public void userTypesAndSelectsValue(String inputText) throws InterruptedException {
-		starterExtras.typeAndSelectValue(inputText, driver);
+		eligibilityAndYourDetails.typeAndSelectValue(inputText, driver);
 	}
 
 	// Step definition for selecting the "Are you an existing Avant member?" radio
@@ -354,7 +369,7 @@ public class CreateQuoteSteps {
 	public void i_select_the_radio_button_for_existing_Avant_member(String option) {
 		// Call the method from Page Object to select the radio button
 		baseTest.scrollByPixels(100, driver);
-		starterExtras.selectExistingAvantMemberOption(option); // Pass "Yes" or "No"
+		eligibilityAndYourDetails.selectExistingAvantMemberOption(option); // Pass "Yes" or "No"
 
 	}
 
@@ -362,7 +377,7 @@ public class CreateQuoteSteps {
 	@Given("I submit the Your Details page")
 	public void i_submit_your_details_page() throws InterruptedException {
 		baseTest.scrollByPixels(150, driver);
-		WebElement continueButton = starterExtras.clickContinueButton();
+		WebElement continueButton = eligibilityAndYourDetails.clickContinueButton();
 
 		// Use Actions class for double-click
 		Actions actions = new Actions(driver);
@@ -425,7 +440,7 @@ public class CreateQuoteSteps {
 	public void i_submit_Medicare_details_page() throws InterruptedException {
 
 		baseTest.scrollByPixels(150, driver);
-		WebElement continueButton = starterExtras.clickContinueButton();
+		WebElement continueButton = medicareDetails.clickContinueButton();
 		Actions actions = new Actions(driver);
 		actions.doubleClick(continueButton).perform(); // Perform the double-click action
 
@@ -435,18 +450,18 @@ public class CreateQuoteSteps {
 	public void i_select_choice_for_the_question(String choice) throws InterruptedException {
 		baseTest.scrollToTop(driver);
 		// Thread.sleep(2000);
-		medicareDetails.selectRadioButton(choice);
+		additionalInfo.selectRadioButton(choice);
 	}
 
 	@When("I select {string} for the Avant Group Member option")
 	public void iSelectForTheAvantGroupMemberOption(String option) {
-		medicareDetails.selectAvantGroupMemberRadioButton(option);
+		additionalInfo.selectAvantGroupMemberRadioButton(option);
 	}
 
 	// Step to select a value from the "howDidYouHearAboutUs" dropdown
 	@When("I select {string} from the How Did You Hear About Us dropdown")
 	public void iSelectFromTheHowDidYouHearAboutUsDropdown(String option) {
-		medicareDetails.selectHowDidYouHearAboutUsOption(option);
+		additionalInfo.selectHowDidYouHearAboutUsOption(option);
 	}
 
 	// Step to select the Yes/No radio button for "Would you like us to check in
@@ -454,7 +469,7 @@ public class CreateQuoteSteps {
 	@When("I select {string} for the check-in radio button after joining")
 	public void iSelectCheckInRadioButtonAfterJoining(String option) {
 		baseTest.scrollByPixels(200, driver);
-		medicareDetails.selectCheckInRadioButton(option);
+		additionalInfo.selectCheckInRadioButton(option);
 	}
 
 	// Step to select or deselect the "I have read and agree to the Terms and
@@ -463,7 +478,7 @@ public class CreateQuoteSteps {
 	public void iSelectTermsAndConditionsCheckbox(String action) {
 		baseTest.scrollByPixels(300, driver);
 		boolean select = action.equalsIgnoreCase("accept");
-		medicareDetails.selectTermsAndConditionsCheckbox(select);
+		additionalInfo.selectTermsAndConditionsCheckbox(select);
 	}
 
 	// Step to select or deselect "I agree to The Doctors' Health Fund using my
@@ -471,7 +486,7 @@ public class CreateQuoteSteps {
 	@When("I {string} the agree using personal information checkbox")
 	public void iSelectAgreeUsingPersonalInformationCheckbox(String action) {
 		boolean select = action.equalsIgnoreCase("agree");
-		medicareDetails.selectAgreeUsingPersonalInformationCheckbox(select);
+		additionalInfo.selectAgreeUsingPersonalInformationCheckbox(select);
 	}
 
 	// Step to select or deselect "I have read and agree to the AHSA Privacy
@@ -479,7 +494,7 @@ public class CreateQuoteSteps {
 	@When("I {string} the AHSA Privacy Policy checkbox")
 	public void iSelectAhsaPrivacyPolicyCheckbox(String action) {
 		boolean select = action.equalsIgnoreCase("accept");
-		medicareDetails.selectAhsaPrivacyPolicyCheckbox(select);
+		additionalInfo.selectAhsaPrivacyPolicyCheckbox(select);
 	}
 
 	// Step to select or deselect "The information entered in this application is
@@ -487,39 +502,39 @@ public class CreateQuoteSteps {
 	@When("I {string} the application truth checkbox")
 	public void iSelectConfirmApplicationIsTrueCheckbox(String action) {
 		boolean select = action.equalsIgnoreCase("confirm");
-		medicareDetails.selectConfirmApplicationIsTrueCheckbox(select);
+		additionalInfo.selectConfirmApplicationIsTrueCheckbox(select);
 	}
 
 	@Given("I submit the additional information page")
 	public void i_submit_additional_information_page() throws InterruptedException {
 		baseTest.scrollByPixels(100, driver);
 		Thread.sleep(1000);
-		starterExtras.clickContinueButton();
+		additionalInfo.clickContinueButton();
 		Thread.sleep(1000);
 	}
 
 	@When("^I enter the BSB number \"([^\"]*)\"$")
 	public void iEnterTheBSBNumber(String bsbNumber) {
-		medicareDetails.enterBSB(bsbNumber);
+		payment.enterBSB(bsbNumber);
 	}
 
 	@Given("^I enter a valid account number \"([^\"]*)\"$")
 	public void enterAccountNumber(String accountNumber) {
-		medicareDetails.enterAccountNumber(accountNumber); // Calls the method from the Page Object to enter the account
+		payment.enterAccountNumber(accountNumber); // Calls the method from the Page Object to enter the account
 															// number.
 	}
 
 	@When("I enter a random account name")
 	public void iEnterARandomAccountName() {
 		baseTest.scrollByPixels(150, driver);
-		medicareDetails.enterRandomAccountName(); // Calling the method from the medicare details PageObject
+		payment.enterRandomAccountName(); // Calling the method from the medicare details PageObject
 	}
 
 	// Step definition for clicking on the Direct Debit Agreements checkbox
 	@When("I select the direct debit agreement checkbox")
 	public void iSelectTheDirectDebitAgreementCheckbox() {
 		baseTest.scrollByPixels(150, driver);
-		medicareDetails.clickDirectDebitCheckbox();
+		payment.clickDirectDebitCheckbox();
 	}
 
 	// Step to click on the Submit Form button
@@ -527,13 +542,13 @@ public class CreateQuoteSteps {
 	public void iClickOnTheSubmitFormButton() throws InterruptedException {
 		baseTest.scrollByPixels(150, driver);
 		Thread.sleep(1000);
-		medicareDetails.clickSubmitFormButton(); // Call the action method
+		payment.clickSubmitFormButton(); // Call the action method
 	}
 
 	@When("I toggle the bank account details checkbox by double-clicking")
 	public void iToggleTheBankAccountDetailsCheckboxByDoubleClicking() throws InterruptedException {
 		// baseTest.scrollByPixels(250, driver);
-		medicareDetails.toggleCheckboxByDoubleClick(); // Call the action method
+		payment.toggleCheckboxByDoubleClick(); // Call the action method
 
 	}
 }

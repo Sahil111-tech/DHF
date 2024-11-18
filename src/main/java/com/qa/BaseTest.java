@@ -181,6 +181,14 @@ public class BaseTest {
 	     wait.until(ExpectedConditions.visibilityOfAllElements(dropdown.findElements(By.tagName("option"))));
 	    }
 	
+	// Modify waitForVisibility method to handle a list of WebElements
+	public void waitForVisibility(List<WebElement> elements, WebDriver driver) {
+	    WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10)); // Use an appropriate timeout
+	    for (WebElement element : elements) {
+	        wait.until(ExpectedConditions.visibilityOf(element)); // Wait for each element in the list to be visible
+	    }
+	}
+	
 	// Helper Method to Wait for Modal/Pop-Up
 	public void waitForModalAndHandle(WebDriver driver) {
 	    WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(30));
