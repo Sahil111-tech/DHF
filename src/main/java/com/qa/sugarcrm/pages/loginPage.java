@@ -10,6 +10,7 @@ import com.qa.BaseTest;
 public class loginPage extends BaseTest {
 	protected WebDriver driver;
 
+
 	// constructor for initialization page factory and drivers
 	public loginPage(WebDriver driver) {
 		this.driver = driver;

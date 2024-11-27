@@ -1,0 +1,760 @@
+14:49:00.220 [main] INFO  - click on continue button
+14:49:05.290 [main] INFO  - click on continue button
+14:49:08.011 [main] INFO  - Selected 'Mr' from dropdown.
+14:50:06.673 [main] INFO  - Browser selected: chrome
+14:50:09.137 [main] INFO  - ChromeDriver initialized.
+14:50:12.460 [main] INFO  - Navigated to URL: https://dms.uat.doctorshealthfund.com.au/
+14:50:12.736 [main] INFO  - All cookies cleared before starting the test.
+14:50:12.797 [main] INFO  - Navigating to the quote page.
+14:50:12.840 [main] INFO  - Page title: Private Health Insurance for Doctors | Doctors' Health Fund
+14:50:12.845 [main] INFO  - Clicking the 'Get Quote' button.
+14:50:13.061 [main] INFO  - 'Get Quote' button clicked successfully.
+14:50:14.473 [main] INFO  - Selected cover for: Single
+14:50:14.721 [main] INFO  - Selected residence: NSW
+14:50:15.420 [main] INFO  - Selected annual income: Below $97k
+14:50:16.892 [main] INFO  - Selected the hospital plan: Top Cover
+14:50:17.066 [main] INFO  - Selected the Extras Cover: Total Extras
+14:50:17.304 [main] INFO  - Clicked on the Apply Now button for the selected plan.
+14:50:21.363 [main] INFO  - click on continue button
+14:50:25.898 [main] INFO  - click on continue button
+14:50:29.762 [main] INFO  - Selected 'Mr' from dropdown.
+14:50:35.664 [main] INFO  - click on continue button
+14:50:43.167 [main] INFO  - click on continue button
+14:50:50.515 [main] INFO  - click on continue button
+14:50:54.921 [main] INFO  - click on continue button
+15:06:25.236 [main] INFO  - Browser selected: chrome
+15:06:27.966 [main] INFO  - ChromeDriver initialized.
+15:06:31.136 [main] INFO  - Navigated to URL: https://dms.uat.doctorshealthfund.com.au/
+15:06:31.446 [main] INFO  - All cookies cleared before starting the test.
+15:06:31.510 [main] INFO  - Navigating to the quote page.
+15:06:31.537 [main] INFO  - Page title: Private Health Insurance for Doctors | Doctors' Health Fund
+15:06:31.542 [main] INFO  - Clicking the 'Get Quote' button.
+15:06:31.735 [main] WARN  - StaleElementReferenceException encountered. Re-locating the element.
+15:06:31.898 [main] INFO  - 'Get Quote' button clicked successfully.
+15:06:32.755 [main] INFO  - Selected cover for: Single
+15:06:32.987 [main] INFO  - Selected residence: NSW
+15:06:33.697 [main] INFO  - Selected annual income: Below $97k
+15:06:36.158 [main] INFO  - Selected the hospital plan: Top Cover
+15:06:36.298 [main] INFO  - Selected the Extras Cover: Total Extras
+15:06:36.472 [main] INFO  - Clicked on the Apply Now button for the selected plan.
+15:06:41.022 [main] INFO  - click on continue button
+15:06:45.459 [main] INFO  - click on continue button
+15:06:48.240 [main] INFO  - Selected 'Mr' from dropdown.
+15:06:54.585 [main] INFO  - click on continue button
+15:07:02.413 [main] INFO  - click on continue button
+15:07:09.893 [main] INFO  - click on continue button
+15:07:14.295 [main] INFO  - click on continue button
+15:24:31.271 [main] INFO  - Browser selected: chrome
+15:24:34.494 [main] INFO  - ChromeDriver initialized.
+15:24:39.379 [main] INFO  - Navigated to URL: https://dms.uat.doctorshealthfund.com.au/
+15:24:39.579 [main] INFO  - All cookies cleared before starting the test.
+15:24:39.669 [main] INFO  - Navigating to the quote page.
+15:24:39.788 [main] INFO  - Page title: Private Health Insurance for Doctors | Doctors' Health Fund
+15:24:39.794 [main] INFO  - Clicking the 'Get Quote' button.
+15:24:41.370 [main] INFO  - 'Get Quote' button clicked successfully.
+15:24:42.570 [main] INFO  - Selected cover for: Single
+15:24:42.827 [main] INFO  - Selected residence: NSW
+15:24:43.608 [main] INFO  - Selected annual income: Below $97k
+15:24:44.222 [main] INFO  - Selecting the plan: Smart Starter Bronze Plus
+15:24:46.128 [main] INFO  - Clicked the element successfully
+15:24:46.132 [main] INFO  - Selecting 'Starter Extras'.
+15:24:46.354 [main] INFO  - Verifying 'Starter Extras' is enabled.
+15:24:46.412 [main] INFO  - Selecting the plan: Prime Choice
+15:24:46.654 [main] INFO  - Clicked the element successfully
+15:24:46.666 [main] INFO  - Attempting to select 'Starter Extras'.
+15:24:46.778 [main] INFO  - Verifying 'Starter Extras' is disabled.
+15:24:46.819 [main] INFO  - Selecting the plan: Top Cover
+15:24:48.018 [main] WARN  - Element click intercepted, retrying... attempt: 1
+15:24:49.148 [main] WARN  - Element click intercepted, retrying... attempt: 2
+15:24:50.267 [main] WARN  - Element click intercepted, retrying... attempt: 3
+15:24:50.333 [main] INFO  - Clicked the element using JavaScript click as a fallback
+15:24:50.350 [main] INFO  - Attempting to select 'Starter Extras'.
+15:24:50.440 [main] INFO  - Verifying 'Starter Extras' is disabled.
+15:24:54.274 [main] INFO  - Selected 'Extras only' from dropdown.
+15:24:54.319 [main] INFO  - Attempting to select 'Starter Extras'.
+15:24:55.267 [main] INFO  - Verifying 'Starter Extras' is disabled.
+15:24:59.544 [main] INFO  - Selected 'Couple' from dropdown.
+15:25:02.163 [main] INFO  - Selecting the plan: Smart Starter Bronze Plus
+15:25:03.472 [main] INFO  - Clicked the element successfully
+15:25:03.473 [main] INFO  - Selecting 'Starter Extras'.
+15:25:03.662 [main] INFO  - Verifying 'Starter Extras' is enabled.
+15:25:07.013 [main] INFO  - Selected 'Extras only' from dropdown.
+15:25:07.032 [main] INFO  - Attempting to select 'Starter Extras'.
+15:25:08.016 [main] INFO  - Verifying 'Starter Extras' is disabled.
+15:25:12.038 [main] INFO  - Selected 'Family' from dropdown.
+15:25:16.906 [main] INFO  - Selected 'Hospital & Extras' from dropdown.
+15:25:16.920 [main] INFO  - Attempting to select 'Starter Extras'.
+15:25:18.622 [main] INFO  - Verifying 'Starter Extras' is disabled.
+15:25:21.946 [main] INFO  - Selected 'Extras only' from dropdown.
+15:25:21.954 [main] INFO  - Attempting to select 'Starter Extras'.
+15:25:22.032 [main] INFO  - Verifying 'Starter Extras' is disabled.
+15:25:26.025 [main] INFO  - Selected 'Single Parent' from dropdown.
+15:25:30.888 [main] INFO  - Selected 'Hospital & Extras' from dropdown.
+15:25:30.905 [main] INFO  - Attempting to select 'Starter Extras'.
+15:25:31.719 [main] INFO  - Verifying 'Starter Extras' is disabled.
+15:25:35.059 [main] INFO  - Selected 'Extras only' from dropdown.
+15:25:35.068 [main] INFO  - Attempting to select 'Starter Extras'.
+15:25:35.191 [main] INFO  - Verifying 'Starter Extras' is disabled.
+07:14:45.296 [main] INFO  - Browser selected: chrome
+07:14:49.331 [main] INFO  - ChromeDriver initialized.
+07:14:52.189 [main] INFO  - Navigated to URL: https://dms.uat.doctorshealthfund.com.au/
+07:14:52.969 [main] INFO  - All cookies cleared before starting the test.
+07:14:53.023 [main] INFO  - Navigating to the quote page.
+07:14:53.049 [main] INFO  - Page title: Private Health Insurance for Doctors | Doctors' Health Fund
+07:14:53.056 [main] INFO  - Clicking the 'Get Quote' button.
+07:14:53.282 [main] INFO  - 'Get Quote' button clicked successfully.
+07:14:54.789 [main] INFO  - Selected cover for: Single
+07:14:55.070 [main] INFO  - Selected residence: NSW
+07:14:55.790 [main] INFO  - Selected annual income: Below $97k
+07:14:58.053 [main] INFO  - Selected the hospital plan: Top Cover
+07:14:58.227 [main] INFO  - Selected the Extras Cover: Total Extras
+07:14:58.409 [main] INFO  - Clicked on the Apply Now button for the selected plan.
+07:31:13.269 [main] INFO  - Browser selected: chrome
+07:31:16.860 [main] INFO  - ChromeDriver initialized.
+07:31:22.424 [main] INFO  - Navigated to URL: https://dms.uat.doctorshealthfund.com.au/
+07:31:22.704 [main] INFO  - All cookies cleared before starting the test.
+07:31:22.762 [main] INFO  - Navigating to the quote page.
+07:31:22.827 [main] INFO  - Page title: Private Health Insurance for Doctors | Doctors' Health Fund
+07:31:22.834 [main] INFO  - Clicking the 'Get Quote' button.
+07:31:23.064 [main] INFO  - 'Get Quote' button clicked successfully.
+07:31:24.361 [main] INFO  - Selected cover for: Single
+07:31:24.710 [main] INFO  - Selected residence: NSW
+07:31:25.613 [main] INFO  - Selected annual income: Below $97k
+07:31:28.150 [main] INFO  - Selected the hospital plan: Top Cover
+07:31:28.289 [main] INFO  - Selected the Extras Cover: Total Extras
+07:31:28.463 [main] INFO  - Clicked on the Apply Now button for the selected plan.
+07:31:32.847 [main] INFO  - click on continue button
+07:31:37.432 [main] INFO  - click on continue button
+07:31:40.944 [main] INFO  - Selected 'Mr' from dropdown.
+07:31:46.927 [main] INFO  - click on continue button
+07:31:54.536 [main] INFO  - click on continue button
+07:32:01.974 [main] INFO  - click on continue button
+07:32:06.432 [main] INFO  - click on continue button
+08:27:09.246 [main] INFO  - Browser selected: chrome
+08:27:12.645 [main] INFO  - ChromeDriver initialized.
+08:27:14.071 [main] INFO  - Navigated to URL: https://crmtest.doctorshealthfund.com.au/
+08:27:14.083 [main] INFO  - All cookies cleared before starting the test.
+08:27:14.149 [main] INFO  - Navigating to the login page.
+08:27:16.623 [main] INFO  - Clicked succesfully on the Leads button.
+08:27:17.437 [main] INFO  - Clicked succesfully on the Create button.
+08:27:18.837 [main] INFO  - Dropdown opened.
+08:27:18.948 [main] INFO  - Searched for salutation: Mr
+08:27:19.002 [main] INFO  - Checking option: Mr
+08:27:19.093 [main] INFO  - Selected salutation: Mr
+08:44:23.021 [main] INFO  - Browser selected: chrome
+08:44:25.847 [main] INFO  - ChromeDriver initialized.
+08:44:27.109 [main] INFO  - Navigated to URL: https://crmtest.doctorshealthfund.com.au/
+08:44:27.121 [main] INFO  - All cookies cleared before starting the test.
+08:44:27.215 [main] INFO  - Navigating to the login page.
+08:44:29.874 [main] INFO  - Clicked succesfully on the Leads button.
+08:44:30.737 [main] INFO  - Clicked succesfully on the Create button.
+08:44:31.929 [main] INFO  - Dropdown opened.
+08:44:32.034 [main] INFO  - Searched for salutation: Mr
+08:44:32.102 [main] INFO  - Checking option: Mr
+08:44:32.167 [main] INFO  - Selected salutation: Mr
+08:46:17.685 [main] INFO  - Browser selected: chrome
+08:46:20.701 [main] INFO  - ChromeDriver initialized.
+08:46:21.175 [main] INFO  - Navigated to URL: https://crmtest.doctorshealthfund.com.au/
+08:46:22.111 [main] INFO  - All cookies cleared before starting the test.
+08:46:22.168 [main] INFO  - Navigating to the login page.
+08:46:24.249 [main] INFO  - Clicked succesfully on the Leads button.
+08:46:25.082 [main] INFO  - Clicked succesfully on the Create button.
+08:46:26.884 [main] INFO  - Dropdown opened.
+08:46:26.960 [main] INFO  - Searched for salutation: Mr
+08:46:27.029 [main] INFO  - Checking option: Mr
+08:46:27.088 [main] INFO  - Selected salutation: Mr
+08:51:46.431 [main] INFO  - Browser selected: chrome
+08:51:49.233 [main] INFO  - ChromeDriver initialized.
+08:51:50.608 [main] INFO  - Navigated to URL: https://crmtest.doctorshealthfund.com.au/
+08:51:50.616 [main] INFO  - All cookies cleared before starting the test.
+08:51:50.665 [main] INFO  - Navigating to the login page.
+08:51:53.123 [main] INFO  - Clicked succesfully on the Leads button.
+08:51:53.817 [main] INFO  - Clicked succesfully on the Create button.
+08:51:54.880 [main] INFO  - Dropdown opened.
+08:51:55.316 [main] INFO  - Searched for salutation: Mr
+08:51:55.387 [main] INFO  - Checking option: Mr
+08:51:55.448 [main] INFO  - Selected salutation: Mr
+08:54:28.972 [main] INFO  - Browser selected: chrome
+08:54:32.168 [main] INFO  - ChromeDriver initialized.
+08:54:33.854 [main] INFO  - Navigated to URL: https://crmtest.doctorshealthfund.com.au/
+08:54:33.862 [main] INFO  - All cookies cleared before starting the test.
+08:54:33.914 [main] INFO  - Navigating to the login page.
+08:54:36.120 [main] INFO  - Clicked succesfully on the Leads button.
+08:54:36.923 [main] INFO  - Clicked succesfully on the Create button.
+08:54:38.861 [main] INFO  - Dropdown opened.
+08:54:38.947 [main] INFO  - Searched for salutation: Mr
+08:54:39.057 [main] INFO  - Checking option: Mr
+08:54:39.134 [main] INFO  - Selected salutation: Mr
+08:56:32.657 [main] INFO  - Browser selected: chrome
+08:56:35.450 [main] INFO  - ChromeDriver initialized.
+08:56:35.929 [main] INFO  - Navigated to URL: https://crmtest.doctorshealthfund.com.au/
+08:56:36.800 [main] INFO  - All cookies cleared before starting the test.
+08:56:36.843 [main] INFO  - Navigating to the login page.
+08:56:39.206 [main] INFO  - Clicked succesfully on the Leads button.
+08:56:40.214 [main] INFO  - Clicked succesfully on the Create button.
+08:56:41.452 [main] INFO  - Dropdown opened.
+08:56:41.500 [main] INFO  - Searched for salutation: Mr
+08:56:41.633 [main] INFO  - Checking option: Mr
+08:56:41.706 [main] INFO  - Selected salutation: Mr
+09:22:37.092 [main] INFO  - Browser selected: chrome
+09:22:40.213 [main] INFO  - ChromeDriver initialized.
+09:22:41.615 [main] INFO  - Navigated to URL: https://crmtest.doctorshealthfund.com.au/
+09:22:41.628 [main] INFO  - All cookies cleared before starting the test.
+09:22:41.705 [main] INFO  - Navigating to the login page.
+09:22:44.037 [main] INFO  - Clicked succesfully on the Leads button.
+09:22:44.879 [main] INFO  - Clicked succesfully on the Create button.
+09:22:46.224 [main] INFO  - Dropdown opened.
+09:22:46.277 [main] INFO  - Searched for salutation: Mr
+09:22:46.343 [main] INFO  - Checking option: Mr
+09:22:46.391 [main] INFO  - Selected salutation: Mr
+09:44:25.045 [main] INFO  - Browser selected: chrome
+09:44:28.464 [main] INFO  - ChromeDriver initialized.
+09:44:29.760 [main] INFO  - Navigated to URL: https://crmtest.doctorshealthfund.com.au/
+09:44:29.767 [main] INFO  - All cookies cleared before starting the test.
+09:44:29.842 [main] INFO  - Navigating to the login page.
+09:44:32.370 [main] INFO  - Clicked succesfully on the Leads button.
+09:44:33.124 [main] INFO  - Clicked succesfully on the Create button.
+09:44:34.338 [main] INFO  - Dropdown opened.
+09:44:34.442 [main] INFO  - Searched for salutation: Mr
+09:44:34.523 [main] INFO  - Checking option: Mr
+09:44:34.607 [main] INFO  - Selected salutation: Mr
+09:44:35.131 [main] INFO  - Dropdown opened successfully.
+09:45:52.954 [main] INFO  - Browser selected: chrome
+09:45:55.491 [main] INFO  - ChromeDriver initialized.
+09:45:56.893 [main] INFO  - Navigated to URL: https://crmtest.doctorshealthfund.com.au/
+09:45:56.907 [main] INFO  - All cookies cleared before starting the test.
+09:45:56.973 [main] INFO  - Navigating to the login page.
+09:47:23.998 [main] INFO  - Browser selected: chrome
+09:47:26.828 [main] INFO  - ChromeDriver initialized.
+09:47:28.077 [main] INFO  - Navigated to URL: https://crmtest.doctorshealthfund.com.au/
+09:47:28.106 [main] INFO  - All cookies cleared before starting the test.
+09:47:28.169 [main] INFO  - Navigating to the login page.
+09:47:30.671 [main] INFO  - Clicked succesfully on the Leads button.
+09:47:31.503 [main] INFO  - Clicked succesfully on the Create button.
+09:47:32.879 [main] INFO  - Dropdown opened.
+09:47:32.974 [main] INFO  - Searched for salutation: Mr
+09:47:33.044 [main] INFO  - Checking option: Mr
+09:47:33.103 [main] INFO  - Selected salutation: Mr
+09:47:33.670 [main] INFO  - Dropdown opened successfully.
+09:57:22.616 [main] INFO  - Browser selected: chrome
+09:57:25.544 [main] INFO  - ChromeDriver initialized.
+09:57:27.099 [main] INFO  - Navigated to URL: https://crmtest.doctorshealthfund.com.au/
+09:57:27.108 [main] INFO  - All cookies cleared before starting the test.
+09:57:27.154 [main] INFO  - Navigating to the login page.
+09:57:29.559 [main] INFO  - Clicked succesfully on the Leads button.
+09:57:30.653 [main] INFO  - Clicked succesfully on the Create button.
+09:57:32.427 [main] INFO  - Dropdown opened.
+09:57:32.535 [main] INFO  - Searched for salutation: Mr
+09:57:32.603 [main] INFO  - Checking option: Mr
+09:57:32.686 [main] INFO  - Selected salutation: Mr
+09:57:33.294 [main] INFO  - Dropdown opened successfully.
+10:14:05.310 [main] INFO  - Browser selected: chrome
+10:14:08.031 [main] INFO  - ChromeDriver initialized.
+10:14:09.428 [main] INFO  - Navigated to URL: https://crmtest.doctorshealthfund.com.au/
+10:14:09.436 [main] INFO  - All cookies cleared before starting the test.
+10:14:09.514 [main] INFO  - Navigating to the login page.
+10:14:11.871 [main] INFO  - Clicked succesfully on the Leads button.
+10:14:12.689 [main] INFO  - Clicked succesfully on the Create button.
+10:14:14.065 [main] INFO  - Dropdown opened.
+10:14:14.176 [main] INFO  - Searched for salutation: Mr
+10:14:14.236 [main] INFO  - Checking option: Mr
+10:14:14.300 [main] INFO  - Selected salutation: Mr
+10:14:14.850 [main] INFO  - Dropdown opened successfully.
+10:21:42.997 [main] INFO  - Browser selected: chrome
+10:21:45.823 [main] INFO  - ChromeDriver initialized.
+10:21:47.156 [main] INFO  - Navigated to URL: https://crmtest.doctorshealthfund.com.au/
+10:21:47.163 [main] INFO  - All cookies cleared before starting the test.
+10:21:47.202 [main] INFO  - Navigating to the login page.
+10:21:49.696 [main] INFO  - Clicked succesfully on the Leads button.
+10:21:50.494 [main] INFO  - Clicked succesfully on the Create button.
+10:21:52.047 [main] INFO  - Dropdown opened.
+10:21:52.100 [main] INFO  - Searched for salutation: Mr
+10:21:52.233 [main] INFO  - Checking option: Mr
+10:21:52.311 [main] INFO  - Selected salutation: Mr
+10:21:52.894 [main] INFO  - Dropdown opened successfully.
+10:23:09.078 [main] INFO  - Browser selected: chrome
+10:23:12.406 [main] INFO  - ChromeDriver initialized.
+10:23:14.079 [main] INFO  - Navigated to URL: https://crmtest.doctorshealthfund.com.au/
+10:23:14.123 [main] INFO  - All cookies cleared before starting the test.
+10:23:14.168 [main] INFO  - Navigating to the login page.
+10:23:17.766 [main] INFO  - Clicked succesfully on the Leads button.
+10:23:18.696 [main] INFO  - Clicked succesfully on the Create button.
+10:23:19.889 [main] INFO  - Dropdown opened.
+10:23:38.459 [main] INFO  - Browser selected: chrome
+10:23:41.558 [main] INFO  - ChromeDriver initialized.
+10:23:42.956 [main] INFO  - Navigated to URL: https://crmtest.doctorshealthfund.com.au/
+10:23:42.968 [main] INFO  - All cookies cleared before starting the test.
+10:23:43.042 [main] INFO  - Navigating to the login page.
+10:23:45.514 [main] INFO  - Clicked succesfully on the Leads button.
+10:23:46.657 [main] INFO  - Clicked succesfully on the Create button.
+10:23:48.031 [main] INFO  - Dropdown opened.
+10:23:48.127 [main] INFO  - Searched for salutation: Mr
+10:23:48.204 [main] INFO  - Checking option: Mr
+10:23:48.281 [main] INFO  - Selected salutation: Mr
+10:23:48.836 [main] INFO  - Dropdown opened successfully.
+10:28:08.392 [main] INFO  - Browser selected: chrome
+10:28:11.187 [main] INFO  - ChromeDriver initialized.
+10:28:12.412 [main] INFO  - Navigated to URL: https://crmtest.doctorshealthfund.com.au/
+10:28:12.427 [main] INFO  - All cookies cleared before starting the test.
+10:28:12.495 [main] INFO  - Navigating to the login page.
+10:28:14.672 [main] INFO  - Clicked succesfully on the Leads button.
+10:28:15.451 [main] INFO  - Clicked succesfully on the Create button.
+10:28:16.687 [main] INFO  - Dropdown opened.
+10:28:16.743 [main] INFO  - Searched for salutation: Mr
+10:28:16.856 [main] INFO  - Checking option: Mr
+10:28:16.901 [main] INFO  - Selected salutation: Mr
+10:28:17.496 [main] INFO  - Dropdown opened successfully.
+10:36:15.650 [main] INFO  - Browser selected: chrome
+10:36:18.210 [main] INFO  - ChromeDriver initialized.
+10:36:19.970 [main] INFO  - Navigated to URL: https://crmtest.doctorshealthfund.com.au/
+10:36:19.980 [main] INFO  - All cookies cleared before starting the test.
+10:36:20.022 [main] INFO  - Navigating to the login page.
+10:36:39.585 [main] INFO  - Browser selected: chrome
+10:36:42.171 [main] INFO  - ChromeDriver initialized.
+10:36:43.403 [main] INFO  - Navigated to URL: https://crmtest.doctorshealthfund.com.au/
+10:36:43.424 [main] INFO  - All cookies cleared before starting the test.
+10:36:43.493 [main] INFO  - Navigating to the login page.
+10:36:45.988 [main] INFO  - Clicked succesfully on the Leads button.
+10:36:46.851 [main] INFO  - Clicked succesfully on the Create button.
+10:36:48.364 [main] INFO  - Dropdown opened.
+10:36:48.454 [main] INFO  - Searched for salutation: Mr
+10:36:48.513 [main] INFO  - Checking option: Mr
+10:36:48.555 [main] INFO  - Selected salutation: Mr
+10:36:49.084 [main] INFO  - Dropdown opened successfully.
+11:30:53.163 [main] INFO  - Browser selected: chrome
+11:30:56.506 [main] INFO  - ChromeDriver initialized.
+11:30:59.829 [main] INFO  - Navigated to URL: https://crmtest.doctorshealthfund.com.au/
+11:30:59.839 [main] INFO  - All cookies cleared before starting the test.
+11:30:59.919 [main] INFO  - Navigating to the login page.
+11:31:02.273 [main] INFO  - Clicked succesfully on the Leads button.
+11:31:02.955 [main] INFO  - Clicked succesfully on the Create button.
+11:31:04.702 [main] INFO  - Dropdown opened.
+11:31:04.757 [main] INFO  - Searched for salutation: Mr
+11:31:04.822 [main] INFO  - Checking option: Mr
+11:31:04.869 [main] INFO  - Selected salutation: Mr
+11:31:05.402 [main] INFO  - Dropdown opened successfully.
+11:35:27.077 [main] INFO  - Browser selected: chrome
+11:35:29.757 [main] INFO  - ChromeDriver initialized.
+11:35:31.247 [main] INFO  - Navigated to URL: https://crmtest.doctorshealthfund.com.au/
+11:35:31.263 [main] INFO  - All cookies cleared before starting the test.
+11:35:31.328 [main] INFO  - Navigating to the login page.
+11:35:34.232 [main] INFO  - Clicked succesfully on the Leads button.
+11:35:35.117 [main] INFO  - Clicked succesfully on the Create button.
+11:35:36.349 [main] INFO  - Dropdown opened.
+11:35:36.456 [main] INFO  - Searched for salutation: Mr
+11:35:36.517 [main] INFO  - Checking option: Mr
+11:35:36.626 [main] INFO  - Selected salutation: Mr
+11:35:37.143 [main] INFO  - Dropdown opened successfully.
+11:36:51.923 [main] INFO  - Browser selected: chrome
+11:36:54.433 [main] INFO  - ChromeDriver initialized.
+11:36:55.546 [main] INFO  - Navigated to URL: https://crmtest.doctorshealthfund.com.au/
+11:36:55.555 [main] INFO  - All cookies cleared before starting the test.
+11:36:55.607 [main] INFO  - Navigating to the login page.
+11:36:58.176 [main] INFO  - Clicked succesfully on the Leads button.
+11:36:59.027 [main] INFO  - Clicked succesfully on the Create button.
+11:37:00.533 [main] INFO  - Dropdown opened.
+11:37:00.599 [main] INFO  - Searched for salutation: Mr
+11:37:00.697 [main] INFO  - Checking option: Mr
+11:37:00.740 [main] INFO  - Selected salutation: Mr
+11:37:01.302 [main] INFO  - Dropdown opened successfully.
+11:37:32.206 [main] INFO  - Browser selected: chrome
+11:37:34.958 [main] INFO  - ChromeDriver initialized.
+11:37:36.285 [main] INFO  - Navigated to URL: https://crmtest.doctorshealthfund.com.au/
+11:37:36.298 [main] INFO  - All cookies cleared before starting the test.
+11:37:36.363 [main] INFO  - Navigating to the login page.
+11:37:53.296 [main] INFO  - Browser selected: chrome
+11:37:55.913 [main] INFO  - ChromeDriver initialized.
+11:37:57.351 [main] INFO  - Navigated to URL: https://crmtest.doctorshealthfund.com.au/
+11:37:57.359 [main] INFO  - All cookies cleared before starting the test.
+11:37:57.432 [main] INFO  - Navigating to the login page.
+11:37:59.900 [main] INFO  - Clicked succesfully on the Leads button.
+11:38:00.830 [main] INFO  - Clicked succesfully on the Create button.
+11:38:02.086 [main] INFO  - Dropdown opened.
+11:38:02.206 [main] INFO  - Searched for salutation: Mr
+11:38:02.338 [main] INFO  - Checking option: Mr
+11:38:02.397 [main] INFO  - Selected salutation: Mr
+11:38:03.162 [main] INFO  - Dropdown opened successfully.
+11:38:37.609 [main] INFO  - Browser selected: chrome
+11:38:41.197 [main] INFO  - ChromeDriver initialized.
+11:38:42.426 [main] INFO  - Navigated to URL: https://crmtest.doctorshealthfund.com.au/
+11:38:42.434 [main] INFO  - All cookies cleared before starting the test.
+11:38:42.517 [main] INFO  - Navigating to the login page.
+11:38:44.953 [main] INFO  - Clicked succesfully on the Leads button.
+11:38:45.767 [main] INFO  - Clicked succesfully on the Create button.
+11:38:46.995 [main] INFO  - Dropdown opened.
+11:38:47.042 [main] INFO  - Searched for salutation: Mr
+11:38:47.105 [main] INFO  - Checking option: Mr
+11:38:47.142 [main] INFO  - Selected salutation: Mr
+11:38:47.793 [main] INFO  - Dropdown opened successfully.
+11:39:54.243 [main] INFO  - Browser selected: chrome
+11:39:56.942 [main] INFO  - ChromeDriver initialized.
+11:39:58.326 [main] INFO  - Navigated to URL: https://crmtest.doctorshealthfund.com.au/
+11:39:58.371 [main] INFO  - All cookies cleared before starting the test.
+11:39:58.424 [main] INFO  - Navigating to the login page.
+11:40:00.893 [main] INFO  - Clicked succesfully on the Leads button.
+11:40:01.653 [main] INFO  - Clicked succesfully on the Create button.
+11:40:02.988 [main] INFO  - Dropdown opened.
+11:40:03.043 [main] INFO  - Searched for salutation: Mr
+11:40:03.175 [main] INFO  - Checking option: Mr
+11:40:03.236 [main] INFO  - Selected salutation: Mr
+11:40:03.842 [main] INFO  - Dropdown opened successfully.
+11:43:11.768 [main] INFO  - Browser selected: chrome
+11:43:14.524 [main] INFO  - ChromeDriver initialized.
+11:43:15.901 [main] INFO  - Navigated to URL: https://crmtest.doctorshealthfund.com.au/
+11:43:15.908 [main] INFO  - All cookies cleared before starting the test.
+11:43:15.986 [main] INFO  - Navigating to the login page.
+11:43:18.504 [main] INFO  - Clicked succesfully on the Leads button.
+11:43:19.511 [main] INFO  - Clicked succesfully on the Create button.
+11:43:20.893 [main] INFO  - Dropdown opened.
+11:43:20.951 [main] INFO  - Searched for salutation: Mr
+11:43:21.076 [main] INFO  - Checking option: Mr
+11:43:21.136 [main] INFO  - Selected salutation: Mr
+11:43:21.699 [main] INFO  - Dropdown opened successfully.
+11:53:53.208 [main] INFO  - Browser selected: chrome
+11:53:55.975 [main] INFO  - ChromeDriver initialized.
+11:53:57.294 [main] INFO  - Navigated to URL: https://crmtest.doctorshealthfund.com.au/
+11:53:57.307 [main] INFO  - All cookies cleared before starting the test.
+11:53:57.380 [main] INFO  - Navigating to the login page.
+11:54:13.537 [main] INFO  - Browser selected: chrome
+11:54:16.244 [main] INFO  - ChromeDriver initialized.
+11:54:17.624 [main] INFO  - Navigated to URL: https://crmtest.doctorshealthfund.com.au/
+11:54:17.632 [main] INFO  - All cookies cleared before starting the test.
+11:54:17.717 [main] INFO  - Navigating to the login page.
+11:54:33.860 [main] INFO  - Browser selected: chrome
+11:54:36.687 [main] INFO  - ChromeDriver initialized.
+11:54:38.247 [main] INFO  - Navigated to URL: https://crmtest.doctorshealthfund.com.au/
+11:54:38.255 [main] INFO  - All cookies cleared before starting the test.
+11:54:38.308 [main] INFO  - Navigating to the login page.
+11:54:40.814 [main] INFO  - Clicked succesfully on the Leads button.
+11:54:41.624 [main] INFO  - Clicked succesfully on the Create button.
+11:54:42.932 [main] INFO  - Dropdown opened.
+11:54:42.998 [main] INFO  - Searched for salutation: Mr
+11:54:43.089 [main] INFO  - Checking option: Mr
+11:54:43.174 [main] INFO  - Selected salutation: Mr
+11:54:43.725 [main] INFO  - Dropdown opened successfully.
+12:00:38.699 [main] INFO  - Browser selected: chrome
+12:00:41.423 [main] INFO  - ChromeDriver initialized.
+12:00:42.987 [main] INFO  - Navigated to URL: https://crmtest.doctorshealthfund.com.au/
+12:00:42.998 [main] INFO  - All cookies cleared before starting the test.
+12:00:43.059 [main] INFO  - Navigating to the login page.
+12:00:45.487 [main] INFO  - Clicked succesfully on the Leads button.
+12:00:46.416 [main] INFO  - Clicked succesfully on the Create button.
+12:00:47.918 [main] INFO  - Dropdown opened.
+12:00:48.025 [main] INFO  - Searched for salutation: Mr
+12:00:48.091 [main] INFO  - Checking option: Mr
+12:00:48.172 [main] INFO  - Selected salutation: Mr
+12:00:48.780 [main] INFO  - Dropdown opened successfully.
+12:01:52.278 [main] INFO  - Browser selected: chrome
+12:01:54.909 [main] INFO  - ChromeDriver initialized.
+12:01:56.229 [main] INFO  - Navigated to URL: https://crmtest.doctorshealthfund.com.au/
+12:01:56.236 [main] INFO  - All cookies cleared before starting the test.
+12:01:56.310 [main] INFO  - Navigating to the login page.
+12:01:58.725 [main] INFO  - Clicked succesfully on the Leads button.
+12:01:59.478 [main] INFO  - Clicked succesfully on the Create button.
+12:02:00.738 [main] INFO  - Dropdown opened.
+12:02:00.833 [main] INFO  - Searched for salutation: Mr
+12:02:00.915 [main] INFO  - Checking option: Mr
+12:02:00.957 [main] INFO  - Selected salutation: Mr
+12:02:01.565 [main] INFO  - Dropdown opened successfully.
+12:04:14.789 [main] INFO  - Browser selected: chrome
+12:04:17.562 [main] INFO  - ChromeDriver initialized.
+12:04:19.145 [main] INFO  - Navigated to URL: https://crmtest.doctorshealthfund.com.au/
+12:04:19.189 [main] INFO  - All cookies cleared before starting the test.
+12:04:19.237 [main] INFO  - Navigating to the login page.
+12:06:40.145 [main] INFO  - Browser selected: chrome
+12:06:42.920 [main] INFO  - ChromeDriver initialized.
+12:06:44.210 [main] INFO  - Navigated to URL: https://crmtest.doctorshealthfund.com.au/
+12:06:44.254 [main] INFO  - All cookies cleared before starting the test.
+12:06:44.301 [main] INFO  - Navigating to the login page.
+12:06:46.875 [main] INFO  - Clicked succesfully on the Leads button.
+12:06:47.686 [main] INFO  - Clicked succesfully on the Create button.
+12:06:48.952 [main] INFO  - Dropdown opened.
+12:06:49.005 [main] INFO  - Searched for salutation: Mr
+12:06:49.071 [main] INFO  - Checking option: Mr
+12:06:49.113 [main] INFO  - Selected salutation: Mr
+12:06:49.788 [main] INFO  - Dropdown opened successfully.
+12:08:17.232 [main] INFO  - Browser selected: chrome
+12:08:20.334 [main] INFO  - ChromeDriver initialized.
+12:08:21.580 [main] INFO  - Navigated to URL: https://crmtest.doctorshealthfund.com.au/
+12:08:21.601 [main] INFO  - All cookies cleared before starting the test.
+12:08:21.645 [main] INFO  - Navigating to the login page.
+12:08:24.130 [main] INFO  - Clicked succesfully on the Leads button.
+12:08:24.810 [main] INFO  - Clicked succesfully on the Create button.
+12:08:26.185 [main] INFO  - Dropdown opened.
+12:08:26.296 [main] INFO  - Searched for salutation: Mr
+12:08:26.362 [main] INFO  - Checking option: Mr
+12:08:26.438 [main] INFO  - Selected salutation: Mr
+12:08:26.984 [main] INFO  - Dropdown opened successfully.
+12:09:54.761 [main] INFO  - Browser selected: chrome
+12:09:57.567 [main] INFO  - ChromeDriver initialized.
+12:09:59.164 [main] INFO  - Navigated to URL: https://crmtest.doctorshealthfund.com.au/
+12:09:59.173 [main] INFO  - All cookies cleared before starting the test.
+12:09:59.220 [main] INFO  - Navigating to the login page.
+12:10:01.726 [main] INFO  - Clicked succesfully on the Leads button.
+12:10:02.775 [main] INFO  - Clicked succesfully on the Create button.
+12:10:04.298 [main] INFO  - Dropdown opened.
+12:10:04.352 [main] INFO  - Searched for salutation: Mr
+12:10:04.413 [main] INFO  - Checking option: Mr
+12:10:04.452 [main] INFO  - Selected salutation: Mr
+12:10:05.092 [main] INFO  - Dropdown opened successfully.
+12:11:20.979 [main] INFO  - Browser selected: chrome
+12:11:23.679 [main] INFO  - ChromeDriver initialized.
+12:11:25.024 [main] INFO  - Navigated to URL: https://crmtest.doctorshealthfund.com.au/
+12:11:25.031 [main] INFO  - All cookies cleared before starting the test.
+12:11:25.098 [main] INFO  - Navigating to the login page.
+12:11:27.571 [main] INFO  - Clicked succesfully on the Leads button.
+12:11:28.288 [main] INFO  - Clicked succesfully on the Create button.
+12:11:29.920 [main] INFO  - Dropdown opened.
+12:11:30.029 [main] INFO  - Searched for salutation: Mr
+12:11:30.128 [main] INFO  - Checking option: Mr
+12:11:30.182 [main] INFO  - Selected salutation: Mr
+12:11:30.773 [main] INFO  - Dropdown opened successfully.
+12:16:07.506 [main] INFO  - Browser selected: chrome
+12:16:10.326 [main] INFO  - ChromeDriver initialized.
+12:16:12.243 [main] INFO  - Navigated to URL: https://crmtest.doctorshealthfund.com.au/
+12:16:12.260 [main] INFO  - All cookies cleared before starting the test.
+12:16:12.358 [main] INFO  - Navigating to the login page.
+12:16:15.388 [main] INFO  - Clicked succesfully on the Leads button.
+12:16:16.182 [main] INFO  - Clicked succesfully on the Create button.
+12:16:17.543 [main] INFO  - Dropdown opened.
+12:16:17.660 [main] INFO  - Searched for salutation: Mr
+12:16:17.723 [main] INFO  - Checking option: Mr
+12:16:17.782 [main] INFO  - Selected salutation: Mr
+12:16:18.364 [main] INFO  - Dropdown opened successfully.
+12:17:59.338 [main] INFO  - Browser selected: chrome
+12:18:03.687 [main] INFO  - ChromeDriver initialized.
+12:18:04.683 [main] INFO  - Navigated to URL: https://crmtest.doctorshealthfund.com.au/
+12:18:04.692 [main] INFO  - All cookies cleared before starting the test.
+12:18:04.751 [main] INFO  - Navigating to the login page.
+12:18:07.407 [main] INFO  - Clicked succesfully on the Leads button.
+12:18:08.156 [main] INFO  - Clicked succesfully on the Create button.
+12:18:09.425 [main] INFO  - Dropdown opened.
+12:18:09.554 [main] INFO  - Searched for salutation: Mr
+12:18:09.611 [main] INFO  - Checking option: Mr
+12:18:09.697 [main] INFO  - Selected salutation: Mr
+12:18:10.242 [main] INFO  - Dropdown opened successfully.
+12:20:21.840 [main] INFO  - Browser selected: chrome
+12:20:25.012 [main] INFO  - ChromeDriver initialized.
+12:20:26.354 [main] INFO  - Navigated to URL: https://crmtest.doctorshealthfund.com.au/
+12:20:26.522 [main] INFO  - All cookies cleared before starting the test.
+12:20:26.568 [main] INFO  - Navigating to the login page.
+12:20:29.140 [main] INFO  - Clicked succesfully on the Leads button.
+12:20:29.913 [main] INFO  - Clicked succesfully on the Create button.
+12:20:31.146 [main] INFO  - Dropdown opened.
+12:20:31.242 [main] INFO  - Searched for salutation: Mr
+12:20:31.299 [main] INFO  - Checking option: Mr
+12:20:31.378 [main] INFO  - Selected salutation: Mr
+12:20:31.909 [main] INFO  - Dropdown opened successfully.
+12:22:03.847 [main] INFO  - Browser selected: chrome
+12:22:06.415 [main] INFO  - ChromeDriver initialized.
+12:22:08.288 [main] INFO  - Navigated to URL: https://crmtest.doctorshealthfund.com.au/
+12:22:08.300 [main] INFO  - All cookies cleared before starting the test.
+12:22:08.374 [main] INFO  - Navigating to the login page.
+12:22:10.850 [main] INFO  - Clicked succesfully on the Leads button.
+12:22:11.976 [main] INFO  - Clicked succesfully on the Create button.
+12:22:13.252 [main] INFO  - Dropdown opened.
+12:22:13.368 [main] INFO  - Searched for salutation: Mr
+12:22:13.447 [main] INFO  - Checking option: Mr
+12:22:13.518 [main] INFO  - Selected salutation: Mr
+12:22:14.083 [main] INFO  - Dropdown opened successfully.
+12:27:32.539 [main] INFO  - Browser selected: chrome
+12:27:35.232 [main] INFO  - ChromeDriver initialized.
+12:27:36.972 [main] INFO  - Navigated to URL: https://crmtest.doctorshealthfund.com.au/
+12:27:36.980 [main] INFO  - All cookies cleared before starting the test.
+12:27:37.020 [main] INFO  - Navigating to the login page.
+12:32:03.442 [main] INFO  - Browser selected: chrome
+12:32:06.691 [main] INFO  - ChromeDriver initialized.
+12:32:07.861 [main] INFO  - Navigated to URL: https://crmtest.doctorshealthfund.com.au/
+12:32:07.901 [main] INFO  - All cookies cleared before starting the test.
+12:32:07.950 [main] INFO  - Navigating to the login page.
+12:32:10.375 [main] INFO  - Clicked successfully on the Leads button.
+12:32:11.136 [main] INFO  - Clicked succesfully on the Create button.
+12:32:12.466 [main] INFO  - Dropdown opened.
+12:32:12.513 [main] INFO  - Searched for salutation: Mr
+12:32:12.574 [main] INFO  - Checking option: Mr
+12:32:12.707 [main] INFO  - Selected salutation: Mr
+12:32:13.280 [main] INFO  - Dropdown opened successfully.
+12:35:45.954 [main] INFO  - Browser selected: chrome
+12:35:48.721 [main] INFO  - ChromeDriver initialized.
+12:35:50.051 [main] INFO  - Navigated to URL: https://crmtest.doctorshealthfund.com.au/
+12:35:50.070 [main] INFO  - All cookies cleared before starting the test.
+12:35:50.138 [main] INFO  - Navigating to the login page.
+12:35:52.628 [main] INFO  - Clicked successfully on the Leads button.
+12:35:53.438 [main] INFO  - Clicked succesfully on the Create button.
+12:35:54.790 [main] INFO  - Dropdown opened.
+12:35:54.885 [main] INFO  - Searched for salutation: Mr
+12:35:54.950 [main] INFO  - Checking option: Mr
+12:35:54.995 [main] INFO  - Selected salutation: Mr
+12:35:55.547 [main] INFO  - Dropdown opened successfully.
+12:36:49.043 [main] INFO  - Browser selected: chrome
+12:36:51.723 [main] INFO  - ChromeDriver initialized.
+12:36:53.021 [main] INFO  - Navigated to URL: https://crmtest.doctorshealthfund.com.au/
+12:36:53.062 [main] INFO  - All cookies cleared before starting the test.
+12:36:53.103 [main] INFO  - Navigating to the login page.
+12:36:55.533 [main] INFO  - Clicked successfully on the Leads button.
+12:36:56.199 [main] INFO  - Clicked succesfully on the Create button.
+12:36:57.445 [main] INFO  - Dropdown opened.
+12:36:57.554 [main] INFO  - Searched for salutation: Mr
+12:36:57.615 [main] INFO  - Checking option: Mr
+12:36:57.697 [main] INFO  - Selected salutation: Mr
+12:36:58.222 [main] INFO  - Dropdown opened successfully.
+12:37:42.622 [main] INFO  - Browser selected: chrome
+12:37:45.121 [main] INFO  - ChromeDriver initialized.
+12:37:46.545 [main] INFO  - Navigated to URL: https://crmtest.doctorshealthfund.com.au/
+12:37:46.552 [main] INFO  - All cookies cleared before starting the test.
+12:37:46.639 [main] INFO  - Navigating to the login page.
+12:37:48.494 [main] WARN  - Encountered a StaleElementReferenceException. Reinitializing elements.
+12:37:49.074 [main] INFO  - Clicked successfully on the Leads button after reinitializing elements.
+12:37:50.006 [main] INFO  - Clicked succesfully on the Create button.
+12:37:51.389 [main] INFO  - Dropdown opened.
+12:37:51.488 [main] INFO  - Searched for salutation: Mr
+12:37:51.634 [main] INFO  - Checking option: Mr
+12:37:51.721 [main] INFO  - Selected salutation: Mr
+12:37:52.277 [main] INFO  - Dropdown opened successfully.
+12:38:21.871 [main] INFO  - Browser selected: chrome
+12:38:24.548 [main] INFO  - ChromeDriver initialized.
+12:38:25.887 [main] INFO  - Navigated to URL: https://crmtest.doctorshealthfund.com.au/
+12:38:25.893 [main] INFO  - All cookies cleared before starting the test.
+12:38:25.961 [main] INFO  - Navigating to the login page.
+12:38:28.368 [main] INFO  - Clicked successfully on the Leads button.
+12:38:29.358 [main] INFO  - Clicked succesfully on the Create button.
+12:38:30.553 [main] INFO  - Dropdown opened.
+12:38:30.613 [main] INFO  - Searched for salutation: Mr
+12:38:30.735 [main] INFO  - Checking option: Mr
+12:38:30.811 [main] INFO  - Selected salutation: Mr
+12:38:31.392 [main] INFO  - Dropdown opened successfully.
+12:39:12.358 [main] INFO  - Browser selected: chrome
+12:39:15.017 [main] INFO  - ChromeDriver initialized.
+12:39:16.441 [main] INFO  - Navigated to URL: https://crmtest.doctorshealthfund.com.au/
+12:39:16.454 [main] INFO  - All cookies cleared before starting the test.
+12:39:16.521 [main] INFO  - Navigating to the login page.
+12:39:18.944 [main] INFO  - Clicked successfully on the Leads button.
+12:39:19.803 [main] INFO  - Clicked succesfully on the Create button.
+12:39:21.268 [main] INFO  - Dropdown opened.
+12:39:21.381 [main] INFO  - Searched for salutation: Mr
+12:39:21.445 [main] INFO  - Checking option: Mr
+12:39:21.522 [main] INFO  - Selected salutation: Mr
+12:39:22.107 [main] INFO  - Dropdown opened successfully.
+12:42:04.373 [main] INFO  - Browser selected: chrome
+12:42:07.268 [main] INFO  - ChromeDriver initialized.
+12:42:08.866 [main] INFO  - Navigated to URL: https://crmtest.doctorshealthfund.com.au/
+12:42:08.879 [main] INFO  - All cookies cleared before starting the test.
+12:42:08.959 [main] INFO  - Navigating to the login page.
+12:42:11.429 [main] INFO  - Clicked successfully on the Leads button.
+12:42:12.539 [main] INFO  - Clicked succesfully on the Create button.
+12:42:13.884 [main] INFO  - Dropdown opened.
+12:42:13.934 [main] INFO  - Searched for salutation: Mr
+12:42:14.058 [main] INFO  - Checking option: Mr
+12:42:14.136 [main] INFO  - Selected salutation: Mr
+12:42:14.704 [main] INFO  - Dropdown opened successfully.
+13:29:43.144 [main] INFO  - Browser selected: chrome
+13:29:46.101 [main] INFO  - ChromeDriver initialized.
+13:29:47.763 [main] INFO  - Navigated to URL: https://crmtest.doctorshealthfund.com.au/
+13:29:47.783 [main] INFO  - All cookies cleared before starting the test.
+13:29:47.885 [main] INFO  - Navigating to the login page.
+13:29:50.463 [main] WARN  - Encountered a StaleElementReferenceException. Reinitializing elements.
+13:29:51.593 [main] INFO  - Clicked successfully on the Leads button after reinitializing elements.
+13:29:52.195 [main] INFO  - Clicked succesfully on the Create button.
+13:29:53.489 [main] INFO  - Dropdown opened.
+13:30:07.488 [main] INFO  - Searched for salutation: Mr
+13:30:17.802 [main] INFO  - Browser selected: chrome
+13:30:20.381 [main] INFO  - ChromeDriver initialized.
+13:30:23.109 [main] INFO  - Navigated to URL: https://crmtest.doctorshealthfund.com.au/
+13:30:23.115 [main] INFO  - All cookies cleared before starting the test.
+13:30:23.152 [main] INFO  - Navigating to the login page.
+13:30:27.033 [main] INFO  - Clicked successfully on the Leads button.
+13:30:27.726 [main] INFO  - Clicked succesfully on the Create button.
+13:30:28.886 [main] INFO  - Dropdown opened.
+13:34:39.926 [main] INFO  - Browser selected: chrome
+13:34:43.317 [main] INFO  - ChromeDriver initialized.
+13:34:44.859 [main] INFO  - Navigated to URL: https://crmtest.doctorshealthfund.com.au/
+13:34:44.869 [main] INFO  - All cookies cleared before starting the test.
+13:34:44.908 [main] INFO  - Navigating to the login page.
+13:34:47.322 [main] INFO  - Clicked successfully on the Leads button.
+13:34:48.244 [main] INFO  - Clicked succesfully on the Create button.
+13:34:49.794 [main] INFO  - Dropdown opened.
+13:35:14.656 [main] INFO  - Browser selected: chrome
+13:35:17.311 [main] INFO  - ChromeDriver initialized.
+13:35:18.849 [main] INFO  - Navigated to URL: https://crmtest.doctorshealthfund.com.au/
+13:35:18.857 [main] INFO  - All cookies cleared before starting the test.
+13:35:18.903 [main] INFO  - Navigating to the login page.
+13:35:21.375 [main] INFO  - Clicked successfully on the Leads button.
+13:35:22.138 [main] INFO  - Clicked succesfully on the Create button.
+13:35:23.357 [main] INFO  - Dropdown opened.
+13:51:56.606 [main] INFO  - Browser selected: chrome
+13:51:59.263 [main] INFO  - ChromeDriver initialized.
+13:52:00.642 [main] INFO  - Navigated to URL: https://crmtest.doctorshealthfund.com.au/
+13:52:00.650 [main] INFO  - All cookies cleared before starting the test.
+13:52:00.713 [main] INFO  - Navigating to the login page.
+13:52:03.327 [main] WARN  - Encountered a StaleElementReferenceException. Reinitializing elements.
+13:52:03.645 [main] INFO  - Clicked successfully on the Leads button after reinitializing elements.
+13:52:04.709 [main] INFO  - Clicked succesfully on the Create button.
+13:52:05.983 [main] INFO  - Dropdown opened.
+13:55:15.795 [main] INFO  - Browser selected: chrome
+13:55:18.653 [main] INFO  - ChromeDriver initialized.
+13:55:19.980 [main] INFO  - Navigated to URL: https://crmtest.doctorshealthfund.com.au/
+13:55:19.988 [main] INFO  - All cookies cleared before starting the test.
+13:55:20.045 [main] INFO  - Navigating to the login page.
+13:55:22.582 [main] INFO  - Clicked successfully on the Leads button.
+13:55:23.560 [main] INFO  - Clicked succesfully on the Create button.
+13:55:25.092 [main] INFO  - Dropdown opened.
+13:55:25.199 [main] INFO  - Searched for salutation: Mr
+13:55:25.260 [main] INFO  - Checking option: Mr
+13:55:25.302 [main] INFO  - Selected salutation: Mr
+13:55:25.924 [main] INFO  - Dropdown opened successfully.
+13:55:31.365 [main] INFO  - Clicked on Agent Lead Score dropdown.
+13:55:55.353 [main] ERROR - Failed to select option from Agent Lead Score dropdown.
+java.lang.IndexOutOfBoundsException: Index: 0
+	at java.base/java.util.Collections$EmptyList.get(Collections.java:4809) ~[?:?]
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103) ~[?:?]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580) ~[?:?]
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementListHandler.invoke(LocatingElementListHandler.java:39) ~[selenium-support-4.18.1.jar:?]
+	at jdk.proxy2/jdk.proxy2.$Proxy62.get(Unknown Source) ~[?:?]
+	at com.qa.sugarcrm.pages.LeadsPage.selectAgentLeadScoreOption(LeadsPage.java:408) [classes/:?]
+	at StepDefinitions.SugarSteps.userSelectsFromTheDropdown(SugarSteps.java:155) [test-classes/:?]
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103) ~[?:?]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580) ~[?:?]
+	at io.cucumber.java.Invoker.doInvoke(Invoker.java:66) [cucumber-java-7.11.0.jar:7.11.0]
+	at io.cucumber.java.Invoker.invoke(Invoker.java:24) [cucumber-java-7.11.0.jar:7.11.0]
+	at io.cucumber.java.AbstractGlueDefinition.invokeMethod(AbstractGlueDefinition.java:47) [cucumber-java-7.11.0.jar:7.11.0]
+	at io.cucumber.java.JavaStepDefinition.execute(JavaStepDefinition.java:29) [cucumber-java-7.11.0.jar:7.11.0]
+	at io.cucumber.core.runner.CoreStepDefinition.execute(CoreStepDefinition.java:66) [cucumber-core-7.11.0.jar:7.11.0]
+	at io.cucumber.core.runner.PickleStepDefinitionMatch.runStep(PickleStepDefinitionMatch.java:63) [cucumber-core-7.11.0.jar:7.11.0]
+	at io.cucumber.core.runner.ExecutionMode$1.execute(ExecutionMode.java:10) [cucumber-core-7.11.0.jar:7.11.0]
+	at io.cucumber.core.runner.TestStep.executeStep(TestStep.java:84) [cucumber-core-7.11.0.jar:7.11.0]
+	at io.cucumber.core.runner.TestStep.run(TestStep.java:56) [cucumber-core-7.11.0.jar:7.11.0]
+	at io.cucumber.core.runner.PickleStepTestStep.run(PickleStepTestStep.java:51) [cucumber-core-7.11.0.jar:7.11.0]
+	at io.cucumber.core.runner.TestCase.run(TestCase.java:84) [cucumber-core-7.11.0.jar:7.11.0]
+	at io.cucumber.core.runner.Runner.runPickle(Runner.java:75) [cucumber-core-7.11.0.jar:7.11.0]
+	at io.cucumber.testng.TestNGCucumberRunner.lambda$runScenario$1(TestNGCucumberRunner.java:132) [cucumber-testng-7.11.0.jar:7.11.0]
+	at io.cucumber.core.runtime.CucumberExecutionContext.lambda$runTestCase$5(CucumberExecutionContext.java:130) [cucumber-core-7.11.0.jar:7.11.0]
+	at io.cucumber.core.runtime.RethrowingThrowableCollector.executeAndThrow(RethrowingThrowableCollector.java:23) [cucumber-core-7.11.0.jar:7.11.0]
+	at io.cucumber.core.runtime.CucumberExecutionContext.runTestCase(CucumberExecutionContext.java:130) [cucumber-core-7.11.0.jar:7.11.0]
+	at io.cucumber.testng.TestNGCucumberRunner.runScenario(TestNGCucumberRunner.java:129) [cucumber-testng-7.11.0.jar:7.11.0]
+	at io.cucumber.testng.AbstractTestNGCucumberTests.runScenario(AbstractTestNGCucumberTests.java:35) [cucumber-testng-7.11.0.jar:7.11.0]
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103) ~[?:?]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580) ~[?:?]
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139) [testng-7.9.0.jar:7.9.0]
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664) [testng-7.9.0.jar:7.9.0]
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:228) [testng-7.9.0.jar:7.9.0]
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63) [testng-7.9.0.jar:7.9.0]
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:961) [testng-7.9.0.jar:7.9.0]
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:201) [testng-7.9.0.jar:7.9.0]
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148) [testng-7.9.0.jar:7.9.0]
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128) [testng-7.9.0.jar:7.9.0]
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597) [?:?]
+	at org.testng.TestRunner.privateRun(TestRunner.java:819) [testng-7.9.0.jar:7.9.0]
+	at org.testng.TestRunner.run(TestRunner.java:619) [testng-7.9.0.jar:7.9.0]
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:443) [testng-7.9.0.jar:7.9.0]
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437) [testng-7.9.0.jar:7.9.0]
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397) [testng-7.9.0.jar:7.9.0]
+	at org.testng.SuiteRunner.run(SuiteRunner.java:336) [testng-7.9.0.jar:7.9.0]
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52) [testng-7.9.0.jar:7.9.0]
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95) [testng-7.9.0.jar:7.9.0]
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1301) [testng-7.9.0.jar:7.9.0]
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1228) [testng-7.9.0.jar:7.9.0]
+	at org.testng.TestNG.runSuites(TestNG.java:1134) [testng-7.9.0.jar:7.9.0]
+	at org.testng.TestNG.run(TestNG.java:1101) [testng-7.9.0.jar:7.9.0]
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115) [testng-remote.jar:?]
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293) [testng-remote.jar:?]
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91) [testng-remote.jar:?]

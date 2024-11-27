@@ -4,7 +4,6 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.StaleElementReferenceException;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
-import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
@@ -97,7 +96,10 @@ public class quickQuote extends BaseTest {
 	    } catch (StaleElementReferenceException e) {
 	        log.warn("StaleElementReferenceException encountered. Re-locating the element.");
 	        // Re-locate the element and retry
-	        getQuote = driver.findElement(By.xpath("//a[@data-id='get-quote-btn']")); 
+	        //getQuote = driver.findElement(By.xpath("//a[@data-id='get-quote-btn']"));
+	        
+	     // Reinitialize the PageFactory elements to refresh all locators
+	        PageFactory.initElements(driver, this);
 	        waitForVisibility(getQuote, driver);
 	        waitForElementToBeClickable(driver, getQuote);
 	        click(getQuote); // Retry clicking
@@ -141,10 +143,9 @@ public class quickQuote extends BaseTest {
 	}
 
 	public void selectHospitalCover(String coverType) {
-		// Paramters should be smart starter or prime choice or top cover
-		WebElement selectedOption = null;
+		WebElement selectedOption;
 
-		// Determine which plan to select based on the plan name
+		// Check which plan to select based on the plan name
 		switch (coverType) {
 		case "Smart Starter":
 			selectedOption = smartStarterBronzePlusOption;
@@ -169,10 +170,10 @@ public class quickQuote extends BaseTest {
 	}
 
 	public void selectExtrasCover(String coverType) {
-		// Paramters should be smart starter or prime choice or top cover
-		WebElement selectedOption = null;
+	
+		WebElement selectedOption;
 
-		// Determine which plan to select based on the plan name
+		// Check which plan to select based on the plan name
 		switch (coverType) {
 		case "Starter Extras":
 			selectedOption = starterExtrasOption;
@@ -192,7 +193,7 @@ public class quickQuote extends BaseTest {
 			selectedOption.click();
 			log.info("Selected the Extras Cover: " + coverType);
 		} else {
-			throw new RuntimeException("The Extras plan '" + coverType + "' is not available.");
+			throw new RuntimeException("The Extras cover plan '" + coverType + "' is not available.");
 		}
 	}
 

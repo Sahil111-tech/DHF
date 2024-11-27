@@ -1,0 +1,739 @@
+14:02:00.820 [main] INFO  - Browser selected: chrome
+14:02:03.590 [main] INFO  - ChromeDriver initialized.
+14:02:05.388 [main] INFO  - Navigated to URL: https://crmtest.doctorshealthfund.com.au/
+14:02:05.400 [main] INFO  - All cookies cleared before starting the test.
+14:02:05.461 [main] INFO  - Navigating to the login page.
+14:02:07.910 [main] INFO  - Clicked successfully on the Leads button.
+14:02:08.991 [main] INFO  - Clicked succesfully on the Create button.
+14:02:10.287 [main] INFO  - Dropdown opened.
+14:02:10.403 [main] INFO  - Searched for salutation: Mr
+14:02:10.490 [main] INFO  - Checking option: Mr
+14:02:10.529 [main] INFO  - Selected salutation: Mr
+14:02:11.185 [main] INFO  - Dropdown opened successfully.
+14:02:52.393 [main] INFO  - Browser selected: chrome
+14:02:55.621 [main] INFO  - ChromeDriver initialized.
+14:02:57.177 [main] INFO  - Navigated to URL: https://crmtest.doctorshealthfund.com.au/
+14:02:57.185 [main] INFO  - All cookies cleared before starting the test.
+14:02:57.230 [main] INFO  - Navigating to the login page.
+14:02:59.412 [main] WARN  - Encountered a StaleElementReferenceException. Reinitializing elements.
+14:03:01.886 [main] INFO  - Clicked successfully on the Leads button after reinitializing elements.
+14:03:02.610 [main] INFO  - Clicked succesfully on the Create button.
+14:03:04.103 [main] INFO  - Dropdown opened.
+14:03:04.228 [main] INFO  - Searched for salutation: Mr
+14:03:23.997 [main] INFO  - Browser selected: chrome
+14:03:27.429 [main] INFO  - ChromeDriver initialized.
+14:03:28.524 [main] INFO  - Navigated to URL: https://crmtest.doctorshealthfund.com.au/
+14:03:29.625 [main] INFO  - All cookies cleared before starting the test.
+14:03:29.669 [main] INFO  - Navigating to the login page.
+14:03:34.145 [main] INFO  - Clicked successfully on the Leads button.
+14:03:34.808 [main] INFO  - Clicked succesfully on the Create button.
+14:03:36.108 [main] INFO  - Dropdown opened.
+14:03:36.216 [main] INFO  - Searched for salutation: Mr
+14:05:36.261 [main] WARN  - Salutation 'Mr' not found in the dropdown.
+14:10:37.862 [main] INFO  - Browser selected: chrome
+14:10:40.794 [main] INFO  - ChromeDriver initialized.
+14:10:42.294 [main] INFO  - Navigated to URL: https://crmtest.doctorshealthfund.com.au/
+14:10:42.306 [main] INFO  - All cookies cleared before starting the test.
+14:10:42.380 [main] INFO  - Navigating to the login page.
+14:10:44.176 [main] WARN  - Encountered a StaleElementReferenceException. Reinitializing elements.
+14:10:44.716 [main] INFO  - Clicked successfully on the Leads button after reinitializing elements.
+14:10:45.428 [main] INFO  - Clicked succesfully on the Create button.
+14:10:46.891 [main] INFO  - Dropdown opened.
+14:10:46.944 [main] INFO  - Searched for salutation: Mr
+14:10:47.005 [main] INFO  - Checking option: Mr
+14:10:47.048 [main] INFO  - Selected salutation: Mr
+14:10:47.617 [main] INFO  - Dropdown opened successfully.
+14:18:26.127 [main] INFO  - Browser selected: chrome
+14:18:29.254 [main] INFO  - ChromeDriver initialized.
+14:18:30.363 [main] INFO  - Navigated to URL: https://crmtest.doctorshealthfund.com.au/
+14:18:30.372 [main] INFO  - All cookies cleared before starting the test.
+14:18:30.423 [main] INFO  - Navigating to the login page.
+14:18:35.363 [main] INFO  - Clicked successfully on the Leads button.
+14:18:36.233 [main] INFO  - Clicked succesfully on the Create button.
+14:18:37.808 [main] INFO  - Dropdown opened.
+14:18:37.916 [main] INFO  - Searched for salutation: Mr
+14:18:53.901 [main] INFO  - Browser selected: chrome
+14:18:56.492 [main] INFO  - ChromeDriver initialized.
+14:18:57.768 [main] INFO  - Navigated to URL: https://crmtest.doctorshealthfund.com.au/
+14:18:57.799 [main] INFO  - All cookies cleared before starting the test.
+14:18:57.845 [main] INFO  - Navigating to the login page.
+14:19:00.672 [main] INFO  - Clicked successfully on the Leads button.
+14:19:01.454 [main] INFO  - Clicked succesfully on the Create button.
+14:19:02.766 [main] INFO  - Dropdown opened.
+14:19:02.895 [main] INFO  - Searched for salutation: Mr
+14:19:02.986 [main] INFO  - Checking option: Mr
+14:19:03.077 [main] INFO  - Selected salutation: Mr
+14:19:03.601 [main] INFO  - Dropdown opened successfully.
+14:26:13.836 [main] INFO  - Browser selected: chrome
+14:26:16.416 [main] INFO  - ChromeDriver initialized.
+14:26:17.794 [main] INFO  - Navigated to URL: https://crmtest.doctorshealthfund.com.au/
+14:26:17.802 [main] INFO  - All cookies cleared before starting the test.
+14:26:17.860 [main] INFO  - Navigating to the login page.
+14:26:19.779 [main] WARN  - Encountered a StaleElementReferenceException. Reinitializing elements.
+14:26:20.436 [main] INFO  - Clicked successfully on the Leads button after reinitializing elements.
+14:26:21.165 [main] INFO  - Clicked succesfully on the Create button.
+14:26:22.401 [main] INFO  - Dropdown opened.
+14:26:22.506 [main] INFO  - Searched for salutation: Mr
+14:26:22.568 [main] INFO  - Checking option: Mr
+14:26:22.643 [main] INFO  - Selected salutation: Mr
+14:26:23.285 [main] INFO  - Dropdown opened successfully.
+07:14:09.424 [main] INFO  - Browser selected: chrome
+07:14:13.645 [main] INFO  - ChromeDriver initialized.
+07:14:14.956 [main] INFO  - Navigated to URL: https://crmtest.doctorshealthfund.com.au/
+07:14:14.963 [main] INFO  - All cookies cleared before starting the test.
+07:14:15.037 [main] INFO  - Navigating to the login page.
+07:14:17.455 [main] INFO  - Clicked successfully on the Leads button.
+07:14:18.341 [main] INFO  - Clicked succesfully on the Create button.
+07:14:19.883 [main] INFO  - Dropdown opened.
+07:14:19.975 [main] INFO  - Searched for salutation: Mr
+07:14:20.042 [main] INFO  - Checking option: Mr
+07:14:20.084 [main] INFO  - Selected salutation: Mr
+07:14:20.706 [main] INFO  - Dropdown opened successfully.
+07:16:04.846 [main] INFO  - Browser selected: chrome
+07:16:07.598 [main] INFO  - ChromeDriver initialized.
+07:16:09.122 [main] INFO  - Navigated to URL: https://crmtest.doctorshealthfund.com.au/
+07:16:09.133 [main] INFO  - All cookies cleared before starting the test.
+07:16:09.207 [main] INFO  - Navigating to the login page.
+07:16:11.933 [main] INFO  - Clicked successfully on the Leads button.
+07:16:12.795 [main] INFO  - Clicked succesfully on the Create button.
+07:16:14.099 [main] INFO  - Dropdown opened.
+07:16:14.215 [main] INFO  - Searched for salutation: Mr
+07:16:14.345 [main] INFO  - Checking option: Mr
+07:16:14.416 [main] INFO  - Selected salutation: Mr
+07:16:14.969 [main] INFO  - Dropdown opened successfully.
+07:18:15.604 [main] INFO  - Browser selected: chrome
+07:18:18.276 [main] INFO  - ChromeDriver initialized.
+07:18:19.572 [main] INFO  - Navigated to URL: https://crmtest.doctorshealthfund.com.au/
+07:18:19.578 [main] INFO  - All cookies cleared before starting the test.
+07:18:19.638 [main] INFO  - Navigating to the login page.
+07:18:21.554 [main] WARN  - Encountered a StaleElementReferenceException. Reinitializing elements.
+07:18:22.078 [main] INFO  - Clicked successfully on the Leads button after reinitializing elements.
+07:18:22.916 [main] INFO  - Clicked succesfully on the Create button.
+07:18:24.289 [main] INFO  - Dropdown opened.
+07:18:24.379 [main] INFO  - Searched for salutation: Mr
+07:18:24.434 [main] INFO  - Checking option: Mr
+07:18:24.529 [main] INFO  - Selected salutation: Mr
+07:18:25.078 [main] INFO  - Dropdown opened successfully.
+08:02:14.672 [main] INFO  - Browser selected: chrome
+08:02:18.362 [main] INFO  - ChromeDriver initialized.
+08:02:19.754 [main] INFO  - Navigated to URL: https://crmtest.doctorshealthfund.com.au/
+08:02:19.768 [main] INFO  - All cookies cleared before starting the test.
+08:02:19.810 [main] INFO  - Navigating to the login page.
+08:02:22.278 [main] INFO  - Clicked successfully on the Leads button.
+08:02:23.346 [main] INFO  - Clicked succesfully on the Create button.
+08:02:24.748 [main] INFO  - Dropdown opened.
+08:02:24.845 [main] INFO  - Searched for salutation: Mr
+08:02:24.915 [main] INFO  - Checking option: Mr
+08:02:24.974 [main] INFO  - Selected salutation: Mr
+08:02:25.585 [main] INFO  - Dropdown opened successfully.
+08:02:31.833 [main] INFO  - Clicked successfully on the Save button.
+08:03:18.125 [main] INFO  - Browser selected: chrome
+08:03:20.885 [main] INFO  - ChromeDriver initialized.
+08:03:22.291 [main] INFO  - Navigated to URL: https://crmtest.doctorshealthfund.com.au/
+08:03:22.334 [main] INFO  - All cookies cleared before starting the test.
+08:03:22.394 [main] INFO  - Navigating to the login page.
+08:03:24.382 [main] WARN  - Encountered a StaleElementReferenceException. Reinitializing elements.
+08:03:24.820 [main] INFO  - Clicked successfully on the Leads button after reinitializing elements.
+08:03:25.879 [main] INFO  - Clicked succesfully on the Create button.
+08:03:27.683 [main] INFO  - Dropdown opened.
+08:03:27.794 [main] INFO  - Searched for salutation: Mr
+08:03:27.857 [main] INFO  - Checking option: Mr
+08:03:27.920 [main] INFO  - Selected salutation: Mr
+08:03:28.471 [main] INFO  - Dropdown opened successfully.
+08:03:33.992 [main] INFO  - Clicked successfully on the Save button.
+08:04:07.461 [main] INFO  - Browser selected: chrome
+08:04:10.145 [main] INFO  - ChromeDriver initialized.
+08:04:11.523 [main] INFO  - Navigated to URL: https://crmtest.doctorshealthfund.com.au/
+08:04:11.532 [main] INFO  - All cookies cleared before starting the test.
+08:04:11.610 [main] INFO  - Navigating to the login page.
+08:04:13.530 [main] WARN  - Encountered a StaleElementReferenceException. Reinitializing elements.
+08:04:14.119 [main] INFO  - Clicked successfully on the Leads button after reinitializing elements.
+08:04:14.987 [main] INFO  - Clicked succesfully on the Create button.
+08:04:16.279 [main] INFO  - Dropdown opened.
+08:04:16.353 [main] INFO  - Searched for salutation: Mr
+08:04:16.434 [main] INFO  - Checking option: Mr
+08:04:16.471 [main] INFO  - Selected salutation: Mr
+08:04:17.049 [main] INFO  - Dropdown opened successfully.
+08:04:22.762 [main] INFO  - Clicked successfully on the Save button.
+08:05:25.227 [main] INFO  - Browser selected: chrome
+08:05:28.001 [main] INFO  - ChromeDriver initialized.
+08:05:29.754 [main] INFO  - Navigated to URL: https://crmtest.doctorshealthfund.com.au/
+08:05:29.762 [main] INFO  - All cookies cleared before starting the test.
+08:05:29.841 [main] INFO  - Navigating to the login page.
+08:05:32.207 [main] INFO  - Clicked successfully on the Leads button.
+08:05:33.046 [main] INFO  - Clicked succesfully on the Create button.
+08:05:34.254 [main] INFO  - Dropdown opened.
+08:05:34.361 [main] INFO  - Searched for salutation: Mr
+08:05:34.432 [main] INFO  - Checking option: Mr
+08:05:34.542 [main] INFO  - Selected salutation: Mr
+08:05:35.147 [main] INFO  - Dropdown opened successfully.
+08:05:40.501 [main] INFO  - Clicked successfully on the Save button.
+08:32:55.672 [main] INFO  - Browser selected: chrome
+08:32:59.415 [main] INFO  - ChromeDriver initialized.
+08:33:00.974 [main] INFO  - Navigated to URL: https://crmtest.doctorshealthfund.com.au/
+08:33:00.995 [main] INFO  - All cookies cleared before starting the test.
+08:33:01.057 [main] INFO  - Navigating to the login page.
+08:33:04.208 [main] INFO  - Clicked successfully on the Leads button.
+08:33:05.007 [main] INFO  - Clicked succesfully on the Create button.
+08:37:17.293 [main] INFO  - Browser selected: chrome
+08:37:20.122 [main] INFO  - ChromeDriver initialized.
+08:37:21.807 [main] INFO  - Navigated to URL: https://crmtest.doctorshealthfund.com.au/
+08:37:21.815 [main] INFO  - All cookies cleared before starting the test.
+08:37:21.868 [main] INFO  - Navigating to the login page.
+08:37:24.397 [main] INFO  - Clicked successfully on the Leads button.
+08:37:25.152 [main] INFO  - Clicked succesfully on the Create button.
+08:37:27.554 [main] INFO  - Dropdown opened successfully.
+08:38:19.474 [main] INFO  - Browser selected: chrome
+08:38:22.244 [main] INFO  - ChromeDriver initialized.
+08:38:23.787 [main] INFO  - Navigated to URL: https://crmtest.doctorshealthfund.com.au/
+08:38:23.797 [main] INFO  - All cookies cleared before starting the test.
+08:38:23.851 [main] INFO  - Navigating to the login page.
+08:38:26.393 [main] INFO  - Clicked successfully on the Leads button.
+08:38:27.589 [main] INFO  - Clicked succesfully on the Create button.
+08:38:29.897 [main] INFO  - Dropdown opened successfully.
+08:43:38.106 [main] INFO  - Browser selected: chrome
+08:43:40.778 [main] INFO  - ChromeDriver initialized.
+08:43:42.141 [main] INFO  - Navigated to URL: https://crmtest.doctorshealthfund.com.au/
+08:43:42.269 [main] INFO  - All cookies cleared before starting the test.
+08:43:42.346 [main] INFO  - Navigating to the login page.
+08:43:44.844 [main] INFO  - Clicked successfully on the Leads button.
+08:43:45.686 [main] INFO  - Clicked succesfully on the Create button.
+08:43:48.441 [main] INFO  - Dropdown opened successfully.
+08:53:31.751 [main] INFO  - Browser selected: chrome
+08:53:34.544 [main] INFO  - ChromeDriver initialized.
+08:53:35.999 [main] INFO  - Navigated to URL: https://crmtest.doctorshealthfund.com.au/
+08:53:36.011 [main] INFO  - All cookies cleared before starting the test.
+08:53:36.074 [main] INFO  - Navigating to the login page.
+08:53:38.447 [main] INFO  - Clicked successfully on the Leads button.
+08:53:39.289 [main] INFO  - Clicked succesfully on the Create button.
+08:53:41.665 [main] INFO  - Dropdown opened successfully.
+08:53:47.051 [main] INFO  - Clicked successfully on the Save button.
+08:54:08.604 [main] INFO  - Browser selected: chrome
+08:54:11.347 [main] INFO  - ChromeDriver initialized.
+08:54:12.973 [main] INFO  - Navigated to URL: https://crmtest.doctorshealthfund.com.au/
+08:54:12.983 [main] INFO  - All cookies cleared before starting the test.
+08:54:13.056 [main] INFO  - Navigating to the login page.
+08:54:15.610 [main] INFO  - Clicked successfully on the Leads button.
+08:54:16.670 [main] INFO  - Clicked succesfully on the Create button.
+08:54:19.114 [main] INFO  - Dropdown opened successfully.
+08:54:24.815 [main] INFO  - Clicked successfully on the Save button.
+09:08:35.699 [main] INFO  - Browser selected: chrome
+09:08:38.524 [main] INFO  - ChromeDriver initialized.
+09:08:39.986 [main] INFO  - Navigated to URL: https://crmtest.doctorshealthfund.com.au/
+09:08:39.992 [main] INFO  - All cookies cleared before starting the test.
+09:08:40.033 [main] INFO  - Navigating to the login page.
+09:08:42.397 [main] INFO  - Clicked successfully on the Leads button.
+09:08:43.428 [main] INFO  - Clicked succesfully on the Create button.
+09:08:45.929 [main] INFO  - Dropdown opened successfully.
+09:08:51.539 [main] INFO  - Clicked successfully on the Save button.
+09:13:19.276 [main] INFO  - Browser selected: chrome
+09:13:21.906 [main] INFO  - ChromeDriver initialized.
+09:13:23.387 [main] INFO  - Navigated to URL: https://crmtest.doctorshealthfund.com.au/
+09:13:23.446 [main] INFO  - All cookies cleared before starting the test.
+09:13:23.489 [main] INFO  - Navigating to the login page.
+09:13:26.118 [main] INFO  - Clicked successfully on the Leads button.
+09:13:27.310 [main] INFO  - Clicked succesfully on the Create button.
+09:13:29.861 [main] INFO  - Dropdown opened successfully.
+09:13:35.583 [main] INFO  - Clicked successfully on the Save button.
+09:16:42.735 [main] INFO  - Browser selected: chrome
+09:16:45.396 [main] INFO  - ChromeDriver initialized.
+09:16:46.729 [main] INFO  - Navigated to URL: https://crmtest.doctorshealthfund.com.au/
+09:16:46.736 [main] INFO  - All cookies cleared before starting the test.
+09:16:46.820 [main] INFO  - Navigating to the login page.
+09:16:49.186 [main] WARN  - Encountered a StaleElementReferenceException. Reinitializing elements.
+09:16:49.819 [main] INFO  - Clicked successfully on the Leads button after reinitializing elements.
+09:16:51.083 [main] INFO  - Clicked succesfully on the Create button.
+09:16:53.399 [main] INFO  - Dropdown opened successfully.
+09:16:59.401 [main] INFO  - Clicked successfully on the Save button.
+09:17:33.351 [main] INFO  - Browser selected: chrome
+09:17:36.095 [main] INFO  - ChromeDriver initialized.
+09:17:37.409 [main] INFO  - Navigated to URL: https://crmtest.doctorshealthfund.com.au/
+09:17:37.417 [main] INFO  - All cookies cleared before starting the test.
+09:17:37.469 [main] INFO  - Navigating to the login page.
+09:17:39.944 [main] INFO  - Clicked successfully on the Leads button.
+09:17:40.776 [main] INFO  - Clicked succesfully on the Create button.
+09:17:43.186 [main] INFO  - Dropdown opened successfully.
+09:17:48.751 [main] INFO  - Clicked successfully on the Save button.
+09:22:28.583 [main] INFO  - Browser selected: chrome
+09:22:31.349 [main] INFO  - ChromeDriver initialized.
+09:22:32.698 [main] INFO  - Navigated to URL: https://crmtest.doctorshealthfund.com.au/
+09:22:32.705 [main] INFO  - All cookies cleared before starting the test.
+09:22:32.784 [main] INFO  - Navigating to the login page.
+09:22:35.188 [main] INFO  - Clicked successfully on the Leads button.
+09:22:35.999 [main] INFO  - Clicked succesfully on the Create button.
+09:22:38.238 [main] INFO  - Dropdown opened successfully.
+09:22:43.755 [main] INFO  - Clicked successfully on the Save button.
+09:23:44.127 [main] INFO  - Browser selected: chrome
+09:23:47.084 [main] INFO  - ChromeDriver initialized.
+09:23:48.513 [main] INFO  - Navigated to URL: https://crmtest.doctorshealthfund.com.au/
+09:23:48.524 [main] INFO  - All cookies cleared before starting the test.
+09:23:48.585 [main] INFO  - Navigating to the login page.
+09:23:50.857 [main] INFO  - Clicked successfully on the Leads button.
+09:23:51.671 [main] INFO  - Clicked succesfully on the Create button.
+09:23:54.385 [main] INFO  - Dropdown opened successfully.
+09:24:00.170 [main] INFO  - Clicked successfully on the Save button.
+09:24:19.988 [main] INFO  - Browser selected: chrome
+09:24:23.774 [main] INFO  - ChromeDriver initialized.
+09:24:25.126 [main] INFO  - Navigated to URL: https://crmtest.doctorshealthfund.com.au/
+09:24:25.158 [main] INFO  - All cookies cleared before starting the test.
+09:24:25.214 [main] INFO  - Navigating to the login page.
+09:24:27.540 [main] WARN  - Encountered a StaleElementReferenceException. Reinitializing elements.
+09:24:28.327 [main] INFO  - Clicked successfully on the Leads button after reinitializing elements.
+09:24:29.492 [main] INFO  - Clicked succesfully on the Create button.
+09:24:32.138 [main] INFO  - Dropdown opened successfully.
+09:24:38.494 [main] INFO  - Clicked successfully on the Save button.
+09:50:12.432 [main] INFO  - Browser selected: chrome
+09:50:16.011 [main] INFO  - ChromeDriver initialized.
+09:50:17.607 [main] INFO  - Navigated to URL: https://crmtest.doctorshealthfund.com.au/
+09:50:17.617 [main] INFO  - All cookies cleared before starting the test.
+09:50:17.664 [main] INFO  - Navigating to the login page.
+09:50:20.204 [main] INFO  - Clicked successfully on the Leads button.
+09:50:21.183 [main] INFO  - Clicked succesfully on the Create button.
+09:50:23.591 [main] INFO  - Dropdown opened successfully.
+09:50:29.277 [main] INFO  - Clicked successfully on the Save button.
+10:04:16.249 [main] INFO  - Browser selected: chrome
+10:04:18.914 [main] INFO  - ChromeDriver initialized.
+10:04:20.298 [main] INFO  - Navigated to URL: https://crmtest.doctorshealthfund.com.au/
+10:04:20.306 [main] INFO  - All cookies cleared before starting the test.
+10:04:20.361 [main] INFO  - Navigating to the login page.
+10:04:22.234 [main] WARN  - Encountered a StaleElementReferenceException. Reinitializing elements.
+10:04:22.803 [main] INFO  - Clicked successfully on the Leads button after reinitializing elements.
+10:04:23.447 [main] INFO  - Clicked succesfully on the Create button.
+10:04:25.579 [main] INFO  - Dropdown opened successfully.
+10:04:31.227 [main] INFO  - Clicked successfully on the Save button.
+10:11:45.220 [main] INFO  - Browser selected: chrome
+10:11:48.326 [main] INFO  - ChromeDriver initialized.
+10:11:49.805 [main] INFO  - Navigated to URL: https://crmtest.doctorshealthfund.com.au/
+10:11:49.823 [main] INFO  - All cookies cleared before starting the test.
+10:11:49.876 [main] INFO  - Navigating to the login page.
+10:11:52.837 [main] INFO  - Clicked successfully on the Leads button.
+10:11:53.860 [main] INFO  - Clicked succesfully on the Create button.
+10:11:56.088 [main] INFO  - Dropdown opened successfully.
+10:20:12.308 [main] INFO  - Browser selected: chrome
+10:20:15.156 [main] INFO  - ChromeDriver initialized.
+10:20:16.736 [main] INFO  - Navigated to URL: https://crmtest.doctorshealthfund.com.au/
+10:20:16.746 [main] INFO  - All cookies cleared before starting the test.
+10:20:16.808 [main] INFO  - Navigating to the login page.
+10:20:19.213 [main] INFO  - Clicked successfully on the Leads button.
+10:20:20.039 [main] INFO  - Clicked succesfully on the Create button.
+10:20:22.287 [main] INFO  - Dropdown opened successfully.
+10:20:27.783 [main] INFO  - Clicked successfully on the Save button.
+10:57:08.668 [main] INFO  - Browser selected: chrome
+10:57:12.182 [main] INFO  - ChromeDriver initialized.
+10:57:13.547 [main] INFO  - Navigated to URL: https://crmtest.doctorshealthfund.com.au/
+10:57:13.562 [main] INFO  - All cookies cleared before starting the test.
+10:57:13.627 [main] INFO  - Navigating to the login page.
+10:57:15.494 [main] WARN  - Encountered a StaleElementReferenceException. Reinitializing elements.
+10:57:16.602 [main] INFO  - Clicked successfully on the Leads button after reinitializing elements.
+10:57:17.498 [main] INFO  - Clicked succesfully on the Create button.
+10:57:19.722 [main] INFO  - Dropdown opened successfully.
+10:57:48.033 [main] INFO  - Browser selected: chrome
+10:57:50.831 [main] INFO  - ChromeDriver initialized.
+10:57:52.301 [main] INFO  - Navigated to URL: https://crmtest.doctorshealthfund.com.au/
+10:57:52.311 [main] INFO  - All cookies cleared before starting the test.
+10:57:52.391 [main] INFO  - Navigating to the login page.
+10:57:55.119 [main] INFO  - Clicked successfully on the Leads button.
+10:57:55.894 [main] INFO  - Clicked succesfully on the Create button.
+10:57:58.129 [main] INFO  - Dropdown opened successfully.
+10:58:03.583 [main] INFO  - Clicked successfully on the Save button.
+10:58:33.813 [main] INFO  - Browser selected: chrome
+10:58:36.590 [main] INFO  - ChromeDriver initialized.
+10:58:37.261 [main] INFO  - Navigated to URL: https://crmtest.doctorshealthfund.com.au/
+10:58:38.171 [main] INFO  - All cookies cleared before starting the test.
+10:58:38.474 [main] INFO  - Navigating to the login page.
+10:58:40.577 [main] INFO  - Clicked successfully on the Leads button.
+10:58:41.295 [main] INFO  - Clicked succesfully on the Create button.
+10:58:43.810 [main] INFO  - Dropdown opened successfully.
+11:27:33.879 [main] INFO  - Browser selected: chrome
+11:27:36.916 [main] INFO  - ChromeDriver initialized.
+11:27:38.739 [main] INFO  - Navigated to URL: https://crmtest.doctorshealthfund.com.au/
+11:27:38.746 [main] INFO  - All cookies cleared before starting the test.
+11:27:38.802 [main] INFO  - Navigating to the login page.
+11:27:41.197 [main] INFO  - Clicked successfully on the Leads button.
+11:27:42.227 [main] INFO  - Clicked succesfully on the Create button.
+11:27:44.577 [main] INFO  - Dropdown opened successfully.
+12:41:57.548 [main] INFO  - Browser selected: chrome
+12:42:01.222 [main] INFO  - ChromeDriver initialized.
+12:42:02.766 [main] INFO  - Navigated to URL: https://crmtest.doctorshealthfund.com.au/
+12:42:02.800 [main] INFO  - All cookies cleared before starting the test.
+12:42:02.849 [main] INFO  - Navigating to the login page.
+12:42:05.249 [main] INFO  - Clicked successfully on the Leads button.
+12:42:06.045 [main] INFO  - Clicked succesfully on the Create button.
+12:44:53.062 [main] INFO  - Browser selected: chrome
+12:44:56.279 [main] INFO  - ChromeDriver initialized.
+12:44:57.606 [main] INFO  - Navigated to URL: https://crmtest.doctorshealthfund.com.au/
+12:44:57.647 [main] INFO  - All cookies cleared before starting the test.
+12:44:57.704 [main] INFO  - Navigating to the login page.
+12:44:59.885 [main] WARN  - Encountered a StaleElementReferenceException. Reinitializing elements.
+12:45:02.598 [main] INFO  - Clicked successfully on the Leads button after reinitializing elements.
+12:45:03.414 [main] INFO  - Clicked succesfully on the Create button.
+13:34:05.973 [main] INFO  - Browser selected: chrome
+13:34:08.912 [main] INFO  - ChromeDriver initialized.
+13:34:09.754 [main] INFO  - Navigated to URL: https://crmtest.doctorshealthfund.com.au/
+13:34:11.282 [main] INFO  - All cookies cleared before starting the test.
+13:34:11.334 [main] INFO  - Navigating to the login page.
+13:34:13.849 [main] INFO  - Clicked successfully on the Leads button.
+13:34:14.926 [main] INFO  - Clicked succesfully on the Create button.
+13:37:29.935 [main] INFO  - Browser selected: chrome
+13:37:32.764 [main] INFO  - ChromeDriver initialized.
+13:37:34.309 [main] INFO  - Navigated to URL: https://crmtest.doctorshealthfund.com.au/
+13:37:34.316 [main] INFO  - All cookies cleared before starting the test.
+13:37:34.390 [main] INFO  - Navigating to the login page.
+13:37:38.463 [main] INFO  - Clicked successfully on the Leads button.
+13:37:39.175 [main] INFO  - Clicked succesfully on the Create button.
+13:37:53.816 [main] INFO  - Browser selected: chrome
+13:37:56.602 [main] INFO  - ChromeDriver initialized.
+13:37:58.107 [main] INFO  - Navigated to URL: https://crmtest.doctorshealthfund.com.au/
+13:37:58.116 [main] INFO  - All cookies cleared before starting the test.
+13:37:58.161 [main] INFO  - Navigating to the login page.
+13:38:00.640 [main] INFO  - Clicked successfully on the Leads button.
+13:38:01.532 [main] INFO  - Clicked succesfully on the Create button.
+13:43:13.506 [main] INFO  - Browser selected: chrome
+13:43:16.946 [main] INFO  - ChromeDriver initialized.
+13:43:19.326 [main] INFO  - Navigated to URL: https://crmtest.doctorshealthfund.com.au/
+13:43:19.334 [main] INFO  - All cookies cleared before starting the test.
+13:43:19.373 [main] INFO  - Navigating to the login page.
+13:43:21.776 [main] INFO  - Clicked successfully on the Leads button.
+13:43:22.408 [main] INFO  - Clicked succesfully on the Create button.
+13:43:24.617 [main] INFO  - Dropdown opened successfully.
+13:45:02.357 [main] INFO  - Browser selected: chrome
+13:45:05.216 [main] INFO  - ChromeDriver initialized.
+13:45:06.922 [main] INFO  - Navigated to URL: https://crmtest.doctorshealthfund.com.au/
+13:45:06.933 [main] INFO  - All cookies cleared before starting the test.
+13:45:06.973 [main] INFO  - Navigating to the login page.
+13:45:09.490 [main] INFO  - Clicked successfully on the Leads button.
+13:45:10.344 [main] INFO  - Clicked succesfully on the Create button.
+13:45:12.755 [main] INFO  - Dropdown opened successfully.
+13:45:28.058 [main] INFO  - Browser selected: chrome
+13:45:30.874 [main] INFO  - ChromeDriver initialized.
+13:45:32.346 [main] INFO  - Navigated to URL: https://crmtest.doctorshealthfund.com.au/
+13:45:32.374 [main] INFO  - All cookies cleared before starting the test.
+13:45:32.439 [main] INFO  - Navigating to the login page.
+13:45:34.969 [main] INFO  - Clicked successfully on the Leads button.
+13:45:35.979 [main] INFO  - Clicked succesfully on the Create button.
+13:45:38.306 [main] INFO  - Dropdown opened successfully.
+13:45:51.686 [main] INFO  - Browser selected: chrome
+13:45:54.750 [main] INFO  - ChromeDriver initialized.
+13:45:56.234 [main] INFO  - Navigated to URL: https://crmtest.doctorshealthfund.com.au/
+13:45:56.292 [main] INFO  - All cookies cleared before starting the test.
+13:45:56.343 [main] INFO  - Navigating to the login page.
+13:45:58.373 [main] WARN  - Encountered a StaleElementReferenceException. Reinitializing elements.
+13:45:58.989 [main] INFO  - Clicked successfully on the Leads button after reinitializing elements.
+13:46:00.077 [main] INFO  - Clicked succesfully on the Create button.
+13:46:02.574 [main] INFO  - Dropdown opened successfully.
+13:46:16.218 [main] INFO  - Browser selected: chrome
+13:46:19.093 [main] INFO  - ChromeDriver initialized.
+13:46:20.625 [main] INFO  - Navigated to URL: https://crmtest.doctorshealthfund.com.au/
+13:46:20.637 [main] INFO  - All cookies cleared before starting the test.
+13:46:20.733 [main] INFO  - Navigating to the login page.
+13:46:22.640 [main] WARN  - Encountered a StaleElementReferenceException. Reinitializing elements.
+13:46:23.123 [main] INFO  - Clicked successfully on the Leads button after reinitializing elements.
+13:46:24.030 [main] INFO  - Clicked succesfully on the Create button.
+13:46:26.384 [main] INFO  - Dropdown opened successfully.
+13:46:40.853 [main] INFO  - Browser selected: chrome
+13:46:43.559 [main] INFO  - ChromeDriver initialized.
+13:46:45.318 [main] INFO  - Navigated to URL: https://crmtest.doctorshealthfund.com.au/
+13:46:45.326 [main] INFO  - All cookies cleared before starting the test.
+13:46:45.368 [main] INFO  - Navigating to the login page.
+13:46:48.560 [main] INFO  - Clicked successfully on the Leads button.
+13:46:49.411 [main] INFO  - Clicked succesfully on the Create button.
+13:46:51.673 [main] INFO  - Dropdown opened successfully.
+13:47:23.542 [main] INFO  - Browser selected: chrome
+13:47:26.568 [main] INFO  - ChromeDriver initialized.
+13:47:28.133 [main] INFO  - Navigated to URL: https://crmtest.doctorshealthfund.com.au/
+13:47:28.143 [main] INFO  - All cookies cleared before starting the test.
+13:47:28.211 [main] INFO  - Navigating to the login page.
+13:47:30.700 [main] INFO  - Clicked successfully on the Leads button.
+13:47:31.570 [main] INFO  - Clicked succesfully on the Create button.
+13:47:33.830 [main] INFO  - Dropdown opened successfully.
+13:48:20.096 [main] INFO  - Browser selected: chrome
+13:48:22.807 [main] INFO  - ChromeDriver initialized.
+13:48:23.279 [main] INFO  - Navigated to URL: https://crmtest.doctorshealthfund.com.au/
+13:48:24.230 [main] INFO  - All cookies cleared before starting the test.
+13:48:24.309 [main] INFO  - Navigating to the login page.
+13:48:26.939 [main] INFO  - Clicked successfully on the Leads button.
+13:48:27.748 [main] INFO  - Clicked succesfully on the Create button.
+13:48:30.084 [main] INFO  - Dropdown opened successfully.
+13:48:48.316 [main] INFO  - Browser selected: chrome
+13:48:51.121 [main] INFO  - ChromeDriver initialized.
+13:48:51.763 [main] INFO  - Navigated to URL: https://crmtest.doctorshealthfund.com.au/
+13:48:52.629 [main] INFO  - All cookies cleared before starting the test.
+13:48:52.700 [main] INFO  - Navigating to the login page.
+13:48:55.128 [main] INFO  - Clicked successfully on the Leads button.
+13:48:56.196 [main] INFO  - Clicked succesfully on the Create button.
+13:48:58.688 [main] INFO  - Dropdown opened successfully.
+13:49:18.314 [main] INFO  - Browser selected: chrome
+13:49:21.398 [main] INFO  - ChromeDriver initialized.
+13:49:22.968 [main] INFO  - Navigated to URL: https://crmtest.doctorshealthfund.com.au/
+13:49:22.975 [main] INFO  - All cookies cleared before starting the test.
+13:49:23.028 [main] INFO  - Navigating to the login page.
+13:49:25.470 [main] INFO  - Clicked successfully on the Leads button.
+13:49:26.372 [main] INFO  - Clicked succesfully on the Create button.
+13:49:28.805 [main] INFO  - Dropdown opened successfully.
+15:20:24.168 [main] INFO  - Browser selected: chrome
+15:20:28.084 [main] INFO  - ChromeDriver initialized.
+15:20:29.159 [main] INFO  - Navigated to URL: https://crmtest.doctorshealthfund.com.au/
+15:20:29.166 [main] INFO  - All cookies cleared before starting the test.
+15:20:29.501 [main] INFO  - Navigating to the login page.
+15:20:31.849 [main] INFO  - Clicked successfully on the Leads button.
+15:20:32.610 [main] INFO  - Clicked succesfully on the Create button.
+15:20:34.794 [main] INFO  - Dropdown opened successfully.
+15:52:47.439 [main] INFO  - Browser selected: chrome
+15:52:50.339 [main] INFO  - ChromeDriver initialized.
+15:52:51.533 [main] INFO  - Navigated to URL: https://crmtest.doctorshealthfund.com.au/
+15:52:51.540 [main] INFO  - All cookies cleared before starting the test.
+15:52:51.621 [main] INFO  - Navigating to the login page.
+15:52:54.106 [main] INFO  - Clicked successfully on the Leads button.
+15:52:54.834 [main] INFO  - Clicked succesfully on the Create button.
+15:52:57.577 [main] INFO  - Dropdown opened successfully.
+16:02:13.843 [main] INFO  - Browser selected: chrome
+16:02:16.527 [main] INFO  - ChromeDriver initialized.
+16:02:17.964 [main] INFO  - Navigated to URL: https://crmtest.doctorshealthfund.com.au/
+16:02:17.971 [main] INFO  - All cookies cleared before starting the test.
+16:02:18.022 [main] INFO  - Navigating to the login page.
+16:02:19.905 [main] WARN  - Encountered a StaleElementReferenceException. Reinitializing elements.
+16:02:20.587 [main] INFO  - Clicked successfully on the Leads button after reinitializing elements.
+16:02:21.563 [main] INFO  - Clicked succesfully on the Create button.
+16:02:24.103 [main] INFO  - Dropdown opened successfully.
+16:05:55.976 [main] INFO  - Browser selected: chrome
+16:05:59.778 [main] INFO  - ChromeDriver initialized.
+16:06:01.877 [main] INFO  - Navigated to URL: https://crmtest.doctorshealthfund.com.au/
+16:06:01.887 [main] INFO  - All cookies cleared before starting the test.
+16:06:01.938 [main] INFO  - Navigating to the login page.
+16:06:04.046 [main] WARN  - Encountered a StaleElementReferenceException. Reinitializing elements.
+16:06:04.818 [main] INFO  - Clicked successfully on the Leads button after reinitializing elements.
+16:06:05.742 [main] INFO  - Clicked succesfully on the Create button.
+16:06:08.134 [main] INFO  - Dropdown opened successfully.
+16:13:33.904 [main] INFO  - Browser selected: chrome
+16:13:36.569 [main] INFO  - ChromeDriver initialized.
+16:13:37.852 [main] INFO  - Navigated to URL: https://crmtest.doctorshealthfund.com.au/
+16:13:37.862 [main] INFO  - All cookies cleared before starting the test.
+16:13:37.927 [main] INFO  - Navigating to the login page.
+16:13:40.411 [main] INFO  - Clicked successfully on the Leads button.
+16:13:41.358 [main] INFO  - Clicked succesfully on the Create button.
+16:13:43.802 [main] INFO  - Dropdown opened successfully.
+16:14:50.659 [main] INFO  - Browser selected: chrome
+16:14:53.306 [main] INFO  - ChromeDriver initialized.
+16:14:55.025 [main] INFO  - Navigated to URL: https://crmtest.doctorshealthfund.com.au/
+16:14:55.065 [main] INFO  - All cookies cleared before starting the test.
+16:14:55.125 [main] INFO  - Navigating to the login page.
+16:14:57.506 [main] INFO  - Clicked successfully on the Leads button.
+16:14:58.463 [main] INFO  - Clicked succesfully on the Create button.
+16:15:00.763 [main] INFO  - Dropdown opened successfully.
+16:16:23.435 [main] INFO  - Browser selected: chrome
+16:16:26.379 [main] INFO  - ChromeDriver initialized.
+16:16:28.773 [main] INFO  - Navigated to URL: https://crmtest.doctorshealthfund.com.au/
+16:16:28.784 [main] INFO  - All cookies cleared before starting the test.
+16:16:28.828 [main] INFO  - Navigating to the login page.
+16:16:33.559 [main] INFO  - Clicked successfully on the Leads button.
+16:16:34.459 [main] INFO  - Clicked succesfully on the Create button.
+16:16:37.476 [main] INFO  - Dropdown opened successfully.
+16:16:54.589 [main] INFO  - Browser selected: chrome
+16:16:57.447 [main] INFO  - ChromeDriver initialized.
+16:16:58.854 [main] INFO  - Navigated to URL: https://crmtest.doctorshealthfund.com.au/
+16:16:58.862 [main] INFO  - All cookies cleared before starting the test.
+16:16:58.907 [main] INFO  - Navigating to the login page.
+16:17:00.786 [main] WARN  - Encountered a StaleElementReferenceException. Reinitializing elements.
+16:17:01.328 [main] INFO  - Clicked successfully on the Leads button after reinitializing elements.
+16:17:02.355 [main] INFO  - Clicked succesfully on the Create button.
+16:17:04.764 [main] INFO  - Dropdown opened successfully.
+16:18:51.294 [main] INFO  - Browser selected: chrome
+16:18:54.178 [main] INFO  - ChromeDriver initialized.
+16:18:55.679 [main] INFO  - Navigated to URL: https://crmtest.doctorshealthfund.com.au/
+16:18:55.686 [main] INFO  - All cookies cleared before starting the test.
+16:18:55.743 [main] INFO  - Navigating to the login page.
+16:18:57.606 [main] WARN  - Encountered a StaleElementReferenceException. Reinitializing elements.
+16:18:58.234 [main] INFO  - Clicked successfully on the Leads button after reinitializing elements.
+16:18:58.937 [main] INFO  - Clicked succesfully on the Create button.
+16:19:01.540 [main] INFO  - Dropdown opened successfully.
+16:19:57.883 [main] INFO  - Browser selected: chrome
+16:20:00.648 [main] INFO  - ChromeDriver initialized.
+16:20:01.234 [main] INFO  - Navigated to URL: https://crmtest.doctorshealthfund.com.au/
+16:20:02.310 [main] INFO  - All cookies cleared before starting the test.
+16:20:02.385 [main] INFO  - Navigating to the login page.
+16:20:04.926 [main] INFO  - Clicked successfully on the Leads button.
+16:20:05.825 [main] INFO  - Clicked succesfully on the Create button.
+16:20:08.016 [main] INFO  - Dropdown opened successfully.
+16:21:09.763 [main] INFO  - Browser selected: chrome
+16:21:13.301 [main] INFO  - ChromeDriver initialized.
+16:21:14.717 [main] INFO  - Navigated to URL: https://crmtest.doctorshealthfund.com.au/
+16:21:14.753 [main] INFO  - All cookies cleared before starting the test.
+16:21:14.807 [main] INFO  - Navigating to the login page.
+16:21:17.513 [main] INFO  - Clicked successfully on the Leads button.
+16:21:18.470 [main] INFO  - Clicked succesfully on the Create button.
+16:21:20.663 [main] INFO  - Dropdown opened successfully.
+06:49:41.905 [main] INFO  - Browser selected: chrome
+06:49:45.632 [main] INFO  - ChromeDriver initialized.
+06:49:47.025 [main] INFO  - Navigated to URL: https://crmtest.doctorshealthfund.com.au/
+06:49:47.047 [main] INFO  - All cookies cleared before starting the test.
+06:49:47.138 [main] INFO  - Navigating to the login page.
+06:49:49.726 [main] INFO  - Clicked successfully on the Leads button.
+06:49:50.469 [main] INFO  - Clicked succesfully on the Create button.
+06:50:17.919 [main] INFO  - Browser selected: chrome
+06:50:21.306 [main] INFO  - ChromeDriver initialized.
+06:50:22.680 [main] INFO  - Navigated to URL: https://crmtest.doctorshealthfund.com.au/
+06:50:22.708 [main] INFO  - All cookies cleared before starting the test.
+06:50:22.746 [main] INFO  - Navigating to the login page.
+06:50:25.133 [main] INFO  - Clicked successfully on the Leads button.
+06:50:26.079 [main] INFO  - Clicked succesfully on the Create button.
+06:50:28.540 [main] INFO  - Dropdown opened successfully.
+07:00:42.456 [main] INFO  - Browser selected: chrome
+07:00:45.287 [main] INFO  - ChromeDriver initialized.
+07:00:46.789 [main] INFO  - Navigated to URL: https://crmtest.doctorshealthfund.com.au/
+07:00:46.798 [main] INFO  - All cookies cleared before starting the test.
+07:00:46.844 [main] INFO  - Navigating to the login page.
+07:00:49.423 [main] INFO  - Clicked successfully on the Leads button.
+07:00:50.347 [main] INFO  - Clicked succesfully on the Create button.
+07:00:52.920 [main] INFO  - Dropdown opened successfully.
+07:30:17.805 [main] INFO  - Browser selected: chrome
+07:30:21.362 [main] INFO  - ChromeDriver initialized.
+07:30:22.965 [main] INFO  - Navigated to URL: https://crmtest.doctorshealthfund.com.au/
+07:30:22.973 [main] INFO  - All cookies cleared before starting the test.
+07:30:23.034 [main] INFO  - Navigating to the login page.
+07:30:24.983 [main] WARN  - Encountered a StaleElementReferenceException. Reinitializing elements.
+07:30:25.554 [main] INFO  - Clicked successfully on the Leads button after reinitializing elements.
+07:30:26.259 [main] INFO  - Clicked succesfully on the Create button.
+07:30:28.459 [main] INFO  - Dropdown opened successfully.
+08:30:24.626 [main] INFO  - Browser selected: chrome
+08:30:28.779 [main] INFO  - ChromeDriver initialized.
+08:30:33.882 [main] INFO  - Navigated to URL: https://dms.uat.doctorshealthfund.com.au/
+08:30:34.133 [main] INFO  - All cookies cleared before starting the test.
+08:30:34.197 [main] INFO  - Navigating to the quote page.
+08:30:34.247 [main] INFO  - Page title: Private Health Insurance for Doctors | Doctors' Health Fund
+08:30:34.253 [main] INFO  - Clicking the 'Get Quote' button.
+08:30:35.542 [main] INFO  - 'Get Quote' button clicked successfully.
+08:30:37.190 [main] INFO  - Selected cover for: Single
+08:30:37.470 [main] INFO  - Selected residence: NSW
+08:30:38.218 [main] INFO  - Selected annual income: Below $97k
+08:30:41.202 [main] INFO  - Selected the hospital plan: Top Cover
+08:30:41.338 [main] INFO  - Selected the Extras Cover: Total Extras
+08:30:41.516 [main] INFO  - Clicked on the Apply Now button for the selected plan.
+08:30:46.003 [main] INFO  - click on continue button
+08:30:50.667 [main] INFO  - click on continue button
+08:30:54.028 [main] INFO  - Selected 'Mr' from dropdown.
+08:47:25.725 [main] INFO  - Browser selected: chrome
+08:47:28.380 [main] INFO  - ChromeDriver initialized.
+08:47:34.570 [main] INFO  - Navigated to URL: https://dms.uat.doctorshealthfund.com.au/
+08:47:34.818 [main] INFO  - All cookies cleared before starting the test.
+08:47:34.873 [main] INFO  - Navigating to the quote page.
+08:47:34.913 [main] INFO  - Page title: Private Health Insurance for Doctors | Doctors' Health Fund
+08:47:34.919 [main] INFO  - Clicking the 'Get Quote' button.
+08:47:35.155 [main] INFO  - 'Get Quote' button clicked successfully.
+08:47:36.355 [main] INFO  - Selected cover for: Single
+08:47:36.608 [main] INFO  - Selected residence: NSW
+08:47:37.328 [main] INFO  - Selected annual income: Below $97k
+08:47:39.185 [main] INFO  - Selected the hospital plan: Top Cover
+08:47:39.355 [main] INFO  - Selected the Extras Cover: Total Extras
+08:47:39.517 [main] INFO  - Clicked on the Apply Now button for the selected plan.
+08:47:43.528 [main] INFO  - click on continue button
+08:47:48.068 [main] INFO  - click on continue button
+08:47:51.766 [main] INFO  - Selected 'Mr' from dropdown.
+10:39:09.707 [main] INFO  - Browser selected: chrome
+10:39:14.300 [main] INFO  - ChromeDriver initialized.
+10:39:15.842 [main] INFO  - Navigated to URL: https://crmtest.doctorshealthfund.com.au/
+10:39:15.849 [main] INFO  - All cookies cleared before starting the test.
+10:39:15.944 [main] INFO  - Navigating to the login page.
+10:39:18.592 [main] INFO  - Clicked successfully on the Leads button.
+10:39:19.520 [main] INFO  - Clicked succesfully on the Create button.
+10:39:21.920 [main] INFO  - Dropdown opened successfully.
+12:15:00.233 [main] INFO  - Browser selected: chrome
+12:15:03.886 [main] INFO  - ChromeDriver initialized.
+12:15:06.287 [main] INFO  - Navigated to URL: https://crmtest.doctorshealthfund.com.au/
+12:15:06.299 [main] INFO  - All cookies cleared before starting the test.
+12:15:06.365 [main] INFO  - Navigating to the login page.
+12:15:08.893 [main] INFO  - Clicked successfully on the Leads button.
+12:15:09.923 [main] INFO  - Clicked succesfully on the Create button.
+12:15:12.119 [main] INFO  - Dropdown opened successfully.
+12:15:36.469 [main] INFO  - Browser selected: chrome
+12:15:39.251 [main] INFO  - ChromeDriver initialized.
+12:15:40.811 [main] INFO  - Navigated to URL: https://crmtest.doctorshealthfund.com.au/
+12:15:40.856 [main] INFO  - All cookies cleared before starting the test.
+12:15:40.902 [main] INFO  - Navigating to the login page.
+12:15:43.029 [main] INFO  - Clicked successfully on the Leads button.
+12:15:43.763 [main] INFO  - Clicked succesfully on the Create button.
+12:15:45.925 [main] INFO  - Dropdown opened successfully.
+12:17:08.356 [main] INFO  - Browser selected: chrome
+12:17:11.144 [main] INFO  - ChromeDriver initialized.
+12:17:12.611 [main] INFO  - Navigated to URL: https://crmtest.doctorshealthfund.com.au/
+12:17:12.619 [main] INFO  - All cookies cleared before starting the test.
+12:17:12.683 [main] INFO  - Navigating to the login page.
+12:17:14.659 [main] WARN  - Encountered a StaleElementReferenceException. Reinitializing elements.
+12:17:15.254 [main] INFO  - Clicked successfully on the Leads button after reinitializing elements.
+12:17:16.176 [main] INFO  - Clicked succesfully on the Create button.
+12:17:18.591 [main] INFO  - Dropdown opened successfully.
+12:19:56.519 [main] INFO  - Browser selected: chrome
+12:19:59.318 [main] INFO  - ChromeDriver initialized.
+12:20:00.900 [main] INFO  - Navigated to URL: https://crmtest.doctorshealthfund.com.au/
+12:20:00.908 [main] INFO  - All cookies cleared before starting the test.
+12:20:00.969 [main] INFO  - Navigating to the login page.
+12:20:03.475 [main] INFO  - Clicked successfully on the Leads button.
+12:20:04.120 [main] INFO  - Clicked succesfully on the Create button.
+12:20:06.379 [main] INFO  - Dropdown opened successfully.
+12:20:07.867 [main] INFO  - Successfully selected the PR / Citizen checkbox.
+12:20:08.202 [main] INFO  - Generated and entered phone number: 0498364717
+12:20:44.568 [main] INFO  - Browser selected: chrome
+12:20:47.601 [main] INFO  - ChromeDriver initialized.
+12:20:48.112 [main] INFO  - Navigated to URL: https://crmtest.doctorshealthfund.com.au/
+12:20:48.977 [main] INFO  - All cookies cleared before starting the test.
+12:20:49.041 [main] INFO  - Navigating to the login page.
+12:20:51.827 [main] INFO  - Clicked successfully on the Leads button.
+12:20:53.000 [main] INFO  - Clicked succesfully on the Create button.
+12:20:55.340 [main] INFO  - Dropdown opened successfully.
+12:20:56.903 [main] INFO  - Successfully selected the PR / Citizen checkbox.
+12:20:57.236 [main] INFO  - Generated and entered phone number: 0498365025
+12:21:35.199 [main] INFO  - Browser selected: chrome
+12:21:37.952 [main] INFO  - ChromeDriver initialized.
+12:21:39.536 [main] INFO  - Navigated to URL: https://crmtest.doctorshealthfund.com.au/
+12:21:39.584 [main] INFO  - All cookies cleared before starting the test.
+12:21:39.629 [main] INFO  - Navigating to the login page.
+12:21:42.116 [main] INFO  - Clicked successfully on the Leads button.
+12:21:43.009 [main] INFO  - Clicked succesfully on the Create button.
+12:21:45.638 [main] INFO  - Dropdown opened successfully.
+12:21:48.075 [main] INFO  - Successfully selected the PR / Citizen checkbox.
+12:21:48.413 [main] INFO  - Generated and entered phone number: 0498361696
+12:48:49.635 [main] INFO  - Browser selected: chrome
+12:48:52.460 [main] INFO  - ChromeDriver initialized.
+12:48:53.888 [main] INFO  - Navigated to URL: https://crmtest.doctorshealthfund.com.au/
+12:48:53.895 [main] INFO  - All cookies cleared before starting the test.
+12:48:53.940 [main] INFO  - Navigating to the login page.
+12:48:55.751 [main] WARN  - Encountered a StaleElementReferenceException. Reinitializing elements.
+12:48:56.514 [main] INFO  - Clicked successfully on the Leads button after reinitializing elements.
+12:48:57.333 [main] INFO  - Clicked succesfully on the Create button.
+12:48:59.456 [main] INFO  - Dropdown opened successfully.
+12:49:01.017 [main] INFO  - Successfully selected the PR / Citizen checkbox.
+12:49:01.327 [main] INFO  - Generated and entered phone number: 0498363153
+13:25:54.448 [main] INFO  - Browser selected: chrome
+13:25:57.900 [main] INFO  - ChromeDriver initialized.
+13:26:00.273 [main] INFO  - Navigated to URL: https://crmtest.doctorshealthfund.com.au/
+13:26:00.279 [main] INFO  - All cookies cleared before starting the test.
+13:26:00.317 [main] INFO  - Navigating to the login page.
+13:26:02.873 [main] INFO  - Clicked successfully on the Leads button.
+13:26:03.522 [main] INFO  - Clicked succesfully on the Create button.
+13:26:06.033 [main] INFO  - Dropdown opened successfully.
+13:26:07.587 [main] INFO  - Successfully selected the PR / Citizen checkbox.
+13:26:07.974 [main] INFO  - Generated and entered phone number: 0498361181
+13:37:22.264 [main] INFO  - Browser selected: chrome
+13:37:25.085 [main] INFO  - ChromeDriver initialized.
+13:37:27.091 [main] INFO  - Navigated to URL: https://crmtest.doctorshealthfund.com.au/
+13:37:27.099 [main] INFO  - All cookies cleared before starting the test.
+13:37:27.149 [main] INFO  - Navigating to the login page.
+13:37:28.947 [main] WARN  - Encountered a StaleElementReferenceException. Reinitializing elements.
+13:37:29.603 [main] INFO  - Clicked successfully on the Leads button after reinitializing elements.
+13:37:31.233 [main] INFO  - Clicked succesfully on the Create button.
+13:37:33.347 [main] INFO  - Dropdown opened successfully.
+13:37:35.892 [main] INFO  - Successfully selected the PR / Citizen checkbox.
+13:37:36.399 [main] INFO  - Generated and entered phone number: 0498363349
+13:37:43.786 [main] INFO  - Clicked successfully on the Save button.
+13:39:54.334 [main] INFO  - Browser selected: chrome
+13:39:57.050 [main] INFO  - ChromeDriver initialized.
+13:39:58.850 [main] INFO  - Navigated to URL: https://crmtest.doctorshealthfund.com.au/
+13:39:58.858 [main] INFO  - All cookies cleared before starting the test.
+13:39:58.909 [main] INFO  - Navigating to the login page.
+13:40:01.317 [main] INFO  - Clicked successfully on the Leads button.
+13:40:02.135 [main] INFO  - Clicked succesfully on the Create button.
+13:40:04.250 [main] INFO  - Dropdown opened successfully.
+13:40:05.769 [main] INFO  - Successfully selected the PR / Citizen checkbox.
+13:40:06.089 [main] INFO  - Generated and entered phone number: 0498368737
+13:40:12.897 [main] INFO  - Clicked successfully on the Save button.
+13:41:37.776 [main] INFO  - Browser selected: chrome
+13:41:40.563 [main] INFO  - ChromeDriver initialized.

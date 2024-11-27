@@ -16,6 +16,12 @@ import org.testng.Assert;
 import com.qa.BaseTest;
 
 public class EligibilityAndYourDetailsPage extends BaseTest {
+	
+	  // Public static variables for Firstname, Middle name, and Lastname
+    public static String generatedFirstName;
+    public static String generatedMiddleName;
+    public static String generatedLastName;
+    public static String generatedEmail;
 
 	// constructor for initialization page factory and drivers
 	public EligibilityAndYourDetailsPage(WebDriver driver) {
@@ -281,6 +287,12 @@ public class EligibilityAndYourDetailsPage extends BaseTest {
 	public void enterRandomFullName(WebDriver driver) {
 		String fullName = generateRandomFullName(); // Generate the full name
 		String[] nameParts = fullName.split(" "); // Split into first, middle, last
+		
+		
+        generatedFirstName = nameParts[0]; // Assigns generated FirstName e.g. "John" to the variable generatedFirstName
+        generatedMiddleName = nameParts[1]; // Assigns generated MiddleName e.g. "Kumar" to the variable generatedMiddleName
+        generatedLastName = nameParts[2];  // Assigns generated LastName e.g. "Sharma" to the variable generatedLastName
+        
 		waitVisibilityElement(firstNameInput);
 		firstNameInput.clear();
 		firstNameInput.sendKeys(nameParts[0]);
@@ -322,6 +334,9 @@ public class EligibilityAndYourDetailsPage extends BaseTest {
 		// Generate a random number
 		int randomNumber = new Random().nextInt(1000); // Generate numbers between 0 and 999
 		String randomEmail = "dhf.testing+" + randomNumber + "@gmail.com";
+		
+		// Assign the generated email to the static variable  generatedEmail 
+        generatedEmail = randomEmail;  
 
 		// Enter the email into the input box
 		emailInputBox.sendKeys(randomEmail);

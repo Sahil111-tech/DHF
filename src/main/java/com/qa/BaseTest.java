@@ -1,13 +1,6 @@
 package com.qa;
 
-//import StepDefinitions.Hooks;
-import org.testng.annotations.AfterMethod;
-import org.testng.annotations.Test;
 import java.io.File;
-import java.io.FileInputStream;
-import java.io.IOException;
-import java.nio.file.Files;
-import java.nio.file.StandardCopyOption;
 import java.text.SimpleDateFormat;
 import java.time.Duration;
 import java.util.Date;
@@ -15,7 +8,6 @@ import java.util.List;
 import java.util.Properties;
 import java.util.Random;
 
-import org.apache.commons.io.FileUtils;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 import org.openqa.selenium.By;
@@ -27,10 +19,6 @@ import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.TimeoutException;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
-import org.openqa.selenium.chrome.ChromeDriver;
-import org.openqa.selenium.edge.EdgeDriver;
-import org.openqa.selenium.support.PageFactory;
-import org.openqa.selenium.support.ui.ExpectedCondition;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.Select;
 import org.openqa.selenium.support.ui.WebDriverWait;
@@ -52,12 +40,8 @@ public class BaseTest {
 	public static WebDriver driver;
 	public static Properties prop;
 	protected JavascriptExecutor js;
-	
+
 	public static final Logger log = LogManager.getLogger(BaseTest.class);
-	
-
-
-
 
 	public String getDateTime() {
 		// Create a date format
@@ -77,39 +61,43 @@ public class BaseTest {
 	}
 
 	public void waitVisibility(WebElement e, WebDriver driver) {
-		
-		  WebDriverWait wait = new WebDriverWait(driver, TestUtils.WAIT);
-		  wait.until(ExpectedConditions.visibilityOf(e));
-		 
-		
-	}
-	public void waitForElementToBeClickable(WebDriver driver, WebElement element) {
-	    WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(120));
-	    wait.until(ExpectedConditions.elementToBeClickable(element));
-	}
-	
-	public void waitAndClick(WebElement locator) {
-	    new WebDriverWait(driver, Duration.ofSeconds(60))
-	        .until(ExpectedConditions.elementToBeClickable(locator)).click();
+
+		WebDriverWait wait = new WebDriverWait(driver, TestUtils.WAIT);
+		wait.until(ExpectedConditions.visibilityOf(e));
+
 	}
 
+	public void waitForElementToBeClickable(WebDriver driver, WebElement element) {
+		WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(120));
+		wait.until(ExpectedConditions.elementToBeClickable(element));
+	}
+
+	public void waitAndClick(WebElement locator) {
+		new WebDriverWait(driver, Duration.ofSeconds(60)).until(ExpectedConditions.elementToBeClickable(locator))
+				.click();
+	}
 
 	// Wait for object to be visible before performing any action
 	public void waitForVisibility(String locator) {
 		WebDriverWait wait = new WebDriverWait(driver, TestUtils.WAIT);
 		wait.until(ExpectedConditions.visibilityOfElementLocated(getByType(locator)));
 	}
+
 	// Wait for object to be visible before performing any action
-	public void waitForVisibility(WebElement element,WebDriver driver) {
-	    WebDriverWait wait = new WebDriverWait(driver, TestUtils.WAIT);
-	    wait.until(ExpectedConditions.visibilityOf(element));
+	public void waitForVisibility(WebElement element, WebDriver driver) {
+		WebDriverWait wait = new WebDriverWait(driver, TestUtils.WAIT);
+		wait.until(ExpectedConditions.visibilityOf(element));
 	}
 	
-	
+	// Wait for an object to be invisible before performing any action
+	public void waitForInvisibility(By locator, WebDriver driver) {
+	    WebDriverWait wait = new WebDriverWait(driver, TestUtils.WAIT);
+	    wait.until(ExpectedConditions.invisibilityOfElementLocated(locator));
+	}
 
 	// Click on a web element
 	public void click(WebElement e) {
-		waitVisibility(e,driver);
+		waitVisibility(e, driver);
 		e.click();
 	}/*
 		 * /
@@ -117,7 +105,7 @@ public class BaseTest {
 		 * Click on a web element using locator
 		 */
 
-	public void click(String locator,WebDriver driver) {
+	public void click(String locator, WebDriver driver) {
 		waitForVisibility(locator);
 		WebElement element = driver.findElement(getByType(locator));
 		element.click();
@@ -169,40 +157,57 @@ public class BaseTest {
 		WebDriverWait wait = new WebDriverWait(driver, TestUtils.WAIT);
 		wait.until(ExpectedConditions.visibilityOfElementLocated(getByType(locator)));
 	}
-	
+
 	// Overloaded method for just above method (using WebElement)
 	public void waitVisibilityElement(WebElement element) {
-	    WebDriverWait wait = new WebDriverWait(driver, TestUtils.WAIT);
-	    wait.until(ExpectedConditions.visibilityOf(element));
+		WebDriverWait wait = new WebDriverWait(driver, TestUtils.WAIT);
+		wait.until(ExpectedConditions.visibilityOf(element));
 	}
-	
+
+	/**
+	 * Helper method to wait for suggestions to appear (if applicable).
+	 */
+	private void waitForSuggestionsToAppear(WebElement element) {
+		WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
+		wait.until(ExpectedConditions.attributeToBeNotEmpty(element, "value"));
+	}
+
 	public void waitForAllOptionsVisibility(WebElement dropdown) {
-		 WebDriverWait wait = new WebDriverWait(driver, TestUtils.WAIT);
-	     wait.until(ExpectedConditions.visibilityOfAllElements(dropdown.findElements(By.tagName("option"))));
-	    }
-	
+		WebDriverWait wait = new WebDriverWait(driver, TestUtils.WAIT);
+		wait.until(ExpectedConditions.visibilityOfAllElements(dropdown.findElements(By.tagName("option"))));
+	}
+
 	// Modify waitForVisibility method to handle a list of WebElements
 	public void waitForVisibility(List<WebElement> elements, WebDriver driver) {
-	    WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10)); // Use an appropriate timeout
-	    for (WebElement element : elements) {
-	        wait.until(ExpectedConditions.visibilityOf(element)); // Wait for each element in the list to be visible
-	    }
+		WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10)); // Use an appropriate timeout
+		for (WebElement element : elements) {
+			wait.until(ExpectedConditions.visibilityOf(element)); // Wait for each element in the list to be visible
+		}
 	}
-	
+
+	public static void sleepFor(int milliseconds) {
+		try {
+			Thread.sleep(milliseconds);
+		} catch (InterruptedException e) {
+			Thread.currentThread().interrupt();
+		}
+	}
+
 	// Helper Method to Wait for Modal/Pop-Up
 	public void waitForModalAndHandle(WebDriver driver) {
-	    WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(30));
-	    
-	    try {
-	        // Wait for the modal or pop-up to be visible
-	        WebElement modal = wait.until(ExpectedConditions.visibilityOfElementLocated(By.cssSelector("your-modal-css-selector")));
-	        
-	        // Handle any required action like clicking a button
-	        modal.findElement(By.cssSelector("button.accept")).click(); // Adjust selector as needed
-	        
-	    } catch (TimeoutException e) {
-	        throw new RuntimeException("Modal did not appear in time!");
-	    }
+		WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(30));
+
+		try {
+			// Wait for the modal or pop-up to be visible
+			WebElement modal = wait
+					.until(ExpectedConditions.visibilityOfElementLocated(By.cssSelector("your-modal-css-selector")));
+
+			// Handle any required action like clicking a button
+			modal.findElement(By.cssSelector("button.accept")).click(); // Adjust selector as needed
+
+		} catch (TimeoutException e) {
+			throw new RuntimeException("Modal did not appear in time!");
+		}
 	}
 
 	// Type into an element using locator
@@ -251,188 +256,200 @@ public class BaseTest {
 		}
 		return by;
 	}
+
 	// Generic method to scroll
-    public void scrollBy(int xOffset, int yOffset) {
-    	  if (js == null) {
-    	        js = (JavascriptExecutor) driver; // Reinitialize if null
-    	    }
-    	    if (js != null) {
-    	        js.executeScript("window.scrollBy(arguments[0], arguments[1]);", xOffset, yOffset);
-    	    } else {
-    	        throw new IllegalStateException("JavascriptExecutor is still null after reinitialization");
-    	    }
-    }
+	public void scrollBy(int xOffset, int yOffset) {
+		if (js == null) {
+			js = (JavascriptExecutor) driver; // Reinitialize if null
+		}
+		if (js != null) {
+			js.executeScript("window.scrollBy(arguments[0], arguments[1]);", xOffset, yOffset);
+		} else {
+			throw new IllegalStateException("JavascriptExecutor is still null after reinitialization");
+		}
+	}
 
-    // Method to scroll to a specific element
-    public void scrollToElement(WebElement element, WebDriver driver) {
-        try {
-            new WebDriverWait(driver, Duration.ofSeconds(10))
-                .until(ExpectedConditions.visibilityOf(element));
-        } catch (TimeoutException e) {
-            throw new RuntimeException("Element not visible: " + element, e);
-        }
-        JavascriptExecutor js = (JavascriptExecutor) driver;
-        js.executeScript("arguments[0].scrollIntoView({behavior: 'smooth', block: 'center'});", element);
-        log.info("Scrolled to element: " + element);
-    }
-    
-    public static void scrollToElementOffset(WebElement element, WebDriver driver, int yOffset) {
-        JavascriptExecutor js = (JavascriptExecutor) driver;
-        int elementPosition = element.getLocation().getY();
-        int offsetPosition = elementPosition - yOffset;
-        js.executeScript("window.scrollTo(0, arguments[0]);", offsetPosition);
-    }
-    public void scrollToElementWithRetry(WebElement element, WebDriver driver) {
-        JavascriptExecutor js = (JavascriptExecutor) driver;
-        for (int i = 0; i < 3; i++) {
-            try {
-                js.executeScript("arguments[0].scrollIntoView({behavior: 'smooth', block: 'center'});", element);
-                new WebDriverWait(driver, Duration.ofSeconds(2))
-                    .until(ExpectedConditions.visibilityOf(element));
-                log.info("Scrolled to element: " + element);
-                break;
-            } catch (Exception e) {
-                log.warn("Retrying scroll attempt: " + (i + 1));
-            }
-        }
-    }
+	// Method to scroll to a specific element
+	public void scrollToElement(WebElement element, WebDriver driver) {
+		try {
+			new WebDriverWait(driver, Duration.ofSeconds(10)).until(ExpectedConditions.visibilityOf(element));
+		} catch (TimeoutException e) {
+			throw new RuntimeException("Element not visible: " + element, e);
+		}
+		JavascriptExecutor js = (JavascriptExecutor) driver;
+		js.executeScript("arguments[0].scrollIntoView({behavior: 'smooth', block: 'center'});", element);
+		log.info("Scrolled to element: " + element);
+	}
 
+	public static void scrollToElementOffset(WebElement element, WebDriver driver, int yOffset) {
+		JavascriptExecutor js = (JavascriptExecutor) driver;
+		int elementPosition = element.getLocation().getY();
+		int offsetPosition = elementPosition - yOffset;
+		js.executeScript("window.scrollTo(0, arguments[0]);", offsetPosition);
+	}
+
+	public void scrollToElementWithRetry(WebElement element, WebDriver driver) {
+		JavascriptExecutor js = (JavascriptExecutor) driver;
+		for (int i = 0; i < 3; i++) {
+			try {
+				js.executeScript("arguments[0].scrollIntoView({behavior: 'smooth', block: 'center'});", element);
+				new WebDriverWait(driver, Duration.ofSeconds(2)).until(ExpectedConditions.visibilityOf(element));
+				log.info("Scrolled to element: " + element);
+				break;
+			} catch (Exception e) {
+				log.warn("Retrying scroll attempt: " + (i + 1));
+			}
+		}
+	}
 
 	public void waitForPageToLoad(WebDriver driver) {
-	    WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(30));
-	    wait.until(webDriver -> {
-	        try {
-	            return ((JavascriptExecutor) webDriver).executeScript("return document.readyState").equals("complete");
-	        } catch (NoSuchWindowException e) {
-	            return false;
-	        }
-	    });
-	    
-	   }
-	
+		WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(30));
+		wait.until(webDriver -> {
+			try {
+				return ((JavascriptExecutor) webDriver).executeScript("return document.readyState").equals("complete");
+			} catch (NoSuchWindowException e) {
+				return false;
+			}
+		});
 
-    // Method to select a value from dropdown by visible text
-    public void selectDropdownByVisibleText(WebElement element, String visibleText,WebDriver driver) {
-        //waitVisibility(element, driver);
-        Select dropdown = new Select(element);
-        dropdown.selectByVisibleText(visibleText);
-        log.info("Selected value from dropdown by visible text: " + visibleText);
-    }
+	}
 
-    // Method to select a value from dropdown by value attribute
-    public void selectDropdownByValue(WebElement element, String value) {
-        //waitVisibility(element);
-        Select dropdown = new Select(element);
-        dropdown.selectByValue(value);
-        log.info("Selected value from dropdown by value: " + value);
-    }
+	// Method to select a value from dropdown by visible text
+	public void selectDropdownByVisibleText(WebElement element, String visibleText, WebDriver driver) {
+		// waitVisibility(element, driver);
+		Select dropdown = new Select(element);
+		dropdown.selectByVisibleText(visibleText);
+		log.info("Selected value from dropdown by visible text: " + visibleText);
+	}
 
-    // Method to select a value from dropdown by index
-    public void selectDropdownByIndex(WebElement element, int index) {
-       // waitVisibility(element);
-        Select dropdown = new Select(element);
-        dropdown.selectByIndex(index);
-        log.info("Selected value from dropdown by index: " + index);
-    }
+	// Method to select a value from dropdown by value attribute
+	public void selectDropdownByValue(WebElement element, String value) {
+		// waitVisibility(element);
+		Select dropdown = new Select(element);
+		dropdown.selectByValue(value);
+		log.info("Selected value from dropdown by value: " + value);
+	}
 
-    // Example usage of selecting dropdown based on locator
-    public void selectDropdownByLocator(String locator, String visibleText) {
-        WebElement dropdownElement = getElement(locator);
-        selectDropdownByVisibleText(dropdownElement, visibleText, driver);
-    }
-    
-    public void switchToNewWindow(WebDriver driver) {
-        String mainWindowHandle = driver.getWindowHandle();
-        for (String windowHandle : driver.getWindowHandles()) {
-            if (!windowHandle.equals(mainWindowHandle)) {
-                driver.switchTo().window(windowHandle);
-                break;
-            }
-        }
-    }
-    
-    //Method to scoll up to the page
-    public static void scrollUpBy400(WebDriver driver) {
-        JavascriptExecutor js = (JavascriptExecutor) driver;
-        js.executeScript("window.scrollBy(0, -400);");
-    }
-   
-    // Method to scroll to the Mid of the page
-    public static void scrollDownBy500(WebDriver driver) {
-        JavascriptExecutor js = (JavascriptExecutor) driver;
-        js.executeScript("window.scrollBy(0, 500);");
-    }
-    
-    // Generic method to scroll down by a specified number of pixels
+	// Method to select a value from dropdown by index
+	public void selectDropdownByIndex(WebElement element, int index) {
+		// waitVisibility(element);
+		Select dropdown = new Select(element);
+		dropdown.selectByIndex(index);
+		log.info("Selected value from dropdown by index: " + index);
+	}
+
+	// Example usage of selecting dropdown based on locator
+	public void selectDropdownByLocator(String locator, String visibleText) {
+		WebElement dropdownElement = getElement(locator);
+		selectDropdownByVisibleText(dropdownElement, visibleText, driver);
+	}
+
+	public void switchToNewWindow(WebDriver driver) {
+		String mainWindowHandle = driver.getWindowHandle();
+		for (String windowHandle : driver.getWindowHandles()) {
+			if (!windowHandle.equals(mainWindowHandle)) {
+				driver.switchTo().window(windowHandle);
+				break;
+			}
+		}
+	}
+
+	// Method to scoll up to the page
+	public static void scrollUpBy400(WebDriver driver) {
+		JavascriptExecutor js = (JavascriptExecutor) driver;
+		js.executeScript("window.scrollBy(0, -400);");
+	}
+
+	// Method to scroll to the Mid of the page
+	public static void scrollDownBy500(WebDriver driver) {
+		JavascriptExecutor js = (JavascriptExecutor) driver;
+		js.executeScript("window.scrollBy(0, 500);");
+	}
+
+	// Generic method to scroll down by a specified number of pixels
 	/*
 	 * public void scrollByPixels(int pixels,WebDriver driver) { JavascriptExecutor
 	 * js = (JavascriptExecutor) driver; js.executeScript("window.scrollBy(0," +
 	 * pixels + ");"); }
 	 */
-    
-    public void scrollByPixels(int pixels, WebDriver driver) {
-        ((JavascriptExecutor) driver).executeScript("window.scrollBy(0, arguments[0]);", pixels);
-    }
-    
-    
-    
-    
- // Method to scroll to the top of the page
-    public void scrollToTop(WebDriver driver) {
-        try {
-            Thread.sleep(3000);  
-            JavascriptExecutor js = (JavascriptExecutor) driver;
-            js.executeScript("window.scrollTo(0, 0);");
-        } catch (InterruptedException e) {
-            e.printStackTrace();
-        }
-    }
-    // Method to retrieve all options from dropdown
-    public List<WebElement> getAllDropdownOptions(WebElement element) {
-        //waitVisibility(element);
-        Select dropdown = new Select(element);
-        return dropdown.getOptions();
-    }
-    
- 
-    
-    
-    public void safelyClickElement(WebElement element,WebDriver driver) {
-        WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
-        int attempts = 0;
 
-        while (attempts < 3) {
-            try {
-                wait.until(ExpectedConditions.elementToBeClickable(element));  // Wait until clickable
-                element.click();  // Attempt to click the element
-                log.info("Clicked the element successfully");
-                return;
-            } catch (ElementClickInterceptedException e) {
-                log.warn("Element click intercepted, retrying... attempt: " + (attempts + 1));
-                attempts++;
+	public void scrollByPixels(int pixels, WebDriver driver) {
+		((JavascriptExecutor) driver).executeScript("window.scrollBy(0, arguments[0]);", pixels);
+	}
 
-                // Use JavaScript click as a fallback after retries
-                if (attempts == 3) {
-                    JavascriptExecutor js = (JavascriptExecutor) driver;
-                    js.executeScript("arguments[0].scrollIntoView(true);", element);  // Scroll into view
-                    js.executeScript("arguments[0].click();", element);  // JavaScript click
-                    log.info("Clicked the element using JavaScript click as a fallback");
-                }
-            }
-        }
-    }
-    
- // Method to generate a random full name with first, middle, and last names
-    public String generateRandomFullName() {
-        String[] firstNames = {"John", "Jane", "Alex", "Chris", "Taylor", "Sam"};
-        String[] middleNames = {"Lee", "Ann", "James", "Ray", "Marie", "Lou"};
-        String[] lastNames = {"Smith", "Johnson", "Brown", "Taylor", "Anderson", "Thomas"};
-        
-        Random rand = new Random();
-        String randomFirstName = firstNames[rand.nextInt(firstNames.length)];
-        String randomMiddleName = middleNames[rand.nextInt(middleNames.length)];
-        String randomLastName = lastNames[rand.nextInt(lastNames.length)];
-        
-        return randomFirstName + " " + randomMiddleName + " " + randomLastName;
-    }
+	// Method to scroll to the top of the page
+	public void scrollToTop(WebDriver driver) {
+		try {
+			Thread.sleep(3000);
+			JavascriptExecutor js = (JavascriptExecutor) driver;
+			js.executeScript("window.scrollTo(0, 0);");
+		} catch (InterruptedException e) {
+			e.printStackTrace();
+		}
+	}
+
+	// Method to retrieve all options from dropdown
+	public List<WebElement> getAllDropdownOptions(WebElement element) {
+		// waitVisibility(element);
+		Select dropdown = new Select(element);
+		return dropdown.getOptions();
+	}
+
+	public void safelyClickElement(WebElement element, WebDriver driver) {
+		WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
+		int attempts = 0;
+
+		while (attempts < 3) {
+			try {
+				wait.until(ExpectedConditions.elementToBeClickable(element)); // Wait until clickable
+				element.click(); // Attempt to click the element
+				log.info("Clicked the element successfully");
+				return;
+			} catch (ElementClickInterceptedException e) {
+				log.warn("Element click intercepted, retrying... attempt: " + (attempts + 1));
+				attempts++;
+
+				// Use JavaScript click as a fallback after retries
+				if (attempts == 3) {
+					JavascriptExecutor js = (JavascriptExecutor) driver;
+					js.executeScript("arguments[0].scrollIntoView(true);", element); // Scroll into view
+					js.executeScript("arguments[0].click();", element); // JavaScript click
+					log.info("Clicked the element using JavaScript click as a fallback");
+				}
+			}
+		}
+	}
+
+	// Method to generate a random full name with first, middle, and last names
+	public String generateRandomFullName() {
+		String[] firstNames = { "John", "Jane", "Alex", "Chris", "Taylor", "Sam" };
+		String[] middleNames = { "Lee", "Ann", "James", "Ray", "Marie", "Lou" };
+		String[] lastNames = { "Smith", "Johnson", "Brown", "Taylor", "Anderson", "Thomas" };
+
+		Random rand = new Random();
+		String randomFirstName = firstNames[rand.nextInt(firstNames.length)];
+		String randomMiddleName = middleNames[rand.nextInt(middleNames.length)];
+		String randomLastName = lastNames[rand.nextInt(lastNames.length)];
+
+		return randomFirstName + " " + randomMiddleName + " " + randomLastName;
+	}
+
+	// Method to refresh the page
+	protected static void refreshPage(WebDriver driver) {
+		driver.navigate().refresh(); // Refresh the page
+	}
+
+	private static final String[] FIRST_NAMES = { "Oliver", "Charlotte", "William", "Olivia", "Noah", "Isla", "Jack",
+			"Amelia", "Thomas", "Ava" };
+
+	private static final String[] LAST_NAMES = { "Smith", "Jones", "Williams", "Brown", "Taylor", "Wilson", "Johnson",
+			"White", "Martin", "Hall" };
+
+	// Method to generate a random full name
+	public static String getRandomAustralianName() {
+		Random random = new Random();
+		String firstName = FIRST_NAMES[random.nextInt(FIRST_NAMES.length)];
+		String lastName = LAST_NAMES[random.nextInt(LAST_NAMES.length)];
+		return firstName + " " + lastName;
+	}
 }

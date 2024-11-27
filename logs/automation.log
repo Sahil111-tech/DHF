@@ -1,46 +1,382 @@
-14:49:00.220 [main] INFO  - click on continue button
-14:49:05.290 [main] INFO  - click on continue button
-14:49:08.011 [main] INFO  - Selected 'Mr' from dropdown.
-14:50:06.673 [main] INFO  - Browser selected: chrome
-14:50:09.137 [main] INFO  - ChromeDriver initialized.
-14:50:12.460 [main] INFO  - Navigated to URL: https://dms.uat.doctorshealthfund.com.au/
-14:50:12.736 [main] INFO  - All cookies cleared before starting the test.
-14:50:12.797 [main] INFO  - Navigating to the quote page.
-14:50:12.840 [main] INFO  - Page title: Private Health Insurance for Doctors | Doctors' Health Fund
-14:50:12.845 [main] INFO  - Clicking the 'Get Quote' button.
-14:50:13.061 [main] INFO  - 'Get Quote' button clicked successfully.
-14:50:14.473 [main] INFO  - Selected cover for: Single
-14:50:14.721 [main] INFO  - Selected residence: NSW
-14:50:15.420 [main] INFO  - Selected annual income: Below $97k
-14:50:16.892 [main] INFO  - Selected the hospital plan: Top Cover
-14:50:17.066 [main] INFO  - Selected the Extras Cover: Total Extras
-14:50:17.304 [main] INFO  - Clicked on the Apply Now button for the selected plan.
-14:50:21.363 [main] INFO  - click on continue button
-14:50:25.898 [main] INFO  - click on continue button
-14:50:29.762 [main] INFO  - Selected 'Mr' from dropdown.
-14:50:35.664 [main] INFO  - click on continue button
-14:50:43.167 [main] INFO  - click on continue button
-14:50:50.515 [main] INFO  - click on continue button
-14:50:54.921 [main] INFO  - click on continue button
-15:06:25.236 [main] INFO  - Browser selected: chrome
-15:06:27.966 [main] INFO  - ChromeDriver initialized.
-15:06:31.136 [main] INFO  - Navigated to URL: https://dms.uat.doctorshealthfund.com.au/
-15:06:31.446 [main] INFO  - All cookies cleared before starting the test.
-15:06:31.510 [main] INFO  - Navigating to the quote page.
-15:06:31.537 [main] INFO  - Page title: Private Health Insurance for Doctors | Doctors' Health Fund
-15:06:31.542 [main] INFO  - Clicking the 'Get Quote' button.
-15:06:31.735 [main] WARN  - StaleElementReferenceException encountered. Re-locating the element.
-15:06:31.898 [main] INFO  - 'Get Quote' button clicked successfully.
-15:06:32.755 [main] INFO  - Selected cover for: Single
-15:06:32.987 [main] INFO  - Selected residence: NSW
-15:06:33.697 [main] INFO  - Selected annual income: Below $97k
-15:06:36.158 [main] INFO  - Selected the hospital plan: Top Cover
-15:06:36.298 [main] INFO  - Selected the Extras Cover: Total Extras
-15:06:36.472 [main] INFO  - Clicked on the Apply Now button for the selected plan.
-15:06:41.022 [main] INFO  - click on continue button
-15:06:45.459 [main] INFO  - click on continue button
-15:06:48.240 [main] INFO  - Selected 'Mr' from dropdown.
-15:06:54.585 [main] INFO  - click on continue button
-15:07:02.413 [main] INFO  - click on continue button
-15:07:09.893 [main] INFO  - click on continue button
-15:07:14.295 [main] INFO  - click on continue button
+09:57:06.835 [main] INFO  - Successfully selected the PR / Citizen checkbox.
+09:57:07.214 [main] INFO  - Generated and entered phone number: 0498369093
+10:02:12.707 [main] INFO  - Browser selected: chrome
+10:02:15.376 [main] INFO  - ChromeDriver initialized.
+10:02:16.616 [main] INFO  - Navigated to URL: https://crmtest.doctorshealthfund.com.au/
+10:02:16.623 [main] INFO  - All cookies cleared before starting the test.
+10:02:16.708 [main] INFO  - Navigating to the login page.
+10:02:19.183 [main] INFO  - Clicked successfully on the Leads button.
+10:02:20.063 [main] INFO  - Clicked succesfully on the Create button.
+10:02:22.268 [main] INFO  - Dropdown opened successfully.
+10:02:23.682 [main] INFO  - Successfully selected the PR / Citizen checkbox.
+10:02:24.032 [main] INFO  - Generated and entered phone number: 0498364818
+10:11:58.517 [main] INFO  - Browser selected: chrome
+10:12:01.719 [main] INFO  - ChromeDriver initialized.
+10:12:02.416 [main] INFO  - Navigated to URL: https://crmtest.doctorshealthfund.com.au/
+10:12:03.506 [main] INFO  - All cookies cleared before starting the test.
+10:12:03.605 [main] INFO  - Navigating to the login page.
+10:12:05.964 [main] WARN  - Encountered a StaleElementReferenceException. Reinitializing elements.
+10:12:08.248 [main] INFO  - Clicked successfully on the Leads button after reinitializing elements.
+10:12:09.029 [main] INFO  - Clicked succesfully on the Create button.
+10:12:11.512 [main] INFO  - Dropdown opened successfully.
+10:12:13.839 [main] INFO  - Successfully selected the PR / Citizen checkbox.
+10:12:14.889 [main] INFO  - Generated and entered phone number: 0498368484
+10:16:20.291 [main] INFO  - Browser selected: chrome
+10:16:23.197 [main] INFO  - ChromeDriver initialized.
+10:16:24.633 [main] INFO  - Navigated to URL: https://crmtest.doctorshealthfund.com.au/
+10:16:24.642 [main] INFO  - All cookies cleared before starting the test.
+10:16:24.734 [main] INFO  - Navigating to the login page.
+10:16:29.359 [main] INFO  - Clicked successfully on the Leads button.
+10:16:30.202 [main] INFO  - Clicked succesfully on the Create button.
+10:16:32.556 [main] INFO  - Dropdown opened successfully.
+10:16:35.236 [main] INFO  - Successfully selected the PR / Citizen checkbox.
+10:16:35.843 [main] INFO  - Generated and entered phone number: 0498363346
+10:26:25.901 [main] INFO  - Browser selected: chrome
+10:26:28.892 [main] INFO  - ChromeDriver initialized.
+10:26:29.672 [main] INFO  - Navigated to URL: https://crmtest.doctorshealthfund.com.au/
+10:26:30.393 [main] INFO  - All cookies cleared before starting the test.
+10:26:30.465 [main] INFO  - Navigating to the login page.
+10:26:33.080 [main] INFO  - Clicked successfully on the Leads button.
+10:26:34.017 [main] INFO  - Clicked succesfully on the Create button.
+10:26:36.508 [main] INFO  - Dropdown opened successfully.
+10:26:38.200 [main] INFO  - Successfully selected the PR / Citizen checkbox.
+10:26:38.581 [main] INFO  - Generated and entered phone number: 0498364610
+10:31:16.526 [main] INFO  - Browser selected: chrome
+10:31:19.352 [main] INFO  - ChromeDriver initialized.
+10:31:19.856 [main] INFO  - Navigated to URL: https://crmtest.doctorshealthfund.com.au/
+10:31:21.034 [main] INFO  - All cookies cleared before starting the test.
+10:31:21.091 [main] INFO  - Navigating to the login page.
+10:31:23.625 [main] INFO  - Clicked successfully on the Leads button.
+10:31:24.538 [main] INFO  - Clicked succesfully on the Create button.
+10:31:26.958 [main] INFO  - Dropdown opened successfully.
+10:31:28.578 [main] INFO  - Successfully selected the PR / Citizen checkbox.
+10:31:28.971 [main] INFO  - Generated and entered phone number: 0498364996
+10:38:46.741 [main] INFO  - Browser selected: chrome
+10:38:49.516 [main] INFO  - ChromeDriver initialized.
+10:38:51.029 [main] INFO  - Navigated to URL: https://crmtest.doctorshealthfund.com.au/
+10:38:51.037 [main] INFO  - All cookies cleared before starting the test.
+10:38:51.139 [main] INFO  - Navigating to the login page.
+10:38:53.873 [main] INFO  - Clicked successfully on the Leads button.
+10:38:55.068 [main] INFO  - Clicked succesfully on the Create button.
+10:38:57.398 [main] INFO  - Dropdown opened successfully.
+10:38:59.063 [main] INFO  - Successfully selected the PR / Citizen checkbox.
+10:38:59.497 [main] INFO  - Generated and entered phone number: 0498361782
+10:46:26.130 [main] INFO  - Browser selected: chrome
+10:46:29.465 [main] INFO  - ChromeDriver initialized.
+10:46:30.732 [main] INFO  - Navigated to URL: https://crmtest.doctorshealthfund.com.au/
+10:46:30.775 [main] INFO  - All cookies cleared before starting the test.
+10:46:30.832 [main] INFO  - Navigating to the login page.
+10:46:32.742 [main] WARN  - Encountered a StaleElementReferenceException. Reinitializing elements.
+10:46:33.430 [main] INFO  - Clicked successfully on the Leads button after reinitializing elements.
+10:46:34.449 [main] INFO  - Clicked succesfully on the Create button.
+10:46:36.831 [main] INFO  - Dropdown opened successfully.
+10:46:38.675 [main] INFO  - Successfully selected the PR / Citizen checkbox.
+10:46:39.034 [main] INFO  - Generated and entered phone number: 0498366056
+10:49:56.700 [main] INFO  - Browser selected: chrome
+10:49:59.702 [main] INFO  - ChromeDriver initialized.
+10:50:01.298 [main] INFO  - Navigated to URL: https://crmtest.doctorshealthfund.com.au/
+10:50:01.309 [main] INFO  - All cookies cleared before starting the test.
+10:50:01.401 [main] INFO  - Navigating to the login page.
+10:50:04.587 [main] INFO  - Clicked successfully on the Leads button.
+10:50:05.288 [main] INFO  - Clicked succesfully on the Create button.
+10:50:07.791 [main] INFO  - Dropdown opened successfully.
+10:50:09.318 [main] INFO  - Successfully selected the PR / Citizen checkbox.
+10:50:09.794 [main] INFO  - Generated and entered phone number: 0498361179
+10:54:01.521 [main] INFO  - Browser selected: chrome
+10:54:04.201 [main] INFO  - ChromeDriver initialized.
+10:54:05.500 [main] INFO  - Navigated to URL: https://crmtest.doctorshealthfund.com.au/
+10:54:05.509 [main] INFO  - All cookies cleared before starting the test.
+10:54:05.567 [main] INFO  - Navigating to the login page.
+10:54:08.173 [main] INFO  - Clicked successfully on the Leads button.
+10:54:09.938 [main] INFO  - Clicked succesfully on the Create button.
+10:54:11.522 [main] INFO  - Dropdown opened successfully.
+10:54:13.027 [main] INFO  - Successfully selected the PR / Citizen checkbox.
+10:54:13.381 [main] INFO  - Generated and entered phone number: 0498362852
+10:58:58.330 [main] INFO  - Browser selected: chrome
+10:59:01.850 [main] INFO  - ChromeDriver initialized.
+10:59:03.648 [main] INFO  - Navigated to URL: https://crmtest.doctorshealthfund.com.au/
+10:59:03.657 [main] INFO  - All cookies cleared before starting the test.
+10:59:03.717 [main] INFO  - Navigating to the login page.
+10:59:06.206 [main] INFO  - Clicked successfully on the Leads button.
+10:59:06.974 [main] INFO  - Clicked succesfully on the Create button.
+10:59:09.292 [main] INFO  - Dropdown opened successfully.
+10:59:10.704 [main] INFO  - Successfully selected the PR / Citizen checkbox.
+10:59:11.069 [main] INFO  - Generated and entered phone number: 0498367745
+11:14:36.674 [main] INFO  - Browser selected: chrome
+11:14:39.590 [main] INFO  - ChromeDriver initialized.
+11:14:41.617 [main] INFO  - Navigated to URL: https://crmtest.doctorshealthfund.com.au/
+11:14:41.629 [main] INFO  - All cookies cleared before starting the test.
+11:14:41.695 [main] INFO  - Navigating to the login page.
+11:14:44.360 [main] INFO  - Clicked successfully on the Leads button.
+11:14:45.150 [main] INFO  - Clicked succesfully on the Create button.
+11:14:47.559 [main] INFO  - Dropdown opened successfully.
+11:14:48.976 [main] INFO  - Successfully selected the PR / Citizen checkbox.
+11:14:49.376 [main] INFO  - Generated and entered phone number: 0498364250
+11:16:43.044 [main] INFO  - Browser selected: chrome
+11:16:46.458 [main] INFO  - ChromeDriver initialized.
+11:16:47.118 [main] INFO  - Navigated to URL: https://crmtest.doctorshealthfund.com.au/
+11:16:48.138 [main] INFO  - All cookies cleared before starting the test.
+11:16:48.244 [main] INFO  - Navigating to the login page.
+11:16:53.206 [main] INFO  - Clicked successfully on the Leads button.
+11:16:54.994 [main] INFO  - Clicked succesfully on the Create button.
+11:16:56.831 [main] INFO  - Dropdown opened successfully.
+11:16:58.635 [main] INFO  - Successfully selected the PR / Citizen checkbox.
+11:16:59.057 [main] INFO  - Generated and entered phone number: 0498366612
+11:35:46.836 [main] INFO  - Browser selected: chrome
+11:35:49.585 [main] INFO  - ChromeDriver initialized.
+11:35:49.958 [main] INFO  - Navigated to URL: https://crmtest.doctorshealthfund.com.au/
+11:35:50.848 [main] INFO  - All cookies cleared before starting the test.
+11:35:50.914 [main] INFO  - Navigating to the login page.
+11:35:53.324 [main] INFO  - Clicked successfully on the Leads button.
+11:35:54.125 [main] INFO  - Clicked succesfully on the Create button.
+11:35:56.593 [main] INFO  - Dropdown opened successfully.
+11:35:57.905 [main] INFO  - Successfully selected the PR / Citizen checkbox.
+11:35:58.253 [main] INFO  - Generated and entered phone number: 0498361274
+12:58:39.207 [main] INFO  - Browser selected: chrome
+12:58:44.166 [main] INFO  - ChromeDriver initialized.
+12:58:45.610 [main] INFO  - Navigated to URL: https://crmtest.doctorshealthfund.com.au/
+12:58:45.617 [main] INFO  - All cookies cleared before starting the test.
+12:58:45.669 [main] INFO  - Navigating to the login page.
+12:58:48.225 [main] INFO  - Clicked successfully on the Leads button.
+12:58:49.220 [main] INFO  - Clicked succesfully on the Create button.
+12:58:52.148 [main] INFO  - Dropdown opened successfully.
+12:58:53.868 [main] INFO  - Successfully selected the PR / Citizen checkbox.
+12:58:54.444 [main] INFO  - Generated and entered phone number: 0498362444
+13:11:56.432 [main] INFO  - Browser selected: chrome
+13:12:00.485 [main] INFO  - ChromeDriver initialized.
+13:12:01.736 [main] INFO  - Navigated to URL: https://crmtest.doctorshealthfund.com.au/
+13:12:01.742 [main] INFO  - All cookies cleared before starting the test.
+13:12:01.798 [main] INFO  - Navigating to the login page.
+13:12:04.194 [main] WARN  - Encountered a StaleElementReferenceException. Reinitializing elements.
+13:12:06.401 [main] INFO  - Clicked successfully on the Leads button after reinitializing elements.
+13:12:08.850 [main] INFO  - Clicked succesfully on the Create button.
+13:12:11.325 [main] INFO  - Dropdown opened successfully.
+13:12:13.867 [main] INFO  - Successfully selected the PR / Citizen checkbox.
+13:12:14.427 [main] INFO  - Generated and entered phone number: 0498369014
+13:21:20.821 [main] INFO  - Browser selected: chrome
+13:21:23.505 [main] INFO  - ChromeDriver initialized.
+13:21:24.878 [main] INFO  - Navigated to URL: https://crmtest.doctorshealthfund.com.au/
+13:21:24.916 [main] INFO  - All cookies cleared before starting the test.
+13:21:24.986 [main] INFO  - Navigating to the login page.
+13:21:27.197 [main] WARN  - Encountered a StaleElementReferenceException. Reinitializing elements.
+13:21:29.332 [main] INFO  - Clicked successfully on the Leads button after reinitializing elements.
+13:21:30.027 [main] INFO  - Clicked succesfully on the Create button.
+13:21:32.216 [main] INFO  - Dropdown opened successfully.
+13:21:34.283 [main] INFO  - Successfully selected the PR / Citizen checkbox.
+13:21:34.843 [main] INFO  - Generated and entered phone number: 0498365570
+13:32:32.370 [main] INFO  - Browser selected: chrome
+13:32:35.072 [main] INFO  - ChromeDriver initialized.
+13:32:36.937 [main] INFO  - Navigated to URL: https://crmtest.doctorshealthfund.com.au/
+13:32:36.944 [main] INFO  - All cookies cleared before starting the test.
+13:32:37.014 [main] INFO  - Navigating to the login page.
+13:32:39.619 [main] INFO  - Clicked successfully on the Leads button.
+13:32:41.429 [main] INFO  - Clicked succesfully on the Create button.
+13:32:42.957 [main] INFO  - Dropdown opened successfully.
+13:32:44.346 [main] INFO  - Successfully selected the PR / Citizen checkbox.
+13:32:44.690 [main] INFO  - Generated and entered phone number: 0498362043
+13:37:31.645 [main] INFO  - Browser selected: chrome
+13:37:34.361 [main] INFO  - ChromeDriver initialized.
+13:37:35.882 [main] INFO  - Navigated to URL: https://crmtest.doctorshealthfund.com.au/
+13:37:35.890 [main] INFO  - All cookies cleared before starting the test.
+13:37:35.952 [main] INFO  - Navigating to the login page.
+13:37:38.353 [main] INFO  - Clicked successfully on the Leads button.
+13:37:39.096 [main] INFO  - Clicked succesfully on the Create button.
+13:37:41.250 [main] INFO  - Dropdown opened successfully.
+13:37:42.561 [main] INFO  - Successfully selected the PR / Citizen checkbox.
+13:37:42.891 [main] INFO  - Generated and entered phone number: 0498365760
+15:30:32.113 [main] INFO  - Browser selected: chrome
+15:30:35.493 [main] INFO  - ChromeDriver initialized.
+15:30:37.053 [main] INFO  - Navigated to URL: https://crmtest.doctorshealthfund.com.au/
+15:30:37.059 [main] INFO  - All cookies cleared before starting the test.
+15:30:37.105 [main] INFO  - Navigating to the login page.
+15:30:39.589 [main] INFO  - Clicked successfully on the Leads button.
+15:30:40.262 [main] INFO  - Clicked succesfully on the Create button.
+15:30:42.491 [main] INFO  - Dropdown opened successfully.
+15:30:43.856 [main] INFO  - Successfully selected the PR / Citizen checkbox.
+15:30:44.206 [main] INFO  - Generated and entered phone number: 0498366124
+15:32:49.796 [main] INFO  - Browser selected: chrome
+15:32:52.653 [main] INFO  - ChromeDriver initialized.
+15:32:54.180 [main] INFO  - Navigated to URL: https://crmtest.doctorshealthfund.com.au/
+15:32:54.189 [main] INFO  - All cookies cleared before starting the test.
+15:32:54.254 [main] INFO  - Navigating to the login page.
+15:32:56.683 [main] WARN  - Encountered a StaleElementReferenceException. Reinitializing elements.
+15:32:57.429 [main] INFO  - Clicked successfully on the Leads button after reinitializing elements.
+15:32:58.274 [main] INFO  - Clicked succesfully on the Create button.
+15:33:00.883 [main] INFO  - Dropdown opened successfully.
+15:33:02.761 [main] INFO  - Successfully selected the PR / Citizen checkbox.
+15:33:03.498 [main] INFO  - Generated and entered phone number: 0498364671
+15:58:13.157 [main] INFO  - Browser selected: chrome
+15:58:15.912 [main] INFO  - ChromeDriver initialized.
+15:58:16.451 [main] INFO  - Navigated to URL: https://crmtest.doctorshealthfund.com.au/
+15:58:17.582 [main] INFO  - All cookies cleared before starting the test.
+15:58:17.636 [main] INFO  - Navigating to the login page.
+15:58:19.494 [main] WARN  - Encountered a StaleElementReferenceException. Reinitializing elements.
+15:58:20.220 [main] INFO  - Clicked successfully on the Leads button after reinitializing elements.
+15:58:22.267 [main] INFO  - Clicked succesfully on the Create button.
+15:58:24.064 [main] INFO  - Dropdown opened successfully.
+15:58:25.422 [main] INFO  - Successfully selected the PR / Citizen checkbox.
+15:58:25.919 [main] INFO  - Generated and entered phone number: 0498367233
+15:59:35.039 [main] INFO  - Browser selected: chrome
+15:59:37.755 [main] INFO  - ChromeDriver initialized.
+15:59:39.274 [main] INFO  - Navigated to URL: https://crmtest.doctorshealthfund.com.au/
+15:59:39.283 [main] INFO  - All cookies cleared before starting the test.
+15:59:39.352 [main] INFO  - Navigating to the login page.
+15:59:41.840 [main] INFO  - Clicked successfully on the Leads button.
+15:59:42.696 [main] INFO  - Clicked succesfully on the Create button.
+15:59:44.952 [main] INFO  - Dropdown opened successfully.
+15:59:46.356 [main] INFO  - Successfully selected the PR / Citizen checkbox.
+15:59:46.717 [main] INFO  - Generated and entered phone number: 0498368096
+16:00:24.399 [main] INFO  - Browser selected: chrome
+16:00:27.242 [main] INFO  - ChromeDriver initialized.
+16:00:28.870 [main] INFO  - Navigated to URL: https://crmtest.doctorshealthfund.com.au/
+16:00:28.897 [main] INFO  - All cookies cleared before starting the test.
+16:00:28.974 [main] INFO  - Navigating to the login page.
+16:00:33.503 [main] INFO  - Clicked successfully on the Leads button.
+16:00:34.317 [main] INFO  - Clicked succesfully on the Create button.
+16:00:36.552 [main] INFO  - Dropdown opened successfully.
+16:00:38.614 [main] INFO  - Successfully selected the PR / Citizen checkbox.
+16:00:39.263 [main] INFO  - Generated and entered phone number: 0498365924
+16:02:41.168 [main] INFO  - Browser selected: chrome
+16:02:44.293 [main] INFO  - ChromeDriver initialized.
+16:02:46.277 [main] INFO  - Navigated to URL: https://crmtest.doctorshealthfund.com.au/
+16:02:46.285 [main] INFO  - All cookies cleared before starting the test.
+16:02:46.349 [main] INFO  - Navigating to the login page.
+16:02:50.490 [main] INFO  - Clicked successfully on the Leads button.
+16:02:51.248 [main] INFO  - Clicked succesfully on the Create button.
+16:02:53.549 [main] INFO  - Dropdown opened successfully.
+16:02:55.540 [main] INFO  - Successfully selected the PR / Citizen checkbox.
+16:02:55.994 [main] INFO  - Generated and entered phone number: 0498366109
+16:09:15.538 [main] INFO  - Browser selected: chrome
+16:09:18.153 [main] INFO  - ChromeDriver initialized.
+16:09:19.723 [main] INFO  - Navigated to URL: https://crmtest.doctorshealthfund.com.au/
+16:09:19.742 [main] INFO  - All cookies cleared before starting the test.
+16:09:19.810 [main] INFO  - Navigating to the login page.
+16:09:21.893 [main] WARN  - Encountered a StaleElementReferenceException. Reinitializing elements.
+16:09:22.642 [main] INFO  - Clicked successfully on the Leads button after reinitializing elements.
+16:09:24.413 [main] INFO  - Clicked succesfully on the Create button.
+16:09:25.990 [main] INFO  - Dropdown opened successfully.
+16:09:27.694 [main] INFO  - Successfully selected the PR / Citizen checkbox.
+16:09:28.109 [main] INFO  - Generated and entered phone number: 0498369601
+16:12:57.001 [main] INFO  - Browser selected: chrome
+16:12:59.931 [main] INFO  - ChromeDriver initialized.
+16:13:01.394 [main] INFO  - Navigated to URL: https://crmtest.doctorshealthfund.com.au/
+16:13:01.402 [main] INFO  - All cookies cleared before starting the test.
+16:13:01.475 [main] INFO  - Navigating to the login page.
+16:13:04.367 [main] INFO  - Clicked successfully on the Leads button.
+16:13:05.556 [main] INFO  - Clicked succesfully on the Create button.
+16:13:08.439 [main] INFO  - Dropdown opened successfully.
+16:13:10.173 [main] INFO  - Successfully selected the PR / Citizen checkbox.
+16:13:10.702 [main] INFO  - Generated and entered phone number: 0498364035
+16:15:55.249 [main] INFO  - Browser selected: chrome
+16:15:58.204 [main] INFO  - ChromeDriver initialized.
+16:15:59.724 [main] INFO  - Navigated to URL: https://crmtest.doctorshealthfund.com.au/
+16:15:59.756 [main] INFO  - All cookies cleared before starting the test.
+16:15:59.856 [main] INFO  - Navigating to the login page.
+16:16:02.059 [main] INFO  - Clicked successfully on the Leads button.
+16:16:02.989 [main] INFO  - Clicked succesfully on the Create button.
+16:16:05.568 [main] INFO  - Dropdown opened successfully.
+16:16:06.893 [main] INFO  - Successfully selected the PR / Citizen checkbox.
+16:16:07.246 [main] INFO  - Generated and entered phone number: 0498369953
+16:18:17.489 [main] INFO  - Browser selected: chrome
+16:18:20.919 [main] INFO  - ChromeDriver initialized.
+16:18:24.135 [main] INFO  - Navigated to URL: https://crmtest.doctorshealthfund.com.au/
+16:18:24.148 [main] INFO  - All cookies cleared before starting the test.
+16:18:24.223 [main] INFO  - Navigating to the login page.
+16:18:26.078 [main] WARN  - Encountered a StaleElementReferenceException. Reinitializing elements.
+16:18:26.698 [main] INFO  - Clicked successfully on the Leads button after reinitializing elements.
+16:18:27.465 [main] INFO  - Clicked succesfully on the Create button.
+16:18:30.215 [main] INFO  - Dropdown opened successfully.
+16:18:32.035 [main] INFO  - Successfully selected the PR / Citizen checkbox.
+16:18:32.443 [main] INFO  - Generated and entered phone number: 0498361375
+16:33:30.419 [main] INFO  - Browser selected: chrome
+16:33:34.228 [main] INFO  - ChromeDriver initialized.
+16:33:35.857 [main] INFO  - Navigated to URL: https://crmtest.doctorshealthfund.com.au/
+16:33:35.865 [main] INFO  - All cookies cleared before starting the test.
+16:33:35.948 [main] INFO  - Navigating to the login page.
+16:33:38.310 [main] INFO  - Clicked successfully on the Leads button.
+16:33:39.134 [main] INFO  - Clicked succesfully on the Create button.
+16:33:41.925 [main] INFO  - Dropdown opened successfully.
+16:33:43.354 [main] INFO  - Successfully selected the PR / Citizen checkbox.
+16:33:43.769 [main] INFO  - Generated and entered phone number: 0498369566
+16:36:21.799 [main] INFO  - Browser selected: chrome
+16:36:24.552 [main] INFO  - ChromeDriver initialized.
+16:36:25.835 [main] INFO  - Navigated to URL: https://crmtest.doctorshealthfund.com.au/
+16:36:25.852 [main] INFO  - All cookies cleared before starting the test.
+16:36:25.959 [main] INFO  - Navigating to the login page.
+16:36:28.488 [main] INFO  - Clicked successfully on the Leads button.
+16:36:29.285 [main] INFO  - Clicked succesfully on the Create button.
+16:36:31.558 [main] INFO  - Dropdown opened successfully.
+16:36:32.995 [main] INFO  - Successfully selected the PR / Citizen checkbox.
+16:36:33.341 [main] INFO  - Generated and entered phone number: 0498365266
+16:38:28.918 [main] INFO  - Browser selected: chrome
+16:38:31.884 [main] INFO  - ChromeDriver initialized.
+16:38:33.248 [main] INFO  - Navigated to URL: https://crmtest.doctorshealthfund.com.au/
+16:38:33.254 [main] INFO  - All cookies cleared before starting the test.
+16:38:33.336 [main] INFO  - Navigating to the login page.
+16:38:36.076 [main] INFO  - Clicked successfully on the Leads button.
+16:38:37.844 [main] INFO  - Clicked succesfully on the Create button.
+16:38:39.832 [main] INFO  - Dropdown opened successfully.
+16:38:41.353 [main] INFO  - Successfully selected the PR / Citizen checkbox.
+16:38:41.903 [main] INFO  - Generated and entered phone number: 0498364308
+16:46:07.256 [main] INFO  - Browser selected: chrome
+16:46:09.969 [main] INFO  - ChromeDriver initialized.
+16:46:10.288 [main] INFO  - Navigated to URL: https://crmtest.doctorshealthfund.com.au/
+16:46:11.353 [main] INFO  - All cookies cleared before starting the test.
+16:46:11.423 [main] INFO  - Navigating to the login page.
+16:46:13.978 [main] INFO  - Clicked successfully on the Leads button.
+16:46:14.946 [main] INFO  - Clicked succesfully on the Create button.
+16:46:17.280 [main] INFO  - Dropdown opened successfully.
+16:46:18.638 [main] INFO  - Successfully selected the PR / Citizen checkbox.
+16:46:19.037 [main] INFO  - Generated and entered phone number: 0498367141
+16:48:06.158 [main] INFO  - Browser selected: chrome
+16:48:09.063 [main] INFO  - ChromeDriver initialized.
+16:48:11.127 [main] INFO  - Navigated to URL: https://crmtest.doctorshealthfund.com.au/
+16:48:11.135 [main] INFO  - All cookies cleared before starting the test.
+16:48:11.205 [main] INFO  - Navigating to the login page.
+16:48:15.197 [main] WARN  - Encountered a StaleElementReferenceException. Reinitializing elements.
+16:48:15.522 [main] INFO  - Clicked successfully on the Leads button after reinitializing elements.
+16:48:16.251 [main] INFO  - Clicked succesfully on the Create button.
+16:48:18.446 [main] INFO  - Dropdown opened successfully.
+16:48:20.464 [main] INFO  - Successfully selected the PR / Citizen checkbox.
+16:48:21.215 [main] INFO  - Generated and entered phone number: 0498364122
+16:55:07.263 [main] INFO  - Browser selected: chrome
+16:55:09.931 [main] INFO  - ChromeDriver initialized.
+16:55:10.505 [main] INFO  - Navigated to URL: https://crmtest.doctorshealthfund.com.au/
+16:55:11.407 [main] INFO  - All cookies cleared before starting the test.
+16:55:11.482 [main] INFO  - Navigating to the login page.
+16:55:13.965 [main] INFO  - Clicked successfully on the Leads button.
+16:55:14.818 [main] INFO  - Clicked succesfully on the Create button.
+16:55:17.097 [main] INFO  - Dropdown opened successfully.
+16:55:18.445 [main] INFO  - Successfully selected the PR / Citizen checkbox.
+16:55:18.794 [main] INFO  - Generated and entered phone number: 0498366469
+06:57:47.397 [main] INFO  - Browser selected: chrome
+06:57:50.959 [main] INFO  - ChromeDriver initialized.
+06:57:52.192 [main] INFO  - Navigated to URL: https://crmtest.doctorshealthfund.com.au/
+06:57:52.320 [main] INFO  - All cookies cleared before starting the test.
+06:57:52.403 [main] INFO  - Navigating to the login page.
+06:57:54.874 [main] INFO  - Clicked successfully on the Leads button.
+06:57:55.911 [main] INFO  - Clicked succesfully on the Create button.
+06:57:58.604 [main] INFO  - Dropdown opened successfully.
+06:58:00.013 [main] INFO  - Successfully selected the PR / Citizen checkbox.
+06:58:00.421 [main] INFO  - Generated and entered phone number: 0498364445
+07:00:20.723 [main] INFO  - Browser selected: chrome
+07:00:23.578 [main] INFO  - ChromeDriver initialized.
+07:00:24.251 [main] INFO  - Navigated to URL: https://crmtest.doctorshealthfund.com.au/
+07:00:25.175 [main] INFO  - All cookies cleared before starting the test.
+07:00:25.257 [main] INFO  - Navigating to the login page.
+07:00:27.737 [main] INFO  - Clicked successfully on the Leads button.
+07:00:28.652 [main] INFO  - Clicked succesfully on the Create button.
+07:00:30.912 [main] INFO  - Dropdown opened successfully.
+07:00:32.367 [main] INFO  - Successfully selected the PR / Citizen checkbox.
+07:00:32.751 [main] INFO  - Generated and entered phone number: 0498367210
+07:12:35.526 [main] INFO  - Browser selected: chrome
+07:12:39.847 [main] INFO  - ChromeDriver initialized.
+07:12:40.811 [main] INFO  - Navigated to URL: https://crmtest.doctorshealthfund.com.au/
+07:12:42.287 [main] INFO  - All cookies cleared before starting the test.
+07:12:42.340 [main] INFO  - Navigating to the login page.
+07:12:44.241 [main] WARN  - Encountered a StaleElementReferenceException. Reinitializing elements.
+07:12:46.496 [main] INFO  - Clicked successfully on the Leads button after reinitializing elements.
+07:12:47.240 [main] INFO  - Clicked succesfully on the Create button.
+07:12:49.418 [main] INFO  - Dropdown opened successfully.
+07:12:51.653 [main] INFO  - Successfully selected the PR / Citizen checkbox.
+07:12:52.133 [main] INFO  - Generated and entered phone number: 0498363394
