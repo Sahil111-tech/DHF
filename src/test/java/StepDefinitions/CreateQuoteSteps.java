@@ -3,7 +3,10 @@ package StepDefinitions;
 import java.awt.AWTException;
 import java.awt.Robot;
 import java.awt.event.KeyEvent;
+import java.io.FileInputStream;
+import java.io.IOException;
 import java.time.Duration;
+import java.util.Properties;
 
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
@@ -39,15 +42,25 @@ public class CreateQuoteSteps {
 	public static final Logger log = LogManager.getLogger(CreateQuoteSteps.class);
 	BaseTest baseTest = new BaseTest();
 	MedicareDetailsPage medicareDetails;
+	public static Properties prop;
+    // Static block to load properties at the class level
+    static {
+        try (FileInputStream fis = new FileInputStream("src/test/resources/config.properties")) {
+            prop = new Properties();
+            prop.load(fis);
+        } catch (IOException e) {
+            throw new RuntimeException("Unable to load properties file: " + e.getMessage());
+        }
+    }
 
 	public CreateQuoteSteps() {
 		this.driver = Hooks.getDriver(); // Access the driver from Hooks
 		this.quote = new quickQuote(driver);
 		this.starterExtras = new StarterExtrasEligibilityTest(driver);
 		this.medicareDetails = new MedicareDetailsPage(driver);
-		this.eligibilityAndYourDetails=new EligibilityAndYourDetailsPage(driver);
-		this.additionalInfo=new AdditionalInformationPage(driver);
-		this.payment=new PaymentPage(driver);
+		this.eligibilityAndYourDetails = new EligibilityAndYourDetailsPage(driver);
+		this.additionalInfo = new AdditionalInformationPage(driver);
+		this.payment = new PaymentPage(driver);
 	}
 
 	@Given("I am on the quote page")
@@ -55,10 +68,11 @@ public class CreateQuoteSteps {
 		log.info("Navigating to the quote page.");
 		driver = Hooks.getDriver(); // driver is initialized here
 		quote = new quickQuote(driver); // Passed the driver to the quickQuote object
-
+		
 		// Assertion to verify the URL
 		baseTest.waitForPageToLoad(driver);
-		String expectedUrl = /* "https://uat.doctorshealthfund.com.au/"; */ "https://dms.uat.doctorshealthfund.com.au/";
+		String expectedUrl = prop.getProperty(
+				"customerWebsiteurl");
 		String CurrentUrl = quote.getCurrentURL();
 
 		Assert.assertTrue(CurrentUrl.equals(expectedUrl),
@@ -76,7 +90,7 @@ public class CreateQuoteSteps {
 	@When("I click the \"Get Quote\" button")
 	public void i_click_the_get_quote_button() throws InterruptedException {
 		log.info("Clicking the 'Get Quote' button.");
-		//Thread.sleep(1000);
+		// Thread.sleep(1000);
 		quote.clickGetQuote();
 		log.info("'Get Quote' button clicked successfully.");
 	}
@@ -119,16 +133,17 @@ public class CreateQuoteSteps {
 	public void i_click_the_calculate_cover_button() {
 		quote.clickCalculateCover();
 	}
+
 	@Then("I select the hospital cover as {string}")
 	public void iSelectTheHospitalPlanAs(String coverType) {
 		baseTest.scrollByPixels(500, driver);
-	    quote.selectHospitalCover(coverType);
+		quote.selectHospitalCover(coverType);
 	}
-	
+
 	@Then("I select the extras cover as {string}")
 	public void iSelectTheExtrasCoverAs(String coverType) {
 		baseTest.scrollByPixels(100, driver);
-	    quote.selectExtrasCover(coverType);
+		quote.selectExtrasCover(coverType);
 	}
 
 	@Then("I should see the title {string}")
@@ -247,16 +262,16 @@ public class CreateQuoteSteps {
 		baseTest.scrollDownBy500(driver);
 		starterExtras.clickApplyNowButton();
 	}
-	
+
 	@Given("I click the Apply Now button for the selected plan")
 	public void i_click_the_apply_now_button_for_selected_plan() {
-	    // Scroll to make the button visible
-	    baseTest.scrollByPixels(200, driver);
-	    
-	    // Click the Apply Now button
-	    quote.clickApplyNowButton();
-	    
-	    log.info("Clicked on the Apply Now button for the selected plan.");
+		// Scroll to make the button visible
+		baseTest.scrollByPixels(200, driver);
+
+		// Click the Apply Now button
+		quote.clickApplyNowButton();
+
+		log.info("Clicked on the Apply Now button for the selected plan.");
 	}
 
 	@Given("I select No for Doctors' Health Fund membership")
@@ -267,14 +282,15 @@ public class CreateQuoteSteps {
 		 * starterExtras.clickMemberStatusNoRadioButton();
 		 */
 		baseTest.scrollByPixels(450, driver);
-		//baseTest.waitForElementToBeClickable(driver, starterExtras.clickMemberStatusNoRadioButton());
+		// baseTest.waitForElementToBeClickable(driver,
+		// starterExtras.clickMemberStatusNoRadioButton());
 		eligibilityAndYourDetails.clickMemberStatusNoRadioButton();
-		
+
 	}
 
 	@Given("I select Yes for Australian citizenship or permanent residency")
 	public void i_select_yes_for_australian_citizenship_or_permanent_residency() throws InterruptedException {
-     eligibilityAndYourDetails.clickCitizenshipYesRadioButton();
+		eligibilityAndYourDetails.clickCitizenshipYesRadioButton();
 	}
 
 	@Given("I click on the Health Practitioner button")
@@ -297,20 +313,18 @@ public class CreateQuoteSteps {
 	@Given("I submit the eligibility page.")
 	public void i_click_the_continue_button() throws InterruptedException, AWTException {
 
-		
-		  baseTest.scrollByPixels(100, driver); 
-		  Thread.sleep(1000);
-		  eligibilityAndYourDetails.clickContinueButton(); 
-		  Thread.sleep(1000);
-		
+		baseTest.scrollByPixels(100, driver);
+		Thread.sleep(1000);
+		eligibilityAndYourDetails.clickContinueButton();
+		Thread.sleep(1000);
 
 	}
 
 	@Given("I select the option {string} for transferring from another fund")
 	public void i_select_transfer_from_another_fund(String response) throws InterruptedException {
-		//Thread.sleep(2000);
+		// Thread.sleep(2000);
 		eligibilityAndYourDetails.selectTransferFromAnotherFund(response);
-		//Thread.sleep(2000);
+		// Thread.sleep(2000);
 		eligibilityAndYourDetails.alertAccept();
 	}
 
@@ -322,7 +336,7 @@ public class CreateQuoteSteps {
 
 	@Given("I select {string} as the title")
 	public void i_select_title(String titleForUser) throws InterruptedException {
-		//Thread.sleep(2000);
+		// Thread.sleep(2000);
 		// baseTest.waitForPageToLoad(driver);
 		baseTest.scrollByPixels(-200, driver);
 		// baseTest.waitForPageToLoad(driver);
@@ -521,7 +535,7 @@ public class CreateQuoteSteps {
 	@Given("^I enter a valid account number \"([^\"]*)\"$")
 	public void enterAccountNumber(String accountNumber) {
 		payment.enterAccountNumber(accountNumber); // Calls the method from the Page Object to enter the account
-															// number.
+													// number.
 	}
 
 	@When("I enter a random account name")

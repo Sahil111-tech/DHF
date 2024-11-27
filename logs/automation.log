@@ -380,3 +380,29 @@
 07:12:49.418 [main] INFO  - Dropdown opened successfully.
 07:12:51.653 [main] INFO  - Successfully selected the PR / Citizen checkbox.
 07:12:52.133 [main] INFO  - Generated and entered phone number: 0498363394
+08:16:36.145 [main] INFO  - Browser selected: chrome
+08:16:40.104 [main] INFO  - ChromeDriver initialized.
+08:16:42.531 [main] INFO  - Navigated to URL: https://crmtest.doctorshealthfund.com.au/
+08:16:42.540 [main] INFO  - All cookies cleared before starting the test.
+08:16:42.596 [main] INFO  - Navigating to the quote page.
+08:16:42.636 [main] INFO  - Page title: SugarCRM
+08:17:26.163 [main] INFO  - Browser selected: chrome
+08:17:29.073 [main] INFO  - ChromeDriver initialized.
+08:17:34.648 [main] INFO  - Navigated to URL: https://dms.uat.doctorshealthfund.com.au/
+08:17:35.410 [main] INFO  - All cookies cleared before starting the test.
+08:17:35.500 [main] INFO  - Navigating to the quote page.
+08:17:35.531 [main] INFO  - Page title: Private Health Insurance for Doctors | Doctors' Health Fund
+08:17:35.536 [main] INFO  - Clicking the 'Get Quote' button.
+08:17:35.804 [main] INFO  - 'Get Quote' button clicked successfully.
+08:17:37.320 [main] INFO  - Selected cover for: Single
+08:17:37.638 [main] INFO  - Selected residence: NSW
+08:22:18.575 [main] INFO  - Browser selected: chrome
+08:22:21.518 [main] INFO  - ChromeDriver initialized.
+08:22:25.628 [main] INFO  - Navigated to URL: https://dms.uat.doctorshealthfund.com.au/
+08:22:25.911 [main] INFO  - All cookies cleared before starting the test.
+08:22:25.974 [main] INFO  - Navigating to the quote page.
+08:22:26.014 [main] INFO  - Page title: Private Health Insurance for Doctors | Doctors' Health Fund
+08:22:26.023 [main] INFO  - Clicking the 'Get Quote' button.
+08:22:26.381 [main] INFO  - 'Get Quote' button clicked successfully.
+08:22:27.778 [main] INFO  - Selected cover for: Single
+08:22:28.077 [main] INFO  - Selected residence: NSW

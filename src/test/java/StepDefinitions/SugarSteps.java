@@ -2,6 +2,10 @@ package StepDefinitions;
 
 import static org.testng.Assert.fail;
 
+import java.io.FileInputStream;
+import java.io.IOException;
+import java.util.Properties;
+
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 import org.openqa.selenium.WebDriver;
@@ -41,6 +45,16 @@ public class SugarSteps {
 	private WebDriver driver;
 	public static final Logger log = LogManager.getLogger(CreateQuoteSteps.class);
 	BaseTest baseTest = new BaseTest();
+	public static Properties prop;
+    // Static block to load properties at the class level
+    static {
+        try (FileInputStream fis = new FileInputStream("src/test/resources/config.properties")) {
+            prop = new Properties();
+            prop.load(fis);
+        } catch (IOException e) {
+            throw new RuntimeException("Unable to load properties file: " + e.getMessage());
+        }
+    }
 
 	public SugarSteps() {
 		this.driver = Hooks.getDriver(); // Access the driver from Hooks
@@ -63,7 +77,7 @@ public class SugarSteps {
 		lp = new loginPage(driver); // Passed the driver to the login page object
 		// Assertion to verify the URL
 		baseTest.waitForPageToLoad(driver);
-		String expectedUrl = "https://crmtest.doctorshealthfund.com.au/";
+		String expectedUrl = prop.getProperty("crmurl");
 		String CurrentUrl = lp.getCurrentURL();
 
 		Assert.assertTrue(CurrentUrl.equals(expectedUrl),
@@ -208,18 +222,7 @@ public class SugarSteps {
 
 	}
 
-	/*
-	 * @When("the user click on the Eligibility details dropdown and traverses {int} step"
-	 * ) public void selectOptionFromEligibilityDetailsDropdownStep(int
-	 * stepsToTraverse) throws InterruptedException {
-	 * 
-	 * // Call the action method with the input text and steps to traverse
-	 * //previousHealthFund.selectOptionFromPreviousHealthFundDropdown(
-	 * stepsToTraverse); }
-	 */
 
-	// Selects the dropdown option based on the input value: 1 for the first option,
-	// 2 for the second, and so on
 	@When("the user click on the how did you hear about us dropdown and selects {int} 'DHF Sales Specialist' from the dropdown")
 	public void selectOptionFromHowDidYouHearAboutUsDropdown(int stepsToTraverse) throws InterruptedException {
 		leadsPage.selectOptionFromHowDidYouHearDropdown(stepsToTraverse);
