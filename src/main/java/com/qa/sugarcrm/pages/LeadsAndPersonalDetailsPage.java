@@ -34,6 +34,7 @@ public class LeadsAndPersonalDetailsPage extends BaseTest {
 	public static String generatedEmail;
 	public static final Random random = new Random();
 	public static String generatedPhoneNumber;
+	public static String fullName;
 
 	// constructor for initialization page factory and drivers
 	public LeadsAndPersonalDetailsPage(WebDriver driver) {
@@ -200,7 +201,7 @@ public class LeadsAndPersonalDetailsPage extends BaseTest {
 
 	// Action method to generate and enter a random full name
 	public void enterRandomFullName(WebDriver driver) {
-		String fullName = generateRandomFullName(); // Generate the full name
+	    fullName = generateRandomFullName(); // Generate the full name
 		String[] nameParts = fullName.split(" "); // Split into first, middle, last
 
 		// Enter the First Name

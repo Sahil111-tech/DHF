@@ -89,10 +89,22 @@ public class BaseTest {
 		wait.until(ExpectedConditions.visibilityOf(element));
 	}
 	
+	// Overloaded method: Returns boolean to indicate if the element is visible
+	public boolean isPopupVisible(WebElement element, WebDriver driver, int timeoutInSeconds) {
+	    try {
+	        WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(timeoutInSeconds));
+	        wait.until(ExpectedConditions.visibilityOf(element));
+	        return true; // Element is visible within the timeout
+	    } catch (TimeoutException e) {
+	        log.warn("Element not visible within " + timeoutInSeconds + " seconds.", e);
+	        return false; // Element not visible within the timeout
+	    }
+	}
+
 	// Wait for an object to be invisible before performing any action
 	public void waitForInvisibility(By locator, WebDriver driver) {
-	    WebDriverWait wait = new WebDriverWait(driver, TestUtils.WAIT);
-	    wait.until(ExpectedConditions.invisibilityOfElementLocated(locator));
+		WebDriverWait wait = new WebDriverWait(driver, TestUtils.WAIT);
+		wait.until(ExpectedConditions.invisibilityOfElementLocated(locator));
 	}
 
 	// Click on a web element
@@ -451,5 +463,15 @@ public class BaseTest {
 		String firstName = FIRST_NAMES[random.nextInt(FIRST_NAMES.length)];
 		String lastName = LAST_NAMES[random.nextInt(LAST_NAMES.length)];
 		return firstName + " " + lastName;
+	}
+
+	// Helper method to check element visibility
+	protected static boolean isElementVisible(WebDriverWait wait, WebElement element) {
+		try {
+			wait.until(ExpectedConditions.visibilityOf(element));
+			return true;
+		} catch (Exception e) {
+			return false;
+		}
 	}
 }

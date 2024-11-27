@@ -46,15 +46,15 @@ public class SugarSteps {
 	public static final Logger log = LogManager.getLogger(CreateQuoteSteps.class);
 	BaseTest baseTest = new BaseTest();
 	public static Properties prop;
-    // Static block to load properties at the class level
-    static {
-        try (FileInputStream fis = new FileInputStream("src/test/resources/config.properties")) {
-            prop = new Properties();
-            prop.load(fis);
-        } catch (IOException e) {
-            throw new RuntimeException("Unable to load properties file: " + e.getMessage());
-        }
-    }
+	// Static block to load properties at the class level
+	static {
+		try (FileInputStream fis = new FileInputStream("src/test/resources/config.properties")) {
+			prop = new Properties();
+			prop.load(fis);
+		} catch (IOException e) {
+			throw new RuntimeException("Unable to load properties file: " + e.getMessage());
+		}
+	}
 
 	public SugarSteps() {
 		this.driver = Hooks.getDriver(); // Access the driver from Hooks
@@ -67,7 +67,7 @@ public class SugarSteps {
 		this.affiliationsTab = new AffiliationsTabPage(driver);
 		this.generateQuote = new GenerateQuotePage(driver);
 		this.financialInfoPage = new FinancialInfoPage(driver);
-		this.wrapUpPage=new WrapUpTabPage(driver);
+		this.wrapUpPage = new WrapUpTabPage(driver);
 	}
 
 	@Given("I launch the application URL")
@@ -77,7 +77,7 @@ public class SugarSteps {
 		lp = new loginPage(driver); // Passed the driver to the login page object
 		// Assertion to verify the URL
 		baseTest.waitForPageToLoad(driver);
-		String expectedUrl = prop.getProperty("crmurl");
+		String expectedUrl = prop.getProperty("url");
 		String CurrentUrl = lp.getCurrentURL();
 
 		Assert.assertTrue(CurrentUrl.equals(expectedUrl),
@@ -106,16 +106,28 @@ public class SugarSteps {
 	@When("I click on the login button")
 	public void iClickOnTheLoginButton() {
 		lp.clickLoginButton();
+		//lp.closePopupsIfVisible();
 	}
 
 	// Assertion to verify the page title after logs in
 	@Then("I should see the page title as {string}")
 	public void iShouldSeeThePageTitleAs(String expectedTitle) {
+		//lp.closePopupsIfVisible();
 		String actualTitle = lp.getPageTitle();
+		// Check for the popups and close them if visible
+		
 		// System.out.println("Actual Page Title is = " + actualTitle);
 		Assert.assertEquals(actualTitle, expectedTitle,
 				"Assertion Failed: Expected Title is '" + expectedTitle + "' but Found '" + actualTitle + "'");
 	}
+	
+	
+	  @Given("I handle any popups if visible") 
+	  public void iHandleAnyPopupsIfVisible() {
+	  log.info("Checking for popups to handle if visible...");
+	  lp.closePopupsIfVisible(); // Calls the method to handle popups 
+	  }
+	 
 
 	// Step method to click on Leads button
 	@Then("I click on the Leads button")
@@ -123,6 +135,7 @@ public class SugarSteps {
 		leadsPage.clickLeadsButton();
 	}
 
+	
 	// Step method to click on create button
 	@Then("I click on the Create button")
 	public void iClickOnTheCreateButton() {
@@ -221,7 +234,6 @@ public class SugarSteps {
 		leadsPage.selectEligibilityDetailsOption(valueToSelect);
 
 	}
-
 
 	@When("the user click on the how did you hear about us dropdown and selects {int} 'DHF Sales Specialist' from the dropdown")
 	public void selectOptionFromHowDidYouHearAboutUsDropdown(int stepsToTraverse) throws InterruptedException {
@@ -529,46 +541,46 @@ public class SugarSteps {
 	public void iClickOnTheWrapUpTab() {
 		wrapUpPage.clickWrapUpTab();// Calling the action method
 	}
-	
-	//Join date
+
+	// Join date
 	@When("The user enters joining date")
 	public void userEntersTodaysJoinDate() {
-	    wrapUpPage.enterJoinDate();
+		wrapUpPage.enterJoinDate();
 	}
-	
+
 	@When("the user click on the welcome call dropdown and traverses {int}st step")
 	public void welcomeCallDropdownStep(int stepsToTraverse) throws InterruptedException {
 		wrapUpPage.selectOptionFromWelcomeCallDropdown(stepsToTraverse); // Invoke the action method
 	}
-	
+
 	@When("The user selects the Claiming Process checkbox")
 	public void userSelectsClaimingProcessCheckbox() {
-	    wrapUpPage.selectClaimingProcessCheckbox();
+		wrapUpPage.selectClaimingProcessCheckbox();
 	}
-	
+
 	@When("The user selects the OMS Registration checkbox")
 	public void userSelectsOMSRegistrationCheckbox() {
-	    wrapUpPage.selectOMSRegistrationCheckbox();
+		wrapUpPage.selectOMSRegistrationCheckbox();
 	}
-	
+
 	@When("the user click on the authority level dropdown and traverses {int}nd step")
 	public void authorityLevelDropdownStep(int stepsToTraverse) throws InterruptedException {
 		wrapUpPage.selectOptionAuthorityLevelCallDropdown(stepsToTraverse); // Invoke the action method
 	}
-	
+
 	@When("The user clicks on the Convert to Membership button")
 	public void userClicksConvertToMembershipButton() throws InterruptedException {
 		Thread.sleep(8000);
-	    wrapUpPage.clickConvertToMembershipButton();
+		wrapUpPage.clickConvertToMembershipButton();
 	}
-	
+
 	@Then("I capture the membership creation message and validate the ID")
 	public void iCaptureMembershipCreationMessageAndValidateId() throws InterruptedException {
 		Thread.sleep(9000);
-	    wrapUpPage.captureMembershipCreationMessage();
-	    Assert.assertNotNull(WrapUpTabPage.membershipId, "Membership ID was not extracted correctly.");
-	    Assert.assertFalse(WrapUpTabPage.membershipId.isEmpty(), "Membership ID is empty.");
-	    System.out.println("Membership has been created successfully with ID: " + WrapUpTabPage.membershipId);
+		wrapUpPage.captureMembershipCreationMessage();
+		Assert.assertNotNull(WrapUpTabPage.membershipId, "Membership ID was not extracted correctly.");
+		Assert.assertFalse(WrapUpTabPage.membershipId.isEmpty(), "Membership ID is empty.");
+		System.out.println("Membership has been created successfully with ID: " + WrapUpTabPage.membershipId);
 	}
 
 }

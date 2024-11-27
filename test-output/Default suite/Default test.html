@@ -55,11 +55,11 @@ function toggleAllBoxes() {
 <body>
 <h2 align='center'>Default test</h2><table border='1' align="center">
 <tr>
-<td>Tests passed/Failed/Skipped:</td><td>1/0/0</td>
+<td>Tests passed/Failed/Skipped:</td><td>0/1/0</td>
 </tr><tr>
-<td>Started on:</td><td>Wed Nov 27 08:22:16 IST 2024</td>
+<td>Started on:</td><td>Wed Nov 27 14:44:38 IST 2024</td>
 </tr>
-<tr><td>Total time:</td><td>14 seconds (14731 ms)</td>
+<tr><td>Total time:</td><td>322 seconds (322265 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -67,8 +67,8 @@ function toggleAllBoxes() {
 </tr>
 </table><p/>
 <small><i>(Hover the method name to see the test class name)</i></small><p/>
-<table width='100%' border='1' class='invocation-passed'>
-<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<table width='100%' border='1' class='invocation-failed'>
+<tr><td colspan='4' align='center'><b>FAILED TESTS</b></td></tr>
 <tr><td><b>Test method</b></td>
 <td><b>Attribute(s)</b></td>
 <td width="30%"><b>Exception</b></td>
@@ -76,10 +76,37 @@ function toggleAllBoxes() {
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='runners.RunCucumberTest.runScenario()'><b>runScenario</b><br>Test class: runners.RunCucumberTest<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Complete MAF Application Submission", "Quick Quote Process"</td>
-<td></td>
-<td>10</td>
-<td>runners.RunCucumberTest@3e96bacf</td></tr>
+<td title='runners.RunSugarTest.runScenario()'><b>runScenario</b><br>Test class: runners.RunSugarTest<br>Test method: Runs Cucumber Scenarios<br>Parameters: "User logs in sugar crm and create the leads", "Sugar CRM Process"</td>
+<td><div><pre>java.lang.IndexOutOfBoundsException: Index 0 out of bounds for length 0
+	at java.base/jdk.internal.util.Preconditions.outOfBounds(Preconditions.java:100)
+	at java.base/jdk.internal.util.Preconditions.outOfBoundsCheckIndex(Preconditions.java:106)
+	at java.base/jdk.internal.util.Preconditions.checkIndex(Preconditions.java:302)
+	at java.base/java.util.Objects.checkIndex(Objects.java:365)
+	at java.base/java.util.ArrayList.get(ArrayList.java:428)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementListHandler.invoke(LocatingElementListHandler.java:39)
+	at jdk.proxy2/jdk.proxy2.$Proxy62.get(Unknown Source)
+	at com.qa.sugarcrm.pages.LeadsAndPersonalDetailsPage.selectValueFromLeadTypeDropdown(LeadsAndPersonalDetailsPage.java:357)
+	at StepDefinitions.SugarSteps.theUserSelectsFromTheLeadTypeDropdown(SugarSteps.java:181)
+	at ✽.the user selects &quot;Sale&quot; from the Lead Type dropdown(file:///C:/Users/Sahil.Sharma/EclipseEn/DHFAutomation/src/test/resources/Features/SugarCrmSmoke.feature:20)
+</pre></div><a href='#' onClick='toggleBox("stack-trace1214368937", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1214368937'><pre>java.lang.IndexOutOfBoundsException: Index 0 out of bounds for length 0
+	at java.base/jdk.internal.util.Preconditions.outOfBounds(Preconditions.java:100)
+	at java.base/jdk.internal.util.Preconditions.outOfBoundsCheckIndex(Preconditions.java:106)
+	at java.base/jdk.internal.util.Preconditions.checkIndex(Preconditions.java:302)
+	at java.base/java.util.Objects.checkIndex(Objects.java:365)
+	at java.base/java.util.ArrayList.get(ArrayList.java:428)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementListHandler.invoke(LocatingElementListHandler.java:39)
+	at jdk.proxy2/jdk.proxy2.$Proxy62.get(Unknown Source)
+	at com.qa.sugarcrm.pages.LeadsAndPersonalDetailsPage.selectValueFromLeadTypeDropdown(LeadsAndPersonalDetailsPage.java:357)
+	at StepDefinitions.SugarSteps.theUserSelectsFromTheLeadTypeDropdown(SugarSteps.java:181)
+	at ✽.the user selects &quot;Sale&quot; from the Lead Type dropdown(file:///C:/Users/Sahil.Sharma/EclipseEn/DHFAutomation/src/test/resources/Features/SugarCrmSmoke.feature:20)
+</pre></div></td>
+<td>317</td>
+<td>runners.RunSugarTest@3e96bacf</td></tr>
 </table><p>
 </body>
 </html>

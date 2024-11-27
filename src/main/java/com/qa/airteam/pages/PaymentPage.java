@@ -7,7 +7,9 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
-public class PaymentPage {
+import com.qa.BaseTest;
+
+public class PaymentPage extends BaseTest {
 
 	// constructor for initialization page factory and drivers
 	public PaymentPage(WebDriver driver) {
@@ -47,62 +49,68 @@ public class PaymentPage {
 	// Action method to enter BSB number
 	public void enterBSB(String bsbNumber) {
 		if (bsbNumber.matches("\\d{3}-\\d{3}")) { // Validate BSB format
-			bsbInputField.clear();
-			bsbInputField.sendKeys(bsbNumber);
-		} else {
-			throw new IllegalArgumentException("Invalid BSB format. Expected format: XXX-XXX.");
-		}
+	        log.info("Entering BSB number: " + bsbNumber);
+	        bsbInputField.clear();
+	        bsbInputField.sendKeys(bsbNumber);
+	        log.info("BSB number entered successfully.");
+	    } else {
+	        log.error("Invalid BSB format: " + bsbNumber + ". Expected format: XXX-XXX.");
+	        throw new IllegalArgumentException("Invalid BSB format. Expected format: XXX-XXX.");
+	    }
 	}
 	
 	public void enterAccountNumber(String accountNumber) {
-		if (accountNumber.matches("\\d{1,9}")) { // This ensures that only digits (1 to 9) are allowed.
-			accountNumberInputField.clear();
-			accountNumberInputField.sendKeys(accountNumber);
-		} else {
-			throw new IllegalArgumentException("Account number must contain only digits (max 9 digits).");
-		}
-
+		if (accountNumber.matches("\\d{1,9}")) { // Validate account number format
+	        log.info("Entering account number: " + accountNumber);
+	        accountNumberInputField.clear();
+	        accountNumberInputField.sendKeys(accountNumber);
+	        log.info("Account number entered successfully.");
+	    } else {
+	        log.error("Invalid account number format: " + accountNumber + ". Must contain only digits (max 9 digits).");
+	        throw new IllegalArgumentException("Account number must contain only digits (max 9 digits).");
+	    }
 	}
 	
 	// Method to generate and enter a random Australian account name
 		public void enterRandomAccountName() {
-			// Arrays defined locally within the method
-			String[] FIRST_NAMES = { "Oliver", "Jack", "Noah", "William", "James", "Thomas", "Ethan", "Lucas", "Mason",
-					"Charlie" };
+			 log.info("Generating a random Australian account name.");
+			    String[] FIRST_NAMES = { "Oliver", "Jack", "Noah", "William", "James", "Thomas", "Ethan", "Lucas", "Mason", "Charlie" };
+			    String[] LAST_NAMES = { "Smith", "Johnson", "Williams", "Brown", "Jones", "Miller", "Davis", "Wilson", "Moore", "Taylor" };
+			    Random random = new Random();
 
-			String[] LAST_NAMES = { "Smith", "Johnson", "Williams", "Brown", "Jones", "Miller", "Davis", "Wilson", "Moore",
-					"Taylor" };
+			    String firstName = FIRST_NAMES[random.nextInt(FIRST_NAMES.length)];
+			    String lastName = LAST_NAMES[random.nextInt(LAST_NAMES.length)];
+			    String accountName = firstName + " " + lastName;
 
-			Random random = new Random(); 
-
-			// Pick a random first and last name from the lists
-			String firstName = FIRST_NAMES[random.nextInt(FIRST_NAMES.length)];
-			String lastName = LAST_NAMES[random.nextInt(LAST_NAMES.length)];
-
-			String accountName = firstName + " " + lastName; // Concatenate first and last name
-
-			// Enter the generated name into the account name field
-			accountNameInputField.clear();
-			accountNameInputField.sendKeys(accountName);
+			    log.info("Generated account name: " + accountName);
+			    accountNameInputField.clear();
+			    accountNameInputField.sendKeys(accountName);
+			    log.info("Random account name entered successfully.");
 		}
 		
 		// Action method to click direct debit checkbox
 		public void clickDirectDebitCheckbox() {
-			directDebitCheckbox.click();
+			log.info("Clicking the direct debit checkbox.");
+		    directDebitCheckbox.click();
+		    log.info("Direct debit checkbox clicked successfully.");
 		}
 		
 		// Method to click on the submit form button
 		public void clickSubmitFormButton() throws InterruptedException {
-			submitFormButton.click();
-			Thread.sleep(700);
+			log.info("Clicking the submit form button.");
+		    submitFormButton.click();
+		    Thread.sleep(700);
+		    log.info("Submit form button clicked successfully.");
 		}
 		
 		// Action method for double-clicking the checkbox: How would you like us to pay any claim benefits back to you?
 		public void toggleCheckboxByDoubleClick() throws InterruptedException {
-			useBankAccountDetailsCheckbox.click();
-			Thread.sleep(1000);
-			useBankAccountDetailsCheckbox.click();
-
+			log.info("Double-clicking the checkbox: 'How would you like us to pay any claim benefits back to you?'.");
+		    useBankAccountDetailsCheckbox.click();
+		    log.info("First click on the checkbox completed.");
+		    Thread.sleep(1000);
+		    useBankAccountDetailsCheckbox.click();
+		    log.info("Second click on the checkbox completed. Checkbox toggled successfully.");
 		}
 
 

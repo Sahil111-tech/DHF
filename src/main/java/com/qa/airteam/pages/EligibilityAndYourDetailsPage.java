@@ -3,6 +3,7 @@ package com.qa.airteam.pages;
 import java.util.List;
 import java.util.Random;
 
+import org.openqa.selenium.ElementClickInterceptedException;
 import org.openqa.selenium.Keys;
 import org.openqa.selenium.TimeoutException;
 import org.openqa.selenium.WebDriver;
@@ -16,12 +17,12 @@ import org.testng.Assert;
 import com.qa.BaseTest;
 
 public class EligibilityAndYourDetailsPage extends BaseTest {
-	
-	  // Public static variables for Firstname, Middle name, and Lastname
-    public static String generatedFirstName;
-    public static String generatedMiddleName;
-    public static String generatedLastName;
-    public static String generatedEmail;
+
+	// Public static variables for Firstname, Middle name, and Lastname
+	public static String generatedFirstName;
+	public static String generatedMiddleName;
+	public static String generatedLastName;
+	public static String generatedEmail;
 
 	// constructor for initialization page factory and drivers
 	public EligibilityAndYourDetailsPage(WebDriver driver) {
@@ -139,27 +140,33 @@ public class EligibilityAndYourDetailsPage extends BaseTest {
 	// Action method for check-box selection "No" : Are you a current member of
 	// Doctors' Health Fund?
 	public void clickMemberStatusNoRadioButton() {
+		log.info("Attempting to select 'No' for member status.");
 		waitForElementToBeClickable(driver, memberStatusNoRadioBtn);
 		memberStatusNoRadioBtn.click();
+		log.info("'No' radio button for member status selected successfully.");
 
 	}
 
 	// Action method for check-box selection "Yes: Are you an Australian citizen or
 	// permanent resident?
 	public void clickCitizenshipYesRadioButton() {
+		log.info("Attempting to select 'Yes' for Australian citizenship status.");
 		waitForElementToBeClickable(driver, citizenshipYesRadioBtn);
 		citizenshipYesRadioBtn.click();
+		log.info("'Yes' radio button for citizenship status selected successfully.");
 	}
 
 	// I clicked on medical practitioner button
 	public void clickMedicalPractionerBtn() {
+		log.info("Attempting to click the 'Medical Practitioner' button.");
 		click(clickMedicalPractioner);
-
+		log.info("'Medical Practitioner' button clicked successfully.");
 	}
 
 	// I selected any value from the available options: What kind of medical
 	// practitioner are you?
 	public void selectRadioButtonByLabel(WebDriver driver, String label) {
+		log.info("Attempting to select the radio button for: {}", label);
 		WebElement radioButtonToClick = null;
 
 		switch (label) {
@@ -188,18 +195,19 @@ public class EligibilityAndYourDetailsPage extends BaseTest {
 			radioButtonToClick = otherRadioButton;
 			break;
 		default:
-			System.out.println("No radio button found for label: " + label);
+			log.warn("No radio button found for label: {}", label);
 			return;
 		}
 
 		if (radioButtonToClick != null) {
 			radioButtonToClick.click();
-			System.out.println("Clicked on radio button: " + label);
+			log.info("Radio button for '{}' selected successfully.", label);
 		}
 	}
 
 	// Click on radio button "No" : Are you an existing Avant member?
 	public void selectExistingAvantMemberOption(String option) {
+		log.info("Attempting to select Avant member option: {}", option);
 		if (option.equalsIgnoreCase("Yes")) {
 			existingAvantMemberRadioButtonYes.click();
 		} else if (option.equalsIgnoreCase("No")) {
@@ -207,79 +215,100 @@ public class EligibilityAndYourDetailsPage extends BaseTest {
 		} else {
 			throw new IllegalArgumentException("Invalid option provided. Expected 'Yes' or 'No', but got: " + option);
 		}
+		log.info("Avant member option '{}' selected successfully.", option);
 	}
 
 	// Method to select Yes or No based on the parameter : Are you transferring from
 	// another fund?
 
 	public void selectTransferFromAnotherFund(String response) {
-		// WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(15));
+		log.info("Selecting option for transferring from another fund: {}", response);
 		if ("Yes".equalsIgnoreCase(response)) {
-			// wait.until(ExpectedConditions.elementToBeClickable(yesRadioButton));
 			waitForElementToBeClickable(driver, yesRadioButton);
 			yesRadioButton.click();
-			System.out.println("Selected 'Yes' for transferring from another fund.");
+			log.info("'Yes' selected for transferring from another fund.");
 		} else if ("No".equalsIgnoreCase(response)) {
-			// wait.until(ExpectedConditions.elementToBeClickable(noRadioButton));
 			waitForVisibility(noRadioButton, driver);
 			waitForElementToBeClickable(driver, noRadioButton);
 			noRadioButton.click();
-			System.out.println("Selected 'No' for transferring from another fund.");
+			log.info("'No' selected for transferring from another fund.");
 		} else {
-			System.out.println("Invalid response: " + response + ". Please specify 'Yes' or 'No'.");
+			log.warn("Invalid response: {}. Please specify 'Yes' or 'No'.", response);
 		}
-
 	}
 
 	// Accept the modal
 	public void alertAccept() {
-		// WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(15));
-		try {
-			// Wait for the alert or alert-like element to be visible
-			// wait.until(ExpectedConditions.visibilityOf(acceptAlert));
-			waitForVisibility(acceptAlert, driver);
-			// Wait for it to be clickable
-			waitForElementToBeClickable(driver, acceptAlert);
-			// wait.until(ExpectedConditions.elementToBeClickable(acceptAlert));
-
-			// Perform the click
-			acceptAlert.click();
-			System.out.println("Accepted the alert/modal.");
-		} catch (TimeoutException e) {
-			System.out.println("Alert/modal was not visible within the wait time.");
-		} catch (Exception e) {
-			System.out.println("An error occurred while interacting with the alert/modal: " + e.getMessage());
-		}
+		/*
+		 * log.info("Attempting to accept alert/modal."); try {
+		 * waitForVisibility(acceptAlert, driver); waitForElementToBeClickable(driver,
+		 * acceptAlert); acceptAlert.click();
+		 * log.info("Alert/modal accepted successfully."); } catch (TimeoutException e)
+		 * { log.error("Alert/modal was not visible within the wait time.", e); } catch
+		 * (Exception e) {
+		 * log.error("An error occurred while interacting with the alert/modal: {}",
+		 * e.getMessage()); }
+		 */
+		
+		log.info("Attempting to accept alert/modal.");
+	    int retryCount = 3; // Number of retries
+	    int attempts = 0;
+	    
+	    while (attempts < retryCount) {
+	        try {
+	            waitForVisibility(acceptAlert, driver); // Wait for visibility of the element
+	            waitForElementToBeClickable(driver, acceptAlert); // Wait until the element is clickable
+	            acceptAlert.click(); // Attempt to click the alert/modal
+	            log.info("Alert/modal accepted successfully.");
+	            break; // Exit the loop if the click is successful
+	        } catch (ElementClickInterceptedException e) {
+	            attempts++;
+	            log.warn("Attempt {}: Alert/modal click intercepted. Retrying...", attempts, e);
+	            try {
+	                Thread.sleep(1000); // Wait before retrying
+	            } catch (InterruptedException ie) {
+	                Thread.currentThread().interrupt();
+	                log.error("Retry interrupted.", ie);
+	            }
+	        } catch (TimeoutException e) {
+	            log.error("Alert/modal was not visible within the wait time.", e);
+	            break; // Exit loop if visibility timeout occurs
+	        } catch (Exception e) {
+	            log.error("An error occurred while interacting with the alert/modal: {}", e.getMessage());
+	            break; // Exit loop for any other unexpected exceptions
+	        }
+	}
 	}
 
-    //To click on Next button
+	// To click on Next button
 	public void nextButton() {
+		log.info("Attempting to click the 'Next' button.");
 		waitVisibility(nextButton, driver);
 		click(nextButton);
+		log.info("'Next' button clicked successfully.");
 	}
 
 	// Action method to select Title as (Mr,,Mrs etc.)
 	public void selectTitle(String titleForUser) throws InterruptedException {
+		log.info("Selecting title from dropdown: {}", titleForUser);
 		waitForVisibility(userTitle, driver);
 		waitForElementToBeClickable(driver, userTitle);
-		// click(userTitle); // Open dropdown
-		// Wait for the dropdown options to be visible
 		waitForAllOptionsVisibility(userTitle);
 		Select titleDropdown = new Select(userTitle);
 		List<WebElement> options = titleDropdown.getOptions();
 		boolean found = false;
 
 		for (WebElement option : options) {
-			if (option.getText().equalsIgnoreCase(titleForUser)) { // Match cover type dynamically
+			if (option.getText().equalsIgnoreCase(titleForUser)) {
 				titleDropdown.selectByVisibleText(titleForUser);
-				log.info("Selected '" + titleForUser + "' from dropdown.");
+				log.info("Selected '{}' from dropdown.", titleForUser);
 				found = true;
 				break;
 			}
 		}
 
 		if (!found) {
-			log.warn("Title type '" + titleForUser + "' not found in the dropdown.");
+			log.warn("Title type '{}' not found in the dropdown.", titleForUser);
 		}
 	}
 
@@ -287,25 +316,30 @@ public class EligibilityAndYourDetailsPage extends BaseTest {
 	public void enterRandomFullName(WebDriver driver) {
 		String fullName = generateRandomFullName(); // Generate the full name
 		String[] nameParts = fullName.split(" "); // Split into first, middle, last
-		
-		
-        generatedFirstName = nameParts[0]; // Assigns generated FirstName e.g. "John" to the variable generatedFirstName
-        generatedMiddleName = nameParts[1]; // Assigns generated MiddleName e.g. "Kumar" to the variable generatedMiddleName
-        generatedLastName = nameParts[2];  // Assigns generated LastName e.g. "Sharma" to the variable generatedLastName
-        
+
+		generatedFirstName = nameParts[0]; // Assigns generated FirstName e.g. "John" to the variable generatedFirstName
+
+		generatedMiddleName = nameParts[1]; // Assigns generated MiddleName e.g. "Kumar" to the variable
+		// generatedMiddleName
+		generatedLastName = nameParts[2]; // Assigns generated LastName e.g. "Sharma" to the variable generatedLastName
+
 		waitVisibilityElement(firstNameInput);
 		firstNameInput.clear();
 		firstNameInput.sendKeys(nameParts[0]);
+		log.info("Entered First Name: {}", nameParts[0]);
 
 		waitVisibilityElement(middleNameInput);
 		middleNameInput.clear();
 		middleNameInput.sendKeys(nameParts[1]);
+		log.info("Entered Middle Name: {}", nameParts[1]);
 
 		waitVisibilityElement(lastNameInput);
 		lastNameInput.clear();
 		lastNameInput.sendKeys(nameParts[2]);
+		log.info("Entered Last Name: {}", nameParts[2]);
+		log.info("Entered random full name: {}", fullName);
 
-		System.out.println("Entered random full name: " + fullName);
+		// System.out.println("Entered random full name: " + fullName);
 	}
 
 	// This method selects the radio button based on the label provided (Male,
@@ -314,18 +348,18 @@ public class EligibilityAndYourDetailsPage extends BaseTest {
 		switch (gender) {
 		case "Male":
 			maleRadioBtn.click();
-			System.out.println("Selected Male radio button");
+			log.info("Selected Male radio button");
 			break;
 		case "Female":
 			femaleRadioBtn.click();
-			System.out.println("Selected Female radio button");
+			log.info("Selected Female radio button");
 			break;
 		case "Other":
 			otherRadioBtn.click();
-			System.out.println("Selected Other radio button");
+			log.info("Selected Other radio button");
 			break;
 		default:
-			System.out.println("Invalid gender option provided");
+			log.error("Invalid gender option provided: {}", gender);
 		}
 	}
 
@@ -334,12 +368,13 @@ public class EligibilityAndYourDetailsPage extends BaseTest {
 		// Generate a random number
 		int randomNumber = new Random().nextInt(1000); // Generate numbers between 0 and 999
 		String randomEmail = "dhf.testing+" + randomNumber + "@gmail.com";
-		
-		// Assign the generated email to the static variable  generatedEmail 
-        generatedEmail = randomEmail;  
+
+		// Assign the generated email to the static variable generatedEmail
+		generatedEmail = randomEmail;
 
 		// Enter the email into the input box
 		emailInputBox.sendKeys(randomEmail);
+		log.info("Entered random email: {}", randomEmail);
 
 		return randomEmail; // Return the email for validation in the test
 	}
@@ -353,34 +388,38 @@ public class EligibilityAndYourDetailsPage extends BaseTest {
 		// Enter the generated phone number in the input box
 		phoneInputBox.clear();
 		phoneInputBox.sendKeys(generatedPhoneNumber);
+		log.info("Entered random phone number: {}", generatedPhoneNumber);
 
 		// Validate the generated phone number format
-		Assert.assertTrue(generatedPhoneNumber.matches("049836\\d{4}"),
+		boolean isValid = generatedPhoneNumber.matches("049836\\d{4}");
+		Assert.assertTrue(isValid,
 				"Phone number format validation failed. Generated Phone Number: " + generatedPhoneNumber);
-
+		log.info("Phone number format validation passed: {}", generatedPhoneNumber);
 	}
 
 	// Action method for address selection
 	public void typeAndSelectValue(String inputText, WebDriver driver) throws InterruptedException {
-		// Clear the input box
 		residentialAddressInputBox.clear();
 		Actions actions = new Actions(driver);
+
 		waitForElementToBeClickable(driver, residentialAddressInputBox);
 		waitForVisibility(residentialAddressInputBox, driver);
 		actions.sendKeys(residentialAddressInputBox, inputText).perform();
+		log.info("Entered address input: {}", inputText);
+
 		Thread.sleep(1000);
 		actions.sendKeys(Keys.ENTER).perform();
+		log.info("Selected address input: {}", inputText);
 	}
 
 	// Action method to click "Continue radio button"
 	public WebElement clickContinueButton() throws InterruptedException {
-		// waitVisibility(clickContinueRadioButton);
 		waitForVisibility(clickContinueButton, driver);
 		waitForElementToBeClickable(driver, clickContinueButton);
 		Thread.sleep(2000);
 		click(clickContinueButton);
-		log.info("click on continue button");
-		// Thread.sleep(2000);
+		log.info("Clicked on Continue button");
+
 		return clickContinueButton;
 	}
 }

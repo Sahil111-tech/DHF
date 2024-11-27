@@ -57,6 +57,8 @@ public class Hooks {
 
 			options.addArguments("--disable-web-security");
 			options.addArguments("--disable-site-isolation-trials");
+			options.addArguments("--disable-dev-shm-usage"); // Reduce resource usage
+			options.addArguments("--no-sandbox"); // For certain CI environments
 
 			driver = new ChromeDriver();
 
@@ -69,6 +71,8 @@ public class Hooks {
 			options.addArguments("--disable-default-apps"); // Disable default apps
 			options.addArguments("--disable-extensions"); // Disable extensions
 			options.addArguments("-inprivate");
+			options.addArguments("--disable-notifications");
+	        options.addArguments("--disable-popup-blocking");
 			driver = new EdgeDriver(options);
 			log.info("EdgeDriver initialized.");
 		} else if (browserName.equalsIgnoreCase("firefox")) {
@@ -76,6 +80,10 @@ public class Hooks {
 			WebDriverManager.firefoxdriver().setup();
 			FirefoxOptions options = new FirefoxOptions();
 			// options.setHeadless(false); // Set to true if you want to run headless
+			options.addArguments("--disable-dev-shm-usage"); // Reduce resource usage
+			options.addArguments("--no-sandbox"); // For certain CI environments
+			options.addArguments("--disable-notifications");
+	        options.addArguments("--disable-popup-blocking");
 			driver = new FirefoxDriver(options);
 			log.info("FirefoxDriver initialized.");
 		} else {
@@ -87,7 +95,7 @@ public class Hooks {
 		driver.manage().window().maximize();
 		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(60));
 		driver.get(url);
-		log.info("Navigated to URL: " + url);
+		log.info("Navigated to URL: " +url);
 		// Clear cookies to avoid stale sessions
 		driver.manage().deleteAllCookies();
 		log.info("All cookies cleared before starting the test.");

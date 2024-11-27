@@ -89,63 +89,53 @@ public class quickQuote extends BaseTest {
 	// Action method to click the "Get Quote" button
 	public void clickGetQuote() {
 		try {
-	        // Wait for the element to be visible and clickable
-	        waitForVisibility(getQuote, driver);
-	        waitForElementToBeClickable(driver, getQuote);
-	        click(getQuote); // Attempt to click
-	    } catch (StaleElementReferenceException e) {
-	        log.warn("StaleElementReferenceException encountered. Re-locating the element.");
-	        // Re-locate the element and retry
-	        //getQuote = driver.findElement(By.xpath("//a[@data-id='get-quote-btn']"));
-	        
-	     // Reinitialize the PageFactory elements to refresh all locators
-	        PageFactory.initElements(driver, this);
-	        waitForVisibility(getQuote, driver);
-	        waitForElementToBeClickable(driver, getQuote);
-	        click(getQuote); // Retry clicking
-	    }
+			log.info("Attempting to click the 'Get Quote' button...");
+			waitForVisibility(getQuote, driver);
+			waitForElementToBeClickable(driver, getQuote);
+			click(getQuote);
+			log.info("'Get Quote' button clicked successfully.");
+		} catch (StaleElementReferenceException e) {
+			log.warn(
+					"Encountered StaleElementReferenceException for 'Get Quote' button. Reinitializing elements and retrying...");
+			PageFactory.initElements(driver, this);
+			waitForVisibility(getQuote, driver);
+			waitForElementToBeClickable(driver, getQuote);
+			click(getQuote);
+			log.info("'Get Quote' button clicked successfully after retrying.");
+		}
 	}
 
 	public void selectCoverFor(String coverType) {
-		// Wait for the cover type container to be visible
+		log.info("Selecting cover type: " + coverType + "...");
 		waitVisibility(coverForContainer, driver);
-
-		// Construct the specific radio button WebElement based on the cover type name
 		WebElement coverOption = coverForContainer
 				.findElement(By.xpath("//button[contains(text(), '" + coverType + "')]"));
-
-		// Click on the specific cover option
 		click(coverOption);
-
-		log.info("Selected cover for: " + coverType);
+		log.info("Cover type '" + coverType + "' selected successfully.");
 	}
 
 	// Action method to click the "Next" button after selection of cover type
 	public void clickNext() {
-		waitVisibility(clickNext, driver); // Wait for the element to be visible
+		log.info("Clicking the 'Next' button...");
+		waitVisibility(clickNext, driver);
 		click(clickNext);
+		log.info("'Next' button clicked successfully.");
 	}
 
 	// Action method to select residence as residence
 	public void selectResidence(String residence) {
-		// Wait for the residence container to be visible
+		log.info("Selecting residence: " + residence + "...");
 		waitVisibility(residenceContainer, driver);
-
-		// Constructed the specific radio button WebElement based on the residence name
 		WebElement residenceOption = residenceContainer
 				.findElement(By.xpath("//button[contains(text(), '" + residence + "')]"));
-
-		// Click on the specific residence option
 		click(residenceOption);
-
-		log.info("Selected residence: " + residence);
-
+		log.info("Residence '" + residence + "' selected successfully.");
 	}
 
 	public void selectHospitalCover(String coverType) {
+		log.info("Selecting hospital cover: " + coverType + "...");
 		WebElement selectedOption;
 
-		// Check which plan to select based on the plan name
 		switch (coverType) {
 		case "Smart Starter":
 			selectedOption = smartStarterBronzePlusOption;
@@ -157,20 +147,13 @@ public class quickQuote extends BaseTest {
 			selectedOption = topCoverOption;
 			break;
 		default:
+			log.error("Invalid hospital plan name: " + coverType);
 			throw new IllegalArgumentException("Invalid hospital plan name: " + coverType);
-		}
-
-		// Perform the selection
-		if (selectedOption != null && selectedOption.isDisplayed()) {
-			selectedOption.click();
-			log.info("Selected the hospital plan: " + coverType);
-		} else {
-			throw new RuntimeException("The hospital plan '" + coverType + "' is not available.");
 		}
 	}
 
 	public void selectExtrasCover(String coverType) {
-	
+
 		WebElement selectedOption;
 
 		// Check which plan to select based on the plan name
@@ -195,45 +178,49 @@ public class quickQuote extends BaseTest {
 		} else {
 			throw new RuntimeException("The Extras cover plan '" + coverType + "' is not available.");
 		}
+
 	}
 
 	// Action method to enter the date of birth
 	public void enterDateOfBirth(String day) {
+		log.info("Entering day of birth: " + day + "...");
 		waitVisibility(inputDate, driver);
 		sendKeys(inputDate, day);
+		log.info("Day of birth entered successfully.");
 	}
 
 	// Action method to enter the month of birth
 	public void enterMonthOfBirth(String month) {
+		log.info("Entering month of birth: " + month + "...");
 		waitVisibility(inputMonth, driver);
 		sendKeys(inputMonth, month);
+		log.info("Month of birth entered successfully.");
 	}
 
 	// Action method to enter the year of birth
 	public void enterYearOfBirth(String year) {
+		log.info("Entering year of birth: " + year + "...");
 		waitVisibility(inputYear, driver);
 		sendKeys(inputYear, year);
+		log.info("Year of birth entered successfully.");
 	}
 
 	// Action method to select the annual income options
 	public void selectAnnualIncome(String salary) {
-		// Wait for the annual income container to be visible
+		log.info("Selecting annual income: " + salary + "...");
 		waitVisibility(annualIncomeContainer, driver);
-
-		// Constructed the specific radio button WebElement based on the salary name
 		WebElement salaryOption = annualIncomeContainer
 				.findElement(By.xpath("//button[contains(text(), '" + salary + "')]"));
-
-		// Click on the specific salary option
 		click(salaryOption);
-
-		log.info("Selected annual income: " + salary);
+		log.info("Annual income '" + salary + "' selected successfully.");
 	}
 
 	// Action method to click the "Calculate cover" button
 	public void clickCalculateCover() {
+		log.info("Clicking 'Calculate Cover' button...");
 		waitVisibility(clickCalculateCover, driver);
 		click(clickCalculateCover);
+		log.info("'Calculate Cover' button clicked successfully.");
 	}
 
 	/************************************

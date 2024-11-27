@@ -43,15 +43,15 @@ public class CreateQuoteSteps {
 	BaseTest baseTest = new BaseTest();
 	MedicareDetailsPage medicareDetails;
 	public static Properties prop;
-    // Static block to load properties at the class level
-    static {
-        try (FileInputStream fis = new FileInputStream("src/test/resources/config.properties")) {
-            prop = new Properties();
-            prop.load(fis);
-        } catch (IOException e) {
-            throw new RuntimeException("Unable to load properties file: " + e.getMessage());
-        }
-    }
+	// Static block to load properties at the class level
+	static {
+		try (FileInputStream fis = new FileInputStream("src/test/resources/config.properties")) {
+			prop = new Properties();
+			prop.load(fis);
+		} catch (IOException e) {
+			throw new RuntimeException("Unable to load properties file: " + e.getMessage());
+		}
+	}
 
 	public CreateQuoteSteps() {
 		this.driver = Hooks.getDriver(); // Access the driver from Hooks
@@ -68,11 +68,10 @@ public class CreateQuoteSteps {
 		log.info("Navigating to the quote page.");
 		driver = Hooks.getDriver(); // driver is initialized here
 		quote = new quickQuote(driver); // Passed the driver to the quickQuote object
-		
+
 		// Assertion to verify the URL
 		baseTest.waitForPageToLoad(driver);
-		String expectedUrl = prop.getProperty(
-				"customerWebsiteurl");
+		String expectedUrl = prop.getProperty("url");
 		String CurrentUrl = quote.getCurrentURL();
 
 		Assert.assertTrue(CurrentUrl.equals(expectedUrl),
@@ -405,6 +404,11 @@ public class CreateQuoteSteps {
 		medicareDetails.selectMedicareEligibility(option);
 	}
 
+	@When("I verify images against green and blue medicare options")
+	public void iVerifyImagesAgainstGreenAndBlueMedicareOptions() {
+		medicareDetails.verifyImagesForGreenAndBlueOptions();
+	}
+
 	@When("I enter {string} in the card number field")
 	public void i_enter_in_the_card_number_field(String cardNumber) {
 		medicareDetails.enterCardNumber(cardNumber);
@@ -415,9 +419,9 @@ public class CreateQuoteSteps {
 		medicareDetails.enterCardReferenceNumber(number);
 	}
 
-	@When("I enter {string} as the month and {string} as the year")
-	public void iEnterAsTheMonthAndAsTheYear(String month, String year) {
-		medicareDetails.enterValidityDetails(month, year);
+	@When("I enter {string} as the day, {string} as the month and {string} as the year")
+	public void iEnterAsTheMonthAndAsTheYear(String day,String month, String year) {
+		medicareDetails.enterValidityDetails(day, month, year);
 	}
 
 	@When("I select {string} for claiming the Australian Government Rebate")

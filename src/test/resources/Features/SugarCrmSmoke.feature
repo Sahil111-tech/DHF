@@ -9,6 +9,7 @@ Feature: Sugar CRM Process
     When I enter the username "amasso"
     And I enter the password "Pass1234!"
     And I click on the login button
+    #And I handle any popups if visible
     Then I should see the page title as "SugarCRM"
     And I click on the Leads button
     And I click on the Create button
@@ -16,7 +17,7 @@ Feature: Sugar CRM Process
     And the user enters a random full name into the input fields
     And the user selects "Doctors" from the Brand dropdown
     And the user selects "Inbound Call" from the Lead Source dropdown
-    #And the user selects "Sale" from the Lead Type dropdown
+    And the user selects "Sale" from the Lead Type dropdown
     And the user selects "1. Medical Practitioner" from the Eligibility ID dropdown
     And I select the PRCitizen checkbox
     And the user enters "15/06/1995" as the birth date
@@ -27,7 +28,7 @@ Feature: Sugar CRM Process
     And the user click on the Eligibility details and select 1 'CMO' from the dropdown
     And the user click on the Gender dropdown and traverses 1 step
     And the user click on the how did you hear about us dropdown and selects 1 'DHF Sales Specialist' from the dropdown
-    #And I click on the Save button
+    And I click on the Save button
     And the user navigates to the Previous Health Fund tab
     And the user click on the Previous Health Fund dropdown and select 2 'ACA Health Benifits Fund' from the dropdownn
     And the user click on the Previous Fund Transfer dropdown and traverses 2 step
