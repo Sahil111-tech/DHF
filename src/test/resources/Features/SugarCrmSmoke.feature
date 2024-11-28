@@ -9,15 +9,14 @@ Feature: Sugar CRM Process
     When I enter the username "amasso"
     And I enter the password "Pass1234!"
     And I click on the login button
-    #And I handle any popups if visible
-    Then I should see the page title as "SugarCRM"
+    Then I should see the page title as "Agent Dashboard » Home » UAT"
     And I click on the Leads button
     And I click on the Create button
     And I select "Mrs" from the Salutation dropdown
     And the user enters a random full name into the input fields
     And the user selects "Doctors" from the Brand dropdown
     And the user selects "Inbound Call" from the Lead Source dropdown
-    And the user selects "Sale" from the Lead Type dropdown
+    And the user click on the Lead Type dropdown and traverses 1st step
     And the user selects "1. Medical Practitioner" from the Eligibility ID dropdown
     And I select the PRCitizen checkbox
     And the user enters "15/06/1995" as the birth date
@@ -28,7 +27,6 @@ Feature: Sugar CRM Process
     And the user click on the Eligibility details and select 1 'CMO' from the dropdown
     And the user click on the Gender dropdown and traverses 1 step
     And the user click on the how did you hear about us dropdown and selects 1 'DHF Sales Specialist' from the dropdown
-    And I click on the Save button
     And the user navigates to the Previous Health Fund tab
     And the user click on the Previous Health Fund dropdown and select 2 'ACA Health Benifits Fund' from the dropdownn
     And the user click on the Previous Fund Transfer dropdown and traverses 2 step
@@ -37,7 +35,8 @@ Feature: Sugar CRM Process
     And I enter a random Health Fund Membership ID
     And I enter a policy name
     And I click on the Save button
-    And I click on the first user fullname in the table
+    And I search the user by entering the First&Last name
+    #And I click on the first user fullname in the table
     And I click on the Medicare button
     And I click on the Edit button
     And the user click on the medical card type dropdown and traverses 1 'Green' step

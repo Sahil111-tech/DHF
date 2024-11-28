@@ -35,6 +35,7 @@ public class LeadsAndPersonalDetailsPage extends BaseTest {
 	public static final Random random = new Random();
 	public static String generatedPhoneNumber;
 	public static String fullName;
+	public static String Salutation;
 
 	// constructor for initialization page factory and drivers
 	public LeadsAndPersonalDetailsPage(WebDriver driver) {
@@ -155,6 +156,17 @@ public class LeadsAndPersonalDetailsPage extends BaseTest {
 	// Eligibility details button
 	@FindBy(xpath = "//span[@data-fieldname='eligilibilty_detail_c']")
 	private WebElement eligibilityDetailsButton;
+	
+	//Locate the element where I have to send the fullname stored in another variable
+	@FindBy(xpath = "//input[@placeholder='Search by first name, last name...']")
+    private WebElement searchUserInputBox;
+	
+	
+	//Locate the element where I have to send the fullname stored in another variable
+		@FindBy(xpath = "(//a[contains(@class, 'ellipsis_inline') and @data-module='Leads'])[1]")
+	    private WebElement clickSearchedUser;
+		
+	
 
 	/*** Actions Method ****/
 
@@ -183,20 +195,22 @@ public class LeadsAndPersonalDetailsPage extends BaseTest {
 	}
 
 	public void selectSalutation(String salutation) {
-		// Click on the dropdown button to open options
-		salutationDropdownButton.click();
+	    // Click on the dropdown button to open options
+	    salutationDropdownButton.click();
 
-		// Wait for options to load (if applicable)
-		WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
-		wait.until(ExpectedConditions.visibilityOfAllElements(salutationDropdownOptions));
+	    // Wait for options to load
+	    WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
+	    wait.until(ExpectedConditions.visibilityOfAllElements(salutationDropdownOptions));
 
-		// Iterate through the options and select the desired one
-		for (WebElement option : salutationDropdownOptions) {
-			if (option.getText().equalsIgnoreCase(salutation)) {
-				option.click();
-				break;
-			}
-		}
+	    // Iterate through the options and select the desired one
+	    for (WebElement option : salutationDropdownOptions) {
+	        if (option.getText().equalsIgnoreCase(salutation)) {
+	            option.click();
+	            Salutation = salutation; // Store the selected salutation
+	            System.out.println("Selected salutation: " + Salutation);
+	            break;
+	        }
+	    }
 	}
 
 	// Action method to generate and enter a random full name
@@ -225,16 +239,16 @@ public class LeadsAndPersonalDetailsPage extends BaseTest {
 
 	// Helper method to generate a random full name
 	public String generateRandomFullName() {
-		String[] firstNames = { "Chris", "Sophia", "Liam", "Isabella", "Oliver" };
-		String[] middleNames = { "Marie", "James", "Noah", "Ava", "Charlotte" };
-		String[] lastNames = { "Smith", "Brown", "Johnson", "Williams", "Jones" };
-
+		String[] firstNames = { "Ethan", "Emma", "Mason", "Olivia", "Lucas", "Mia", "Aiden", "Amelia", "Jackson", "Aria" };
+	    String[] middleNames = { "Grace", "Michael", "Alexander", "Riley", "Thomas", "Zoe", "Joseph", "Sophia", "Henry", "Scarlett" };
+	    String[] lastNames = { "Anderson", "Clark", "Harris", "Lewis", "Martin", "Young", "Allen", "King", "Scott", "Adams" };
 		Random random = new Random();
 		firstName = firstNames[random.nextInt(firstNames.length)];
 		middleName = middleNames[random.nextInt(middleNames.length)];
 		lastName = lastNames[random.nextInt(lastNames.length)];
 
-		String uniqueSuffix = String.valueOf(System.currentTimeMillis() % 1000);
+		//String uniqueSuffix = String.valueOf(System.currentTimeMillis() % 1000);
+		String uniqueSuffix = System.currentTimeMillis() % 1000 + "_" + random.nextInt(100);
 		lastName += uniqueSuffix;
 
 		return firstName + " " + middleName + " " + lastName;
@@ -347,32 +361,39 @@ public class LeadsAndPersonalDetailsPage extends BaseTest {
 		}
 	}
 
-	public void selectValueFromLeadTypeDropdown(String valueToSelect) {
-		// Step 1: Click the "Lead Type" dropdown button
+	public void selectValueFromLeadTypeDropdown(int stepsToTraverse) {
+	/*
+	 * // Step 1: Click the "Lead Type" dropdown button
+	 * waitVisibilityElement(leadTypeDropdownButton);
+	 * leadTypeDropdownButton.click();
+	 * System.out.println("Lead Type dropdown opened successfully.");
+	 * 
+	 * // Step 2: Wait for the dropdown options to be visible
+	 * waitVisibilityElement(leadTypeDropdownOptions.get(0));
+	 * 
+	 * // Step 3: Iterate through the dropdown options to find and select the
+	 * matching // value boolean valueFound = false; for (WebElement option :
+	 * leadTypeDropdownOptions) { String optionText = option.getText().trim(); if
+	 * (optionText.equalsIgnoreCase(valueToSelect)) { option.click(); // Select the
+	 * matching value valueFound = true;
+	 * System.out.println("Selected Lead Type value: " + optionText); break; } }
+	 * 
+	 * // Step 4: Handle case when the value is not found if (!valueFound) { throw
+	 * new RuntimeException("Value '" + valueToSelect +
+	 * "' not found in the Lead Type dropdown."); } }
+	 */
+		
+		// Wait for the input box to be visible
 		waitVisibilityElement(leadTypeDropdownButton);
 		leadTypeDropdownButton.click();
-		System.out.println("Lead Type dropdown opened successfully.");
-
-		// Step 2: Wait for the dropdown options to be visible
-		waitVisibilityElement(leadTypeDropdownOptions.get(0));
-
-		// Step 3: Iterate through the dropdown options to find and select the matching
-		// value
-		boolean valueFound = false;
-		for (WebElement option : leadTypeDropdownOptions) {
-			String optionText = option.getText().trim();
-			if (optionText.equalsIgnoreCase(valueToSelect)) {
-				option.click(); // Select the matching value
-				valueFound = true;
-				System.out.println("Selected Lead Type value: " + optionText);
-				break;
-			}
+		Actions actions = new Actions(driver);
+		for (int i = 0; i < stepsToTraverse; i++) {
+			actions.sendKeys(Keys.ARROW_DOWN).perform(); // Press the down arrow key
+			BaseTest.sleepFor(700);
 		}
+		actions.sendKeys(Keys.ENTER).build().perform();
+		// hamburgerMenu.click();
 
-		// Step 4: Handle case when the value is not found
-		if (!valueFound) {
-			throw new RuntimeException("Value '" + valueToSelect + "' not found in the Lead Type dropdown.");
-		}
 	}
 
 	// Action method to enter the date of birth
@@ -574,6 +595,22 @@ public class LeadsAndPersonalDetailsPage extends BaseTest {
 		// If all retries fail, throw an exception
 		throw new RuntimeException("Failed to click the Edit button after 3 attempts.");
 	}
+	
+	// Method to type the first name into the input box
+    public void searchByFullName() throws InterruptedException {
+        // Access the firstName from UserPage class
+        //String FullName = .firstName;
+        
+        // Ensure the input box is visible before interacting with it
+    	PageFactory.initElements(driver, this);
+        searchUserInputBox.clear();
+        waitForVisibility(searchUserInputBox, driver);
+        //searchUserInputBox.sendKeys(Salutation+ " " +fullName);
+        searchUserInputBox.sendKeys(firstName+ " " +lastName);
+       // System.out.println("Searched using full name: " + fullName);
+        Thread.sleep(3000);
+        clickSearchedUser.click();
+    }
 
 	public void selectOptionFromHowDidYouHearDropdown(int stepsToTraverse) throws InterruptedException {
 		// Wait for the input box to be visible

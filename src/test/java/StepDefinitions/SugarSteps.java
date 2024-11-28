@@ -106,28 +106,26 @@ public class SugarSteps {
 	@When("I click on the login button")
 	public void iClickOnTheLoginButton() {
 		lp.clickLoginButton();
-		//lp.closePopupsIfVisible();
+		// lp.closePopupsIfVisible();
 	}
 
 	// Assertion to verify the page title after logs in
 	@Then("I should see the page title as {string}")
 	public void iShouldSeeThePageTitleAs(String expectedTitle) {
-		//lp.closePopupsIfVisible();
+		// lp.closePopupsIfVisible();
 		String actualTitle = lp.getPageTitle();
 		// Check for the popups and close them if visible
-		
+
 		// System.out.println("Actual Page Title is = " + actualTitle);
 		Assert.assertEquals(actualTitle, expectedTitle,
 				"Assertion Failed: Expected Title is '" + expectedTitle + "' but Found '" + actualTitle + "'");
 	}
-	
-	
-	  @Given("I handle any popups if visible") 
-	  public void iHandleAnyPopupsIfVisible() {
-	  log.info("Checking for popups to handle if visible...");
-	  lp.closePopupsIfVisible(); // Calls the method to handle popups 
-	  }
-	 
+
+	@Given("I handle any popups if visible")
+	public void iHandleAnyPopupsIfVisible() {
+		log.info("Checking for popups to handle if visible...");
+		lp.closePopupsIfVisible(); // Calls the method to handle popups
+	}
 
 	// Step method to click on Leads button
 	@Then("I click on the Leads button")
@@ -135,7 +133,6 @@ public class SugarSteps {
 		leadsPage.clickLeadsButton();
 	}
 
-	
 	// Step method to click on create button
 	@Then("I click on the Create button")
 	public void iClickOnTheCreateButton() {
@@ -176,9 +173,10 @@ public class SugarSteps {
 	}
 
 	// Step method for Lead Type dropdown
-	@When("the user selects {string} from the Lead Type dropdown")
-	public void theUserSelectsFromTheLeadTypeDropdown(String valueToSelect) {
-		leadsPage.selectValueFromLeadTypeDropdown(valueToSelect);
+	@When("the user click on the Lead Type dropdown and traverses {int}st step")
+	public void theUserSelectsFromTheLeadTypeDropdown(int stepsToTraverse) {
+		leadsPage.selectValueFromLeadTypeDropdown(stepsToTraverse);
+
 	}
 
 	// Step method for the PR/Citizen checkbox
@@ -583,4 +581,9 @@ public class SugarSteps {
 		System.out.println("Membership has been created successfully with ID: " + WrapUpTabPage.membershipId);
 	}
 
+	@Then("I search the user by entering the First&Last name")
+	public void iSearchedUserByUsingFullName() throws InterruptedException {
+		Thread.sleep(5000);
+		leadsPage.searchByFullName();
+	}
 }

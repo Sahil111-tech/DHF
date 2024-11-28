@@ -124,19 +124,27 @@ public class PreviousHealthFundPage extends BaseTest {
 	}
 	
 	public void selectOptionFromSinceYour31stBirthdayDropdown(int stepsToTraverse) throws InterruptedException {
-		// Wait for the input box to be visible
-		waitVisibilityElement(sinceYour31stBirthdayDropdown);
-		sinceYour31stBirthdayDropdown.click();
-		Actions actions = new Actions(driver);
-		for (int i = 0; i < stepsToTraverse; i++) {
-			actions.sendKeys(Keys.ARROW_DOWN).perform(); // Press the down arrow key
-			BaseTest.sleepFor(700);
-		}
-		actions.sendKeys(Keys.ENTER).build().perform();
-		// hamburgerMenu.click();
+		// Refresh the element to avoid stale element reference
+	    PageFactory.initElements(driver, this);
 
+	    // Wait for the dropdown to be visible
+	    waitVisibilityElement(sinceYour31stBirthdayDropdown);
+
+	    // Click to open the dropdown
+	    sinceYour31stBirthdayDropdown.click();
+
+	    // Create Actions instance
+	    Actions actions = new Actions(driver);
+
+	    // Traverse the dropdown options using the down arrow key
+	    for (int i = 0; i < stepsToTraverse; i++) {
+	        actions.sendKeys(Keys.ARROW_DOWN).perform(); // Press the down arrow key
+	        BaseTest.sleepFor(700); // Add delay for dropdown to respond
+	    }
+
+	    // Press Enter to select the option
+	    actions.sendKeys(Keys.ENTER).build().perform();
 	}
-	
 	 // Method to generate and enter a random number
     public void enterHealthFundMembershipId() {
         randomHealthFundId = generateRandomNumber(8, 9); // Generates an 8 or 9-digit random number

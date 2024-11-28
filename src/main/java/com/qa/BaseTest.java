@@ -13,8 +13,10 @@ import org.apache.logging.log4j.Logger;
 import org.openqa.selenium.By;
 import org.openqa.selenium.ElementClickInterceptedException;
 import org.openqa.selenium.JavascriptExecutor;
+import org.openqa.selenium.NoSuchElementException;
 import org.openqa.selenium.NoSuchWindowException;
 import org.openqa.selenium.OutputType;
+import org.openqa.selenium.StaleElementReferenceException;
 import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.TimeoutException;
 import org.openqa.selenium.WebDriver;
@@ -88,18 +90,40 @@ public class BaseTest {
 		WebDriverWait wait = new WebDriverWait(driver, TestUtils.WAIT);
 		wait.until(ExpectedConditions.visibilityOf(element));
 	}
-	
+
 	// Overloaded method: Returns boolean to indicate if the element is visible
 	public boolean isPopupVisible(WebElement element, WebDriver driver, int timeoutInSeconds) {
-	    try {
-	        WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(timeoutInSeconds));
-	        wait.until(ExpectedConditions.visibilityOf(element));
-	        return true; // Element is visible within the timeout
-	    } catch (TimeoutException e) {
-	        log.warn("Element not visible within " + timeoutInSeconds + " seconds.", e);
-	        return false; // Element not visible within the timeout
-	    }
+		try {
+			WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(timeoutInSeconds));
+			wait.until(ExpectedConditions.visibilityOf(element));
+			return true; // Element is visible within the timeout
+		} catch (TimeoutException e) {
+			log.warn("Element not visible within " + timeoutInSeconds + " seconds.", e);
+			return false; // Element not visible within the timeout
+		}
 	}
+
+	/*
+	 * public Boolean verifyObjectIsDisplayed(WebElement element) { try { // Boolean
+	 * objectDisplayed=element.isDisplayed(); return element.isDisplayed();
+	 * 
+	 * } catch (NoSuchElementException | StaleElementReferenceException e) {
+	 * 
+	 * System.out.println("An unexpected error occurred: " + e.getMessage()); return
+	 * false; } }
+	 */
+
+	public boolean isElementPresent(By locatorKey, WebDriver driver) {
+	try 
+	{
+		driver.findElement(locatorKey);
+		return true;
+		} 
+	catch (org.openqa.selenium.NoSuchElementException e) {
+		return false;
+	}
+	}
+
 
 	// Wait for an object to be invisible before performing any action
 	public void waitForInvisibility(By locator, WebDriver driver) {
