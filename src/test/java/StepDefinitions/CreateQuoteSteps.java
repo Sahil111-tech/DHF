@@ -11,6 +11,7 @@ import java.util.Properties;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 import org.openqa.selenium.By;
+import org.openqa.selenium.ElementClickInterceptedException;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.Keys;
 import org.openqa.selenium.NoSuchElementException;
@@ -312,10 +313,11 @@ public class CreateQuoteSteps {
 	@Given("I submit the eligibility page.")
 	public void i_click_the_continue_button() throws InterruptedException, AWTException {
 
-		baseTest.scrollByPixels(100, driver);
+		//baseTest.scrollByPixels(-100, driver);
+		baseTest.scrollUpBy400(driver);
 		Thread.sleep(1000);
 		eligibilityAndYourDetails.clickContinueButton();
-		Thread.sleep(1000);
+		//Thread.sleep(1000);
 
 	}
 
@@ -323,7 +325,7 @@ public class CreateQuoteSteps {
 	public void i_select_transfer_from_another_fund(String response) throws InterruptedException {
 		// Thread.sleep(2000);
 		eligibilityAndYourDetails.selectTransferFromAnotherFund(response);
-		// Thread.sleep(2000);
+		Thread.sleep(700);
 		eligibilityAndYourDetails.alertAccept();
 	}
 
@@ -389,15 +391,33 @@ public class CreateQuoteSteps {
 	// Step to click the Continue button on the Your Details page
 	@Given("I submit the Your Details page")
 	public void i_submit_your_details_page() throws InterruptedException {
-		baseTest.scrollByPixels(150, driver);
-		WebElement continueButton = eligibilityAndYourDetails.clickContinueButton();
-
-		// Use Actions class for double-click
-		Actions actions = new Actions(driver);
-		actions.doubleClick(continueButton).perform(); // Perform the double-click action
-		Thread.sleep(1000);
-
+		 //Thread.sleep(2000);
+		  baseTest.scrollByPixels(150, driver); 
+		  WebElement continueButton = eligibilityAndYourDetails.clickContinueButton();
+		  
+		  // Use Actions class for double-click 
+		  Actions actions = new Actions(driver);
+		  actions.doubleClick(continueButton).perform(); // Perform the double-click action 
+		  Thread.sleep(1000);
+		 
 	}
+		
+		/*
+		 * WebElement continueButton = eligibilityAndYourDetails.clickContinueButton();
+		 * 
+		 * // Scroll into view ((JavascriptExecutor)
+		 * driver).executeScript("arguments[0].scrollIntoView(true);", continueButton);
+		 * 
+		 * // Handle potential element obstruction try { continueButton.click();
+		 * System.out.println("Clicked on Continue button."); } catch
+		 * (ElementClickInterceptedException e) {
+		 * System.out.println("Click intercepted. Retrying with JavaScript.");
+		 * ((JavascriptExecutor) driver).executeScript("arguments[0].click();",
+		 * continueButton); }
+		 * 
+		 * Thread.sleep(1000); }
+		 */
+	
 
 	@When("I select {string} for the question \"Are all the people on this policy eligible for Medicare?\"")
 	public void i_select_option_for_medicare_eligibility(String option) {
@@ -568,5 +588,13 @@ public class CreateQuoteSteps {
 		// baseTest.scrollByPixels(250, driver);
 		payment.toggleCheckboxByDoubleClick(); // Call the action method
 
+	}
+	
+	@Then("I verify that the thank-you message is displayed")
+	public void i_verify_thank_you_message_is_displayed() throws InterruptedException {
+		Thread.sleep(2000);
+	    boolean isMessageDisplayed = payment.isThankYouMessageDisplayed(); // Check if the message is displayed
+	    Assert.assertTrue(isMessageDisplayed, "The thank-you message is not displayed as expected."); // TestNG assertion
+	    log.info("The thank-you message is displayed successfully.");
 	}
 }

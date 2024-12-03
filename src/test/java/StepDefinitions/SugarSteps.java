@@ -155,11 +155,17 @@ public class SugarSteps {
 	}
 
 	// Step method for First,middle and last name
+
 	@When("the user enters a random full name into the input fields")
 	public void theUserEntersARandomFullNameIntoTheInputFields() {
 		leadsPage.enterRandomFullName(driver); // Call the method to enter a random full name
 	}
 
+	/*
+	 * @When("the user enters {string} as the first name, {string} as the middle name, and {string} as the last name"
+	 * ) public void enterNames(String firstName, String middleName, String
+	 * lastName) { leadsPage.enterNames(firstName, middleName, lastName); }
+	 */
 	// Step method for Brand dropdown
 	@When("the user selects {string} from the Brand dropdown")
 	public void theUserSelectsFromTheDropdown(String valueToSelect) {
@@ -322,7 +328,7 @@ public class SugarSteps {
 
 	@When("I click on the Edit button")
 	public void clickOnEditButton() throws InterruptedException {
-		// Thread.sleep(3000);
+		Thread.sleep(6000);
 		medicareTabPage.clickEditButton();
 
 	}
@@ -418,10 +424,19 @@ public class SugarSteps {
 
 	// Selects the dropdown option based on the input value: 1 for the first option,
 	// 2 for the second, and so on
+
 	@When("the user click on the association dropdown and traverses {int}st step")
 	public void associationDropdownStep(int stepsToTraverse) throws InterruptedException {
-		affiliationsTab.associationDropdownValues(stepsToTraverse); // Invoke the action method
+		affiliationsTab.selectOptionFromAssociationDropdown(stepsToTraverse);
+
 	}
+
+	/*
+	 * @When("^the user selects \"([^\"]*)\" from the association dropdown$") public
+	 * void userSelectsOptionFromDropdown(String optionText) throws
+	 * InterruptedException { affiliationsTab.selectOptionFromDropdown(optionText);
+	 * }
+	 */
 
 	@When("I click on the Product")
 	public void iClickOnTheProductTab() {
@@ -497,7 +512,7 @@ public class SugarSteps {
 
 	// Selects the dropdown option based on the input value: 1 for the first option,
 	// 2 for the second, and so on
-	@When("the user click on the debit account type dropdown and traverses {int}st step")
+	@When("the user click on the debit account type dropdown and traverses {int} step")
 	public void debitAccountTypeDropdownStep(int stepsToTraverse) throws InterruptedException {
 		financialInfoPage.selectOptionFromDebitAccountTypeDropdown(stepsToTraverse); // Invoke the action method
 	}
@@ -574,7 +589,7 @@ public class SugarSteps {
 
 	@Then("I capture the membership creation message and validate the ID")
 	public void iCaptureMembershipCreationMessageAndValidateId() throws InterruptedException {
-		Thread.sleep(9000);
+		Thread.sleep(11000);
 		wrapUpPage.captureMembershipCreationMessage();
 		Assert.assertNotNull(WrapUpTabPage.membershipId, "Membership ID was not extracted correctly.");
 		Assert.assertFalse(WrapUpTabPage.membershipId.isEmpty(), "Membership ID is empty.");
@@ -585,5 +600,48 @@ public class SugarSteps {
 	public void iSearchedUserByUsingFullName() throws InterruptedException {
 		Thread.sleep(5000);
 		leadsPage.searchByFullName();
+	}
+
+	@When("I enter the start date {string} in the direct debit field")
+	public void i_enter_the_start_date(String date) throws InterruptedException {
+		Thread.sleep(2000);
+		financialInfoPage.enterStartDate(date);
+	}
+
+	@When("I enter the card number {string} in the card number field")
+	public void i_enter_the_card_number(String cardNumber) {
+		financialInfoPage.enterCardNumber(cardNumber);
+	}
+
+	@When("the user click on the card expiry month dropdown and traverses {int} step")
+	public void cardExpiryMonthStep(int stepsToTraverse) throws InterruptedException {
+		financialInfoPage.selectOptionFromCardExpiryMonthDropdown(stepsToTraverse); // Invoke the action method
+	}
+
+	@When("I enter the cardholder name in the name field")
+	public void i_enter_a_random_cardholder_name() {
+		financialInfoPage.enterCardHolderName();
+	}
+
+	@When("I enter expiry year {string} in the expiry year field")
+	public void i_enter_expiry_year_in_the_expiry_year_field(String expiryYear) {
+		financialInfoPage.enterExpiryYear(expiryYear);
+	}
+
+	@Then("I verify the temporary CRN number is generated and capture its value")
+	public void i_verify_and_capture_temp_crn_number() throws InterruptedException {
+		//Thread.sleep(8000);
+		String tempCRNNumber = financialInfoPage.verifyAndCaptureTempCRNNumber();
+		log.info("Captured temporary CRN number: " + tempCRNNumber);
+	}
+
+	@When("I successfully submit and save the credit card details")
+	public void i_submit_and_save_credit_card_details() {
+		financialInfoPage.clickSaveCreditCardDetailsButton();
+	}
+	
+	@When("I successfully save the Financial Information")
+	public void i_save_financial_information() {
+	    financialInfoPage.clickSaveFinancialInformationButton();
 	}
 }

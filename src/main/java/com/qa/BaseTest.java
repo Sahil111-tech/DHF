@@ -114,16 +114,22 @@ public class BaseTest {
 	 */
 
 	public boolean isElementPresent(By locatorKey, WebDriver driver) {
-	try 
-	{
-		driver.findElement(locatorKey);
-		return true;
-		} 
-	catch (org.openqa.selenium.NoSuchElementException e) {
-		return false;
-	}
+		try {
+			driver.findElement(locatorKey);
+			return true;
+		} catch (org.openqa.selenium.NoSuchElementException e) {
+			return false;
+		}
 	}
 
+	// Helper method to check if an element is present and displayed
+	protected boolean isElementPresent(WebElement element) {
+		try {
+			return element.isDisplayed(); // Returns true if the element is visible
+		} catch (NoSuchElementException e) {
+			return false; // Element not found
+		}
+	}
 
 	// Wait for an object to be invisible before performing any action
 	public void waitForInvisibility(By locator, WebDriver driver) {

@@ -1,0 +1,725 @@
+08:43:51.894 [main] INFO  - Dropdown opened successfully.
+08:43:54.250 [main] INFO  - Successfully selected the PR / Citizen checkbox.
+08:43:54.562 [main] INFO  - Generated and entered phone number: 0498366895
+08:44:25.917 [main] INFO  - Browser selected: chrome
+08:44:28.731 [main] INFO  - ChromeDriver initialized.
+08:44:30.214 [main] INFO  - Navigated to URL: https://crmtest.doctorshealthfund.com.au/
+08:44:30.220 [main] INFO  - All cookies cleared before starting the test.
+08:44:30.313 [main] INFO  - Navigating to the login page.
+08:44:35.251 [main] INFO  - Clicked successfully on the Leads button.
+08:44:36.010 [main] INFO  - Clicked succesfully on the Create button.
+08:44:38.365 [main] INFO  - Dropdown opened successfully.
+08:44:41.927 [main] INFO  - Successfully selected the PR / Citizen checkbox.
+08:44:42.696 [main] INFO  - Generated and entered phone number: 0498369438
+08:48:12.734 [main] INFO  - Browser selected: chrome
+08:48:15.540 [main] INFO  - ChromeDriver initialized.
+08:48:17.196 [main] INFO  - Navigated to URL: https://crmtest.doctorshealthfund.com.au/
+08:48:17.213 [main] INFO  - All cookies cleared before starting the test.
+08:48:17.285 [main] INFO  - Navigating to the login page.
+08:48:21.656 [main] INFO  - Clicked successfully on the Leads button.
+08:48:22.381 [main] INFO  - Clicked succesfully on the Create button.
+08:48:24.674 [main] INFO  - Dropdown opened successfully.
+08:48:27.069 [main] INFO  - Successfully selected the PR / Citizen checkbox.
+08:48:27.498 [main] INFO  - Generated and entered phone number: 0498365592
+08:55:23.974 [main] INFO  - Browser selected: chrome
+08:55:27.131 [main] INFO  - ChromeDriver initialized.
+08:55:27.805 [main] INFO  - Navigated to URL: https://crmtest.doctorshealthfund.com.au/
+08:55:28.732 [main] INFO  - All cookies cleared before starting the test.
+08:55:28.821 [main] INFO  - Navigating to the login page.
+08:55:33.527 [main] INFO  - Clicked successfully on the Leads button.
+08:55:34.282 [main] INFO  - Clicked succesfully on the Create button.
+08:55:36.722 [main] INFO  - Dropdown opened successfully.
+08:55:40.155 [main] INFO  - Successfully selected the PR / Citizen checkbox.
+08:55:40.625 [main] INFO  - Generated and entered phone number: 0498365776
+08:56:13.486 [main] INFO  - Browser selected: chrome
+08:56:16.324 [main] INFO  - ChromeDriver initialized.
+08:56:17.950 [main] INFO  - Navigated to URL: https://crmtest.doctorshealthfund.com.au/
+08:56:17.957 [main] INFO  - All cookies cleared before starting the test.
+08:56:18.019 [main] INFO  - Navigating to the login page.
+08:56:22.538 [main] INFO  - Clicked successfully on the Leads button.
+08:56:23.312 [main] INFO  - Clicked succesfully on the Create button.
+08:56:25.663 [main] INFO  - Dropdown opened successfully.
+08:56:29.045 [main] INFO  - Successfully selected the PR / Citizen checkbox.
+08:56:29.553 [main] INFO  - Generated and entered phone number: 0498369194
+08:57:03.252 [main] INFO  - Browser selected: chrome
+08:57:06.126 [main] INFO  - ChromeDriver initialized.
+08:57:07.744 [main] INFO  - Navigated to URL: https://crmtest.doctorshealthfund.com.au/
+08:57:07.799 [main] INFO  - All cookies cleared before starting the test.
+08:57:07.878 [main] INFO  - Navigating to the login page.
+08:57:12.796 [main] INFO  - Clicked successfully on the Leads button.
+08:57:13.581 [main] INFO  - Clicked succesfully on the Create button.
+08:57:15.892 [main] INFO  - Dropdown opened successfully.
+08:57:19.163 [main] INFO  - Successfully selected the PR / Citizen checkbox.
+08:57:19.691 [main] INFO  - Generated and entered phone number: 0498363595
+08:58:56.709 [main] INFO  - Browser selected: chrome
+08:58:59.627 [main] INFO  - ChromeDriver initialized.
+08:59:00.337 [main] INFO  - Navigated to URL: https://crmtest.doctorshealthfund.com.au/
+08:59:01.473 [main] INFO  - All cookies cleared before starting the test.
+08:59:01.535 [main] INFO  - Navigating to the login page.
+08:59:06.042 [main] INFO  - Clicked successfully on the Leads button.
+08:59:06.771 [main] INFO  - Clicked succesfully on the Create button.
+08:59:10.168 [main] INFO  - Dropdown opened successfully.
+08:59:12.890 [main] INFO  - Successfully selected the PR / Citizen checkbox.
+08:59:13.366 [main] INFO  - Generated and entered phone number: 0498369767
+09:20:53.729 [main] INFO  - Browser selected: chrome
+09:20:58.505 [main] INFO  - ChromeDriver initialized.
+09:21:00.768 [main] INFO  - Navigated to URL: https://crmtest.doctorshealthfund.com.au/
+09:21:00.776 [main] INFO  - All cookies cleared before starting the test.
+09:21:00.853 [main] INFO  - Navigating to the login page.
+09:21:05.903 [main] INFO  - Clicked successfully on the Leads button.
+09:21:06.629 [main] INFO  - Clicked succesfully on the Create button.
+09:21:09.365 [main] INFO  - Dropdown opened successfully.
+09:21:13.130 [main] INFO  - Successfully selected the PR / Citizen checkbox.
+09:21:13.478 [main] INFO  - Generated and entered phone number: 0498362118
+09:21:45.554 [main] INFO  - Browser selected: chrome
+09:21:48.354 [main] INFO  - ChromeDriver initialized.
+09:21:50.032 [main] INFO  - Navigated to URL: https://crmtest.doctorshealthfund.com.au/
+09:21:50.039 [main] INFO  - All cookies cleared before starting the test.
+09:21:50.100 [main] INFO  - Navigating to the login page.
+09:21:54.397 [main] INFO  - Clicked successfully on the Leads button.
+09:21:55.149 [main] INFO  - Clicked succesfully on the Create button.
+09:21:57.383 [main] INFO  - Dropdown opened successfully.
+09:22:00.454 [main] INFO  - Successfully selected the PR / Citizen checkbox.
+09:22:01.022 [main] INFO  - Generated and entered phone number: 0498363319
+09:23:24.609 [main] INFO  - Browser selected: chrome
+09:23:27.766 [main] INFO  - ChromeDriver initialized.
+09:23:29.352 [main] INFO  - Navigated to URL: https://crmtest.doctorshealthfund.com.au/
+09:23:29.368 [main] INFO  - All cookies cleared before starting the test.
+09:23:29.442 [main] INFO  - Navigating to the login page.
+09:23:34.441 [main] INFO  - Clicked successfully on the Leads button.
+09:23:36.750 [main] INFO  - Clicked succesfully on the Create button.
+09:23:39.363 [main] INFO  - Dropdown opened successfully.
+09:23:42.978 [main] INFO  - Successfully selected the PR / Citizen checkbox.
+09:23:43.479 [main] INFO  - Generated and entered phone number: 0498369808
+09:24:26.797 [main] INFO  - Browser selected: chrome
+09:24:29.850 [main] INFO  - ChromeDriver initialized.
+09:24:31.313 [main] INFO  - Navigated to URL: https://crmtest.doctorshealthfund.com.au/
+09:24:31.321 [main] INFO  - All cookies cleared before starting the test.
+09:24:31.395 [main] INFO  - Navigating to the login page.
+09:24:35.778 [main] INFO  - Clicked successfully on the Leads button.
+09:24:36.507 [main] INFO  - Clicked succesfully on the Create button.
+09:24:38.712 [main] INFO  - Dropdown opened successfully.
+09:24:42.339 [main] INFO  - Successfully selected the PR / Citizen checkbox.
+09:24:43.001 [main] INFO  - Generated and entered phone number: 0498361179
+09:25:26.281 [main] INFO  - Browser selected: chrome
+09:25:29.698 [main] INFO  - ChromeDriver initialized.
+09:25:31.530 [main] INFO  - Navigated to URL: https://crmtest.doctorshealthfund.com.au/
+09:25:31.545 [main] INFO  - All cookies cleared before starting the test.
+09:25:31.633 [main] INFO  - Navigating to the login page.
+09:25:36.536 [main] INFO  - Clicked successfully on the Leads button.
+09:25:37.534 [main] INFO  - Clicked succesfully on the Create button.
+09:25:40.423 [main] INFO  - Dropdown opened successfully.
+09:25:43.307 [main] INFO  - Successfully selected the PR / Citizen checkbox.
+09:25:43.710 [main] INFO  - Generated and entered phone number: 0498361282
+09:28:15.775 [main] INFO  - Browser selected: chrome
+09:28:19.776 [main] INFO  - ChromeDriver initialized.
+09:28:21.170 [main] INFO  - Navigated to URL: https://crmtest.doctorshealthfund.com.au/
+09:28:21.178 [main] INFO  - All cookies cleared before starting the test.
+09:28:21.231 [main] INFO  - Navigating to the login page.
+09:28:25.741 [main] INFO  - Clicked successfully on the Leads button.
+09:28:26.657 [main] INFO  - Clicked succesfully on the Create button.
+09:28:29.534 [main] INFO  - Dropdown opened successfully.
+09:28:32.922 [main] INFO  - Successfully selected the PR / Citizen checkbox.
+09:28:33.526 [main] INFO  - Generated and entered phone number: 0498361252
+09:43:16.411 [main] INFO  - Browser selected: chrome
+09:43:19.326 [main] INFO  - ChromeDriver initialized.
+09:43:21.240 [main] INFO  - Navigated to URL: https://crmtest.doctorshealthfund.com.au/
+09:43:21.248 [main] INFO  - All cookies cleared before starting the test.
+09:43:21.335 [main] INFO  - Navigating to the login page.
+09:43:25.706 [main] INFO  - Clicked successfully on the Leads button.
+09:43:26.482 [main] INFO  - Clicked succesfully on the Create button.
+09:43:28.584 [main] INFO  - Dropdown opened successfully.
+09:43:31.801 [main] INFO  - Successfully selected the PR / Citizen checkbox.
+09:43:32.297 [main] INFO  - Generated and entered phone number: 0498366257
+09:44:02.487 [main] INFO  - Browser selected: chrome
+09:44:05.270 [main] INFO  - ChromeDriver initialized.
+09:44:06.796 [main] INFO  - Navigated to URL: https://crmtest.doctorshealthfund.com.au/
+09:44:06.802 [main] INFO  - All cookies cleared before starting the test.
+09:44:06.865 [main] INFO  - Navigating to the login page.
+09:44:10.911 [main] INFO  - Clicked successfully on the Leads button.
+09:44:11.683 [main] INFO  - Clicked succesfully on the Create button.
+09:44:13.940 [main] INFO  - Dropdown opened successfully.
+09:44:16.753 [main] INFO  - Successfully selected the PR / Citizen checkbox.
+09:44:17.123 [main] INFO  - Generated and entered phone number: 0498368002
+09:44:50.367 [main] INFO  - Browser selected: chrome
+09:44:53.652 [main] INFO  - ChromeDriver initialized.
+09:44:56.568 [main] INFO  - Navigated to URL: https://crmtest.doctorshealthfund.com.au/
+09:44:56.576 [main] INFO  - All cookies cleared before starting the test.
+09:44:56.645 [main] INFO  - Navigating to the login page.
+09:45:02.564 [main] INFO  - Clicked successfully on the Leads button.
+09:45:03.623 [main] INFO  - Clicked succesfully on the Create button.
+09:45:06.266 [main] INFO  - Dropdown opened successfully.
+09:45:09.952 [main] INFO  - Successfully selected the PR / Citizen checkbox.
+09:45:10.535 [main] INFO  - Generated and entered phone number: 0498365016
+09:45:41.730 [main] INFO  - Browser selected: chrome
+09:45:44.682 [main] INFO  - ChromeDriver initialized.
+09:45:46.053 [main] INFO  - Navigated to URL: https://crmtest.doctorshealthfund.com.au/
+09:45:46.081 [main] INFO  - All cookies cleared before starting the test.
+09:45:46.155 [main] INFO  - Navigating to the login page.
+09:45:50.701 [main] INFO  - Clicked successfully on the Leads button.
+09:45:51.426 [main] INFO  - Clicked succesfully on the Create button.
+09:45:53.668 [main] INFO  - Dropdown opened successfully.
+09:45:56.825 [main] INFO  - Successfully selected the PR / Citizen checkbox.
+09:45:57.309 [main] INFO  - Generated and entered phone number: 0498363310
+09:46:33.076 [main] INFO  - Browser selected: chrome
+09:46:35.879 [main] INFO  - ChromeDriver initialized.
+09:46:37.485 [main] INFO  - Navigated to URL: https://crmtest.doctorshealthfund.com.au/
+09:46:37.501 [main] INFO  - All cookies cleared before starting the test.
+09:46:37.558 [main] INFO  - Navigating to the login page.
+09:46:42.108 [main] INFO  - Clicked successfully on the Leads button.
+09:46:42.891 [main] INFO  - Clicked succesfully on the Create button.
+09:46:45.108 [main] INFO  - Dropdown opened successfully.
+09:46:48.226 [main] INFO  - Successfully selected the PR / Citizen checkbox.
+09:46:48.663 [main] INFO  - Generated and entered phone number: 0498362674
+09:47:22.025 [main] INFO  - Browser selected: chrome
+09:47:24.792 [main] INFO  - ChromeDriver initialized.
+09:47:26.756 [main] INFO  - Navigated to URL: https://crmtest.doctorshealthfund.com.au/
+09:47:26.765 [main] INFO  - All cookies cleared before starting the test.
+09:47:26.828 [main] INFO  - Navigating to the login page.
+09:47:31.067 [main] INFO  - Clicked successfully on the Leads button.
+09:47:31.837 [main] INFO  - Clicked succesfully on the Create button.
+09:47:34.182 [main] INFO  - Dropdown opened successfully.
+09:47:37.452 [main] INFO  - Successfully selected the PR / Citizen checkbox.
+09:47:38.009 [main] INFO  - Generated and entered phone number: 0498365551
+09:48:11.433 [main] INFO  - Browser selected: chrome
+09:48:14.234 [main] INFO  - ChromeDriver initialized.
+09:48:15.877 [main] INFO  - Navigated to URL: https://crmtest.doctorshealthfund.com.au/
+09:48:15.884 [main] INFO  - All cookies cleared before starting the test.
+09:48:15.946 [main] INFO  - Navigating to the login page.
+09:48:20.404 [main] INFO  - Clicked successfully on the Leads button.
+09:48:21.196 [main] INFO  - Clicked succesfully on the Create button.
+09:48:23.503 [main] INFO  - Dropdown opened successfully.
+09:48:25.897 [main] INFO  - Successfully selected the PR / Citizen checkbox.
+09:48:26.276 [main] INFO  - Generated and entered phone number: 0498362617
+10:04:31.712 [main] INFO  - Browser selected: chrome
+10:04:34.723 [main] INFO  - ChromeDriver initialized.
+10:04:36.269 [main] INFO  - Navigated to URL: https://crmtest.doctorshealthfund.com.au/
+10:04:36.275 [main] INFO  - All cookies cleared before starting the test.
+10:04:36.374 [main] INFO  - Navigating to the login page.
+10:04:40.324 [main] INFO  - Clicked successfully on the Leads button.
+10:04:41.065 [main] INFO  - Clicked succesfully on the Create button.
+10:04:43.210 [main] INFO  - Dropdown opened successfully.
+10:04:45.575 [main] INFO  - Successfully selected the PR / Citizen checkbox.
+10:04:45.903 [main] INFO  - Generated and entered phone number: 0498367409
+10:13:10.401 [main] INFO  - Browser selected: chrome
+10:13:13.418 [main] INFO  - ChromeDriver initialized.
+10:13:14.693 [main] INFO  - Navigated to URL: https://crmtest.doctorshealthfund.com.au/
+10:13:14.829 [main] INFO  - All cookies cleared before starting the test.
+10:13:14.903 [main] INFO  - Navigating to the login page.
+10:13:18.892 [main] INFO  - Clicked successfully on the Leads button.
+10:13:19.592 [main] INFO  - Clicked succesfully on the Create button.
+10:13:21.958 [main] INFO  - Dropdown opened successfully.
+10:13:24.422 [main] INFO  - Successfully selected the PR / Citizen checkbox.
+10:13:24.729 [main] INFO  - Generated and entered phone number: 0498363741
+10:14:11.059 [main] INFO  - Browser selected: chrome
+10:14:13.733 [main] INFO  - ChromeDriver initialized.
+10:14:15.485 [main] INFO  - Navigated to URL: https://crmtest.doctorshealthfund.com.au/
+10:14:15.492 [main] INFO  - All cookies cleared before starting the test.
+10:14:15.549 [main] INFO  - Navigating to the login page.
+10:14:19.999 [main] INFO  - Clicked successfully on the Leads button.
+10:14:20.740 [main] INFO  - Clicked succesfully on the Create button.
+10:14:22.897 [main] INFO  - Dropdown opened successfully.
+10:14:25.294 [main] INFO  - Successfully selected the PR / Citizen checkbox.
+10:14:25.739 [main] INFO  - Generated and entered phone number: 0498366291
+10:15:00.955 [main] INFO  - Browser selected: chrome
+10:15:03.803 [main] INFO  - ChromeDriver initialized.
+10:15:05.410 [main] INFO  - Navigated to URL: https://crmtest.doctorshealthfund.com.au/
+10:15:05.451 [main] INFO  - All cookies cleared before starting the test.
+10:15:05.517 [main] INFO  - Navigating to the login page.
+10:15:10.310 [main] INFO  - Clicked successfully on the Leads button.
+10:15:11.233 [main] INFO  - Clicked succesfully on the Create button.
+10:15:13.401 [main] INFO  - Dropdown opened successfully.
+10:15:15.766 [main] INFO  - Successfully selected the PR / Citizen checkbox.
+10:15:16.125 [main] INFO  - Generated and entered phone number: 0498365555
+10:19:53.774 [main] INFO  - Browser selected: chrome
+10:19:57.221 [main] INFO  - ChromeDriver initialized.
+10:19:59.407 [main] INFO  - Navigated to URL: https://crmtest.doctorshealthfund.com.au/
+10:19:59.431 [main] INFO  - All cookies cleared before starting the test.
+10:19:59.508 [main] INFO  - Navigating to the login page.
+10:20:05.335 [main] INFO  - Clicked successfully on the Leads button.
+10:20:06.305 [main] INFO  - Clicked succesfully on the Create button.
+10:20:08.747 [main] INFO  - Dropdown opened successfully.
+10:20:11.025 [main] INFO  - Successfully selected the PR / Citizen checkbox.
+10:20:11.375 [main] INFO  - Generated and entered phone number: 0498361534
+10:52:36.267 [main] INFO  - Browser selected: chrome
+10:52:39.688 [main] INFO  - ChromeDriver initialized.
+10:52:41.295 [main] INFO  - Navigated to URL: https://crmtest.doctorshealthfund.com.au/
+10:52:41.304 [main] INFO  - All cookies cleared before starting the test.
+10:52:41.362 [main] INFO  - Navigating to the login page.
+10:52:45.518 [main] INFO  - Clicked successfully on the Leads button.
+10:52:46.255 [main] INFO  - Clicked succesfully on the Create button.
+10:52:48.400 [main] INFO  - Dropdown opened successfully.
+10:52:50.804 [main] INFO  - Successfully selected the PR / Citizen checkbox.
+10:52:51.131 [main] INFO  - Generated and entered phone number: 0498368833
+10:54:20.349 [main] INFO  - Browser selected: chrome
+10:54:23.791 [main] INFO  - ChromeDriver initialized.
+10:54:25.456 [main] INFO  - Navigated to URL: https://crmtest.doctorshealthfund.com.au/
+10:54:25.464 [main] INFO  - All cookies cleared before starting the test.
+10:54:25.527 [main] INFO  - Navigating to the login page.
+10:54:30.085 [main] INFO  - Clicked successfully on the Leads button.
+10:54:30.843 [main] INFO  - Clicked succesfully on the Create button.
+10:54:33.256 [main] INFO  - Dropdown opened successfully.
+10:54:35.604 [main] INFO  - Successfully selected the PR / Citizen checkbox.
+10:54:35.935 [main] INFO  - Generated and entered phone number: 0498361545
+10:59:31.579 [main] INFO  - Browser selected: chrome
+10:59:34.673 [main] INFO  - ChromeDriver initialized.
+10:59:36.332 [main] INFO  - Navigated to URL: https://crmtest.doctorshealthfund.com.au/
+10:59:36.348 [main] INFO  - All cookies cleared before starting the test.
+10:59:36.453 [main] INFO  - Navigating to the login page.
+10:59:41.620 [main] INFO  - Clicked successfully on the Leads button.
+10:59:42.730 [main] INFO  - Clicked succesfully on the Create button.
+10:59:46.169 [main] INFO  - Dropdown opened successfully.
+10:59:48.744 [main] INFO  - Successfully selected the PR / Citizen checkbox.
+10:59:49.084 [main] INFO  - Generated and entered phone number: 0498362299
+11:05:46.201 [main] INFO  - Browser selected: chrome
+11:05:49.153 [main] INFO  - ChromeDriver initialized.
+11:05:51.000 [main] INFO  - Navigated to URL: https://crmtest.doctorshealthfund.com.au/
+11:05:51.009 [main] INFO  - All cookies cleared before starting the test.
+11:05:51.087 [main] INFO  - Navigating to the login page.
+11:05:55.675 [main] INFO  - Clicked successfully on the Leads button.
+11:05:56.453 [main] INFO  - Clicked succesfully on the Create button.
+11:05:58.797 [main] INFO  - Dropdown opened successfully.
+11:06:01.844 [main] INFO  - Successfully selected the PR / Citizen checkbox.
+11:06:02.344 [main] INFO  - Generated and entered phone number: 0498363842
+11:09:36.309 [main] INFO  - Browser selected: chrome
+11:09:39.273 [main] INFO  - ChromeDriver initialized.
+11:09:39.927 [main] INFO  - Navigated to URL: https://crmtest.doctorshealthfund.com.au/
+11:09:41.069 [main] INFO  - All cookies cleared before starting the test.
+11:09:41.119 [main] INFO  - Navigating to the login page.
+11:09:45.696 [main] INFO  - Clicked successfully on the Leads button.
+11:09:46.477 [main] INFO  - Clicked succesfully on the Create button.
+11:09:48.767 [main] INFO  - Dropdown opened successfully.
+11:09:52.174 [main] INFO  - Successfully selected the PR / Citizen checkbox.
+11:09:52.956 [main] INFO  - Generated and entered phone number: 0498363061
+11:14:45.601 [main] INFO  - Browser selected: chrome
+11:14:49.616 [main] INFO  - ChromeDriver initialized.
+11:14:50.800 [main] INFO  - Navigated to URL: https://crmtest.doctorshealthfund.com.au/
+11:14:50.819 [main] INFO  - All cookies cleared before starting the test.
+11:14:50.899 [main] INFO  - Navigating to the login page.
+11:14:55.427 [main] INFO  - Clicked successfully on the Leads button.
+11:14:56.197 [main] INFO  - Clicked succesfully on the Create button.
+11:14:58.642 [main] INFO  - Dropdown opened successfully.
+11:15:02.427 [main] INFO  - Successfully selected the PR / Citizen checkbox.
+11:15:02.958 [main] INFO  - Generated and entered phone number: 0498363216
+11:21:20.328 [main] INFO  - Browser selected: chrome
+11:21:23.595 [main] INFO  - ChromeDriver initialized.
+11:21:25.191 [main] INFO  - Navigated to URL: https://crmtest.doctorshealthfund.com.au/
+11:21:25.235 [main] INFO  - All cookies cleared before starting the test.
+11:21:25.296 [main] INFO  - Navigating to the login page.
+11:21:29.338 [main] INFO  - Clicked successfully on the Leads button.
+11:21:30.174 [main] INFO  - Clicked succesfully on the Create button.
+11:21:32.403 [main] INFO  - Dropdown opened successfully.
+11:21:35.010 [main] INFO  - Successfully selected the PR / Citizen checkbox.
+11:21:35.455 [main] INFO  - Generated and entered phone number: 0498365146
+11:24:52.791 [main] INFO  - Browser selected: chrome
+11:24:55.921 [main] INFO  - ChromeDriver initialized.
+11:24:58.271 [main] INFO  - Navigated to URL: https://crmtest.doctorshealthfund.com.au/
+11:24:58.279 [main] INFO  - All cookies cleared before starting the test.
+11:24:58.339 [main] INFO  - Navigating to the login page.
+11:25:02.429 [main] INFO  - Clicked successfully on the Leads button.
+11:25:03.207 [main] INFO  - Clicked succesfully on the Create button.
+11:25:05.511 [main] INFO  - Dropdown opened successfully.
+11:25:07.908 [main] INFO  - Successfully selected the PR / Citizen checkbox.
+11:25:08.248 [main] INFO  - Generated and entered phone number: 0498368096
+11:27:56.284 [main] INFO  - Browser selected: chrome
+11:27:59.439 [main] INFO  - ChromeDriver initialized.
+11:28:01.092 [main] INFO  - Navigated to URL: https://crmtest.doctorshealthfund.com.au/
+11:28:01.101 [main] INFO  - All cookies cleared before starting the test.
+11:28:01.171 [main] INFO  - Navigating to the login page.
+11:28:07.001 [main] INFO  - Clicked successfully on the Leads button.
+11:28:07.804 [main] INFO  - Clicked succesfully on the Create button.
+11:28:10.629 [main] INFO  - Dropdown opened successfully.
+11:28:14.195 [main] INFO  - Successfully selected the PR / Citizen checkbox.
+11:28:14.771 [main] INFO  - Generated and entered phone number: 0498367650
+11:32:33.854 [main] INFO  - Browser selected: chrome
+11:32:36.869 [main] INFO  - ChromeDriver initialized.
+11:32:38.195 [main] INFO  - Navigated to URL: https://crmtest.doctorshealthfund.com.au/
+11:32:38.212 [main] INFO  - All cookies cleared before starting the test.
+11:32:38.287 [main] INFO  - Navigating to the login page.
+11:32:43.540 [main] INFO  - Clicked successfully on the Leads button.
+11:32:44.638 [main] INFO  - Clicked succesfully on the Create button.
+11:32:47.228 [main] INFO  - Dropdown opened successfully.
+11:32:51.174 [main] INFO  - Successfully selected the PR / Citizen checkbox.
+11:32:51.686 [main] INFO  - Generated and entered phone number: 0498366421
+11:34:45.313 [main] INFO  - Browser selected: chrome
+11:34:48.539 [main] INFO  - ChromeDriver initialized.
+11:34:50.140 [main] INFO  - Navigated to URL: https://crmtest.doctorshealthfund.com.au/
+11:34:50.187 [main] INFO  - All cookies cleared before starting the test.
+11:34:50.250 [main] INFO  - Navigating to the login page.
+11:34:55.040 [main] INFO  - Clicked successfully on the Leads button.
+11:34:56.087 [main] INFO  - Clicked succesfully on the Create button.
+11:34:58.923 [main] INFO  - Dropdown opened successfully.
+11:35:02.997 [main] INFO  - Successfully selected the PR / Citizen checkbox.
+11:35:03.447 [main] INFO  - Generated and entered phone number: 0498363897
+12:05:47.424 [main] INFO  - Browser selected: chrome
+12:05:50.939 [main] INFO  - ChromeDriver initialized.
+12:05:52.889 [main] INFO  - Navigated to URL: https://crmtest.doctorshealthfund.com.au/
+12:05:52.899 [main] INFO  - All cookies cleared before starting the test.
+12:05:52.964 [main] INFO  - Navigating to the login page.
+12:05:56.949 [main] INFO  - Clicked successfully on the Leads button.
+12:05:57.708 [main] INFO  - Clicked succesfully on the Create button.
+12:05:59.856 [main] INFO  - Dropdown opened successfully.
+12:06:02.457 [main] INFO  - Successfully selected the PR / Citizen checkbox.
+12:06:02.833 [main] INFO  - Generated and entered phone number: 0498367733
+12:09:55.874 [main] INFO  - Browser selected: chrome
+12:09:58.632 [main] INFO  - ChromeDriver initialized.
+12:10:00.194 [main] INFO  - Navigated to URL: https://crmtest.doctorshealthfund.com.au/
+12:10:00.201 [main] INFO  - All cookies cleared before starting the test.
+12:10:00.304 [main] INFO  - Navigating to the login page.
+12:10:04.809 [main] INFO  - Clicked successfully on the Leads button.
+12:10:05.586 [main] INFO  - Clicked succesfully on the Create button.
+12:10:07.873 [main] INFO  - Dropdown opened successfully.
+12:10:10.147 [main] INFO  - Successfully selected the PR / Citizen checkbox.
+12:10:10.486 [main] INFO  - Generated and entered phone number: 0498366475
+12:12:52.380 [main] INFO  - Browser selected: chrome
+12:12:55.093 [main] INFO  - ChromeDriver initialized.
+12:12:56.666 [main] INFO  - Navigated to URL: https://crmtest.doctorshealthfund.com.au/
+12:12:56.676 [main] INFO  - All cookies cleared before starting the test.
+12:12:56.848 [main] INFO  - Navigating to the login page.
+12:13:01.916 [main] INFO  - Clicked successfully on the Leads button.
+12:13:02.626 [main] INFO  - Clicked succesfully on the Create button.
+12:13:04.940 [main] INFO  - Dropdown opened successfully.
+12:13:08.620 [main] INFO  - Successfully selected the PR / Citizen checkbox.
+12:13:09.132 [main] INFO  - Generated and entered phone number: 0498366861
+12:16:48.194 [main] INFO  - Browser selected: chrome
+12:16:51.250 [main] INFO  - ChromeDriver initialized.
+12:16:52.764 [main] INFO  - Navigated to URL: https://crmtest.doctorshealthfund.com.au/
+12:16:52.772 [main] INFO  - All cookies cleared before starting the test.
+12:16:52.857 [main] INFO  - Navigating to the login page.
+12:16:57.486 [main] INFO  - Clicked successfully on the Leads button.
+12:16:58.287 [main] INFO  - Clicked succesfully on the Create button.
+12:17:00.903 [main] INFO  - Dropdown opened successfully.
+12:17:04.481 [main] INFO  - Successfully selected the PR / Citizen checkbox.
+12:17:05.018 [main] INFO  - Generated and entered phone number: 0498365255
+12:20:18.444 [main] INFO  - Browser selected: chrome
+12:20:22.025 [main] INFO  - ChromeDriver initialized.
+12:20:23.618 [main] INFO  - Navigated to URL: https://crmtest.doctorshealthfund.com.au/
+12:20:23.625 [main] INFO  - All cookies cleared before starting the test.
+12:20:23.690 [main] INFO  - Navigating to the login page.
+12:20:27.844 [main] INFO  - Clicked successfully on the Leads button.
+12:20:28.601 [main] INFO  - Clicked succesfully on the Create button.
+12:20:30.920 [main] INFO  - Dropdown opened successfully.
+12:20:33.416 [main] INFO  - Successfully selected the PR / Citizen checkbox.
+12:20:33.758 [main] INFO  - Generated and entered phone number: 0498362702
+12:24:50.934 [main] INFO  - Browser selected: chrome
+12:24:53.897 [main] INFO  - ChromeDriver initialized.
+12:24:54.652 [main] INFO  - Navigated to URL: https://crmtest.doctorshealthfund.com.au/
+12:24:55.690 [main] INFO  - All cookies cleared before starting the test.
+12:24:55.751 [main] INFO  - Navigating to the login page.
+12:24:59.820 [main] INFO  - Clicked successfully on the Leads button.
+12:25:00.704 [main] INFO  - Clicked succesfully on the Create button.
+12:25:02.879 [main] INFO  - Dropdown opened successfully.
+12:25:05.309 [main] INFO  - Successfully selected the PR / Citizen checkbox.
+12:25:05.664 [main] INFO  - Generated and entered phone number: 0498366157
+12:36:08.970 [main] INFO  - Browser selected: chrome
+12:36:12.584 [main] INFO  - ChromeDriver initialized.
+12:36:14.244 [main] INFO  - Navigated to URL: https://crmtest.doctorshealthfund.com.au/
+12:36:14.252 [main] INFO  - All cookies cleared before starting the test.
+12:36:14.343 [main] INFO  - Navigating to the login page.
+12:36:18.472 [main] INFO  - Clicked successfully on the Leads button.
+12:36:19.253 [main] INFO  - Clicked succesfully on the Create button.
+12:36:22.324 [main] INFO  - Dropdown opened successfully.
+12:36:25.954 [main] INFO  - Successfully selected the PR / Citizen checkbox.
+12:36:26.420 [main] INFO  - Generated and entered phone number: 0498369417
+12:40:22.382 [main] INFO  - Browser selected: chrome
+12:40:25.421 [main] INFO  - ChromeDriver initialized.
+12:40:26.962 [main] INFO  - Navigated to URL: https://crmtest.doctorshealthfund.com.au/
+12:40:26.986 [main] INFO  - All cookies cleared before starting the test.
+12:40:27.080 [main] INFO  - Navigating to the login page.
+12:40:31.807 [main] INFO  - Clicked successfully on the Leads button.
+12:40:32.545 [main] INFO  - Clicked succesfully on the Create button.
+12:40:34.807 [main] INFO  - Dropdown opened successfully.
+12:40:38.036 [main] INFO  - Successfully selected the PR / Citizen checkbox.
+12:40:38.684 [main] INFO  - Generated and entered phone number: 0498364609
+12:54:57.379 [main] INFO  - Browser selected: chrome
+12:55:00.575 [main] INFO  - ChromeDriver initialized.
+12:55:03.191 [main] INFO  - Navigated to URL: https://crmtest.doctorshealthfund.com.au/
+12:55:03.200 [main] INFO  - All cookies cleared before starting the test.
+12:55:03.260 [main] INFO  - Navigating to the login page.
+12:55:08.204 [main] INFO  - Clicked successfully on the Leads button.
+12:55:09.747 [main] INFO  - Clicked succesfully on the Create button.
+12:55:12.065 [main] INFO  - Dropdown opened successfully.
+12:55:15.328 [main] INFO  - Successfully selected the PR / Citizen checkbox.
+12:55:15.893 [main] INFO  - Generated and entered phone number: 0498366761
+12:59:00.975 [main] INFO  - Browser selected: chrome
+12:59:04.794 [main] INFO  - ChromeDriver initialized.
+12:59:06.362 [main] INFO  - Navigated to URL: https://crmtest.doctorshealthfund.com.au/
+12:59:06.370 [main] INFO  - All cookies cleared before starting the test.
+12:59:06.443 [main] INFO  - Navigating to the login page.
+12:59:10.757 [main] INFO  - Clicked successfully on the Leads button.
+12:59:11.600 [main] INFO  - Clicked succesfully on the Create button.
+12:59:13.989 [main] INFO  - Dropdown opened successfully.
+12:59:16.528 [main] INFO  - Successfully selected the PR / Citizen checkbox.
+12:59:16.996 [main] INFO  - Generated and entered phone number: 0498367904
+13:04:49.014 [main] INFO  - Browser selected: chrome
+13:04:52.177 [main] INFO  - ChromeDriver initialized.
+13:04:53.674 [main] INFO  - Navigated to URL: https://crmtest.doctorshealthfund.com.au/
+13:04:53.685 [main] INFO  - All cookies cleared before starting the test.
+13:04:53.750 [main] INFO  - Navigating to the login page.
+13:04:58.203 [main] INFO  - Clicked successfully on the Leads button.
+13:04:58.920 [main] INFO  - Clicked succesfully on the Create button.
+13:05:01.304 [main] INFO  - Dropdown opened successfully.
+13:05:04.549 [main] INFO  - Successfully selected the PR / Citizen checkbox.
+13:05:05.212 [main] INFO  - Generated and entered phone number: 0498362144
+15:09:44.114 [main] INFO  - Browser selected: chrome
+15:09:47.856 [main] INFO  - ChromeDriver initialized.
+15:09:49.401 [main] INFO  - Navigated to URL: https://crmtest.doctorshealthfund.com.au/
+15:09:49.410 [main] INFO  - All cookies cleared before starting the test.
+15:09:49.476 [main] INFO  - Navigating to the login page.
+15:09:54.584 [main] INFO  - Clicked successfully on the Leads button.
+15:09:55.318 [main] INFO  - Clicked succesfully on the Create button.
+15:09:57.608 [main] INFO  - Dropdown opened successfully.
+15:10:00.175 [main] INFO  - Successfully selected the PR / Citizen checkbox.
+15:10:00.581 [main] INFO  - Generated and entered phone number: 0498368430
+15:14:49.866 [main] INFO  - Browser selected: chrome
+15:14:52.693 [main] INFO  - ChromeDriver initialized.
+15:14:54.315 [main] INFO  - Navigated to URL: https://crmtest.doctorshealthfund.com.au/
+15:14:54.330 [main] INFO  - All cookies cleared before starting the test.
+15:14:54.394 [main] INFO  - Navigating to the login page.
+15:14:58.974 [main] INFO  - Clicked successfully on the Leads button.
+15:14:59.702 [main] INFO  - Clicked succesfully on the Create button.
+15:15:01.959 [main] INFO  - Dropdown opened successfully.
+15:15:05.135 [main] INFO  - Successfully selected the PR / Citizen checkbox.
+15:15:05.619 [main] INFO  - Generated and entered phone number: 0498364203
+15:16:35.559 [main] INFO  - Browser selected: chrome
+15:16:38.187 [main] INFO  - ChromeDriver initialized.
+15:16:40.219 [main] INFO  - Navigated to URL: https://crmtest.doctorshealthfund.com.au/
+15:16:40.243 [main] INFO  - All cookies cleared before starting the test.
+15:16:40.321 [main] INFO  - Navigating to the login page.
+15:16:44.672 [main] INFO  - Clicked successfully on the Leads button.
+15:16:45.392 [main] INFO  - Clicked succesfully on the Create button.
+15:16:47.607 [main] INFO  - Dropdown opened successfully.
+15:16:50.160 [main] INFO  - Successfully selected the PR / Citizen checkbox.
+15:16:50.497 [main] INFO  - Generated and entered phone number: 0498368973
+15:20:41.829 [main] INFO  - Browser selected: chrome
+15:20:44.893 [main] INFO  - ChromeDriver initialized.
+15:20:46.534 [main] INFO  - Navigated to URL: https://crmtest.doctorshealthfund.com.au/
+15:20:46.545 [main] INFO  - All cookies cleared before starting the test.
+15:20:46.614 [main] INFO  - Navigating to the login page.
+15:20:50.980 [main] INFO  - Clicked successfully on the Leads button.
+15:20:51.703 [main] INFO  - Clicked succesfully on the Create button.
+15:20:53.993 [main] INFO  - Dropdown opened successfully.
+15:20:56.988 [main] INFO  - Successfully selected the PR / Citizen checkbox.
+15:20:57.528 [main] INFO  - Generated and entered phone number: 0498368716
+15:31:08.911 [main] INFO  - Browser selected: chrome
+15:31:11.849 [main] INFO  - ChromeDriver initialized.
+15:31:13.711 [main] INFO  - Navigated to URL: https://crmtest.doctorshealthfund.com.au/
+15:31:13.719 [main] INFO  - All cookies cleared before starting the test.
+15:31:13.786 [main] INFO  - Navigating to the login page.
+15:31:18.652 [main] INFO  - Clicked successfully on the Leads button.
+15:31:19.410 [main] INFO  - Clicked succesfully on the Create button.
+15:31:21.591 [main] INFO  - Dropdown opened successfully.
+15:31:25.046 [main] INFO  - Successfully selected the PR / Citizen checkbox.
+15:31:25.579 [main] INFO  - Generated and entered phone number: 0498364666
+15:37:03.249 [main] INFO  - Browser selected: chrome
+15:37:06.065 [main] INFO  - ChromeDriver initialized.
+15:37:07.560 [main] INFO  - Navigated to URL: https://crmtest.doctorshealthfund.com.au/
+15:37:07.567 [main] INFO  - All cookies cleared before starting the test.
+15:37:07.617 [main] INFO  - Navigating to the login page.
+15:37:12.226 [main] INFO  - Clicked successfully on the Leads button.
+15:37:12.919 [main] INFO  - Clicked succesfully on the Create button.
+15:37:15.098 [main] INFO  - Dropdown opened successfully.
+15:37:18.065 [main] INFO  - Successfully selected the PR / Citizen checkbox.
+15:37:18.627 [main] INFO  - Generated and entered phone number: 0498369827
+15:56:41.909 [main] INFO  - Browser selected: chrome
+15:56:45.002 [main] INFO  - ChromeDriver initialized.
+15:56:46.324 [main] INFO  - Navigated to URL: https://crmtest.doctorshealthfund.com.au/
+15:56:46.333 [main] INFO  - All cookies cleared before starting the test.
+15:56:46.397 [main] INFO  - Navigating to the login page.
+15:56:50.763 [main] INFO  - Clicked successfully on the Leads button.
+15:56:51.602 [main] INFO  - Clicked succesfully on the Create button.
+15:56:54.295 [main] INFO  - Dropdown opened successfully.
+15:56:56.929 [main] INFO  - Successfully selected the PR / Citizen checkbox.
+15:56:57.301 [main] INFO  - Generated and entered phone number: 0498361908
+16:00:36.306 [main] INFO  - Browser selected: chrome
+16:00:38.953 [main] INFO  - ChromeDriver initialized.
+16:00:45.138 [main] INFO  - Navigated to URL: https://uat.doctorshealthfund.com.au/
+16:00:45.480 [main] INFO  - All cookies cleared before starting the test.
+16:00:45.533 [main] INFO  - Navigating to the quote page.
+16:00:45.569 [main] INFO  - Page title: Private Health Insurance for Doctors | Doctors' Health Fund
+16:00:45.580 [main] INFO  - Clicking the 'Get Quote' button.
+16:00:45.580 [main] INFO  - Attempting to click the 'Get Quote' button...
+16:00:45.827 [main] INFO  - 'Get Quote' button clicked successfully.
+16:00:45.827 [main] INFO  - 'Get Quote' button clicked successfully.
+16:00:45.832 [main] INFO  - Selecting cover type: Single...
+16:00:47.035 [main] INFO  - Cover type 'Single' selected successfully.
+16:00:47.036 [main] INFO  - Clicking the 'Next' button...
+16:00:47.185 [main] INFO  - 'Next' button clicked successfully.
+16:00:47.187 [main] INFO  - Selecting residence: NSW...
+16:00:47.372 [main] INFO  - Residence 'NSW' selected successfully.
+16:00:47.375 [main] INFO  - Clicking the 'Next' button...
+16:00:47.518 [main] INFO  - 'Next' button clicked successfully.
+16:00:47.521 [main] INFO  - Entering day of birth: 01...
+16:00:47.663 [main] INFO  - Day of birth entered successfully.
+16:00:47.664 [main] INFO  - Entering month of birth: 01...
+16:00:47.771 [main] INFO  - Month of birth entered successfully.
+16:00:47.771 [main] INFO  - Entering year of birth: 1987...
+16:00:47.890 [main] INFO  - Year of birth entered successfully.
+16:00:47.892 [main] INFO  - Clicking the 'Next' button...
+16:00:48.025 [main] INFO  - 'Next' button clicked successfully.
+16:00:48.027 [main] INFO  - Selecting annual income: Below $97k...
+16:00:48.163 [main] INFO  - Annual income 'Below $97k' selected successfully.
+16:00:48.167 [main] INFO  - Clicking 'Calculate Cover' button...
+16:00:48.752 [main] INFO  - 'Calculate Cover' button clicked successfully.
+16:00:48.781 [main] INFO  - Selecting hospital cover: Top Cover...
+16:00:50.666 [main] INFO  - Selected the Extras Cover: Total Extras
+16:00:50.876 [main] INFO  - Clicked on the Apply Now button for the selected plan.
+16:00:50.891 [main] INFO  - Attempting to select 'No' for member status.
+16:00:51.211 [main] INFO  - 'No' radio button for member status selected successfully.
+16:00:51.214 [main] INFO  - Attempting to select 'Yes' for Australian citizenship status.
+16:00:51.394 [main] INFO  - 'Yes' radio button for citizenship status selected successfully.
+16:00:51.405 [main] INFO  - Attempting to click the 'Medical Practitioner' button.
+16:00:51.589 [main] INFO  - 'Medical Practitioner' button clicked successfully.
+16:00:51.593 [main] INFO  - Attempting to select the radio button for: Resident
+16:00:51.699 [main] INFO  - Radio button for 'Resident' selected successfully.
+16:00:51.727 [main] INFO  - Attempting to select Avant member option: No
+16:00:51.856 [main] INFO  - Avant member option 'No' selected successfully.
+16:00:55.073 [main] INFO  - Clicked on Continue button
+16:00:56.099 [main] INFO  - Attempting to select Avant member option: Yes
+16:00:56.214 [main] INFO  - Avant member option 'Yes' selected successfully.
+16:00:56.223 [main] INFO  - Attempting to select Avant member option: No
+16:00:56.349 [main] INFO  - Avant member option 'No' selected successfully.
+16:00:59.692 [main] INFO  - Clicked on Continue button
+16:01:00.698 [main] INFO  - Selecting option for transferring from another fund: No
+16:01:00.860 [main] INFO  - 'No' selected for transferring from another fund.
+16:01:00.861 [main] INFO  - Attempting to accept alert/modal.
+16:01:01.386 [main] INFO  - Alert/modal accepted successfully.
+16:01:01.406 [main] INFO  - Attempting to click the 'Next' button.
+16:01:28.046 [main] INFO  - Browser selected: chrome
+16:01:30.390 [main] INFO  - ChromeDriver initialized.
+16:01:33.430 [main] INFO  - Navigated to URL: https://uat.doctorshealthfund.com.au/
+16:01:33.744 [main] INFO  - All cookies cleared before starting the test.
+16:01:33.815 [main] INFO  - Navigating to the quote page.
+16:01:33.842 [main] INFO  - Page title: Private Health Insurance for Doctors | Doctors' Health Fund
+16:01:33.848 [main] INFO  - Clicking the 'Get Quote' button.
+16:01:33.848 [main] INFO  - Attempting to click the 'Get Quote' button...
+16:01:34.112 [main] INFO  - 'Get Quote' button clicked successfully.
+16:01:34.112 [main] INFO  - 'Get Quote' button clicked successfully.
+16:01:34.116 [main] INFO  - Selecting cover type: Single...
+16:01:35.533 [main] INFO  - Cover type 'Single' selected successfully.
+16:01:35.535 [main] INFO  - Clicking the 'Next' button...
+16:01:35.670 [main] INFO  - 'Next' button clicked successfully.
+16:01:35.672 [main] INFO  - Selecting residence: NSW...
+16:01:35.809 [main] INFO  - Residence 'NSW' selected successfully.
+16:01:35.810 [main] INFO  - Clicking the 'Next' button...
+16:01:35.962 [main] INFO  - 'Next' button clicked successfully.
+16:01:35.965 [main] INFO  - Entering day of birth: 01...
+16:01:36.099 [main] INFO  - Day of birth entered successfully.
+16:01:36.100 [main] INFO  - Entering month of birth: 01...
+16:01:36.211 [main] INFO  - Month of birth entered successfully.
+16:01:36.211 [main] INFO  - Entering year of birth: 1987...
+16:01:36.340 [main] INFO  - Year of birth entered successfully.
+16:01:36.341 [main] INFO  - Clicking the 'Next' button...
+16:01:36.496 [main] INFO  - 'Next' button clicked successfully.
+16:01:36.499 [main] INFO  - Selecting annual income: Below $97k...
+16:01:36.627 [main] INFO  - Annual income 'Below $97k' selected successfully.
+16:01:36.629 [main] INFO  - Clicking 'Calculate Cover' button...
+16:01:37.190 [main] INFO  - 'Calculate Cover' button clicked successfully.
+16:01:37.216 [main] INFO  - Selecting hospital cover: Top Cover...
+16:01:39.699 [main] INFO  - Selected the Extras Cover: Total Extras
+16:01:39.995 [main] INFO  - Clicked on the Apply Now button for the selected plan.
+16:01:40.016 [main] INFO  - Attempting to select 'No' for member status.
+16:01:40.439 [main] INFO  - 'No' radio button for member status selected successfully.
+16:01:40.441 [main] INFO  - Attempting to select 'Yes' for Australian citizenship status.
+16:01:40.659 [main] INFO  - 'Yes' radio button for citizenship status selected successfully.
+16:01:40.680 [main] INFO  - Attempting to click the 'Medical Practitioner' button.
+16:01:40.871 [main] INFO  - 'Medical Practitioner' button clicked successfully.
+16:01:40.876 [main] INFO  - Attempting to select the radio button for: Resident
+16:01:41.040 [main] INFO  - Radio button for 'Resident' selected successfully.
+16:01:41.060 [main] INFO  - Attempting to select Avant member option: No
+16:01:41.222 [main] INFO  - Avant member option 'No' selected successfully.
+16:01:44.506 [main] INFO  - Clicked on Continue button
+16:01:45.546 [main] INFO  - Attempting to select Avant member option: Yes
+16:01:45.772 [main] INFO  - Avant member option 'Yes' selected successfully.
+16:01:45.788 [main] INFO  - Attempting to select Avant member option: No
+16:01:45.936 [main] INFO  - Avant member option 'No' selected successfully.
+16:01:49.225 [main] INFO  - Clicked on Continue button
+16:01:50.235 [main] INFO  - Selecting option for transferring from another fund: No
+16:01:50.352 [main] INFO  - 'No' selected for transferring from another fund.
+16:01:50.352 [main] INFO  - Attempting to accept alert/modal.
+16:01:50.950 [main] INFO  - Alert/modal accepted successfully.
+16:01:50.966 [main] INFO  - Attempting to click the 'Next' button.
+16:01:51.131 [main] INFO  - 'Next' button clicked successfully.
+16:01:51.147 [main] INFO  - Selecting title from dropdown: Mr
+16:01:51.533 [main] INFO  - Selected 'Mr' from dropdown.
+16:01:51.696 [main] INFO  - Entered First Name: Chris
+16:01:51.937 [main] INFO  - Entered Middle Name: Lou
+16:01:52.116 [main] INFO  - Entered Last Name: Anderson
+16:01:52.116 [main] INFO  - Entered random full name: Chris Lou Anderson
+16:01:52.221 [main] INFO  - Selected Male radio button
+16:01:52.271 [main] INFO  - Attempting to click the 'Next' button.
+16:01:52.495 [main] INFO  - 'Next' button clicked successfully.
+16:01:52.771 [main] INFO  - Entered random email: dhf.testing+164@gmail.com
+16:01:52.937 [main] INFO  - Entered random phone number: 0498363303
+16:01:52.937 [main] INFO  - Phone number format validation passed: 0498363303
+16:01:53.256 [main] INFO  - Entered address input: 123 A'
+16:01:54.291 [main] INFO  - Selected address input: 123 A'
+16:01:56.512 [main] INFO  - Clicked on Continue button
+16:01:57.719 [main] INFO  - Selecting Medicare eligibility option: Yes
+16:01:57.826 [main] INFO  - Selected 'Yes' for Medicare eligibility.
+16:01:57.828 [main] INFO  - Selecting the green card option...
+16:01:57.978 [main] INFO  - Green card image is successfully displayed!
+16:01:57.979 [main] INFO  - Selecting the blue card option...
+16:01:58.117 [main] INFO  - Blue card image is successfully displayed!
+16:01:58.118 [main] INFO  - Entering card number: 2298233698
+16:01:58.338 [main] INFO  - Card number entered successfully.
+16:01:58.341 [main] INFO  - Entering card reference number: 3
+16:01:58.495 [main] INFO  - Card reference number entered successfully.
+16:01:58.498 [main] INFO  - Entering validity details: Day = 2, Month = 12, Year = 2028
+16:01:58.620 [main] INFO  - Day entered successfully: 2
+16:01:58.802 [main] INFO  - Month entered successfully: 12
+16:01:58.955 [main] INFO  - Year entered successfully: 2028
+16:01:58.957 [main] INFO  - Selecting rebate option: Yes
+16:01:59.091 [main] INFO  - Selected 'Yes' for rebate option.
+16:01:59.099 [main] INFO  - Selecting policy coverage option: Yes
+16:01:59.264 [main] INFO  - Selected 'Yes' for policy coverage.
+16:02:02.286 [main] INFO  - Toggling checkbox to select state.
+16:02:02.408 [main] INFO  - Checkbox selected successfully.
+16:02:02.428 [main] INFO  - Clicking the Continue button.
+16:02:04.638 [main] INFO  - Continue button clicked successfully.
+16:02:07.887 [main] INFO  - Attempting to select radio button for choice: No
+16:02:07.981 [main] INFO  - Selected 'No' radio button.
+16:02:07.984 [main] INFO  - Selecting Avant Group Member option: No
+16:02:08.101 [main] INFO  - Selected 'No' radio button for Avant Group Member.
+16:02:08.103 [main] INFO  - Attempting to select 'How did you hear about us' option: Internet Search
+16:02:08.312 [main] INFO  - Selected option: Internet Search
+16:02:08.345 [main] INFO  - Selecting 'Check In' option: No
+16:02:08.478 [main] INFO  - Selected 'No' radio button for 'Check In'.
+16:02:08.493 [main] INFO  - Setting 'Terms and Conditions' checkbox to: true
+16:02:08.646 [main] INFO  - 'Terms and Conditions' checkbox selected.
+16:02:08.648 [main] INFO  - Setting 'Agree Using Personal Information' checkbox to: true
+16:02:08.797 [main] INFO  - 'Agree Using Personal Information' checkbox selected.
+16:02:08.800 [main] INFO  - Setting 'AHSA Privacy Policy' checkbox to: true
+16:02:08.928 [main] INFO  - 'AHSA Privacy Policy' checkbox selected.
+16:02:08.930 [main] INFO  - Setting 'Confirm Application is True' checkbox to: true
+16:02:09.060 [main] INFO  - 'Confirm Application is True' checkbox selected.
+16:02:10.091 [main] INFO  - Attempting to click 'Continue' button.
+16:02:12.264 [main] INFO  - 'Continue' button clicked.
+16:02:13.275 [main] INFO  - Setting 'Confirm Application is True' checkbox to: true
+16:02:13.407 [main] INFO  - 'Confirm Application is True' checkbox selected.
+16:02:13.408 [main] INFO  - Setting 'Confirm Application is True' checkbox to: true
+16:02:13.514 [main] INFO  - 'Confirm Application is True' checkbox selected.
+16:02:14.526 [main] INFO  - Attempting to click 'Continue' button.
+16:02:16.737 [main] INFO  - 'Continue' button clicked.
+16:02:17.742 [main] INFO  - Entering BSB number: 032-059
+16:02:17.859 [main] INFO  - BSB number entered successfully.
+16:02:17.860 [main] INFO  - Entering account number: 85668757
+16:02:18.022 [main] INFO  - Account number entered successfully.
+16:02:18.028 [main] INFO  - Generating a random Australian account name.
+16:02:18.029 [main] INFO  - Generated account name: Charlie Moore
+16:02:18.203 [main] INFO  - Random account name entered successfully.
+16:02:18.224 [main] INFO  - Clicking the direct debit checkbox.
+16:02:18.314 [main] INFO  - Direct debit checkbox clicked successfully.
+16:02:19.323 [main] INFO  - Clicking the submit form button.
+16:02:20.141 [main] INFO  - Submit form button clicked successfully.
+16:02:20.142 [main] INFO  - Double-clicking the checkbox: 'How would you like us to pay any claim benefits back to you?'.
+16:02:20.225 [main] INFO  - First click on the checkbox completed.
+16:02:21.299 [main] INFO  - Second click on the checkbox completed. Checkbox toggled successfully.
+16:02:22.311 [main] INFO  - Clicking the submit form button.
+16:02:23.129 [main] INFO  - Submit form button clicked successfully.
+16:03:14.349 [main] INFO  - Browser selected: chrome
+16:03:16.845 [main] INFO  - ChromeDriver initialized.
+16:03:19.765 [main] INFO  - Navigated to URL: https://uat.doctorshealthfund.com.au/
+16:03:20.096 [main] INFO  - All cookies cleared before starting the test.
+16:03:20.147 [main] INFO  - Navigating to the quote page.
+16:03:20.218 [main] INFO  - Page title: Private Health Insurance for Doctors | Doctors' Health Fund

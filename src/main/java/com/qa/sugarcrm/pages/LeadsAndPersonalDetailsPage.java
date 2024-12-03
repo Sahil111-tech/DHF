@@ -5,14 +5,17 @@ import java.time.LocalDate;
 import java.time.format.DateTimeFormatter;
 import java.time.format.DateTimeParseException;
 import java.time.temporal.TemporalAdjusters;
+import java.util.HashSet;
 import java.util.List;
 import java.util.Random;
+import java.util.Set;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.ElementClickInterceptedException;
 import org.openqa.selenium.Keys;
 import org.openqa.selenium.NoSuchElementException;
 import org.openqa.selenium.StaleElementReferenceException;
+import org.openqa.selenium.TimeoutException;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Actions;
@@ -156,17 +159,28 @@ public class LeadsAndPersonalDetailsPage extends BaseTest {
 	// Eligibility details button
 	@FindBy(xpath = "//span[@data-fieldname='eligilibilty_detail_c']")
 	private WebElement eligibilityDetailsButton;
-	
-	//Locate the element where I have to send the fullname stored in another variable
+
+	// Locate the element where I have to send the fullname stored in another
+	// variable
 	@FindBy(xpath = "//input[@placeholder='Search by first name, last name...']")
-    private WebElement searchUserInputBox;
-	
-	
-	//Locate the element where I have to send the fullname stored in another variable
-		@FindBy(xpath = "(//a[contains(@class, 'ellipsis_inline') and @data-module='Leads'])[1]")
-	    private WebElement clickSearchedUser;
-		
-	
+	private WebElement searchUserInputBox;
+
+	// Locate the element where I have to send the fullname stored in another
+	// variable
+	@FindBy(xpath = "(//a[contains(@class, 'ellipsis_inline') and @data-module='Leads'])[1]")
+	private WebElement clickSearchedUser;
+
+	@FindBy(xpath = "//div[@class='btn-toolbar pull-right']//a[@track='click:duplicate_button']")
+	private WebElement clickIgnoreDuplicateAndSaveButton;
+
+	@FindBy(xpath = "//strong[starts-with(text(),'Warning:')]")
+	private WebElement warningPopup;
+
+	@FindBy(xpath = "//a[text()='Confirm']")
+	private WebElement clickConfirmButton;
+
+	@FindBy(xpath = "//div[@class='row-fluid flex justify-end']//a[@data-action='confirm']")
+	private WebElement duplicateLeadPopupConfirmButton;
 
 	/*** Actions Method ****/
 
@@ -195,41 +209,39 @@ public class LeadsAndPersonalDetailsPage extends BaseTest {
 	}
 
 	public void selectSalutation(String salutation) {
-	    // Click on the dropdown button to open options
-	    salutationDropdownButton.click();
+		// Click on the dropdown button to open options
+		salutationDropdownButton.click();
 
-	    // Wait for options to load
-	    WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
-	    wait.until(ExpectedConditions.visibilityOfAllElements(salutationDropdownOptions));
+		// Wait for options to load
+		WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
+		wait.until(ExpectedConditions.visibilityOfAllElements(salutationDropdownOptions));
 
-	    // Iterate through the options and select the desired one
-	    for (WebElement option : salutationDropdownOptions) {
-	        if (option.getText().equalsIgnoreCase(salutation)) {
-	            option.click();
-	            Salutation = salutation; // Store the selected salutation
-	            System.out.println("Selected salutation: " + Salutation);
-	            break;
-	        }
-	    }
+		// Iterate through the options and select the desired one
+		for (WebElement option : salutationDropdownOptions) {
+			if (option.getText().equalsIgnoreCase(salutation)) {
+				option.click();
+				Salutation = salutation; // Store the selected salutation
+				System.out.println("Selected salutation: " + Salutation);
+				break;
+			}
+		}
 	}
 
 	// Action method to generate and enter a random full name
 	public void enterRandomFullName(WebDriver driver) {
-	    fullName = generateRandomFullName(); // Generate the full name
+		fullName = generateRandomFullName();
+		// Generate the full name
 		String[] nameParts = fullName.split(" "); // Split into first, middle, last
 
-		// Enter the First Name
-		waitVisibilityElement(firstNameField);
+		// Enter the First Name waitVisibilityElement(firstNameField);
 		firstNameField.clear();
 		firstNameField.sendKeys(nameParts[0]);
 
-		// Enter the Middle Name
-		waitVisibilityElement(middleNameField);
+		// Enter the Middle Name waitVisibilityElement(middleNameField);
 		middleNameField.clear();
 		middleNameField.sendKeys(nameParts[1]);
 
-		// Enter the Last Name
-		waitVisibilityElement(lastNameField);
+		// Enter the Last Name waitVisibilityElement(lastNameField);
 		lastNameField.clear();
 		lastNameField.sendKeys(nameParts[2]);
 
@@ -238,21 +250,51 @@ public class LeadsAndPersonalDetailsPage extends BaseTest {
 	}
 
 	// Helper method to generate a random full name
-	public String generateRandomFullName() {
-		String[] firstNames = { "Ethan", "Emma", "Mason", "Olivia", "Lucas", "Mia", "Aiden", "Amelia", "Jackson", "Aria" };
-	    String[] middleNames = { "Grace", "Michael", "Alexander", "Riley", "Thomas", "Zoe", "Joseph", "Sophia", "Henry", "Scarlett" };
-	    String[] lastNames = { "Anderson", "Clark", "Harris", "Lewis", "Martin", "Young", "Allen", "King", "Scott", "Adams" };
+	public String generateRandomFullName() { // Static arrays for names
+		String[] firstNames = { "Ethan", "Emma", "Mason", "Olivia", "Lucas", "Mia", "Aiden", "Amelia", "Jackson",
+				"Aria" };
+		String[] middleNames = { "Grace", "Michael", "Alexander", "Riley", "Thomas", "Zoe", "Joseph", "Sophia", "Henry",
+				"Scarlett" };
+		String[] lastNames = { "Anderson", "Clark", "Harris", "Lewis", "Martin", "Young", "Allen", "King", "Scott",
+				"Adams" };
+
+		// Set to ensure uniqueness
+		Set<String> generatedNames = new HashSet<>();
+
+		// Random generator
 		Random random = new Random();
-		firstName = firstNames[random.nextInt(firstNames.length)];
-		middleName = middleNames[random.nextInt(middleNames.length)];
-		lastName = lastNames[random.nextInt(lastNames.length)];
 
-		//String uniqueSuffix = String.valueOf(System.currentTimeMillis() % 1000);
-		String uniqueSuffix = System.currentTimeMillis() % 1000 + "_" + random.nextInt(100);
-		lastName += uniqueSuffix;
+		String fullName;
 
-		return firstName + " " + middleName + " " + lastName;
+		do { // Pick random names
+			String firstName = firstNames[random.nextInt(firstNames.length)];
+			String middleName = middleNames[random.nextInt(middleNames.length)];
+			String lastName = lastNames[random.nextInt(lastNames.length)];
+
+			// Combine to form the full name
+			fullName = firstName + " " + middleName + " " + lastName;
+
+		} while (generatedNames.contains(fullName)); // Ensure uniqueness
+
+		// Add to the set to track it
+		generatedNames.add(fullName);
+
+		return fullName;
 	}
+
+	/*
+	 * // Method to enter names public void enterNames(String firstName, String
+	 * middleName, String lastName) { // Enter first name firstNameField.clear();
+	 * firstNameField.sendKeys(firstName); System.out.println("First name entered: "
+	 * + firstName);
+	 * 
+	 * // Enter middle name middleNameField.clear();
+	 * middleNameField.sendKeys(middleName);
+	 * System.out.println("Middle name entered: " + middleName);
+	 * 
+	 * // Enter last name lastNameField.clear(); lastNameField.sendKeys(lastName);
+	 * System.out.println("Last name entered: " + lastName); }
+	 */
 
 	// Action method to select a value from the "Brand" dropdown
 	public void selectValueFromBrandDropdown(String valueToSelect) {
@@ -362,27 +404,27 @@ public class LeadsAndPersonalDetailsPage extends BaseTest {
 	}
 
 	public void selectValueFromLeadTypeDropdown(int stepsToTraverse) {
-	/*
-	 * // Step 1: Click the "Lead Type" dropdown button
-	 * waitVisibilityElement(leadTypeDropdownButton);
-	 * leadTypeDropdownButton.click();
-	 * System.out.println("Lead Type dropdown opened successfully.");
-	 * 
-	 * // Step 2: Wait for the dropdown options to be visible
-	 * waitVisibilityElement(leadTypeDropdownOptions.get(0));
-	 * 
-	 * // Step 3: Iterate through the dropdown options to find and select the
-	 * matching // value boolean valueFound = false; for (WebElement option :
-	 * leadTypeDropdownOptions) { String optionText = option.getText().trim(); if
-	 * (optionText.equalsIgnoreCase(valueToSelect)) { option.click(); // Select the
-	 * matching value valueFound = true;
-	 * System.out.println("Selected Lead Type value: " + optionText); break; } }
-	 * 
-	 * // Step 4: Handle case when the value is not found if (!valueFound) { throw
-	 * new RuntimeException("Value '" + valueToSelect +
-	 * "' not found in the Lead Type dropdown."); } }
-	 */
-		
+		/*
+		 * // Step 1: Click the "Lead Type" dropdown button
+		 * waitVisibilityElement(leadTypeDropdownButton);
+		 * leadTypeDropdownButton.click();
+		 * System.out.println("Lead Type dropdown opened successfully.");
+		 * 
+		 * // Step 2: Wait for the dropdown options to be visible
+		 * waitVisibilityElement(leadTypeDropdownOptions.get(0));
+		 * 
+		 * // Step 3: Iterate through the dropdown options to find and select the
+		 * matching // value boolean valueFound = false; for (WebElement option :
+		 * leadTypeDropdownOptions) { String optionText = option.getText().trim(); if
+		 * (optionText.equalsIgnoreCase(valueToSelect)) { option.click(); // Select the
+		 * matching value valueFound = true;
+		 * System.out.println("Selected Lead Type value: " + optionText); break; } }
+		 * 
+		 * // Step 4: Handle case when the value is not found if (!valueFound) { throw
+		 * new RuntimeException("Value '" + valueToSelect +
+		 * "' not found in the Lead Type dropdown."); } }
+		 */
+
 		// Wait for the input box to be visible
 		waitVisibilityElement(leadTypeDropdownButton);
 		leadTypeDropdownButton.click();
@@ -490,7 +532,6 @@ public class LeadsAndPersonalDetailsPage extends BaseTest {
 		agentLeadScoreDropdownButton.click();
 		System.out.println("Agent Lead Score dropdown opened successfully.");
 
-		
 		boolean valueFound = false;
 		for (WebElement option : agentLeadScoreDropdownOptions) {
 			String optionText = option.getText().trim();
@@ -565,52 +606,93 @@ public class LeadsAndPersonalDetailsPage extends BaseTest {
 		log.info("Selected 'DHF Sales Specialist' from the dropdown.");
 	}
 
-	
-
-	// Method to click on the Edit button with retry logic
 	public void clickSaveButton() {
-		int attempts = 0;
-		while (attempts < 3) { // Retry up to 3 times
+		int attempts = 0; // Retry up to 3 times
+
+		while (attempts < 3) {
 			try {
-				// Wait for the Save button to be visible
+				// Wait for the Save button to be visible and clickable
 				waitForVisibility(saveButton, driver);
-				// Wait for the Save button to be clickable
 				waitForElementToBeClickable(driver, saveButton);
-				// Attempt to click the Edit button
 				saveButton.click();
 				System.out.println("Save button clicked successfully.");
-				return; // Exit the method if the click is successful
+
+				// Temporarily set implicit wait to zero to handle specific elements
+				driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(0));
+
+				// Create WebDriverWait to use for subsequent element interactions
+				WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(5)); // Adjust timeout if needed
+
+				// Handle the "Confirm" button if the popup appears
+				try {
+					wait.until(ExpectedConditions.elementToBeClickable(clickConfirmButton));
+					clickConfirmButton.click();
+					System.out.println("'Confirm' button clicked directly.");
+				} catch (TimeoutException e) {
+					System.out.println("Confirm button not present. Moving to the next step.");
+				}
+
+				// Handle the "Ignore Duplicate and Save" button if it appears directly
+				try {
+					wait.until(ExpectedConditions.elementToBeClickable(clickIgnoreDuplicateAndSaveButton));
+					clickIgnoreDuplicateAndSaveButton.click();
+					System.out.println("'Ignore Duplicate and Save' button clicked directly.");
+				} catch (TimeoutException e) {
+					System.out.println("'Ignore Duplicate and Save' button not present.");
+				}
+
+				// Handle the "Duplicate Lead Confirm" button if it appears
+				try {
+					wait.until(ExpectedConditions.elementToBeClickable(duplicateLeadPopupConfirmButton));
+					duplicateLeadPopupConfirmButton.click();
+					System.out.println("'Duplicate Lead Confirm' button clicked directly.");
+				} catch (TimeoutException e) {
+					System.out.println("Duplicate Lead Confirm button not present.");
+				}
+
+				// Exit after handling the save action
+				return;
+
 			} catch (ElementClickInterceptedException e) {
 				System.out.println("Attempt " + (attempts + 1) + ": Save button click intercepted. Retrying...");
-				// Wait for a short duration before retrying
+				attempts++;
 				try {
-					Thread.sleep(1000); // Sleep for 1 second
+					Thread.sleep(1500); // Sleep for 1.5 seconds before retrying
 				} catch (InterruptedException ie) {
-					Thread.currentThread().interrupt(); // Restore interrupted state
+					Thread.currentThread().interrupt();
 					throw new RuntimeException("Thread interrupted during retry wait", ie);
 				}
-				attempts++;
+
+			} catch (Exception e) {
+				// Catch any other exceptions and log them
+				System.out.println("Unexpected error: " + e.getMessage());
+				break; // Exit the loop if an unexpected error occurs
+			} finally {
+				// Always restore the original implicit wait after handling popups
+				driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
 			}
 		}
-		// If all retries fail, throw an exception
-		throw new RuntimeException("Failed to click the Edit button after 3 attempts.");
+
+		// If we exhaust all attempts and the save button is still not clicked, throw an
+		// exception
+		throw new RuntimeException("Failed to click the Save button after 3 attempts.");
 	}
-	
+
 	// Method to type the first name into the input box
-    public void searchByFullName() throws InterruptedException {
-        // Access the firstName from UserPage class
-        //String FullName = .firstName;
-        
-        // Ensure the input box is visible before interacting with it
-    	PageFactory.initElements(driver, this);
-        searchUserInputBox.clear();
-        waitForVisibility(searchUserInputBox, driver);
-        //searchUserInputBox.sendKeys(Salutation+ " " +fullName);
-        searchUserInputBox.sendKeys(firstName+ " " +lastName);
-       // System.out.println("Searched using full name: " + fullName);
-        Thread.sleep(3000);
-        clickSearchedUser.click();
-    }
+	public void searchByFullName() throws InterruptedException {
+		// Access the firstName from UserPage class
+		// String FullName = .firstName;
+
+		// Ensure the input box is visible before interacting with it
+		PageFactory.initElements(driver, this);
+		searchUserInputBox.clear();
+		waitForVisibility(searchUserInputBox, driver);
+		// searchUserInputBox.sendKeys(Salutation+ " " +fullName);
+		searchUserInputBox.sendKeys(firstName + " " + lastName);
+		// System.out.println("Searched using full name: " + fullName);
+		Thread.sleep(3000);
+		clickSearchedUser.click();
+	}
 
 	public void selectOptionFromHowDidYouHearDropdown(int stepsToTraverse) throws InterruptedException {
 		// Wait for the input box to be visible

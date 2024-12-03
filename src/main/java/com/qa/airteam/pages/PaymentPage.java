@@ -41,6 +41,9 @@ public class PaymentPage extends BaseTest {
 	//Locate the checkbox:  How would you like us to pay any claim benefits back to you?
 	@FindBy(xpath = "//label[@for='useBankAccountDetails']")
 	private WebElement useBankAccountDetailsCheckbox;
+	
+	@FindBy(xpath = "//h2[text()='Thank you for joining']")
+	protected WebElement thankYouMessage;
 
 	/*******************************
 	 * Actions Methods
@@ -111,6 +114,11 @@ public class PaymentPage extends BaseTest {
 		    Thread.sleep(1000);
 		    useBankAccountDetailsCheckbox.click();
 		    log.info("Second click on the checkbox completed. Checkbox toggled successfully.");
+		}
+		
+		public boolean isThankYouMessageDisplayed() {
+		    waitForVisibility(thankYouMessage, driver); // Ensure element is visible
+		    return thankYouMessage.isDisplayed(); // Return true if the element is displayed
 		}
 
 

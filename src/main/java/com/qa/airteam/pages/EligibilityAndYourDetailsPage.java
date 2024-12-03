@@ -407,7 +407,7 @@ public class EligibilityAndYourDetailsPage extends BaseTest {
 		actions.sendKeys(residentialAddressInputBox, inputText).perform();
 		log.info("Entered address input: {}", inputText);
 
-		Thread.sleep(1000);
+		Thread.sleep(1500);
 		actions.sendKeys(Keys.ENTER).perform();
 		log.info("Selected address input: {}", inputText);
 	}

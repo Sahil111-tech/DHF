@@ -120,4 +120,5 @@ Feature: Quick Quote Process
     And I select the direct debit agreement checkbox
     And I click on the submit form button
     And I toggle the bank account details checkbox by double-clicking
-    Then I click on the submit form button
+    And I click on the submit form button
+    Then I verify that the thank-you message is displayed

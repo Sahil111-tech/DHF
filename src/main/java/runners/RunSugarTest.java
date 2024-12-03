@@ -9,7 +9,7 @@ import io.cucumber.testng.CucumberOptions;
 dryRun = false, //
 monochrome = true,//Makes the console output more readable by removing unnecessary characters and formatting.
 publish=true, //Publishes the generated Cucumber report to a sharable URL.
-		tags = "@sugarcrmverification"
+		tags = /*"@sugarcrmverification"*/" @sugarcrmverificationwithcreditcard"
 )
 public class RunSugarTest extends AbstractTestNGCucumberTests {
 
