@@ -83,7 +83,7 @@ public class EligibilityAndYourDetailsPage extends BaseTest {
 	private WebElement existingAvantMemberRadioButtonNo;
 
 	// Locator for continue button
-	@FindBy(xpath = "//div[text()='Continue']/../../..//button/..") // "//div[@class='css-159nnwp']//div[@class='css-1p15x7ze18zzrqo1']"
+	@FindBy(xpath = "//div[text()='Continue']") //// div[text()='Continue']/../../..//button/..
 	protected WebElement clickContinueButton;
 
 	// to locate "Yes" and "No" radio buttons for the "Are you transferring from
@@ -249,35 +249,35 @@ public class EligibilityAndYourDetailsPage extends BaseTest {
 		 * log.error("An error occurred while interacting with the alert/modal: {}",
 		 * e.getMessage()); }
 		 */
-		
+
 		log.info("Attempting to accept alert/modal.");
-	    int retryCount = 3; // Number of retries
-	    int attempts = 0;
-	    
-	    while (attempts < retryCount) {
-	        try {
-	            waitForVisibility(acceptAlert, driver); // Wait for visibility of the element
-	            waitForElementToBeClickable(driver, acceptAlert); // Wait until the element is clickable
-	            acceptAlert.click(); // Attempt to click the alert/modal
-	            log.info("Alert/modal accepted successfully.");
-	            break; // Exit the loop if the click is successful
-	        } catch (ElementClickInterceptedException e) {
-	            attempts++;
-	            log.warn("Attempt {}: Alert/modal click intercepted. Retrying...", attempts, e);
-	            try {
-	                Thread.sleep(1000); // Wait before retrying
-	            } catch (InterruptedException ie) {
-	                Thread.currentThread().interrupt();
-	                log.error("Retry interrupted.", ie);
-	            }
-	        } catch (TimeoutException e) {
-	            log.error("Alert/modal was not visible within the wait time.", e);
-	            break; // Exit loop if visibility timeout occurs
-	        } catch (Exception e) {
-	            log.error("An error occurred while interacting with the alert/modal: {}", e.getMessage());
-	            break; // Exit loop for any other unexpected exceptions
-	        }
-	}
+		int retryCount = 3; // Number of retries
+		int attempts = 0;
+
+		while (attempts < retryCount) {
+			try {
+				waitForVisibility(acceptAlert, driver); // Wait for visibility of the element
+				waitForElementToBeClickable(driver, acceptAlert); // Wait until the element is clickable
+				acceptAlert.click(); // Attempt to click the alert/modal
+				log.info("Alert/modal accepted successfully.");
+				break; // Exit the loop if the click is successful
+			} catch (ElementClickInterceptedException e) {
+				attempts++;
+				log.warn("Attempt {}: Alert/modal click intercepted. Retrying...", attempts, e);
+				try {
+					Thread.sleep(1000); // Wait before retrying
+				} catch (InterruptedException ie) {
+					Thread.currentThread().interrupt();
+					log.error("Retry interrupted.", ie);
+				}
+			} catch (TimeoutException e) {
+				log.error("Alert/modal was not visible within the wait time.", e);
+				break; // Exit loop if visibility timeout occurs
+			} catch (Exception e) {
+				log.error("An error occurred while interacting with the alert/modal: {}", e.getMessage());
+				break; // Exit loop for any other unexpected exceptions
+			}
+		}
 	}
 
 	// To click on Next button
@@ -404,10 +404,10 @@ public class EligibilityAndYourDetailsPage extends BaseTest {
 
 		waitForElementToBeClickable(driver, residentialAddressInputBox);
 		waitForVisibility(residentialAddressInputBox, driver);
+		Thread.sleep(1000);
 		actions.sendKeys(residentialAddressInputBox, inputText).perform();
 		log.info("Entered address input: {}", inputText);
-
-		Thread.sleep(1500);
+		Thread.sleep(1000);
 		actions.sendKeys(Keys.ENTER).perform();
 		log.info("Selected address input: {}", inputText);
 	}
@@ -416,9 +416,13 @@ public class EligibilityAndYourDetailsPage extends BaseTest {
 	public WebElement clickContinueButton() throws InterruptedException {
 		waitForVisibility(clickContinueButton, driver);
 		waitForElementToBeClickable(driver, clickContinueButton);
-		Thread.sleep(2000);
-		click(clickContinueButton);
-		log.info("Clicked on Continue button");
+		try {
+			click(clickContinueButton);
+			log.info("Clicked on Continue button");
+		} catch (ElementClickInterceptedException e) {
+			log.error("Element click intercepted. Consider adding a retry mechanism.");
+			throw e; // Re-throw to handle in the calling method
+		}
 
 		return clickContinueButton;
 	}

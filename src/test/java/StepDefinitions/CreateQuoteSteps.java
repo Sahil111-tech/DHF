@@ -44,6 +44,7 @@ public class CreateQuoteSteps {
 	BaseTest baseTest = new BaseTest();
 	MedicareDetailsPage medicareDetails;
 	public static Properties prop;
+	WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(15));
 	// Static block to load properties at the class level
 	static {
 		try (FileInputStream fis = new FileInputStream("src/test/resources/config.properties")) {
@@ -313,11 +314,11 @@ public class CreateQuoteSteps {
 	@Given("I submit the eligibility page.")
 	public void i_click_the_continue_button() throws InterruptedException, AWTException {
 
-		//baseTest.scrollByPixels(-100, driver);
+		// baseTest.scrollByPixels(-100, driver);
 		baseTest.scrollUpBy400(driver);
 		Thread.sleep(1000);
 		eligibilityAndYourDetails.clickContinueButton();
-		//Thread.sleep(1000);
+		// Thread.sleep(1000);
 
 	}
 
@@ -375,6 +376,7 @@ public class CreateQuoteSteps {
 
 	@When("the user enters and selects the value {string} in the dropdown")
 	public void userTypesAndSelectsValue(String inputText) throws InterruptedException {
+		Thread.sleep(1500);
 		eligibilityAndYourDetails.typeAndSelectValue(inputText, driver);
 		Thread.sleep(1000);
 	}
@@ -392,33 +394,54 @@ public class CreateQuoteSteps {
 	// Step to click the Continue button on the Your Details page
 	@Given("I submit the Your Details page")
 	public void i_submit_your_details_page() throws InterruptedException {
-		 Thread.sleep(1000);
-		  baseTest.scrollByPixels(150, driver); 
-		  WebElement continueButton = eligibilityAndYourDetails.clickContinueButton();
-		  
-		  // Use Actions class for double-click 
-		  Actions actions = new Actions(driver);
-		  actions.doubleClick(continueButton).perform(); // Perform the double-click action 
-		  Thread.sleep(1000);
-		 
-	}
-		
 		/*
-		 * WebElement continueButton = eligibilityAndYourDetails.clickContinueButton();
+		 * try { // Wait for the "Continue" button to be visible and clickable
+		 * //WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
+		 * wait.until(ExpectedConditions.visibilityOf(eligibilityAndYourDetails.
+		 * clickContinueButton()));
+		 * wait.until(ExpectedConditions.elementToBeClickable(eligibilityAndYourDetails.
+		 * clickContinueButton()));
 		 * 
-		 * // Scroll into view ((JavascriptExecutor)
-		 * driver).executeScript("arguments[0].scrollIntoView(true);", continueButton);
+		 * // Scroll to ensure the button is in view baseTest.scrollUpBy400(driver);
 		 * 
-		 * // Handle potential element obstruction try { continueButton.click();
-		 * System.out.println("Clicked on Continue button."); } catch
+		 * // Retry clicking if intercepted try {
+		 * eligibilityAndYourDetails.clickContinueButton(); } catch
 		 * (ElementClickInterceptedException e) {
-		 * System.out.println("Click intercepted. Retrying with JavaScript.");
-		 * ((JavascriptExecutor) driver).executeScript("arguments[0].click();",
-		 * continueButton); }
+		 * log.warn("Click intercepted. Retrying after scrolling...");
+		 * //baseTest.scrollByPixels(50, driver);
+		 * eligibilityAndYourDetails.clickContinueButton(); }
 		 * 
-		 * Thread.sleep(1000); }
+		 * log.info("Successfully submitted the 'Your Details' page."); } catch
+		 * (Exception e) { log.error("Error while submitting the 'Your Details' page: "
+		 * + e.getMessage()); throw e; }
 		 */
-	
+
+		Actions actions = new Actions(driver);
+		Thread.sleep(1000);
+		baseTest.scrollByPixels(150, driver);
+		WebElement continueButton = eligibilityAndYourDetails.clickContinueButton();
+
+		// Use Actions class for double-click Actions actions = new Actions(driver);
+		actions.doubleClick(continueButton).perform(); // Perform the double-click action
+		Thread.sleep(1000);
+
+	}
+
+	/*
+	 * WebElement continueButton = eligibilityAndYourDetails.clickContinueButton();
+	 * 
+	 * // Scroll into view ((JavascriptExecutor)
+	 * driver).executeScript("arguments[0].scrollIntoView(true);", continueButton);
+	 * 
+	 * // Handle potential element obstruction try { continueButton.click();
+	 * System.out.println("Clicked on Continue button."); } catch
+	 * (ElementClickInterceptedException e) {
+	 * System.out.println("Click intercepted. Retrying with JavaScript.");
+	 * ((JavascriptExecutor) driver).executeScript("arguments[0].click();",
+	 * continueButton); }
+	 * 
+	 * Thread.sleep(1000); }
+	 */
 
 	@When("I select {string} for the question \"Are all the people on this policy eligible for Medicare?\"")
 	public void i_select_option_for_medicare_eligibility(String option) {
@@ -441,7 +464,7 @@ public class CreateQuoteSteps {
 	}
 
 	@When("I enter {string} as the day, {string} as the month and {string} as the year")
-	public void iEnterAsTheMonthAndAsTheYear(String day,String month, String year) {
+	public void iEnterAsTheMonthAndAsTheYear(String day, String month, String year) {
 		medicareDetails.enterValidityDetails(day, month, year);
 	}
 
@@ -590,12 +613,13 @@ public class CreateQuoteSteps {
 		payment.toggleCheckboxByDoubleClick(); // Call the action method
 
 	}
-	
+
 	@Then("I verify that the thank-you message is displayed")
 	public void i_verify_thank_you_message_is_displayed() throws InterruptedException {
 		Thread.sleep(2000);
-	    boolean isMessageDisplayed = payment.isThankYouMessageDisplayed(); // Check if the message is displayed
-	    Assert.assertTrue(isMessageDisplayed, "The thank-you message is not displayed as expected."); // TestNG assertion
-	    log.info("The thank-you message is displayed successfully.");
+		boolean isMessageDisplayed = payment.isThankYouMessageDisplayed(); // Check if the message is displayed
+		Assert.assertTrue(isMessageDisplayed, "The thank-you message is not displayed as expected."); // TestNG
+																										// assertion
+		log.info("The thank-you message is displayed successfully.");
 	}
 }

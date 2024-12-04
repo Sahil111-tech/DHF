@@ -1,717 +1,724 @@
-07:55:47.883 [main] INFO  - Attempting to click the 'Next' button.
-07:55:48.126 [main] INFO  - 'Next' button clicked successfully.
-07:55:48.575 [main] INFO  - Entered random email: dhf.testing+849@gmail.com
-07:55:48.746 [main] INFO  - Entered random phone number: 0498363780
-07:55:48.746 [main] INFO  - Phone number format validation passed: 0498363780
-07:55:49.074 [main] INFO  - Entered address input: 123 A'
-07:55:50.597 [main] INFO  - Selected address input: 123 A'
-07:55:53.813 [main] INFO  - Clicked on Continue button
-07:55:55.024 [main] INFO  - Selecting Medicare eligibility option: Yes
-07:55:55.125 [main] INFO  - Selected 'Yes' for Medicare eligibility.
-07:55:55.127 [main] INFO  - Selecting the green card option...
-07:55:55.286 [main] INFO  - Green card image is successfully displayed!
-07:55:55.286 [main] INFO  - Selecting the blue card option...
-07:55:55.421 [main] INFO  - Blue card image is successfully displayed!
-07:55:55.422 [main] INFO  - Entering card number: 2298233698
-07:55:55.638 [main] INFO  - Card number entered successfully.
-07:55:55.640 [main] INFO  - Entering card reference number: 3
-07:55:55.785 [main] INFO  - Card reference number entered successfully.
-07:55:55.793 [main] INFO  - Entering validity details: Day = 2, Month = 12, Year = 2028
-07:55:55.906 [main] INFO  - Day entered successfully: 2
-07:55:56.079 [main] INFO  - Month entered successfully: 12
-07:55:56.220 [main] INFO  - Year entered successfully: 2028
-07:55:56.222 [main] INFO  - Selecting rebate option: Yes
-07:55:56.347 [main] INFO  - Selected 'Yes' for rebate option.
-07:55:56.356 [main] INFO  - Selecting policy coverage option: Yes
-07:55:56.516 [main] INFO  - Selected 'Yes' for policy coverage.
-07:55:59.539 [main] INFO  - Toggling checkbox to select state.
-07:55:59.652 [main] INFO  - Checkbox selected successfully.
-07:55:59.658 [main] INFO  - Clicking the Continue button.
-07:56:01.852 [main] INFO  - Continue button clicked successfully.
-07:56:05.066 [main] INFO  - Attempting to select radio button for choice: No
-07:56:05.152 [main] INFO  - Selected 'No' radio button.
-07:56:05.155 [main] INFO  - Selecting Avant Group Member option: No
-07:56:05.270 [main] INFO  - Selected 'No' radio button for Avant Group Member.
-07:56:05.272 [main] INFO  - Attempting to select 'How did you hear about us' option: Internet Search
-07:56:05.461 [main] INFO  - Selected option: Internet Search
-07:56:05.497 [main] INFO  - Selecting 'Check In' option: No
-07:56:05.611 [main] INFO  - Selected 'No' radio button for 'Check In'.
-07:56:05.643 [main] INFO  - Setting 'Terms and Conditions' checkbox to: true
-07:56:05.775 [main] INFO  - 'Terms and Conditions' checkbox selected.
-07:56:05.776 [main] INFO  - Setting 'Agree Using Personal Information' checkbox to: true
-07:56:05.910 [main] INFO  - 'Agree Using Personal Information' checkbox selected.
-07:56:05.916 [main] INFO  - Setting 'AHSA Privacy Policy' checkbox to: true
-07:56:06.045 [main] INFO  - 'AHSA Privacy Policy' checkbox selected.
-07:56:06.047 [main] INFO  - Setting 'Confirm Application is True' checkbox to: true
-07:56:06.177 [main] INFO  - 'Confirm Application is True' checkbox selected.
-07:56:07.197 [main] INFO  - Attempting to click 'Continue' button.
-07:56:09.360 [main] INFO  - 'Continue' button clicked.
-07:56:10.376 [main] INFO  - Setting 'Confirm Application is True' checkbox to: true
-07:56:10.474 [main] INFO  - 'Confirm Application is True' checkbox selected.
-07:56:10.476 [main] INFO  - Setting 'Confirm Application is True' checkbox to: true
-07:56:10.577 [main] INFO  - 'Confirm Application is True' checkbox selected.
-07:56:11.586 [main] INFO  - Attempting to click 'Continue' button.
-07:56:13.810 [main] INFO  - 'Continue' button clicked.
-07:56:14.815 [main] INFO  - Entering BSB number: 032-059
-07:56:14.926 [main] INFO  - BSB number entered successfully.
-07:56:14.928 [main] INFO  - Entering account number: 85668757
-07:56:15.075 [main] INFO  - Account number entered successfully.
-07:56:15.082 [main] INFO  - Generating a random Australian account name.
-07:56:15.082 [main] INFO  - Generated account name: Thomas Johnson
-07:56:15.321 [main] INFO  - Random account name entered successfully.
-07:56:15.343 [main] INFO  - Clicking the direct debit checkbox.
-07:56:15.460 [main] INFO  - Direct debit checkbox clicked successfully.
-07:56:16.480 [main] INFO  - Clicking the submit form button.
-07:56:17.285 [main] INFO  - Submit form button clicked successfully.
-07:56:17.287 [main] INFO  - Double-clicking the checkbox: 'How would you like us to pay any claim benefits back to you?'.
-07:56:17.364 [main] INFO  - First click on the checkbox completed.
-07:56:18.438 [main] INFO  - Second click on the checkbox completed. Checkbox toggled successfully.
-07:56:19.450 [main] INFO  - Clicking the submit form button.
-07:56:20.274 [main] INFO  - Submit form button clicked successfully.
-07:56:25.632 [main] INFO  - The thank-you message is displayed successfully.
-08:02:28.982 [main] INFO  - Browser selected: chrome
-08:02:31.523 [main] INFO  - ChromeDriver initialized.
-08:02:34.464 [main] INFO  - Navigated to URL: https://uat.doctorshealthfund.com.au/
-08:02:34.674 [main] INFO  - All cookies cleared before starting the test.
-08:02:34.728 [main] INFO  - Navigating to the quote page.
-08:02:34.805 [main] INFO  - Page title: Private Health Insurance for Doctors | Doctors' Health Fund
-08:02:34.816 [main] INFO  - Clicking the 'Get Quote' button.
-08:02:34.816 [main] INFO  - Attempting to click the 'Get Quote' button...
-08:02:35.120 [main] INFO  - 'Get Quote' button clicked successfully.
-08:02:35.120 [main] INFO  - 'Get Quote' button clicked successfully.
-08:02:35.125 [main] INFO  - Selecting cover type: Single...
-08:02:36.361 [main] INFO  - Cover type 'Single' selected successfully.
-08:02:36.363 [main] INFO  - Clicking the 'Next' button...
-08:02:36.534 [main] INFO  - 'Next' button clicked successfully.
-08:02:36.536 [main] INFO  - Selecting residence: NSW...
-08:02:36.703 [main] INFO  - Residence 'NSW' selected successfully.
-08:02:36.705 [main] INFO  - Clicking the 'Next' button...
-08:02:36.901 [main] INFO  - 'Next' button clicked successfully.
-08:02:36.905 [main] INFO  - Entering day of birth: 01...
-08:02:37.075 [main] INFO  - Day of birth entered successfully.
-08:02:37.075 [main] INFO  - Entering month of birth: 01...
-08:02:37.209 [main] INFO  - Month of birth entered successfully.
-08:02:37.210 [main] INFO  - Entering year of birth: 1987...
-08:02:37.334 [main] INFO  - Year of birth entered successfully.
-08:02:37.337 [main] INFO  - Clicking the 'Next' button...
-08:02:37.509 [main] INFO  - 'Next' button clicked successfully.
-08:02:37.511 [main] INFO  - Selecting annual income: Below $97k...
-08:02:37.662 [main] INFO  - Annual income 'Below $97k' selected successfully.
-08:02:37.664 [main] INFO  - Clicking 'Calculate Cover' button...
-08:02:38.242 [main] INFO  - 'Calculate Cover' button clicked successfully.
-08:02:38.265 [main] INFO  - Selecting hospital cover: Top Cover...
-08:02:39.472 [main] INFO  - Selected the Extras Cover: Total Extras
-08:02:39.678 [main] INFO  - Clicked on the Apply Now button for the selected plan.
-08:02:39.693 [main] INFO  - Attempting to select 'No' for member status.
-08:02:40.101 [main] INFO  - 'No' radio button for member status selected successfully.
-08:02:40.103 [main] INFO  - Attempting to select 'Yes' for Australian citizenship status.
-08:02:40.292 [main] INFO  - 'Yes' radio button for citizenship status selected successfully.
-08:02:40.308 [main] INFO  - Attempting to click the 'Medical Practitioner' button.
-08:02:40.468 [main] INFO  - 'Medical Practitioner' button clicked successfully.
-08:02:40.473 [main] INFO  - Attempting to select the radio button for: Resident
-08:02:40.576 [main] INFO  - Radio button for 'Resident' selected successfully.
-08:02:40.587 [main] INFO  - Attempting to select Avant member option: No
-08:02:40.802 [main] INFO  - Avant member option 'No' selected successfully.
-08:02:44.003 [main] INFO  - Clicked on Continue button
-08:02:44.013 [main] INFO  - Attempting to select Avant member option: Yes
-08:02:44.121 [main] INFO  - Avant member option 'Yes' selected successfully.
-08:02:44.129 [main] INFO  - Attempting to select Avant member option: No
-08:02:44.233 [main] INFO  - Avant member option 'No' selected successfully.
-08:02:47.621 [main] INFO  - Clicked on Continue button
-08:02:47.623 [main] INFO  - Selecting option for transferring from another fund: No
-08:02:47.938 [main] INFO  - 'No' selected for transferring from another fund.
-08:02:48.644 [main] INFO  - Attempting to accept alert/modal.
-08:02:48.861 [main] INFO  - Alert/modal accepted successfully.
-08:02:48.874 [main] INFO  - Attempting to click the 'Next' button.
-08:02:49.100 [main] INFO  - 'Next' button clicked successfully.
-08:02:49.114 [main] INFO  - Selecting title from dropdown: Mr
-08:02:49.545 [main] INFO  - Selected 'Mr' from dropdown.
-08:02:49.861 [main] INFO  - Entered First Name: Chris
-08:02:50.016 [main] INFO  - Entered Middle Name: Lou
-08:02:50.182 [main] INFO  - Entered Last Name: Thomas
-08:02:50.183 [main] INFO  - Entered random full name: Chris Lou Thomas
-08:02:50.377 [main] INFO  - Selected Male radio button
-08:02:50.384 [main] INFO  - Attempting to click the 'Next' button.
-08:02:50.562 [main] INFO  - 'Next' button clicked successfully.
-08:02:50.740 [main] INFO  - Entered random email: dhf.testing+588@gmail.com
-08:02:50.917 [main] INFO  - Entered random phone number: 0498368437
-08:02:50.917 [main] INFO  - Phone number format validation passed: 0498368437
-08:02:51.198 [main] INFO  - Entered address input: 123 A'
-08:02:52.717 [main] INFO  - Selected address input: 123 A'
-08:04:03.188 [main] INFO  - Browser selected: chrome
-08:04:05.786 [main] INFO  - ChromeDriver initialized.
-08:04:06.432 [main] INFO  - Navigated to URL: https://uat.doctorshealthfund.com.au/
-08:04:09.056 [main] INFO  - All cookies cleared before starting the test.
-08:04:09.129 [main] INFO  - Navigating to the quote page.
-08:04:09.230 [main] INFO  - Page title: Private Health Insurance for Doctors | Doctors' Health Fund
-08:04:09.235 [main] INFO  - Clicking the 'Get Quote' button.
-08:04:09.235 [main] INFO  - Attempting to click the 'Get Quote' button...
-08:04:09.482 [main] INFO  - 'Get Quote' button clicked successfully.
-08:04:09.482 [main] INFO  - 'Get Quote' button clicked successfully.
-08:04:09.495 [main] INFO  - Selecting cover type: Single...
-08:04:10.794 [main] INFO  - Cover type 'Single' selected successfully.
-08:04:10.797 [main] INFO  - Clicking the 'Next' button...
-08:04:10.940 [main] INFO  - 'Next' button clicked successfully.
-08:04:10.942 [main] INFO  - Selecting residence: NSW...
-08:04:11.071 [main] INFO  - Residence 'NSW' selected successfully.
-08:04:11.074 [main] INFO  - Clicking the 'Next' button...
-08:04:11.210 [main] INFO  - 'Next' button clicked successfully.
-08:04:11.212 [main] INFO  - Entering day of birth: 01...
-08:04:11.368 [main] INFO  - Day of birth entered successfully.
-08:04:11.368 [main] INFO  - Entering month of birth: 01...
-08:04:11.467 [main] INFO  - Month of birth entered successfully.
-08:04:11.467 [main] INFO  - Entering year of birth: 1987...
-08:04:11.574 [main] INFO  - Year of birth entered successfully.
-08:04:11.576 [main] INFO  - Clicking the 'Next' button...
-08:04:11.725 [main] INFO  - 'Next' button clicked successfully.
-08:04:11.727 [main] INFO  - Selecting annual income: Below $97k...
-08:04:11.847 [main] INFO  - Annual income 'Below $97k' selected successfully.
-08:04:11.850 [main] INFO  - Clicking 'Calculate Cover' button...
-08:04:12.419 [main] INFO  - 'Calculate Cover' button clicked successfully.
-08:04:12.451 [main] INFO  - Selecting hospital cover: Top Cover...
-08:04:13.614 [main] INFO  - Selected the Extras Cover: Total Extras
-08:04:13.825 [main] INFO  - Clicked on the Apply Now button for the selected plan.
-08:04:13.840 [main] INFO  - Attempting to select 'No' for member status.
-08:04:14.210 [main] INFO  - 'No' radio button for member status selected successfully.
-08:04:14.212 [main] INFO  - Attempting to select 'Yes' for Australian citizenship status.
-08:04:14.380 [main] INFO  - 'Yes' radio button for citizenship status selected successfully.
-08:04:14.389 [main] INFO  - Attempting to click the 'Medical Practitioner' button.
-08:04:14.511 [main] INFO  - 'Medical Practitioner' button clicked successfully.
-08:04:14.517 [main] INFO  - Attempting to select the radio button for: Resident
-08:04:14.649 [main] INFO  - Radio button for 'Resident' selected successfully.
-08:04:14.656 [main] INFO  - Attempting to select Avant member option: No
-08:04:14.807 [main] INFO  - Avant member option 'No' selected successfully.
-08:04:18.050 [main] INFO  - Clicked on Continue button
-08:04:18.059 [main] INFO  - Attempting to select Avant member option: Yes
-08:04:18.164 [main] INFO  - Avant member option 'Yes' selected successfully.
-08:04:18.171 [main] INFO  - Attempting to select Avant member option: No
-08:04:18.276 [main] INFO  - Avant member option 'No' selected successfully.
-08:04:21.691 [main] INFO  - Clicked on Continue button
-08:04:21.693 [main] INFO  - Selecting option for transferring from another fund: No
-08:04:21.958 [main] INFO  - 'No' selected for transferring from another fund.
-08:04:22.666 [main] INFO  - Attempting to accept alert/modal.
-08:04:22.881 [main] INFO  - Alert/modal accepted successfully.
-08:04:22.891 [main] INFO  - Attempting to click the 'Next' button.
-08:04:23.215 [main] INFO  - 'Next' button clicked successfully.
-08:04:23.225 [main] INFO  - Selecting title from dropdown: Mr
-08:04:23.772 [main] INFO  - Selected 'Mr' from dropdown.
-08:04:24.008 [main] INFO  - Entered First Name: John
-08:04:24.209 [main] INFO  - Entered Middle Name: Marie
-08:04:24.378 [main] INFO  - Entered Last Name: Johnson
-08:04:24.378 [main] INFO  - Entered random full name: John Marie Johnson
-08:04:24.546 [main] INFO  - Selected Male radio button
-08:04:24.556 [main] INFO  - Attempting to click the 'Next' button.
-08:04:24.753 [main] INFO  - 'Next' button clicked successfully.
-08:04:24.922 [main] INFO  - Entered random email: dhf.testing+459@gmail.com
-08:04:25.123 [main] INFO  - Entered random phone number: 0498368637
-08:04:25.123 [main] INFO  - Phone number format validation passed: 0498368637
-08:04:25.419 [main] INFO  - Entered address input: 123 A'
-08:04:26.939 [main] INFO  - Selected address input: 123 A'
-08:04:31.659 [main] INFO  - Clicked on Continue button
-08:04:32.888 [main] INFO  - Selecting Medicare eligibility option: Yes
-08:04:32.990 [main] INFO  - Selected 'Yes' for Medicare eligibility.
-08:04:32.992 [main] INFO  - Selecting the green card option...
-08:04:33.139 [main] INFO  - Green card image is successfully displayed!
-08:04:33.139 [main] INFO  - Selecting the blue card option...
-08:04:33.332 [main] INFO  - Blue card image is successfully displayed!
-08:04:33.333 [main] INFO  - Entering card number: 2298233698
-08:04:33.521 [main] INFO  - Card number entered successfully.
-08:04:33.524 [main] INFO  - Entering card reference number: 3
-08:04:33.667 [main] INFO  - Card reference number entered successfully.
-08:04:33.670 [main] INFO  - Entering validity details: Day = 2, Month = 12, Year = 2028
-08:04:33.791 [main] INFO  - Day entered successfully: 2
-08:04:33.976 [main] INFO  - Month entered successfully: 12
-08:04:34.116 [main] INFO  - Year entered successfully: 2028
-08:04:34.118 [main] INFO  - Selecting rebate option: Yes
-08:04:34.245 [main] INFO  - Selected 'Yes' for rebate option.
-08:04:34.252 [main] INFO  - Selecting policy coverage option: Yes
-08:04:34.422 [main] INFO  - Selected 'Yes' for policy coverage.
-08:04:37.437 [main] INFO  - Toggling checkbox to select state.
-08:04:37.554 [main] INFO  - Checkbox selected successfully.
-08:04:37.560 [main] INFO  - Clicking the Continue button.
-08:04:39.747 [main] INFO  - Continue button clicked successfully.
-08:04:42.972 [main] INFO  - Attempting to select radio button for choice: No
-08:04:43.055 [main] INFO  - Selected 'No' radio button.
-08:04:43.057 [main] INFO  - Selecting Avant Group Member option: No
-08:04:43.178 [main] INFO  - Selected 'No' radio button for Avant Group Member.
-08:04:43.179 [main] INFO  - Attempting to select 'How did you hear about us' option: Internet Search
-08:04:43.362 [main] INFO  - Selected option: Internet Search
-08:04:43.394 [main] INFO  - Selecting 'Check In' option: No
-08:04:43.510 [main] INFO  - Selected 'No' radio button for 'Check In'.
-08:04:43.538 [main] INFO  - Setting 'Terms and Conditions' checkbox to: true
-08:04:43.670 [main] INFO  - 'Terms and Conditions' checkbox selected.
-08:04:43.673 [main] INFO  - Setting 'Agree Using Personal Information' checkbox to: true
-08:04:43.814 [main] INFO  - 'Agree Using Personal Information' checkbox selected.
-08:04:43.816 [main] INFO  - Setting 'AHSA Privacy Policy' checkbox to: true
-08:04:43.946 [main] INFO  - 'AHSA Privacy Policy' checkbox selected.
-08:04:43.948 [main] INFO  - Setting 'Confirm Application is True' checkbox to: true
-08:04:44.074 [main] INFO  - 'Confirm Application is True' checkbox selected.
-08:04:45.092 [main] INFO  - Attempting to click 'Continue' button.
-08:04:47.309 [main] INFO  - 'Continue' button clicked.
-08:04:48.319 [main] INFO  - Setting 'Confirm Application is True' checkbox to: true
-08:04:48.431 [main] INFO  - 'Confirm Application is True' checkbox selected.
-08:04:48.433 [main] INFO  - Setting 'Confirm Application is True' checkbox to: true
-08:04:48.553 [main] INFO  - 'Confirm Application is True' checkbox selected.
-08:04:49.566 [main] INFO  - Attempting to click 'Continue' button.
-08:04:51.792 [main] INFO  - 'Continue' button clicked.
-08:04:52.795 [main] INFO  - Entering BSB number: 032-059
-08:04:52.906 [main] INFO  - BSB number entered successfully.
-08:04:52.908 [main] INFO  - Entering account number: 85668757
-08:04:53.041 [main] INFO  - Account number entered successfully.
-08:04:53.054 [main] INFO  - Generating a random Australian account name.
-08:04:53.054 [main] INFO  - Generated account name: Thomas Davis
-08:04:53.245 [main] INFO  - Random account name entered successfully.
-08:04:53.266 [main] INFO  - Clicking the direct debit checkbox.
-08:04:53.352 [main] INFO  - Direct debit checkbox clicked successfully.
-08:04:54.391 [main] INFO  - Clicking the submit form button.
-08:04:55.180 [main] INFO  - Submit form button clicked successfully.
-08:04:55.181 [main] INFO  - Double-clicking the checkbox: 'How would you like us to pay any claim benefits back to you?'.
-08:04:55.264 [main] INFO  - First click on the checkbox completed.
-08:04:56.346 [main] INFO  - Second click on the checkbox completed. Checkbox toggled successfully.
-08:04:57.356 [main] INFO  - Clicking the submit form button.
-08:04:58.164 [main] INFO  - Submit form button clicked successfully.
-08:05:04.415 [main] INFO  - The thank-you message is displayed successfully.
-08:05:29.343 [main] INFO  - Browser selected: chrome
-08:05:31.771 [main] INFO  - ChromeDriver initialized.
-08:05:32.415 [main] INFO  - Navigated to URL: https://uat.doctorshealthfund.com.au/
-08:05:35.164 [main] INFO  - All cookies cleared before starting the test.
-08:05:35.231 [main] INFO  - Navigating to the quote page.
-08:05:35.320 [main] INFO  - Page title: Private Health Insurance for Doctors | Doctors' Health Fund
-08:05:35.326 [main] INFO  - Clicking the 'Get Quote' button.
-08:05:35.326 [main] INFO  - Attempting to click the 'Get Quote' button...
-08:05:35.563 [main] INFO  - 'Get Quote' button clicked successfully.
-08:05:35.563 [main] INFO  - 'Get Quote' button clicked successfully.
-08:05:35.566 [main] INFO  - Selecting cover type: Single...
-08:05:37.007 [main] INFO  - Cover type 'Single' selected successfully.
-08:05:37.009 [main] INFO  - Clicking the 'Next' button...
-08:05:37.188 [main] INFO  - 'Next' button clicked successfully.
-08:05:37.190 [main] INFO  - Selecting residence: NSW...
-08:05:37.383 [main] INFO  - Residence 'NSW' selected successfully.
-08:05:37.385 [main] INFO  - Clicking the 'Next' button...
-08:05:37.561 [main] INFO  - 'Next' button clicked successfully.
-08:05:37.563 [main] INFO  - Entering day of birth: 01...
-08:05:37.734 [main] INFO  - Day of birth entered successfully.
-08:05:37.734 [main] INFO  - Entering month of birth: 01...
-08:05:37.837 [main] INFO  - Month of birth entered successfully.
-08:05:37.837 [main] INFO  - Entering year of birth: 1987...
-08:05:37.951 [main] INFO  - Year of birth entered successfully.
-08:05:37.953 [main] INFO  - Clicking the 'Next' button...
-08:05:38.114 [main] INFO  - 'Next' button clicked successfully.
-08:05:38.117 [main] INFO  - Selecting annual income: Below $97k...
-08:05:38.261 [main] INFO  - Annual income 'Below $97k' selected successfully.
-08:05:38.264 [main] INFO  - Clicking 'Calculate Cover' button...
-08:05:38.819 [main] INFO  - 'Calculate Cover' button clicked successfully.
-08:05:38.839 [main] INFO  - Selecting hospital cover: Top Cover...
-08:05:40.102 [main] INFO  - Selected the Extras Cover: Total Extras
-08:05:40.290 [main] INFO  - Clicked on the Apply Now button for the selected plan.
-08:05:40.313 [main] INFO  - Attempting to select 'No' for member status.
-08:05:40.594 [main] INFO  - 'No' radio button for member status selected successfully.
-08:05:40.596 [main] INFO  - Attempting to select 'Yes' for Australian citizenship status.
-08:05:40.752 [main] INFO  - 'Yes' radio button for citizenship status selected successfully.
-08:05:40.763 [main] INFO  - Attempting to click the 'Medical Practitioner' button.
-08:05:40.890 [main] INFO  - 'Medical Practitioner' button clicked successfully.
-08:05:40.895 [main] INFO  - Attempting to select the radio button for: Resident
-08:05:41.040 [main] INFO  - Radio button for 'Resident' selected successfully.
-08:05:41.048 [main] INFO  - Attempting to select Avant member option: No
-08:05:41.191 [main] INFO  - Avant member option 'No' selected successfully.
-08:05:44.451 [main] INFO  - Clicked on Continue button
-08:05:44.466 [main] INFO  - Attempting to select Avant member option: Yes
-08:05:44.624 [main] INFO  - Avant member option 'Yes' selected successfully.
-08:05:44.633 [main] INFO  - Attempting to select Avant member option: No
-08:05:44.779 [main] INFO  - Avant member option 'No' selected successfully.
-08:05:48.096 [main] INFO  - Clicked on Continue button
-08:05:48.099 [main] INFO  - Selecting option for transferring from another fund: No
-08:05:48.304 [main] INFO  - 'No' selected for transferring from another fund.
-08:05:49.022 [main] INFO  - Attempting to accept alert/modal.
-08:05:49.299 [main] INFO  - Alert/modal accepted successfully.
-08:05:49.316 [main] INFO  - Attempting to click the 'Next' button.
-08:05:49.697 [main] INFO  - 'Next' button clicked successfully.
-08:05:49.777 [main] INFO  - Selecting title from dropdown: Mr
-08:05:50.505 [main] INFO  - Selected 'Mr' from dropdown.
-08:05:50.718 [main] INFO  - Entered First Name: John
-08:05:51.014 [main] INFO  - Entered Middle Name: James
-08:05:51.224 [main] INFO  - Entered Last Name: Smith
-08:05:51.224 [main] INFO  - Entered random full name: John James Smith
-08:05:51.513 [main] INFO  - Selected Male radio button
-08:05:51.545 [main] INFO  - Attempting to click the 'Next' button.
-08:05:51.751 [main] INFO  - 'Next' button clicked successfully.
-08:05:52.009 [main] INFO  - Entered random email: dhf.testing+824@gmail.com
-08:05:52.196 [main] INFO  - Entered random phone number: 0498369587
-08:05:52.197 [main] INFO  - Phone number format validation passed: 0498369587
-08:05:52.495 [main] INFO  - Entered address input: 123 A'
-08:05:54.015 [main] INFO  - Selected address input: 123 A'
-08:05:58.217 [main] INFO  - Clicked on Continue button
-08:05:59.427 [main] INFO  - Selecting Medicare eligibility option: Yes
-08:05:59.532 [main] INFO  - Selected 'Yes' for Medicare eligibility.
-08:05:59.533 [main] INFO  - Selecting the green card option...
-08:05:59.682 [main] INFO  - Green card image is successfully displayed!
-08:05:59.683 [main] INFO  - Selecting the blue card option...
-08:05:59.821 [main] INFO  - Blue card image is successfully displayed!
-08:05:59.823 [main] INFO  - Entering card number: 2298233698
-08:06:00.097 [main] INFO  - Card number entered successfully.
-08:06:00.099 [main] INFO  - Entering card reference number: 3
-08:06:00.282 [main] INFO  - Card reference number entered successfully.
-08:06:00.287 [main] INFO  - Entering validity details: Day = 2, Month = 12, Year = 2028
-08:06:00.441 [main] INFO  - Day entered successfully: 2
-08:06:00.591 [main] INFO  - Month entered successfully: 12
-08:06:00.733 [main] INFO  - Year entered successfully: 2028
-08:06:00.735 [main] INFO  - Selecting rebate option: Yes
-08:06:00.864 [main] INFO  - Selected 'Yes' for rebate option.
-08:06:00.871 [main] INFO  - Selecting policy coverage option: Yes
-08:06:01.039 [main] INFO  - Selected 'Yes' for policy coverage.
-08:06:04.060 [main] INFO  - Toggling checkbox to select state.
-08:06:04.177 [main] INFO  - Checkbox selected successfully.
-08:06:04.185 [main] INFO  - Clicking the Continue button.
-08:06:06.393 [main] INFO  - Continue button clicked successfully.
-08:06:09.625 [main] INFO  - Attempting to select radio button for choice: No
-08:06:09.714 [main] INFO  - Selected 'No' radio button.
-08:06:09.716 [main] INFO  - Selecting Avant Group Member option: No
-08:06:09.829 [main] INFO  - Selected 'No' radio button for Avant Group Member.
-08:06:09.835 [main] INFO  - Attempting to select 'How did you hear about us' option: Internet Search
-08:06:10.028 [main] INFO  - Selected option: Internet Search
-08:06:10.079 [main] INFO  - Selecting 'Check In' option: No
-08:06:10.219 [main] INFO  - Selected 'No' radio button for 'Check In'.
-08:06:10.225 [main] INFO  - Setting 'Terms and Conditions' checkbox to: true
-08:06:10.384 [main] INFO  - 'Terms and Conditions' checkbox selected.
-08:06:10.386 [main] INFO  - Setting 'Agree Using Personal Information' checkbox to: true
-08:06:10.493 [main] INFO  - 'Agree Using Personal Information' checkbox selected.
-08:06:10.495 [main] INFO  - Setting 'AHSA Privacy Policy' checkbox to: true
-08:06:10.618 [main] INFO  - 'AHSA Privacy Policy' checkbox selected.
-08:06:10.620 [main] INFO  - Setting 'Confirm Application is True' checkbox to: true
-08:06:10.817 [main] INFO  - 'Confirm Application is True' checkbox selected.
-08:06:11.864 [main] INFO  - Attempting to click 'Continue' button.
-08:06:14.035 [main] INFO  - 'Continue' button clicked.
-08:06:15.043 [main] INFO  - Setting 'Confirm Application is True' checkbox to: true
-08:06:15.137 [main] INFO  - 'Confirm Application is True' checkbox selected.
-08:06:15.139 [main] INFO  - Setting 'Confirm Application is True' checkbox to: true
-08:06:15.240 [main] INFO  - 'Confirm Application is True' checkbox selected.
-08:06:16.257 [main] INFO  - Attempting to click 'Continue' button.
-08:06:18.509 [main] INFO  - 'Continue' button clicked.
-08:06:19.513 [main] INFO  - Entering BSB number: 032-059
-08:06:19.632 [main] INFO  - BSB number entered successfully.
-08:06:19.633 [main] INFO  - Entering account number: 85668757
-08:06:19.777 [main] INFO  - Account number entered successfully.
-08:06:19.785 [main] INFO  - Generating a random Australian account name.
-08:06:19.786 [main] INFO  - Generated account name: James Smith
-08:06:19.965 [main] INFO  - Random account name entered successfully.
-08:06:19.984 [main] INFO  - Clicking the direct debit checkbox.
-08:06:20.074 [main] INFO  - Direct debit checkbox clicked successfully.
-08:06:21.088 [main] INFO  - Clicking the submit form button.
-08:06:21.917 [main] INFO  - Submit form button clicked successfully.
-08:06:21.919 [main] INFO  - Double-clicking the checkbox: 'How would you like us to pay any claim benefits back to you?'.
-08:06:22.011 [main] INFO  - First click on the checkbox completed.
-08:06:23.089 [main] INFO  - Second click on the checkbox completed. Checkbox toggled successfully.
-08:06:24.102 [main] INFO  - Clicking the submit form button.
-08:06:24.928 [main] INFO  - Submit form button clicked successfully.
-08:06:33.305 [main] INFO  - The thank-you message is displayed successfully.
-08:07:12.562 [main] INFO  - Browser selected: chrome
-08:07:15.151 [main] INFO  - ChromeDriver initialized.
-08:07:16.725 [main] INFO  - Navigated to URL: https://uat.doctorshealthfund.com.au/
-08:07:16.837 [main] INFO  - All cookies cleared before starting the test.
-08:07:16.935 [main] INFO  - Navigating to the quote page.
-08:07:18.057 [main] INFO  - Page title: Private Health Insurance for Doctors | Doctors' Health Fund
-08:07:18.065 [main] INFO  - Clicking the 'Get Quote' button.
-08:07:18.065 [main] INFO  - Attempting to click the 'Get Quote' button...
-08:07:18.363 [main] INFO  - 'Get Quote' button clicked successfully.
-08:07:18.364 [main] INFO  - 'Get Quote' button clicked successfully.
-08:07:18.368 [main] INFO  - Selecting cover type: Single...
-08:07:18.852 [main] INFO  - Cover type 'Single' selected successfully.
-08:07:18.855 [main] INFO  - Clicking the 'Next' button...
-08:07:19.043 [main] INFO  - 'Next' button clicked successfully.
-08:07:19.047 [main] INFO  - Selecting residence: NSW...
-08:07:19.273 [main] INFO  - Residence 'NSW' selected successfully.
-08:07:19.275 [main] INFO  - Clicking the 'Next' button...
-08:07:20.775 [main] INFO  - 'Next' button clicked successfully.
-08:07:20.778 [main] INFO  - Entering day of birth: 01...
-08:07:20.967 [main] INFO  - Day of birth entered successfully.
-08:07:20.967 [main] INFO  - Entering month of birth: 01...
-08:07:21.089 [main] INFO  - Month of birth entered successfully.
-08:07:21.089 [main] INFO  - Entering year of birth: 1987...
-08:07:21.221 [main] INFO  - Year of birth entered successfully.
-08:07:21.224 [main] INFO  - Clicking the 'Next' button...
-08:07:21.391 [main] INFO  - 'Next' button clicked successfully.
-08:07:21.396 [main] INFO  - Selecting annual income: Below $97k...
-08:07:21.590 [main] INFO  - Annual income 'Below $97k' selected successfully.
-08:07:21.593 [main] INFO  - Clicking 'Calculate Cover' button...
-08:07:22.340 [main] INFO  - 'Calculate Cover' button clicked successfully.
-08:07:22.357 [main] INFO  - Selecting hospital cover: Top Cover...
-08:07:23.353 [main] INFO  - Selected the Extras Cover: Total Extras
-08:07:23.582 [main] INFO  - Clicked on the Apply Now button for the selected plan.
-08:07:23.601 [main] INFO  - Attempting to select 'No' for member status.
-08:07:23.952 [main] INFO  - 'No' radio button for member status selected successfully.
-08:07:23.955 [main] INFO  - Attempting to select 'Yes' for Australian citizenship status.
-08:07:24.143 [main] INFO  - 'Yes' radio button for citizenship status selected successfully.
-08:07:24.153 [main] INFO  - Attempting to click the 'Medical Practitioner' button.
-08:07:24.335 [main] INFO  - 'Medical Practitioner' button clicked successfully.
-08:07:24.340 [main] INFO  - Attempting to select the radio button for: Resident
-08:07:24.567 [main] INFO  - Radio button for 'Resident' selected successfully.
-08:07:24.575 [main] INFO  - Attempting to select Avant member option: No
-08:07:24.701 [main] INFO  - Avant member option 'No' selected successfully.
-08:07:28.054 [main] INFO  - Clicked on Continue button
-08:07:28.106 [main] INFO  - Attempting to select Avant member option: Yes
-08:07:28.261 [main] INFO  - Avant member option 'Yes' selected successfully.
-08:07:28.274 [main] INFO  - Attempting to select Avant member option: No
-08:07:28.506 [main] INFO  - Avant member option 'No' selected successfully.
-08:07:31.803 [main] INFO  - Clicked on Continue button
-08:07:31.808 [main] INFO  - Selecting option for transferring from another fund: No
-08:07:31.931 [main] INFO  - 'No' selected for transferring from another fund.
-08:07:32.640 [main] INFO  - Attempting to accept alert/modal.
-08:07:32.793 [main] INFO  - Alert/modal accepted successfully.
-08:07:32.802 [main] INFO  - Attempting to click the 'Next' button.
-08:07:32.939 [main] INFO  - 'Next' button clicked successfully.
-08:07:32.951 [main] INFO  - Selecting title from dropdown: Mr
-08:07:33.442 [main] INFO  - Selected 'Mr' from dropdown.
-08:07:33.592 [main] INFO  - Entered First Name: Alex
-08:07:33.707 [main] INFO  - Entered Middle Name: Lou
-08:07:33.856 [main] INFO  - Entered Last Name: Smith
-08:07:33.856 [main] INFO  - Entered random full name: Alex Lou Smith
-08:07:33.951 [main] INFO  - Selected Male radio button
-08:07:33.958 [main] INFO  - Attempting to click the 'Next' button.
-08:07:34.128 [main] INFO  - 'Next' button clicked successfully.
-08:07:34.300 [main] INFO  - Entered random email: dhf.testing+590@gmail.com
-08:07:34.463 [main] INFO  - Entered random phone number: 0498366085
-08:07:34.464 [main] INFO  - Phone number format validation passed: 0498366085
-08:07:34.731 [main] INFO  - Entered address input: 123 A'
-08:07:36.247 [main] INFO  - Selected address input: 123 A'
-09:04:06.775 [main] INFO  - Browser selected: chrome
-09:04:10.499 [main] INFO  - ChromeDriver initialized.
-09:04:16.987 [main] INFO  - Navigated to URL: https://uat.doctorshealthfund.com.au/
-09:04:17.218 [main] INFO  - All cookies cleared before starting the test.
-09:04:17.263 [main] INFO  - Navigating to the quote page.
-09:04:17.287 [main] INFO  - Page title: Private Health Insurance for Doctors | Doctors' Health Fund
-09:04:17.291 [main] INFO  - Clicking the 'Get Quote' button.
-09:04:17.291 [main] INFO  - Attempting to click the 'Get Quote' button...
-09:04:17.462 [main] INFO  - 'Get Quote' button clicked successfully.
-09:04:17.462 [main] INFO  - 'Get Quote' button clicked successfully.
-09:04:17.467 [main] INFO  - Selecting cover type: Single...
-09:04:18.840 [main] INFO  - Cover type 'Single' selected successfully.
-09:04:18.842 [main] INFO  - Clicking the 'Next' button...
-09:04:18.975 [main] INFO  - 'Next' button clicked successfully.
-09:04:18.979 [main] INFO  - Selecting residence: NSW...
-09:04:19.115 [main] INFO  - Residence 'NSW' selected successfully.
-09:04:19.116 [main] INFO  - Clicking the 'Next' button...
-09:04:19.261 [main] INFO  - 'Next' button clicked successfully.
-09:04:19.264 [main] INFO  - Entering day of birth: 01...
-09:04:19.419 [main] INFO  - Day of birth entered successfully.
-09:04:19.419 [main] INFO  - Entering month of birth: 01...
-09:04:19.518 [main] INFO  - Month of birth entered successfully.
-09:04:19.518 [main] INFO  - Entering year of birth: 1987...
-09:04:19.622 [main] INFO  - Year of birth entered successfully.
-09:04:19.624 [main] INFO  - Clicking the 'Next' button...
-09:04:19.768 [main] INFO  - 'Next' button clicked successfully.
-09:04:19.770 [main] INFO  - Selecting annual income: Below $97k...
-09:04:19.890 [main] INFO  - Annual income 'Below $97k' selected successfully.
-09:04:19.893 [main] INFO  - Clicking 'Calculate Cover' button...
-09:04:20.580 [main] INFO  - 'Calculate Cover' button clicked successfully.
-09:04:20.595 [main] INFO  - Selecting hospital cover: Top Cover...
-09:04:22.229 [main] INFO  - Selected the Extras Cover: Total Extras
-09:04:22.429 [main] INFO  - Clicked on the Apply Now button for the selected plan.
-09:04:22.441 [main] INFO  - Attempting to select 'No' for member status.
-09:04:22.873 [main] INFO  - 'No' radio button for member status selected successfully.
-09:04:22.875 [main] INFO  - Attempting to select 'Yes' for Australian citizenship status.
-09:04:23.028 [main] INFO  - 'Yes' radio button for citizenship status selected successfully.
-09:04:23.036 [main] INFO  - Attempting to click the 'Medical Practitioner' button.
-09:04:23.155 [main] INFO  - 'Medical Practitioner' button clicked successfully.
-09:04:23.159 [main] INFO  - Attempting to select the radio button for: Resident
-09:04:23.291 [main] INFO  - Radio button for 'Resident' selected successfully.
-09:04:23.300 [main] INFO  - Attempting to select Avant member option: No
-09:04:23.427 [main] INFO  - Avant member option 'No' selected successfully.
-09:04:26.654 [main] INFO  - Clicked on Continue button
-09:04:26.680 [main] INFO  - Attempting to select Avant member option: Yes
-09:04:26.791 [main] INFO  - Avant member option 'Yes' selected successfully.
-09:04:26.802 [main] INFO  - Attempting to select Avant member option: No
-09:04:26.908 [main] INFO  - Avant member option 'No' selected successfully.
-09:04:30.274 [main] INFO  - Clicked on Continue button
-09:04:30.276 [main] INFO  - Selecting option for transferring from another fund: No
-09:04:30.511 [main] INFO  - 'No' selected for transferring from another fund.
-09:04:31.248 [main] INFO  - Attempting to accept alert/modal.
-09:04:31.509 [main] INFO  - Alert/modal accepted successfully.
-09:04:31.523 [main] INFO  - Attempting to click the 'Next' button.
-09:04:31.825 [main] INFO  - 'Next' button clicked successfully.
-09:04:31.933 [main] INFO  - Selecting title from dropdown: Mr
-09:04:32.505 [main] INFO  - Selected 'Mr' from dropdown.
-09:04:32.686 [main] INFO  - Entered First Name: John
-09:04:32.815 [main] INFO  - Entered Middle Name: Lou
-09:04:33.011 [main] INFO  - Entered Last Name: Brown
-09:04:33.011 [main] INFO  - Entered random full name: John Lou Brown
-09:04:33.121 [main] INFO  - Selected Male radio button
-09:04:33.170 [main] INFO  - Attempting to click the 'Next' button.
-09:04:33.398 [main] INFO  - 'Next' button clicked successfully.
-09:04:33.666 [main] INFO  - Entered random email: dhf.testing+929@gmail.com
-09:04:33.811 [main] INFO  - Entered random phone number: 0498361005
-09:04:33.811 [main] INFO  - Phone number format validation passed: 0498361005
-09:04:34.106 [main] INFO  - Entered address input: 123 A'
-09:04:35.631 [main] INFO  - Selected address input: 123 A'
-09:04:39.840 [main] INFO  - Clicked on Continue button
-09:04:41.076 [main] INFO  - Selecting Medicare eligibility option: Yes
-09:04:41.178 [main] INFO  - Selected 'Yes' for Medicare eligibility.
-09:04:41.180 [main] INFO  - Selecting the green card option...
-09:04:41.330 [main] INFO  - Green card image is successfully displayed!
-09:04:41.330 [main] INFO  - Selecting the blue card option...
-09:04:41.466 [main] INFO  - Blue card image is successfully displayed!
-09:04:41.467 [main] INFO  - Entering card number: 2298233698
-09:04:41.676 [main] INFO  - Card number entered successfully.
-09:04:41.679 [main] INFO  - Entering card reference number: 3
-09:04:41.835 [main] INFO  - Card reference number entered successfully.
-09:04:41.838 [main] INFO  - Entering validity details: Day = 2, Month = 12, Year = 2028
-09:04:41.950 [main] INFO  - Day entered successfully: 2
-09:04:42.141 [main] INFO  - Month entered successfully: 12
-09:04:42.291 [main] INFO  - Year entered successfully: 2028
-09:04:42.293 [main] INFO  - Selecting rebate option: Yes
-09:04:42.411 [main] INFO  - Selected 'Yes' for rebate option.
-09:04:42.420 [main] INFO  - Selecting policy coverage option: Yes
-09:04:42.576 [main] INFO  - Selected 'Yes' for policy coverage.
-09:04:45.590 [main] INFO  - Toggling checkbox to select state.
-09:04:45.702 [main] INFO  - Checkbox selected successfully.
-09:04:45.708 [main] INFO  - Clicking the Continue button.
-09:04:47.912 [main] INFO  - Continue button clicked successfully.
-09:04:51.125 [main] INFO  - Attempting to select radio button for choice: No
-09:04:51.249 [main] INFO  - Selected 'No' radio button.
-09:04:51.253 [main] INFO  - Selecting Avant Group Member option: No
-09:04:51.365 [main] INFO  - Selected 'No' radio button for Avant Group Member.
-09:04:51.367 [main] INFO  - Attempting to select 'How did you hear about us' option: Internet Search
-09:04:51.543 [main] INFO  - Selected option: Internet Search
-09:04:51.579 [main] INFO  - Selecting 'Check In' option: No
-09:04:51.695 [main] INFO  - Selected 'No' radio button for 'Check In'.
-09:04:51.724 [main] INFO  - Setting 'Terms and Conditions' checkbox to: true
-09:04:51.860 [main] INFO  - 'Terms and Conditions' checkbox selected.
-09:04:51.862 [main] INFO  - Setting 'Agree Using Personal Information' checkbox to: true
-09:04:52.060 [main] INFO  - 'Agree Using Personal Information' checkbox selected.
-09:04:52.063 [main] INFO  - Setting 'AHSA Privacy Policy' checkbox to: true
-09:04:52.170 [main] INFO  - 'AHSA Privacy Policy' checkbox selected.
-09:04:52.172 [main] INFO  - Setting 'Confirm Application is True' checkbox to: true
-09:04:52.298 [main] INFO  - 'Confirm Application is True' checkbox selected.
-09:04:53.314 [main] INFO  - Attempting to click 'Continue' button.
-09:04:55.481 [main] INFO  - 'Continue' button clicked.
-09:04:56.490 [main] INFO  - Setting 'Confirm Application is True' checkbox to: true
-09:04:56.591 [main] INFO  - 'Confirm Application is True' checkbox selected.
-09:04:56.593 [main] INFO  - Setting 'Confirm Application is True' checkbox to: true
-09:04:56.694 [main] INFO  - 'Confirm Application is True' checkbox selected.
-09:04:57.706 [main] INFO  - Attempting to click 'Continue' button.
-09:04:59.914 [main] INFO  - 'Continue' button clicked.
-09:05:00.929 [main] INFO  - Entering BSB number: 032-059
-09:05:01.045 [main] INFO  - BSB number entered successfully.
-09:05:01.046 [main] INFO  - Entering account number: 85668757
-09:05:01.233 [main] INFO  - Account number entered successfully.
-09:05:01.240 [main] INFO  - Generating a random Australian account name.
-09:05:01.240 [main] INFO  - Generated account name: Lucas Taylor
-09:05:01.419 [main] INFO  - Random account name entered successfully.
-09:05:01.438 [main] INFO  - Clicking the direct debit checkbox.
-09:05:01.535 [main] INFO  - Direct debit checkbox clicked successfully.
-09:05:02.583 [main] INFO  - Clicking the submit form button.
-09:05:03.370 [main] INFO  - Submit form button clicked successfully.
-09:05:03.371 [main] INFO  - Double-clicking the checkbox: 'How would you like us to pay any claim benefits back to you?'.
-09:05:03.451 [main] INFO  - First click on the checkbox completed.
-09:05:04.533 [main] INFO  - Second click on the checkbox completed. Checkbox toggled successfully.
-09:05:05.551 [main] INFO  - Clicking the submit form button.
-09:05:06.373 [main] INFO  - Submit form button clicked successfully.
-09:05:12.899 [main] INFO  - The thank-you message is displayed successfully.
-09:53:44.377 [main] INFO  - Browser selected: chrome
-09:53:47.897 [main] INFO  - ChromeDriver initialized.
-09:53:53.746 [main] INFO  - Navigated to URL: https://uat.doctorshealthfund.com.au/
-09:53:54.167 [main] INFO  - All cookies cleared before starting the test.
-09:53:54.261 [main] INFO  - Navigating to the quote page.
-09:53:54.314 [main] INFO  - Page title: Private Health Insurance for Doctors | Doctors' Health Fund
-09:53:54.320 [main] INFO  - Clicking the 'Get Quote' button.
-09:53:54.320 [main] INFO  - Attempting to click the 'Get Quote' button...
-09:53:54.499 [main] WARN  - Encountered StaleElementReferenceException for 'Get Quote' button. Reinitializing elements and retrying...
-09:53:54.698 [main] INFO  - 'Get Quote' button clicked successfully after retrying.
-09:53:54.699 [main] INFO  - 'Get Quote' button clicked successfully.
-09:53:54.704 [main] INFO  - Selecting cover type: Single...
-09:53:56.121 [main] INFO  - Cover type 'Single' selected successfully.
-09:53:56.124 [main] INFO  - Clicking the 'Next' button...
-09:53:56.279 [main] INFO  - 'Next' button clicked successfully.
-09:53:56.283 [main] INFO  - Selecting residence: NSW...
-09:53:56.418 [main] INFO  - Residence 'NSW' selected successfully.
-09:53:56.420 [main] INFO  - Clicking the 'Next' button...
-09:53:56.562 [main] INFO  - 'Next' button clicked successfully.
-09:53:56.565 [main] INFO  - Entering day of birth: 01...
-09:53:56.713 [main] INFO  - Day of birth entered successfully.
-09:53:56.713 [main] INFO  - Entering month of birth: 01...
-09:53:56.814 [main] INFO  - Month of birth entered successfully.
-09:53:56.814 [main] INFO  - Entering year of birth: 1987...
-09:53:56.944 [main] INFO  - Year of birth entered successfully.
-09:53:56.946 [main] INFO  - Clicking the 'Next' button...
-09:53:57.066 [main] INFO  - 'Next' button clicked successfully.
-09:53:57.069 [main] INFO  - Selecting annual income: Below $97k...
-09:53:57.201 [main] INFO  - Annual income 'Below $97k' selected successfully.
-09:53:57.203 [main] INFO  - Clicking 'Calculate Cover' button...
-09:53:57.630 [main] INFO  - 'Calculate Cover' button clicked successfully.
-09:53:57.793 [main] INFO  - Selecting hospital cover: Top Cover...
-09:53:58.952 [main] INFO  - Selected the Extras Cover: Total Extras
-09:53:59.139 [main] INFO  - Clicked on the Apply Now button for the selected plan.
-09:53:59.155 [main] INFO  - Attempting to select 'No' for member status.
-09:53:59.688 [main] INFO  - 'No' radio button for member status selected successfully.
-09:53:59.690 [main] INFO  - Attempting to select 'Yes' for Australian citizenship status.
-09:53:59.855 [main] INFO  - 'Yes' radio button for citizenship status selected successfully.
-09:53:59.864 [main] INFO  - Attempting to click the 'Medical Practitioner' button.
-09:54:00.000 [main] INFO  - 'Medical Practitioner' button clicked successfully.
-09:54:00.006 [main] INFO  - Attempting to select the radio button for: Resident
-09:54:00.150 [main] INFO  - Radio button for 'Resident' selected successfully.
-09:54:00.173 [main] INFO  - Attempting to select Avant member option: No
-09:54:00.285 [main] INFO  - Avant member option 'No' selected successfully.
-09:54:03.537 [main] INFO  - Clicked on Continue button
-09:54:03.544 [main] INFO  - Attempting to select Avant member option: Yes
-09:54:03.646 [main] INFO  - Avant member option 'Yes' selected successfully.
-09:54:03.662 [main] INFO  - Attempting to select Avant member option: No
-09:54:03.768 [main] INFO  - Avant member option 'No' selected successfully.
-09:54:07.058 [main] INFO  - Clicked on Continue button
-09:54:07.060 [main] INFO  - Selecting option for transferring from another fund: No
-09:54:07.289 [main] INFO  - 'No' selected for transferring from another fund.
-09:54:07.991 [main] INFO  - Attempting to accept alert/modal.
-09:54:08.198 [main] INFO  - Alert/modal accepted successfully.
-09:54:08.289 [main] INFO  - Attempting to click the 'Next' button.
-09:54:08.513 [main] INFO  - 'Next' button clicked successfully.
-09:54:08.525 [main] INFO  - Selecting title from dropdown: Mr
-09:54:09.157 [main] INFO  - Selected 'Mr' from dropdown.
-09:54:09.377 [main] INFO  - Entered First Name: Alex
-09:54:09.655 [main] INFO  - Entered Middle Name: James
-09:54:09.838 [main] INFO  - Entered Last Name: Anderson
-09:54:09.838 [main] INFO  - Entered random full name: Alex James Anderson
-09:54:10.000 [main] INFO  - Selected Male radio button
-09:54:10.007 [main] INFO  - Attempting to click the 'Next' button.
-09:54:10.260 [main] INFO  - 'Next' button clicked successfully.
-09:54:10.550 [main] INFO  - Entered random email: dhf.testing+975@gmail.com
-09:54:10.769 [main] INFO  - Entered random phone number: 0498368545
-09:54:10.770 [main] INFO  - Phone number format validation passed: 0498368545
-09:54:11.076 [main] INFO  - Entered address input: 123 A'
-09:54:12.599 [main] INFO  - Selected address input: 123 A'
-09:54:16.819 [main] INFO  - Clicked on Continue button
-09:54:18.045 [main] INFO  - Selecting Medicare eligibility option: Yes
-09:54:18.142 [main] INFO  - Selected 'Yes' for Medicare eligibility.
-09:54:18.144 [main] INFO  - Selecting the green card option...
-09:54:18.802 [main] INFO  - Green card image is successfully displayed!
-09:54:18.802 [main] INFO  - Selecting the blue card option...
-09:54:18.926 [main] INFO  - Blue card image is successfully displayed!
-09:54:18.931 [main] INFO  - Entering card number: 2298233698
-09:54:19.156 [main] INFO  - Card number entered successfully.
-09:54:19.158 [main] INFO  - Entering card reference number: 3
-09:54:19.301 [main] INFO  - Card reference number entered successfully.
-09:54:19.307 [main] INFO  - Entering validity details: Day = 2, Month = 12, Year = 2028
-09:54:19.436 [main] INFO  - Day entered successfully: 2
-09:54:19.599 [main] INFO  - Month entered successfully: 12
-09:54:19.737 [main] INFO  - Year entered successfully: 2028
-09:54:19.738 [main] INFO  - Selecting rebate option: Yes
-09:54:19.868 [main] INFO  - Selected 'Yes' for rebate option.
-09:54:19.875 [main] INFO  - Selecting policy coverage option: Yes
-09:54:20.033 [main] INFO  - Selected 'Yes' for policy coverage.
-09:54:23.053 [main] INFO  - Toggling checkbox to select state.
-09:54:23.163 [main] INFO  - Checkbox selected successfully.
-09:54:23.170 [main] INFO  - Clicking the Continue button.
-09:54:25.380 [main] INFO  - Continue button clicked successfully.
-09:54:28.611 [main] INFO  - Attempting to select radio button for choice: No
-09:54:28.694 [main] INFO  - Selected 'No' radio button.
-09:54:28.696 [main] INFO  - Selecting Avant Group Member option: No
-09:54:28.811 [main] INFO  - Selected 'No' radio button for Avant Group Member.
-09:54:28.815 [main] INFO  - Attempting to select 'How did you hear about us' option: Internet Search
-09:54:28.991 [main] INFO  - Selected option: Internet Search
-09:54:29.001 [main] INFO  - Selecting 'Check In' option: No
-09:54:29.135 [main] INFO  - Selected 'No' radio button for 'Check In'.
-09:54:29.165 [main] INFO  - Setting 'Terms and Conditions' checkbox to: true
-09:54:29.297 [main] INFO  - 'Terms and Conditions' checkbox selected.
-09:54:29.299 [main] INFO  - Setting 'Agree Using Personal Information' checkbox to: true
-09:54:29.434 [main] INFO  - 'Agree Using Personal Information' checkbox selected.
-09:54:29.435 [main] INFO  - Setting 'AHSA Privacy Policy' checkbox to: true
-09:54:29.573 [main] INFO  - 'AHSA Privacy Policy' checkbox selected.
-09:54:29.575 [main] INFO  - Setting 'Confirm Application is True' checkbox to: true
-09:54:29.713 [main] INFO  - 'Confirm Application is True' checkbox selected.
+13:09:52.025 [main] INFO  - Clicked on Continue button
+13:09:52.034 [main] INFO  - Selecting option for transferring from another fund: No
+13:09:52.177 [main] INFO  - 'No' selected for transferring from another fund.
+13:09:52.890 [main] INFO  - Attempting to accept alert/modal.
+13:09:53.057 [main] INFO  - Alert/modal accepted successfully.
+13:09:53.068 [main] INFO  - Attempting to click the 'Next' button.
+13:09:53.277 [main] INFO  - 'Next' button clicked successfully.
+13:09:53.287 [main] INFO  - Selecting title from dropdown: Mr
+13:09:53.943 [main] INFO  - Selected 'Mr' from dropdown.
+13:09:54.132 [main] INFO  - Entered First Name: John
+13:09:54.368 [main] INFO  - Entered Middle Name: Marie
+13:09:54.539 [main] INFO  - Entered Last Name: Smith
+13:09:54.539 [main] INFO  - Entered random full name: John Marie Smith
+13:09:54.697 [main] INFO  - Selected Male radio button
+13:09:54.707 [main] INFO  - Attempting to click the 'Next' button.
+13:09:54.885 [main] INFO  - 'Next' button clicked successfully.
+13:09:55.070 [main] INFO  - Entered random email: dhf.testing+897@gmail.com
+13:09:55.263 [main] INFO  - Entered random phone number: 0498366530
+13:09:55.263 [main] INFO  - Phone number format validation passed: 0498366530
+13:09:58.129 [main] INFO  - Entered address input: 123 A'
+13:09:59.152 [main] INFO  - Selected address input: 123 A'
+13:10:01.367 [main] INFO  - Clicked on Continue button
+13:10:02.579 [main] INFO  - Selecting Medicare eligibility option: Yes
+13:10:02.718 [main] INFO  - Selected 'Yes' for Medicare eligibility.
+13:10:19.710 [main] INFO  - Browser selected: chrome
+13:10:22.303 [main] INFO  - ChromeDriver initialized.
+13:10:22.785 [main] INFO  - Navigated to URL: https://uat.doctorshealthfund.com.au/
+13:10:25.788 [main] INFO  - All cookies cleared before starting the test.
+13:10:25.850 [main] INFO  - Navigating to the quote page.
+13:10:25.877 [main] INFO  - Page title: Private Health Insurance for Doctors | Doctors' Health Fund
+13:10:25.881 [main] INFO  - Clicking the 'Get Quote' button.
+13:10:25.881 [main] INFO  - Attempting to click the 'Get Quote' button...
+13:10:26.194 [main] INFO  - 'Get Quote' button clicked successfully.
+13:10:26.195 [main] INFO  - 'Get Quote' button clicked successfully.
+13:10:26.202 [main] INFO  - Selecting cover type: Single...
+13:10:26.712 [main] INFO  - Cover type 'Single' selected successfully.
+13:10:26.715 [main] INFO  - Clicking the 'Next' button...
+13:10:26.880 [main] INFO  - 'Next' button clicked successfully.
+13:10:26.882 [main] INFO  - Selecting residence: NSW...
+13:10:27.065 [main] INFO  - Residence 'NSW' selected successfully.
+13:10:27.068 [main] INFO  - Clicking the 'Next' button...
+13:10:27.214 [main] INFO  - 'Next' button clicked successfully.
+13:10:27.218 [main] INFO  - Entering day of birth: 01...
+13:10:27.338 [main] INFO  - Day of birth entered successfully.
+13:10:27.339 [main] INFO  - Entering month of birth: 01...
+13:10:27.442 [main] INFO  - Month of birth entered successfully.
+13:10:27.442 [main] INFO  - Entering year of birth: 1987...
+13:10:27.563 [main] INFO  - Year of birth entered successfully.
+13:10:27.565 [main] INFO  - Clicking the 'Next' button...
+13:10:27.692 [main] INFO  - 'Next' button clicked successfully.
+13:10:27.694 [main] INFO  - Selecting annual income: Below $97k...
+13:10:27.816 [main] INFO  - Annual income 'Below $97k' selected successfully.
+13:10:27.818 [main] INFO  - Clicking 'Calculate Cover' button...
+13:10:28.372 [main] INFO  - 'Calculate Cover' button clicked successfully.
+13:10:28.385 [main] INFO  - Selecting hospital cover: Top Cover...
+13:10:30.358 [main] INFO  - Selected the Extras Cover: Total Extras
+13:10:30.564 [main] INFO  - Clicked on the Apply Now button for the selected plan.
+13:10:30.578 [main] INFO  - Attempting to select 'No' for member status.
+13:10:30.972 [main] INFO  - 'No' radio button for member status selected successfully.
+13:10:30.974 [main] INFO  - Attempting to select 'Yes' for Australian citizenship status.
+13:10:31.215 [main] INFO  - 'Yes' radio button for citizenship status selected successfully.
+13:10:31.225 [main] INFO  - Attempting to click the 'Medical Practitioner' button.
+13:10:31.383 [main] INFO  - 'Medical Practitioner' button clicked successfully.
+13:10:31.388 [main] INFO  - Attempting to select the radio button for: Resident
+13:10:31.498 [main] INFO  - Radio button for 'Resident' selected successfully.
+13:10:31.509 [main] INFO  - Attempting to select Avant member option: No
+13:10:31.661 [main] INFO  - Avant member option 'No' selected successfully.
+13:10:32.950 [main] INFO  - Clicked on Continue button
+13:10:32.964 [main] INFO  - Attempting to select Avant member option: Yes
+13:10:33.112 [main] INFO  - Avant member option 'Yes' selected successfully.
+13:10:33.127 [main] INFO  - Attempting to select Avant member option: No
+13:10:33.274 [main] INFO  - Avant member option 'No' selected successfully.
+13:10:34.502 [main] INFO  - Clicked on Continue button
+13:10:34.504 [main] INFO  - Selecting option for transferring from another fund: No
+13:10:34.645 [main] INFO  - 'No' selected for transferring from another fund.
+13:10:35.353 [main] INFO  - Attempting to accept alert/modal.
+13:10:35.507 [main] INFO  - Alert/modal accepted successfully.
+13:10:35.517 [main] INFO  - Attempting to click the 'Next' button.
+13:10:35.752 [main] INFO  - 'Next' button clicked successfully.
+13:10:35.763 [main] INFO  - Selecting title from dropdown: Mr
+13:10:36.304 [main] INFO  - Selected 'Mr' from dropdown.
+13:10:36.540 [main] INFO  - Entered First Name: Taylor
+13:10:36.766 [main] INFO  - Entered Middle Name: Marie
+13:10:36.952 [main] INFO  - Entered Last Name: Taylor
+13:10:36.953 [main] INFO  - Entered random full name: Taylor Marie Taylor
+13:10:37.128 [main] INFO  - Selected Male radio button
+13:10:37.136 [main] INFO  - Attempting to click the 'Next' button.
+13:10:37.364 [main] INFO  - 'Next' button clicked successfully.
+13:10:37.527 [main] INFO  - Entered random email: dhf.testing+513@gmail.com
+13:10:37.734 [main] INFO  - Entered random phone number: 0498366378
+13:10:37.736 [main] INFO  - Phone number format validation passed: 0498366378
+13:10:40.608 [main] INFO  - Entered address input: 123 A'
+13:10:41.661 [main] INFO  - Selected address input: 123 A'
+13:10:43.875 [main] INFO  - Clicked on Continue button
+13:10:45.114 [main] INFO  - Selecting Medicare eligibility option: Yes
+13:10:45.218 [main] INFO  - Selected 'Yes' for Medicare eligibility.
+13:11:02.796 [main] INFO  - Browser selected: chrome
+13:11:05.580 [main] INFO  - ChromeDriver initialized.
+13:11:09.342 [main] INFO  - Navigated to URL: https://uat.doctorshealthfund.com.au/
+13:11:09.633 [main] INFO  - All cookies cleared before starting the test.
+13:11:09.709 [main] INFO  - Navigating to the quote page.
+13:11:09.774 [main] INFO  - Page title: Private Health Insurance for Doctors | Doctors' Health Fund
+13:11:09.782 [main] INFO  - Clicking the 'Get Quote' button.
+13:11:09.782 [main] INFO  - Attempting to click the 'Get Quote' button...
+13:11:10.001 [main] INFO  - 'Get Quote' button clicked successfully.
+13:11:10.002 [main] INFO  - 'Get Quote' button clicked successfully.
+13:11:10.008 [main] INFO  - Selecting cover type: Single...
+13:11:11.270 [main] INFO  - Cover type 'Single' selected successfully.
+13:11:11.272 [main] INFO  - Clicking the 'Next' button...
+13:11:11.411 [main] INFO  - 'Next' button clicked successfully.
+13:11:11.414 [main] INFO  - Selecting residence: NSW...
+13:11:11.557 [main] INFO  - Residence 'NSW' selected successfully.
+13:11:11.559 [main] INFO  - Clicking the 'Next' button...
+13:11:11.695 [main] INFO  - 'Next' button clicked successfully.
+13:11:11.698 [main] INFO  - Entering day of birth: 01...
+13:11:11.820 [main] INFO  - Day of birth entered successfully.
+13:11:11.820 [main] INFO  - Entering month of birth: 01...
+13:11:11.915 [main] INFO  - Month of birth entered successfully.
+13:11:11.915 [main] INFO  - Entering year of birth: 1987...
+13:11:12.027 [main] INFO  - Year of birth entered successfully.
+13:11:12.030 [main] INFO  - Clicking the 'Next' button...
+13:11:12.171 [main] INFO  - 'Next' button clicked successfully.
+13:11:12.175 [main] INFO  - Selecting annual income: Below $97k...
+13:11:12.291 [main] INFO  - Annual income 'Below $97k' selected successfully.
+13:11:12.294 [main] INFO  - Clicking 'Calculate Cover' button...
+13:11:12.842 [main] INFO  - 'Calculate Cover' button clicked successfully.
+13:11:12.866 [main] INFO  - Selecting hospital cover: Top Cover...
+13:11:14.411 [main] INFO  - Selected the Extras Cover: Total Extras
+13:11:14.582 [main] INFO  - Clicked on the Apply Now button for the selected plan.
+13:11:14.592 [main] INFO  - Attempting to select 'No' for member status.
+13:11:14.950 [main] INFO  - 'No' radio button for member status selected successfully.
+13:11:14.952 [main] INFO  - Attempting to select 'Yes' for Australian citizenship status.
+13:11:15.139 [main] INFO  - 'Yes' radio button for citizenship status selected successfully.
+13:11:15.189 [main] INFO  - Attempting to click the 'Medical Practitioner' button.
+13:11:15.351 [main] INFO  - 'Medical Practitioner' button clicked successfully.
+13:11:15.355 [main] INFO  - Attempting to select the radio button for: Resident
+13:11:15.455 [main] INFO  - Radio button for 'Resident' selected successfully.
+13:11:15.481 [main] INFO  - Attempting to select Avant member option: No
+13:11:15.593 [main] INFO  - Avant member option 'No' selected successfully.
+13:11:16.794 [main] INFO  - Clicked on Continue button
+13:11:16.807 [main] INFO  - Attempting to select Avant member option: Yes
+13:11:16.911 [main] INFO  - Avant member option 'Yes' selected successfully.
+13:11:16.918 [main] INFO  - Attempting to select Avant member option: No
+13:11:17.027 [main] INFO  - Avant member option 'No' selected successfully.
+13:11:18.394 [main] INFO  - Clicked on Continue button
+13:11:18.397 [main] INFO  - Selecting option for transferring from another fund: No
+13:11:18.576 [main] INFO  - 'No' selected for transferring from another fund.
+13:11:19.284 [main] INFO  - Attempting to accept alert/modal.
+13:11:19.430 [main] INFO  - Alert/modal accepted successfully.
+13:11:19.438 [main] INFO  - Attempting to click the 'Next' button.
+13:11:19.601 [main] INFO  - 'Next' button clicked successfully.
+13:11:19.615 [main] INFO  - Selecting title from dropdown: Mr
+13:11:20.009 [main] INFO  - Selected 'Mr' from dropdown.
+13:11:20.211 [main] INFO  - Entered First Name: Chris
+13:11:20.363 [main] INFO  - Entered Middle Name: Ray
+13:11:20.512 [main] INFO  - Entered Last Name: Smith
+13:11:20.513 [main] INFO  - Entered random full name: Chris Ray Smith
+13:11:20.612 [main] INFO  - Selected Male radio button
+13:11:20.652 [main] INFO  - Attempting to click the 'Next' button.
+13:11:20.790 [main] INFO  - 'Next' button clicked successfully.
+13:11:20.996 [main] INFO  - Entered random email: dhf.testing+662@gmail.com
+13:11:21.179 [main] INFO  - Entered random phone number: 0498365579
+13:11:21.179 [main] INFO  - Phone number format validation passed: 0498365579
+13:11:24.318 [main] INFO  - Entered address input: 123 A'
+13:11:25.375 [main] INFO  - Selected address input: 123 A'
+13:11:27.587 [main] INFO  - Clicked on Continue button
+13:11:28.792 [main] INFO  - Selecting Medicare eligibility option: Yes
+13:11:28.894 [main] INFO  - Selected 'Yes' for Medicare eligibility.
+13:12:04.633 [main] INFO  - Browser selected: chrome
+13:12:07.129 [main] INFO  - ChromeDriver initialized.
+13:12:07.593 [main] INFO  - Navigated to URL: https://uat.doctorshealthfund.com.au/
+13:12:10.561 [main] INFO  - All cookies cleared before starting the test.
+13:12:10.627 [main] INFO  - Navigating to the quote page.
+13:12:10.672 [main] INFO  - Page title: Private Health Insurance for Doctors | Doctors' Health Fund
+13:12:10.681 [main] INFO  - Clicking the 'Get Quote' button.
+13:12:10.681 [main] INFO  - Attempting to click the 'Get Quote' button...
+13:12:10.944 [main] INFO  - 'Get Quote' button clicked successfully.
+13:12:10.944 [main] INFO  - 'Get Quote' button clicked successfully.
+13:12:10.949 [main] INFO  - Selecting cover type: Single...
+13:12:11.511 [main] INFO  - Cover type 'Single' selected successfully.
+13:12:11.514 [main] INFO  - Clicking the 'Next' button...
+13:12:11.688 [main] INFO  - 'Next' button clicked successfully.
+13:12:11.690 [main] INFO  - Selecting residence: NSW...
+13:12:11.850 [main] INFO  - Residence 'NSW' selected successfully.
+13:12:11.852 [main] INFO  - Clicking the 'Next' button...
+13:12:11.996 [main] INFO  - 'Next' button clicked successfully.
+13:12:11.999 [main] INFO  - Entering day of birth: 01...
+13:12:12.135 [main] INFO  - Day of birth entered successfully.
+13:12:12.135 [main] INFO  - Entering month of birth: 01...
+13:12:12.262 [main] INFO  - Month of birth entered successfully.
+13:12:12.263 [main] INFO  - Entering year of birth: 1987...
+13:12:12.363 [main] INFO  - Year of birth entered successfully.
+13:12:12.365 [main] INFO  - Clicking the 'Next' button...
+13:12:12.497 [main] INFO  - 'Next' button clicked successfully.
+13:12:12.499 [main] INFO  - Selecting annual income: Below $97k...
+13:12:12.620 [main] INFO  - Annual income 'Below $97k' selected successfully.
+13:12:12.622 [main] INFO  - Clicking 'Calculate Cover' button...
+13:12:13.158 [main] INFO  - 'Calculate Cover' button clicked successfully.
+13:12:13.181 [main] INFO  - Selecting hospital cover: Top Cover...
+13:12:14.824 [main] INFO  - Selected the Extras Cover: Total Extras
+13:12:15.043 [main] INFO  - Clicked on the Apply Now button for the selected plan.
+13:12:15.056 [main] INFO  - Attempting to select 'No' for member status.
+13:12:15.403 [main] INFO  - 'No' radio button for member status selected successfully.
+13:12:15.405 [main] INFO  - Attempting to select 'Yes' for Australian citizenship status.
+13:12:15.570 [main] INFO  - 'Yes' radio button for citizenship status selected successfully.
+13:12:15.579 [main] INFO  - Attempting to click the 'Medical Practitioner' button.
+13:12:15.704 [main] INFO  - 'Medical Practitioner' button clicked successfully.
+13:12:15.710 [main] INFO  - Attempting to select the radio button for: Resident
+13:12:15.873 [main] INFO  - Radio button for 'Resident' selected successfully.
+13:12:15.900 [main] INFO  - Attempting to select Avant member option: No
+13:12:16.002 [main] INFO  - Avant member option 'No' selected successfully.
+13:12:17.209 [main] INFO  - Clicked on Continue button
+13:12:17.218 [main] INFO  - Attempting to select Avant member option: Yes
+13:12:17.318 [main] INFO  - Avant member option 'Yes' selected successfully.
+13:12:17.327 [main] INFO  - Attempting to select Avant member option: No
+13:12:17.444 [main] INFO  - Avant member option 'No' selected successfully.
+13:12:18.658 [main] INFO  - Clicked on Continue button
+13:12:18.660 [main] INFO  - Selecting option for transferring from another fund: No
+13:12:18.785 [main] INFO  - 'No' selected for transferring from another fund.
+13:12:19.496 [main] INFO  - Attempting to accept alert/modal.
+13:12:19.696 [main] INFO  - Alert/modal accepted successfully.
+13:12:19.711 [main] INFO  - Attempting to click the 'Next' button.
+13:12:19.951 [main] INFO  - 'Next' button clicked successfully.
+13:12:20.007 [main] INFO  - Selecting title from dropdown: Mr
+13:12:20.539 [main] INFO  - Selected 'Mr' from dropdown.
+13:12:20.759 [main] INFO  - Entered First Name: John
+13:12:20.941 [main] INFO  - Entered Middle Name: Marie
+13:12:21.089 [main] INFO  - Entered Last Name: Taylor
+13:12:21.090 [main] INFO  - Entered random full name: John Marie Taylor
+13:12:21.222 [main] INFO  - Selected Male radio button
+13:12:21.268 [main] INFO  - Attempting to click the 'Next' button.
+13:12:21.444 [main] INFO  - 'Next' button clicked successfully.
+13:12:21.611 [main] INFO  - Entered random email: dhf.testing+31@gmail.com
+13:12:21.827 [main] INFO  - Entered random phone number: 0498363342
+13:12:21.828 [main] INFO  - Phone number format validation passed: 0498363342
+13:12:24.810 [main] INFO  - Entered address input: 123 A'
+13:12:25.859 [main] INFO  - Selected address input: 123 A'
+13:12:28.067 [main] INFO  - Clicked on Continue button
+13:12:29.325 [main] INFO  - Selecting Medicare eligibility option: Yes
+13:12:29.428 [main] INFO  - Selected 'Yes' for Medicare eligibility.
+13:15:26.532 [main] INFO  - Browser selected: chrome
+13:15:29.034 [main] INFO  - ChromeDriver initialized.
+13:15:32.059 [main] INFO  - Navigated to URL: https://uat.doctorshealthfund.com.au/
+13:15:32.371 [main] INFO  - All cookies cleared before starting the test.
+13:15:32.435 [main] INFO  - Navigating to the quote page.
+13:15:32.467 [main] INFO  - Page title: Private Health Insurance for Doctors | Doctors' Health Fund
+13:15:32.473 [main] INFO  - Clicking the 'Get Quote' button.
+13:15:32.473 [main] INFO  - Attempting to click the 'Get Quote' button...
+13:15:32.704 [main] INFO  - 'Get Quote' button clicked successfully.
+13:15:32.704 [main] INFO  - 'Get Quote' button clicked successfully.
+13:15:32.712 [main] INFO  - Selecting cover type: Single...
+13:15:33.176 [main] INFO  - Cover type 'Single' selected successfully.
+13:15:33.179 [main] INFO  - Clicking the 'Next' button...
+13:15:33.325 [main] INFO  - 'Next' button clicked successfully.
+13:15:33.328 [main] INFO  - Selecting residence: NSW...
+13:15:33.477 [main] INFO  - Residence 'NSW' selected successfully.
+13:15:33.480 [main] INFO  - Clicking the 'Next' button...
+13:15:33.612 [main] INFO  - 'Next' button clicked successfully.
+13:15:33.617 [main] INFO  - Entering day of birth: 01...
+13:15:33.737 [main] INFO  - Day of birth entered successfully.
+13:15:33.737 [main] INFO  - Entering month of birth: 01...
+13:15:33.841 [main] INFO  - Month of birth entered successfully.
+13:15:33.841 [main] INFO  - Entering year of birth: 1987...
+13:15:33.942 [main] INFO  - Year of birth entered successfully.
+13:15:33.944 [main] INFO  - Clicking the 'Next' button...
+13:15:34.083 [main] INFO  - 'Next' button clicked successfully.
+13:15:34.085 [main] INFO  - Selecting annual income: Below $97k...
+13:15:34.207 [main] INFO  - Annual income 'Below $97k' selected successfully.
+13:15:34.210 [main] INFO  - Clicking 'Calculate Cover' button...
+13:15:34.755 [main] INFO  - 'Calculate Cover' button clicked successfully.
+13:15:34.774 [main] INFO  - Selecting hospital cover: Top Cover...
+13:15:36.539 [main] INFO  - Selected the Extras Cover: Total Extras
+13:15:36.791 [main] INFO  - Clicked on the Apply Now button for the selected plan.
+13:15:36.817 [main] INFO  - Attempting to select 'No' for member status.
+13:15:37.152 [main] INFO  - 'No' radio button for member status selected successfully.
+13:15:37.154 [main] INFO  - Attempting to select 'Yes' for Australian citizenship status.
+13:15:37.312 [main] INFO  - 'Yes' radio button for citizenship status selected successfully.
+13:15:37.322 [main] INFO  - Attempting to click the 'Medical Practitioner' button.
+13:15:37.440 [main] INFO  - 'Medical Practitioner' button clicked successfully.
+13:15:37.445 [main] INFO  - Attempting to select the radio button for: Resident
+13:15:37.570 [main] INFO  - Radio button for 'Resident' selected successfully.
+13:15:37.577 [main] INFO  - Attempting to select Avant member option: No
+13:15:37.729 [main] INFO  - Avant member option 'No' selected successfully.
+13:15:38.932 [main] INFO  - Clicked on Continue button
+13:15:38.939 [main] INFO  - Attempting to select Avant member option: Yes
+13:15:39.031 [main] INFO  - Avant member option 'Yes' selected successfully.
+13:15:39.038 [main] INFO  - Attempting to select Avant member option: No
+13:15:39.149 [main] INFO  - Avant member option 'No' selected successfully.
+13:15:40.385 [main] INFO  - Clicked on Continue button
+13:15:40.387 [main] INFO  - Selecting option for transferring from another fund: No
+13:15:40.530 [main] INFO  - 'No' selected for transferring from another fund.
+13:15:41.246 [main] INFO  - Attempting to accept alert/modal.
+13:15:41.485 [main] INFO  - Alert/modal accepted successfully.
+13:15:41.496 [main] INFO  - Attempting to click the 'Next' button.
+13:15:41.723 [main] INFO  - 'Next' button clicked successfully.
+13:15:41.743 [main] INFO  - Selecting title from dropdown: Mr
+13:15:42.263 [main] INFO  - Selected 'Mr' from dropdown.
+13:15:42.422 [main] INFO  - Entered First Name: John
+13:15:42.551 [main] INFO  - Entered Middle Name: Lou
+13:15:42.721 [main] INFO  - Entered Last Name: Thomas
+13:15:42.722 [main] INFO  - Entered random full name: John Lou Thomas
+13:15:42.832 [main] INFO  - Selected Male radio button
+13:15:42.875 [main] INFO  - Attempting to click the 'Next' button.
+13:15:43.015 [main] INFO  - 'Next' button clicked successfully.
+13:15:43.231 [main] INFO  - Entered random email: dhf.testing+622@gmail.com
+13:15:43.417 [main] INFO  - Entered random phone number: 0498363186
+13:15:43.417 [main] INFO  - Phone number format validation passed: 0498363186
+13:16:11.138 [main] INFO  - Browser selected: chrome
+13:16:13.506 [main] INFO  - ChromeDriver initialized.
+13:16:17.251 [main] INFO  - Navigated to URL: https://uat.doctorshealthfund.com.au/
+13:16:17.556 [main] INFO  - All cookies cleared before starting the test.
+13:16:17.617 [main] INFO  - Navigating to the quote page.
+13:16:17.641 [main] INFO  - Page title: Private Health Insurance for Doctors | Doctors' Health Fund
+13:16:17.645 [main] INFO  - Clicking the 'Get Quote' button.
+13:16:17.645 [main] INFO  - Attempting to click the 'Get Quote' button...
+13:16:18.058 [main] INFO  - 'Get Quote' button clicked successfully.
+13:16:18.059 [main] INFO  - 'Get Quote' button clicked successfully.
+13:16:18.063 [main] INFO  - Selecting cover type: Single...
+13:16:18.605 [main] INFO  - Cover type 'Single' selected successfully.
+13:16:18.608 [main] INFO  - Clicking the 'Next' button...
+13:16:18.772 [main] INFO  - 'Next' button clicked successfully.
+13:16:18.775 [main] INFO  - Selecting residence: NSW...
+13:16:18.924 [main] INFO  - Residence 'NSW' selected successfully.
+13:16:18.928 [main] INFO  - Clicking the 'Next' button...
+13:16:19.087 [main] INFO  - 'Next' button clicked successfully.
+13:16:19.090 [main] INFO  - Entering day of birth: 01...
+13:16:19.216 [main] INFO  - Day of birth entered successfully.
+13:16:19.216 [main] INFO  - Entering month of birth: 01...
+13:16:19.313 [main] INFO  - Month of birth entered successfully.
+13:16:19.313 [main] INFO  - Entering year of birth: 1987...
+13:16:19.422 [main] INFO  - Year of birth entered successfully.
+13:16:19.424 [main] INFO  - Clicking the 'Next' button...
+13:16:19.552 [main] INFO  - 'Next' button clicked successfully.
+13:16:19.555 [main] INFO  - Selecting annual income: Below $97k...
+13:16:19.682 [main] INFO  - Annual income 'Below $97k' selected successfully.
+13:16:19.685 [main] INFO  - Clicking 'Calculate Cover' button...
+13:16:20.225 [main] INFO  - 'Calculate Cover' button clicked successfully.
+13:16:20.254 [main] INFO  - Selecting hospital cover: Top Cover...
+13:16:22.409 [main] INFO  - Selected the Extras Cover: Total Extras
+13:16:22.658 [main] INFO  - Clicked on the Apply Now button for the selected plan.
+13:16:22.673 [main] INFO  - Attempting to select 'No' for member status.
+13:16:23.069 [main] INFO  - 'No' radio button for member status selected successfully.
+13:16:23.073 [main] INFO  - Attempting to select 'Yes' for Australian citizenship status.
+13:16:23.280 [main] INFO  - 'Yes' radio button for citizenship status selected successfully.
+13:16:23.289 [main] INFO  - Attempting to click the 'Medical Practitioner' button.
+13:16:23.472 [main] INFO  - 'Medical Practitioner' button clicked successfully.
+13:16:23.477 [main] INFO  - Attempting to select the radio button for: Resident
+13:16:23.736 [main] INFO  - Radio button for 'Resident' selected successfully.
+13:16:23.752 [main] INFO  - Attempting to select Avant member option: No
+13:16:23.907 [main] INFO  - Avant member option 'No' selected successfully.
+13:16:25.102 [main] INFO  - Clicked on Continue button
+13:16:25.109 [main] INFO  - Attempting to select Avant member option: Yes
+13:16:25.213 [main] INFO  - Avant member option 'Yes' selected successfully.
+13:16:25.222 [main] INFO  - Attempting to select Avant member option: No
+13:16:25.316 [main] INFO  - Avant member option 'No' selected successfully.
+13:16:26.632 [main] INFO  - Clicked on Continue button
+13:16:26.634 [main] INFO  - Selecting option for transferring from another fund: No
+13:16:26.783 [main] INFO  - 'No' selected for transferring from another fund.
+13:16:27.495 [main] INFO  - Attempting to accept alert/modal.
+13:16:27.677 [main] INFO  - Alert/modal accepted successfully.
+13:16:27.690 [main] INFO  - Attempting to click the 'Next' button.
+13:16:27.854 [main] INFO  - 'Next' button clicked successfully.
+13:16:27.863 [main] INFO  - Selecting title from dropdown: Mr
+13:16:28.332 [main] INFO  - Selected 'Mr' from dropdown.
+13:16:28.496 [main] INFO  - Entered First Name: John
+13:16:28.656 [main] INFO  - Entered Middle Name: Ray
+13:16:28.885 [main] INFO  - Entered Last Name: Thomas
+13:16:28.885 [main] INFO  - Entered random full name: John Ray Thomas
+13:16:29.260 [main] INFO  - Selected Male radio button
+13:16:29.319 [main] INFO  - Attempting to click the 'Next' button.
+13:16:29.626 [main] INFO  - 'Next' button clicked successfully.
+13:16:29.847 [main] INFO  - Entered random email: dhf.testing+995@gmail.com
+13:16:30.062 [main] INFO  - Entered random phone number: 0498365624
+13:16:30.063 [main] INFO  - Phone number format validation passed: 0498365624
+13:18:16.098 [main] INFO  - Browser selected: chrome
+13:18:18.545 [main] INFO  - ChromeDriver initialized.
+13:18:20.287 [main] INFO  - Navigated to URL: https://uat.doctorshealthfund.com.au/
+13:18:20.333 [main] INFO  - All cookies cleared before starting the test.
+13:18:20.425 [main] INFO  - Navigating to the quote page.
+13:18:21.121 [main] INFO  - Page title: Private Health Insurance for Doctors | Doctors' Health Fund
+13:18:21.127 [main] INFO  - Clicking the 'Get Quote' button.
+13:18:21.127 [main] INFO  - Attempting to click the 'Get Quote' button...
+13:18:21.561 [main] INFO  - 'Get Quote' button clicked successfully.
+13:18:21.562 [main] INFO  - 'Get Quote' button clicked successfully.
+13:18:21.565 [main] INFO  - Selecting cover type: Single...
+13:18:22.744 [main] INFO  - Cover type 'Single' selected successfully.
+13:18:22.746 [main] INFO  - Clicking the 'Next' button...
+13:18:22.880 [main] INFO  - 'Next' button clicked successfully.
+13:18:22.882 [main] INFO  - Selecting residence: NSW...
+13:18:23.019 [main] INFO  - Residence 'NSW' selected successfully.
+13:18:23.024 [main] INFO  - Clicking the 'Next' button...
+13:18:23.164 [main] INFO  - 'Next' button clicked successfully.
+13:18:23.167 [main] INFO  - Entering day of birth: 01...
+13:18:23.362 [main] INFO  - Day of birth entered successfully.
+13:18:23.362 [main] INFO  - Entering month of birth: 01...
+13:18:23.481 [main] INFO  - Month of birth entered successfully.
+13:18:23.482 [main] INFO  - Entering year of birth: 1987...
+13:18:23.658 [main] INFO  - Year of birth entered successfully.
+13:18:23.660 [main] INFO  - Clicking the 'Next' button...
+13:18:23.856 [main] INFO  - 'Next' button clicked successfully.
+13:18:23.858 [main] INFO  - Selecting annual income: Below $97k...
+13:18:24.070 [main] INFO  - Annual income 'Below $97k' selected successfully.
+13:18:24.073 [main] INFO  - Clicking 'Calculate Cover' button...
+13:18:24.624 [main] INFO  - 'Calculate Cover' button clicked successfully.
+13:18:24.707 [main] INFO  - Selecting hospital cover: Top Cover...
+13:18:26.294 [main] INFO  - Selected the Extras Cover: Total Extras
+13:18:26.477 [main] INFO  - Clicked on the Apply Now button for the selected plan.
+13:18:26.487 [main] INFO  - Attempting to select 'No' for member status.
+13:18:26.841 [main] INFO  - 'No' radio button for member status selected successfully.
+13:18:26.844 [main] INFO  - Attempting to select 'Yes' for Australian citizenship status.
+13:18:27.001 [main] INFO  - 'Yes' radio button for citizenship status selected successfully.
+13:18:27.011 [main] INFO  - Attempting to click the 'Medical Practitioner' button.
+13:18:27.141 [main] INFO  - 'Medical Practitioner' button clicked successfully.
+13:18:27.146 [main] INFO  - Attempting to select the radio button for: Resident
+13:18:27.292 [main] INFO  - Radio button for 'Resident' selected successfully.
+13:18:27.300 [main] INFO  - Attempting to select Avant member option: No
+13:18:27.437 [main] INFO  - Avant member option 'No' selected successfully.
+13:18:28.713 [main] INFO  - Clicked on Continue button
+13:18:28.722 [main] INFO  - Attempting to select Avant member option: Yes
+13:18:28.825 [main] INFO  - Avant member option 'Yes' selected successfully.
+13:18:28.833 [main] INFO  - Attempting to select Avant member option: No
+13:18:28.974 [main] INFO  - Avant member option 'No' selected successfully.
+13:18:30.237 [main] INFO  - Clicked on Continue button
+13:18:30.239 [main] INFO  - Selecting option for transferring from another fund: No
+13:18:30.378 [main] INFO  - 'No' selected for transferring from another fund.
+13:18:31.099 [main] INFO  - Attempting to accept alert/modal.
+13:18:31.341 [main] INFO  - Alert/modal accepted successfully.
+13:18:31.351 [main] INFO  - Attempting to click the 'Next' button.
+13:18:31.557 [main] INFO  - 'Next' button clicked successfully.
+13:18:31.570 [main] INFO  - Selecting title from dropdown: Mr
+13:18:32.055 [main] INFO  - Selected 'Mr' from dropdown.
+13:18:32.260 [main] INFO  - Entered First Name: Chris
+13:18:32.424 [main] INFO  - Entered Middle Name: Lee
+13:18:32.591 [main] INFO  - Entered Last Name: Anderson
+13:18:32.592 [main] INFO  - Entered random full name: Chris Lee Anderson
+13:18:32.701 [main] INFO  - Selected Male radio button
+13:18:32.789 [main] INFO  - Attempting to click the 'Next' button.
+13:18:32.978 [main] INFO  - 'Next' button clicked successfully.
+13:18:33.193 [main] INFO  - Entered random email: dhf.testing+72@gmail.com
+13:18:33.343 [main] INFO  - Entered random phone number: 0498365068
+13:18:33.344 [main] INFO  - Phone number format validation passed: 0498365068
+13:22:23.095 [main] INFO  - Browser selected: chrome
+13:22:25.732 [main] INFO  - ChromeDriver initialized.
+13:22:30.382 [main] INFO  - Navigated to URL: https://uat.doctorshealthfund.com.au/
+13:22:30.709 [main] INFO  - All cookies cleared before starting the test.
+13:22:30.766 [main] INFO  - Navigating to the quote page.
+13:22:30.853 [main] INFO  - Page title: Private Health Insurance for Doctors | Doctors' Health Fund
+13:22:30.857 [main] INFO  - Clicking the 'Get Quote' button.
+13:22:30.858 [main] INFO  - Attempting to click the 'Get Quote' button...
+13:22:31.083 [main] INFO  - 'Get Quote' button clicked successfully.
+13:22:31.084 [main] INFO  - 'Get Quote' button clicked successfully.
+13:22:31.092 [main] INFO  - Selecting cover type: Single...
+13:22:32.419 [main] INFO  - Cover type 'Single' selected successfully.
+13:22:32.421 [main] INFO  - Clicking the 'Next' button...
+13:22:32.553 [main] INFO  - 'Next' button clicked successfully.
+13:22:32.555 [main] INFO  - Selecting residence: NSW...
+13:22:32.705 [main] INFO  - Residence 'NSW' selected successfully.
+13:22:32.707 [main] INFO  - Clicking the 'Next' button...
+13:22:32.852 [main] INFO  - 'Next' button clicked successfully.
+13:22:32.855 [main] INFO  - Entering day of birth: 01...
+13:22:33.012 [main] INFO  - Day of birth entered successfully.
+13:22:33.013 [main] INFO  - Entering month of birth: 01...
+13:22:33.117 [main] INFO  - Month of birth entered successfully.
+13:22:33.117 [main] INFO  - Entering year of birth: 1987...
+13:22:33.240 [main] INFO  - Year of birth entered successfully.
+13:22:33.243 [main] INFO  - Clicking the 'Next' button...
+13:22:33.401 [main] INFO  - 'Next' button clicked successfully.
+13:22:33.404 [main] INFO  - Selecting annual income: Below $97k...
+13:22:33.542 [main] INFO  - Annual income 'Below $97k' selected successfully.
+13:22:33.545 [main] INFO  - Clicking 'Calculate Cover' button...
+13:22:34.037 [main] INFO  - 'Calculate Cover' button clicked successfully.
+13:22:34.106 [main] INFO  - Selecting hospital cover: Top Cover...
+13:22:36.077 [main] INFO  - Selected the Extras Cover: Total Extras
+13:22:36.313 [main] INFO  - Clicked on the Apply Now button for the selected plan.
+13:22:36.324 [main] INFO  - Attempting to select 'No' for member status.
+13:22:36.666 [main] INFO  - 'No' radio button for member status selected successfully.
+13:22:36.669 [main] INFO  - Attempting to select 'Yes' for Australian citizenship status.
+13:22:36.836 [main] INFO  - 'Yes' radio button for citizenship status selected successfully.
+13:22:36.849 [main] INFO  - Attempting to click the 'Medical Practitioner' button.
+13:22:36.972 [main] INFO  - 'Medical Practitioner' button clicked successfully.
+13:22:36.978 [main] INFO  - Attempting to select the radio button for: Resident
+13:22:37.090 [main] INFO  - Radio button for 'Resident' selected successfully.
+13:22:37.099 [main] INFO  - Attempting to select Avant member option: No
+13:22:37.229 [main] INFO  - Avant member option 'No' selected successfully.
+13:22:38.493 [main] INFO  - Clicked on Continue button
+13:22:38.504 [main] INFO  - Attempting to select Avant member option: Yes
+13:22:38.602 [main] INFO  - Avant member option 'Yes' selected successfully.
+13:22:38.610 [main] INFO  - Attempting to select Avant member option: No
+13:22:38.741 [main] INFO  - Avant member option 'No' selected successfully.
+13:22:39.955 [main] INFO  - Clicked on Continue button
+13:22:39.957 [main] INFO  - Selecting option for transferring from another fund: No
+13:22:40.100 [main] INFO  - 'No' selected for transferring from another fund.
+13:22:40.801 [main] INFO  - Attempting to accept alert/modal.
+13:22:40.987 [main] INFO  - Alert/modal accepted successfully.
+13:22:41.002 [main] INFO  - Attempting to click the 'Next' button.
+13:22:41.204 [main] INFO  - 'Next' button clicked successfully.
+13:22:41.225 [main] INFO  - Selecting title from dropdown: Mr
+13:22:41.843 [main] INFO  - Selected 'Mr' from dropdown.
+13:22:42.031 [main] INFO  - Entered First Name: Alex
+13:22:42.271 [main] INFO  - Entered Middle Name: Ann
+13:22:42.480 [main] INFO  - Entered Last Name: Johnson
+13:22:42.480 [main] INFO  - Entered random full name: Alex Ann Johnson
+13:22:42.703 [main] INFO  - Selected Male radio button
+13:22:42.764 [main] INFO  - Attempting to click the 'Next' button.
+13:22:42.949 [main] INFO  - 'Next' button clicked successfully.
+13:22:43.149 [main] INFO  - Entered random email: dhf.testing+137@gmail.com
+13:22:43.335 [main] INFO  - Entered random phone number: 0498364214
+13:22:43.336 [main] INFO  - Phone number format validation passed: 0498364214
+13:22:46.220 [main] INFO  - Entered address input: 123 A'
+13:22:47.290 [main] INFO  - Selected address input: 123 A'
+13:22:49.523 [main] INFO  - Clicked on Continue button
+13:23:39.665 [main] INFO  - Browser selected: chrome
+13:23:42.458 [main] INFO  - ChromeDriver initialized.
+13:23:45.501 [main] INFO  - Navigated to URL: https://uat.doctorshealthfund.com.au/
+13:23:45.946 [main] INFO  - All cookies cleared before starting the test.
+13:23:45.999 [main] INFO  - Navigating to the quote page.
+13:23:46.033 [main] INFO  - Page title: Private Health Insurance for Doctors | Doctors' Health Fund
+13:23:46.039 [main] INFO  - Clicking the 'Get Quote' button.
+13:23:46.039 [main] INFO  - Attempting to click the 'Get Quote' button...
+13:23:46.279 [main] INFO  - 'Get Quote' button clicked successfully.
+13:23:46.280 [main] INFO  - 'Get Quote' button clicked successfully.
+13:23:46.284 [main] INFO  - Selecting cover type: Single...
+13:23:47.735 [main] INFO  - Cover type 'Single' selected successfully.
+13:23:47.738 [main] INFO  - Clicking the 'Next' button...
+13:23:47.929 [main] INFO  - 'Next' button clicked successfully.
+13:23:47.932 [main] INFO  - Selecting residence: NSW...
+13:23:48.098 [main] INFO  - Residence 'NSW' selected successfully.
+13:23:48.101 [main] INFO  - Clicking the 'Next' button...
+13:23:48.267 [main] INFO  - 'Next' button clicked successfully.
+13:23:48.269 [main] INFO  - Entering day of birth: 01...
+13:23:48.411 [main] INFO  - Day of birth entered successfully.
+13:23:48.411 [main] INFO  - Entering month of birth: 01...
+13:23:48.553 [main] INFO  - Month of birth entered successfully.
+13:23:48.553 [main] INFO  - Entering year of birth: 1987...
+13:23:48.662 [main] INFO  - Year of birth entered successfully.
+13:23:48.664 [main] INFO  - Clicking the 'Next' button...
+13:23:48.799 [main] INFO  - 'Next' button clicked successfully.
+13:23:48.802 [main] INFO  - Selecting annual income: Below $97k...
+13:23:48.928 [main] INFO  - Annual income 'Below $97k' selected successfully.
+13:23:48.930 [main] INFO  - Clicking 'Calculate Cover' button...
+13:23:49.477 [main] INFO  - 'Calculate Cover' button clicked successfully.
+13:23:49.527 [main] INFO  - Selecting hospital cover: Top Cover...
+13:23:52.554 [main] INFO  - Selected the Extras Cover: Total Extras
+13:23:52.800 [main] INFO  - Clicked on the Apply Now button for the selected plan.
+13:23:52.816 [main] INFO  - Attempting to select 'No' for member status.
+13:23:53.235 [main] INFO  - 'No' radio button for member status selected successfully.
+13:23:53.239 [main] INFO  - Attempting to select 'Yes' for Australian citizenship status.
+13:23:53.391 [main] INFO  - 'Yes' radio button for citizenship status selected successfully.
+13:23:53.399 [main] INFO  - Attempting to click the 'Medical Practitioner' button.
+13:23:53.516 [main] INFO  - 'Medical Practitioner' button clicked successfully.
+13:23:53.521 [main] INFO  - Attempting to select the radio button for: Resident
+13:23:53.649 [main] INFO  - Radio button for 'Resident' selected successfully.
+13:23:53.661 [main] INFO  - Attempting to select Avant member option: No
+13:23:53.798 [main] INFO  - Avant member option 'No' selected successfully.
+13:23:55.013 [main] INFO  - Clicked on Continue button
+13:23:55.022 [main] INFO  - Attempting to select Avant member option: Yes
+13:23:55.164 [main] INFO  - Avant member option 'Yes' selected successfully.
+13:23:55.173 [main] INFO  - Attempting to select Avant member option: No
+13:23:55.291 [main] INFO  - Avant member option 'No' selected successfully.
+13:23:56.639 [main] INFO  - Clicked on Continue button
+13:23:56.641 [main] INFO  - Selecting option for transferring from another fund: No
+13:23:56.822 [main] INFO  - 'No' selected for transferring from another fund.
+13:23:57.558 [main] INFO  - Attempting to accept alert/modal.
+13:23:57.858 [main] INFO  - Alert/modal accepted successfully.
+13:23:57.877 [main] INFO  - Attempting to click the 'Next' button.
+13:23:58.087 [main] INFO  - 'Next' button clicked successfully.
+13:23:58.103 [main] INFO  - Selecting title from dropdown: Mr
+13:23:58.642 [main] INFO  - Selected 'Mr' from dropdown.
+13:23:58.979 [main] INFO  - Entered First Name: Chris
+13:23:59.192 [main] INFO  - Entered Middle Name: James
+13:23:59.545 [main] INFO  - Entered Last Name: Smith
+13:23:59.546 [main] INFO  - Entered random full name: Chris James Smith
+13:23:59.708 [main] INFO  - Selected Male radio button
+13:23:59.720 [main] INFO  - Attempting to click the 'Next' button.
+13:23:59.934 [main] INFO  - 'Next' button clicked successfully.
+13:24:00.151 [main] INFO  - Entered random email: dhf.testing+367@gmail.com
+13:24:00.353 [main] INFO  - Entered random phone number: 0498362882
+13:24:00.354 [main] INFO  - Phone number format validation passed: 0498362882
+13:24:03.179 [main] INFO  - Entered address input: 123 A'
+13:24:04.199 [main] INFO  - Selected address input: 123 A'
+13:24:06.405 [main] INFO  - Clicked on Continue button
+13:24:46.528 [main] INFO  - Browser selected: chrome
+13:24:49.256 [main] INFO  - ChromeDriver initialized.
+13:24:50.970 [main] INFO  - Navigated to URL: https://uat.doctorshealthfund.com.au/
+13:24:51.148 [main] INFO  - All cookies cleared before starting the test.
+13:24:51.243 [main] INFO  - Navigating to the quote page.
+13:24:52.077 [main] INFO  - Page title: Private Health Insurance for Doctors | Doctors' Health Fund
+13:24:52.084 [main] INFO  - Clicking the 'Get Quote' button.
+13:24:52.084 [main] INFO  - Attempting to click the 'Get Quote' button...
+13:24:52.488 [main] WARN  - Encountered StaleElementReferenceException for 'Get Quote' button. Reinitializing elements and retrying...
+13:24:52.696 [main] INFO  - 'Get Quote' button clicked successfully after retrying.
+13:24:52.696 [main] INFO  - 'Get Quote' button clicked successfully.
+13:24:52.703 [main] INFO  - Selecting cover type: Single...
+13:24:53.129 [main] INFO  - Cover type 'Single' selected successfully.
+13:24:53.131 [main] INFO  - Clicking the 'Next' button...
+13:24:53.267 [main] INFO  - 'Next' button clicked successfully.
+13:24:53.269 [main] INFO  - Selecting residence: NSW...
+13:24:53.398 [main] INFO  - Residence 'NSW' selected successfully.
+13:24:53.401 [main] INFO  - Clicking the 'Next' button...
+13:24:53.546 [main] INFO  - 'Next' button clicked successfully.
+13:24:53.548 [main] INFO  - Entering day of birth: 01...
+13:24:53.696 [main] INFO  - Day of birth entered successfully.
+13:24:53.696 [main] INFO  - Entering month of birth: 01...
+13:24:53.792 [main] INFO  - Month of birth entered successfully.
+13:24:53.792 [main] INFO  - Entering year of birth: 1987...
+13:24:53.893 [main] INFO  - Year of birth entered successfully.
+13:24:53.895 [main] INFO  - Clicking the 'Next' button...
+13:24:54.032 [main] INFO  - 'Next' button clicked successfully.
+13:24:54.035 [main] INFO  - Selecting annual income: Below $97k...
+13:24:54.149 [main] INFO  - Annual income 'Below $97k' selected successfully.
+13:24:54.152 [main] INFO  - Clicking 'Calculate Cover' button...
+13:24:54.692 [main] INFO  - 'Calculate Cover' button clicked successfully.
+13:24:54.714 [main] INFO  - Selecting hospital cover: Top Cover...
+13:24:56.373 [main] INFO  - Selected the Extras Cover: Total Extras
+13:24:56.556 [main] INFO  - Clicked on the Apply Now button for the selected plan.
+13:24:56.575 [main] INFO  - Attempting to select 'No' for member status.
+13:24:56.903 [main] INFO  - 'No' radio button for member status selected successfully.
+13:24:56.907 [main] INFO  - Attempting to select 'Yes' for Australian citizenship status.
+13:24:57.062 [main] INFO  - 'Yes' radio button for citizenship status selected successfully.
+13:24:57.076 [main] INFO  - Attempting to click the 'Medical Practitioner' button.
+13:24:57.196 [main] INFO  - 'Medical Practitioner' button clicked successfully.
+13:24:57.202 [main] INFO  - Attempting to select the radio button for: Resident
+13:24:57.326 [main] INFO  - Radio button for 'Resident' selected successfully.
+13:24:57.333 [main] INFO  - Attempting to select Avant member option: No
+13:24:57.456 [main] INFO  - Avant member option 'No' selected successfully.
+13:24:58.671 [main] INFO  - Clicked on Continue button
+13:24:58.679 [main] INFO  - Attempting to select Avant member option: Yes
+13:24:58.792 [main] INFO  - Avant member option 'Yes' selected successfully.
+13:24:58.799 [main] INFO  - Attempting to select Avant member option: No
+13:24:58.902 [main] INFO  - Avant member option 'No' selected successfully.
+13:25:00.143 [main] INFO  - Clicked on Continue button
+13:25:00.145 [main] INFO  - Selecting option for transferring from another fund: No
+13:25:00.276 [main] INFO  - 'No' selected for transferring from another fund.
+13:25:00.980 [main] INFO  - Attempting to accept alert/modal.
+13:25:01.139 [main] INFO  - Alert/modal accepted successfully.
+13:25:01.148 [main] INFO  - Attempting to click the 'Next' button.
+13:25:01.301 [main] INFO  - 'Next' button clicked successfully.
+13:25:01.323 [main] INFO  - Selecting title from dropdown: Mr
+13:25:01.731 [main] INFO  - Selected 'Mr' from dropdown.
+13:25:01.899 [main] INFO  - Entered First Name: Chris
+13:25:02.047 [main] INFO  - Entered Middle Name: Marie
+13:25:02.238 [main] INFO  - Entered Last Name: Taylor
+13:25:02.238 [main] INFO  - Entered random full name: Chris Marie Taylor
+13:25:02.356 [main] INFO  - Selected Male radio button
+13:25:02.382 [main] INFO  - Attempting to click the 'Next' button.
+13:25:02.520 [main] INFO  - 'Next' button clicked successfully.
+13:25:02.817 [main] INFO  - Entered random email: dhf.testing+5@gmail.com
+13:25:02.971 [main] INFO  - Entered random phone number: 0498366858
+13:25:02.971 [main] INFO  - Phone number format validation passed: 0498366858
+13:25:05.826 [main] INFO  - Entered address input: 123 A'
+13:25:06.880 [main] INFO  - Selected address input: 123 A'
+13:25:09.214 [main] INFO  - Clicked on Continue button
+13:26:21.787 [main] INFO  - Browser selected: chrome
+13:26:24.520 [main] INFO  - ChromeDriver initialized.
+13:26:27.499 [main] INFO  - Navigated to URL: https://uat.doctorshealthfund.com.au/
+13:26:28.421 [main] INFO  - All cookies cleared before starting the test.
+13:26:28.480 [main] INFO  - Navigating to the quote page.
+13:26:28.551 [main] INFO  - Page title: Private Health Insurance for Doctors | Doctors' Health Fund
+13:26:28.558 [main] INFO  - Clicking the 'Get Quote' button.
+13:26:28.558 [main] INFO  - Attempting to click the 'Get Quote' button...
+13:26:28.841 [main] INFO  - 'Get Quote' button clicked successfully.
+13:26:28.842 [main] INFO  - 'Get Quote' button clicked successfully.
+13:26:28.848 [main] INFO  - Selecting cover type: Single...
+13:26:29.384 [main] INFO  - Cover type 'Single' selected successfully.
+13:26:29.386 [main] INFO  - Clicking the 'Next' button...
+13:26:29.559 [main] INFO  - 'Next' button clicked successfully.
+13:26:29.564 [main] INFO  - Selecting residence: NSW...
+13:26:29.703 [main] INFO  - Residence 'NSW' selected successfully.
+13:26:29.705 [main] INFO  - Clicking the 'Next' button...
+13:26:29.842 [main] INFO  - 'Next' button clicked successfully.
+13:26:29.846 [main] INFO  - Entering day of birth: 01...
+13:26:29.989 [main] INFO  - Day of birth entered successfully.
+13:26:29.989 [main] INFO  - Entering month of birth: 01...
+13:26:30.090 [main] INFO  - Month of birth entered successfully.
+13:26:30.090 [main] INFO  - Entering year of birth: 1987...
+13:26:30.207 [main] INFO  - Year of birth entered successfully.
+13:26:30.210 [main] INFO  - Clicking the 'Next' button...
+13:26:30.339 [main] INFO  - 'Next' button clicked successfully.
+13:26:30.341 [main] INFO  - Selecting annual income: Below $97k...
+13:26:30.455 [main] INFO  - Annual income 'Below $97k' selected successfully.
+13:26:30.459 [main] INFO  - Clicking 'Calculate Cover' button...
+13:26:31.029 [main] INFO  - 'Calculate Cover' button clicked successfully.
+13:26:31.057 [main] INFO  - Selecting hospital cover: Top Cover...
+13:26:32.684 [main] INFO  - Selected the Extras Cover: Total Extras
+13:26:32.860 [main] INFO  - Clicked on the Apply Now button for the selected plan.
+13:26:32.869 [main] INFO  - Attempting to select 'No' for member status.
+13:26:33.260 [main] INFO  - 'No' radio button for member status selected successfully.
+13:26:33.263 [main] INFO  - Attempting to select 'Yes' for Australian citizenship status.
+13:26:33.419 [main] INFO  - 'Yes' radio button for citizenship status selected successfully.
+13:26:33.428 [main] INFO  - Attempting to click the 'Medical Practitioner' button.
+13:26:33.555 [main] INFO  - 'Medical Practitioner' button clicked successfully.
+13:26:33.560 [main] INFO  - Attempting to select the radio button for: Resident
+13:26:33.691 [main] INFO  - Radio button for 'Resident' selected successfully.
+13:26:33.700 [main] INFO  - Attempting to select Avant member option: No
+13:26:33.833 [main] INFO  - Avant member option 'No' selected successfully.
+13:26:35.052 [main] INFO  - Clicked on Continue button
+13:26:35.073 [main] INFO  - Attempting to select Avant member option: Yes
+13:26:35.172 [main] INFO  - Avant member option 'Yes' selected successfully.
+13:26:35.182 [main] INFO  - Attempting to select Avant member option: No
+13:26:35.291 [main] INFO  - Avant member option 'No' selected successfully.
+13:26:36.509 [main] INFO  - Clicked on Continue button
+13:26:36.511 [main] INFO  - Selecting option for transferring from another fund: No
+13:26:36.649 [main] INFO  - 'No' selected for transferring from another fund.
+13:26:37.364 [main] INFO  - Attempting to accept alert/modal.
+13:26:37.500 [main] INFO  - Alert/modal accepted successfully.
+13:26:37.512 [main] INFO  - Attempting to click the 'Next' button.
+13:26:37.680 [main] INFO  - 'Next' button clicked successfully.
+13:26:37.698 [main] INFO  - Selecting title from dropdown: Mr
+13:26:38.090 [main] INFO  - Selected 'Mr' from dropdown.
+13:26:38.288 [main] INFO  - Entered First Name: Chris
+13:26:38.430 [main] INFO  - Entered Middle Name: James
+13:26:38.616 [main] INFO  - Entered Last Name: Anderson
+13:26:38.616 [main] INFO  - Entered random full name: Chris James Anderson
+13:26:38.742 [main] INFO  - Selected Male radio button
+13:26:38.770 [main] INFO  - Attempting to click the 'Next' button.
+13:26:38.949 [main] INFO  - 'Next' button clicked successfully.
+13:26:39.120 [main] INFO  - Entered random email: dhf.testing+735@gmail.com
+13:26:39.314 [main] INFO  - Entered random phone number: 0498364962
+13:26:39.315 [main] INFO  - Phone number format validation passed: 0498364962
+13:26:42.159 [main] INFO  - Entered address input: 123 A'
+13:26:43.206 [main] INFO  - Selected address input: 123 A'
+13:26:45.620 [main] INFO  - Clicked on Continue button
+13:27:58.020 [main] INFO  - Browser selected: chrome
+13:28:00.772 [main] INFO  - ChromeDriver initialized.
