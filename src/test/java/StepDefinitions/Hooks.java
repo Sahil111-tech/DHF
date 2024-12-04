@@ -101,7 +101,7 @@ public class Hooks {
 		log.info("All cookies cleared before starting the test.");
 	}
 
-	// @After
+	@After
 	public void tearDown(Scenario scenario) {
 		if (driver != null) {
 			driver.quit();

@@ -43,6 +43,7 @@ public class BaseTest {
 	public static Properties prop;
 	protected JavascriptExecutor js;
 
+	//Initilize the loggers here
 	public static final Logger log = LogManager.getLogger(BaseTest.class);
 
 	public String getDateTime() {

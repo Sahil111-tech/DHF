@@ -376,6 +376,7 @@ public class CreateQuoteSteps {
 	@When("the user enters and selects the value {string} in the dropdown")
 	public void userTypesAndSelectsValue(String inputText) throws InterruptedException {
 		eligibilityAndYourDetails.typeAndSelectValue(inputText, driver);
+		Thread.sleep(1000);
 	}
 
 	// Step definition for selecting the "Are you an existing Avant member?" radio
@@ -391,7 +392,7 @@ public class CreateQuoteSteps {
 	// Step to click the Continue button on the Your Details page
 	@Given("I submit the Your Details page")
 	public void i_submit_your_details_page() throws InterruptedException {
-		 //Thread.sleep(2000);
+		 Thread.sleep(1000);
 		  baseTest.scrollByPixels(150, driver); 
 		  WebElement continueButton = eligibilityAndYourDetails.clickContinueButton();
 		  
