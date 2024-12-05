@@ -4,6 +4,7 @@ import java.time.Duration;
 import java.util.Calendar;
 import java.util.Random;
 
+import org.openqa.selenium.By;
 import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -86,7 +87,7 @@ public class FinancialInfoPage extends BaseTest {
 	@FindBy(xpath = "//input[@name='expiry_year_c']")
 	private WebElement expiryYearField;
 
-	@FindBy(xpath = "(//div[@class='ellipsis_inline' and @data-original-title])[1]")
+	@FindBy(xpath = "//div[@class='record-link-wrapper span4']//span[@data-fieldname='temp_crn_number_c']//span//div")
 	private WebElement tempCRNNumberField;
 
 	@FindBy(xpath = "(//div[@class='btn-toolbar pull-right']//a[@name='save_button'])[2]")
@@ -94,6 +95,9 @@ public class FinancialInfoPage extends BaseTest {
 
 	@FindBy(xpath = "//a[text()='Save']")
 	private WebElement saveFinancialInformationButton;
+	
+	@FindBy(xpath = "//div[@class='record-link-wrapper span4']//span[@data-fieldname='crn_number_c']//span//div") //(//div[@class='ellipsis_inline' and @data-original-title])[6] ////span[@data-fieldname='crn_number_c']//div[@class='ellipsis_inline']
+	private WebElement permanentCRNNumberField;
 
 	/***************************
 	 * Actions Method
@@ -304,7 +308,7 @@ public class FinancialInfoPage extends BaseTest {
 		WebElement tempCRNElement = wait.until(ExpectedConditions.visibilityOf(tempCRNNumberField));
 
 		// Retrieve the value of the 'data-original-title' attribute
-		String tempCRN = tempCRNElement.getAttribute("data-original-title");
+		String tempCRN = tempCRNElement.getAttribute("title");
 
 		// Validate that the attribute is not null or empty
 		if (tempCRN == null || tempCRN.isEmpty()) {
@@ -313,6 +317,7 @@ public class FinancialInfoPage extends BaseTest {
 
 		// Log or return the value for further use
 		log.info("Temporary CRN Number captured: " + tempCRN);
+		System.out.println("Temporary CRN Number captured: " + tempCRN);
 		return tempCRN;
 	}
 
@@ -333,5 +338,63 @@ public class FinancialInfoPage extends BaseTest {
 			throw new AssertionError("Save button for Financial Information is not visible or enabled.");
 		}
 	}
+	
+	
+	public String verifyAndPermanentCRNNumber() {
+		WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(15));
+
+		// Wait for the element to be visible
+		WebElement permCRNElement = wait.until(ExpectedConditions.visibilityOf(permanentCRNNumberField));
+
+		// Retrieve the value of the 'data-original-title' attribute
+		String permanentCRN = permCRNElement.getAttribute("title");
+
+		// Validate that the attribute is not null or empty
+		if (permanentCRN == null || permanentCRN.isEmpty()) {
+			throw new AssertionError("The 'data-original-title' attribute is empty or null.");
+		}
+
+		// Log or return the value for further use
+		log.info("Permanent CRN Number captured: " + permanentCRN);
+		System.out.println("Permanent CRN Number is: "+permanentCRN);
+		return permanentCRN;
+	}
+	 
+	/*
+	 * public String verifyAndCapturePermanentCRNNumber() { WebDriverWait wait = new
+	 * WebDriverWait(driver, Duration.ofSeconds(15));
+	 * 
+	 * // Wait for the element to be present in the DOM WebElement
+	 * permanentCRNElement = wait.until(ExpectedConditions.presenceOfElementLocated(
+	 * By.
+	 * xpath("//div[@class='ellipsis_inline' and starts-with(@data-original-title, '00')]"
+	 * ) ));
+	 * 
+	 * // Retrieve the value of the 'data-original-title' attribute String
+	 * permanentCRN = permanentCRNElement.getAttribute("data-original-title");
+	 * 
+	 * // Validate that the attribute is not null or empty if (permanentCRN == null
+	 * || permanentCRN.isEmpty()) { throw new
+	 * AssertionError("The 'data-original-title' attribute is empty or null."); }
+	 * 
+	 * // Log or return the value for further use
+	 * log.info("Permanent CRN Number captured: " + permanentCRN); return
+	 * permanentCRN; }
+	 */
+	
+	/*
+	 * public String getOriginalTitleAttribute() throws InterruptedException { //
+	 * Wait for the 'data-original-title' attribute to have a value WebDriverWait
+	 * wait = new WebDriverWait(driver, Duration.ofSeconds(15));
+	 * wait.until(ExpectedConditions.attributeToBeNotEmpty(permanentCRNNumberField,
+	 * "data-original-title"));
+	 * 
+	 * 
+	 * // Fetch the value of the 'data-original-title' attribute String
+	 * originalTitleValue =
+	 * permanentCRNNumberField.getAttribute("data-original-title");
+	 * System.out.println("Captured 'data-original-title' value: " +
+	 * originalTitleValue); return originalTitleValue; }
+	 */
 
 }

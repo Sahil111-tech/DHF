@@ -1,5 +1,6 @@
 package com.qa.sugarcrm.pages;
 
+import java.time.Duration;
 import java.time.LocalDate;
 import java.time.format.DateTimeFormatter;
 import java.time.format.DateTimeParseException;
@@ -12,6 +13,8 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.WebDriverWait;
 
 import com.qa.BaseTest;
 
@@ -57,6 +60,9 @@ public class WrapUpTabPage extends BaseTest {
 
 	@FindBy(xpath = "(//div[@id='alerts']//div/div)[1]")
 	private WebElement membershipCreatedSuccessPopup;
+	
+	@FindBy(xpath = "//button[@data-action='close']")
+	private WebElement closePopupButton;
 
 	/***************************
 	 * Actions Method
@@ -167,6 +173,19 @@ public class WrapUpTabPage extends BaseTest {
 		} else {
 			throw new RuntimeException("Membership ID not found in the popup message.");
 		}
+	}
+	
+	public void clickCloseButton() {
+	    WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(15));
+
+	    // Wait for the close button to be clickable
+	    WebElement closeElement = wait.until(ExpectedConditions.elementToBeClickable(closePopupButton));
+
+	    // Click the close button
+	    closeElement.click();
+
+	    // Log the action for debugging or tracking
+	    log.info("Clicked on the Close Button successfully.");
 	}
 
 }

@@ -184,3 +184,8 @@ Feature: Sugar CRM Process
     And I click on the Save button
     And The user clicks on the Convert to Membership button
     Then I capture the membership creation message and validate the ID
+    And I click on the Popup Close Button
+    And I click on the Financial Info
+    And I validate and capture the Permanent CRN Number
+    #And I capture the data-original-title attribute value
+    

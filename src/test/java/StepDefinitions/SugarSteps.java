@@ -554,6 +554,12 @@ public class SugarSteps {
 	public void iClickOnTheWrapUpTab() {
 		wrapUpPage.clickWrapUpTab();// Calling the action method
 	}
+	
+	@When("I click on the Popup Close Button")
+	public void iClickOnTheCloseButton() {
+	    wrapUpPage.clickCloseButton();
+	    log.info("Close Button was clicked successfully in the step definition.");
+	}
 
 	// Join date
 	@When("The user enters joining date")
@@ -644,4 +650,23 @@ public class SugarSteps {
 	public void i_save_financial_information() {
 	    financialInfoPage.clickSaveFinancialInformationButton();
 	}
+	
+	
+	  @Then("I validate and capture the Permanent CRN Number") public void
+	  validateAndCapturePermanentCRNNumber() throws InterruptedException {
+	  Thread.sleep(2000);
+	  String permanentCRN = financialInfoPage.verifyAndPermanentCRNNumber();
+	  //Assert.assertNotNull(permanentCRN,"The Permanent CRN Number should not be null.");
+	  log.info("Permanent CRN Number successfully validated and captured: " +permanentCRN); 
+	  
+	  }
+	 
+	
+	/*
+	 * @Then("I capture the data-original-title attribute value") public void
+	 * captureOriginalTitleValue() throws InterruptedException { Thread.sleep(2000);
+	 * String capturedValue = financialInfoPage.getOriginalTitleAttribute();
+	 * System.out.println("The captured 'data-original-title' value is: " +
+	 * capturedValue); // Additional validation (if required) }
+	 */
 }
