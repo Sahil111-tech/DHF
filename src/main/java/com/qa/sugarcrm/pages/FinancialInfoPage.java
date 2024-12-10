@@ -20,7 +20,8 @@ public class FinancialInfoPage extends BaseTest {
 	protected WebDriver driver;
 	protected static String getBSBNumber;
 	protected static String getBenefitBSBNumber;
-
+	public static String permanentCRN;
+	public static String tempCRN;
 	public FinancialInfoPage(WebDriver driver) {
 		this.driver = driver;
 		PageFactory.initElements(driver, this);
@@ -263,7 +264,7 @@ public class FinancialInfoPage extends BaseTest {
 	}
 
 	public void enterCardHolderName() {
-		// Predefined list of British first and last names
+		// Predefined list first and last names
 		String[] firstNames = { "Oliver", "George", "Harry", "Jack", "Charlie", "Jacob", "Thomas", "Henry", "William",
 				"James" };
 		String[] lastNames = { "Smith", "Jones", "Taylor", "Brown", "Williams", "Wilson", "Johnson", "Evans", "Thomas",
@@ -308,7 +309,7 @@ public class FinancialInfoPage extends BaseTest {
 		WebElement tempCRNElement = wait.until(ExpectedConditions.visibilityOf(tempCRNNumberField));
 
 		// Retrieve the value of the 'data-original-title' attribute
-		String tempCRN = tempCRNElement.getAttribute("title");
+		tempCRN = tempCRNElement.getAttribute("title");
 
 		// Validate that the attribute is not null or empty
 		if (tempCRN == null || tempCRN.isEmpty()) {
@@ -317,7 +318,9 @@ public class FinancialInfoPage extends BaseTest {
 
 		// Log or return the value for further use
 		log.info("Temporary CRN Number captured: " + tempCRN);
-		System.out.println("Temporary CRN Number captured: " + tempCRN);
+		
+		System.out.println("Validation Passed: Temporary CRN Number captured and contains value = " + tempCRN + " (not null or empty).");
+
 		return tempCRN;
 	}
 
@@ -341,13 +344,10 @@ public class FinancialInfoPage extends BaseTest {
 	
 	
 	public String verifyAndPermanentCRNNumber() {
-		WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(15));
-
-		// Wait for the element to be visible
-		WebElement permCRNElement = wait.until(ExpectedConditions.visibilityOf(permanentCRNNumberField));
-
+		
+        waitForVisibilityUntil(permanentCRNNumberField, 15, driver);
 		// Retrieve the value of the 'data-original-title' attribute
-		String permanentCRN = permCRNElement.getAttribute("title");
+		permanentCRN = permanentCRNNumberField.getAttribute("title");
 
 		// Validate that the attribute is not null or empty
 		if (permanentCRN == null || permanentCRN.isEmpty()) {
@@ -356,45 +356,11 @@ public class FinancialInfoPage extends BaseTest {
 
 		// Log or return the value for further use
 		log.info("Permanent CRN Number captured: " + permanentCRN);
-		System.out.println("Permanent CRN Number is: "+permanentCRN);
+		System.out.println("Validation Passed:Permanent CRN Number captured and contains value = " + permanentCRN + " (not null or empty).");
+
+	    
 		return permanentCRN;
 	}
 	 
-	/*
-	 * public String verifyAndCapturePermanentCRNNumber() { WebDriverWait wait = new
-	 * WebDriverWait(driver, Duration.ofSeconds(15));
-	 * 
-	 * // Wait for the element to be present in the DOM WebElement
-	 * permanentCRNElement = wait.until(ExpectedConditions.presenceOfElementLocated(
-	 * By.
-	 * xpath("//div[@class='ellipsis_inline' and starts-with(@data-original-title, '00')]"
-	 * ) ));
-	 * 
-	 * // Retrieve the value of the 'data-original-title' attribute String
-	 * permanentCRN = permanentCRNElement.getAttribute("data-original-title");
-	 * 
-	 * // Validate that the attribute is not null or empty if (permanentCRN == null
-	 * || permanentCRN.isEmpty()) { throw new
-	 * AssertionError("The 'data-original-title' attribute is empty or null."); }
-	 * 
-	 * // Log or return the value for further use
-	 * log.info("Permanent CRN Number captured: " + permanentCRN); return
-	 * permanentCRN; }
-	 */
 	
-	/*
-	 * public String getOriginalTitleAttribute() throws InterruptedException { //
-	 * Wait for the 'data-original-title' attribute to have a value WebDriverWait
-	 * wait = new WebDriverWait(driver, Duration.ofSeconds(15));
-	 * wait.until(ExpectedConditions.attributeToBeNotEmpty(permanentCRNNumberField,
-	 * "data-original-title"));
-	 * 
-	 * 
-	 * // Fetch the value of the 'data-original-title' attribute String
-	 * originalTitleValue =
-	 * permanentCRNNumberField.getAttribute("data-original-title");
-	 * System.out.println("Captured 'data-original-title' value: " +
-	 * originalTitleValue); return originalTitleValue; }
-	 */
-
 }

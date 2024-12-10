@@ -60,7 +60,7 @@ public class WrapUpTabPage extends BaseTest {
 
 	@FindBy(xpath = "(//div[@id='alerts']//div/div)[1]")
 	private WebElement membershipCreatedSuccessPopup;
-	
+
 	@FindBy(xpath = "//button[@data-action='close']")
 	private WebElement closePopupButton;
 
@@ -151,41 +151,53 @@ public class WrapUpTabPage extends BaseTest {
 	// Action method to click on the Convert to Membership button
 	public void clickConvertToMembershipButton() {
 		waitVisibilityElement(convertToMembershipButton);
-		waitForElementToBeClickable(driver, convertToMembershipButton);
+		// waitForElementToBeClickable(driver, convertToMembershipButton);
+		waitForElementToBeClickable(convertToMembershipButton, 120, driver);
 		convertToMembershipButton.click();
 		System.out.println("Clicked on the Convert to Membership button.");
 	}
 
 	public void captureMembershipCreationMessage() {
-		// Wait for the success popup to be visible
 
-		waitForVisibility(membershipCreatedSuccessPopup, driver);
+		try {
+			// Wait for the popup to be visible
+			waitForVisibility(membershipCreatedSuccessPopup, 140, driver);
 
-		// Get the popup message text
-		String popupMessage = membershipCreatedSuccessPopup.getText();
-		System.out.println("Captured Popup Message: " + popupMessage);
+			// Wait for the popup text to contain the expected ID or change from "Please
+			// wait..."
+			WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(140));
+			wait.until(driver -> {
+				String popupText = membershipCreatedSuccessPopup.getText();
+				System.out.println("Current Popup Text: " + popupText);
+				return !popupText.equalsIgnoreCase("Please wait...") && popupText.contains("ID:");
+			});
 
-		// Extract the unique membership ID
-		String[] parts = popupMessage.split("ID:");
-		if (parts.length > 1) {
-			membershipId = parts[1].trim();
-			System.out.println("Extracted Membership ID: " + membershipId);
-		} else {
-			throw new RuntimeException("Membership ID not found in the popup message.");
+			// Get the popup message text after it updates
+			String popupMessage = membershipCreatedSuccessPopup.getText();
+			System.out.println("Captured Popup Message: " + popupMessage);
+
+			// Extract the Membership ID
+			String[] parts = popupMessage.split("ID:");
+			if (parts.length > 1) {
+				membershipId = parts[1].trim();
+				System.out.println("Extracted Membership ID: " + membershipId);
+			} else {
+				throw new RuntimeException("Membership ID not found in the popup message.");
+			}
+		} catch (Exception e) {
+			System.err.println("Error capturing membership creation message: " + e.getMessage());
+			throw e; // Rethrow to handle at the test case level
 		}
 	}
-	
+
 	public void clickCloseButton() {
-	    WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(15));
 
-	    // Wait for the close button to be clickable
-	    WebElement closeElement = wait.until(ExpectedConditions.elementToBeClickable(closePopupButton));
+		waitForElementToBeClickable(closePopupButton, 15, driver);
+		// Click the close button
+		closePopupButton.click();
 
-	    // Click the close button
-	    closeElement.click();
-
-	    // Log the action for debugging or tracking
-	    log.info("Clicked on the Close Button successfully.");
+		// Log the action for debugging or tracking
+		log.info("Clicked on the Close Button successfully.");
 	}
 
 }

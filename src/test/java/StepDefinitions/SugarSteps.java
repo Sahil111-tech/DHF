@@ -595,7 +595,7 @@ public class SugarSteps {
 
 	@Then("I capture the membership creation message and validate the ID")
 	public void iCaptureMembershipCreationMessageAndValidateId() throws InterruptedException {
-		Thread.sleep(11000);
+		//Thread.sleep(11000);
 		wrapUpPage.captureMembershipCreationMessage();
 		Assert.assertNotNull(WrapUpTabPage.membershipId, "Membership ID was not extracted correctly.");
 		Assert.assertFalse(WrapUpTabPage.membershipId.isEmpty(), "Membership ID is empty.");
@@ -654,7 +654,7 @@ public class SugarSteps {
 	
 	  @Then("I validate and capture the Permanent CRN Number") public void
 	  validateAndCapturePermanentCRNNumber() throws InterruptedException {
-	  Thread.sleep(2000);
+	  //Thread.sleep(2000);
 	  String permanentCRN = financialInfoPage.verifyAndPermanentCRNNumber();
 	  //Assert.assertNotNull(permanentCRN,"The Permanent CRN Number should not be null.");
 	  log.info("Permanent CRN Number successfully validated and captured: " +permanentCRN); 

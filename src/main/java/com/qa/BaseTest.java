@@ -505,4 +505,16 @@ public class BaseTest {
 			return false;
 		}
 	}
+	public void waitForVisibility(WebElement element, int timeoutInSeconds,WebDriver driver) {
+	    WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(timeoutInSeconds));
+	    wait.until(ExpectedConditions.visibilityOf(element));
+	}
+	public void waitForVisibilityUntil(WebElement element, int timeoutInSeconds, WebDriver driver) {
+	    WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(timeoutInSeconds));
+	    wait.until(ExpectedConditions.visibilityOf(element));
+	}
+	public void waitForElementToBeClickable(WebElement element, int timeoutInSeconds,WebDriver driver) {
+	    WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(timeoutInSeconds));
+	    wait.until(ExpectedConditions.elementToBeClickable(element));
+	}
 }

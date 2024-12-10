@@ -46,3 +46,544 @@
 16:13:54.329 [main] INFO  - Close Button was clicked successfully in the step definition.
 16:13:56.486 [main] INFO  - Permanent CRN Number captured: 004544441
 16:13:56.486 [main] INFO  - Permanent CRN Number successfully validated and captured: 004544441
+07:11:30.420 [main] INFO  - Browser selected: chrome
+07:11:35.563 [main] INFO  - ChromeDriver initialized.
+07:11:36.904 [main] INFO  - Navigated to URL: https://crmtest.doctorshealthfund.com.au/
+07:11:36.911 [main] INFO  - All cookies cleared before starting the test.
+07:11:37.045 [main] INFO  - Navigating to the login page.
+07:11:41.502 [main] INFO  - Clicked successfully on the Leads button.
+07:11:42.594 [main] INFO  - Clicked succesfully on the Create button.
+07:11:45.581 [main] INFO  - Dropdown opened successfully.
+07:11:47.978 [main] INFO  - Successfully selected the PR / Citizen checkbox.
+07:11:48.307 [main] INFO  - Generated and entered phone number: 0498365539
+07:13:58.470 [main] INFO  - Entered card number: 4242424242424242
+07:14:00.906 [main] INFO  - Entered cardholder name: George Taylor
+07:14:01.002 [main] INFO  - Entered expiry year: 2030
+07:14:01.122 [main] INFO  - Successfully submitted and saved the credit card details.
+07:14:02.628 [main] INFO  - Temporary CRN Number captured: Harris675256e1af5c6
+07:14:02.628 [main] INFO  - Captured temporary CRN number: Harris675256e1af5c6
+07:14:13.787 [main] INFO  - I successfully saved the Financial Information.
+07:14:58.440 [main] INFO  - Clicked on the Close Button successfully.
+07:14:58.440 [main] INFO  - Close Button was clicked successfully in the step definition.
+07:15:00.594 [main] INFO  - Permanent CRN Number captured: 004544458
+07:15:00.594 [main] INFO  - Permanent CRN Number successfully validated and captured: 004544458
+08:00:07.298 [main] INFO  - Browser selected: chrome
+08:00:10.012 [main] INFO  - ChromeDriver initialized.
+08:00:11.401 [main] INFO  - Navigated to URL: https://crmtest.doctorshealthfund.com.au/
+08:00:11.410 [main] INFO  - All cookies cleared before starting the test.
+08:00:11.481 [main] INFO  - Navigating to the login page.
+08:00:15.598 [main] INFO  - Clicked successfully on the Leads button.
+08:00:16.269 [main] INFO  - Clicked succesfully on the Create button.
+08:00:18.354 [main] INFO  - Dropdown opened successfully.
+08:00:20.660 [main] INFO  - Successfully selected the PR / Citizen checkbox.
+08:00:20.996 [main] INFO  - Generated and entered phone number: 0498369299
+08:02:25.596 [main] INFO  - Entered card number: 4242424242424242
+08:02:28.031 [main] INFO  - Entered cardholder name: James Brown
+08:02:28.135 [main] INFO  - Entered expiry year: 2030
+08:02:28.252 [main] INFO  - Successfully submitted and saved the credit card details.
+08:02:29.543 [main] INFO  - Temporary CRN Number captured: Lewis6752623c9da1d
+08:02:29.543 [main] INFO  - Captured temporary CRN number: Lewis6752623c9da1d
+08:02:39.579 [main] INFO  - I successfully saved the Financial Information.
+08:03:24.258 [main] INFO  - Clicked on the Close Button successfully.
+08:03:24.258 [main] INFO  - Close Button was clicked successfully in the step definition.
+08:03:26.411 [main] INFO  - Permanent CRN Number captured: 004544466
+08:03:26.411 [main] INFO  - Permanent CRN Number successfully validated and captured: 004544466
+08:33:19.348 [main] INFO  - Browser selected: chrome
+08:33:23.202 [main] INFO  - ChromeDriver initialized.
+08:33:25.299 [main] INFO  - Navigated to URL: https://crmtest.doctorshealthfund.com.au/
+08:33:25.306 [main] INFO  - All cookies cleared before starting the test.
+08:33:25.357 [main] INFO  - Navigating to the login page.
+08:33:29.367 [main] INFO  - Clicked successfully on the Leads button.
+08:33:30.051 [main] INFO  - Clicked succesfully on the Create button.
+08:33:32.144 [main] INFO  - Dropdown opened successfully.
+08:33:34.950 [main] INFO  - Successfully selected the PR / Citizen checkbox.
+08:33:35.500 [main] INFO  - Generated and entered phone number: 0498368912
+08:35:31.810 [main] INFO  - Entered card number: 4242424242424242
+08:35:34.222 [main] INFO  - Entered cardholder name: Jack Smith
+08:35:34.324 [main] INFO  - Entered expiry year: 2030
+08:35:34.445 [main] INFO  - Successfully submitted and saved the credit card details.
+08:35:35.696 [main] INFO  - Temporary CRN Number captured: Allen675269fec6c73
+08:35:35.696 [main] INFO  - Captured temporary CRN number: Allen675269fec6c73
+08:35:46.908 [main] INFO  - I successfully saved the Financial Information.
+09:14:37.902 [main] INFO  - Browser selected: chrome
+09:14:41.047 [main] INFO  - ChromeDriver initialized.
+09:14:41.453 [main] INFO  - Navigated to URL: https://crmtest.doctorshealthfund.com.au/
+09:14:42.581 [main] INFO  - All cookies cleared before starting the test.
+09:14:42.656 [main] INFO  - Navigating to the login page.
+09:14:46.973 [main] INFO  - Clicked successfully on the Leads button.
+09:14:47.714 [main] INFO  - Clicked succesfully on the Create button.
+09:14:49.799 [main] INFO  - Dropdown opened successfully.
+09:14:52.066 [main] INFO  - Successfully selected the PR / Citizen checkbox.
+09:14:52.379 [main] INFO  - Generated and entered phone number: 0498364604
+09:16:50.520 [main] INFO  - Entered card number: 4242424242424242
+09:16:52.998 [main] INFO  - Entered cardholder name: William Brown
+09:16:53.139 [main] INFO  - Entered expiry year: 2030
+09:16:53.299 [main] INFO  - Successfully submitted and saved the credit card details.
+09:16:54.679 [main] INFO  - Temporary CRN Number captured: Anders675273adaf178
+09:16:54.679 [main] INFO  - Captured temporary CRN number: Anders675273adaf178
+09:17:04.690 [main] INFO  - I successfully saved the Financial Information.
+11:54:21.204 [main] INFO  - Browser selected: chrome
+11:54:24.372 [main] INFO  - ChromeDriver initialized.
+11:54:25.906 [main] INFO  - Navigated to URL: https://crmtest.doctorshealthfund.com.au/
+11:54:25.913 [main] INFO  - All cookies cleared before starting the test.
+11:54:25.969 [main] INFO  - Navigating to the quote page.
+11:54:25.994 [main] INFO  - Page title: SugarCRM
+11:55:45.927 [main] INFO  - Browser selected: chrome
+11:55:48.633 [main] INFO  - ChromeDriver initialized.
+11:55:49.819 [main] INFO  - Navigated to URL: https://crmtest.doctorshealthfund.com.au/
+11:55:49.826 [main] INFO  - All cookies cleared before starting the test.
+11:55:49.904 [main] INFO  - Navigating to the login page.
+11:55:54.273 [main] INFO  - Clicked successfully on the Leads button.
+11:55:55.001 [main] INFO  - Clicked succesfully on the Create button.
+11:55:57.126 [main] INFO  - Dropdown opened successfully.
+11:55:59.865 [main] INFO  - Successfully selected the PR / Citizen checkbox.
+11:56:00.448 [main] INFO  - Generated and entered phone number: 0498369448
+11:57:51.642 [main] INFO  - Browser selected: chrome
+11:57:54.466 [main] INFO  - ChromeDriver initialized.
+11:57:55.649 [main] INFO  - Navigated to URL: https://crmtest.doctorshealthfund.com.au/
+11:57:55.661 [main] INFO  - All cookies cleared before starting the test.
+11:57:55.764 [main] INFO  - Navigating to the login page.
+11:58:00.190 [main] INFO  - Clicked successfully on the Leads button.
+11:58:01.020 [main] INFO  - Clicked succesfully on the Create button.
+11:58:03.403 [main] INFO  - Dropdown opened successfully.
+11:58:05.891 [main] INFO  - Successfully selected the PR / Citizen checkbox.
+11:58:06.258 [main] INFO  - Generated and entered phone number: 0498368305
+12:00:08.250 [main] INFO  - Entered card number: 4242424242424242
+12:00:10.659 [main] INFO  - Entered cardholder name: Henry Jones
+12:00:10.766 [main] INFO  - Entered expiry year: 2030
+12:00:10.882 [main] INFO  - Successfully submitted and saved the credit card details.
+12:00:12.193 [main] INFO  - Temporary CRN Number captured: Harris675299f356e49
+12:00:12.193 [main] INFO  - Captured temporary CRN number: Harris675299f356e49
+12:00:23.407 [main] INFO  - I successfully saved the Financial Information.
+12:46:23.062 [main] INFO  - Browser selected: chrome
+12:46:25.743 [main] INFO  - ChromeDriver initialized.
+12:46:26.871 [main] INFO  - Navigated to URL: https://crmtest.doctorshealthfund.com.au/
+12:46:26.879 [main] INFO  - All cookies cleared before starting the test.
+12:46:26.971 [main] INFO  - Navigating to the login page.
+12:46:31.491 [main] INFO  - Clicked successfully on the Leads button.
+12:46:32.157 [main] INFO  - Clicked succesfully on the Create button.
+12:46:34.214 [main] INFO  - Dropdown opened successfully.
+12:46:36.535 [main] INFO  - Successfully selected the PR / Citizen checkbox.
+12:46:37.035 [main] INFO  - Generated and entered phone number: 0498362342
+12:48:35.514 [main] INFO  - Entered card number: 4242424242424242
+12:48:37.940 [main] INFO  - Entered cardholder name: Jack Evans
+12:48:38.039 [main] INFO  - Entered expiry year: 2030
+12:48:38.160 [main] INFO  - Successfully submitted and saved the credit card details.
+12:48:39.450 [main] INFO  - Temporary CRN Number captured: King6752a54e91218
+12:48:39.451 [main] INFO  - Captured temporary CRN number: King6752a54e91218
+12:48:50.694 [main] INFO  - I successfully saved the Financial Information.
+12:55:59.738 [main] INFO  - Browser selected: chrome
+12:56:04.807 [main] INFO  - ChromeDriver initialized.
+12:56:05.013 [main] INFO  - Navigated to URL: https://crmtest.doctorshealthfund.com.au/
+12:56:05.884 [main] INFO  - All cookies cleared before starting the test.
+12:56:05.970 [main] INFO  - Navigating to the login page.
+12:56:10.239 [main] INFO  - Clicked successfully on the Leads button.
+12:56:10.960 [main] INFO  - Clicked succesfully on the Create button.
+12:56:12.983 [main] INFO  - Dropdown opened successfully.
+12:56:16.265 [main] INFO  - Successfully selected the PR / Citizen checkbox.
+12:56:16.764 [main] INFO  - Generated and entered phone number: 0498367189
+12:58:14.643 [main] INFO  - Entered card number: 4242424242424242
+12:58:17.099 [main] INFO  - Entered cardholder name: Oliver Evans
+12:58:17.222 [main] INFO  - Entered expiry year: 2030
+12:58:17.366 [main] INFO  - Successfully submitted and saved the credit card details.
+12:58:18.740 [main] INFO  - Temporary CRN Number captured: Young6752a791c6c58
+12:58:18.740 [main] INFO  - Captured temporary CRN number: Young6752a791c6c58
+12:58:28.654 [main] INFO  - I successfully saved the Financial Information.
+12:59:13.210 [main] INFO  - Clicked on the Close Button successfully.
+12:59:13.210 [main] INFO  - Close Button was clicked successfully in the step definition.
+12:59:13.937 [main] INFO  - Permanent CRN Number captured: 004544474
+12:59:13.938 [main] INFO  - Permanent CRN Number successfully validated and captured: 004544474
+07:04:30.009 [main] INFO  - Browser selected: chrome
+07:04:34.032 [main] INFO  - ChromeDriver initialized.
+07:04:35.261 [main] INFO  - Navigated to URL: https://crmtest.doctorshealthfund.com.au/
+07:04:35.268 [main] INFO  - All cookies cleared before starting the test.
+07:04:35.379 [main] INFO  - Navigating to the login page.
+07:04:39.488 [main] INFO  - Clicked successfully on the Leads button.
+07:04:40.239 [main] INFO  - Clicked succesfully on the Create button.
+07:04:42.375 [main] INFO  - Dropdown opened successfully.
+07:04:44.723 [main] INFO  - Successfully selected the PR / Citizen checkbox.
+07:04:45.057 [main] INFO  - Generated and entered phone number: 0498369548
+07:06:45.280 [main] INFO  - Entered card number: 4242424242424242
+07:06:47.716 [main] INFO  - Entered cardholder name: Harry Johnson
+07:06:47.819 [main] INFO  - Entered expiry year: 2030
+07:06:47.940 [main] INFO  - Successfully submitted and saved the credit card details.
+07:06:49.254 [main] INFO  - Temporary CRN Number captured: Adams675649b07e2bb
+07:06:49.254 [main] INFO  - Captured temporary CRN number: Adams675649b07e2bb
+07:06:59.335 [main] INFO  - I successfully saved the Financial Information.
+07:11:59.813 [main] INFO  - Browser selected: chrome
+07:12:02.197 [main] INFO  - ChromeDriver initialized.
+07:12:03.418 [main] INFO  - Navigated to URL: https://crmtest.doctorshealthfund.com.au/
+07:12:03.425 [main] INFO  - All cookies cleared before starting the test.
+07:12:03.491 [main] INFO  - Navigating to the login page.
+07:12:07.452 [main] INFO  - Clicked successfully on the Leads button.
+07:12:08.180 [main] INFO  - Clicked succesfully on the Create button.
+07:12:10.776 [main] INFO  - Dropdown opened successfully.
+07:12:13.648 [main] INFO  - Successfully selected the PR / Citizen checkbox.
+07:12:13.990 [main] INFO  - Generated and entered phone number: 0498363545
+07:14:13.035 [main] INFO  - Entered card number: 4242424242424242
+07:14:15.494 [main] INFO  - Entered cardholder name: William Wilson
+07:14:15.614 [main] INFO  - Entered expiry year: 2030
+07:14:15.742 [main] INFO  - Successfully submitted and saved the credit card details.
+07:14:18.757 [main] INFO  - Temporary CRN Number captured: Scott67564b704ec3b
+07:14:18.757 [main] INFO  - Captured temporary CRN number: Scott67564b704ec3b
+07:14:29.972 [main] INFO  - I successfully saved the Financial Information.
+07:25:30.619 [main] INFO  - Browser selected: chrome
+07:25:33.163 [main] INFO  - ChromeDriver initialized.
+07:25:35.553 [main] INFO  - Navigated to URL: https://crmtest.doctorshealthfund.com.au/
+07:25:35.576 [main] INFO  - All cookies cleared before starting the test.
+07:25:35.648 [main] INFO  - Navigating to the login page.
+07:25:40.271 [main] INFO  - Clicked successfully on the Leads button.
+07:25:40.950 [main] INFO  - Clicked succesfully on the Create button.
+07:25:43.186 [main] INFO  - Dropdown opened successfully.
+07:25:46.911 [main] INFO  - Successfully selected the PR / Citizen checkbox.
+07:25:47.422 [main] INFO  - Generated and entered phone number: 0498361165
+07:27:57.052 [main] INFO  - Entered card number: 4242424242424242
+07:27:59.477 [main] INFO  - Entered cardholder name: Jack Roberts
+07:27:59.581 [main] INFO  - Entered expiry year: 2030
+07:27:59.758 [main] INFO  - Successfully submitted and saved the credit card details.
+07:28:01.103 [main] INFO  - Temporary CRN Number captured: Adams67564ea857a68
+07:28:01.103 [main] INFO  - Captured temporary CRN number: Adams67564ea857a68
+07:28:12.356 [main] INFO  - I successfully saved the Financial Information.
+07:31:24.419 [main] INFO  - Browser selected: chrome
+07:31:26.978 [main] INFO  - ChromeDriver initialized.
+07:31:28.338 [main] INFO  - Navigated to URL: https://crmtest.doctorshealthfund.com.au/
+07:31:28.345 [main] INFO  - All cookies cleared before starting the test.
+07:31:28.447 [main] INFO  - Navigating to the login page.
+07:31:32.826 [main] INFO  - Clicked successfully on the Leads button.
+07:31:33.543 [main] INFO  - Clicked succesfully on the Create button.
+07:31:35.592 [main] INFO  - Dropdown opened successfully.
+07:31:37.905 [main] INFO  - Successfully selected the PR / Citizen checkbox.
+07:31:38.220 [main] INFO  - Generated and entered phone number: 0498368758
+07:33:48.011 [main] INFO  - Entered card number: 4242424242424242
+07:33:50.482 [main] INFO  - Entered cardholder name: Harry Roberts
+07:33:50.593 [main] INFO  - Entered expiry year: 2030
+07:33:50.774 [main] INFO  - Successfully submitted and saved the credit card details.
+07:33:52.074 [main] INFO  - Temporary CRN Number captured: Scott6756500765c83
+07:33:52.074 [main] INFO  - Captured temporary CRN number: Scott6756500765c83
+07:34:03.201 [main] INFO  - I successfully saved the Financial Information.
+07:35:24.961 [main] INFO  - Browser selected: chrome
+07:35:27.555 [main] INFO  - ChromeDriver initialized.
+07:35:27.997 [main] INFO  - Navigated to URL: https://crmtest.doctorshealthfund.com.au/
+07:35:29.002 [main] INFO  - All cookies cleared before starting the test.
+07:35:29.073 [main] INFO  - Navigating to the login page.
+07:35:33.093 [main] INFO  - Clicked successfully on the Leads button.
+07:35:33.796 [main] INFO  - Clicked succesfully on the Create button.
+07:35:36.114 [main] INFO  - Dropdown opened successfully.
+07:35:38.509 [main] INFO  - Successfully selected the PR / Citizen checkbox.
+07:35:38.844 [main] INFO  - Generated and entered phone number: 0498369976
+07:37:36.321 [main] INFO  - Entered card number: 4242424242424242
+07:37:38.761 [main] INFO  - Entered cardholder name: Thomas Evans
+07:37:38.867 [main] INFO  - Entered expiry year: 2030
+07:37:38.991 [main] INFO  - Successfully submitted and saved the credit card details.
+07:37:40.230 [main] INFO  - Temporary CRN Number captured: Allen675650eb89b08
+07:37:40.230 [main] INFO  - Captured temporary CRN number: Allen675650eb89b08
+07:37:51.467 [main] INFO  - I successfully saved the Financial Information.
+07:40:00.252 [main] INFO  - Browser selected: chrome
+07:40:02.803 [main] INFO  - ChromeDriver initialized.
+07:40:04.114 [main] INFO  - Navigated to URL: https://crmtest.doctorshealthfund.com.au/
+07:40:04.121 [main] INFO  - All cookies cleared before starting the test.
+07:40:04.233 [main] INFO  - Navigating to the login page.
+07:40:08.935 [main] INFO  - Clicked successfully on the Leads button.
+07:40:09.619 [main] INFO  - Clicked succesfully on the Create button.
+07:40:11.867 [main] INFO  - Dropdown opened successfully.
+07:40:14.592 [main] INFO  - Successfully selected the PR / Citizen checkbox.
+07:40:15.106 [main] INFO  - Generated and entered phone number: 0498362034
+07:42:12.079 [main] INFO  - Entered card number: 4242424242424242
+07:42:14.494 [main] INFO  - Entered cardholder name: George Jones
+07:42:14.590 [main] INFO  - Entered expiry year: 2030
+07:42:14.710 [main] INFO  - Successfully submitted and saved the credit card details.
+07:42:16.048 [main] INFO  - Temporary CRN Number captured: Lewis675651ff4d4de
+07:42:16.048 [main] INFO  - Captured temporary CRN number: Lewis675651ff4d4de
+07:42:26.211 [main] INFO  - I successfully saved the Financial Information.
+07:44:38.922 [main] INFO  - Browser selected: chrome
+07:44:41.485 [main] INFO  - ChromeDriver initialized.
+07:44:42.716 [main] INFO  - Navigated to URL: https://crmtest.doctorshealthfund.com.au/
+07:44:42.723 [main] INFO  - All cookies cleared before starting the test.
+07:44:42.799 [main] INFO  - Navigating to the login page.
+07:44:46.830 [main] INFO  - Clicked successfully on the Leads button.
+07:44:47.553 [main] INFO  - Clicked succesfully on the Create button.
+07:44:49.887 [main] INFO  - Dropdown opened successfully.
+07:44:52.470 [main] INFO  - Successfully selected the PR / Citizen checkbox.
+07:44:53.022 [main] INFO  - Generated and entered phone number: 0498369910
+07:46:50.285 [main] INFO  - Entered card number: 4242424242424242
+07:46:52.761 [main] INFO  - Entered cardholder name: Jack Jones
+07:46:52.871 [main] INFO  - Entered expiry year: 2030
+07:46:52.992 [main] INFO  - Successfully submitted and saved the credit card details.
+07:46:54.231 [main] INFO  - Temporary CRN Number captured: King675653158dd57
+07:46:54.231 [main] INFO  - Captured temporary CRN number: King675653158dd57
+07:47:05.328 [main] INFO  - I successfully saved the Financial Information.
+07:48:36.723 [main] INFO  - Browser selected: chrome
+07:48:39.270 [main] INFO  - ChromeDriver initialized.
+07:48:40.262 [main] INFO  - Navigated to URL: https://crmtest.doctorshealthfund.com.au/
+07:48:40.404 [main] INFO  - All cookies cleared before starting the test.
+07:48:40.489 [main] INFO  - Navigating to the login page.
+07:48:44.577 [main] INFO  - Clicked successfully on the Leads button.
+07:48:45.377 [main] INFO  - Clicked succesfully on the Create button.
+07:48:47.536 [main] INFO  - Dropdown opened successfully.
+07:48:49.785 [main] INFO  - Successfully selected the PR / Citizen checkbox.
+07:48:50.197 [main] INFO  - Generated and entered phone number: 0498363464
+07:50:47.310 [main] INFO  - Entered card number: 4242424242424242
+07:50:49.722 [main] INFO  - Entered cardholder name: William Jones
+07:50:49.841 [main] INFO  - Entered expiry year: 2030
+07:50:49.964 [main] INFO  - Successfully submitted and saved the credit card details.
+07:50:51.252 [main] INFO  - Temporary CRN Number captured: Anders6756540288618
+07:50:51.253 [main] INFO  - Captured temporary CRN number: Anders6756540288618
+07:50:59.706 [main] INFO  - I successfully saved the Financial Information.
+07:52:35.657 [main] INFO  - Browser selected: chrome
+07:52:38.153 [main] INFO  - ChromeDriver initialized.
+07:52:39.437 [main] INFO  - Navigated to URL: https://crmtest.doctorshealthfund.com.au/
+07:52:39.443 [main] INFO  - All cookies cleared before starting the test.
+07:52:39.543 [main] INFO  - Navigating to the login page.
+07:52:43.866 [main] INFO  - Clicked successfully on the Leads button.
+07:52:44.609 [main] INFO  - Clicked succesfully on the Create button.
+07:52:46.656 [main] INFO  - Dropdown opened successfully.
+07:52:48.948 [main] INFO  - Successfully selected the PR / Citizen checkbox.
+07:52:49.272 [main] INFO  - Generated and entered phone number: 0498368363
+07:54:47.718 [main] INFO  - Entered card number: 4242424242424242
+07:54:50.144 [main] INFO  - Entered cardholder name: Oliver Wilson
+07:54:50.247 [main] INFO  - Entered expiry year: 2030
+07:54:50.372 [main] INFO  - Successfully submitted and saved the credit card details.
+07:54:51.656 [main] INFO  - Temporary CRN Number captured: Clark675654f2ef693
+07:54:51.656 [main] INFO  - Captured temporary CRN number: Clark675654f2ef693
+07:55:02.737 [main] INFO  - I successfully saved the Financial Information.
+07:56:30.800 [main] INFO  - Browser selected: chrome
+07:56:33.302 [main] INFO  - ChromeDriver initialized.
+07:56:34.455 [main] INFO  - Navigated to URL: https://crmtest.doctorshealthfund.com.au/
+07:56:34.463 [main] INFO  - All cookies cleared before starting the test.
+07:56:34.565 [main] INFO  - Navigating to the login page.
+07:56:38.759 [main] INFO  - Clicked successfully on the Leads button.
+07:56:39.485 [main] INFO  - Clicked succesfully on the Create button.
+07:56:41.638 [main] INFO  - Dropdown opened successfully.
+07:56:43.964 [main] INFO  - Successfully selected the PR / Citizen checkbox.
+07:56:44.287 [main] INFO  - Generated and entered phone number: 0498362615
+07:58:55.036 [main] INFO  - Entered card number: 4242424242424242
+07:58:57.462 [main] INFO  - Entered cardholder name: William Taylor
+07:58:57.561 [main] INFO  - Entered expiry year: 2030
+07:58:57.682 [main] INFO  - Successfully submitted and saved the credit card details.
+07:58:59.067 [main] INFO  - Temporary CRN Number captured: Lewis675655ea48070
+07:58:59.068 [main] INFO  - Captured temporary CRN number: Lewis675655ea48070
+07:59:08.979 [main] INFO  - I successfully saved the Financial Information.
+08:00:35.808 [main] INFO  - Browser selected: chrome
+08:00:38.329 [main] INFO  - ChromeDriver initialized.
+08:00:39.822 [main] INFO  - Navigated to URL: https://crmtest.doctorshealthfund.com.au/
+08:00:39.840 [main] INFO  - All cookies cleared before starting the test.
+08:00:39.933 [main] INFO  - Navigating to the login page.
+08:00:44.444 [main] INFO  - Clicked successfully on the Leads button.
+08:00:45.210 [main] INFO  - Clicked succesfully on the Create button.
+08:00:47.447 [main] INFO  - Dropdown opened successfully.
+08:00:49.793 [main] INFO  - Successfully selected the PR / Citizen checkbox.
+08:00:50.129 [main] INFO  - Generated and entered phone number: 0498364064
+08:02:47.900 [main] INFO  - Entered card number: 4242424242424242
+08:02:50.331 [main] INFO  - Entered cardholder name: George Williams
+08:02:50.438 [main] INFO  - Entered expiry year: 2030
+08:02:50.579 [main] INFO  - Successfully submitted and saved the credit card details.
+08:02:51.935 [main] INFO  - Temporary CRN Number captured: Young675656d33e092
+08:02:51.935 [main] INFO  - Captured temporary CRN number: Young675656d33e092
+08:03:02.180 [main] INFO  - I successfully saved the Financial Information.
+08:06:50.709 [main] INFO  - Browser selected: chrome
+08:06:53.745 [main] INFO  - ChromeDriver initialized.
+08:06:55.397 [main] INFO  - Navigated to URL: https://crmtest.doctorshealthfund.com.au/
+08:06:55.403 [main] INFO  - All cookies cleared before starting the test.
+08:06:55.469 [main] INFO  - Navigating to the login page.
+08:06:59.896 [main] INFO  - Clicked successfully on the Leads button.
+08:07:00.622 [main] INFO  - Clicked succesfully on the Create button.
+08:07:02.846 [main] INFO  - Dropdown opened successfully.
+08:07:05.814 [main] INFO  - Successfully selected the PR / Citizen checkbox.
+08:07:06.496 [main] INFO  - Generated and entered phone number: 0498362004
+08:09:03.802 [main] INFO  - Entered card number: 4242424242424242
+08:09:06.212 [main] INFO  - Entered cardholder name: George Evans
+08:09:06.320 [main] INFO  - Entered expiry year: 2030
+08:09:06.436 [main] INFO  - Successfully submitted and saved the credit card details.
+08:09:07.781 [main] INFO  - Temporary CRN Number captured: Anders6756584b0fc32
+08:09:07.782 [main] INFO  - Captured temporary CRN number: Anders6756584b0fc32
+08:09:18.966 [main] INFO  - I successfully saved the Financial Information.
+08:12:03.137 [main] INFO  - Browser selected: chrome
+08:12:05.664 [main] INFO  - ChromeDriver initialized.
+08:12:06.757 [main] INFO  - Navigated to URL: https://crmtest.doctorshealthfund.com.au/
+08:12:06.765 [main] INFO  - All cookies cleared before starting the test.
+08:12:06.859 [main] INFO  - Navigating to the login page.
+08:12:11.416 [main] INFO  - Clicked successfully on the Leads button.
+08:12:12.115 [main] INFO  - Clicked succesfully on the Create button.
+08:12:14.209 [main] INFO  - Dropdown opened successfully.
+08:12:16.513 [main] INFO  - Successfully selected the PR / Citizen checkbox.
+08:12:16.827 [main] INFO  - Generated and entered phone number: 0498364927
+08:14:26.338 [main] INFO  - Entered card number: 4242424242424242
+08:14:28.760 [main] INFO  - Entered cardholder name: James Brown
+08:14:28.864 [main] INFO  - Entered expiry year: 2030
+08:14:28.980 [main] INFO  - Successfully submitted and saved the credit card details.
+08:14:30.232 [main] INFO  - Temporary CRN Number captured: Clark6756598d8fa34
+08:14:30.232 [main] INFO  - Captured temporary CRN number: Clark6756598d8fa34
+08:14:41.412 [main] INFO  - I successfully saved the Financial Information.
+08:17:46.733 [main] INFO  - Browser selected: chrome
+08:17:49.225 [main] INFO  - ChromeDriver initialized.
+08:17:50.483 [main] INFO  - Navigated to URL: https://crmtest.doctorshealthfund.com.au/
+08:17:50.493 [main] INFO  - All cookies cleared before starting the test.
+08:17:50.593 [main] INFO  - Navigating to the login page.
+08:17:55.304 [main] INFO  - Clicked successfully on the Leads button.
+08:17:56.193 [main] INFO  - Clicked succesfully on the Create button.
+08:17:58.336 [main] INFO  - Dropdown opened successfully.
+08:18:00.675 [main] INFO  - Successfully selected the PR / Citizen checkbox.
+08:18:01.027 [main] INFO  - Generated and entered phone number: 0498361666
+08:20:11.318 [main] INFO  - Entered card number: 4242424242424242
+08:20:13.754 [main] INFO  - Entered cardholder name: William Wilson
+08:20:13.850 [main] INFO  - Entered expiry year: 2030
+08:20:13.973 [main] INFO  - Successfully submitted and saved the credit card details.
+08:20:15.214 [main] INFO  - Temporary CRN Number captured: Clark67565ae692873
+08:20:15.214 [main] INFO  - Captured temporary CRN number: Clark67565ae692873
+08:20:26.412 [main] INFO  - I successfully saved the Financial Information.
+08:23:21.045 [main] INFO  - Browser selected: chrome
+08:23:23.650 [main] INFO  - ChromeDriver initialized.
+08:23:24.978 [main] INFO  - Navigated to URL: https://crmtest.doctorshealthfund.com.au/
+08:23:25.004 [main] INFO  - All cookies cleared before starting the test.
+08:23:25.067 [main] INFO  - Navigating to the login page.
+08:23:29.452 [main] INFO  - Clicked successfully on the Leads button.
+08:23:30.198 [main] INFO  - Clicked succesfully on the Create button.
+08:23:32.281 [main] INFO  - Dropdown opened successfully.
+08:23:34.535 [main] INFO  - Successfully selected the PR / Citizen checkbox.
+08:23:34.895 [main] INFO  - Generated and entered phone number: 0498365373
+08:25:40.100 [main] INFO  - Entered card number: 4242424242424242
+08:25:42.548 [main] INFO  - Entered cardholder name: James Evans
+08:25:42.645 [main] INFO  - Entered expiry year: 2030
+08:25:42.772 [main] INFO  - Successfully submitted and saved the credit card details.
+08:25:44.052 [main] INFO  - Temporary CRN Number captured: Clark67565c2f5598a
+08:25:44.052 [main] INFO  - Captured temporary CRN number: Clark67565c2f5598a
+08:25:54.020 [main] INFO  - I successfully saved the Financial Information.
+08:28:45.144 [main] INFO  - Browser selected: chrome
+08:28:47.873 [main] INFO  - ChromeDriver initialized.
+08:28:49.721 [main] INFO  - Navigated to URL: https://crmtest.doctorshealthfund.com.au/
+08:28:49.757 [main] INFO  - All cookies cleared before starting the test.
+08:28:49.839 [main] INFO  - Navigating to the login page.
+08:28:55.129 [main] INFO  - Clicked successfully on the Leads button.
+08:28:55.895 [main] INFO  - Clicked succesfully on the Create button.
+08:28:58.188 [main] INFO  - Dropdown opened successfully.
+08:29:02.681 [main] INFO  - Successfully selected the PR / Citizen checkbox.
+08:29:03.365 [main] INFO  - Generated and entered phone number: 0498368576
+08:31:00.507 [main] INFO  - Entered card number: 4242424242424242
+08:31:02.970 [main] INFO  - Entered cardholder name: Henry Taylor
+08:31:03.072 [main] INFO  - Entered expiry year: 2030
+08:31:03.192 [main] INFO  - Successfully submitted and saved the credit card details.
+08:31:04.512 [main] INFO  - Temporary CRN Number captured: Allen67565d6fbd27a
+08:31:04.513 [main] INFO  - Captured temporary CRN number: Allen67565d6fbd27a
+08:31:14.490 [main] INFO  - I successfully saved the Financial Information.
+08:32:34.483 [main] INFO  - Browser selected: chrome
+08:32:37.012 [main] INFO  - ChromeDriver initialized.
+08:32:38.192 [main] INFO  - Navigated to URL: https://crmtest.doctorshealthfund.com.au/
+08:32:38.199 [main] INFO  - All cookies cleared before starting the test.
+08:32:38.280 [main] INFO  - Navigating to the login page.
+08:32:42.440 [main] INFO  - Clicked successfully on the Leads button.
+08:32:43.126 [main] INFO  - Clicked succesfully on the Create button.
+08:32:45.226 [main] INFO  - Dropdown opened successfully.
+08:32:47.972 [main] INFO  - Successfully selected the PR / Citizen checkbox.
+08:32:48.502 [main] INFO  - Generated and entered phone number: 0498361974
+08:34:46.755 [main] INFO  - Entered card number: 4242424242424242
+08:34:49.215 [main] INFO  - Entered cardholder name: Harry Wilson
+08:34:49.327 [main] INFO  - Entered expiry year: 2030
+08:34:49.458 [main] INFO  - Successfully submitted and saved the credit card details.
+08:34:50.706 [main] INFO  - Temporary CRN Number captured: Allen67565e520644e
+08:34:50.706 [main] INFO  - Captured temporary CRN number: Allen67565e520644e
+08:35:01.978 [main] INFO  - I successfully saved the Financial Information.
+08:35:41.974 [main] INFO  - Clicked on the Close Button successfully.
+08:35:41.974 [main] INFO  - Close Button was clicked successfully in the step definition.
+08:35:42.679 [main] INFO  - Permanent CRN Number captured: 004544656
+08:35:42.679 [main] INFO  - Permanent CRN Number successfully validated and captured: 004544656
+08:58:26.781 [main] INFO  - Browser selected: chrome
+08:58:29.276 [main] INFO  - ChromeDriver initialized.
+08:58:30.438 [main] INFO  - Navigated to URL: https://crmtest.doctorshealthfund.com.au/
+08:58:30.447 [main] INFO  - All cookies cleared before starting the test.
+08:58:30.541 [main] INFO  - Navigating to the login page.
+08:58:34.664 [main] INFO  - Clicked successfully on the Leads button.
+08:58:35.534 [main] INFO  - Clicked succesfully on the Create button.
+08:58:37.794 [main] INFO  - Dropdown opened successfully.
+08:58:40.098 [main] INFO  - Successfully selected the PR / Citizen checkbox.
+08:58:40.417 [main] INFO  - Generated and entered phone number: 0498365570
+09:00:38.623 [main] INFO  - Entered card number: 4242424242424242
+09:00:41.061 [main] INFO  - Entered cardholder name: Henry Smith
+09:00:41.162 [main] INFO  - Entered expiry year: 2030
+09:00:41.282 [main] INFO  - Successfully submitted and saved the credit card details.
+09:00:42.599 [main] INFO  - Temporary CRN Number captured: Anders67566461cca30
+09:00:42.599 [main] INFO  - Captured temporary CRN number: Anders67566461cca30
+09:00:52.630 [main] INFO  - I successfully saved the Financial Information.
+09:02:38.130 [main] INFO  - Browser selected: chrome
+09:02:40.726 [main] INFO  - ChromeDriver initialized.
+09:02:41.776 [main] INFO  - Navigated to URL: https://crmtest.doctorshealthfund.com.au/
+09:02:41.806 [main] INFO  - All cookies cleared before starting the test.
+09:02:41.879 [main] INFO  - Navigating to the login page.
+09:02:46.275 [main] INFO  - Clicked successfully on the Leads button.
+09:02:47.019 [main] INFO  - Clicked succesfully on the Create button.
+09:02:49.072 [main] INFO  - Dropdown opened successfully.
+09:02:51.378 [main] INFO  - Successfully selected the PR / Citizen checkbox.
+09:02:51.698 [main] INFO  - Generated and entered phone number: 0498361888
+09:05:01.100 [main] INFO  - Entered card number: 4242424242424242
+09:05:03.521 [main] INFO  - Entered cardholder name: George Taylor
+09:05:03.621 [main] INFO  - Entered expiry year: 2030
+09:05:03.738 [main] INFO  - Successfully submitted and saved the credit card details.
+09:05:05.280 [main] INFO  - Temporary CRN Number captured: Allen67566568740bb
+09:05:05.283 [main] INFO  - Captured temporary CRN number: Allen67566568740bb
+09:05:15.281 [main] INFO  - I successfully saved the Financial Information.
+09:05:56.231 [main] INFO  - Clicked on the Close Button successfully.
+09:05:56.231 [main] INFO  - Close Button was clicked successfully in the step definition.
+09:05:56.962 [main] INFO  - Permanent CRN Number captured: 004544664
+09:05:56.963 [main] INFO  - Permanent CRN Number successfully validated and captured: 004544664
+11:03:50.247 [main] INFO  - Browser selected: chrome
+11:03:53.665 [main] INFO  - ChromeDriver initialized.
+11:03:55.359 [main] INFO  - Navigated to URL: https://crmtest.doctorshealthfund.com.au/
+11:03:55.376 [main] INFO  - All cookies cleared before starting the test.
+11:03:55.464 [main] INFO  - Navigating to the login page.
+11:03:59.852 [main] INFO  - Clicked successfully on the Leads button.
+11:04:00.594 [main] INFO  - Clicked succesfully on the Create button.
+11:04:02.707 [main] INFO  - Dropdown opened successfully.
+11:04:05.412 [main] INFO  - Successfully selected the PR / Citizen checkbox.
+11:04:06.009 [main] INFO  - Generated and entered phone number: 0498368892
+11:06:12.189 [main] INFO  - Entered card number: 4242424242424242
+11:06:14.615 [main] INFO  - Entered cardholder name: Jacob Thomas
+11:06:14.719 [main] INFO  - Entered expiry year: 2030
+11:06:14.844 [main] INFO  - Successfully submitted and saved the credit card details.
+11:06:17.772 [main] INFO  - Temporary CRN Number captured: Harris675681cf4eb38
+11:06:17.772 [main] INFO  - Captured temporary CRN number: Harris675681cf4eb38
+11:06:28.953 [main] INFO  - I successfully saved the Financial Information.
+11:07:08.929 [main] INFO  - Clicked on the Close Button successfully.
+11:07:08.929 [main] INFO  - Close Button was clicked successfully in the step definition.
+11:07:09.623 [main] INFO  - Permanent CRN Number captured: 004544680
+11:07:09.623 [main] INFO  - Permanent CRN Number successfully validated and captured: 004544680
+11:22:29.226 [main] INFO  - Browser selected: chrome
+11:22:31.749 [main] INFO  - ChromeDriver initialized.
+11:22:33.005 [main] INFO  - Navigated to URL: https://crmtest.doctorshealthfund.com.au/
+11:22:33.019 [main] INFO  - All cookies cleared before starting the test.
+11:22:33.101 [main] INFO  - Navigating to the login page.
+11:22:37.332 [main] INFO  - Clicked successfully on the Leads button.
+11:22:38.202 [main] INFO  - Clicked succesfully on the Create button.
+11:22:40.311 [main] INFO  - Dropdown opened successfully.
+11:22:42.836 [main] INFO  - Successfully selected the PR / Citizen checkbox.
+11:22:43.295 [main] INFO  - Generated and entered phone number: 0498364872
+11:24:54.287 [main] INFO  - Entered card number: 4242424242424242
+11:24:56.735 [main] INFO  - Entered cardholder name: George Jones
+11:24:56.833 [main] INFO  - Entered expiry year: 2030
+11:24:57.010 [main] INFO  - Successfully submitted and saved the credit card details.
+11:24:58.258 [main] INFO  - Temporary CRN Number captured: Lewis6756863172c4d
+11:24:58.258 [main] INFO  - Captured temporary CRN number: Lewis6756863172c4d
+11:25:09.462 [main] INFO  - I successfully saved the Financial Information.
+11:25:49.470 [main] INFO  - Clicked on the Close Button successfully.
+11:25:49.470 [main] INFO  - Close Button was clicked successfully in the step definition.
+11:25:50.163 [main] INFO  - Permanent CRN Number captured: 004544698
+11:25:50.163 [main] INFO  - Permanent CRN Number successfully validated and captured: 004544698
+07:04:39.295 [main] INFO  - Browser selected: chrome
+07:04:43.157 [main] INFO  - ChromeDriver initialized.
+07:04:44.428 [main] INFO  - Navigated to URL: https://crmtest.doctorshealthfund.com.au/
+07:04:44.556 [main] INFO  - All cookies cleared before starting the test.
+07:04:44.633 [main] INFO  - Navigating to the login page.
+07:04:49.004 [main] INFO  - Clicked successfully on the Leads button.
+07:04:49.806 [main] INFO  - Clicked succesfully on the Create button.
+07:04:51.927 [main] INFO  - Dropdown opened successfully.
+07:04:54.262 [main] INFO  - Successfully selected the PR / Citizen checkbox.
+07:04:54.588 [main] INFO  - Generated and entered phone number: 0498364777
+07:06:51.950 [main] INFO  - Entered card number: 4242424242424242
+07:06:54.379 [main] INFO  - Entered cardholder name: Henry Jones
+07:06:54.523 [main] INFO  - Entered expiry year: 2030
+07:06:54.667 [main] INFO  - Successfully submitted and saved the credit card details.
+07:06:56.066 [main] INFO  - Temporary CRN Number captured: Martin67579b372a86d
+07:06:56.067 [main] INFO  - Captured temporary CRN number: Martin67579b372a86d
+07:07:07.197 [main] INFO  - I successfully saved the Financial Information.
+07:07:50.873 [main] INFO  - Clicked on the Close Button successfully.
+07:07:50.873 [main] INFO  - Close Button was clicked successfully in the step definition.
+07:07:51.717 [main] INFO  - Permanent CRN Number captured: 004544706
+07:07:51.717 [main] INFO  - Permanent CRN Number successfully validated and captured: 004544706
