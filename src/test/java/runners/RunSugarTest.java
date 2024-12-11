@@ -13,4 +13,7 @@ publish=true, //Publishes the generated Cucumber report to a sharable URL.
 )
 public class RunSugarTest extends AbstractTestNGCucumberTests {
 
+	static {
+        System.setProperty("runner.name", "RunSugarTest");
+    }
 }

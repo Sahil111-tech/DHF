@@ -77,7 +77,7 @@ public class SugarSteps {
 		lp = new loginPage(driver); // Passed the driver to the login page object
 		// Assertion to verify the URL
 		baseTest.waitForPageToLoad(driver);
-		String expectedUrl = prop.getProperty("url");
+		String expectedUrl = prop.getProperty("crmtest_url");
 		String CurrentUrl = lp.getCurrentURL();
 
 		Assert.assertTrue(CurrentUrl.equals(expectedUrl),

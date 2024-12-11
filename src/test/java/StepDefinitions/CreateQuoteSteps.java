@@ -73,7 +73,7 @@ public class CreateQuoteSteps {
 
 		// Assertion to verify the URL
 		baseTest.waitForPageToLoad(driver);
-		String expectedUrl = prop.getProperty("url");
+		String expectedUrl = prop.getProperty("uat_url");
 		String CurrentUrl = quote.getCurrentURL();
 
 		Assert.assertTrue(CurrentUrl.equals(expectedUrl),

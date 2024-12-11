@@ -1,2 +1,2 @@
 cd C:\Users\Sahil.Sharma\EclipseEn\DHFAutomation
-mvn test -Dtest=RunSugarTest
+mvn test -Dtest=RunCucumberTest
