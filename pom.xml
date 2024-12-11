@@ -8,6 +8,23 @@
 	<name>DHFAutomation</name>
 	<!-- https://mvnrepository.com/artifact/org.testng/testng -->
 
+	<build>
+		<plugins>
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-surefire-plugin</artifactId>
+				<version>3.2.5</version>
+				<configuration>
+					<includes>
+						<include>**/RunSugarTest.java</include>
+						<include>**/RunCucumberTest.java</include>
+
+					</includes>
+				</configuration>
+			</plugin>
+		</plugins>
+	</build>
+
 	<dependencies>
 		<dependency>
 			<groupId>org.testng</groupId>
@@ -15,7 +32,7 @@
 			<version>7.9.0</version>
 			<!--  <scope>test</scope>-->
 		</dependency>
-		
+
 		<dependency>
 			<groupId>org.slf4j</groupId>
 			<artifactId>slf4j-simple</artifactId>
@@ -61,13 +78,13 @@
 		<dependency>
 			<groupId>io.cucumber</groupId>
 			<artifactId>cucumber-java</artifactId>
-			<version>7.11.2</version>
+			<version>7.15.0</version>
 		</dependency>
 
 		<dependency>
 			<groupId>io.cucumber</groupId>
 			<artifactId>cucumber-testng</artifactId>
-			<version>7.11.2</version>
+			<version>7.15.0</version>
 		</dependency>
 		<!-- https://mvnrepository.com/artifact/io.cucumber/cucumber-html -->
 		<!--<dependency>
