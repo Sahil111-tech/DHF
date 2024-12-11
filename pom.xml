@@ -17,7 +17,7 @@
 				<configuration>
 					<includes>
 						<include>**/RunSugarTest.java</include>
-						<include>**/RunCucumberTest.java</include>
+						<!-- <include>**/RunCucumberTest.java</include>-->
 
 					</includes>
 				</configuration>

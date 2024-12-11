@@ -11,8 +11,8 @@ import io.cucumber.testng.CucumberOptions;
 		dryRun = false, //
 		monochrome = true, // Makes the console output more readable by removing unnecessary characters and
 							// formatting.
-		publish = true, // Publishes the generated Cucumber report to a sharable URL.
-		tags = /*"@CompleteMAFSubmission or @starterExtras"*/ "@CompleteMAFSubmission" 
+		publish = true // Publishes the generated Cucumber report to a sharable URL.
+		//tags = /*"@CompleteMAFSubmission or @starterExtras"*/ "@CompleteMAFSubmission" 
 )
 
 public class RunCucumberTest extends AbstractTestNGCucumberTests {
