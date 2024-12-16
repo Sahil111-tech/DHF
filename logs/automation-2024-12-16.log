@@ -1,0 +1,710 @@
+13:59:23.355 [main] INFO  - Avant member option 'No' selected successfully.
+13:59:24.664 [main] INFO  - Clicked on Continue button
+13:59:24.667 [main] INFO  - Selecting option for transferring from another fund: No
+13:59:24.827 [main] INFO  - 'No' selected for transferring from another fund.
+13:59:25.550 [main] INFO  - Attempting to accept alert/modal.
+13:59:26.009 [main] INFO  - Alert/modal accepted successfully.
+13:59:26.012 [main] INFO  - Selecting option for transferring from another fund: Yes
+13:59:26.192 [main] INFO  - 'Yes' selected for transferring from another fund.
+13:59:26.900 [main] INFO  - Attempting to accept alert/modal.
+13:59:27.124 [main] INFO  - Alert/modal accepted successfully.
+13:59:27.195 [main] INFO  - Scrolled to element: [[EdgeDriver: MicrosoftEdge on windows (9b436f51871eae749467cdd286ce17a7)] -> xpath: //select[@name='currentHealthFund']/..]
+13:59:27.854 [main] INFO  - Scrolled to element: [[EdgeDriver: MicrosoftEdge on windows (9b436f51871eae749467cdd286ce17a7)] -> xpath: //div[@name='partnerAndDependentsCovered']//span[contains(text(), 'Yes')]]
+13:59:27.992 [main] INFO  - Attempting to click the 'Next' button.
+13:59:28.386 [main] INFO  - 'Next' button clicked successfully.
+13:59:28.453 [main] INFO  - Selecting title from dropdown: Mr
+13:59:28.894 [main] INFO  - Selected 'Mr' from dropdown.
+13:59:29.287 [main] INFO  - Entered First Name: Jane
+13:59:29.475 [main] INFO  - Entered Middle Name: Lee
+13:59:29.689 [main] INFO  - Entered Last Name: Taylor
+13:59:29.690 [main] INFO  - Entered random full name: Jane Lee Taylor
+13:59:29.808 [main] INFO  - Scrolled to element: [[EdgeDriver: MicrosoftEdge on windows (9b436f51871eae749467cdd286ce17a7)] -> xpath: //div[@name='lhcStatement']//span[2][contains(text(),'No')]]
+13:59:30.271 [main] INFO  - Selected Male radio button
+13:59:32.280 [main] INFO  - Attempting to accept alert/modal.
+13:59:32.420 [main] INFO  - Alert/modal accepted successfully.
+13:59:32.435 [main] INFO  - Attempting to click the 'Next' button.
+13:59:32.585 [main] INFO  - 'Next' button clicked successfully.
+13:59:32.815 [main] INFO  - Entered random email: dhf.testing+101@gmail.com
+13:59:32.992 [main] INFO  - Entered random phone number: 0498361095
+13:59:32.992 [main] INFO  - Phone number format validation passed: 0498361095
+13:59:35.820 [main] INFO  - Entered address input: 123 A'
+13:59:36.841 [main] INFO  - Selected address input: 123 A'
+13:59:39.077 [main] INFO  - Clicked on Continue button
+13:59:40.358 [main] INFO  - Selecting title from dropdown: Mrs
+13:59:40.764 [main] INFO  - Selected 'Mrs' from dropdown.
+13:59:40.969 [main] INFO  - Entered First Name: Chris
+13:59:41.175 [main] INFO  - Entered Middle Name: Lee
+13:59:41.429 [main] INFO  - Entered Last Name: Thomas
+13:59:41.429 [main] INFO  - Entered random full name: Chris Lee Thomas
+13:59:41.778 [main] INFO  - Entered random email: dhf.testing+675@gmail.com
+13:59:41.998 [main] INFO  - Entered random mobile number: 0498367968
+13:59:41.998 [main] INFO  - Phone number format validation passed: 0498367968
+13:59:42.121 [main] INFO  - Selected Female radio button
+13:59:42.165 [main] INFO  - Scrolled to element: [[EdgeDriver: MicrosoftEdge on windows (9b436f51871eae749467cdd286ce17a7)] -> xpath: //select[@name='relationship']]
+14:03:11.685 [main] INFO  - Browser selected: edge
+14:03:11.688 [main] INFO  - URL selected: https://uat.doctorshealthfund.com.au/
+14:03:15.967 [main] INFO  - EdgeDriver initialized.
+14:03:19.582 [main] INFO  - Navigated to URL: https://uat.doctorshealthfund.com.au/
+14:03:19.823 [main] INFO  - All cookies cleared before starting the test.
+14:04:08.208 [main] INFO  - Browser selected: edge
+14:04:08.211 [main] INFO  - URL selected: https://uat.doctorshealthfund.com.au/
+14:04:12.626 [main] INFO  - EdgeDriver initialized.
+14:04:16.331 [main] INFO  - Navigated to URL: https://uat.doctorshealthfund.com.au/
+14:04:16.568 [main] INFO  - All cookies cleared before starting the test.
+14:04:16.623 [main] INFO  - Navigating to the quote page.
+14:04:16.655 [main] INFO  - Page title: Private Health Insurance for Doctors | Doctors' Health Fund
+14:04:16.662 [main] INFO  - Clicking the 'Get Quote' button.
+14:04:16.662 [main] INFO  - Attempting to click the 'Get Quote' button...
+14:04:16.853 [main] INFO  - 'Get Quote' button clicked successfully.
+14:04:16.854 [main] INFO  - 'Get Quote' button clicked successfully.
+14:04:16.857 [main] INFO  - Selecting cover type: Couple...
+14:04:18.225 [main] INFO  - Cover type 'Couple' selected successfully.
+14:04:18.228 [main] INFO  - Clicking the 'Next' button...
+14:04:18.379 [main] INFO  - 'Next' button clicked successfully.
+14:04:18.381 [main] INFO  - Selecting residence: NSW...
+14:04:18.537 [main] INFO  - Residence 'NSW' selected successfully.
+14:04:18.539 [main] INFO  - Clicking the 'Next' button...
+14:04:18.700 [main] INFO  - 'Next' button clicked successfully.
+14:04:18.702 [main] INFO  - Entering day of birth: 01...
+14:04:18.910 [main] INFO  - Day of birth entered successfully.
+14:04:18.910 [main] INFO  - Entering month of birth: 01...
+14:04:19.048 [main] INFO  - Month of birth entered successfully.
+14:04:19.048 [main] INFO  - Entering year of birth: 1978...
+14:04:19.205 [main] INFO  - Year of birth entered successfully.
+14:04:19.207 [main] INFO  - Entering day of birth: 01...
+14:04:19.352 [main] INFO  - Partner's day of birth entered successfully.
+14:04:19.353 [main] INFO  - Entering month of birth: 01...
+14:04:19.475 [main] INFO  - Partner's month of birth entered successfully.
+14:04:19.475 [main] INFO  - Entering year of birth: 1977...
+14:04:19.584 [main] INFO  - Partner's year of birth entered successfully.
+14:04:19.588 [main] INFO  - Clicking the 'Next' button...
+14:04:19.729 [main] INFO  - 'Next' button clicked successfully.
+14:04:19.731 [main] INFO  - Selecting annual income: Below $194k...
+14:04:19.856 [main] INFO  - Annual income 'Below $194k' selected successfully.
+14:04:19.859 [main] INFO  - Clicking 'Calculate Cover' button...
+14:04:20.448 [main] INFO  - 'Calculate Cover' button clicked successfully.
+14:04:20.501 [main] INFO  - Selecting hospital cover: Top Cover...
+14:04:22.290 [main] INFO  - Selected the Extras Cover: Total Extras
+14:04:22.669 [main] INFO  - Clicked on the Apply Now button for the selected plan.
+14:04:22.691 [main] INFO  - Attempting to select 'No' for member status.
+14:04:23.060 [main] INFO  - 'No' radio button for member status selected successfully.
+14:04:23.063 [main] INFO  - Attempting to select 'Yes' for Australian citizenship status.
+14:04:23.242 [main] INFO  - 'Yes' radio button for citizenship status selected successfully.
+14:04:23.251 [main] INFO  - Attempting to click the 'Medical Practitioner' button.
+14:04:23.377 [main] INFO  - 'Medical Practitioner' button clicked successfully.
+14:04:23.382 [main] INFO  - Attempting to select the radio button for: Resident
+14:04:23.510 [main] INFO  - Radio button for 'Resident' selected successfully.
+14:04:23.519 [main] INFO  - Attempting to select Avant member option: No
+14:04:23.662 [main] INFO  - Avant member option 'No' selected successfully.
+14:04:24.877 [main] INFO  - Clicked on Continue button
+14:04:24.942 [main] INFO  - Attempting to select Avant member option: Yes
+14:04:25.054 [main] INFO  - Avant member option 'Yes' selected successfully.
+14:04:25.065 [main] INFO  - Attempting to select Avant member option: No
+14:04:25.178 [main] INFO  - Avant member option 'No' selected successfully.
+14:04:26.396 [main] INFO  - Clicked on Continue button
+14:04:26.399 [main] INFO  - Selecting option for transferring from another fund: No
+14:04:26.546 [main] INFO  - 'No' selected for transferring from another fund.
+14:04:27.250 [main] INFO  - Attempting to accept alert/modal.
+14:04:27.471 [main] INFO  - Alert/modal accepted successfully.
+14:04:27.474 [main] INFO  - Selecting option for transferring from another fund: Yes
+14:04:27.663 [main] INFO  - 'Yes' selected for transferring from another fund.
+14:04:28.367 [main] INFO  - Attempting to accept alert/modal.
+14:04:28.539 [main] INFO  - Alert/modal accepted successfully.
+14:04:28.603 [main] INFO  - Scrolled to element: [[EdgeDriver: MicrosoftEdge on windows (c42264d403da252c94f126a2a00dc709)] -> xpath: //select[@name='currentHealthFund']/..]
+14:04:29.298 [main] INFO  - Scrolled to element: [[EdgeDriver: MicrosoftEdge on windows (c42264d403da252c94f126a2a00dc709)] -> xpath: //div[@name='partnerAndDependentsCovered']//span[contains(text(), 'Yes')]]
+14:04:29.426 [main] INFO  - Attempting to click the 'Next' button.
+14:04:29.644 [main] INFO  - 'Next' button clicked successfully.
+14:04:29.665 [main] INFO  - Selecting title from dropdown: Mr
+14:04:30.194 [main] INFO  - Selected 'Mr' from dropdown.
+14:04:30.383 [main] INFO  - Entered First Name: John
+14:04:30.582 [main] INFO  - Entered Middle Name: Ray
+14:04:30.773 [main] INFO  - Entered Last Name: Brown
+14:04:30.773 [main] INFO  - Entered random full name: John Ray Brown
+14:04:30.890 [main] INFO  - Scrolled to element: [[EdgeDriver: MicrosoftEdge on windows (c42264d403da252c94f126a2a00dc709)] -> xpath: //div[@name='lhcStatement']//span[2][contains(text(),'No')]]
+14:04:31.336 [main] INFO  - Selected Male radio button
+14:04:33.348 [main] INFO  - Attempting to accept alert/modal.
+14:04:33.500 [main] INFO  - Alert/modal accepted successfully.
+14:04:33.511 [main] INFO  - Attempting to click the 'Next' button.
+14:04:33.674 [main] INFO  - 'Next' button clicked successfully.
+14:04:34.080 [main] INFO  - Entered random email: dhf.testing+718@gmail.com
+14:04:34.328 [main] INFO  - Entered random phone number: 0498366569
+14:04:34.328 [main] INFO  - Phone number format validation passed: 0498366569
+14:04:37.094 [main] INFO  - Entered address input: 123 A'
+14:04:38.159 [main] INFO  - Selected address input: 123 A'
+14:04:40.380 [main] INFO  - Clicked on Continue button
+14:04:41.607 [main] INFO  - Selecting title from dropdown: Mrs
+14:04:41.904 [main] INFO  - Selected 'Mrs' from dropdown.
+14:04:42.127 [main] INFO  - Entered First Name: John
+14:04:42.304 [main] INFO  - Entered Middle Name: Ray
+14:04:42.494 [main] INFO  - Entered Last Name: Thomas
+14:04:42.494 [main] INFO  - Entered random full name: John Ray Thomas
+14:04:42.780 [main] INFO  - Entered random email: dhf.testing+830@gmail.com
+14:04:43.032 [main] INFO  - Entered random mobile number: 0498362488
+14:04:43.032 [main] INFO  - Phone number format validation passed: 0498362488
+14:04:43.158 [main] INFO  - Selected Female radio button
+14:04:43.210 [main] INFO  - Scrolled to element: [[EdgeDriver: MicrosoftEdge on windows (c42264d403da252c94f126a2a00dc709)] -> xpath: //select[@name='relationship']]
+14:05:26.564 [main] INFO  - Browser selected: edge
+14:05:26.568 [main] INFO  - URL selected: https://uat.doctorshealthfund.com.au/
+14:05:30.985 [main] INFO  - EdgeDriver initialized.
+14:05:34.593 [main] INFO  - Navigated to URL: https://uat.doctorshealthfund.com.au/
+14:05:34.875 [main] INFO  - All cookies cleared before starting the test.
+14:05:34.928 [main] INFO  - Navigating to the quote page.
+14:05:34.962 [main] INFO  - Page title: Private Health Insurance for Doctors | Doctors' Health Fund
+14:05:34.970 [main] INFO  - Clicking the 'Get Quote' button.
+14:05:34.971 [main] INFO  - Attempting to click the 'Get Quote' button...
+14:05:35.186 [main] INFO  - 'Get Quote' button clicked successfully.
+14:05:35.186 [main] INFO  - 'Get Quote' button clicked successfully.
+14:05:35.191 [main] INFO  - Selecting cover type: Couple...
+14:05:35.697 [main] INFO  - Cover type 'Couple' selected successfully.
+14:05:35.700 [main] INFO  - Clicking the 'Next' button...
+14:05:35.856 [main] INFO  - 'Next' button clicked successfully.
+14:05:35.858 [main] INFO  - Selecting residence: NSW...
+14:05:36.008 [main] INFO  - Residence 'NSW' selected successfully.
+14:05:36.010 [main] INFO  - Clicking the 'Next' button...
+14:05:36.229 [main] INFO  - 'Next' button clicked successfully.
+14:05:36.231 [main] INFO  - Entering day of birth: 01...
+14:05:36.425 [main] INFO  - Day of birth entered successfully.
+14:05:36.425 [main] INFO  - Entering month of birth: 01...
+14:05:36.566 [main] INFO  - Month of birth entered successfully.
+14:05:36.566 [main] INFO  - Entering year of birth: 1978...
+14:05:36.704 [main] INFO  - Year of birth entered successfully.
+14:05:36.706 [main] INFO  - Entering day of birth: 01...
+14:05:36.856 [main] INFO  - Partner's day of birth entered successfully.
+14:05:36.856 [main] INFO  - Entering month of birth: 01...
+14:05:36.979 [main] INFO  - Partner's month of birth entered successfully.
+14:05:36.979 [main] INFO  - Entering year of birth: 1977...
+14:05:37.098 [main] INFO  - Partner's year of birth entered successfully.
+14:05:37.100 [main] INFO  - Clicking the 'Next' button...
+14:05:37.270 [main] INFO  - 'Next' button clicked successfully.
+14:05:37.272 [main] INFO  - Selecting annual income: Below $194k...
+14:05:37.415 [main] INFO  - Annual income 'Below $194k' selected successfully.
+14:05:37.418 [main] INFO  - Clicking 'Calculate Cover' button...
+14:05:37.979 [main] INFO  - 'Calculate Cover' button clicked successfully.
+14:05:38.087 [main] INFO  - Selecting hospital cover: Top Cover...
+14:05:39.756 [main] INFO  - Selected the Extras Cover: Total Extras
+14:05:40.007 [main] INFO  - Clicked on the Apply Now button for the selected plan.
+14:05:40.021 [main] INFO  - Attempting to select 'No' for member status.
+14:05:40.392 [main] INFO  - 'No' radio button for member status selected successfully.
+14:05:40.395 [main] INFO  - Attempting to select 'Yes' for Australian citizenship status.
+14:05:40.568 [main] INFO  - 'Yes' radio button for citizenship status selected successfully.
+14:05:40.576 [main] INFO  - Attempting to click the 'Medical Practitioner' button.
+14:05:40.699 [main] INFO  - 'Medical Practitioner' button clicked successfully.
+14:05:40.703 [main] INFO  - Attempting to select the radio button for: Resident
+14:05:40.846 [main] INFO  - Radio button for 'Resident' selected successfully.
+14:05:40.854 [main] INFO  - Attempting to select Avant member option: No
+14:05:41.003 [main] INFO  - Avant member option 'No' selected successfully.
+14:05:42.209 [main] INFO  - Clicked on Continue button
+14:05:42.222 [main] INFO  - Attempting to select Avant member option: Yes
+14:05:42.329 [main] INFO  - Avant member option 'Yes' selected successfully.
+14:05:42.337 [main] INFO  - Attempting to select Avant member option: No
+14:05:42.448 [main] INFO  - Avant member option 'No' selected successfully.
+14:05:43.674 [main] INFO  - Clicked on Continue button
+14:05:43.679 [main] INFO  - Selecting option for transferring from another fund: No
+14:05:43.838 [main] INFO  - 'No' selected for transferring from another fund.
+14:05:44.551 [main] INFO  - Attempting to accept alert/modal.
+14:05:44.784 [main] INFO  - Alert/modal accepted successfully.
+14:05:44.787 [main] INFO  - Selecting option for transferring from another fund: Yes
+14:05:45.005 [main] INFO  - 'Yes' selected for transferring from another fund.
+14:05:45.707 [main] INFO  - Attempting to accept alert/modal.
+14:05:45.858 [main] INFO  - Alert/modal accepted successfully.
+14:05:45.917 [main] INFO  - Scrolled to element: [[EdgeDriver: MicrosoftEdge on windows (e27dcb880e538ed9b1ab2ba4f3e6d182)] -> xpath: //select[@name='currentHealthFund']/..]
+14:05:46.613 [main] INFO  - Scrolled to element: [[EdgeDriver: MicrosoftEdge on windows (e27dcb880e538ed9b1ab2ba4f3e6d182)] -> xpath: //div[@name='partnerAndDependentsCovered']//span[contains(text(), 'Yes')]]
+14:05:46.832 [main] INFO  - Attempting to click the 'Next' button.
+14:05:47.070 [main] INFO  - 'Next' button clicked successfully.
+14:05:47.082 [main] INFO  - Selecting title from dropdown: Mr
+14:05:47.558 [main] INFO  - Selected 'Mr' from dropdown.
+14:05:47.753 [main] INFO  - Entered First Name: Chris
+14:05:47.963 [main] INFO  - Entered Middle Name: Lee
+14:05:48.145 [main] INFO  - Entered Last Name: Smith
+14:05:48.145 [main] INFO  - Entered random full name: Chris Lee Smith
+14:05:48.203 [main] INFO  - Scrolled to element: [[EdgeDriver: MicrosoftEdge on windows (e27dcb880e538ed9b1ab2ba4f3e6d182)] -> xpath: //div[@name='lhcStatement']//span[2][contains(text(),'No')]]
+14:05:48.830 [main] INFO  - Selected Male radio button
+14:05:50.846 [main] INFO  - Attempting to accept alert/modal.
+14:05:51.102 [main] INFO  - Alert/modal accepted successfully.
+14:05:51.112 [main] INFO  - Attempting to click the 'Next' button.
+14:05:51.299 [main] INFO  - 'Next' button clicked successfully.
+14:05:51.561 [main] INFO  - Entered random email: dhf.testing+88@gmail.com
+14:05:51.764 [main] INFO  - Entered random phone number: 0498365662
+14:05:51.765 [main] INFO  - Phone number format validation passed: 0498365662
+14:05:54.558 [main] INFO  - Entered address input: 123 A'
+14:05:55.619 [main] INFO  - Selected address input: 123 A'
+14:05:57.870 [main] INFO  - Clicked on Continue button
+14:05:59.122 [main] INFO  - Selecting title from dropdown: Mrs
+14:05:59.437 [main] INFO  - Selected 'Mrs' from dropdown.
+14:05:59.648 [main] INFO  - Entered First Name: Taylor
+14:05:59.833 [main] INFO  - Entered Middle Name: Lee
+14:06:00.098 [main] INFO  - Entered Last Name: Brown
+14:06:00.098 [main] INFO  - Entered random full name: Taylor Lee Brown
+14:06:00.554 [main] INFO  - Entered random email: dhf.testing+629@gmail.com
+14:06:00.885 [main] INFO  - Entered random mobile number: 0498362958
+14:06:00.885 [main] INFO  - Phone number format validation passed: 0498362958
+14:06:01.033 [main] INFO  - Selected Female radio button
+14:06:01.079 [main] INFO  - Scrolled to element: [[EdgeDriver: MicrosoftEdge on windows (e27dcb880e538ed9b1ab2ba4f3e6d182)] -> xpath: //select[@name='relationship']]
+14:07:45.534 [main] INFO  - Browser selected: edge
+14:07:45.539 [main] INFO  - URL selected: https://uat.doctorshealthfund.com.au/
+14:07:49.863 [main] INFO  - EdgeDriver initialized.
+14:07:53.814 [main] INFO  - Navigated to URL: https://uat.doctorshealthfund.com.au/
+14:07:54.079 [main] INFO  - All cookies cleared before starting the test.
+14:07:54.122 [main] INFO  - Navigating to the quote page.
+14:07:54.146 [main] INFO  - Page title: Private Health Insurance for Doctors | Doctors' Health Fund
+14:07:54.159 [main] INFO  - Clicking the 'Get Quote' button.
+14:07:54.159 [main] INFO  - Attempting to click the 'Get Quote' button...
+14:07:54.369 [main] INFO  - 'Get Quote' button clicked successfully.
+14:07:54.370 [main] INFO  - 'Get Quote' button clicked successfully.
+14:07:54.376 [main] INFO  - Selecting cover type: Couple...
+14:07:54.925 [main] INFO  - Cover type 'Couple' selected successfully.
+14:07:54.927 [main] INFO  - Clicking the 'Next' button...
+14:07:55.074 [main] INFO  - 'Next' button clicked successfully.
+14:07:55.076 [main] INFO  - Selecting residence: NSW...
+14:07:55.238 [main] INFO  - Residence 'NSW' selected successfully.
+14:07:55.240 [main] INFO  - Clicking the 'Next' button...
+14:07:55.396 [main] INFO  - 'Next' button clicked successfully.
+14:07:55.399 [main] INFO  - Entering day of birth: 01...
+14:07:55.597 [main] INFO  - Day of birth entered successfully.
+14:07:55.597 [main] INFO  - Entering month of birth: 01...
+14:07:55.758 [main] INFO  - Month of birth entered successfully.
+14:07:55.758 [main] INFO  - Entering year of birth: 1978...
+14:07:55.903 [main] INFO  - Year of birth entered successfully.
+14:07:55.909 [main] INFO  - Entering day of birth: 01...
+14:07:56.056 [main] INFO  - Partner's day of birth entered successfully.
+14:07:56.056 [main] INFO  - Entering month of birth: 01...
+14:07:56.185 [main] INFO  - Partner's month of birth entered successfully.
+14:07:56.185 [main] INFO  - Entering year of birth: 1977...
+14:07:56.366 [main] INFO  - Partner's year of birth entered successfully.
+14:07:56.368 [main] INFO  - Clicking the 'Next' button...
+14:07:56.543 [main] INFO  - 'Next' button clicked successfully.
+14:07:56.546 [main] INFO  - Selecting annual income: Below $194k...
+14:07:56.682 [main] INFO  - Annual income 'Below $194k' selected successfully.
+14:07:56.685 [main] INFO  - Clicking 'Calculate Cover' button...
+14:07:57.262 [main] INFO  - 'Calculate Cover' button clicked successfully.
+14:07:57.383 [main] INFO  - Selecting hospital cover: Top Cover...
+14:07:59.044 [main] INFO  - Selected the Extras Cover: Total Extras
+14:07:59.238 [main] INFO  - Clicked on the Apply Now button for the selected plan.
+14:07:59.247 [main] INFO  - Attempting to select 'No' for member status.
+14:07:59.608 [main] INFO  - 'No' radio button for member status selected successfully.
+14:07:59.611 [main] INFO  - Attempting to select 'Yes' for Australian citizenship status.
+14:07:59.794 [main] INFO  - 'Yes' radio button for citizenship status selected successfully.
+14:07:59.842 [main] INFO  - Attempting to click the 'Medical Practitioner' button.
+14:08:00.015 [main] INFO  - 'Medical Practitioner' button clicked successfully.
+14:08:00.018 [main] INFO  - Attempting to select the radio button for: Resident
+14:08:00.168 [main] INFO  - Radio button for 'Resident' selected successfully.
+14:08:00.175 [main] INFO  - Attempting to select Avant member option: No
+14:08:00.311 [main] INFO  - Avant member option 'No' selected successfully.
+14:08:01.528 [main] INFO  - Clicked on Continue button
+14:08:01.540 [main] INFO  - Attempting to select Avant member option: Yes
+14:08:01.641 [main] INFO  - Avant member option 'Yes' selected successfully.
+14:08:01.648 [main] INFO  - Attempting to select Avant member option: No
+14:08:01.760 [main] INFO  - Avant member option 'No' selected successfully.
+14:08:02.991 [main] INFO  - Clicked on Continue button
+14:08:02.996 [main] INFO  - Selecting option for transferring from another fund: No
+14:08:03.147 [main] INFO  - 'No' selected for transferring from another fund.
+14:08:03.861 [main] INFO  - Attempting to accept alert/modal.
+14:08:04.016 [main] INFO  - Alert/modal accepted successfully.
+14:08:04.020 [main] INFO  - Selecting option for transferring from another fund: Yes
+14:08:04.152 [main] INFO  - 'Yes' selected for transferring from another fund.
+14:08:04.860 [main] INFO  - Attempting to accept alert/modal.
+14:08:05.018 [main] INFO  - Alert/modal accepted successfully.
+14:08:05.075 [main] INFO  - Scrolled to element: [[EdgeDriver: MicrosoftEdge on windows (6c7aeecd44d16862869eb2d57d5b0bf3)] -> xpath: //select[@name='currentHealthFund']/..]
+14:08:05.709 [main] INFO  - Scrolled to element: [[EdgeDriver: MicrosoftEdge on windows (6c7aeecd44d16862869eb2d57d5b0bf3)] -> xpath: //div[@name='partnerAndDependentsCovered']//span[contains(text(), 'Yes')]]
+14:08:05.832 [main] INFO  - Attempting to click the 'Next' button.
+14:08:06.065 [main] INFO  - 'Next' button clicked successfully.
+14:08:06.083 [main] INFO  - Selecting title from dropdown: Mr
+14:08:06.657 [main] INFO  - Selected 'Mr' from dropdown.
+14:08:06.848 [main] INFO  - Entered First Name: Sam
+14:08:07.089 [main] INFO  - Entered Middle Name: Marie
+14:08:07.305 [main] INFO  - Entered Last Name: Thomas
+14:08:07.305 [main] INFO  - Entered random full name: Sam Marie Thomas
+14:08:07.423 [main] INFO  - Scrolled to element: [[EdgeDriver: MicrosoftEdge on windows (6c7aeecd44d16862869eb2d57d5b0bf3)] -> xpath: //div[@name='lhcStatement']//span[2][contains(text(),'No')]]
+14:08:07.871 [main] INFO  - Selected Male radio button
+14:08:09.878 [main] INFO  - Attempting to accept alert/modal.
+14:08:10.039 [main] INFO  - Alert/modal accepted successfully.
+14:08:10.049 [main] INFO  - Attempting to click the 'Next' button.
+14:08:10.179 [main] INFO  - 'Next' button clicked successfully.
+14:08:10.612 [main] INFO  - Entered random email: dhf.testing+793@gmail.com
+14:08:10.794 [main] INFO  - Entered random phone number: 0498369175
+14:08:10.795 [main] INFO  - Phone number format validation passed: 0498369175
+14:08:13.544 [main] INFO  - Entered address input: 123 A'
+14:08:14.561 [main] INFO  - Selected address input: 123 A'
+14:08:16.797 [main] INFO  - Clicked on Continue button
+14:08:18.040 [main] INFO  - Selecting title from dropdown: Mrs
+14:08:18.325 [main] INFO  - Selected 'Mrs' from dropdown.
+14:08:18.452 [main] INFO  - Entered First Name: Sam
+14:08:18.623 [main] INFO  - Entered Middle Name: Lou
+14:08:18.830 [main] INFO  - Entered Last Name: Taylor
+14:08:18.830 [main] INFO  - Entered random full name: Sam Lou Taylor
+14:08:19.112 [main] INFO  - Entered random email: dhf.testing+391@gmail.com
+14:08:19.373 [main] INFO  - Entered random mobile number: 0498364066
+14:08:19.373 [main] INFO  - Phone number format validation passed: 0498364066
+14:08:19.505 [main] INFO  - Selected Female radio button
+14:08:19.552 [main] INFO  - Scrolled to element: [[EdgeDriver: MicrosoftEdge on windows (6c7aeecd44d16862869eb2d57d5b0bf3)] -> xpath: //select[@name='relationship']]
+14:21:51.447 [main] INFO  - Browser selected: edge
+14:21:51.451 [main] INFO  - URL selected: https://uat.doctorshealthfund.com.au/
+14:21:55.830 [main] INFO  - EdgeDriver initialized.
+14:21:59.404 [main] INFO  - Navigated to URL: https://uat.doctorshealthfund.com.au/
+14:21:59.622 [main] INFO  - All cookies cleared before starting the test.
+14:21:59.671 [main] INFO  - Navigating to the quote page.
+14:21:59.701 [main] INFO  - Page title: Private Health Insurance for Doctors | Doctors' Health Fund
+14:21:59.708 [main] INFO  - Clicking the 'Get Quote' button.
+14:21:59.708 [main] INFO  - Attempting to click the 'Get Quote' button...
+14:21:59.915 [main] INFO  - 'Get Quote' button clicked successfully.
+14:21:59.915 [main] INFO  - 'Get Quote' button clicked successfully.
+14:21:59.923 [main] INFO  - Selecting cover type: Couple...
+14:22:00.542 [main] INFO  - Cover type 'Couple' selected successfully.
+14:22:00.545 [main] INFO  - Clicking the 'Next' button...
+14:22:00.714 [main] INFO  - 'Next' button clicked successfully.
+14:22:00.717 [main] INFO  - Selecting residence: NSW...
+14:22:00.890 [main] INFO  - Residence 'NSW' selected successfully.
+14:22:00.892 [main] INFO  - Clicking the 'Next' button...
+14:22:01.096 [main] INFO  - 'Next' button clicked successfully.
+14:22:01.099 [main] INFO  - Entering day of birth: 01...
+14:22:01.361 [main] INFO  - Day of birth entered successfully.
+14:22:01.361 [main] INFO  - Entering month of birth: 01...
+14:22:01.518 [main] INFO  - Month of birth entered successfully.
+14:22:01.519 [main] INFO  - Entering year of birth: 1978...
+14:22:01.694 [main] INFO  - Year of birth entered successfully.
+14:22:01.697 [main] INFO  - Entering day of birth: 01...
+14:22:01.872 [main] INFO  - Partner's day of birth entered successfully.
+14:22:01.872 [main] INFO  - Entering month of birth: 01...
+14:22:02.103 [main] INFO  - Partner's month of birth entered successfully.
+14:22:02.103 [main] INFO  - Entering year of birth: 1977...
+14:22:02.255 [main] INFO  - Partner's year of birth entered successfully.
+14:22:02.257 [main] INFO  - Clicking the 'Next' button...
+14:22:02.506 [main] INFO  - 'Next' button clicked successfully.
+14:22:02.511 [main] INFO  - Selecting annual income: Below $194k...
+14:22:02.689 [main] INFO  - Annual income 'Below $194k' selected successfully.
+14:22:02.691 [main] INFO  - Clicking 'Calculate Cover' button...
+14:22:03.355 [main] INFO  - 'Calculate Cover' button clicked successfully.
+14:22:03.403 [main] INFO  - Selecting hospital cover: Top Cover...
+14:22:04.313 [main] INFO  - Selected the Extras Cover: Total Extras
+14:22:04.503 [main] INFO  - Clicked on the Apply Now button for the selected plan.
+14:22:04.521 [main] INFO  - Attempting to select 'No' for member status.
+14:22:05.049 [main] INFO  - 'No' radio button for member status selected successfully.
+14:22:05.056 [main] INFO  - Attempting to select 'Yes' for Australian citizenship status.
+14:22:05.284 [main] INFO  - 'Yes' radio button for citizenship status selected successfully.
+14:22:05.300 [main] INFO  - Attempting to click the 'Medical Practitioner' button.
+14:22:05.494 [main] INFO  - 'Medical Practitioner' button clicked successfully.
+14:22:05.498 [main] INFO  - Attempting to select the radio button for: Resident
+14:22:05.697 [main] INFO  - Radio button for 'Resident' selected successfully.
+14:22:05.706 [main] INFO  - Attempting to select Avant member option: No
+14:22:05.849 [main] INFO  - Avant member option 'No' selected successfully.
+14:22:07.048 [main] INFO  - Clicked on Continue button
+14:22:07.058 [main] INFO  - Attempting to select Avant member option: Yes
+14:22:07.154 [main] INFO  - Avant member option 'Yes' selected successfully.
+14:22:07.163 [main] INFO  - Attempting to select Avant member option: No
+14:22:07.348 [main] INFO  - Avant member option 'No' selected successfully.
+14:22:08.641 [main] INFO  - Clicked on Continue button
+14:22:08.644 [main] INFO  - Selecting option for transferring from another fund: No
+14:22:08.828 [main] INFO  - 'No' selected for transferring from another fund.
+14:22:09.531 [main] INFO  - Attempting to accept alert/modal.
+14:22:09.739 [main] INFO  - Alert/modal accepted successfully.
+14:22:09.741 [main] INFO  - Selecting option for transferring from another fund: Yes
+14:22:09.940 [main] INFO  - 'Yes' selected for transferring from another fund.
+14:22:10.644 [main] INFO  - Attempting to accept alert/modal.
+14:22:10.831 [main] INFO  - Alert/modal accepted successfully.
+14:22:10.894 [main] INFO  - Scrolled to element: [[EdgeDriver: MicrosoftEdge on windows (83673f5de90a0544fc3294be3accc923)] -> xpath: //select[@name='currentHealthFund']/..]
+14:22:11.534 [main] INFO  - Scrolled to element: [[EdgeDriver: MicrosoftEdge on windows (83673f5de90a0544fc3294be3accc923)] -> xpath: //div[@name='partnerAndDependentsCovered']//span[contains(text(), 'Yes')]]
+14:22:11.640 [main] INFO  - Attempting to click the 'Next' button.
+14:22:11.826 [main] INFO  - 'Next' button clicked successfully.
+14:22:11.844 [main] INFO  - Selecting title from dropdown: Mr
+14:22:12.279 [main] INFO  - Selected 'Mr' from dropdown.
+14:22:12.447 [main] INFO  - Entered First Name: Alex
+14:22:12.626 [main] INFO  - Entered Middle Name: Marie
+14:22:12.849 [main] INFO  - Entered Last Name: Taylor
+14:22:12.850 [main] INFO  - Entered random full name: Alex Marie Taylor
+14:22:12.971 [main] INFO  - Scrolled to element: [[EdgeDriver: MicrosoftEdge on windows (83673f5de90a0544fc3294be3accc923)] -> xpath: //div[@name='lhcStatement']//span[2][contains(text(),'No')]]
+14:22:13.417 [main] INFO  - Selected Male radio button
+14:22:15.425 [main] INFO  - Attempting to accept alert/modal.
+14:22:15.572 [main] INFO  - Alert/modal accepted successfully.
+14:22:15.582 [main] INFO  - Attempting to click the 'Next' button.
+14:22:15.736 [main] INFO  - 'Next' button clicked successfully.
+14:22:15.958 [main] INFO  - Entered random email: dhf.testing+62@gmail.com
+14:22:16.105 [main] INFO  - Entered random phone number: 0498361370
+14:22:16.105 [main] INFO  - Phone number format validation passed: 0498361370
+14:22:18.891 [main] INFO  - Entered address input: 123 A'
+14:22:19.913 [main] INFO  - Selected address input: 123 A'
+14:22:22.123 [main] INFO  - Clicked on Continue button
+14:22:23.351 [main] INFO  - Selecting title from dropdown: Mrs
+14:22:23.628 [main] INFO  - Selected 'Mrs' from dropdown.
+14:22:23.761 [main] INFO  - Entered First Name: John
+14:22:23.901 [main] INFO  - Entered Middle Name: Marie
+14:22:24.152 [main] INFO  - Entered Last Name: Taylor
+14:22:24.152 [main] INFO  - Entered random full name: John Marie Taylor
+14:22:24.442 [main] INFO  - Entered random email: dhf.testing+602@gmail.com
+14:22:24.678 [main] INFO  - Entered random mobile number: 0498366912
+14:22:24.678 [main] INFO  - Phone number format validation passed: 0498366912
+14:22:24.821 [main] INFO  - Selected Female radio button
+14:22:24.863 [main] INFO  - Scrolled to element: [[EdgeDriver: MicrosoftEdge on windows (83673f5de90a0544fc3294be3accc923)] -> xpath: //select[@name='relationship']]
+14:22:25.693 [main] INFO  - Scrolled to element: [[EdgeDriver: MicrosoftEdge on windows (83673f5de90a0544fc3294be3accc923)] -> xpath: //div[@name='lhcStatement']//span[2][contains(text(),'No')]]
+14:23:29.185 [main] INFO  - Browser selected: edge
+14:23:29.190 [main] INFO  - URL selected: https://uat.doctorshealthfund.com.au/
+14:23:33.448 [main] INFO  - EdgeDriver initialized.
+14:23:36.815 [main] INFO  - Navigated to URL: https://uat.doctorshealthfund.com.au/
+14:23:37.026 [main] INFO  - All cookies cleared before starting the test.
+14:23:37.098 [main] INFO  - Navigating to the quote page.
+14:23:37.119 [main] INFO  - Page title: Private Health Insurance for Doctors | Doctors' Health Fund
+14:23:37.125 [main] INFO  - Clicking the 'Get Quote' button.
+14:23:37.125 [main] INFO  - Attempting to click the 'Get Quote' button...
+14:23:37.312 [main] INFO  - 'Get Quote' button clicked successfully.
+14:23:37.312 [main] INFO  - 'Get Quote' button clicked successfully.
+14:23:37.315 [main] INFO  - Selecting cover type: Couple...
+14:23:37.851 [main] INFO  - Cover type 'Couple' selected successfully.
+14:23:37.854 [main] INFO  - Clicking the 'Next' button...
+14:23:38.005 [main] INFO  - 'Next' button clicked successfully.
+14:23:38.007 [main] INFO  - Selecting residence: NSW...
+14:23:38.161 [main] INFO  - Residence 'NSW' selected successfully.
+14:23:38.163 [main] INFO  - Clicking the 'Next' button...
+14:23:38.318 [main] INFO  - 'Next' button clicked successfully.
+14:23:38.320 [main] INFO  - Entering day of birth: 01...
+14:23:38.538 [main] INFO  - Day of birth entered successfully.
+14:23:38.538 [main] INFO  - Entering month of birth: 01...
+14:23:38.674 [main] INFO  - Month of birth entered successfully.
+14:23:38.674 [main] INFO  - Entering year of birth: 1978...
+14:23:38.821 [main] INFO  - Year of birth entered successfully.
+14:23:38.822 [main] INFO  - Entering day of birth: 01...
+14:23:38.962 [main] INFO  - Partner's day of birth entered successfully.
+14:23:38.962 [main] INFO  - Entering month of birth: 01...
+14:23:39.080 [main] INFO  - Partner's month of birth entered successfully.
+14:23:39.080 [main] INFO  - Entering year of birth: 1977...
+14:23:39.203 [main] INFO  - Partner's year of birth entered successfully.
+14:23:39.205 [main] INFO  - Clicking the 'Next' button...
+14:23:39.368 [main] INFO  - 'Next' button clicked successfully.
+14:23:39.374 [main] INFO  - Selecting annual income: Below $194k...
+14:23:39.510 [main] INFO  - Annual income 'Below $194k' selected successfully.
+14:23:39.512 [main] INFO  - Clicking 'Calculate Cover' button...
+14:23:40.154 [main] INFO  - 'Calculate Cover' button clicked successfully.
+14:23:40.195 [main] INFO  - Selecting hospital cover: Top Cover...
+14:23:42.402 [main] INFO  - Selected the Extras Cover: Total Extras
+14:23:42.654 [main] INFO  - Clicked on the Apply Now button for the selected plan.
+14:23:42.664 [main] INFO  - Attempting to select 'No' for member status.
+14:23:43.022 [main] INFO  - 'No' radio button for member status selected successfully.
+14:23:43.026 [main] INFO  - Attempting to select 'Yes' for Australian citizenship status.
+14:23:43.210 [main] INFO  - 'Yes' radio button for citizenship status selected successfully.
+14:23:43.223 [main] INFO  - Attempting to click the 'Medical Practitioner' button.
+14:23:43.349 [main] INFO  - 'Medical Practitioner' button clicked successfully.
+14:23:43.354 [main] INFO  - Attempting to select the radio button for: Resident
+14:23:43.492 [main] INFO  - Radio button for 'Resident' selected successfully.
+14:23:43.506 [main] INFO  - Attempting to select Avant member option: No
+14:23:43.636 [main] INFO  - Avant member option 'No' selected successfully.
+14:23:44.828 [main] INFO  - Clicked on Continue button
+14:23:44.836 [main] INFO  - Attempting to select Avant member option: Yes
+14:23:44.931 [main] INFO  - Avant member option 'Yes' selected successfully.
+14:23:44.942 [main] INFO  - Attempting to select Avant member option: No
+14:23:45.049 [main] INFO  - Avant member option 'No' selected successfully.
+14:23:46.263 [main] INFO  - Clicked on Continue button
+14:23:46.265 [main] INFO  - Selecting option for transferring from another fund: No
+14:23:46.413 [main] INFO  - 'No' selected for transferring from another fund.
+14:23:47.126 [main] INFO  - Attempting to accept alert/modal.
+14:23:47.269 [main] INFO  - Alert/modal accepted successfully.
+14:23:47.271 [main] INFO  - Selecting option for transferring from another fund: Yes
+14:23:47.398 [main] INFO  - 'Yes' selected for transferring from another fund.
+14:23:48.101 [main] INFO  - Attempting to accept alert/modal.
+14:23:48.302 [main] INFO  - Alert/modal accepted successfully.
+14:23:48.361 [main] INFO  - Scrolled to element: [[EdgeDriver: MicrosoftEdge on windows (0558bf11e5c43e042638ddc441705dfc)] -> xpath: //select[@name='currentHealthFund']/..]
+14:23:49.038 [main] INFO  - Scrolled to element: [[EdgeDriver: MicrosoftEdge on windows (0558bf11e5c43e042638ddc441705dfc)] -> xpath: //div[@name='partnerAndDependentsCovered']//span[contains(text(), 'Yes')]]
+14:23:49.128 [main] INFO  - Attempting to click the 'Next' button.
+14:23:49.334 [main] INFO  - 'Next' button clicked successfully.
+14:23:49.354 [main] INFO  - Selecting title from dropdown: Mr
+14:23:49.823 [main] INFO  - Selected 'Mr' from dropdown.
+14:23:50.033 [main] INFO  - Entered First Name: Chris
+14:23:50.288 [main] INFO  - Entered Middle Name: Marie
+14:23:50.488 [main] INFO  - Entered Last Name: Taylor
+14:23:50.488 [main] INFO  - Entered random full name: Chris Marie Taylor
+14:23:50.603 [main] INFO  - Scrolled to element: [[EdgeDriver: MicrosoftEdge on windows (0558bf11e5c43e042638ddc441705dfc)] -> xpath: //div[@name='lhcStatement']//span[2][contains(text(),'No')]]
+14:23:51.053 [main] INFO  - Selected Male radio button
+14:23:53.069 [main] INFO  - Attempting to accept alert/modal.
+14:23:53.211 [main] INFO  - Alert/modal accepted successfully.
+14:23:53.221 [main] INFO  - Attempting to click the 'Next' button.
+14:23:53.358 [main] INFO  - 'Next' button clicked successfully.
+14:23:53.557 [main] INFO  - Entered random email: dhf.testing+893@gmail.com
+14:23:53.700 [main] INFO  - Entered random phone number: 0498368971
+14:23:53.700 [main] INFO  - Phone number format validation passed: 0498368971
+14:23:56.487 [main] INFO  - Entered address input: 123 A'
+14:23:57.509 [main] INFO  - Selected address input: 123 A'
+14:23:59.709 [main] INFO  - Clicked on Continue button
+14:24:00.944 [main] INFO  - Selecting title from dropdown: Mrs
+14:24:01.237 [main] INFO  - Selected 'Mrs' from dropdown.
+14:24:01.396 [main] INFO  - Entered First Name: Alex
+14:24:01.536 [main] INFO  - Entered Middle Name: Lee
+14:24:01.716 [main] INFO  - Entered Last Name: Brown
+14:24:01.716 [main] INFO  - Entered random full name: Alex Lee Brown
+14:24:01.989 [main] INFO  - Entered random email: dhf.testing+519@gmail.com
+14:24:02.258 [main] INFO  - Entered random mobile number: 0498366973
+14:24:02.258 [main] INFO  - Phone number format validation passed: 0498366973
+14:24:02.391 [main] INFO  - Selected Female radio button
+14:24:02.447 [main] INFO  - Scrolled to element: [[EdgeDriver: MicrosoftEdge on windows (0558bf11e5c43e042638ddc441705dfc)] -> xpath: //select[@name='relationship']]
+14:24:03.290 [main] INFO  - Scrolled to element: [[EdgeDriver: MicrosoftEdge on windows (0558bf11e5c43e042638ddc441705dfc)] -> xpath: //div[@name='lhcStatement']//span[2][contains(text(),'No')]]
+14:24:05.429 [main] INFO  - Attempting to accept alert/modal.
+14:24:05.578 [main] INFO  - Alert/modal accepted successfully.
+14:24:34.488 [main] INFO  - Browser selected: edge
+14:24:34.493 [main] INFO  - URL selected: https://uat.doctorshealthfund.com.au/
+14:24:38.797 [main] INFO  - EdgeDriver initialized.
+14:24:42.478 [main] INFO  - Navigated to URL: https://uat.doctorshealthfund.com.au/
+14:24:42.714 [main] INFO  - All cookies cleared before starting the test.
+14:24:42.771 [main] INFO  - Navigating to the quote page.
+14:24:42.799 [main] INFO  - Page title: Private Health Insurance for Doctors | Doctors' Health Fund
+14:24:42.804 [main] INFO  - Clicking the 'Get Quote' button.
+14:24:42.804 [main] INFO  - Attempting to click the 'Get Quote' button...
+14:24:43.002 [main] INFO  - 'Get Quote' button clicked successfully.
+14:24:43.002 [main] INFO  - 'Get Quote' button clicked successfully.
+14:24:43.005 [main] INFO  - Selecting cover type: Couple...
+14:24:43.494 [main] INFO  - Cover type 'Couple' selected successfully.
+14:24:43.496 [main] INFO  - Clicking the 'Next' button...
+14:24:43.645 [main] INFO  - 'Next' button clicked successfully.
+14:24:43.647 [main] INFO  - Selecting residence: NSW...
+14:24:43.800 [main] INFO  - Residence 'NSW' selected successfully.
+14:24:43.804 [main] INFO  - Clicking the 'Next' button...
+14:24:43.966 [main] INFO  - 'Next' button clicked successfully.
+14:24:43.972 [main] INFO  - Entering day of birth: 01...
+14:24:44.167 [main] INFO  - Day of birth entered successfully.
+14:24:44.167 [main] INFO  - Entering month of birth: 01...
+14:24:44.315 [main] INFO  - Month of birth entered successfully.
+14:24:44.316 [main] INFO  - Entering year of birth: 1978...
+14:24:44.449 [main] INFO  - Year of birth entered successfully.
+14:24:44.452 [main] INFO  - Entering day of birth: 01...
+14:24:44.601 [main] INFO  - Partner's day of birth entered successfully.
+14:24:44.601 [main] INFO  - Entering month of birth: 01...
+14:24:44.730 [main] INFO  - Partner's month of birth entered successfully.
+14:24:44.730 [main] INFO  - Entering year of birth: 1977...
+14:24:44.871 [main] INFO  - Partner's year of birth entered successfully.
+14:24:44.876 [main] INFO  - Clicking the 'Next' button...
+14:24:45.038 [main] INFO  - 'Next' button clicked successfully.
+14:24:45.043 [main] INFO  - Selecting annual income: Below $194k...
+14:24:45.192 [main] INFO  - Annual income 'Below $194k' selected successfully.
+14:24:45.195 [main] INFO  - Clicking 'Calculate Cover' button...
+14:24:45.807 [main] INFO  - 'Calculate Cover' button clicked successfully.
+14:24:45.831 [main] INFO  - Selecting hospital cover: Top Cover...
+14:24:47.973 [main] INFO  - Selected the Extras Cover: Total Extras
+14:24:48.193 [main] INFO  - Clicked on the Apply Now button for the selected plan.
+14:24:48.206 [main] INFO  - Attempting to select 'No' for member status.
+14:24:48.596 [main] INFO  - 'No' radio button for member status selected successfully.
+14:24:48.598 [main] INFO  - Attempting to select 'Yes' for Australian citizenship status.
+14:24:48.778 [main] INFO  - 'Yes' radio button for citizenship status selected successfully.
+14:24:48.789 [main] INFO  - Attempting to click the 'Medical Practitioner' button.
+14:24:48.921 [main] INFO  - 'Medical Practitioner' button clicked successfully.
+14:24:48.926 [main] INFO  - Attempting to select the radio button for: Resident
+14:24:49.055 [main] INFO  - Radio button for 'Resident' selected successfully.
+14:24:49.065 [main] INFO  - Attempting to select Avant member option: No
+14:24:49.204 [main] INFO  - Avant member option 'No' selected successfully.
+14:24:50.398 [main] INFO  - Clicked on Continue button
+14:24:50.410 [main] INFO  - Attempting to select Avant member option: Yes
+14:24:50.510 [main] INFO  - Avant member option 'Yes' selected successfully.
+14:24:50.517 [main] INFO  - Attempting to select Avant member option: No
+14:24:50.637 [main] INFO  - Avant member option 'No' selected successfully.
+14:24:51.857 [main] INFO  - Clicked on Continue button
+14:24:51.859 [main] INFO  - Selecting option for transferring from another fund: No
+14:24:52.014 [main] INFO  - 'No' selected for transferring from another fund.
+14:24:52.718 [main] INFO  - Attempting to accept alert/modal.
+14:24:52.923 [main] INFO  - Alert/modal accepted successfully.
+14:24:52.927 [main] INFO  - Selecting option for transferring from another fund: Yes
+14:24:53.231 [main] INFO  - 'Yes' selected for transferring from another fund.
+14:24:53.937 [main] INFO  - Attempting to accept alert/modal.
+14:24:54.130 [main] INFO  - Alert/modal accepted successfully.
+14:24:54.182 [main] INFO  - Scrolled to element: [[EdgeDriver: MicrosoftEdge on windows (3bfee86351e45082676df2ab88a2027d)] -> xpath: //select[@name='currentHealthFund']/..]
+14:24:54.852 [main] INFO  - Scrolled to element: [[EdgeDriver: MicrosoftEdge on windows (3bfee86351e45082676df2ab88a2027d)] -> xpath: //div[@name='partnerAndDependentsCovered']//span[contains(text(), 'Yes')]]
+14:24:54.949 [main] INFO  - Attempting to click the 'Next' button.
+14:24:55.179 [main] INFO  - 'Next' button clicked successfully.
+14:24:55.200 [main] INFO  - Selecting title from dropdown: Mr
+14:24:55.674 [main] INFO  - Selected 'Mr' from dropdown.
+14:24:55.920 [main] INFO  - Entered First Name: Taylor
+14:24:56.138 [main] INFO  - Entered Middle Name: Ann
+14:24:56.336 [main] INFO  - Entered Last Name: Smith
+14:24:56.336 [main] INFO  - Entered random full name: Taylor Ann Smith
+14:24:56.455 [main] INFO  - Scrolled to element: [[EdgeDriver: MicrosoftEdge on windows (3bfee86351e45082676df2ab88a2027d)] -> xpath: //div[@name='lhcStatement']//span[2][contains(text(),'No')]]
+14:24:56.899 [main] INFO  - Selected Male radio button
+14:24:58.905 [main] INFO  - Attempting to accept alert/modal.
+14:24:59.053 [main] INFO  - Alert/modal accepted successfully.
+14:24:59.063 [main] INFO  - Attempting to click the 'Next' button.
+14:24:59.207 [main] INFO  - 'Next' button clicked successfully.
+14:24:59.419 [main] INFO  - Entered random email: dhf.testing+245@gmail.com
+14:24:59.557 [main] INFO  - Entered random phone number: 0498369885
+14:24:59.559 [main] INFO  - Phone number format validation passed: 0498369885
+14:25:02.328 [main] INFO  - Entered address input: 123 A'
+14:25:03.397 [main] INFO  - Selected address input: 123 A'
+14:25:05.597 [main] INFO  - Clicked on Continue button
+14:25:06.809 [main] INFO  - Selecting title from dropdown: Mrs
+14:25:07.081 [main] INFO  - Selected 'Mrs' from dropdown.
+14:25:07.231 [main] INFO  - Entered First Name: Taylor
+14:25:07.380 [main] INFO  - Entered Middle Name: Ann
+14:25:07.576 [main] INFO  - Entered Last Name: Brown
+14:25:07.576 [main] INFO  - Entered random full name: Taylor Ann Brown
+14:25:07.854 [main] INFO  - Entered random email: dhf.testing+673@gmail.com
+14:25:08.062 [main] INFO  - Entered random mobile number: 0498361208
+14:25:08.062 [main] INFO  - Phone number format validation passed: 0498361208
+14:25:08.168 [main] INFO  - Selected Female radio button
+14:25:08.237 [main] INFO  - Scrolled to element: [[EdgeDriver: MicrosoftEdge on windows (3bfee86351e45082676df2ab88a2027d)] -> xpath: //select[@name='relationship']]
+14:25:09.077 [main] INFO  - Scrolled to element: [[EdgeDriver: MicrosoftEdge on windows (3bfee86351e45082676df2ab88a2027d)] -> xpath: //div[@name='lhcStatement']//span[2][contains(text(),'No')]]
+14:25:11.306 [main] INFO  - Attempting to accept alert/modal.
+14:25:12.461 [main] WARN  - Attempt 1: Alert/modal click intercepted. Retrying...
+org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element <button data-size="large" class="css-1yinm9l">...</button> is not clickable at point (620, 422). Other element would receive the click: <div class="css-vurnku">...</div>
+  (Session info: MicrosoftEdge=131.0.2903.86)
+Build info: version: '4.18.1', revision: 'b1d3319b48'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '23'
+Driver info: org.openqa.selenium.edge.EdgeDriver
+Command: [3bfee86351e45082676df2ab88a2027d, clickElement {id=f.6A9AE83A2ABC85852A3CCBAEF3FA2746.d.145538E9A77CEA0BF6E304CA60762D6D.e.641}]
+Capabilities {acceptInsecureCerts: false, browserName: MicrosoftEdge, browserVersion: 131.0.2903.86, fedcm:accounts: true, ms:edgeOptions: {debuggerAddress: localhost:57012}, msedge: {msedgedriverVersion: 131.0.2903.99 (f96a870b1316..., userDataDir: C:\Users\SAHIL~1.SHA\AppDat...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:57012/devtoo..., se:cdpVersion: 131.0.2903.86, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[EdgeDriver: MicrosoftEdge on windows (3bfee86351e45082676df2ab88a2027d)] -> xpath: //div[text()='OK']/../../..//button]
+Session ID: 3bfee86351e45082676df2ab88a2027d
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62) ~[?:?]
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:501) ~[?:?]
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:485) ~[?:?]
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167) ~[selenium-remote-driver-4.18.1.jar:?]
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138) ~[selenium-remote-driver-4.18.1.jar:?]
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50) ~[selenium-remote-driver-4.18.1.jar:?]
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190) ~[selenium-remote-driver-4.18.1.jar:?]
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216) ~[selenium-remote-driver-4.18.1.jar:?]
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174) ~[selenium-remote-driver-4.18.1.jar:?]
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:519) ~[selenium-remote-driver-4.18.1.jar:?]
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:223) ~[selenium-remote-driver-4.18.1.jar:?]
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:76) ~[selenium-remote-driver-4.18.1.jar:?]
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103) ~[?:?]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580) ~[?:?]
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51) ~[selenium-support-4.18.1.jar:?]
+	at jdk.proxy2/jdk.proxy2.$Proxy61.click(Unknown Source) ~[?:?]
+	at com.qa.airteam.pages.EligibilityAndYourDetailsPage.alertAccept(EligibilityAndYourDetailsPage.java:297) [classes/:?]
+	at StepDefinitions.CreateQuoteSteps.userAcceptsTheAlert(CreateQuoteSteps.java:628) [test-classes/:?]
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103) ~[?:?]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580) ~[?:?]
+	at io.cucumber.java.Invoker.doInvoke(Invoker.java:66) [cucumber-java-7.15.0.jar:7.15.0]
+	at io.cucumber.java.Invoker.invoke(Invoker.java:24) [cucumber-java-7.15.0.jar:7.15.0]
+	at io.cucumber.java.AbstractGlueDefinition.invokeMethod(AbstractGlueDefinition.java:47) [cucumber-java-7.15.0.jar:7.15.0]
+	at io.cucumber.java.JavaStepDefinition.execute(JavaStepDefinition.java:29) [cucumber-java-7.15.0.jar:7.15.0]
+	at io.cucumber.core.runner.CoreStepDefinition.execute(CoreStepDefinition.java:66) [cucumber-core-7.15.0.jar:7.15.0]
+	at io.cucumber.core.runner.PickleStepDefinitionMatch.runStep(PickleStepDefinitionMatch.java:63) [cucumber-core-7.15.0.jar:7.15.0]
+	at io.cucumber.core.runner.ExecutionMode$1.execute(ExecutionMode.java:10) [cucumber-core-7.15.0.jar:7.15.0]
+	at io.cucumber.core.runner.TestStep.executeStep(TestStep.java:84) [cucumber-core-7.15.0.jar:7.15.0]
+	at io.cucumber.core.runner.TestStep.run(TestStep.java:56) [cucumber-core-7.15.0.jar:7.15.0]
+	at io.cucumber.core.runner.PickleStepTestStep.run(PickleStepTestStep.java:51) [cucumber-core-7.15.0.jar:7.15.0]
+	at io.cucumber.core.runner.TestCase.run(TestCase.java:84) [cucumber-core-7.15.0.jar:7.15.0]
+	at io.cucumber.core.runner.Runner.runPickle(Runner.java:75) [cucumber-core-7.15.0.jar:7.15.0]
+	at io.cucumber.testng.TestNGCucumberRunner.lambda$runScenario$1(TestNGCucumberRunner.java:132) [cucumber-testng-7.15.0.jar:7.15.0]
+	at io.cucumber.core.runtime.CucumberExecutionContext.lambda$runTestCase$5(CucumberExecutionContext.java:137) [cucumber-core-7.15.0.jar:7.15.0]
+	at io.cucumber.core.runtime.RethrowingThrowableCollector.executeAndThrow(RethrowingThrowableCollector.java:23) [cucumber-core-7.15.0.jar:7.15.0]
+	at io.cucumber.core.runtime.CucumberExecutionContext.runTestCase(CucumberExecutionContext.java:137) [cucumber-core-7.15.0.jar:7.15.0]
+	at io.cucumber.testng.TestNGCucumberRunner.runScenario(TestNGCucumberRunner.java:129) [cucumber-testng-7.15.0.jar:7.15.0]
+	at io.cucumber.testng.AbstractTestNGCucumberTests.runScenario(AbstractTestNGCucumberTests.java:35) [cucumber-testng-7.15.0.jar:7.15.0]
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103) ~[?:?]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580) ~[?:?]
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139) [testng-7.9.0.jar:7.9.0]
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664) [testng-7.9.0.jar:7.9.0]
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:228) [testng-7.9.0.jar:7.9.0]
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63) [testng-7.9.0.jar:7.9.0]
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:961) [testng-7.9.0.jar:7.9.0]
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:201) [testng-7.9.0.jar:7.9.0]
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148) [testng-7.9.0.jar:7.9.0]
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128) [testng-7.9.0.jar:7.9.0]
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597) [?:?]
+	at org.testng.TestRunner.privateRun(TestRunner.java:819) [testng-7.9.0.jar:7.9.0]
+	at org.testng.TestRunner.run(TestRunner.java:619) [testng-7.9.0.jar:7.9.0]
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:443) [testng-7.9.0.jar:7.9.0]
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437) [testng-7.9.0.jar:7.9.0]
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397) [testng-7.9.0.jar:7.9.0]
+	at org.testng.SuiteRunner.run(SuiteRunner.java:336) [testng-7.9.0.jar:7.9.0]
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52) [testng-7.9.0.jar:7.9.0]
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95) [testng-7.9.0.jar:7.9.0]
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1301) [testng-7.9.0.jar:7.9.0]
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1228) [testng-7.9.0.jar:7.9.0]
+	at org.testng.TestNG.runSuites(TestNG.java:1134) [testng-7.9.0.jar:7.9.0]
+	at org.testng.TestNG.run(TestNG.java:1101) [testng-7.9.0.jar:7.9.0]
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115) [testng-remote.jar:?]
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293) [testng-remote.jar:?]
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91) [testng-remote.jar:?]

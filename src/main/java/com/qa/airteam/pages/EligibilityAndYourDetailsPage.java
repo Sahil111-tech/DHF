@@ -1,9 +1,13 @@
 package com.qa.airteam.pages;
 
+import java.time.Duration;
 import java.util.List;
 import java.util.Random;
+import java.util.concurrent.ThreadLocalRandom;
 
+import org.openqa.selenium.By;
 import org.openqa.selenium.ElementClickInterceptedException;
+import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.Keys;
 import org.openqa.selenium.TimeoutException;
 import org.openqa.selenium.WebDriver;
@@ -11,7 +15,9 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
+import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.Select;
+import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.Assert;
 
 import com.qa.BaseTest;
@@ -88,7 +94,7 @@ public class EligibilityAndYourDetailsPage extends BaseTest {
 
 	// to locate "Yes" and "No" radio buttons for the "Are you transferring from
 	// another fund?"
-	@FindBy(xpath = "//div[@name='isTransferringFromAnotherFund']//label//span[text()='Yes']")
+	@FindBy(xpath = "//div[@name='isTransferringFromAnotherFund']//label[1]//span[contains(text(), 'Yes')]")
 	private WebElement yesRadioButton;
 
 	@FindBy(xpath = "//div[@name='isTransferringFromAnotherFund']//label[2]//span[text()='No']")
@@ -133,6 +139,36 @@ public class EligibilityAndYourDetailsPage extends BaseTest {
 	@FindBy(xpath = "//div[@class='form-control css-1rcfaju ex1346n6']/following-sibling::div[2]/div[2]/input[@name='residentialAddress']")
 	protected WebElement residentialAddressInputBox;
 
+	// Locator for the dropdown to select the current health fund
+	@FindBy(xpath = "//select[@name='currentHealthFund']/..")
+	private WebElement currentHealthFund;
+
+	@FindBy(xpath = "//input[@name='membershipNumber']")
+	private WebElement membershipNumberInput;
+
+	@FindBy(xpath = "//div[@name='partnerAndDependentsCovered']//span[contains(text(), 'Yes')]")
+	private WebElement partnerAndDependentsYesCheckbox;
+
+	@FindBy(xpath = "//div[@name='partnerAndDependentsCovered']//span[contains(text(), 'No')]")
+	private WebElement partnerAndDependentsNoCheckbox;
+
+	@FindBy(xpath = "//div[@name='lhcStatement']//span[2][contains(text(),'Yes')]")
+	private WebElement lhcYesCheckbox;
+
+	// No Checkbox
+	@FindBy(xpath = "//div[@name='lhcStatement']//span[2][contains(text(),'No')]")
+	private WebElement lhcNoCheckbox;
+
+	// Age input box
+	@FindBy(xpath = "//input[@name='firstHospitalCoverAge']")
+	private WebElement ageInputBox;
+	
+	@FindBy(xpath = "//input[@name='mobileNumber']")
+	protected WebElement partnerMobileInputBox;
+	
+	
+	@FindBy(xpath = "//select[@name='relationship']")
+	protected WebElement relationshipDropdown;
 	/*******************************
 	 * Actions Methods
 	 *********************************/
@@ -426,4 +462,117 @@ public class EligibilityAndYourDetailsPage extends BaseTest {
 
 		return clickContinueButton;
 	}
+
+	// Method to click the dropdown and select a value
+	public void selectCurrentHealthFund(String healthFundName, WebDriver driver) throws InterruptedException {
+		scrollToElement(currentHealthFund, driver);
+		currentHealthFund.click(); // Click to open the dropdown
+
+		List<WebElement> options = currentHealthFund.findElements(By.tagName("option")); // Locate all options
+		for (WebElement option : options) {
+			if (option.getText().equals(healthFundName)) {
+				option.click(); // Click the matching option
+
+				// Send Enter key to confirm the selection
+				Actions actions = new Actions(driver);
+				actions.click().build().perform();
+				// actions.sendKeys(Keys.ENTER).perform();
+				break;
+			}
+		}
+	}
+
+	// Method to enter a membership number provided from the feature file
+	public void enterMembershipNumber(String membershipNumber, WebDriver driver) {
+		membershipNumberInput.clear();
+		membershipNumberInput.sendKeys(membershipNumber);
+
+	}
+
+	public void selectPartnerAndDependentsCovered(String option, WebDriver driver) {
+
+		try {
+			if (option.equalsIgnoreCase("Yes")) {
+				scrollToElement(partnerAndDependentsYesCheckbox, driver);
+				partnerAndDependentsYesCheckbox.click();
+				System.out.println("Clicked on 'Yes' checkbox for Partner and Dependents Covered.");
+			} else if (option.equalsIgnoreCase("No")) {
+				scrollToElement(partnerAndDependentsNoCheckbox, driver);
+				partnerAndDependentsNoCheckbox.click();
+				System.out.println("Clicked on 'No' checkbox for Partner and Dependents Covered.");
+			} else {
+				throw new IllegalArgumentException("Invalid option: " + option + ". Use 'Yes' or 'No'.");
+			}
+		} catch (Exception e) {
+			System.out.println("Error while selecting Partner and Dependents Covered option: " + e.getMessage());
+		}
+	}
+
+	// Action method to select checkbox based on input
+	public void selectLhcCheckbox(String option, WebDriver driver) {
+		try {
+			if (option.equalsIgnoreCase("Yes")) {
+				scrollToElement(lhcYesCheckbox, driver);
+				lhcYesCheckbox.click();
+				System.out.println("Clicked on 'Yes' checkbox for LHC.");
+			} else if (option.equalsIgnoreCase("No")) {
+				scrollToElement(lhcNoCheckbox, driver);
+				lhcNoCheckbox.click();
+				System.out.println("Clicked on 'No' checkbox for LHC.");
+			} else {
+				throw new IllegalArgumentException("Invalid option: " + option + ". Use 'Yes' or 'No'.");
+			}
+		} catch (Exception e) {
+			System.out.println("Error while selecting LHC Yes or No option: " + e.getMessage());
+		}
+	}
+
+	// Action method to provide age value
+	public void enterAgeValue(int age) {
+		ageInputBox.clear(); // Clear any existing value
+		ageInputBox.sendKeys(String.valueOf(age)); // Input the age
+	}
+	
+	// Action method to generate and enter a random phone number
+		public void enterPartnersRandomMobileNumber() {
+			// Generate a random number (4 digits) to append to the series
+			String randomSuffix = String.valueOf((int) (Math.random() * 9000) + 1000);
+			String generatedMobileNumber = "049836" + randomSuffix;
+
+			// Enter the generated phone number in the input box
+			partnerMobileInputBox.clear();
+			partnerMobileInputBox.sendKeys(generatedMobileNumber);
+			log.info("Entered random mobile number: {}", generatedMobileNumber);
+
+			// Validate the generated phone number format
+			boolean isValid = generatedMobileNumber.matches("049836\\d{4}");
+			Assert.assertTrue(isValid,
+					"Phone number format validation failed. Generated Phone Number: " + generatedMobileNumber);
+			log.info("Phone number format validation passed: {}", generatedMobileNumber);
+		}
+		
+		// Method to click the dropdown and select a value
+		public void selectRelationship(String relationship, WebDriver driver) throws InterruptedException {
+			scrollToElement(relationshipDropdown, driver);
+			relationshipDropdown.click(); // Click to open the dropdown
+
+			List<WebElement> options = relationshipDropdown.findElements(By.tagName("option")); // Locate all options
+			 for (WebElement option : options) {
+			        if (option.getText().trim().equalsIgnoreCase(relationship)) { // Compare the option text with the passed value
+			            option.click(); // Click the matching option
+			            Thread.sleep(500); // Small delay to ensure selection
+			            break; // Exit loop after finding and selecting the desired option
+			        }
+			        // Press the Escape key to close the dropdown
+			        relationshipDropdown.sendKeys(Keys.ESCAPE);
+					/*
+					 * // Send Enter key to confirm the selection Actions actions = new
+					 * Actions(driver); //actions.click().build().perform();
+					 * actions.sendKeys(Keys.ENTER).perform(); break;
+					 */
+				}
+			}
+		
+	
+	
 }

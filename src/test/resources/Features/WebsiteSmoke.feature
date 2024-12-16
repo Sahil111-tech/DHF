@@ -122,3 +122,63 @@ Feature: Quick Quote Process
     And I toggle the bank account details checkbox by double-clicking
     And I click on the submit form button
     Then I verify that the thank-you message is displayed
+    
+    @LHCCalculation
+    Scenario: Verify LHC Calculations and cover as a Family E2E MAF Application Submission
+    
+    Given I am on the quote page
+    When I click the "Get Quote" button
+    And I select cover for "Couple"
+    And I click the "Next" button
+    And I select the residence as "NSW"
+    And I click the "Next" button
+    And I enter my date of birth as "01/01/1978"
+    And I enter my partner's date of birth as "01/01/1977"
+    And I click the "Next" button
+    And I select the annual income as "Below $194k"
+    And I click the "Calculate Cover" button
+    And I select the hospital cover as "Top Cover"
+    And I select the extras cover as "Total Extras"
+    And I click the Apply Now button for the selected plan
+    And I select No for Doctors' Health Fund membership
+    And I select Yes for Australian citizenship or permanent residency
+    And I click on the Medical Practitioner button
+    And I select "Resident" as medical practitioner
+    And I select the "No" radio button for existing Avant member
+    Then I submit the eligibility page.
+    And I select the "Yes" radio button for existing Avant member
+    And I select the "No" radio button for existing Avant member
+    Then I submit the eligibility page.
+    And I select the option "No" for transferring from another fund
+    And I select the option "Yes" for transferring from another fund
+    And the user clicks and selects "Australian Unity" from the Current Health Fund dropdown
+    And the user enters the membership number "1234567890"
+    And the user selects "Yes" for partner and dependents covered
+    And click next button
+    And I select "Mr" as the title
+    And I enter a random full name
+    And the user selects "No" for LHC statement checkbox
+    And the user enters age 40 in the hospital cover age input box
+    And I select the gender as "Male"
+    And the user accepts the alert or modal
+    And click next button
+    And the user enters and verifies a random email
+    And the user enters a random phone number
+    And the user enters and selects the value "123 A'" in the dropdown
+    Then I submit the Your Details page
+    And I select "Mrs" as the title
+    And I enter a random full name
+    And the user enters and verifies a random email
+    And the user enters a partner's mobile number
+    And I select the gender as "Female"
+    And the user clicks and selects "Partner" from the relationship dropdown
+    And the user selects "No" for LHC statement checkbox
+    And the user accepts the alert or modal
+    And the user enters age 40 in the hospital cover age input box
+    And the user accepts the alert or modal
+    
+    
+    
+    
+    
+    

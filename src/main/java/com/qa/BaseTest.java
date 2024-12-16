@@ -323,6 +323,15 @@ public class BaseTest {
 		js.executeScript("arguments[0].scrollIntoView({behavior: 'smooth', block: 'center'});", element);
 		log.info("Scrolled to element: " + element);
 	}
+	
+	public void scrollToElement2(WebElement element, WebDriver driver) {
+	    try {
+	        JavascriptExecutor js = (JavascriptExecutor) driver;
+	        js.executeScript("arguments[0].scrollIntoView({block: 'center', inline: 'center'});", element);
+	    } catch (Exception e) {
+	        System.out.println("Error scrolling to element: " + e.getMessage());
+	    }
+	}
 
 	public static void scrollToElementOffset(WebElement element, WebDriver driver, int yOffset) {
 		JavascriptExecutor js = (JavascriptExecutor) driver;
@@ -517,4 +526,9 @@ public class BaseTest {
 	    WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(timeoutInSeconds));
 	    wait.until(ExpectedConditions.elementToBeClickable(element));
 	}
+	/*
+	 * public void scrollToElement(WebElement element, WebDriver driver) {
+	 * JavascriptExecutor js = (JavascriptExecutor) driver;
+	 * js.executeScript("arguments[0].scrollIntoView(true);", element); }
+	 */
 }

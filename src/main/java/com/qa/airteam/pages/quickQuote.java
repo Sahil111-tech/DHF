@@ -46,6 +46,18 @@ public class quickQuote extends BaseTest {
 	// Locator for the input field to enter the year of birth
 	@FindBy(name = "yourDobYear")
 	protected WebElement inputYear;
+	
+	// Locator for the input field to enter the partner's day of birth
+	@FindBy(name = "partnerDobDay")
+	protected WebElement partnerDayInput;
+
+	// Locator for the input field to enter the partner's month of birth
+	@FindBy(name = "partnerDobMonth")
+	protected WebElement partnerMonthInput;
+
+	// Locator for the input field to enter the partner's year of birth
+	@FindBy(name = "partnerDobYear")
+	protected WebElement partnerYearInput;
 
 	// Locator for the button to select the annual income option
 	@FindBy(xpath = "//div[@data-id='tier']")
@@ -204,6 +216,30 @@ public class quickQuote extends BaseTest {
 		sendKeys(inputYear, year);
 		log.info("Year of birth entered successfully.");
 	}
+	
+	// Action method to enter the partner's date of birth
+		public void enterPartnerDateOfBirth(String day) {
+			log.info("Entering day of birth: " + day + "...");
+			waitForVisibility(partnerDayInput, driver);
+			sendKeys(partnerDayInput, day);
+			log.info("Partner's day of birth entered successfully.");
+		}
+
+		// Action method to enter the partner's month of birth
+		public void enterPartnerMonthOfBirth(String month) {
+			log.info("Entering month of birth: " + month + "...");
+			waitForVisibility(partnerMonthInput, driver);
+			sendKeys(partnerMonthInput, month);
+			log.info("Partner's month of birth entered successfully.");
+		}
+
+		// Action method to enter the partner's year of birth
+		public void enterPartnerYearOfBirth(String year) {
+			log.info("Entering year of birth: " + year + "...");
+			waitForVisibility(partnerYearInput, driver);
+			sendKeys(partnerYearInput, year);
+			log.info("Partner's year of birth entered successfully.");
+		}
 
 	// Action method to select the annual income options
 	public void selectAnnualIncome(String salary) {

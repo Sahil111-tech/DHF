@@ -1,198 +1,250 @@
-14:10:52.303 [main] INFO  - Entered cardholder name: Charlie Jones
-14:10:52.399 [main] INFO  - Entered expiry year: 2030
-14:10:52.506 [main] INFO  - Successfully submitted and saved the credit card details.
-14:10:53.791 [main] INFO  - Temporary CRN Number captured: Lewis675950150f77e
-14:10:53.791 [main] INFO  - Captured temporary CRN number: Lewis675950150f77e
-14:11:03.794 [main] INFO  - I successfully saved the Financial Information.
-14:11:44.469 [main] INFO  - Clicked on the Close Button successfully.
-14:11:44.470 [main] INFO  - Close Button was clicked successfully in the step definition.
-14:11:45.205 [main] INFO  - Permanent CRN Number captured: 004544755
-14:11:45.205 [main] INFO  - Permanent CRN Number successfully validated and captured: 004544755
-14:13:15.917 [main] INFO  - Browser selected: chrome
-14:13:18.563 [main] INFO  - ChromeDriver initialized.
-14:13:20.108 [main] INFO  - Navigated to URL: https://crmtest.doctorshealthfund.com.au/
-14:13:20.140 [main] INFO  - All cookies cleared before starting the test.
-14:13:20.212 [main] INFO  - Navigating to the login page.
-14:16:27.651 [main] INFO  - Browser selected: chrome
-14:16:30.189 [main] INFO  - ChromeDriver initialized.
-14:16:35.517 [main] INFO  - Navigated to URL: https://uat.doctorshealthfund.com.au/
-14:16:35.944 [main] INFO  - All cookies cleared before starting the test.
-14:16:36.003 [main] INFO  - Navigating to the quote page.
-14:16:36.046 [main] INFO  - Page title: Private Health Insurance for Doctors | Doctors' Health Fund
-14:16:36.052 [main] INFO  - Clicking the 'Get Quote' button.
-14:16:36.052 [main] INFO  - Attempting to click the 'Get Quote' button...
-14:16:36.285 [main] INFO  - 'Get Quote' button clicked successfully.
-14:16:36.285 [main] INFO  - 'Get Quote' button clicked successfully.
-14:16:36.289 [main] INFO  - Selecting cover type: Single...
-14:16:37.525 [main] INFO  - Cover type 'Single' selected successfully.
-14:16:37.527 [main] INFO  - Clicking the 'Next' button...
-14:16:37.689 [main] INFO  - 'Next' button clicked successfully.
-14:16:37.691 [main] INFO  - Selecting residence: NSW...
-14:16:37.829 [main] INFO  - Residence 'NSW' selected successfully.
-14:16:37.830 [main] INFO  - Clicking the 'Next' button...
-14:16:37.974 [main] INFO  - 'Next' button clicked successfully.
-14:16:37.976 [main] INFO  - Entering day of birth: 01...
-14:16:38.100 [main] INFO  - Day of birth entered successfully.
-14:16:38.100 [main] INFO  - Entering month of birth: 01...
-14:16:38.205 [main] INFO  - Month of birth entered successfully.
-14:16:38.205 [main] INFO  - Entering year of birth: 1987...
-14:16:38.312 [main] INFO  - Year of birth entered successfully.
-14:16:38.314 [main] INFO  - Clicking the 'Next' button...
-14:16:38.454 [main] INFO  - 'Next' button clicked successfully.
-14:16:38.457 [main] INFO  - Selecting annual income: Below $97k...
-14:16:38.577 [main] INFO  - Annual income 'Below $97k' selected successfully.
-14:16:38.579 [main] INFO  - Clicking 'Calculate Cover' button...
-14:16:39.087 [main] INFO  - 'Calculate Cover' button clicked successfully.
-14:16:39.179 [main] INFO  - Selecting hospital cover: Top Cover...
-14:16:41.815 [main] INFO  - Selected the Extras Cover: Total Extras
-14:16:42.137 [main] INFO  - Clicked on the Apply Now button for the selected plan.
-14:16:42.151 [main] INFO  - Attempting to select 'No' for member status.
-14:16:42.822 [main] INFO  - 'No' radio button for member status selected successfully.
-14:16:42.825 [main] INFO  - Attempting to select 'Yes' for Australian citizenship status.
-14:16:42.999 [main] INFO  - 'Yes' radio button for citizenship status selected successfully.
-14:16:43.009 [main] INFO  - Attempting to click the 'Medical Practitioner' button.
-14:16:43.133 [main] INFO  - 'Medical Practitioner' button clicked successfully.
-14:16:43.137 [main] INFO  - Attempting to select the radio button for: Resident
-14:16:43.261 [main] INFO  - Radio button for 'Resident' selected successfully.
-14:16:43.271 [main] INFO  - Attempting to select Avant member option: No
-14:16:43.401 [main] INFO  - Avant member option 'No' selected successfully.
-14:16:44.588 [main] INFO  - Clicked on Continue button
-14:16:44.595 [main] INFO  - Attempting to select Avant member option: Yes
-14:16:44.689 [main] INFO  - Avant member option 'Yes' selected successfully.
-14:16:44.696 [main] INFO  - Attempting to select Avant member option: No
-14:16:44.800 [main] INFO  - Avant member option 'No' selected successfully.
-14:16:46.119 [main] INFO  - Clicked on Continue button
-14:16:46.121 [main] INFO  - Selecting option for transferring from another fund: No
-14:16:46.346 [main] INFO  - 'No' selected for transferring from another fund.
-14:16:47.065 [main] INFO  - Attempting to accept alert/modal.
-14:16:47.464 [main] INFO  - Alert/modal accepted successfully.
-14:16:47.473 [main] INFO  - Attempting to click the 'Next' button.
-14:16:47.789 [main] INFO  - 'Next' button clicked successfully.
-14:16:47.812 [main] INFO  - Selecting title from dropdown: Mr
-14:16:48.361 [main] INFO  - Selected 'Mr' from dropdown.
-14:16:48.626 [main] INFO  - Entered First Name: Sam
-14:16:48.887 [main] INFO  - Entered Middle Name: Lou
-14:16:49.150 [main] INFO  - Entered Last Name: Taylor
-14:16:49.150 [main] INFO  - Entered random full name: Sam Lou Taylor
-14:16:49.347 [main] INFO  - Selected Male radio button
-14:16:49.359 [main] INFO  - Attempting to click the 'Next' button.
-14:16:49.604 [main] INFO  - 'Next' button clicked successfully.
-14:16:49.870 [main] INFO  - Entered random email: dhf.testing+764@gmail.com
-14:16:50.090 [main] INFO  - Entered random phone number: 0498365076
-14:16:50.090 [main] INFO  - Phone number format validation passed: 0498365076
-14:16:52.875 [main] INFO  - Entered address input: 123 A'
-14:16:53.902 [main] INFO  - Selected address input: 123 A'
-14:16:56.104 [main] INFO  - Clicked on Continue button
-14:16:57.333 [main] INFO  - Selecting Medicare eligibility option: Yes
-14:16:57.435 [main] INFO  - Selected 'Yes' for Medicare eligibility.
-14:16:57.436 [main] INFO  - Selecting the green card option...
-14:16:57.586 [main] INFO  - Green card image is successfully displayed!
-14:16:57.586 [main] INFO  - Selecting the blue card option...
-14:16:57.729 [main] INFO  - Blue card image is successfully displayed!
-14:16:57.730 [main] INFO  - Entering card number: 2298233698
-14:16:57.965 [main] INFO  - Card number entered successfully.
-14:16:57.967 [main] INFO  - Entering card reference number: 3
-14:16:58.111 [main] INFO  - Card reference number entered successfully.
-14:16:58.115 [main] INFO  - Entering validity details: Day = 2, Month = 12, Year = 2028
-14:16:58.226 [main] INFO  - Day entered successfully: 2
-14:16:58.428 [main] INFO  - Month entered successfully: 12
-14:16:58.563 [main] INFO  - Year entered successfully: 2028
-14:16:58.565 [main] INFO  - Selecting rebate option: Yes
-14:16:58.691 [main] INFO  - Selected 'Yes' for rebate option.
-14:16:58.699 [main] INFO  - Selecting policy coverage option: Yes
-14:16:58.854 [main] INFO  - Selected 'Yes' for policy coverage.
-14:17:01.876 [main] INFO  - Toggling checkbox to select state.
-14:17:02.065 [main] INFO  - Checkbox selected successfully.
-14:17:02.073 [main] INFO  - Clicking the Continue button.
-14:17:04.329 [main] INFO  - Continue button clicked successfully.
-14:17:07.568 [main] INFO  - Attempting to select radio button for choice: No
-14:17:07.651 [main] INFO  - Selected 'No' radio button.
-14:17:07.653 [main] INFO  - Selecting Avant Group Member option: No
-14:17:07.764 [main] INFO  - Selected 'No' radio button for Avant Group Member.
-14:17:07.765 [main] INFO  - Attempting to select 'How did you hear about us' option: Internet Search
-14:17:07.947 [main] INFO  - Selected option: Internet Search
-14:17:07.953 [main] INFO  - Selecting 'Check In' option: No
-14:17:08.128 [main] INFO  - Selected 'No' radio button for 'Check In'.
-14:17:08.163 [main] INFO  - Setting 'Terms and Conditions' checkbox to: true
-14:17:08.323 [main] INFO  - 'Terms and Conditions' checkbox selected.
-14:17:08.324 [main] INFO  - Setting 'Agree Using Personal Information' checkbox to: true
-14:17:08.464 [main] INFO  - 'Agree Using Personal Information' checkbox selected.
-14:17:08.466 [main] INFO  - Setting 'AHSA Privacy Policy' checkbox to: true
-14:17:08.577 [main] INFO  - 'AHSA Privacy Policy' checkbox selected.
-14:17:08.578 [main] INFO  - Setting 'Confirm Application is True' checkbox to: true
-14:17:08.702 [main] INFO  - 'Confirm Application is True' checkbox selected.
-14:17:09.717 [main] INFO  - Attempting to click 'Continue' button.
-14:17:11.964 [main] INFO  - 'Continue' button clicked.
-14:17:12.977 [main] INFO  - Setting 'Confirm Application is True' checkbox to: true
-14:17:13.076 [main] INFO  - 'Confirm Application is True' checkbox selected.
-14:17:13.078 [main] INFO  - Setting 'Confirm Application is True' checkbox to: true
-14:17:13.180 [main] INFO  - 'Confirm Application is True' checkbox selected.
-14:17:14.191 [main] INFO  - Attempting to click 'Continue' button.
-14:17:16.397 [main] INFO  - 'Continue' button clicked.
-14:17:17.401 [main] INFO  - Entering BSB number: 032-059
-14:17:17.516 [main] INFO  - BSB number entered successfully.
-14:17:17.517 [main] INFO  - Entering account number: 85668757
-14:17:17.661 [main] INFO  - Account number entered successfully.
-14:17:17.667 [main] INFO  - Generating a random Australian account name.
-14:17:17.668 [main] INFO  - Generated account name: Lucas Wilson
-14:17:17.837 [main] INFO  - Random account name entered successfully.
-14:17:17.856 [main] INFO  - Clicking the direct debit checkbox.
-14:17:17.947 [main] INFO  - Direct debit checkbox clicked successfully.
-14:17:18.958 [main] INFO  - Clicking the submit form button.
-14:17:19.755 [main] INFO  - Submit form button clicked successfully.
-14:17:19.756 [main] INFO  - Double-clicking the checkbox: 'How would you like us to pay any claim benefits back to you?'.
-14:17:19.849 [main] INFO  - First click on the checkbox completed.
-14:17:20.922 [main] INFO  - Second click on the checkbox completed. Checkbox toggled successfully.
-14:17:21.937 [main] INFO  - Clicking the submit form button.
-14:17:22.747 [main] INFO  - Submit form button clicked successfully.
-14:17:27.577 [main] INFO  - The thank-you message is displayed successfully.
-14:40:14.768 [main] INFO  - Browser selected: chrome
-14:40:14.771 [main] INFO  - URL selected: https://uat.doctorshealthfund.com.au/
-14:40:17.670 [main] INFO  - ChromeDriver initialized.
-14:40:24.086 [main] INFO  - Navigated to URL: https://uat.doctorshealthfund.com.au/
-14:40:24.391 [main] INFO  - All cookies cleared before starting the test.
-14:40:24.459 [main] INFO  - Navigating to the quote page.
-14:43:10.650 [main] INFO  - Browser selected: chrome
-14:43:10.654 [main] INFO  - URL selected: https://crmtest.doctorshealthfund.com.au/
-14:43:14.211 [main] INFO  - ChromeDriver initialized.
-14:43:15.403 [main] INFO  - Navigated to URL: https://crmtest.doctorshealthfund.com.au/
-14:43:15.417 [main] INFO  - All cookies cleared before starting the test.
-14:43:15.479 [main] INFO  - Navigating to the login page.
-14:43:19.669 [main] INFO  - Clicked successfully on the Leads button.
-14:43:20.370 [main] INFO  - Clicked succesfully on the Create button.
-14:43:22.877 [main] INFO  - Dropdown opened successfully.
-14:43:26.348 [main] INFO  - Successfully selected the PR / Citizen checkbox.
-14:43:27.024 [main] INFO  - Generated and entered phone number: 0498365182
-14:44:43.943 [main] INFO  - Browser selected: chrome
-14:44:43.947 [main] INFO  - URL selected: https://uat.doctorshealthfund.com.au/
-14:44:46.583 [main] INFO  - ChromeDriver initialized.
-14:44:49.955 [main] INFO  - Navigated to URL: https://uat.doctorshealthfund.com.au/
-14:44:50.174 [main] INFO  - All cookies cleared before starting the test.
-14:44:50.232 [main] INFO  - Navigating to the quote page.
-14:44:50.263 [main] INFO  - Page title: Private Health Insurance for Doctors | Doctors' Health Fund
-14:44:50.267 [main] INFO  - Clicking the 'Get Quote' button.
-14:44:50.267 [main] INFO  - Attempting to click the 'Get Quote' button...
-14:44:50.536 [main] INFO  - 'Get Quote' button clicked successfully.
-14:44:50.536 [main] INFO  - 'Get Quote' button clicked successfully.
-14:44:50.541 [main] INFO  - Selecting cover type: Single...
-14:44:51.916 [main] INFO  - Cover type 'Single' selected successfully.
-14:44:51.919 [main] INFO  - Clicking the 'Next' button...
-14:44:52.070 [main] INFO  - 'Next' button clicked successfully.
-14:44:52.072 [main] INFO  - Selecting residence: NSW...
-14:44:52.246 [main] INFO  - Residence 'NSW' selected successfully.
-14:44:52.248 [main] INFO  - Clicking the 'Next' button...
-14:44:52.390 [main] INFO  - 'Next' button clicked successfully.
-14:44:52.393 [main] INFO  - Entering day of birth: 01...
-14:44:52.525 [main] INFO  - Day of birth entered successfully.
-14:44:52.525 [main] INFO  - Entering month of birth: 01...
-14:44:52.626 [main] INFO  - Month of birth entered successfully.
-14:44:52.627 [main] INFO  - Entering year of birth: 1987...
-14:44:52.740 [main] INFO  - Year of birth entered successfully.
-14:44:52.743 [main] INFO  - Clicking the 'Next' button...
-14:44:52.867 [main] INFO  - 'Next' button clicked successfully.
-14:44:52.869 [main] INFO  - Selecting annual income: Below $97k...
-14:44:52.992 [main] INFO  - Annual income 'Below $97k' selected successfully.
-14:44:52.994 [main] INFO  - Clicking 'Calculate Cover' button...
-14:44:53.541 [main] INFO  - 'Calculate Cover' button clicked successfully.
-14:44:53.572 [main] INFO  - Selecting hospital cover: Top Cover...
-14:44:55.492 [main] INFO  - Selected the Extras Cover: Total Extras
+14:25:14.573 [main] WARN  - Attempt 2: Alert/modal click intercepted. Retrying...
+org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element <button data-size="large" class="css-1yinm9l">...</button> is not clickable at point (620, 422). Other element would receive the click: <div class="css-vurnku">...</div>
+  (Session info: MicrosoftEdge=131.0.2903.86)
+Build info: version: '4.18.1', revision: 'b1d3319b48'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '23'
+Driver info: org.openqa.selenium.edge.EdgeDriver
+Command: [3bfee86351e45082676df2ab88a2027d, clickElement {id=f.6A9AE83A2ABC85852A3CCBAEF3FA2746.d.145538E9A77CEA0BF6E304CA60762D6D.e.641}]
+Capabilities {acceptInsecureCerts: false, browserName: MicrosoftEdge, browserVersion: 131.0.2903.86, fedcm:accounts: true, ms:edgeOptions: {debuggerAddress: localhost:57012}, msedge: {msedgedriverVersion: 131.0.2903.99 (f96a870b1316..., userDataDir: C:\Users\SAHIL~1.SHA\AppDat...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:57012/devtoo..., se:cdpVersion: 131.0.2903.86, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[EdgeDriver: MicrosoftEdge on windows (3bfee86351e45082676df2ab88a2027d)] -> xpath: //div[text()='OK']/../../..//button]
+Session ID: 3bfee86351e45082676df2ab88a2027d
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62) ~[?:?]
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:501) ~[?:?]
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:485) ~[?:?]
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167) ~[selenium-remote-driver-4.18.1.jar:?]
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138) ~[selenium-remote-driver-4.18.1.jar:?]
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50) ~[selenium-remote-driver-4.18.1.jar:?]
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190) ~[selenium-remote-driver-4.18.1.jar:?]
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216) ~[selenium-remote-driver-4.18.1.jar:?]
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174) ~[selenium-remote-driver-4.18.1.jar:?]
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:519) ~[selenium-remote-driver-4.18.1.jar:?]
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:223) ~[selenium-remote-driver-4.18.1.jar:?]
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:76) ~[selenium-remote-driver-4.18.1.jar:?]
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103) ~[?:?]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580) ~[?:?]
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51) ~[selenium-support-4.18.1.jar:?]
+	at jdk.proxy2/jdk.proxy2.$Proxy61.click(Unknown Source) ~[?:?]
+	at com.qa.airteam.pages.EligibilityAndYourDetailsPage.alertAccept(EligibilityAndYourDetailsPage.java:297) [classes/:?]
+	at StepDefinitions.CreateQuoteSteps.userAcceptsTheAlert(CreateQuoteSteps.java:628) [test-classes/:?]
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103) ~[?:?]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580) ~[?:?]
+	at io.cucumber.java.Invoker.doInvoke(Invoker.java:66) [cucumber-java-7.15.0.jar:7.15.0]
+	at io.cucumber.java.Invoker.invoke(Invoker.java:24) [cucumber-java-7.15.0.jar:7.15.0]
+	at io.cucumber.java.AbstractGlueDefinition.invokeMethod(AbstractGlueDefinition.java:47) [cucumber-java-7.15.0.jar:7.15.0]
+	at io.cucumber.java.JavaStepDefinition.execute(JavaStepDefinition.java:29) [cucumber-java-7.15.0.jar:7.15.0]
+	at io.cucumber.core.runner.CoreStepDefinition.execute(CoreStepDefinition.java:66) [cucumber-core-7.15.0.jar:7.15.0]
+	at io.cucumber.core.runner.PickleStepDefinitionMatch.runStep(PickleStepDefinitionMatch.java:63) [cucumber-core-7.15.0.jar:7.15.0]
+	at io.cucumber.core.runner.ExecutionMode$1.execute(ExecutionMode.java:10) [cucumber-core-7.15.0.jar:7.15.0]
+	at io.cucumber.core.runner.TestStep.executeStep(TestStep.java:84) [cucumber-core-7.15.0.jar:7.15.0]
+	at io.cucumber.core.runner.TestStep.run(TestStep.java:56) [cucumber-core-7.15.0.jar:7.15.0]
+	at io.cucumber.core.runner.PickleStepTestStep.run(PickleStepTestStep.java:51) [cucumber-core-7.15.0.jar:7.15.0]
+	at io.cucumber.core.runner.TestCase.run(TestCase.java:84) [cucumber-core-7.15.0.jar:7.15.0]
+	at io.cucumber.core.runner.Runner.runPickle(Runner.java:75) [cucumber-core-7.15.0.jar:7.15.0]
+	at io.cucumber.testng.TestNGCucumberRunner.lambda$runScenario$1(TestNGCucumberRunner.java:132) [cucumber-testng-7.15.0.jar:7.15.0]
+	at io.cucumber.core.runtime.CucumberExecutionContext.lambda$runTestCase$5(CucumberExecutionContext.java:137) [cucumber-core-7.15.0.jar:7.15.0]
+	at io.cucumber.core.runtime.RethrowingThrowableCollector.executeAndThrow(RethrowingThrowableCollector.java:23) [cucumber-core-7.15.0.jar:7.15.0]
+	at io.cucumber.core.runtime.CucumberExecutionContext.runTestCase(CucumberExecutionContext.java:137) [cucumber-core-7.15.0.jar:7.15.0]
+	at io.cucumber.testng.TestNGCucumberRunner.runScenario(TestNGCucumberRunner.java:129) [cucumber-testng-7.15.0.jar:7.15.0]
+	at io.cucumber.testng.AbstractTestNGCucumberTests.runScenario(AbstractTestNGCucumberTests.java:35) [cucumber-testng-7.15.0.jar:7.15.0]
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103) ~[?:?]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580) ~[?:?]
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139) [testng-7.9.0.jar:7.9.0]
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664) [testng-7.9.0.jar:7.9.0]
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:228) [testng-7.9.0.jar:7.9.0]
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63) [testng-7.9.0.jar:7.9.0]
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:961) [testng-7.9.0.jar:7.9.0]
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:201) [testng-7.9.0.jar:7.9.0]
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148) [testng-7.9.0.jar:7.9.0]
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128) [testng-7.9.0.jar:7.9.0]
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597) [?:?]
+	at org.testng.TestRunner.privateRun(TestRunner.java:819) [testng-7.9.0.jar:7.9.0]
+	at org.testng.TestRunner.run(TestRunner.java:619) [testng-7.9.0.jar:7.9.0]
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:443) [testng-7.9.0.jar:7.9.0]
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437) [testng-7.9.0.jar:7.9.0]
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397) [testng-7.9.0.jar:7.9.0]
+	at org.testng.SuiteRunner.run(SuiteRunner.java:336) [testng-7.9.0.jar:7.9.0]
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52) [testng-7.9.0.jar:7.9.0]
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95) [testng-7.9.0.jar:7.9.0]
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1301) [testng-7.9.0.jar:7.9.0]
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1228) [testng-7.9.0.jar:7.9.0]
+	at org.testng.TestNG.runSuites(TestNG.java:1134) [testng-7.9.0.jar:7.9.0]
+	at org.testng.TestNG.run(TestNG.java:1101) [testng-7.9.0.jar:7.9.0]
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115) [testng-remote.jar:?]
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293) [testng-remote.jar:?]
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91) [testng-remote.jar:?]
+14:25:16.697 [main] WARN  - Attempt 3: Alert/modal click intercepted. Retrying...
+org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element <button data-size="large" class="css-1yinm9l">...</button> is not clickable at point (620, 422). Other element would receive the click: <div class="css-vurnku">...</div>
+  (Session info: MicrosoftEdge=131.0.2903.86)
+Build info: version: '4.18.1', revision: 'b1d3319b48'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '23'
+Driver info: org.openqa.selenium.edge.EdgeDriver
+Command: [3bfee86351e45082676df2ab88a2027d, clickElement {id=f.6A9AE83A2ABC85852A3CCBAEF3FA2746.d.145538E9A77CEA0BF6E304CA60762D6D.e.641}]
+Capabilities {acceptInsecureCerts: false, browserName: MicrosoftEdge, browserVersion: 131.0.2903.86, fedcm:accounts: true, ms:edgeOptions: {debuggerAddress: localhost:57012}, msedge: {msedgedriverVersion: 131.0.2903.99 (f96a870b1316..., userDataDir: C:\Users\SAHIL~1.SHA\AppDat...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:57012/devtoo..., se:cdpVersion: 131.0.2903.86, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[EdgeDriver: MicrosoftEdge on windows (3bfee86351e45082676df2ab88a2027d)] -> xpath: //div[text()='OK']/../../..//button]
+Session ID: 3bfee86351e45082676df2ab88a2027d
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62) ~[?:?]
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:501) ~[?:?]
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:485) ~[?:?]
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167) ~[selenium-remote-driver-4.18.1.jar:?]
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138) ~[selenium-remote-driver-4.18.1.jar:?]
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50) ~[selenium-remote-driver-4.18.1.jar:?]
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190) ~[selenium-remote-driver-4.18.1.jar:?]
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216) ~[selenium-remote-driver-4.18.1.jar:?]
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174) ~[selenium-remote-driver-4.18.1.jar:?]
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:519) ~[selenium-remote-driver-4.18.1.jar:?]
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:223) ~[selenium-remote-driver-4.18.1.jar:?]
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:76) ~[selenium-remote-driver-4.18.1.jar:?]
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103) ~[?:?]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580) ~[?:?]
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51) ~[selenium-support-4.18.1.jar:?]
+	at jdk.proxy2/jdk.proxy2.$Proxy61.click(Unknown Source) ~[?:?]
+	at com.qa.airteam.pages.EligibilityAndYourDetailsPage.alertAccept(EligibilityAndYourDetailsPage.java:297) [classes/:?]
+	at StepDefinitions.CreateQuoteSteps.userAcceptsTheAlert(CreateQuoteSteps.java:628) [test-classes/:?]
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103) ~[?:?]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580) ~[?:?]
+	at io.cucumber.java.Invoker.doInvoke(Invoker.java:66) [cucumber-java-7.15.0.jar:7.15.0]
+	at io.cucumber.java.Invoker.invoke(Invoker.java:24) [cucumber-java-7.15.0.jar:7.15.0]
+	at io.cucumber.java.AbstractGlueDefinition.invokeMethod(AbstractGlueDefinition.java:47) [cucumber-java-7.15.0.jar:7.15.0]
+	at io.cucumber.java.JavaStepDefinition.execute(JavaStepDefinition.java:29) [cucumber-java-7.15.0.jar:7.15.0]
+	at io.cucumber.core.runner.CoreStepDefinition.execute(CoreStepDefinition.java:66) [cucumber-core-7.15.0.jar:7.15.0]
+	at io.cucumber.core.runner.PickleStepDefinitionMatch.runStep(PickleStepDefinitionMatch.java:63) [cucumber-core-7.15.0.jar:7.15.0]
+	at io.cucumber.core.runner.ExecutionMode$1.execute(ExecutionMode.java:10) [cucumber-core-7.15.0.jar:7.15.0]
+	at io.cucumber.core.runner.TestStep.executeStep(TestStep.java:84) [cucumber-core-7.15.0.jar:7.15.0]
+	at io.cucumber.core.runner.TestStep.run(TestStep.java:56) [cucumber-core-7.15.0.jar:7.15.0]
+	at io.cucumber.core.runner.PickleStepTestStep.run(PickleStepTestStep.java:51) [cucumber-core-7.15.0.jar:7.15.0]
+	at io.cucumber.core.runner.TestCase.run(TestCase.java:84) [cucumber-core-7.15.0.jar:7.15.0]
+	at io.cucumber.core.runner.Runner.runPickle(Runner.java:75) [cucumber-core-7.15.0.jar:7.15.0]
+	at io.cucumber.testng.TestNGCucumberRunner.lambda$runScenario$1(TestNGCucumberRunner.java:132) [cucumber-testng-7.15.0.jar:7.15.0]
+	at io.cucumber.core.runtime.CucumberExecutionContext.lambda$runTestCase$5(CucumberExecutionContext.java:137) [cucumber-core-7.15.0.jar:7.15.0]
+	at io.cucumber.core.runtime.RethrowingThrowableCollector.executeAndThrow(RethrowingThrowableCollector.java:23) [cucumber-core-7.15.0.jar:7.15.0]
+	at io.cucumber.core.runtime.CucumberExecutionContext.runTestCase(CucumberExecutionContext.java:137) [cucumber-core-7.15.0.jar:7.15.0]
+	at io.cucumber.testng.TestNGCucumberRunner.runScenario(TestNGCucumberRunner.java:129) [cucumber-testng-7.15.0.jar:7.15.0]
+	at io.cucumber.testng.AbstractTestNGCucumberTests.runScenario(AbstractTestNGCucumberTests.java:35) [cucumber-testng-7.15.0.jar:7.15.0]
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103) ~[?:?]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580) ~[?:?]
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139) [testng-7.9.0.jar:7.9.0]
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664) [testng-7.9.0.jar:7.9.0]
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:228) [testng-7.9.0.jar:7.9.0]
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63) [testng-7.9.0.jar:7.9.0]
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:961) [testng-7.9.0.jar:7.9.0]
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:201) [testng-7.9.0.jar:7.9.0]
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148) [testng-7.9.0.jar:7.9.0]
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128) [testng-7.9.0.jar:7.9.0]
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597) [?:?]
+	at org.testng.TestRunner.privateRun(TestRunner.java:819) [testng-7.9.0.jar:7.9.0]
+	at org.testng.TestRunner.run(TestRunner.java:619) [testng-7.9.0.jar:7.9.0]
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:443) [testng-7.9.0.jar:7.9.0]
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437) [testng-7.9.0.jar:7.9.0]
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397) [testng-7.9.0.jar:7.9.0]
+	at org.testng.SuiteRunner.run(SuiteRunner.java:336) [testng-7.9.0.jar:7.9.0]
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52) [testng-7.9.0.jar:7.9.0]
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95) [testng-7.9.0.jar:7.9.0]
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1301) [testng-7.9.0.jar:7.9.0]
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1228) [testng-7.9.0.jar:7.9.0]
+	at org.testng.TestNG.runSuites(TestNG.java:1134) [testng-7.9.0.jar:7.9.0]
+	at org.testng.TestNG.run(TestNG.java:1101) [testng-7.9.0.jar:7.9.0]
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115) [testng-remote.jar:?]
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293) [testng-remote.jar:?]
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91) [testng-remote.jar:?]
+14:26:42.881 [main] INFO  - Browser selected: edge
+14:26:42.885 [main] INFO  - URL selected: https://uat.doctorshealthfund.com.au/
+14:26:47.308 [main] INFO  - EdgeDriver initialized.
+14:26:47.744 [main] INFO  - Navigated to URL: https://uat.doctorshealthfund.com.au/
+14:26:50.996 [main] INFO  - All cookies cleared before starting the test.
+14:26:51.060 [main] INFO  - Navigating to the quote page.
+14:26:51.085 [main] INFO  - Page title: Private Health Insurance for Doctors | Doctors' Health Fund
+14:26:51.090 [main] INFO  - Clicking the 'Get Quote' button.
+14:26:51.090 [main] INFO  - Attempting to click the 'Get Quote' button...
+14:26:51.291 [main] INFO  - 'Get Quote' button clicked successfully.
+14:26:51.291 [main] INFO  - 'Get Quote' button clicked successfully.
+14:26:51.298 [main] INFO  - Selecting cover type: Couple...
+14:26:51.851 [main] INFO  - Cover type 'Couple' selected successfully.
+14:26:51.855 [main] INFO  - Clicking the 'Next' button...
+14:26:52.004 [main] INFO  - 'Next' button clicked successfully.
+14:26:52.007 [main] INFO  - Selecting residence: NSW...
+14:26:52.169 [main] INFO  - Residence 'NSW' selected successfully.
+14:26:52.171 [main] INFO  - Clicking the 'Next' button...
+14:26:52.333 [main] INFO  - 'Next' button clicked successfully.
+14:26:52.336 [main] INFO  - Entering day of birth: 01...
+14:26:52.558 [main] INFO  - Day of birth entered successfully.
+14:26:52.558 [main] INFO  - Entering month of birth: 01...
+14:26:52.701 [main] INFO  - Month of birth entered successfully.
+14:26:52.701 [main] INFO  - Entering year of birth: 1978...
+14:26:52.848 [main] INFO  - Year of birth entered successfully.
+14:26:52.851 [main] INFO  - Entering day of birth: 01...
+14:26:52.985 [main] INFO  - Partner's day of birth entered successfully.
+14:26:52.986 [main] INFO  - Entering month of birth: 01...
+14:26:53.103 [main] INFO  - Partner's month of birth entered successfully.
+14:26:53.104 [main] INFO  - Entering year of birth: 1977...
+14:26:53.235 [main] INFO  - Partner's year of birth entered successfully.
+14:26:53.237 [main] INFO  - Clicking the 'Next' button...
+14:26:53.452 [main] INFO  - 'Next' button clicked successfully.
+14:26:53.455 [main] INFO  - Selecting annual income: Below $194k...
+14:26:53.645 [main] INFO  - Annual income 'Below $194k' selected successfully.
+14:26:53.647 [main] INFO  - Clicking 'Calculate Cover' button...
+14:26:54.306 [main] INFO  - 'Calculate Cover' button clicked successfully.
+14:26:54.373 [main] INFO  - Selecting hospital cover: Top Cover...
+14:26:56.125 [main] INFO  - Selected the Extras Cover: Total Extras
+14:26:56.348 [main] INFO  - Clicked on the Apply Now button for the selected plan.
+14:26:56.370 [main] INFO  - Attempting to select 'No' for member status.
+14:26:56.704 [main] INFO  - 'No' radio button for member status selected successfully.
+14:26:56.706 [main] INFO  - Attempting to select 'Yes' for Australian citizenship status.
+14:26:56.887 [main] INFO  - 'Yes' radio button for citizenship status selected successfully.
+14:26:56.897 [main] INFO  - Attempting to click the 'Medical Practitioner' button.
+14:26:57.020 [main] INFO  - 'Medical Practitioner' button clicked successfully.
+14:26:57.025 [main] INFO  - Attempting to select the radio button for: Resident
+14:26:57.164 [main] INFO  - Radio button for 'Resident' selected successfully.
+14:26:57.171 [main] INFO  - Attempting to select Avant member option: No
+14:26:57.318 [main] INFO  - Avant member option 'No' selected successfully.
+14:26:58.547 [main] INFO  - Clicked on Continue button
+14:26:58.556 [main] INFO  - Attempting to select Avant member option: Yes
+14:26:58.654 [main] INFO  - Avant member option 'Yes' selected successfully.
+14:26:58.665 [main] INFO  - Attempting to select Avant member option: No
+14:26:58.772 [main] INFO  - Avant member option 'No' selected successfully.
+14:26:59.989 [main] INFO  - Clicked on Continue button
+14:26:59.991 [main] INFO  - Selecting option for transferring from another fund: No
+14:27:00.164 [main] INFO  - 'No' selected for transferring from another fund.
+14:27:00.867 [main] INFO  - Attempting to accept alert/modal.
+14:27:01.042 [main] INFO  - Alert/modal accepted successfully.
+14:27:01.044 [main] INFO  - Selecting option for transferring from another fund: Yes
+14:27:01.229 [main] INFO  - 'Yes' selected for transferring from another fund.
+14:27:01.932 [main] INFO  - Attempting to accept alert/modal.
+14:27:02.210 [main] INFO  - Alert/modal accepted successfully.
+14:27:02.271 [main] INFO  - Scrolled to element: [[EdgeDriver: MicrosoftEdge on windows (6591e3fc8ad536db415745e356dd669c)] -> xpath: //select[@name='currentHealthFund']/..]
+14:27:03.213 [main] INFO  - Scrolled to element: [[EdgeDriver: MicrosoftEdge on windows (6591e3fc8ad536db415745e356dd669c)] -> xpath: //div[@name='partnerAndDependentsCovered']//span[contains(text(), 'Yes')]]
+14:27:03.337 [main] INFO  - Attempting to click the 'Next' button.
+14:27:03.547 [main] INFO  - 'Next' button clicked successfully.
+14:27:03.560 [main] INFO  - Selecting title from dropdown: Mr
+14:27:04.057 [main] INFO  - Selected 'Mr' from dropdown.
+14:27:04.229 [main] INFO  - Entered First Name: John
+14:27:04.420 [main] INFO  - Entered Middle Name: Lou
+14:27:04.591 [main] INFO  - Entered Last Name: Smith
+14:27:04.592 [main] INFO  - Entered random full name: John Lou Smith
+14:27:04.650 [main] INFO  - Scrolled to element: [[EdgeDriver: MicrosoftEdge on windows (6591e3fc8ad536db415745e356dd669c)] -> xpath: //div[@name='lhcStatement']//span[2][contains(text(),'No')]]
+14:27:05.224 [main] INFO  - Selected Male radio button
+14:27:07.233 [main] INFO  - Attempting to accept alert/modal.
+14:27:07.398 [main] INFO  - Alert/modal accepted successfully.
+14:27:07.429 [main] INFO  - Attempting to click the 'Next' button.
+14:27:07.588 [main] INFO  - 'Next' button clicked successfully.
+14:27:07.793 [main] INFO  - Entered random email: dhf.testing+371@gmail.com
+14:27:07.950 [main] INFO  - Entered random phone number: 0498361434
+14:27:07.950 [main] INFO  - Phone number format validation passed: 0498361434
+14:27:10.740 [main] INFO  - Entered address input: 123 A'
+14:27:11.788 [main] INFO  - Selected address input: 123 A'
+14:27:14.071 [main] INFO  - Clicked on Continue button
+14:27:15.411 [main] INFO  - Selecting title from dropdown: Mrs
+14:27:15.724 [main] INFO  - Selected 'Mrs' from dropdown.
+14:27:15.860 [main] INFO  - Entered First Name: Alex
+14:27:15.990 [main] INFO  - Entered Middle Name: Lou
+14:27:16.212 [main] INFO  - Entered Last Name: Taylor
+14:27:16.212 [main] INFO  - Entered random full name: Alex Lou Taylor
+14:27:16.532 [main] INFO  - Entered random email: dhf.testing+774@gmail.com
+14:27:16.753 [main] INFO  - Entered random mobile number: 0498367816
+14:27:16.754 [main] INFO  - Phone number format validation passed: 0498367816
+14:27:16.878 [main] INFO  - Selected Female radio button
+14:27:16.922 [main] INFO  - Scrolled to element: [[EdgeDriver: MicrosoftEdge on windows (6591e3fc8ad536db415745e356dd669c)] -> xpath: //select[@name='relationship']]
+14:27:17.765 [main] INFO  - Scrolled to element: [[EdgeDriver: MicrosoftEdge on windows (6591e3fc8ad536db415745e356dd669c)] -> xpath: //div[@name='lhcStatement']//span[2][contains(text(),'No')]]
+14:27:19.957 [main] INFO  - Attempting to accept alert/modal.
+14:27:20.103 [main] INFO  - Alert/modal accepted successfully.
+14:27:22.235 [main] INFO  - Attempting to accept alert/modal.
+14:27:22.376 [main] INFO  - Alert/modal accepted successfully.

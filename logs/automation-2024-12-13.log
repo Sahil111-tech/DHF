@@ -1,0 +1,685 @@
+11:07:22.376 [main] INFO  - Attempting to click the 'Medical Practitioner' button.
+11:07:22.531 [main] INFO  - 'Medical Practitioner' button clicked successfully.
+11:07:22.535 [main] INFO  - Attempting to select the radio button for: Resident
+11:07:22.642 [main] INFO  - Radio button for 'Resident' selected successfully.
+11:07:22.650 [main] INFO  - Attempting to select Avant member option: Yes
+11:07:22.799 [main] INFO  - Avant member option 'Yes' selected successfully.
+11:08:38.981 [main] INFO  - Browser selected: chrome
+11:08:38.984 [main] INFO  - URL selected: https://uat.doctorshealthfund.com.au/
+11:08:41.437 [main] INFO  - ChromeDriver initialized.
+11:08:44.609 [main] INFO  - Navigated to URL: https://uat.doctorshealthfund.com.au/
+11:08:44.837 [main] INFO  - All cookies cleared before starting the test.
+11:08:44.912 [main] INFO  - Navigating to the quote page.
+11:08:44.942 [main] INFO  - Page title: Private Health Insurance for Doctors | Doctors' Health Fund
+11:08:44.952 [main] INFO  - Clicking the 'Get Quote' button.
+11:08:44.952 [main] INFO  - Attempting to click the 'Get Quote' button...
+11:08:45.214 [main] INFO  - 'Get Quote' button clicked successfully.
+11:08:45.214 [main] INFO  - 'Get Quote' button clicked successfully.
+11:08:45.218 [main] INFO  - Selecting cover type: Couple...
+11:08:46.523 [main] INFO  - Cover type 'Couple' selected successfully.
+11:08:46.525 [main] INFO  - Clicking the 'Next' button...
+11:08:46.667 [main] INFO  - 'Next' button clicked successfully.
+11:08:46.670 [main] INFO  - Selecting residence: NSW...
+11:08:46.807 [main] INFO  - Residence 'NSW' selected successfully.
+11:08:46.808 [main] INFO  - Clicking the 'Next' button...
+11:08:46.945 [main] INFO  - 'Next' button clicked successfully.
+11:08:46.948 [main] INFO  - Entering day of birth: 01...
+11:08:47.113 [main] INFO  - Day of birth entered successfully.
+11:08:47.113 [main] INFO  - Entering month of birth: 01...
+11:08:47.275 [main] INFO  - Month of birth entered successfully.
+11:08:47.275 [main] INFO  - Entering year of birth: 1978...
+11:08:47.440 [main] INFO  - Year of birth entered successfully.
+11:08:47.442 [main] INFO  - Entering day of birth: 01...
+11:08:47.578 [main] INFO  - Partner's day of birth entered successfully.
+11:08:47.578 [main] INFO  - Entering month of birth: 01...
+11:08:47.679 [main] INFO  - Partner's month of birth entered successfully.
+11:08:47.679 [main] INFO  - Entering year of birth: 1977...
+11:08:47.795 [main] INFO  - Partner's year of birth entered successfully.
+11:08:47.797 [main] INFO  - Clicking the 'Next' button...
+11:08:47.921 [main] INFO  - 'Next' button clicked successfully.
+11:08:47.924 [main] INFO  - Selecting annual income: Below $194k...
+11:08:48.045 [main] INFO  - Annual income 'Below $194k' selected successfully.
+11:08:48.047 [main] INFO  - Clicking 'Calculate Cover' button...
+11:08:48.606 [main] INFO  - 'Calculate Cover' button clicked successfully.
+11:08:48.650 [main] INFO  - Selecting hospital cover: Top Cover...
+11:08:50.732 [main] INFO  - Selected the Extras Cover: Total Extras
+11:08:50.927 [main] INFO  - Clicked on the Apply Now button for the selected plan.
+11:08:50.938 [main] INFO  - Attempting to select 'No' for member status.
+11:08:51.295 [main] INFO  - 'No' radio button for member status selected successfully.
+11:08:51.298 [main] INFO  - Attempting to select 'Yes' for Australian citizenship status.
+11:08:51.455 [main] INFO  - 'Yes' radio button for citizenship status selected successfully.
+11:08:51.464 [main] INFO  - Attempting to click the 'Medical Practitioner' button.
+11:08:51.677 [main] INFO  - 'Medical Practitioner' button clicked successfully.
+11:08:51.682 [main] INFO  - Attempting to select the radio button for: Resident
+11:08:51.793 [main] INFO  - Radio button for 'Resident' selected successfully.
+11:08:51.816 [main] INFO  - Attempting to select Avant member option: No
+11:08:51.933 [main] INFO  - Avant member option 'No' selected successfully.
+11:08:53.125 [main] INFO  - Clicked on Continue button
+11:08:53.136 [main] INFO  - Attempting to select Avant member option: Yes
+11:08:53.223 [main] INFO  - Avant member option 'Yes' selected successfully.
+11:08:53.235 [main] INFO  - Attempting to select Avant member option: No
+11:08:53.339 [main] INFO  - Avant member option 'No' selected successfully.
+11:08:54.559 [main] INFO  - Clicked on Continue button
+11:08:54.561 [main] INFO  - Selecting option for transferring from another fund: Yes
+11:08:54.704 [main] INFO  - 'Yes' selected for transferring from another fund.
+11:08:55.417 [main] INFO  - Attempting to accept alert/modal.
+11:10:55.489 [main] ERROR - An error occurred while interacting with the alert/modal: Cannot invoke "Object.getClass()" because "exceptionDriver" is null
+11:26:22.991 [main] INFO  - Browser selected: chrome
+11:26:22.994 [main] INFO  - URL selected: https://uat.doctorshealthfund.com.au/
+11:26:25.890 [main] INFO  - ChromeDriver initialized.
+11:26:26.713 [main] INFO  - Navigated to URL: https://uat.doctorshealthfund.com.au/
+11:26:30.162 [main] INFO  - All cookies cleared before starting the test.
+11:26:30.247 [main] INFO  - Navigating to the quote page.
+11:26:30.310 [main] INFO  - Page title: Private Health Insurance for Doctors | Doctors' Health Fund
+11:26:30.316 [main] INFO  - Clicking the 'Get Quote' button.
+11:26:30.316 [main] INFO  - Attempting to click the 'Get Quote' button...
+11:26:30.677 [main] INFO  - 'Get Quote' button clicked successfully.
+11:26:30.677 [main] INFO  - 'Get Quote' button clicked successfully.
+11:26:30.681 [main] INFO  - Selecting cover type: Couple...
+11:26:32.063 [main] INFO  - Cover type 'Couple' selected successfully.
+11:26:32.066 [main] INFO  - Clicking the 'Next' button...
+11:26:32.211 [main] INFO  - 'Next' button clicked successfully.
+11:26:32.213 [main] INFO  - Selecting residence: NSW...
+11:26:32.349 [main] INFO  - Residence 'NSW' selected successfully.
+11:26:32.351 [main] INFO  - Clicking the 'Next' button...
+11:26:32.509 [main] INFO  - 'Next' button clicked successfully.
+11:26:32.512 [main] INFO  - Entering day of birth: 01...
+11:26:32.690 [main] INFO  - Day of birth entered successfully.
+11:26:32.691 [main] INFO  - Entering month of birth: 01...
+11:26:32.801 [main] INFO  - Month of birth entered successfully.
+11:26:32.802 [main] INFO  - Entering year of birth: 1978...
+11:26:32.955 [main] INFO  - Year of birth entered successfully.
+11:26:32.958 [main] INFO  - Entering day of birth: 01...
+11:26:33.088 [main] INFO  - Partner's day of birth entered successfully.
+11:26:33.088 [main] INFO  - Entering month of birth: 01...
+11:26:33.194 [main] INFO  - Partner's month of birth entered successfully.
+11:26:33.194 [main] INFO  - Entering year of birth: 1977...
+11:26:33.311 [main] INFO  - Partner's year of birth entered successfully.
+11:26:33.313 [main] INFO  - Clicking the 'Next' button...
+11:26:33.441 [main] INFO  - 'Next' button clicked successfully.
+11:26:33.443 [main] INFO  - Selecting annual income: Below $194k...
+11:26:33.570 [main] INFO  - Annual income 'Below $194k' selected successfully.
+11:26:33.572 [main] INFO  - Clicking 'Calculate Cover' button...
+11:26:34.087 [main] INFO  - 'Calculate Cover' button clicked successfully.
+11:26:34.181 [main] INFO  - Selecting hospital cover: Top Cover...
+11:26:35.396 [main] INFO  - Selected the Extras Cover: Total Extras
+11:26:35.569 [main] INFO  - Clicked on the Apply Now button for the selected plan.
+11:26:35.590 [main] INFO  - Attempting to select 'No' for member status.
+11:26:36.086 [main] INFO  - 'No' radio button for member status selected successfully.
+11:26:36.089 [main] INFO  - Attempting to select 'Yes' for Australian citizenship status.
+11:26:36.256 [main] INFO  - 'Yes' radio button for citizenship status selected successfully.
+11:26:36.267 [main] INFO  - Attempting to click the 'Medical Practitioner' button.
+11:26:36.390 [main] INFO  - 'Medical Practitioner' button clicked successfully.
+11:26:36.395 [main] INFO  - Attempting to select the radio button for: Resident
+11:26:36.513 [main] INFO  - Radio button for 'Resident' selected successfully.
+11:26:36.524 [main] INFO  - Attempting to select Avant member option: No
+11:26:36.661 [main] INFO  - Avant member option 'No' selected successfully.
+11:26:37.937 [main] INFO  - Clicked on Continue button
+11:26:37.945 [main] INFO  - Attempting to select Avant member option: Yes
+11:26:38.041 [main] INFO  - Avant member option 'Yes' selected successfully.
+11:26:38.053 [main] INFO  - Attempting to select Avant member option: No
+11:26:38.160 [main] INFO  - Avant member option 'No' selected successfully.
+11:26:39.377 [main] INFO  - Clicked on Continue button
+11:26:39.379 [main] INFO  - Selecting option for transferring from another fund: Yes
+11:26:39.521 [main] INFO  - 'Yes' selected for transferring from another fund.
+11:26:40.234 [main] INFO  - Attempting to accept alert/modal.
+11:27:50.341 [main] INFO  - Browser selected: chrome
+11:27:50.345 [main] INFO  - URL selected: https://uat.doctorshealthfund.com.au/
+11:27:53.968 [main] INFO  - ChromeDriver initialized.
+11:27:57.532 [main] INFO  - Navigated to URL: https://uat.doctorshealthfund.com.au/
+11:27:57.793 [main] INFO  - All cookies cleared before starting the test.
+11:27:57.859 [main] INFO  - Navigating to the quote page.
+11:27:57.919 [main] INFO  - Page title: Private Health Insurance for Doctors | Doctors' Health Fund
+11:27:57.924 [main] INFO  - Clicking the 'Get Quote' button.
+11:27:57.925 [main] INFO  - Attempting to click the 'Get Quote' button...
+11:27:58.151 [main] INFO  - 'Get Quote' button clicked successfully.
+11:27:58.152 [main] INFO  - 'Get Quote' button clicked successfully.
+11:27:58.155 [main] INFO  - Selecting cover type: Couple...
+11:27:59.510 [main] INFO  - Cover type 'Couple' selected successfully.
+11:27:59.519 [main] INFO  - Clicking the 'Next' button...
+11:27:59.717 [main] INFO  - 'Next' button clicked successfully.
+11:27:59.719 [main] INFO  - Selecting residence: NSW...
+11:27:59.854 [main] INFO  - Residence 'NSW' selected successfully.
+11:27:59.856 [main] INFO  - Clicking the 'Next' button...
+11:28:00.001 [main] INFO  - 'Next' button clicked successfully.
+11:28:00.003 [main] INFO  - Entering day of birth: 01...
+11:28:00.189 [main] INFO  - Day of birth entered successfully.
+11:28:00.190 [main] INFO  - Entering month of birth: 01...
+11:28:00.352 [main] INFO  - Month of birth entered successfully.
+11:28:00.352 [main] INFO  - Entering year of birth: 1978...
+11:28:00.486 [main] INFO  - Year of birth entered successfully.
+11:28:00.488 [main] INFO  - Entering day of birth: 01...
+11:28:00.615 [main] INFO  - Partner's day of birth entered successfully.
+11:28:00.615 [main] INFO  - Entering month of birth: 01...
+11:28:00.723 [main] INFO  - Partner's month of birth entered successfully.
+11:28:00.723 [main] INFO  - Entering year of birth: 1977...
+11:28:00.825 [main] INFO  - Partner's year of birth entered successfully.
+11:28:00.829 [main] INFO  - Clicking the 'Next' button...
+11:28:00.975 [main] INFO  - 'Next' button clicked successfully.
+11:28:00.977 [main] INFO  - Selecting annual income: Below $194k...
+11:28:01.096 [main] INFO  - Annual income 'Below $194k' selected successfully.
+11:28:01.098 [main] INFO  - Clicking 'Calculate Cover' button...
+11:28:01.500 [main] INFO  - 'Calculate Cover' button clicked successfully.
+11:28:01.708 [main] INFO  - Selecting hospital cover: Top Cover...
+11:28:03.392 [main] INFO  - Selected the Extras Cover: Total Extras
+11:28:03.563 [main] INFO  - Clicked on the Apply Now button for the selected plan.
+11:28:03.575 [main] INFO  - Attempting to select 'No' for member status.
+11:28:03.960 [main] INFO  - 'No' radio button for member status selected successfully.
+11:28:03.968 [main] INFO  - Attempting to select 'Yes' for Australian citizenship status.
+11:28:04.119 [main] INFO  - 'Yes' radio button for citizenship status selected successfully.
+11:28:04.127 [main] INFO  - Attempting to click the 'Medical Practitioner' button.
+11:28:04.246 [main] INFO  - 'Medical Practitioner' button clicked successfully.
+11:28:04.250 [main] INFO  - Attempting to select the radio button for: Resident
+11:28:04.380 [main] INFO  - Radio button for 'Resident' selected successfully.
+11:28:04.388 [main] INFO  - Attempting to select Avant member option: No
+11:28:04.533 [main] INFO  - Avant member option 'No' selected successfully.
+11:28:05.747 [main] INFO  - Clicked on Continue button
+11:28:05.756 [main] INFO  - Attempting to select Avant member option: Yes
+11:28:05.857 [main] INFO  - Avant member option 'Yes' selected successfully.
+11:28:05.868 [main] INFO  - Attempting to select Avant member option: No
+11:28:05.975 [main] INFO  - Avant member option 'No' selected successfully.
+11:28:07.193 [main] INFO  - Clicked on Continue button
+11:28:07.196 [main] INFO  - Selecting option for transferring from another fund: Yes
+11:28:07.338 [main] INFO  - 'Yes' selected for transferring from another fund.
+11:28:08.049 [main] INFO  - Attempting to accept alert/modal.
+11:28:40.265 [main] ERROR - An error occurred while interacting with the alert/modal: Cannot invoke "Object.getClass()" because "exceptionDriver" is null
+11:30:08.134 [main] ERROR - An error occurred while interacting with the alert/modal: Cannot invoke "Object.getClass()" because "exceptionDriver" is null
+11:30:40.616 [main] INFO  - Browser selected: chrome
+11:30:40.620 [main] INFO  - URL selected: https://uat.doctorshealthfund.com.au/
+11:30:43.275 [main] INFO  - ChromeDriver initialized.
+11:30:45.243 [main] INFO  - Navigated to URL: https://uat.doctorshealthfund.com.au/
+11:30:46.136 [main] INFO  - All cookies cleared before starting the test.
+11:30:46.216 [main] INFO  - Navigating to the quote page.
+11:30:46.348 [main] INFO  - Page title: Private Health Insurance for Doctors | Doctors' Health Fund
+11:30:46.355 [main] INFO  - Clicking the 'Get Quote' button.
+11:30:46.355 [main] INFO  - Attempting to click the 'Get Quote' button...
+11:30:46.693 [main] INFO  - 'Get Quote' button clicked successfully.
+11:30:46.693 [main] INFO  - 'Get Quote' button clicked successfully.
+11:30:46.699 [main] INFO  - Selecting cover type: Couple...
+11:30:48.137 [main] INFO  - Cover type 'Couple' selected successfully.
+11:30:48.141 [main] INFO  - Clicking the 'Next' button...
+11:30:48.268 [main] INFO  - 'Next' button clicked successfully.
+11:30:48.271 [main] INFO  - Selecting residence: NSW...
+11:30:48.413 [main] INFO  - Residence 'NSW' selected successfully.
+11:30:48.415 [main] INFO  - Clicking the 'Next' button...
+11:30:48.557 [main] INFO  - 'Next' button clicked successfully.
+11:30:48.560 [main] INFO  - Entering day of birth: 01...
+11:30:48.715 [main] INFO  - Day of birth entered successfully.
+11:30:48.715 [main] INFO  - Entering month of birth: 01...
+11:30:48.824 [main] INFO  - Month of birth entered successfully.
+11:30:48.825 [main] INFO  - Entering year of birth: 1978...
+11:30:48.956 [main] INFO  - Year of birth entered successfully.
+11:30:48.958 [main] INFO  - Entering day of birth: 01...
+11:30:49.106 [main] INFO  - Partner's day of birth entered successfully.
+11:30:49.107 [main] INFO  - Entering month of birth: 01...
+11:30:49.214 [main] INFO  - Partner's month of birth entered successfully.
+11:30:49.214 [main] INFO  - Entering year of birth: 1977...
+11:30:49.321 [main] INFO  - Partner's year of birth entered successfully.
+11:30:49.324 [main] INFO  - Clicking the 'Next' button...
+11:30:49.455 [main] INFO  - 'Next' button clicked successfully.
+11:30:49.458 [main] INFO  - Selecting annual income: Below $194k...
+11:30:49.577 [main] INFO  - Annual income 'Below $194k' selected successfully.
+11:30:49.582 [main] INFO  - Clicking 'Calculate Cover' button...
+11:30:50.062 [main] INFO  - 'Calculate Cover' button clicked successfully.
+11:30:50.155 [main] INFO  - Selecting hospital cover: Top Cover...
+11:30:51.768 [main] INFO  - Selected the Extras Cover: Total Extras
+11:30:51.969 [main] INFO  - Clicked on the Apply Now button for the selected plan.
+11:30:51.979 [main] INFO  - Attempting to select 'No' for member status.
+11:30:52.291 [main] INFO  - 'No' radio button for member status selected successfully.
+11:30:52.294 [main] INFO  - Attempting to select 'Yes' for Australian citizenship status.
+11:30:52.476 [main] INFO  - 'Yes' radio button for citizenship status selected successfully.
+11:30:52.487 [main] INFO  - Attempting to click the 'Medical Practitioner' button.
+11:30:52.637 [main] INFO  - 'Medical Practitioner' button clicked successfully.
+11:30:52.642 [main] INFO  - Attempting to select the radio button for: Resident
+11:30:52.783 [main] INFO  - Radio button for 'Resident' selected successfully.
+11:30:52.815 [main] INFO  - Attempting to select Avant member option: No
+11:30:52.936 [main] INFO  - Avant member option 'No' selected successfully.
+11:30:54.138 [main] INFO  - Clicked on Continue button
+11:30:54.149 [main] INFO  - Attempting to select Avant member option: Yes
+11:30:54.248 [main] INFO  - Avant member option 'Yes' selected successfully.
+11:30:54.255 [main] INFO  - Attempting to select Avant member option: No
+11:30:54.356 [main] INFO  - Avant member option 'No' selected successfully.
+11:30:55.580 [main] INFO  - Clicked on Continue button
+11:30:55.582 [main] INFO  - Selecting option for transferring from another fund: Yes
+11:30:55.727 [main] INFO  - 'Yes' selected for transferring from another fund.
+11:30:56.437 [main] INFO  - Attempting to accept alert/modal.
+11:31:47.399 [main] INFO  - Browser selected: chrome
+11:31:47.405 [main] INFO  - URL selected: https://uat.doctorshealthfund.com.au/
+11:31:50.494 [main] INFO  - ChromeDriver initialized.
+11:31:53.707 [main] INFO  - Navigated to URL: https://uat.doctorshealthfund.com.au/
+11:31:54.323 [main] INFO  - All cookies cleared before starting the test.
+11:31:54.380 [main] INFO  - Navigating to the quote page.
+11:31:54.410 [main] INFO  - Page title: Private Health Insurance for Doctors | Doctors' Health Fund
+11:31:54.420 [main] INFO  - Clicking the 'Get Quote' button.
+11:31:54.420 [main] INFO  - Attempting to click the 'Get Quote' button...
+11:31:54.686 [main] INFO  - 'Get Quote' button clicked successfully.
+11:31:54.686 [main] INFO  - 'Get Quote' button clicked successfully.
+11:31:54.691 [main] INFO  - Selecting cover type: Couple...
+11:31:56.093 [main] INFO  - Cover type 'Couple' selected successfully.
+11:31:56.095 [main] INFO  - Clicking the 'Next' button...
+11:31:56.308 [main] INFO  - 'Next' button clicked successfully.
+11:31:56.310 [main] INFO  - Selecting residence: NSW...
+11:31:56.522 [main] INFO  - Residence 'NSW' selected successfully.
+11:31:56.526 [main] INFO  - Clicking the 'Next' button...
+11:31:56.700 [main] INFO  - 'Next' button clicked successfully.
+11:31:56.703 [main] INFO  - Entering day of birth: 01...
+11:31:56.956 [main] INFO  - Day of birth entered successfully.
+11:31:56.956 [main] INFO  - Entering month of birth: 01...
+11:31:57.101 [main] INFO  - Month of birth entered successfully.
+11:31:57.102 [main] INFO  - Entering year of birth: 1978...
+11:31:57.298 [main] INFO  - Year of birth entered successfully.
+11:31:57.300 [main] INFO  - Entering day of birth: 01...
+11:31:57.447 [main] INFO  - Partner's day of birth entered successfully.
+11:31:57.447 [main] INFO  - Entering month of birth: 01...
+11:31:57.585 [main] INFO  - Partner's month of birth entered successfully.
+11:31:57.585 [main] INFO  - Entering year of birth: 1977...
+11:31:57.745 [main] INFO  - Partner's year of birth entered successfully.
+11:31:57.748 [main] INFO  - Clicking the 'Next' button...
+11:31:57.963 [main] INFO  - 'Next' button clicked successfully.
+11:31:57.966 [main] INFO  - Selecting annual income: Below $194k...
+11:31:58.106 [main] INFO  - Annual income 'Below $194k' selected successfully.
+11:31:58.111 [main] INFO  - Clicking 'Calculate Cover' button...
+11:31:58.716 [main] INFO  - 'Calculate Cover' button clicked successfully.
+11:31:58.732 [main] INFO  - Selecting hospital cover: Top Cover...
+11:32:00.105 [main] INFO  - Selected the Extras Cover: Total Extras
+11:32:00.356 [main] INFO  - Clicked on the Apply Now button for the selected plan.
+11:32:00.368 [main] INFO  - Attempting to select 'No' for member status.
+11:32:00.790 [main] INFO  - 'No' radio button for member status selected successfully.
+11:32:00.802 [main] INFO  - Attempting to select 'Yes' for Australian citizenship status.
+11:32:01.028 [main] INFO  - 'Yes' radio button for citizenship status selected successfully.
+11:32:01.053 [main] INFO  - Attempting to click the 'Medical Practitioner' button.
+11:32:01.295 [main] INFO  - 'Medical Practitioner' button clicked successfully.
+11:32:01.301 [main] INFO  - Attempting to select the radio button for: Resident
+11:32:01.655 [main] INFO  - Radio button for 'Resident' selected successfully.
+11:32:01.666 [main] INFO  - Attempting to select Avant member option: No
+11:32:01.882 [main] INFO  - Avant member option 'No' selected successfully.
+11:32:03.208 [main] INFO  - Clicked on Continue button
+11:32:03.223 [main] INFO  - Attempting to select Avant member option: Yes
+11:32:03.430 [main] INFO  - Avant member option 'Yes' selected successfully.
+11:32:03.453 [main] INFO  - Attempting to select Avant member option: No
+11:32:03.601 [main] INFO  - Avant member option 'No' selected successfully.
+11:32:05.012 [main] INFO  - Clicked on Continue button
+11:32:05.017 [main] INFO  - Selecting option for transferring from another fund: Yes
+11:32:05.202 [main] INFO  - 'Yes' selected for transferring from another fund.
+11:32:05.914 [main] INFO  - Attempting to accept alert/modal.
+11:32:36.341 [main] ERROR - An error occurred while interacting with the alert/modal: Cannot invoke "Object.getClass()" because "exceptionDriver" is null
+11:34:05.994 [main] ERROR - An error occurred while interacting with the alert/modal: Cannot invoke "Object.getClass()" because "exceptionDriver" is null
+14:56:42.605 [main] INFO  - Browser selected: chrome
+14:56:42.609 [main] INFO  - URL selected: https://uat.doctorshealthfund.com.au/
+14:56:45.941 [main] INFO  - ChromeDriver initialized.
+14:56:52.171 [main] INFO  - Navigated to URL: https://uat.doctorshealthfund.com.au/
+14:56:52.571 [main] INFO  - All cookies cleared before starting the test.
+14:56:52.621 [main] INFO  - Navigating to the quote page.
+14:56:52.644 [main] INFO  - Page title: Private Health Insurance for Doctors | Doctors' Health Fund
+14:56:52.648 [main] INFO  - Clicking the 'Get Quote' button.
+14:56:52.648 [main] INFO  - Attempting to click the 'Get Quote' button...
+14:56:52.888 [main] INFO  - 'Get Quote' button clicked successfully.
+14:56:52.889 [main] INFO  - 'Get Quote' button clicked successfully.
+14:56:52.892 [main] INFO  - Selecting cover type: Couple...
+14:56:54.117 [main] INFO  - Cover type 'Couple' selected successfully.
+14:56:54.119 [main] INFO  - Clicking the 'Next' button...
+14:56:54.255 [main] INFO  - 'Next' button clicked successfully.
+14:56:54.257 [main] INFO  - Selecting residence: NSW...
+14:56:54.393 [main] INFO  - Residence 'NSW' selected successfully.
+14:56:54.394 [main] INFO  - Clicking the 'Next' button...
+14:56:54.536 [main] INFO  - 'Next' button clicked successfully.
+14:56:54.538 [main] INFO  - Entering day of birth: 01...
+14:56:54.710 [main] INFO  - Day of birth entered successfully.
+14:56:54.711 [main] INFO  - Entering month of birth: 01...
+14:56:54.816 [main] INFO  - Month of birth entered successfully.
+14:56:54.816 [main] INFO  - Entering year of birth: 1978...
+14:56:54.968 [main] INFO  - Year of birth entered successfully.
+14:56:54.970 [main] INFO  - Entering day of birth: 01...
+14:56:55.126 [main] INFO  - Partner's day of birth entered successfully.
+14:56:55.126 [main] INFO  - Entering month of birth: 01...
+14:56:55.234 [main] INFO  - Partner's month of birth entered successfully.
+14:56:55.235 [main] INFO  - Entering year of birth: 1977...
+14:56:55.342 [main] INFO  - Partner's year of birth entered successfully.
+14:56:55.344 [main] INFO  - Clicking the 'Next' button...
+14:56:55.478 [main] INFO  - 'Next' button clicked successfully.
+14:56:55.482 [main] INFO  - Selecting annual income: Below $194k...
+14:56:55.600 [main] INFO  - Annual income 'Below $194k' selected successfully.
+14:56:55.602 [main] INFO  - Clicking 'Calculate Cover' button...
+14:56:56.073 [main] INFO  - 'Calculate Cover' button clicked successfully.
+14:56:56.156 [main] INFO  - Selecting hospital cover: Top Cover...
+14:56:58.284 [main] INFO  - Selected the Extras Cover: Total Extras
+14:56:58.464 [main] INFO  - Clicked on the Apply Now button for the selected plan.
+14:56:58.473 [main] INFO  - Attempting to select 'No' for member status.
+14:56:58.931 [main] INFO  - 'No' radio button for member status selected successfully.
+14:56:58.934 [main] INFO  - Attempting to select 'Yes' for Australian citizenship status.
+14:56:59.094 [main] INFO  - 'Yes' radio button for citizenship status selected successfully.
+14:56:59.101 [main] INFO  - Attempting to click the 'Medical Practitioner' button.
+14:56:59.221 [main] INFO  - 'Medical Practitioner' button clicked successfully.
+14:56:59.226 [main] INFO  - Attempting to select the radio button for: Resident
+14:56:59.348 [main] INFO  - Radio button for 'Resident' selected successfully.
+14:56:59.361 [main] INFO  - Attempting to select Avant member option: No
+14:56:59.494 [main] INFO  - Avant member option 'No' selected successfully.
+14:57:00.717 [main] INFO  - Clicked on Continue button
+14:57:00.755 [main] INFO  - Attempting to select Avant member option: Yes
+14:57:00.863 [main] INFO  - Avant member option 'Yes' selected successfully.
+14:57:00.870 [main] INFO  - Attempting to select Avant member option: No
+14:57:00.967 [main] INFO  - Avant member option 'No' selected successfully.
+14:57:02.193 [main] INFO  - Clicked on Continue button
+14:57:02.200 [main] INFO  - Selecting option for transferring from another fund: Yes
+14:57:02.327 [main] INFO  - 'Yes' selected for transferring from another fund.
+14:57:03.041 [main] INFO  - Attempting to accept alert/modal.
+14:58:47.364 [main] INFO  - Browser selected: chrome
+14:58:47.380 [main] INFO  - URL selected: https://uat.doctorshealthfund.com.au/
+14:58:49.775 [main] INFO  - ChromeDriver initialized.
+14:58:52.935 [main] INFO  - Navigated to URL: https://uat.doctorshealthfund.com.au/
+14:58:53.266 [main] INFO  - All cookies cleared before starting the test.
+14:58:53.330 [main] INFO  - Navigating to the quote page.
+14:58:53.361 [main] INFO  - Page title: Private Health Insurance for Doctors | Doctors' Health Fund
+14:58:53.368 [main] INFO  - Clicking the 'Get Quote' button.
+14:58:53.368 [main] INFO  - Attempting to click the 'Get Quote' button...
+14:58:53.583 [main] INFO  - 'Get Quote' button clicked successfully.
+14:58:53.583 [main] INFO  - 'Get Quote' button clicked successfully.
+14:58:53.589 [main] INFO  - Selecting cover type: Couple...
+14:58:54.918 [main] INFO  - Cover type 'Couple' selected successfully.
+14:58:54.921 [main] INFO  - Clicking the 'Next' button...
+14:58:55.062 [main] INFO  - 'Next' button clicked successfully.
+14:58:55.064 [main] INFO  - Selecting residence: NSW...
+14:58:55.222 [main] INFO  - Residence 'NSW' selected successfully.
+14:58:55.224 [main] INFO  - Clicking the 'Next' button...
+14:58:55.364 [main] INFO  - 'Next' button clicked successfully.
+14:58:55.366 [main] INFO  - Entering day of birth: 01...
+14:58:55.524 [main] INFO  - Day of birth entered successfully.
+14:58:55.524 [main] INFO  - Entering month of birth: 01...
+14:58:55.659 [main] INFO  - Month of birth entered successfully.
+14:58:55.659 [main] INFO  - Entering year of birth: 1978...
+14:58:55.794 [main] INFO  - Year of birth entered successfully.
+14:58:55.797 [main] INFO  - Entering day of birth: 01...
+14:58:55.923 [main] INFO  - Partner's day of birth entered successfully.
+14:58:55.923 [main] INFO  - Entering month of birth: 01...
+14:58:56.032 [main] INFO  - Partner's month of birth entered successfully.
+14:58:56.032 [main] INFO  - Entering year of birth: 1977...
+14:58:56.198 [main] INFO  - Partner's year of birth entered successfully.
+14:58:56.202 [main] INFO  - Clicking the 'Next' button...
+14:58:56.401 [main] INFO  - 'Next' button clicked successfully.
+14:58:56.404 [main] INFO  - Selecting annual income: Below $194k...
+14:58:56.569 [main] INFO  - Annual income 'Below $194k' selected successfully.
+14:58:56.571 [main] INFO  - Clicking 'Calculate Cover' button...
+14:58:57.128 [main] INFO  - 'Calculate Cover' button clicked successfully.
+14:58:57.221 [main] INFO  - Selecting hospital cover: Top Cover...
+14:58:58.962 [main] INFO  - Selected the Extras Cover: Total Extras
+14:58:59.147 [main] INFO  - Clicked on the Apply Now button for the selected plan.
+14:58:59.157 [main] INFO  - Attempting to select 'No' for member status.
+14:58:59.608 [main] INFO  - 'No' radio button for member status selected successfully.
+14:58:59.612 [main] INFO  - Attempting to select 'Yes' for Australian citizenship status.
+14:58:59.774 [main] INFO  - 'Yes' radio button for citizenship status selected successfully.
+14:58:59.781 [main] INFO  - Attempting to click the 'Medical Practitioner' button.
+14:58:59.979 [main] INFO  - 'Medical Practitioner' button clicked successfully.
+14:58:59.986 [main] INFO  - Attempting to select the radio button for: Resident
+14:59:00.099 [main] INFO  - Radio button for 'Resident' selected successfully.
+14:59:00.134 [main] INFO  - Attempting to select Avant member option: No
+14:59:00.253 [main] INFO  - Avant member option 'No' selected successfully.
+14:59:01.446 [main] INFO  - Clicked on Continue button
+14:59:01.456 [main] INFO  - Attempting to select Avant member option: Yes
+14:59:01.550 [main] INFO  - Avant member option 'Yes' selected successfully.
+14:59:01.558 [main] INFO  - Attempting to select Avant member option: No
+14:59:01.665 [main] INFO  - Avant member option 'No' selected successfully.
+14:59:02.878 [main] INFO  - Clicked on Continue button
+14:59:02.880 [main] INFO  - Selecting option for transferring from another fund: Yes
+14:59:03.045 [main] INFO  - 'Yes' selected for transferring from another fund.
+14:59:03.125 [main] ERROR - An error occurred while interacting with the alert/modal: Cannot invoke "Object.getClass()" because "exceptionDriver" is null
+14:59:03.746 [main] INFO  - Attempting to accept alert/modal.
+15:00:03.936 [main] ERROR - An error occurred while interacting with the alert/modal: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=131.0.6778.109)
+Build info: version: '4.18.1', revision: 'b1d3319b48'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '23'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [d35596947e16c8dc403af0450ef8c1d2, findElement {value=//div[text()='OK']/../../..//button, using=xpath}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 131.0.6778.109, chrome: {chromedriverVersion: 131.0.6778.108 (3b014839fbc..., userDataDir: C:\Users\SAHIL~1.SHA\AppDat...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:50119}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:50119/devtoo..., se:cdpVersion: 131.0.6778.109, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: d35596947e16c8dc403af0450ef8c1d2
+15:00:37.499 [main] INFO  - Browser selected: chrome
+15:00:37.502 [main] INFO  - URL selected: https://uat.doctorshealthfund.com.au/
+15:00:39.876 [main] INFO  - ChromeDriver initialized.
+15:00:42.965 [main] INFO  - Navigated to URL: https://uat.doctorshealthfund.com.au/
+15:00:43.157 [main] INFO  - All cookies cleared before starting the test.
+15:00:43.241 [main] INFO  - Navigating to the quote page.
+15:00:43.379 [main] INFO  - Page title: Private Health Insurance for Doctors | Doctors' Health Fund
+15:00:43.386 [main] INFO  - Clicking the 'Get Quote' button.
+15:00:43.386 [main] INFO  - Attempting to click the 'Get Quote' button...
+15:00:43.601 [main] INFO  - 'Get Quote' button clicked successfully.
+15:00:43.601 [main] INFO  - 'Get Quote' button clicked successfully.
+15:00:43.607 [main] INFO  - Selecting cover type: Couple...
+15:00:44.049 [main] INFO  - Cover type 'Couple' selected successfully.
+15:00:44.051 [main] INFO  - Clicking the 'Next' button...
+15:00:44.187 [main] INFO  - 'Next' button clicked successfully.
+15:00:44.189 [main] INFO  - Selecting residence: NSW...
+15:00:44.316 [main] INFO  - Residence 'NSW' selected successfully.
+15:00:44.318 [main] INFO  - Clicking the 'Next' button...
+15:00:44.460 [main] INFO  - 'Next' button clicked successfully.
+15:00:44.462 [main] INFO  - Entering day of birth: 01...
+15:00:44.613 [main] INFO  - Day of birth entered successfully.
+15:00:44.613 [main] INFO  - Entering month of birth: 01...
+15:00:44.719 [main] INFO  - Month of birth entered successfully.
+15:00:44.719 [main] INFO  - Entering year of birth: 1978...
+15:00:44.878 [main] INFO  - Year of birth entered successfully.
+15:00:44.880 [main] INFO  - Entering day of birth: 01...
+15:00:44.997 [main] INFO  - Partner's day of birth entered successfully.
+15:00:44.997 [main] INFO  - Entering month of birth: 01...
+15:00:45.101 [main] INFO  - Partner's month of birth entered successfully.
+15:00:45.101 [main] INFO  - Entering year of birth: 1977...
+15:00:45.212 [main] INFO  - Partner's year of birth entered successfully.
+15:00:45.215 [main] INFO  - Clicking the 'Next' button...
+15:00:45.338 [main] INFO  - 'Next' button clicked successfully.
+15:00:45.340 [main] INFO  - Selecting annual income: Below $194k...
+15:00:45.457 [main] INFO  - Annual income 'Below $194k' selected successfully.
+15:00:45.459 [main] INFO  - Clicking 'Calculate Cover' button...
+15:00:45.976 [main] INFO  - 'Calculate Cover' button clicked successfully.
+15:00:46.006 [main] INFO  - Selecting hospital cover: Top Cover...
+15:00:49.037 [main] INFO  - Selected the Extras Cover: Total Extras
+15:00:49.268 [main] INFO  - Clicked on the Apply Now button for the selected plan.
+15:00:49.281 [main] INFO  - Attempting to select 'No' for member status.
+15:00:49.678 [main] INFO  - 'No' radio button for member status selected successfully.
+15:00:49.681 [main] INFO  - Attempting to select 'Yes' for Australian citizenship status.
+15:00:49.880 [main] INFO  - 'Yes' radio button for citizenship status selected successfully.
+15:00:49.888 [main] INFO  - Attempting to click the 'Medical Practitioner' button.
+15:00:50.011 [main] INFO  - 'Medical Practitioner' button clicked successfully.
+15:00:50.019 [main] INFO  - Attempting to select the radio button for: Resident
+15:00:50.135 [main] INFO  - Radio button for 'Resident' selected successfully.
+15:00:50.144 [main] INFO  - Attempting to select Avant member option: No
+15:00:50.290 [main] INFO  - Avant member option 'No' selected successfully.
+15:00:51.556 [main] INFO  - Clicked on Continue button
+15:00:51.564 [main] INFO  - Attempting to select Avant member option: Yes
+15:00:51.666 [main] INFO  - Avant member option 'Yes' selected successfully.
+15:00:51.682 [main] INFO  - Attempting to select Avant member option: No
+15:00:51.788 [main] INFO  - Avant member option 'No' selected successfully.
+15:00:53.032 [main] INFO  - Clicked on Continue button
+15:00:53.034 [main] INFO  - Selecting option for transferring from another fund: Yes
+15:00:53.165 [main] INFO  - 'Yes' selected for transferring from another fund.
+15:00:53.869 [main] INFO  - Attempting to accept alert/modal.
+15:02:16.298 [main] INFO  - Browser selected: chrome
+15:02:16.302 [main] INFO  - URL selected: https://uat.doctorshealthfund.com.au/
+15:02:18.833 [main] INFO  - ChromeDriver initialized.
+15:02:21.996 [main] INFO  - Navigated to URL: https://uat.doctorshealthfund.com.au/
+15:02:22.222 [main] INFO  - All cookies cleared before starting the test.
+15:02:22.358 [main] INFO  - Navigating to the quote page.
+15:02:22.507 [main] INFO  - Page title: Private Health Insurance for Doctors | Doctors' Health Fund
+15:02:22.515 [main] INFO  - Clicking the 'Get Quote' button.
+15:02:22.515 [main] INFO  - Attempting to click the 'Get Quote' button...
+15:02:22.732 [main] INFO  - 'Get Quote' button clicked successfully.
+15:02:22.732 [main] INFO  - 'Get Quote' button clicked successfully.
+15:02:22.739 [main] INFO  - Selecting cover type: Couple...
+15:02:23.241 [main] INFO  - Cover type 'Couple' selected successfully.
+15:02:23.244 [main] INFO  - Clicking the 'Next' button...
+15:02:23.386 [main] INFO  - 'Next' button clicked successfully.
+15:02:23.388 [main] INFO  - Selecting residence: NSW...
+15:02:23.530 [main] INFO  - Residence 'NSW' selected successfully.
+15:02:23.532 [main] INFO  - Clicking the 'Next' button...
+15:02:23.670 [main] INFO  - 'Next' button clicked successfully.
+15:02:23.675 [main] INFO  - Entering day of birth: 01...
+15:02:23.851 [main] INFO  - Day of birth entered successfully.
+15:02:23.851 [main] INFO  - Entering month of birth: 01...
+15:02:23.965 [main] INFO  - Month of birth entered successfully.
+15:02:23.965 [main] INFO  - Entering year of birth: 1978...
+15:02:24.096 [main] INFO  - Year of birth entered successfully.
+15:02:24.098 [main] INFO  - Entering day of birth: 01...
+15:02:24.223 [main] INFO  - Partner's day of birth entered successfully.
+15:02:24.223 [main] INFO  - Entering month of birth: 01...
+15:02:24.326 [main] INFO  - Partner's month of birth entered successfully.
+15:02:24.326 [main] INFO  - Entering year of birth: 1977...
+15:02:24.443 [main] INFO  - Partner's year of birth entered successfully.
+15:02:24.446 [main] INFO  - Clicking the 'Next' button...
+15:02:24.577 [main] INFO  - 'Next' button clicked successfully.
+15:02:24.581 [main] INFO  - Selecting annual income: Below $194k...
+15:02:24.770 [main] INFO  - Annual income 'Below $194k' selected successfully.
+15:02:24.772 [main] INFO  - Clicking 'Calculate Cover' button...
+15:02:25.294 [main] INFO  - 'Calculate Cover' button clicked successfully.
+15:02:25.379 [main] INFO  - Selecting hospital cover: Top Cover...
+15:02:26.733 [main] INFO  - Selected the Extras Cover: Total Extras
+15:02:26.910 [main] INFO  - Clicked on the Apply Now button for the selected plan.
+15:02:26.921 [main] INFO  - Attempting to select 'No' for member status.
+15:02:27.293 [main] INFO  - 'No' radio button for member status selected successfully.
+15:02:27.296 [main] INFO  - Attempting to select 'Yes' for Australian citizenship status.
+15:02:27.464 [main] INFO  - 'Yes' radio button for citizenship status selected successfully.
+15:02:27.472 [main] INFO  - Attempting to click the 'Medical Practitioner' button.
+15:02:27.591 [main] INFO  - 'Medical Practitioner' button clicked successfully.
+15:02:27.596 [main] INFO  - Attempting to select the radio button for: Resident
+15:02:27.731 [main] INFO  - Radio button for 'Resident' selected successfully.
+15:02:27.741 [main] INFO  - Attempting to select Avant member option: No
+15:02:27.928 [main] INFO  - Avant member option 'No' selected successfully.
+15:02:29.146 [main] INFO  - Clicked on Continue button
+15:02:29.155 [main] INFO  - Attempting to select Avant member option: Yes
+15:02:29.254 [main] INFO  - Avant member option 'Yes' selected successfully.
+15:02:29.262 [main] INFO  - Attempting to select Avant member option: No
+15:02:29.367 [main] INFO  - Avant member option 'No' selected successfully.
+15:02:30.834 [main] INFO  - Clicked on Continue button
+15:02:30.837 [main] INFO  - Selecting option for transferring from another fund: Yes
+15:02:31.011 [main] INFO  - 'Yes' selected for transferring from another fund.
+15:02:31.726 [main] INFO  - Attempting to accept alert/modal.
+15:02:53.912 [main] ERROR - An error occurred while interacting with the alert/modal: Cannot invoke "Object.getClass()" because "exceptionDriver" is null
+15:03:24.462 [main] INFO  - Browser selected: chrome
+15:03:24.489 [main] INFO  - URL selected: https://uat.doctorshealthfund.com.au/
+15:03:27.075 [main] INFO  - ChromeDriver initialized.
+15:03:30.495 [main] INFO  - Navigated to URL: https://uat.doctorshealthfund.com.au/
+15:03:30.755 [main] INFO  - All cookies cleared before starting the test.
+15:03:30.828 [main] INFO  - Navigating to the quote page.
+15:03:30.856 [main] INFO  - Page title: Private Health Insurance for Doctors | Doctors' Health Fund
+15:03:30.861 [main] INFO  - Clicking the 'Get Quote' button.
+15:03:30.861 [main] INFO  - Attempting to click the 'Get Quote' button...
+15:03:31.164 [main] INFO  - 'Get Quote' button clicked successfully.
+15:03:31.165 [main] INFO  - 'Get Quote' button clicked successfully.
+15:03:31.170 [main] INFO  - Selecting cover type: Couple...
+15:03:32.537 [main] INFO  - Cover type 'Couple' selected successfully.
+15:03:32.540 [main] INFO  - Clicking the 'Next' button...
+15:03:32.682 [main] INFO  - 'Next' button clicked successfully.
+15:03:32.684 [main] INFO  - Selecting residence: NSW...
+15:03:32.822 [main] INFO  - Residence 'NSW' selected successfully.
+15:03:32.824 [main] INFO  - Clicking the 'Next' button...
+15:03:32.967 [main] INFO  - 'Next' button clicked successfully.
+15:03:32.969 [main] INFO  - Entering day of birth: 01...
+15:03:33.130 [main] INFO  - Day of birth entered successfully.
+15:03:33.131 [main] INFO  - Entering month of birth: 01...
+15:03:33.243 [main] INFO  - Month of birth entered successfully.
+15:03:33.243 [main] INFO  - Entering year of birth: 1978...
+15:03:33.409 [main] INFO  - Year of birth entered successfully.
+15:03:33.411 [main] INFO  - Entering day of birth: 01...
+15:03:33.527 [main] INFO  - Partner's day of birth entered successfully.
+15:03:33.527 [main] INFO  - Entering month of birth: 01...
+15:03:33.645 [main] INFO  - Partner's month of birth entered successfully.
+15:03:33.645 [main] INFO  - Entering year of birth: 1977...
+15:03:33.749 [main] INFO  - Partner's year of birth entered successfully.
+15:03:33.751 [main] INFO  - Clicking the 'Next' button...
+15:03:33.908 [main] INFO  - 'Next' button clicked successfully.
+15:03:33.910 [main] INFO  - Selecting annual income: Below $194k...
+15:03:34.031 [main] INFO  - Annual income 'Below $194k' selected successfully.
+15:03:34.033 [main] INFO  - Clicking 'Calculate Cover' button...
+15:03:34.564 [main] INFO  - 'Calculate Cover' button clicked successfully.
+15:03:34.604 [main] INFO  - Selecting hospital cover: Top Cover...
+15:03:36.726 [main] INFO  - Selected the Extras Cover: Total Extras
+15:03:36.901 [main] INFO  - Clicked on the Apply Now button for the selected plan.
+15:03:36.911 [main] INFO  - Attempting to select 'No' for member status.
+15:03:37.308 [main] INFO  - 'No' radio button for member status selected successfully.
+15:03:37.310 [main] INFO  - Attempting to select 'Yes' for Australian citizenship status.
+15:03:37.533 [main] INFO  - 'Yes' radio button for citizenship status selected successfully.
+15:03:37.544 [main] INFO  - Attempting to click the 'Medical Practitioner' button.
+15:03:37.833 [main] INFO  - 'Medical Practitioner' button clicked successfully.
+15:03:37.842 [main] INFO  - Attempting to select the radio button for: Resident
+15:03:38.009 [main] INFO  - Radio button for 'Resident' selected successfully.
+15:03:38.017 [main] INFO  - Attempting to select Avant member option: No
+15:03:38.185 [main] INFO  - Avant member option 'No' selected successfully.
+15:03:39.378 [main] INFO  - Clicked on Continue button
+15:03:39.386 [main] INFO  - Attempting to select Avant member option: Yes
+15:03:39.485 [main] INFO  - Avant member option 'Yes' selected successfully.
+15:03:39.494 [main] INFO  - Attempting to select Avant member option: No
+15:03:39.596 [main] INFO  - Avant member option 'No' selected successfully.
+15:03:40.827 [main] INFO  - Clicked on Continue button
+15:03:40.829 [main] INFO  - Selecting option for transferring from another fund: Yes
+15:03:41.060 [main] INFO  - 'Yes' selected for transferring from another fund.
+15:03:41.762 [main] INFO  - Attempting to accept alert/modal.
+15:04:31.783 [main] ERROR - An error occurred while interacting with the alert/modal: Cannot invoke "Object.getClass()" because "exceptionDriver" is null
+15:05:41.853 [main] ERROR - An error occurred while interacting with the alert/modal: Cannot invoke "Object.getClass()" because "exceptionDriver" is null
+15:06:55.682 [main] INFO  - Browser selected: chrome
+15:06:55.686 [main] INFO  - URL selected: https://uat.doctorshealthfund.com.au/
+15:06:59.642 [main] INFO  - ChromeDriver initialized.
+15:07:03.469 [main] INFO  - Navigated to URL: https://uat.doctorshealthfund.com.au/
+15:07:03.721 [main] INFO  - All cookies cleared before starting the test.
+15:07:03.792 [main] INFO  - Navigating to the quote page.
+15:07:03.847 [main] INFO  - Page title: Private Health Insurance for Doctors | Doctors' Health Fund
+15:07:03.853 [main] INFO  - Clicking the 'Get Quote' button.
+15:07:03.854 [main] INFO  - Attempting to click the 'Get Quote' button...
+15:07:04.076 [main] INFO  - 'Get Quote' button clicked successfully.
+15:07:04.076 [main] INFO  - 'Get Quote' button clicked successfully.
+15:07:04.080 [main] INFO  - Selecting cover type: Couple...
+15:07:04.655 [main] INFO  - Cover type 'Couple' selected successfully.
+15:07:04.658 [main] INFO  - Clicking the 'Next' button...
+15:07:04.824 [main] INFO  - 'Next' button clicked successfully.
+15:07:04.826 [main] INFO  - Selecting residence: NSW...
+15:07:04.951 [main] INFO  - Residence 'NSW' selected successfully.
+15:07:04.953 [main] INFO  - Clicking the 'Next' button...
+15:07:05.092 [main] INFO  - 'Next' button clicked successfully.
+15:07:05.094 [main] INFO  - Entering day of birth: 01...
+15:07:05.247 [main] INFO  - Day of birth entered successfully.
+15:07:05.247 [main] INFO  - Entering month of birth: 01...
+15:07:05.345 [main] INFO  - Month of birth entered successfully.
+15:07:05.345 [main] INFO  - Entering year of birth: 1978...
+15:07:05.477 [main] INFO  - Year of birth entered successfully.
+15:07:05.480 [main] INFO  - Entering day of birth: 01...
+15:07:05.590 [main] INFO  - Partner's day of birth entered successfully.
+15:07:05.591 [main] INFO  - Entering month of birth: 01...
+15:07:05.682 [main] INFO  - Partner's month of birth entered successfully.
+15:07:05.683 [main] INFO  - Entering year of birth: 1977...
+15:07:05.780 [main] INFO  - Partner's year of birth entered successfully.
+15:07:05.783 [main] INFO  - Clicking the 'Next' button...
+15:07:05.908 [main] INFO  - 'Next' button clicked successfully.
+15:07:05.910 [main] INFO  - Selecting annual income: Below $194k...
+15:07:06.035 [main] INFO  - Annual income 'Below $194k' selected successfully.
+15:07:06.037 [main] INFO  - Clicking 'Calculate Cover' button...
+15:07:06.572 [main] INFO  - 'Calculate Cover' button clicked successfully.
+15:07:06.592 [main] INFO  - Selecting hospital cover: Top Cover...
+15:07:08.690 [main] INFO  - Selected the Extras Cover: Total Extras
+15:07:08.861 [main] INFO  - Clicked on the Apply Now button for the selected plan.
+15:07:08.876 [main] INFO  - Attempting to select 'No' for member status.
+15:07:09.222 [main] INFO  - 'No' radio button for member status selected successfully.
+15:07:09.225 [main] INFO  - Attempting to select 'Yes' for Australian citizenship status.
+15:07:09.389 [main] INFO  - 'Yes' radio button for citizenship status selected successfully.
+15:07:09.397 [main] INFO  - Attempting to click the 'Medical Practitioner' button.
+15:07:09.599 [main] INFO  - 'Medical Practitioner' button clicked successfully.
+15:07:09.604 [main] INFO  - Attempting to select the radio button for: Resident
+15:07:09.703 [main] INFO  - Radio button for 'Resident' selected successfully.
+15:07:09.734 [main] INFO  - Attempting to select Avant member option: No
+15:07:09.849 [main] INFO  - Avant member option 'No' selected successfully.
+15:07:11.042 [main] INFO  - Clicked on Continue button
+15:07:11.050 [main] INFO  - Attempting to select Avant member option: Yes
+15:07:11.143 [main] INFO  - Avant member option 'Yes' selected successfully.
+15:07:11.157 [main] INFO  - Attempting to select Avant member option: No
+15:07:11.257 [main] INFO  - Avant member option 'No' selected successfully.
+15:07:12.597 [main] INFO  - Clicked on Continue button
+15:07:12.599 [main] INFO  - Selecting option for transferring from another fund: Yes
+15:07:12.827 [main] INFO  - 'Yes' selected for transferring from another fund.
+15:07:13.535 [main] INFO  - Attempting to accept alert/modal.
+15:07:53.685 [main] INFO  - Browser selected: chrome
+15:07:53.698 [main] INFO  - URL selected: https://uat.doctorshealthfund.com.au/
+15:07:56.333 [main] INFO  - ChromeDriver initialized.
+15:07:59.633 [main] INFO  - Navigated to URL: https://uat.doctorshealthfund.com.au/
+15:07:59.926 [main] INFO  - All cookies cleared before starting the test.
+15:07:59.992 [main] INFO  - Navigating to the quote page.
+15:08:00.048 [main] INFO  - Page title: Private Health Insurance for Doctors | Doctors' Health Fund
+15:08:00.056 [main] INFO  - Clicking the 'Get Quote' button.
+15:08:00.056 [main] INFO  - Attempting to click the 'Get Quote' button...
+15:08:00.281 [main] INFO  - 'Get Quote' button clicked successfully.
+15:08:00.281 [main] INFO  - 'Get Quote' button clicked successfully.
+15:08:00.285 [main] INFO  - Selecting cover type: Couple...

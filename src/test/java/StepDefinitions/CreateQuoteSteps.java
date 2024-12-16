@@ -125,6 +125,15 @@ public class CreateQuoteSteps {
 
 	}
 
+	@When("I enter my partner's date of birth as {string}")
+	public void i_enter_my_partner_date_of_birth_as(String dob) {
+		String[] dateParts = dob.split("/");
+		quote.enterPartnerDateOfBirth(dateParts[0]);
+		quote.enterPartnerMonthOfBirth(dateParts[1]);
+		quote.enterPartnerYearOfBirth(dateParts[2]);
+
+	}
+
 	@When("I select the annual income as {string}")
 	public void i_select_the_annual_income_as(String salary) {
 		quote.selectAnnualIncome(salary); // Call the new method with the parameter
@@ -394,28 +403,6 @@ public class CreateQuoteSteps {
 	// Step to click the Continue button on the Your Details page
 	@Given("I submit the Your Details page")
 	public void i_submit_your_details_page() throws InterruptedException {
-		/*
-		 * try { // Wait for the "Continue" button to be visible and clickable
-		 * //WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
-		 * wait.until(ExpectedConditions.visibilityOf(eligibilityAndYourDetails.
-		 * clickContinueButton()));
-		 * wait.until(ExpectedConditions.elementToBeClickable(eligibilityAndYourDetails.
-		 * clickContinueButton()));
-		 * 
-		 * // Scroll to ensure the button is in view baseTest.scrollUpBy400(driver);
-		 * 
-		 * // Retry clicking if intercepted try {
-		 * eligibilityAndYourDetails.clickContinueButton(); } catch
-		 * (ElementClickInterceptedException e) {
-		 * log.warn("Click intercepted. Retrying after scrolling...");
-		 * //baseTest.scrollByPixels(50, driver);
-		 * eligibilityAndYourDetails.clickContinueButton(); }
-		 * 
-		 * log.info("Successfully submitted the 'Your Details' page."); } catch
-		 * (Exception e) { log.error("Error while submitting the 'Your Details' page: "
-		 * + e.getMessage()); throw e; }
-		 */
-
 		Actions actions = new Actions(driver);
 		Thread.sleep(1000);
 		baseTest.scrollByPixels(150, driver);
@@ -426,22 +413,6 @@ public class CreateQuoteSteps {
 		Thread.sleep(1000);
 
 	}
-
-	/*
-	 * WebElement continueButton = eligibilityAndYourDetails.clickContinueButton();
-	 * 
-	 * // Scroll into view ((JavascriptExecutor)
-	 * driver).executeScript("arguments[0].scrollIntoView(true);", continueButton);
-	 * 
-	 * // Handle potential element obstruction try { continueButton.click();
-	 * System.out.println("Clicked on Continue button."); } catch
-	 * (ElementClickInterceptedException e) {
-	 * System.out.println("Click intercepted. Retrying with JavaScript.");
-	 * ((JavascriptExecutor) driver).executeScript("arguments[0].click();",
-	 * continueButton); }
-	 * 
-	 * Thread.sleep(1000); }
-	 */
 
 	@When("I select {string} for the question \"Are all the people on this policy eligible for Medicare?\"")
 	public void i_select_option_for_medicare_eligibility(String option) {
@@ -621,5 +592,61 @@ public class CreateQuoteSteps {
 		Assert.assertTrue(isMessageDisplayed, "The thank-you message is not displayed as expected."); // TestNG
 																										// assertion
 		log.info("The thank-you message is displayed successfully.");
+	}
+
+	@When("the user clicks and selects {string} from the Current Health Fund dropdown")
+	public void theUserClicksAndSelectsFromCurrentHealthFundDropdown(String healthFundName)
+			throws InterruptedException {
+		eligibilityAndYourDetails.selectCurrentHealthFund(healthFundName, driver); // Call the action method
+	}
+
+	@When("the user enters the membership number {string}")
+	public void theUserEntersTheMembershipNumber(String membershipNumber) {
+		eligibilityAndYourDetails.enterMembershipNumber(membershipNumber, driver);
+	}
+
+	@When("the user selects {string} for partner and dependents covered")
+	public void theUserSelectsForPartnerAndDependentsCovered(String option) {
+		baseTest.scrollByPixels(300, driver);
+		eligibilityAndYourDetails.selectPartnerAndDependentsCovered(option, driver);
+	}
+
+	@When("the user selects {string} for LHC statement checkbox")
+	public void verifyLHCStatementCheckboxes(String option) {
+		baseTest.scrollByPixels(300, driver);
+		eligibilityAndYourDetails.selectLhcCheckbox(option, driver);
+	}
+
+	@When("the user enters age {int} in the hospital cover age input box")
+	public void enterAgeInInputBox(int age) {
+		eligibilityAndYourDetails.enterAgeValue(age);
+	}
+
+	@When("the user accepts the alert or modal")
+	public void userAcceptsTheAlert() throws InterruptedException {
+		Thread.sleep(2000);
+		eligibilityAndYourDetails.alertAccept();
+	}
+
+	/*
+	 * // Step to click the Continue button on the Your Details page
+	 * 
+	 * @Given("I submit the personal details on the 'Your Details' page") public
+	 * void i_submit_personal_details_on_your_details_page() throws
+	 * InterruptedException { Actions actions = new Actions(driver);
+	 * Thread.sleep(1000); baseTest.scrollByPixels(150, driver); WebElement
+	 * continueButton = eligibilityAndYourDetails.clickContinueButton();
+	 * 
+	 * }
+	 */
+
+	@When("the user enters a partner's mobile number")
+	public void userEntersPartnerMobileNumber() {
+		eligibilityAndYourDetails.enterPartnersRandomMobileNumber();
+	}
+
+	@When("the user clicks and selects {string} from the relationship dropdown")
+	public void theUserClicksAndSelectsFromRelationshipDropdown(String relationship) throws InterruptedException {
+		eligibilityAndYourDetails.selectRelationship(relationship, driver); // Call the action method
 	}
 }
