@@ -89,7 +89,7 @@ public class EligibilityAndYourDetailsPage extends BaseTest {
 	private WebElement existingAvantMemberRadioButtonNo;
 
 	// Locator for continue button
-	@FindBy(xpath = "//div[text()='Continue']") //// div[text()='Continue']/../../..//button/..
+	@FindBy(xpath = "//div[text()='Continue']") // div[text()='Continue']/../../..//button/..
 	protected WebElement clickContinueButton;
 
 	// to locate "Yes" and "No" radio buttons for the "Are you transferring from
