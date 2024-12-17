@@ -88,7 +88,7 @@ public class EligibilityAndYourDetailsPage extends BaseTest {
 	@FindBy(xpath = "//div[@name='existingAvantMember']//div/label[2][span[contains(text(),'No')]]")
 	private WebElement existingAvantMemberRadioButtonNo;
 
-	// Locator for continue button
+	//.....Locator for continue button
 	@FindBy(xpath = "//div[text()='Continue']") // div[text()='Continue']/../../..//button/..
 	protected WebElement clickContinueButton;
 
